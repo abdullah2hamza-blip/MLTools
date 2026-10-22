@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "status": "ELIGIBILITY_SELECTION_ONLY_NO_EXECUTION_OUTCOMES",
+  "selection_rule": "Small convenience sample from primary Hub discovery: previously unexecuted SmolVLA task lineages, explicit Apache publisher cards, fixed small standalone processor artifacts. Not a representative or random sample.",
+  "candidates": [
+    {
+      "model": "edge-inference/smolvla-so101-pick-orange",
+      "revision": "71cf4a9d35ce317f6706efe1a9f9d4cbb2b8fb4d",
+      "declared_lineage_cluster": "LightwheelAI/leisaac-pick-orange",
+      "identity_authority": "https://huggingface.co/api/models/edge-inference/smolvla-so101-pick-orange/tree/71cf4a9d35ce317f6706efe1a9f9d4cbb2b8fb4d",
+      "files": [
+        {
+          "path": "README.md",
+          "size": 4801,
+          "oid": "16bfeaca910a3c4b4eaa12459a200ee1d76f208f"
+        },
+        {
+          "path": "config.json",
+          "size": 2275,
+          "oid": "4d814e8818739d0ecdb6ec7c98aa4ac8f8add85d"
+        },
+        {
+          "path": "policy_postprocessor.json",
+          "size": 660,
+          "oid": "6f8997e5be18c67bad9377dd2cd9622ba38b5ae3"
+        },
+        {
+          "path": "policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+          "size": 3756,
+          "oid": "02813c1e69a0bd844497e39bbf1a73020aaa361a",
+          "lfs": {
+            "oid": "0b9214914398156f17ddf08a5082c20b24efb70a7ba7677e8bc3d3ff68a722db",
+            "size": 3756,
+            "pointerSize": 129
+          }
+        },
+        {
+          "path": "policy_preprocessor.json",
+          "size": 1717,
+          "oid": "4175f3d691a20f30894c2d0426583c1a6f45e5e9"
+        },
+        {
+          "path": "policy_preprocessor_step_5_normalizer_processor.safetensors",
+          "size": 3756,
+          "oid": "02813c1e69a0bd844497e39bbf1a73020aaa361a",
+          "lfs": {
+            "oid": "0b9214914398156f17ddf08a5082c20b24efb70a7ba7677e8bc3d3ff68a722db",
+            "size": 3756,
+            "pointerSize": 129
+          }
+        },
+        {
+          "path": "train_config.json",
+          "size": 6423,
+          "oid": "ca39dd078c5555a7a6d9d8b3330fdb10fa19e62b"
+        }
+      ]
+    },
+    {
+      "model": "shenjianliang/smolvla_policy",
+      "revision": "5753a3bff43a5014b9320476458ae9e4c5aae02d",
+      "declared_lineage_cluster": "shenjianliang/dm_arm_test",
+      "identity_authority": "https://huggingface.co/api/models/shenjianliang/smolvla_policy/tree/5753a3bff43a5014b9320476458ae9e4c5aae02d",
+      "files": [
+        {
+          "path": "README.md",
+          "size": 1697,
+          "oid": "e76e2742b30eb0cf46195ad4dcba651efd4e1336"
+        },
+        {
+          "path": "config.json",
+          "size": 2322,
+          "oid": "965773456f42a7b25abb194893466214dfc206c5"
+        },
+        {
+          "path": "policy_postprocessor.json",
+          "size": 691,
+          "oid": "b17610ef746db9eeeb3b99bfaf7e99f52a1d6cb4"
+        },
+        {
+          "path": "policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+          "size": 7624,
+          "oid": "082db9685cbf19084f64983fd34dfe1e2d03f7a7",
+          "lfs": {
+            "oid": "cbf980d7ea3aea4220393cc950694b276bfeba97d83b29a7f9c6fd2f814360cb",
+            "size": 7624,
+            "pointerSize": 129
+          }
+        },
+        {
+          "path": "policy_preprocessor.json",
+          "size": 1795,
+          "oid": "1c4953b179ac35cbdce8e752213276df99214665"
+        },
+        {
+          "path": "policy_preprocessor_step_5_normalizer_processor.safetensors",
+          "size": 7624,
+          "oid": "082db9685cbf19084f64983fd34dfe1e2d03f7a7",
+          "lfs": {
+            "oid": "cbf980d7ea3aea4220393cc950694b276bfeba97d83b29a7f9c6fd2f814360cb",
+            "size": 7624,
+            "pointerSize": 129
+          }
+        },
+        {
+          "path": "train_config.json",
+          "size": 6365,
+          "oid": "dd7d61896815074c09242d8a822dfd3fb0df5c4e"
+        }
+      ]
+    }
+  ],
+  "discovery_exclusions": [
+    {
+      "model": "HuggingFaceVLA/smolvla_libero",
+      "revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+      "reason": "No train_config.json in inspected tree and dataset card label unknown; reserve only, not evidence of a bad policy"
+    }
+  ],
+  "shared_ancestry": "Both publisher cards declare lerobot/smolvla_base ancestry; exact training base revisions and dataset snapshots are not attested, and DM-arm config uses a publisher-local pretrained path."
+}

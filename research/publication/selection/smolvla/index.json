@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "status": "ELIGIBILITY_SELECTION_ONLY_NO_EXECUTION_OUTCOMES",
+  "candidates": [
+    {
+      "model": "edge-inference/smolvla-so101-pick-orange",
+      "revision": "71cf4a9d35ce317f6706efe1a9f9d4cbb2b8fb4d",
+      "manifest": "edge-inference--smolvla-so101-pick-orange/manifest.json"
+    },
+    {
+      "model": "shenjianliang/smolvla_policy",
+      "revision": "5753a3bff43a5014b9320476458ae9e4c5aae02d",
+      "manifest": "shenjianliang--smolvla_policy/manifest.json"
+    }
+  ]
+}

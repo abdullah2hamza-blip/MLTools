@@ -26,6 +26,8 @@ The versioned `mltools probe` workflow now supports explicit execution, offline 
 
 `src/mltools/research_oracles.py` and `research_compare.py` now implement independent pointwise and strong relational numerical comparators, a stateless subdomain, and explicitly scoped authority/provenance/witness ablations. `development/oracles-002/` records identical-observation replay from an installed wheel without ML dependencies. The strong oracle matches the compiler on these development cases; offset erasure also makes a constant bias unidentifiable for every oracle. `docs/research-oracles.md` documents propagated component error budgets, independent rank guards and limits. These are oracle comparisons on supplied queries, not completed manual/random query-generation experiments.
 
+`selection/smolvla/` now pins two additional Apache-declared, previously unexecuted SmolVLA metadata bundles with distinct declared task datasets. Both remain selection candidates with null training dataset revisions; the DM-arm base path is unresolved. Metadata inspection and bounded stdlib statistics decoding do not establish native execution, independent pretraining, physical semantics or completed benchmark coverage. Their split roles must be frozen before observing case outcomes.
+
 ## Completion ledger
 
 | Objective | Current evidence | Still required |

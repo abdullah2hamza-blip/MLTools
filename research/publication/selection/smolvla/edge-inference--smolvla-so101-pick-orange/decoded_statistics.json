@@ -1,0 +1,963 @@
+{
+  "decoding": "bounded stdlib F32/F64",
+  "tensors": {
+    "pre": {
+      "action.count": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          36293.0
+        ]
+      },
+      "action.max": {
+        "shape": [
+          6
+        ],
+        "dtype": "F32",
+        "values": [
+          52.056304931640625,
+          63.758392333984375,
+          99.45799255371094,
+          100.0,
+          51.0172119140625,
+          91.3986587524414
+        ]
+      },
+      "action.mean": {
+        "shape": [
+          6
+        ],
+        "dtype": "F32",
+        "values": [
+          8.859694480895996,
+          2.9651544094085693,
+          2.249204397201538,
+          76.5755844116211,
+          18.281888961791992,
+          32.567474365234375
+        ]
+      },
+      "action.min": {
+        "shape": [
+          6
+        ],
+        "dtype": "F32",
+        "values": [
+          -38.495731353759766,
+          -99.99999237060547,
+          -99.1869888305664,
+          21.52564239501953,
+          -14.449661254882812,
+          0.5983543395996094
+        ]
+      },
+      "action.std": {
+        "shape": [
+          6
+        ],
+        "dtype": "F32",
+        "values": [
+          19.569910049438477,
+          39.62519836425781,
+          41.96937942504883,
+          13.673215866088867,
+          9.611998558044434,
+          12.373055458068848
+        ]
+      },
+      "episode_index.count": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          36293.0
+        ]
+      },
+      "episode_index.max": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          59.0
+        ]
+      },
+      "episode_index.mean": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          28.531370162963867
+        ]
+      },
+      "episode_index.min": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.0
+        ]
+      },
+      "episode_index.std": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          17.033809661865234
+        ]
+      },
+      "frame_index.count": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          36293.0
+        ]
+      },
+      "frame_index.max": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          1052.0
+        ]
+      },
+      "frame_index.mean": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          324.66650390625
+        ]
+      },
+      "frame_index.min": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.0
+        ]
+      },
+      "frame_index.std": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          212.9702606201172
+        ]
+      },
+      "index.count": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          36293.0
+        ]
+      },
+      "index.max": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          36292.0
+        ]
+      },
+      "index.mean": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          18146.0
+        ]
+      },
+      "index.min": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.0
+        ]
+      },
+      "index.std": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          10476.88671875
+        ]
+      },
+      "observation.images.front.count": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          7351.0
+        ]
+      },
+      "observation.images.front.max": {
+        "shape": [
+          3,
+          1,
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.9803921580314636,
+          0.9725490212440491,
+          0.8823529481887817
+        ]
+      },
+      "observation.images.front.mean": {
+        "shape": [
+          3,
+          1,
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.48500001430511475,
+          0.4560000002384186,
+          0.4059999883174896
+        ]
+      },
+      "observation.images.front.min": {
+        "shape": [
+          3,
+          1,
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.007843137718737125,
+          0.007843137718737125,
+          0.0
+        ]
+      },
+      "observation.images.front.std": {
+        "shape": [
+          3,
+          1,
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.2290000021457672,
+          0.2240000069141388,
+          0.22499999403953552
+        ]
+      },
+      "observation.images.wrist.count": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          7351.0
+        ]
+      },
+      "observation.images.wrist.max": {
+        "shape": [
+          3,
+          1,
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.9607843160629272,
+          0.9607843160629272,
+          0.9607843160629272
+        ]
+      },
+      "observation.images.wrist.mean": {
+        "shape": [
+          3,
+          1,
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.48500001430511475,
+          0.4560000002384186,
+          0.4059999883174896
+        ]
+      },
+      "observation.images.wrist.min": {
+        "shape": [
+          3,
+          1,
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "observation.images.wrist.std": {
+        "shape": [
+          3,
+          1,
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.2290000021457672,
+          0.2240000069141388,
+          0.22499999403953552
+        ]
+      },
+      "observation.state.count": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          36293.0
+        ]
+      },
+      "observation.state.max": {
+        "shape": [
+          6
+        ],
+        "dtype": "F32",
+        "values": [
+          52.71546936035156,
+          65.318359375,
+          100.1607666015625,
+          100.02542114257812,
+          50.691986083984375,
+          88.45756530761719
+        ]
+      },
+      "observation.state.mean": {
+        "shape": [
+          6
+        ],
+        "dtype": "F32",
+        "values": [
+          8.840147972106934,
+          4.428224086761475,
+          3.701953887939453,
+          75.59658813476562,
+          18.457382202148438,
+          33.336875915527344
+        ]
+      },
+      "observation.state.min": {
+        "shape": [
+          6
+        ],
+        "dtype": "F32",
+        "values": [
+          -38.4887809753418,
+          -99.55461120605469,
+          -96.33113098144531,
+          16.11701202392578,
+          -14.437675476074219,
+          2.1588988304138184
+        ]
+      },
+      "observation.state.std": {
+        "shape": [
+          6
+        ],
+        "dtype": "F32",
+        "values": [
+          19.552553176879883,
+          39.31605911254883,
+          41.37419891357422,
+          13.751653671264648,
+          9.614370346069336,
+          11.978558540344238
+        ]
+      },
+      "task_index.count": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          36293.0
+        ]
+      },
+      "task_index.max": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.0
+        ]
+      },
+      "task_index.mean": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.0
+        ]
+      },
+      "task_index.min": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.0
+        ]
+      },
+      "task_index.std": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.0
+        ]
+      },
+      "timestamp.count": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          36293.0
+        ]
+      },
+      "timestamp.max": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          35.06666564941406
+        ]
+      },
+      "timestamp.mean": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          10.822216033935547
+        ]
+      },
+      "timestamp.min": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.0
+        ]
+      },
+      "timestamp.std": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          7.099008560180664
+        ]
+      }
+    },
+    "post": {
+      "action.count": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          36293.0
+        ]
+      },
+      "action.max": {
+        "shape": [
+          6
+        ],
+        "dtype": "F32",
+        "values": [
+          52.056304931640625,
+          63.758392333984375,
+          99.45799255371094,
+          100.0,
+          51.0172119140625,
+          91.3986587524414
+        ]
+      },
+      "action.mean": {
+        "shape": [
+          6
+        ],
+        "dtype": "F32",
+        "values": [
+          8.859694480895996,
+          2.9651544094085693,
+          2.249204397201538,
+          76.5755844116211,
+          18.281888961791992,
+          32.567474365234375
+        ]
+      },
+      "action.min": {
+        "shape": [
+          6
+        ],
+        "dtype": "F32",
+        "values": [
+          -38.495731353759766,
+          -99.99999237060547,
+          -99.1869888305664,
+          21.52564239501953,
+          -14.449661254882812,
+          0.5983543395996094
+        ]
+      },
+      "action.std": {
+        "shape": [
+          6
+        ],
+        "dtype": "F32",
+        "values": [
+          19.569910049438477,
+          39.62519836425781,
+          41.96937942504883,
+          13.673215866088867,
+          9.611998558044434,
+          12.373055458068848
+        ]
+      },
+      "episode_index.count": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          36293.0
+        ]
+      },
+      "episode_index.max": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          59.0
+        ]
+      },
+      "episode_index.mean": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          28.531370162963867
+        ]
+      },
+      "episode_index.min": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.0
+        ]
+      },
+      "episode_index.std": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          17.033809661865234
+        ]
+      },
+      "frame_index.count": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          36293.0
+        ]
+      },
+      "frame_index.max": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          1052.0
+        ]
+      },
+      "frame_index.mean": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          324.66650390625
+        ]
+      },
+      "frame_index.min": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.0
+        ]
+      },
+      "frame_index.std": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          212.9702606201172
+        ]
+      },
+      "index.count": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          36293.0
+        ]
+      },
+      "index.max": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          36292.0
+        ]
+      },
+      "index.mean": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          18146.0
+        ]
+      },
+      "index.min": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.0
+        ]
+      },
+      "index.std": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          10476.88671875
+        ]
+      },
+      "observation.images.front.count": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          7351.0
+        ]
+      },
+      "observation.images.front.max": {
+        "shape": [
+          3,
+          1,
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.9803921580314636,
+          0.9725490212440491,
+          0.8823529481887817
+        ]
+      },
+      "observation.images.front.mean": {
+        "shape": [
+          3,
+          1,
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.48500001430511475,
+          0.4560000002384186,
+          0.4059999883174896
+        ]
+      },
+      "observation.images.front.min": {
+        "shape": [
+          3,
+          1,
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.007843137718737125,
+          0.007843137718737125,
+          0.0
+        ]
+      },
+      "observation.images.front.std": {
+        "shape": [
+          3,
+          1,
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.2290000021457672,
+          0.2240000069141388,
+          0.22499999403953552
+        ]
+      },
+      "observation.images.wrist.count": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          7351.0
+        ]
+      },
+      "observation.images.wrist.max": {
+        "shape": [
+          3,
+          1,
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.9607843160629272,
+          0.9607843160629272,
+          0.9607843160629272
+        ]
+      },
+      "observation.images.wrist.mean": {
+        "shape": [
+          3,
+          1,
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.48500001430511475,
+          0.4560000002384186,
+          0.4059999883174896
+        ]
+      },
+      "observation.images.wrist.min": {
+        "shape": [
+          3,
+          1,
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "observation.images.wrist.std": {
+        "shape": [
+          3,
+          1,
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.2290000021457672,
+          0.2240000069141388,
+          0.22499999403953552
+        ]
+      },
+      "observation.state.count": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          36293.0
+        ]
+      },
+      "observation.state.max": {
+        "shape": [
+          6
+        ],
+        "dtype": "F32",
+        "values": [
+          52.71546936035156,
+          65.318359375,
+          100.1607666015625,
+          100.02542114257812,
+          50.691986083984375,
+          88.45756530761719
+        ]
+      },
+      "observation.state.mean": {
+        "shape": [
+          6
+        ],
+        "dtype": "F32",
+        "values": [
+          8.840147972106934,
+          4.428224086761475,
+          3.701953887939453,
+          75.59658813476562,
+          18.457382202148438,
+          33.336875915527344
+        ]
+      },
+      "observation.state.min": {
+        "shape": [
+          6
+        ],
+        "dtype": "F32",
+        "values": [
+          -38.4887809753418,
+          -99.55461120605469,
+          -96.33113098144531,
+          16.11701202392578,
+          -14.437675476074219,
+          2.1588988304138184
+        ]
+      },
+      "observation.state.std": {
+        "shape": [
+          6
+        ],
+        "dtype": "F32",
+        "values": [
+          19.552553176879883,
+          39.31605911254883,
+          41.37419891357422,
+          13.751653671264648,
+          9.614370346069336,
+          11.978558540344238
+        ]
+      },
+      "task_index.count": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          36293.0
+        ]
+      },
+      "task_index.max": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.0
+        ]
+      },
+      "task_index.mean": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.0
+        ]
+      },
+      "task_index.min": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.0
+        ]
+      },
+      "task_index.std": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.0
+        ]
+      },
+      "timestamp.count": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          36293.0
+        ]
+      },
+      "timestamp.max": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          35.06666564941406
+        ]
+      },
+      "timestamp.mean": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          10.822216033935547
+        ]
+      },
+      "timestamp.min": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          0.0
+        ]
+      },
+      "timestamp.std": {
+        "shape": [
+          1
+        ],
+        "dtype": "F32",
+        "values": [
+          7.099008560180664
+        ]
+      }
+    }
+  }
+}

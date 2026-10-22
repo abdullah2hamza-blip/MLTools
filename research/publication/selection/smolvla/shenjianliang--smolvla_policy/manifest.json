@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "candidate_only": true,
+  "final_evaluation": false,
+  "execution_outcomes_observed": false,
+  "model": "shenjianliang/smolvla_policy",
+  "revision": "5753a3bff43a5014b9320476458ae9e4c5aae02d",
+  "policy_family": "SmolVLA",
+  "license": {
+    "declared": "Apache-2.0",
+    "authority": "pinned publisher model-card frontmatter"
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "url": "https://huggingface.co/shenjianliang/smolvla_policy/resolve/5753a3bff43a5014b9320476458ae9e4c5aae02d/README.md",
+      "bytes": 1697,
+      "sha256": "3f93214b5849e6ae40ca2aa0f11b309de5745c4de2a3dfdaa641e39b939fcfbb"
+    },
+    {
+      "path": "config.json",
+      "url": "https://huggingface.co/shenjianliang/smolvla_policy/resolve/5753a3bff43a5014b9320476458ae9e4c5aae02d/config.json",
+      "bytes": 2322,
+      "sha256": "6327b22d389d74e28b3356819db200b86692729aaa169d6ba5a5420db090e27f"
+    },
+    {
+      "path": "policy_postprocessor.json",
+      "url": "https://huggingface.co/shenjianliang/smolvla_policy/resolve/5753a3bff43a5014b9320476458ae9e4c5aae02d/policy_postprocessor.json",
+      "bytes": 691,
+      "sha256": "68d350fd71551e0760d07142f4c02bed7c80a1d7eae808f9276bc81b4ef76dd4"
+    },
+    {
+      "path": "policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+      "url": "https://huggingface.co/shenjianliang/smolvla_policy/resolve/5753a3bff43a5014b9320476458ae9e4c5aae02d/policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+      "bytes": 7624,
+      "sha256": "cbf980d7ea3aea4220393cc950694b276bfeba97d83b29a7f9c6fd2f814360cb"
+    },
+    {
+      "path": "policy_preprocessor.json",
+      "url": "https://huggingface.co/shenjianliang/smolvla_policy/resolve/5753a3bff43a5014b9320476458ae9e4c5aae02d/policy_preprocessor.json",
+      "bytes": 1795,
+      "sha256": "a16d176fd061d11d44f2723a55f1f10e040e8cfd1c126dd8c20bd3af2cf28c9c"
+    },
+    {
+      "path": "policy_preprocessor_step_5_normalizer_processor.safetensors",
+      "url": "https://huggingface.co/shenjianliang/smolvla_policy/resolve/5753a3bff43a5014b9320476458ae9e4c5aae02d/policy_preprocessor_step_5_normalizer_processor.safetensors",
+      "bytes": 7624,
+      "sha256": "cbf980d7ea3aea4220393cc950694b276bfeba97d83b29a7f9c6fd2f814360cb"
+    },
+    {
+      "path": "train_config.json",
+      "url": "https://huggingface.co/shenjianliang/smolvla_policy/resolve/5753a3bff43a5014b9320476458ae9e4c5aae02d/train_config.json",
+      "bytes": 6365,
+      "sha256": "875a8df4766b82c6059a948fc6c4ba834f89c1d5bed579d8af476cfb608d8a8a"
+    }
+  ],
+  "derived_statistics_sha256": "19299ae6225f3def5705ee7d379bbe874fc40c78a9265db8672b299d37bc0d4f",
+  "declared_training_dataset": {
+    "repo_id": "shenjianliang/dm_arm_test",
+    "root": null,
+    "episodes": null,
+    "image_transforms": {
+      "enable": false,
+      "max_num_transforms": 3,
+      "random_order": false,
+      "tfs": {
+        "brightness": {
+          "weight": 1.0,
+          "type": "ColorJitter",
+          "kwargs": {
+            "brightness": [
+              0.8,
+              1.2
+            ]
+          }
+        },
+        "contrast": {
+          "weight": 1.0,
+          "type": "ColorJitter",
+          "kwargs": {
+            "contrast": [
+              0.8,
+              1.2
+            ]
+          }
+        },
+        "saturation": {
+          "weight": 1.0,
+          "type": "ColorJitter",
+          "kwargs": {
+            "saturation": [
+              0.5,
+              1.5
+            ]
+          }
+        },
+        "hue": {
+          "weight": 1.0,
+          "type": "ColorJitter",
+          "kwargs": {
+            "hue": [
+              -0.05,
+              0.05
+            ]
+          }
+        },
+        "sharpness": {
+          "weight": 1.0,
+          "type": "SharpnessJitter",
+          "kwargs": {
+            "sharpness": [
+              0.5,
+              1.5
+            ]
+          }
+        },
+        "affine": {
+          "weight": 1.0,
+          "type": "RandomAffine",
+          "kwargs": {
+            "degrees": [
+              -5.0,
+              5.0
+            ],
+            "translate": [
+              0.05,
+              0.05
+            ]
+          }
+        }
+      }
+    },
+    "revision": null,
+    "use_imagenet_stats": true,
+    "video_backend": "torchcodec",
+    "streaming": false
+  },
+  "declared_lineage_cluster": "shenjianliang/dm_arm_test",
+  "base_model": {
+    "publisher_card": "lerobot/smolvla_base",
+    "configured_pretrained_path": "D:\\work\\robot\\RobotARM\\smolvla_base",
+    "training_base_revision_attested": false
+  },
+  "saved_preprocessor_steps": [
+    "rename_observations_processor",
+    "to_batch_processor",
+    "smolvla_new_line_processor",
+    "tokenizer_processor",
+    "device_processor",
+    "normalizer_processor"
+  ],
+  "saved_postprocessor_steps": [
+    "unnormalizer_processor",
+    "device_processor"
+  ],
+  "action_dimensions": [
+    7
+  ],
+  "state_dimensions": [
+    7
+  ],
+  "normalization": {
+    "pre": {
+      "eps": 1e-08,
+      "features": {
+        "observation.state": {
+          "type": "STATE",
+          "shape": [
+            7
+          ]
+        },
+        "observation.images.wrist": {
+          "type": "VISUAL",
+          "shape": [
+            3,
+            480,
+            640
+          ]
+        },
+        "observation.images.front": {
+          "type": "VISUAL",
+          "shape": [
+            3,
+            480,
+            640
+          ]
+        },
+        "action": {
+          "type": "ACTION",
+          "shape": [
+            7
+          ]
+        }
+      },
+      "norm_map": {
+        "VISUAL": "IDENTITY",
+        "STATE": "MEAN_STD",
+        "ACTION": "MEAN_STD"
+      }
+    },
+    "post": {
+      "eps": 1e-08,
+      "features": {
+        "action": {
+          "type": "ACTION",
+          "shape": [
+            7
+          ]
+        }
+      },
+      "norm_map": {
+        "VISUAL": "IDENTITY",
+        "STATE": "MEAN_STD",
+        "ACTION": "MEAN_STD"
+      }
+    }
+  },
+  "scope": [
+    "Metadata inspected/decoded for eligibility only; not blinded and no execution outcomes",
+    "Cards declare SmolVLA base; exact training base/dataset snapshots are unattested",
+    "Physical units/modes, calibration, camera identity and training source remain unverified",
+    "No dataset episodes, weights, model/tokenizer or native processor execution",
+    "Dataset licensing is not inherited from the model card",
+    "Freeze lineage assignment, intervention recipes and analysis before any evaluation"
+  ],
+  "weights_downloaded": false
+}
