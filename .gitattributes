@@ -17,6 +17,9 @@ validation/action-study-development-*/*.stdout.txt -text whitespace=blank-at-eol
 validation/action-study-development-*/*.stderr.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 validation/matched-workflows-development-*/*.stdout.txt -text -whitespace
 validation/matched-workflows-development-*/*.stderr.txt -text -whitespace
+# The custom transport runner uses the unprefixed raw capture filenames.
+validation/policy-space-numeric-development-*/stdout.txt -text -whitespace
+validation/policy-space-numeric-development-*/stderr.txt -text -whitespace
 # Matched leaves preserve exact copied publisher/license and generated binary bytes.
 validation/matched-assets-development-*/cells/** -text -whitespace
 research/publication/prepared/action-study-*/cells/** -text -whitespace

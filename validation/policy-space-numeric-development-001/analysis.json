@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "development_only": true,
+  "final_evaluation": false,
+  "accepted_replay_queries": 520,
+  "rejected_structural_controls": 4,
+  "cells": {
+    "act_move_cube_lerobot": {
+      "numeric_control": {
+        "policy_space_transport": "ACCEPT",
+        "replayed_queries": 104,
+        "maximum_float32_conversion_error_raw_coordinate": 3.74541437508924e-06,
+        "numerical_methods": {
+          "compiled": "PASS",
+          "independent_pointwise": "PASS",
+          "strong_relational": "PASS"
+        },
+        "robotruth": {
+          "native_passed": false,
+          "full_certification": "WITHHELD",
+          "applicability": "STATIC_SOURCE_ARTIFACT_COMPARISON",
+          "known_statistics_identity_difference": false,
+          "underlying_artifact_differences_counted": 0,
+          "limits": "One union hash covers both normalizers; no separate observation-numeric finding"
+        },
+        "checkpoint_physical_authority_status": "UNKNOWN",
+        "interpretation": "Valid raw-vector transport acceptance; no numerical equality or safety verdict"
+      },
+      "offset_intervention": {
+        "policy_space_transport": "ACCEPT",
+        "replayed_queries": 104,
+        "maximum_float32_conversion_error_raw_coordinate": 3.74541437508924e-06,
+        "numerical_methods": {
+          "compiled": "FAIL",
+          "independent_pointwise": "FAIL",
+          "strong_relational": "FAIL"
+        },
+        "robotruth": {
+          "native_passed": false,
+          "full_certification": "WITHHELD",
+          "applicability": "STATIC_SOURCE_ARTIFACT_COMPARISON",
+          "known_statistics_identity_difference": true,
+          "underlying_artifact_differences_counted": 1,
+          "limits": "One union hash covers both normalizers; no separate observation-numeric finding"
+        },
+        "checkpoint_physical_authority_status": "UNKNOWN",
+        "interpretation": "Valid raw-vector transport acceptance; no numerical equality or safety verdict"
+      },
+      "slope_intervention": {
+        "policy_space_transport": "ACCEPT",
+        "replayed_queries": 104,
+        "maximum_float32_conversion_error_raw_coordinate": 3.74541437508924e-06,
+        "numerical_methods": {
+          "compiled": "FAIL",
+          "independent_pointwise": "FAIL",
+          "strong_relational": "FAIL"
+        },
+        "robotruth": {
+          "native_passed": false,
+          "full_certification": "WITHHELD",
+          "applicability": "STATIC_SOURCE_ARTIFACT_COMPARISON",
+          "known_statistics_identity_difference": true,
+          "underlying_artifact_differences_counted": 1,
+          "limits": "One union hash covers both normalizers; no separate observation-numeric finding"
+        },
+        "checkpoint_physical_authority_status": "UNKNOWN",
+        "interpretation": "Valid raw-vector transport acceptance; no numerical equality or safety verdict"
+      },
+      "fixed_offset_slope_composition": {
+        "policy_space_transport": "ACCEPT",
+        "replayed_queries": 104,
+        "maximum_float32_conversion_error_raw_coordinate": 3.74541437508924e-06,
+        "numerical_methods": {
+          "compiled": "FAIL",
+          "independent_pointwise": "FAIL",
+          "strong_relational": "FAIL"
+        },
+        "robotruth": {
+          "native_passed": false,
+          "full_certification": "WITHHELD",
+          "applicability": "STATIC_SOURCE_ARTIFACT_COMPARISON",
+          "known_statistics_identity_difference": true,
+          "underlying_artifact_differences_counted": 1,
+          "limits": "One union hash covers both normalizers; no separate observation-numeric finding"
+        },
+        "checkpoint_physical_authority_status": "UNKNOWN",
+        "interpretation": "Valid raw-vector transport acceptance; no numerical equality or safety verdict"
+      },
+      "equivalent_f64_serialization": {
+        "policy_space_transport": "ACCEPT",
+        "replayed_queries": 104,
+        "maximum_float32_conversion_error_raw_coordinate": 3.74541437508924e-06,
+        "numerical_methods": {
+          "compiled": "PASS",
+          "independent_pointwise": "PASS",
+          "strong_relational": "PASS"
+        },
+        "robotruth": {
+          "native_passed": false,
+          "full_certification": "WITHHELD",
+          "applicability": "STATIC_SOURCE_ARTIFACT_COMPARISON",
+          "known_statistics_identity_difference": true,
+          "underlying_artifact_differences_counted": 1,
+          "limits": "One union hash covers both normalizers; no separate observation-numeric finding"
+        },
+        "checkpoint_physical_authority_status": "UNKNOWN",
+        "interpretation": "Valid raw-vector transport acceptance; no numerical equality or safety verdict"
+      }
+    }
+  },
+  "limits": [
+    "One reused development checkpoint lineage; conditions and queries are correlated",
+    "Actual captured decoder outputs replayed by an adapter; no checkpoint policy inference",
+    "Stock dispatcher/MessagePack/selected custom schemas; no WebSocket client/server run",
+    "Authored raw-index schemas do not supply physical units, gripper conventions or robot state",
+    "All available numerical statistics supplied as metadata; native structural validation has a different scope",
+    "Float64 decoder values become float32 on the native wire; roundoff is reported without a safety threshold",
+    "Transport acceptance is not a semantic miss, certification, task success or evidence of superiority"
+  ]
+}

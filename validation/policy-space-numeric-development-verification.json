@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "development_only": true,
+  "final_evaluation": false,
+  "prospective_native_outcomes_observed": false,
+  "evidence": "validation/policy-space-numeric-development-001/summary.json",
+  "source_decoder_evidence": "validation/matched-workflows-development-001/summary.json",
+  "new_tests": 28,
+  "targeted_tests": {
+    "passed": 28,
+    "seconds": 41.55
+  },
+  "no_ml_full_suite": {
+    "passed": 327,
+    "skipped": 28,
+    "seconds": 127.01
+  },
+  "pinned_lerobot_full_suite": {
+    "passed": 350,
+    "skipped": 5,
+    "seconds": 136.12
+  },
+  "remaining_skip_scope": "Five existing opt-in isolated OpenPI tests; this milestone uses actual source-bound LeRobot decoder captures and independently executes Policy Space",
+  "initial_test_setup_issue": {
+    "passed": 3,
+    "setup_errors": 25,
+    "seconds": 9.28,
+    "reason": "Pytest default temporary directory was not writable in the sandbox. Tests rerun with an explicit workspace-contained --basetemp; no product code change was needed for this setup error."
+  },
+  "test_independence": "The raw-profile unit test reads the frozen metadata plan; full data-only replay runs in isolated subprocesses, independent of ML imports in other integration tests.",
+  "lint": "ruff check and format --check passed for src, tests, scripts and examples/so101/build_cases.py; 90 files",
+  "optimized_replay": "The source-bound native transport capture and unchanged prospective metadata compilation passed -O data-only verification",
+  "accepted_actual_decoder_output_replays": 520,
+  "rejected_separate_structural_controls": 4,
+  "actual_callback_counts_including_controls": {
+    "initialize": 9,
+    "ingest": 522,
+    "infer_replay": 522,
+    "finalize": 9
+  },
+  "native_runtime": {
+    "setup_seconds": 0.13413980000768788,
+    "dispatch_seconds": 0.04456849998678081,
+    "accepted_replay_queries": 520,
+    "rejected_structural_controls": 4,
+    "python": "3.13.7",
+    "total_wall_seconds": 0.8786650999973062,
+    "peak_rss_bytes": 48603136,
+    "network_events": []
+  },
+  "review_repair": "Retain exact typed codec-decoded request inputs and model output arrays with explicit nonfinite tags; verify exact fixed mutation recipes, native errors and callback counts, including rehashed substitution regressions. Follow-up review found no remaining material issue in that repair.",
+  "native_api_adjustment": "Partial explicit selectors require an embodiment. Use supported native automatic selection of the single declared pair, record the actual selected pair, and supply no invented physical embodiment.",
+  "scope": "One reused development lineage, correlated queries/mutations and an additional equivalent-value serialization control. Authored raw-vector contracts, native dispatcher/MessagePack/lifecycle, float32 wire conversion. No learned policy inference, WebSocket service, physical conformance or numerical superiority claim. Joined numerical verdicts refer to the pre-transport float64 decoder boundary."
+}

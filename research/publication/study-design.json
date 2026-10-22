@@ -197,7 +197,7 @@
   ],
   "remaining_freeze_gates": [
     "Add a committed-freeze-verified selected-metadata input/native gate to the validated action-only development acquisition; prospective cells remain prohibited until then.",
-    "Validate the supported Policy Space custom numeric transport workflow; retain the exact-shared-file stock robotruth comparison and native vocabulary; finalize method applicability and reporting configuration.",
+    "Finalize matched-evidence configuration and reporting with the validated stock robotruth identity workflow and Policy Space custom numeric transport; preserve native vocabulary and separate contract scopes.",
     "Complete final runner/reporting/baseline validation using development metadata only; preserve the new native development evidence and same-relation witness checks.",
     "Freeze exact per-case inputs, numerical profiles, condition artifacts, seeds, budgets, method applicability and all execution/analysis source hashes in a committed protocol.",
     "Run prospective cells only after verifying that committed freeze; retain failures and deviations."
@@ -212,7 +212,8 @@
     "native_development_evidence": "validation/action-study-development-001/summary.json",
     "native_execution_scope": "Fixed development-only inputs; prospective native gate is not implemented",
     "prospective_execution_gate_implemented": false,
-    "matched_native_artifact_evidence": "validation/matched-workflows-development-001/summary.json"
+    "matched_native_artifact_evidence": "validation/matched-workflows-development-001/summary.json",
+    "policy_space_custom_transport_evidence": "validation/policy-space-numeric-development-001/summary.json"
   },
   "prepared_assets": {
     "path": "research/publication/prepared/action-study-001/plan.json",

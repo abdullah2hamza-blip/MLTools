@@ -1,17 +1,38 @@
 {
   "schema_version": 1,
-  "status": "SELECTED_SCOPES_WITH_CUSTOM_POLICY_SPACE_PATH_PENDING",
+  "status": "SELECTED_SCOPES_DEVELOPMENT_VALIDATED_NOT_FROZEN",
   "final_protocol_frozen": false,
   "prospective_native_outcomes_observed": false,
   "scope": "Selected action-only published-metadata cells; temporal/controller development strata are reported separately",
   "methods": {
-    "compiled_obligations": {"applicability": "NUMERICAL_CONFORMANCE", "evidence": "Canonical native decoder observations, independently decoded intended statistics, raw-index units and explicit runtime profile"},
-    "independent_pointwise": {"applicability": "NUMERICAL_CONFORMANCE", "evidence": "Exactly the same canonical observations/reference/profile; stateless in this action-only domain"},
-    "strong_relational": {"applicability": "NUMERICAL_CONFORMANCE", "evidence": "Exactly the same observations and partial authority, with independently implemented pointwise/paired/midpoint checks"},
-    "manual_random_designs": {"applicability": "SHARED_ORACLE_QUERY_GEOMETRY", "evidence": "Same domain, eight equal-budget designs and shared oracle; repeated seeds are not independent cases"},
-    "static_statistics": {"applicability": "NUMERICAL_ARTIFACT_COMPARISON", "evidence": "Actual intended and deployment statistics, including every explicit intervention"},
-    "native_roundtrips": {"applicability": "NUMERICAL_WORKFLOW", "evidence": "Actual intended/candidate encoders and decoders; self consistency and independent intended-to-candidate comparisons retained separately; auxiliary calls charged"},
-    "normalization_certificate": {"applicability": "FINITE_DRIFT_REPORT", "evidence": "Same designed normalized actions, separately decoded intended/deployed arrays, explicit framework coordinate profiles; no fitted decision or safety threshold"},
+    "compiled_obligations": {
+      "applicability": "NUMERICAL_CONFORMANCE",
+      "evidence": "Canonical native decoder observations, independently decoded intended statistics, raw-index units and explicit runtime profile"
+    },
+    "independent_pointwise": {
+      "applicability": "NUMERICAL_CONFORMANCE",
+      "evidence": "Exactly the same canonical observations/reference/profile; stateless in this action-only domain"
+    },
+    "strong_relational": {
+      "applicability": "NUMERICAL_CONFORMANCE",
+      "evidence": "Exactly the same observations and partial authority, with independently implemented pointwise/paired/midpoint checks"
+    },
+    "manual_random_designs": {
+      "applicability": "SHARED_ORACLE_QUERY_GEOMETRY",
+      "evidence": "Same domain, eight equal-budget designs and shared oracle; repeated seeds are not independent cases"
+    },
+    "static_statistics": {
+      "applicability": "NUMERICAL_ARTIFACT_COMPARISON",
+      "evidence": "Actual intended and deployment statistics, including every explicit intervention"
+    },
+    "native_roundtrips": {
+      "applicability": "NUMERICAL_WORKFLOW",
+      "evidence": "Actual intended/candidate encoders and decoders; self consistency and independent intended-to-candidate comparisons retained separately; auxiliary calls charged"
+    },
+    "normalization_certificate": {
+      "applicability": "FINITE_DRIFT_REPORT",
+      "evidence": "Same designed normalized actions, separately decoded intended/deployed arrays, explicit framework coordinate profiles; no fitted decision or safety threshold"
+    },
     "robotruth": {
       "applicability": "STATIC_SOURCE_ARTIFACT_COMPARISON",
       "revision": "8eb1704cf446239e3f03687c2ebd707cbab68e98",
@@ -24,29 +45,41 @@
     "robot_policy_preflight": {
       "applicability": "INPUT_EVIDENCE_UNAVAILABLE_FOR_FULL_PHYSICAL_CONTRACT",
       "revision": "09137467bbf988bf5f4cc7418f8e300eaa6dd191",
-      "missing": ["authoritative physical units", "source-grounded robot contract and frequency"],
+      "missing": [
+        "authoritative physical units",
+        "source-grounded robot contract and frequency"
+      ],
       "limits": "Do not invent fields to obtain a native verdict. Native input rejection is separate from incompatibility; normalization-vector structural checks do not establish equality of two statistic bundles.",
       "development_control": "validation/native-baselines-002/summary.json"
     },
     "policy_space": {
       "stock_embodiment_schema": "N/A_GROUNDED_MAPPING; raw 6/7-coordinate outputs cannot be padded or relabeled as its stock 8-coordinate joint contract",
-      "custom_numeric_transport": "APPLICABLE_PATH_PENDING_VALIDATION",
+      "custom_numeric_transport": "DEVELOPMENT_VALIDATED_STRUCTURAL_REPLAY",
       "revision": "4bdd7ed9b97131878fb745018ad898dfa06cc999",
       "primary_source": "policy_space_protocol/contracts/registry.py supports POLICY_SPACE_CONTRACTS_DIR; policy_space/conformance.py and runtime/server.py validate selected custom contracts",
-      "required_before_freeze": "Validate a clearly authored raw-coordinate contract through the stock dispatcher/codec/lifecycle using actual decoder observations. Supply available metadata, preserve float32 wire conversion and structural scope; no invented physical embodiment or learned-model execution.",
-      "development_control": "validation/native-baselines-002/summary.json"
+      "development_control": "validation/policy-space-numeric-development-001/summary.json",
+      "actual_workflow": "Stock custom registry, automatic single-pair selection, dispatcher/MessagePack and lifecycle; 520 actual captured decoder outputs replayed as float64 and returned on the native float32 wire; four separately labeled structural negative controls",
+      "evidence": "Same intended/deployment statistics and file identities supplied to service metadata and initialization callback; raw-index contracts without physical embodiment or learned-policy claims",
+      "interpretation": "Transport acceptance is separate from numerical equality, strict artifact identity and certification; no scored semantic miss or superiority result",
+      "prior_workflow_controls": "validation/native-baselines-002/summary.json",
+      "numerical_boundary": "Joined numerical verdicts refer to the original float64 decoder before transport. Native float32 wire conversion is measured separately, not silently included in those numerical verdicts."
     },
     "tether": {
       "applicability": "N/A_REQUIRED_ROLLOUT_EVIDENCE",
       "revision": "dcbcbb5a669fa18ae07b1c22d17bd5bd386a33da",
-      "missing": ["paired native/exported policy rollout identities", "required outcome and execution telemetry"],
+      "missing": [
+        "paired native/exported policy rollout identities",
+        "required outcome and execution telemetry"
+      ],
       "limits": "Full verification unexecuted; prior module controls are separate. No fabricated task success, safety or latency evidence; no miss/false-alarm claim.",
       "audit": "baseline-audit.md"
     },
     "actionabi": {
       "applicability": "N/A_NATIVE_RESPONSE_MODEL",
       "revision": "5ad1d45a082860f5f16bb43f3c6bbb0758ec6c11",
-      "missing": ["two observed state-transition episodes under a grounded response model"],
+      "missing": [
+        "two observed state-transition episodes under a grounded response model"
+      ],
       "limits": "Decoder queries are not robot transitions. Do not use decoded commands as observed next states or invent timestamps. Credit native equivalence/refusal and separating-probe capabilities from their separate CPU controls.",
       "development_control": "validation/actionabi-native-001/summary.json"
     },
@@ -67,6 +100,6 @@
     "Unavailable evidence, N/A, input rejection and withheld certification are limitations, not semantic misses or false alarms.",
     "Authority/unit erasure does not erase still available artifact bytes; remaining identity findings are legitimate static evidence under their own scope.",
     "Source extractor heuristics are not independently established physical action semantics.",
-    "Finish the supported custom Policy Space workflow and complete committed protocol before prospective outcomes."
+    "Complete the committed protocol and selected-case gate before prospective outcomes; custom Policy Space transport now has development validation."
   ]
 }
