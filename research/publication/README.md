@@ -22,6 +22,8 @@ The versioned `mltools probe` workflow now supports explicit execution, offline 
 
 `integrations/baselines/` now pins complete preflight and Policy Space packages in a hash-locked no-ML environment. `validation/native-baselines-002/` records genuine preflight CLI and Policy Space dispatcher/MessagePack/schema/lifecycle controls. These establish applicability and credit native validation behavior. They do not constitute final matched-evidence comparisons, full checkpoint/service runs or a superiority result. Tether's full paired-rollout verification and the additional close tools still require applicable comparison paths.
 
+`src/mltools/research_oracles.py` and `research_compare.py` now implement independent pointwise and strong relational numerical comparators, a stateless subdomain, and explicitly scoped authority/provenance/witness ablations. `development/oracles-002/` records identical-observation replay from an installed wheel without ML dependencies. The strong oracle matches the compiler on these development cases; offset erasure also makes a constant bias unidentifiable for every oracle. `docs/research-oracles.md` documents propagated component error budgets, independent rank guards and limits. These are oracle comparisons on supplied queries, not completed manual/random query-generation experiments.
+
 ## Completion ledger
 
 | Objective | Current evidence | Still required |
@@ -31,7 +33,7 @@ The versioned `mltools probe` workflow now supports explicit execution, offline 
 | Tool | Versioned probe API/CLI for both frameworks, offline replay and real reduced regression execution; original boundary checker | Integration hardening and broader shared semantic coverage |
 | Benchmark | Three-family candidate ledger; published ACT and SmolVLA metadata; pinned controller and incident source audits | Final eligible corpus, independent lineages, second embodiment artifact scope and real incident reproductions |
 | Evaluation | Draft protocol, leakage/independence rules | Frozen inventory and splits before final runs; real experiments and uncertainty analysis |
-| Baselines/ablations | Pinned full-package preflight CLI and Policy Space runtime controls; expanded Tether/source audit and close-tool overlap | Matched-evidence full applicable comparisons, strong stateful/manual paired baseline, ablations and attribution |
+| Baselines/ablations | Native preflight/Policy Space controls; independently implemented pointwise/all-pairs/stateless oracles and scoped ablations on shared captures; expanded source audit | Final matched-evidence comparisons, v0.1 stateful and manual/random query design, certificates/external tools and attribution |
 | Reproducibility | Existing prototype evidence, OpenPI subset locks, development capture/reanalysis runner | Final experiment runner, raw research results, figure/table pipeline and clean main-result reproduction |
 | Paper | No research paper written | Verified citations, full source/bibliography, compiled PDF and visual inspection |
 

@@ -1,0 +1,637 @@
+{
+  "schema_version": 1,
+  "format": "mltools-oracle-comparison-development",
+  "development_only": true,
+  "final_evaluation": false,
+  "case_sha256": "e8e68ded657cafc8a316211d6b3f6e1c76d28ada724627ba0f04fc5412219065",
+  "capture_trace_sha256": "443dad1d7449a523bda1df3f93544abcdfbbb884ad95666a633e1457b3afec3c",
+  "numeric_observations_withheld": false,
+  "common_checks": {
+    "binding": "PASS",
+    "producer": "PASS",
+    "artifacts": "PASS"
+  },
+  "methods": {
+    "compiled": {
+      "method": "affine-obligations-development",
+      "status": "FAIL",
+      "applicability": "APPLICABLE",
+      "suite_sha256": "7e95cdec65c8519f2990d097fd58045b995d32b2617c609a455f3d125e2060d4",
+      "reference_sha256": "0d66132acdb60375743bf9ca260d1b5ef1c45814e6dc2c0d1b328dfad36c9e64",
+      "evidence_sha256": "443dad1d7449a523bda1df3f93544abcdfbbb884ad95666a633e1457b3afec3c",
+      "first_divergence": {
+        "obligation": "effect:origin:0",
+        "output": "shoulder_pan.pos",
+        "status": "FAIL",
+        "expected": 10,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 4.440892098500626e-16
+      },
+      "coverage": {
+        "rank_by_output": {
+          "shoulder_pan.pos": 19,
+          "shoulder_lift.pos": 19,
+          "elbow_flex.pos": 19,
+          "wrist_flex.pos": 19,
+          "wrist_roll.pos": 19,
+          "gripper.pos": 19
+        },
+        "required_rank": 19,
+        "planned_queries": 37,
+        "observed_queries": 37
+      },
+      "comparison_count": 222,
+      "witness_queries": [
+        "plus:origin:0",
+        "minus:origin:0"
+      ],
+      "scope": "Compiled finite affine obligations plus design-rank diagnostic",
+      "full_requested_status": "FAIL"
+    },
+    "pointwise": {
+      "schema_version": 1,
+      "method": "pointwise-reference-development",
+      "status": "FAIL",
+      "applicability": "APPLICABLE",
+      "suite_sha256": "7e95cdec65c8519f2990d097fd58045b995d32b2617c609a455f3d125e2060d4",
+      "reference_sha256": "0d66132acdb60375743bf9ca260d1b5ef1c45814e6dc2c0d1b328dfad36c9e64",
+      "evidence_sha256": "443dad1d7449a523bda1df3f93544abcdfbbb884ad95666a633e1457b3afec3c",
+      "groups": {
+        "pointwise": {
+          "status": "FAIL",
+          "counts": {
+            "PASS": 202,
+            "FAIL": 20
+          }
+        }
+      },
+      "comparison_count": 222,
+      "full_design_coverage_status": "PASS",
+      "first_divergence": {
+        "kind": "pointwise",
+        "output": "shoulder_pan.pos",
+        "expected": 11.0,
+        "actual": 1.0,
+        "queries": [
+          "plus:origin:0"
+        ],
+        "output_resolution_floor": 1.9984014443252818e-15,
+        "comparison_budget": 1.4000000000000001e-06
+      },
+      "coverage": {
+        "supplied_queries": 37,
+        "eligible_queries": 37,
+        "queried_ids": [
+          "center",
+          "plus:action:0",
+          "minus:action:0",
+          "plus:action:1",
+          "minus:action:1",
+          "plus:action:2",
+          "minus:action:2",
+          "plus:action:3",
+          "minus:action:3",
+          "plus:action:4",
+          "minus:action:4",
+          "plus:action:5",
+          "minus:action:5",
+          "plus:origin:0",
+          "minus:origin:0",
+          "plus:origin:1",
+          "minus:origin:1",
+          "plus:origin:2",
+          "minus:origin:2",
+          "plus:origin:3",
+          "minus:origin:3",
+          "plus:origin:4",
+          "minus:origin:4",
+          "plus:origin:5",
+          "minus:origin:5",
+          "plus:current:0",
+          "minus:current:0",
+          "plus:current:1",
+          "minus:current:1",
+          "plus:current:2",
+          "minus:current:2",
+          "plus:current:3",
+          "minus:current:3",
+          "plus:current:4",
+          "minus:current:4",
+          "plus:current:5",
+          "minus:current:5"
+        ],
+        "observed_eligible_queries": 37,
+        "rank_by_output": {
+          "shoulder_pan.pos": 19,
+          "shoulder_lift.pos": 19,
+          "elbow_flex.pos": 19,
+          "wrist_flex.pos": 19,
+          "wrist_roll.pos": 19,
+          "gripper.pos": 19
+        },
+        "required_full_rank": 19
+      },
+      "scope": "Finite numerical oracle on the supplied design; not new probe generation",
+      "limitations": [
+        "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+        "Binary64 resolution diagnostic is not an upstream error bound",
+        "Oracle runtime excludes acquiring the shared adapter observations",
+        "Contrast budgets propagate component tolerances and sampled closure residuals"
+      ],
+      "full_requested_status": "FAIL"
+    },
+    "strong_relational": {
+      "schema_version": 1,
+      "method": "relational-reference-development",
+      "status": "FAIL",
+      "applicability": "APPLICABLE",
+      "suite_sha256": "7e95cdec65c8519f2990d097fd58045b995d32b2617c609a455f3d125e2060d4",
+      "reference_sha256": "0d66132acdb60375743bf9ca260d1b5ef1c45814e6dc2c0d1b328dfad36c9e64",
+      "evidence_sha256": "443dad1d7449a523bda1df3f93544abcdfbbb884ad95666a633e1457b3afec3c",
+      "groups": {
+        "pointwise": {
+          "status": "FAIL",
+          "counts": {
+            "PASS": 202,
+            "FAIL": 20
+          }
+        },
+        "paired": {
+          "status": "FAIL",
+          "counts": {
+            "PASS": 3316,
+            "FAIL": 680
+          }
+        },
+        "midpoint": {
+          "status": "PASS",
+          "counts": {
+            "PASS": 108
+          }
+        }
+      },
+      "comparison_count": 4326,
+      "full_design_coverage_status": "PASS",
+      "first_divergence": {
+        "kind": "pointwise",
+        "output": "shoulder_pan.pos",
+        "expected": 11.0,
+        "actual": 1.0,
+        "queries": [
+          "plus:origin:0"
+        ],
+        "output_resolution_floor": 1.9984014443252818e-15,
+        "comparison_budget": 1.4000000000000001e-06
+      },
+      "coverage": {
+        "supplied_queries": 37,
+        "eligible_queries": 37,
+        "queried_ids": [
+          "center",
+          "plus:action:0",
+          "minus:action:0",
+          "plus:action:1",
+          "minus:action:1",
+          "plus:action:2",
+          "minus:action:2",
+          "plus:action:3",
+          "minus:action:3",
+          "plus:action:4",
+          "minus:action:4",
+          "plus:action:5",
+          "minus:action:5",
+          "plus:origin:0",
+          "minus:origin:0",
+          "plus:origin:1",
+          "minus:origin:1",
+          "plus:origin:2",
+          "minus:origin:2",
+          "plus:origin:3",
+          "minus:origin:3",
+          "plus:origin:4",
+          "minus:origin:4",
+          "plus:origin:5",
+          "minus:origin:5",
+          "plus:current:0",
+          "minus:current:0",
+          "plus:current:1",
+          "minus:current:1",
+          "plus:current:2",
+          "minus:current:2",
+          "plus:current:3",
+          "minus:current:3",
+          "plus:current:4",
+          "minus:current:4",
+          "plus:current:5",
+          "minus:current:5"
+        ],
+        "observed_eligible_queries": 37,
+        "rank_by_output": {
+          "shoulder_pan.pos": 19,
+          "shoulder_lift.pos": 19,
+          "elbow_flex.pos": 19,
+          "wrist_flex.pos": 19,
+          "wrist_roll.pos": 19,
+          "gripper.pos": 19
+        },
+        "required_full_rank": 19
+      },
+      "scope": "Finite numerical oracle on the supplied design; not new probe generation",
+      "limitations": [
+        "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+        "Binary64 resolution diagnostic is not an upstream error bound",
+        "Oracle runtime excludes acquiring the shared adapter observations",
+        "Contrast budgets propagate component tolerances and sampled closure residuals"
+      ],
+      "full_requested_status": "FAIL"
+    },
+    "stateless_diagonal": {
+      "schema_version": 1,
+      "method": "stateless-diagonal-development",
+      "status": "PASS",
+      "applicability": "APPLICABLE",
+      "suite_sha256": "7e95cdec65c8519f2990d097fd58045b995d32b2617c609a455f3d125e2060d4",
+      "reference_sha256": "0d66132acdb60375743bf9ca260d1b5ef1c45814e6dc2c0d1b328dfad36c9e64",
+      "evidence_sha256": "443dad1d7449a523bda1df3f93544abcdfbbb884ad95666a633e1457b3afec3c",
+      "groups": {
+        "pointwise": {
+          "status": "PASS",
+          "counts": {
+            "PASS": 78
+          }
+        }
+      },
+      "comparison_count": 78,
+      "full_design_coverage_status": "UNKNOWN",
+      "first_divergence": null,
+      "coverage": {
+        "supplied_queries": 37,
+        "eligible_queries": 13,
+        "queried_ids": [
+          "center",
+          "plus:action:0",
+          "minus:action:0",
+          "plus:action:1",
+          "minus:action:1",
+          "plus:action:2",
+          "minus:action:2",
+          "plus:action:3",
+          "minus:action:3",
+          "plus:action:4",
+          "minus:action:4",
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "observed_eligible_queries": 13,
+        "rank_by_output": {
+          "shoulder_pan.pos": 7,
+          "shoulder_lift.pos": 7,
+          "elbow_flex.pos": 7,
+          "wrist_flex.pos": 7,
+          "wrist_roll.pos": 7,
+          "gripper.pos": 7
+        },
+        "required_full_rank": 19
+      },
+      "scope": "Only supplied queries with origin=current in matching declared units",
+      "limitations": [
+        "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+        "Binary64 resolution diagnostic is not an upstream error bound",
+        "Oracle runtime excludes acquiring the shared adapter observations",
+        "Contrast budgets propagate component tolerances and sampled closure residuals"
+      ],
+      "excluded_queries": 24,
+      "full_requested_status": "UNKNOWN"
+    }
+  },
+  "ablations": {
+    "offset_authority_erased": {
+      "operation": "Erase reference offsets; preserve original case and capture identities",
+      "reference_sha256": "7e9106034e427dd9aba56c3e37805f245a718e3a452a8e2a890999b1a48e240c",
+      "methods": {
+        "compiled": {
+          "method": "affine-obligations-development",
+          "status": "FAIL",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "7e95cdec65c8519f2990d097fd58045b995d32b2617c609a455f3d125e2060d4",
+          "reference_sha256": "7e9106034e427dd9aba56c3e37805f245a718e3a452a8e2a890999b1a48e240c",
+          "evidence_sha256": "443dad1d7449a523bda1df3f93544abcdfbbb884ad95666a633e1457b3afec3c",
+          "first_divergence": {
+            "obligation": "effect:origin:0",
+            "output": "shoulder_pan.pos",
+            "status": "FAIL",
+            "expected": 10,
+            "actual": 0.0,
+            "queries": [
+              "plus:origin:0",
+              "minus:origin:0"
+            ],
+            "output_resolution_floor": 4.440892098500626e-16
+          },
+          "coverage": {
+            "rank_by_output": {
+              "shoulder_pan.pos": 19,
+              "shoulder_lift.pos": 19,
+              "elbow_flex.pos": 19,
+              "wrist_flex.pos": 19,
+              "wrist_roll.pos": 19,
+              "gripper.pos": 19
+            },
+            "required_rank": 19,
+            "planned_queries": 37,
+            "observed_queries": 37
+          },
+          "comparison_count": 222,
+          "witness_queries": [
+            "plus:origin:0",
+            "minus:origin:0"
+          ],
+          "scope": "Compiled finite affine obligations plus design-rank diagnostic",
+          "full_requested_status": "FAIL"
+        },
+        "pointwise": {
+          "schema_version": 1,
+          "method": "pointwise-reference-development",
+          "status": "UNKNOWN",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "7e95cdec65c8519f2990d097fd58045b995d32b2617c609a455f3d125e2060d4",
+          "reference_sha256": "7e9106034e427dd9aba56c3e37805f245a718e3a452a8e2a890999b1a48e240c",
+          "evidence_sha256": "443dad1d7449a523bda1df3f93544abcdfbbb884ad95666a633e1457b3afec3c",
+          "groups": {
+            "pointwise": {
+              "status": "UNKNOWN",
+              "counts": {
+                "UNKNOWN": 222
+              }
+            }
+          },
+          "comparison_count": 222,
+          "full_design_coverage_status": "PASS",
+          "first_divergence": null,
+          "coverage": {
+            "supplied_queries": 37,
+            "eligible_queries": 37,
+            "queried_ids": [
+              "center",
+              "plus:action:0",
+              "minus:action:0",
+              "plus:action:1",
+              "minus:action:1",
+              "plus:action:2",
+              "minus:action:2",
+              "plus:action:3",
+              "minus:action:3",
+              "plus:action:4",
+              "minus:action:4",
+              "plus:action:5",
+              "minus:action:5",
+              "plus:origin:0",
+              "minus:origin:0",
+              "plus:origin:1",
+              "minus:origin:1",
+              "plus:origin:2",
+              "minus:origin:2",
+              "plus:origin:3",
+              "minus:origin:3",
+              "plus:origin:4",
+              "minus:origin:4",
+              "plus:origin:5",
+              "minus:origin:5",
+              "plus:current:0",
+              "minus:current:0",
+              "plus:current:1",
+              "minus:current:1",
+              "plus:current:2",
+              "minus:current:2",
+              "plus:current:3",
+              "minus:current:3",
+              "plus:current:4",
+              "minus:current:4",
+              "plus:current:5",
+              "minus:current:5"
+            ],
+            "observed_eligible_queries": 37,
+            "rank_by_output": {
+              "shoulder_pan.pos": 19,
+              "shoulder_lift.pos": 19,
+              "elbow_flex.pos": 19,
+              "wrist_flex.pos": 19,
+              "wrist_roll.pos": 19,
+              "gripper.pos": 19
+            },
+            "required_full_rank": 19
+          },
+          "scope": "Finite numerical oracle on the supplied design; not new probe generation",
+          "limitations": [
+            "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+            "Binary64 resolution diagnostic is not an upstream error bound",
+            "Oracle runtime excludes acquiring the shared adapter observations",
+            "Contrast budgets propagate component tolerances and sampled closure residuals"
+          ],
+          "full_requested_status": "UNKNOWN"
+        },
+        "strong_relational": {
+          "schema_version": 1,
+          "method": "relational-reference-development",
+          "status": "FAIL",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "7e95cdec65c8519f2990d097fd58045b995d32b2617c609a455f3d125e2060d4",
+          "reference_sha256": "7e9106034e427dd9aba56c3e37805f245a718e3a452a8e2a890999b1a48e240c",
+          "evidence_sha256": "443dad1d7449a523bda1df3f93544abcdfbbb884ad95666a633e1457b3afec3c",
+          "groups": {
+            "pointwise": {
+              "status": "UNKNOWN",
+              "counts": {
+                "UNKNOWN": 222
+              }
+            },
+            "paired": {
+              "status": "FAIL",
+              "counts": {
+                "PASS": 3316,
+                "FAIL": 680
+              }
+            },
+            "midpoint": {
+              "status": "PASS",
+              "counts": {
+                "PASS": 108
+              }
+            }
+          },
+          "comparison_count": 4326,
+          "full_design_coverage_status": "PASS",
+          "first_divergence": {
+            "kind": "paired",
+            "output": "shoulder_pan.pos",
+            "expected": -5.0,
+            "actual": 0.0,
+            "queries": [
+              "center",
+              "plus:origin:0"
+            ],
+            "output_resolution_floor": 4.440892098500626e-16,
+            "comparison_budget": 6e-07
+          },
+          "coverage": {
+            "supplied_queries": 37,
+            "eligible_queries": 37,
+            "queried_ids": [
+              "center",
+              "plus:action:0",
+              "minus:action:0",
+              "plus:action:1",
+              "minus:action:1",
+              "plus:action:2",
+              "minus:action:2",
+              "plus:action:3",
+              "minus:action:3",
+              "plus:action:4",
+              "minus:action:4",
+              "plus:action:5",
+              "minus:action:5",
+              "plus:origin:0",
+              "minus:origin:0",
+              "plus:origin:1",
+              "minus:origin:1",
+              "plus:origin:2",
+              "minus:origin:2",
+              "plus:origin:3",
+              "minus:origin:3",
+              "plus:origin:4",
+              "minus:origin:4",
+              "plus:origin:5",
+              "minus:origin:5",
+              "plus:current:0",
+              "minus:current:0",
+              "plus:current:1",
+              "minus:current:1",
+              "plus:current:2",
+              "minus:current:2",
+              "plus:current:3",
+              "minus:current:3",
+              "plus:current:4",
+              "minus:current:4",
+              "plus:current:5",
+              "minus:current:5"
+            ],
+            "observed_eligible_queries": 37,
+            "rank_by_output": {
+              "shoulder_pan.pos": 19,
+              "shoulder_lift.pos": 19,
+              "elbow_flex.pos": 19,
+              "wrist_flex.pos": 19,
+              "wrist_roll.pos": 19,
+              "gripper.pos": 19
+            },
+            "required_full_rank": 19
+          },
+          "scope": "Finite numerical oracle on the supplied design; not new probe generation",
+          "limitations": [
+            "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+            "Binary64 resolution diagnostic is not an upstream error bound",
+            "Oracle runtime excludes acquiring the shared adapter observations",
+            "Contrast budgets propagate component tolerances and sampled closure residuals"
+          ],
+          "full_requested_status": "FAIL"
+        },
+        "stateless_diagonal": {
+          "schema_version": 1,
+          "method": "stateless-diagonal-development",
+          "status": "UNKNOWN",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "7e95cdec65c8519f2990d097fd58045b995d32b2617c609a455f3d125e2060d4",
+          "reference_sha256": "7e9106034e427dd9aba56c3e37805f245a718e3a452a8e2a890999b1a48e240c",
+          "evidence_sha256": "443dad1d7449a523bda1df3f93544abcdfbbb884ad95666a633e1457b3afec3c",
+          "groups": {
+            "pointwise": {
+              "status": "UNKNOWN",
+              "counts": {
+                "UNKNOWN": 78
+              }
+            }
+          },
+          "comparison_count": 78,
+          "full_design_coverage_status": "UNKNOWN",
+          "first_divergence": null,
+          "coverage": {
+            "supplied_queries": 37,
+            "eligible_queries": 13,
+            "queried_ids": [
+              "center",
+              "plus:action:0",
+              "minus:action:0",
+              "plus:action:1",
+              "minus:action:1",
+              "plus:action:2",
+              "minus:action:2",
+              "plus:action:3",
+              "minus:action:3",
+              "plus:action:4",
+              "minus:action:4",
+              "plus:action:5",
+              "minus:action:5"
+            ],
+            "observed_eligible_queries": 13,
+            "rank_by_output": {
+              "shoulder_pan.pos": 7,
+              "shoulder_lift.pos": 7,
+              "elbow_flex.pos": 7,
+              "wrist_flex.pos": 7,
+              "wrist_roll.pos": 7,
+              "gripper.pos": 7
+            },
+            "required_full_rank": 19
+          },
+          "scope": "Only supplied queries with origin=current in matching declared units",
+          "limitations": [
+            "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+            "Binary64 resolution diagnostic is not an upstream error bound",
+            "Oracle runtime excludes acquiring the shared adapter observations",
+            "Contrast budgets propagate component tolerances and sampled closure residuals"
+          ],
+          "excluded_queries": 24,
+          "full_requested_status": "UNKNOWN"
+        }
+      }
+    },
+    "independent_reference_erased": {
+      "operation": "Erase independent coefficients, offsets, units and authority",
+      "numeric_status": "UNKNOWN",
+      "full_requested_status": "UNKNOWN",
+      "reference_sha256": "b22bb389e092e24d09d4cdd64c98cd643d77df58f5024f96576b965fa8823123",
+      "scope": "Missing independent reference remains UNKNOWN; no self-fitted expectations"
+    },
+    "provenance_checks_omitted": {
+      "removed_checks": [
+        "producer",
+        "artifacts"
+      ],
+      "retained_common_checks": {
+        "binding": "PASS"
+      },
+      "reduced_scope_status": "FAIL",
+      "original_full_requested_status": "FAIL",
+      "scope": "Reduced check set, not certification of original provenance requirements"
+    },
+    "witness_reduction_disabled": {
+      "full_requested_status": "FAIL",
+      "original_queries": 37,
+      "compiled_local_witness_queries": 2,
+      "retained_without_reduction": 37,
+      "scope": "Same detection; diagnostic size only. Fresh replay and reduction cost are separate"
+    }
+  },
+  "limitations": [
+    "Supplied canonical design only; manual/random query selection comparisons remain required",
+    "Relational oracle includes pointwise, all-pairs differences and geometric midpoint checks",
+    "Stateless eligibility uses saved values and declared units; no synthetic diagonal observations",
+    "Reference ablations are data-only analyses, not newly captured or re-bound execution evidence",
+    "Numerical relations have different conditioning; no universal detection advantage is implied",
+    "Original v0.1 stateful checker and applicable external-tool comparisons remain required"
+  ]
+}

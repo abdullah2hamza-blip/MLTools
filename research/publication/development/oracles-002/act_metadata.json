@@ -1,0 +1,576 @@
+{
+  "schema_version": 1,
+  "format": "mltools-oracle-comparison-development",
+  "development_only": true,
+  "final_evaluation": false,
+  "case_sha256": "8b4558967b058ac1d4fb052885cdd8841b582af4b89354789e9d9793f8fe3f4d",
+  "capture_trace_sha256": "5b2c2320ac3b6c1db33c09625625083dd524a1ea40e655c5f9c6e4d427a81106",
+  "numeric_observations_withheld": false,
+  "common_checks": {
+    "binding": "PASS",
+    "producer": "PASS",
+    "artifacts": "PASS",
+    "physical_semantics": "UNKNOWN"
+  },
+  "methods": {
+    "compiled": {
+      "method": "affine-obligations-development",
+      "status": "PASS",
+      "applicability": "APPLICABLE",
+      "suite_sha256": "2b727fa7ee16fac887104b87ff45512e6687b94eea7f4538ac8c10d05e8fb692",
+      "reference_sha256": "eda6435ef3b3b779a0b9f956a4d2367aa4a2543ffc23e098425369800907bc54",
+      "evidence_sha256": "5b2c2320ac3b6c1db33c09625625083dd524a1ea40e655c5f9c6e4d427a81106",
+      "first_divergence": null,
+      "coverage": {
+        "rank_by_output": {
+          "action_coordinate_0.pos": 19,
+          "action_coordinate_1.pos": 19,
+          "action_coordinate_2.pos": 19,
+          "action_coordinate_3.pos": 19,
+          "action_coordinate_4.pos": 19,
+          "action_coordinate_5.pos": 19
+        },
+        "required_rank": 19,
+        "planned_queries": 37,
+        "observed_queries": 37
+      },
+      "comparison_count": 222,
+      "witness_queries": [],
+      "scope": "Compiled finite affine obligations plus design-rank diagnostic",
+      "full_requested_status": "UNKNOWN"
+    },
+    "pointwise": {
+      "schema_version": 1,
+      "method": "pointwise-reference-development",
+      "status": "PASS",
+      "applicability": "APPLICABLE",
+      "suite_sha256": "2b727fa7ee16fac887104b87ff45512e6687b94eea7f4538ac8c10d05e8fb692",
+      "reference_sha256": "eda6435ef3b3b779a0b9f956a4d2367aa4a2543ffc23e098425369800907bc54",
+      "evidence_sha256": "5b2c2320ac3b6c1db33c09625625083dd524a1ea40e655c5f9c6e4d427a81106",
+      "groups": {
+        "pointwise": {
+          "status": "PASS",
+          "counts": {
+            "PASS": 222
+          }
+        }
+      },
+      "comparison_count": 222,
+      "full_design_coverage_status": "PASS",
+      "first_divergence": null,
+      "coverage": {
+        "supplied_queries": 37,
+        "eligible_queries": 37,
+        "queried_ids": [
+          "center",
+          "plus:action:0",
+          "minus:action:0",
+          "plus:action:1",
+          "minus:action:1",
+          "plus:action:2",
+          "minus:action:2",
+          "plus:action:3",
+          "minus:action:3",
+          "plus:action:4",
+          "minus:action:4",
+          "plus:action:5",
+          "minus:action:5",
+          "plus:origin:0",
+          "minus:origin:0",
+          "plus:origin:1",
+          "minus:origin:1",
+          "plus:origin:2",
+          "minus:origin:2",
+          "plus:origin:3",
+          "minus:origin:3",
+          "plus:origin:4",
+          "minus:origin:4",
+          "plus:origin:5",
+          "minus:origin:5",
+          "plus:current:0",
+          "minus:current:0",
+          "plus:current:1",
+          "minus:current:1",
+          "plus:current:2",
+          "minus:current:2",
+          "plus:current:3",
+          "minus:current:3",
+          "plus:current:4",
+          "minus:current:4",
+          "plus:current:5",
+          "minus:current:5"
+        ],
+        "observed_eligible_queries": 37,
+        "rank_by_output": {
+          "action_coordinate_0.pos": 19,
+          "action_coordinate_1.pos": 19,
+          "action_coordinate_2.pos": 19,
+          "action_coordinate_3.pos": 19,
+          "action_coordinate_4.pos": 19,
+          "action_coordinate_5.pos": 19
+        },
+        "required_full_rank": 19
+      },
+      "scope": "Finite numerical oracle on the supplied design; not new probe generation",
+      "limitations": [
+        "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+        "Binary64 resolution diagnostic is not an upstream error bound",
+        "Oracle runtime excludes acquiring the shared adapter observations",
+        "Contrast budgets propagate component tolerances and sampled closure residuals"
+      ],
+      "full_requested_status": "UNKNOWN"
+    },
+    "strong_relational": {
+      "schema_version": 1,
+      "method": "relational-reference-development",
+      "status": "PASS",
+      "applicability": "APPLICABLE",
+      "suite_sha256": "2b727fa7ee16fac887104b87ff45512e6687b94eea7f4538ac8c10d05e8fb692",
+      "reference_sha256": "eda6435ef3b3b779a0b9f956a4d2367aa4a2543ffc23e098425369800907bc54",
+      "evidence_sha256": "5b2c2320ac3b6c1db33c09625625083dd524a1ea40e655c5f9c6e4d427a81106",
+      "groups": {
+        "pointwise": {
+          "status": "PASS",
+          "counts": {
+            "PASS": 222
+          }
+        },
+        "paired": {
+          "status": "PASS",
+          "counts": {
+            "PASS": 3996
+          }
+        },
+        "midpoint": {
+          "status": "PASS",
+          "counts": {
+            "PASS": 108
+          }
+        }
+      },
+      "comparison_count": 4326,
+      "full_design_coverage_status": "PASS",
+      "first_divergence": null,
+      "coverage": {
+        "supplied_queries": 37,
+        "eligible_queries": 37,
+        "queried_ids": [
+          "center",
+          "plus:action:0",
+          "minus:action:0",
+          "plus:action:1",
+          "minus:action:1",
+          "plus:action:2",
+          "minus:action:2",
+          "plus:action:3",
+          "minus:action:3",
+          "plus:action:4",
+          "minus:action:4",
+          "plus:action:5",
+          "minus:action:5",
+          "plus:origin:0",
+          "minus:origin:0",
+          "plus:origin:1",
+          "minus:origin:1",
+          "plus:origin:2",
+          "minus:origin:2",
+          "plus:origin:3",
+          "minus:origin:3",
+          "plus:origin:4",
+          "minus:origin:4",
+          "plus:origin:5",
+          "minus:origin:5",
+          "plus:current:0",
+          "minus:current:0",
+          "plus:current:1",
+          "minus:current:1",
+          "plus:current:2",
+          "minus:current:2",
+          "plus:current:3",
+          "minus:current:3",
+          "plus:current:4",
+          "minus:current:4",
+          "plus:current:5",
+          "minus:current:5"
+        ],
+        "observed_eligible_queries": 37,
+        "rank_by_output": {
+          "action_coordinate_0.pos": 19,
+          "action_coordinate_1.pos": 19,
+          "action_coordinate_2.pos": 19,
+          "action_coordinate_3.pos": 19,
+          "action_coordinate_4.pos": 19,
+          "action_coordinate_5.pos": 19
+        },
+        "required_full_rank": 19
+      },
+      "scope": "Finite numerical oracle on the supplied design; not new probe generation",
+      "limitations": [
+        "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+        "Binary64 resolution diagnostic is not an upstream error bound",
+        "Oracle runtime excludes acquiring the shared adapter observations",
+        "Contrast budgets propagate component tolerances and sampled closure residuals"
+      ],
+      "full_requested_status": "UNKNOWN"
+    },
+    "stateless_diagonal": {
+      "schema_version": 1,
+      "method": "stateless-diagonal-development",
+      "status": "PASS",
+      "applicability": "APPLICABLE",
+      "suite_sha256": "2b727fa7ee16fac887104b87ff45512e6687b94eea7f4538ac8c10d05e8fb692",
+      "reference_sha256": "eda6435ef3b3b779a0b9f956a4d2367aa4a2543ffc23e098425369800907bc54",
+      "evidence_sha256": "5b2c2320ac3b6c1db33c09625625083dd524a1ea40e655c5f9c6e4d427a81106",
+      "groups": {
+        "pointwise": {
+          "status": "PASS",
+          "counts": {
+            "PASS": 78
+          }
+        }
+      },
+      "comparison_count": 78,
+      "full_design_coverage_status": "UNKNOWN",
+      "first_divergence": null,
+      "coverage": {
+        "supplied_queries": 37,
+        "eligible_queries": 13,
+        "queried_ids": [
+          "center",
+          "plus:action:0",
+          "minus:action:0",
+          "plus:action:1",
+          "minus:action:1",
+          "plus:action:2",
+          "minus:action:2",
+          "plus:action:3",
+          "minus:action:3",
+          "plus:action:4",
+          "minus:action:4",
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "observed_eligible_queries": 13,
+        "rank_by_output": {
+          "action_coordinate_0.pos": 7,
+          "action_coordinate_1.pos": 7,
+          "action_coordinate_2.pos": 7,
+          "action_coordinate_3.pos": 7,
+          "action_coordinate_4.pos": 7,
+          "action_coordinate_5.pos": 7
+        },
+        "required_full_rank": 19
+      },
+      "scope": "Only supplied queries with origin=current in matching declared units",
+      "limitations": [
+        "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+        "Binary64 resolution diagnostic is not an upstream error bound",
+        "Oracle runtime excludes acquiring the shared adapter observations",
+        "Contrast budgets propagate component tolerances and sampled closure residuals"
+      ],
+      "excluded_queries": 24,
+      "full_requested_status": "UNKNOWN"
+    }
+  },
+  "ablations": {
+    "offset_authority_erased": {
+      "operation": "Erase reference offsets; preserve original case and capture identities",
+      "reference_sha256": "d6d41ffe3fd83cc9a3caaad227868bc944021ff68638d8ccd3f3e522ce343178",
+      "methods": {
+        "compiled": {
+          "method": "affine-obligations-development",
+          "status": "UNKNOWN",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "2b727fa7ee16fac887104b87ff45512e6687b94eea7f4538ac8c10d05e8fb692",
+          "reference_sha256": "d6d41ffe3fd83cc9a3caaad227868bc944021ff68638d8ccd3f3e522ce343178",
+          "evidence_sha256": "5b2c2320ac3b6c1db33c09625625083dd524a1ea40e655c5f9c6e4d427a81106",
+          "first_divergence": null,
+          "coverage": {
+            "rank_by_output": {
+              "action_coordinate_0.pos": 19,
+              "action_coordinate_1.pos": 19,
+              "action_coordinate_2.pos": 19,
+              "action_coordinate_3.pos": 19,
+              "action_coordinate_4.pos": 19,
+              "action_coordinate_5.pos": 19
+            },
+            "required_rank": 19,
+            "planned_queries": 37,
+            "observed_queries": 37
+          },
+          "comparison_count": 222,
+          "witness_queries": [],
+          "scope": "Compiled finite affine obligations plus design-rank diagnostic",
+          "full_requested_status": "UNKNOWN"
+        },
+        "pointwise": {
+          "schema_version": 1,
+          "method": "pointwise-reference-development",
+          "status": "UNKNOWN",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "2b727fa7ee16fac887104b87ff45512e6687b94eea7f4538ac8c10d05e8fb692",
+          "reference_sha256": "d6d41ffe3fd83cc9a3caaad227868bc944021ff68638d8ccd3f3e522ce343178",
+          "evidence_sha256": "5b2c2320ac3b6c1db33c09625625083dd524a1ea40e655c5f9c6e4d427a81106",
+          "groups": {
+            "pointwise": {
+              "status": "UNKNOWN",
+              "counts": {
+                "UNKNOWN": 222
+              }
+            }
+          },
+          "comparison_count": 222,
+          "full_design_coverage_status": "PASS",
+          "first_divergence": null,
+          "coverage": {
+            "supplied_queries": 37,
+            "eligible_queries": 37,
+            "queried_ids": [
+              "center",
+              "plus:action:0",
+              "minus:action:0",
+              "plus:action:1",
+              "minus:action:1",
+              "plus:action:2",
+              "minus:action:2",
+              "plus:action:3",
+              "minus:action:3",
+              "plus:action:4",
+              "minus:action:4",
+              "plus:action:5",
+              "minus:action:5",
+              "plus:origin:0",
+              "minus:origin:0",
+              "plus:origin:1",
+              "minus:origin:1",
+              "plus:origin:2",
+              "minus:origin:2",
+              "plus:origin:3",
+              "minus:origin:3",
+              "plus:origin:4",
+              "minus:origin:4",
+              "plus:origin:5",
+              "minus:origin:5",
+              "plus:current:0",
+              "minus:current:0",
+              "plus:current:1",
+              "minus:current:1",
+              "plus:current:2",
+              "minus:current:2",
+              "plus:current:3",
+              "minus:current:3",
+              "plus:current:4",
+              "minus:current:4",
+              "plus:current:5",
+              "minus:current:5"
+            ],
+            "observed_eligible_queries": 37,
+            "rank_by_output": {
+              "action_coordinate_0.pos": 19,
+              "action_coordinate_1.pos": 19,
+              "action_coordinate_2.pos": 19,
+              "action_coordinate_3.pos": 19,
+              "action_coordinate_4.pos": 19,
+              "action_coordinate_5.pos": 19
+            },
+            "required_full_rank": 19
+          },
+          "scope": "Finite numerical oracle on the supplied design; not new probe generation",
+          "limitations": [
+            "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+            "Binary64 resolution diagnostic is not an upstream error bound",
+            "Oracle runtime excludes acquiring the shared adapter observations",
+            "Contrast budgets propagate component tolerances and sampled closure residuals"
+          ],
+          "full_requested_status": "UNKNOWN"
+        },
+        "strong_relational": {
+          "schema_version": 1,
+          "method": "relational-reference-development",
+          "status": "UNKNOWN",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "2b727fa7ee16fac887104b87ff45512e6687b94eea7f4538ac8c10d05e8fb692",
+          "reference_sha256": "d6d41ffe3fd83cc9a3caaad227868bc944021ff68638d8ccd3f3e522ce343178",
+          "evidence_sha256": "5b2c2320ac3b6c1db33c09625625083dd524a1ea40e655c5f9c6e4d427a81106",
+          "groups": {
+            "pointwise": {
+              "status": "UNKNOWN",
+              "counts": {
+                "UNKNOWN": 222
+              }
+            },
+            "paired": {
+              "status": "PASS",
+              "counts": {
+                "PASS": 3996
+              }
+            },
+            "midpoint": {
+              "status": "PASS",
+              "counts": {
+                "PASS": 108
+              }
+            }
+          },
+          "comparison_count": 4326,
+          "full_design_coverage_status": "PASS",
+          "first_divergence": null,
+          "coverage": {
+            "supplied_queries": 37,
+            "eligible_queries": 37,
+            "queried_ids": [
+              "center",
+              "plus:action:0",
+              "minus:action:0",
+              "plus:action:1",
+              "minus:action:1",
+              "plus:action:2",
+              "minus:action:2",
+              "plus:action:3",
+              "minus:action:3",
+              "plus:action:4",
+              "minus:action:4",
+              "plus:action:5",
+              "minus:action:5",
+              "plus:origin:0",
+              "minus:origin:0",
+              "plus:origin:1",
+              "minus:origin:1",
+              "plus:origin:2",
+              "minus:origin:2",
+              "plus:origin:3",
+              "minus:origin:3",
+              "plus:origin:4",
+              "minus:origin:4",
+              "plus:origin:5",
+              "minus:origin:5",
+              "plus:current:0",
+              "minus:current:0",
+              "plus:current:1",
+              "minus:current:1",
+              "plus:current:2",
+              "minus:current:2",
+              "plus:current:3",
+              "minus:current:3",
+              "plus:current:4",
+              "minus:current:4",
+              "plus:current:5",
+              "minus:current:5"
+            ],
+            "observed_eligible_queries": 37,
+            "rank_by_output": {
+              "action_coordinate_0.pos": 19,
+              "action_coordinate_1.pos": 19,
+              "action_coordinate_2.pos": 19,
+              "action_coordinate_3.pos": 19,
+              "action_coordinate_4.pos": 19,
+              "action_coordinate_5.pos": 19
+            },
+            "required_full_rank": 19
+          },
+          "scope": "Finite numerical oracle on the supplied design; not new probe generation",
+          "limitations": [
+            "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+            "Binary64 resolution diagnostic is not an upstream error bound",
+            "Oracle runtime excludes acquiring the shared adapter observations",
+            "Contrast budgets propagate component tolerances and sampled closure residuals"
+          ],
+          "full_requested_status": "UNKNOWN"
+        },
+        "stateless_diagonal": {
+          "schema_version": 1,
+          "method": "stateless-diagonal-development",
+          "status": "UNKNOWN",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "2b727fa7ee16fac887104b87ff45512e6687b94eea7f4538ac8c10d05e8fb692",
+          "reference_sha256": "d6d41ffe3fd83cc9a3caaad227868bc944021ff68638d8ccd3f3e522ce343178",
+          "evidence_sha256": "5b2c2320ac3b6c1db33c09625625083dd524a1ea40e655c5f9c6e4d427a81106",
+          "groups": {
+            "pointwise": {
+              "status": "UNKNOWN",
+              "counts": {
+                "UNKNOWN": 78
+              }
+            }
+          },
+          "comparison_count": 78,
+          "full_design_coverage_status": "UNKNOWN",
+          "first_divergence": null,
+          "coverage": {
+            "supplied_queries": 37,
+            "eligible_queries": 13,
+            "queried_ids": [
+              "center",
+              "plus:action:0",
+              "minus:action:0",
+              "plus:action:1",
+              "minus:action:1",
+              "plus:action:2",
+              "minus:action:2",
+              "plus:action:3",
+              "minus:action:3",
+              "plus:action:4",
+              "minus:action:4",
+              "plus:action:5",
+              "minus:action:5"
+            ],
+            "observed_eligible_queries": 13,
+            "rank_by_output": {
+              "action_coordinate_0.pos": 7,
+              "action_coordinate_1.pos": 7,
+              "action_coordinate_2.pos": 7,
+              "action_coordinate_3.pos": 7,
+              "action_coordinate_4.pos": 7,
+              "action_coordinate_5.pos": 7
+            },
+            "required_full_rank": 19
+          },
+          "scope": "Only supplied queries with origin=current in matching declared units",
+          "limitations": [
+            "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+            "Binary64 resolution diagnostic is not an upstream error bound",
+            "Oracle runtime excludes acquiring the shared adapter observations",
+            "Contrast budgets propagate component tolerances and sampled closure residuals"
+          ],
+          "excluded_queries": 24,
+          "full_requested_status": "UNKNOWN"
+        }
+      }
+    },
+    "independent_reference_erased": {
+      "operation": "Erase independent coefficients, offsets, units and authority",
+      "numeric_status": "UNKNOWN",
+      "full_requested_status": "UNKNOWN",
+      "reference_sha256": "b22bb389e092e24d09d4cdd64c98cd643d77df58f5024f96576b965fa8823123",
+      "scope": "Missing independent reference remains UNKNOWN; no self-fitted expectations"
+    },
+    "provenance_checks_omitted": {
+      "removed_checks": [
+        "producer",
+        "artifacts"
+      ],
+      "retained_common_checks": {
+        "binding": "PASS",
+        "physical_semantics": "UNKNOWN"
+      },
+      "reduced_scope_status": "UNKNOWN",
+      "original_full_requested_status": "UNKNOWN",
+      "scope": "Reduced check set, not certification of original provenance requirements"
+    },
+    "witness_reduction_disabled": {
+      "full_requested_status": "UNKNOWN",
+      "original_queries": 37,
+      "compiled_local_witness_queries": null,
+      "retained_without_reduction": 37,
+      "scope": "Same detection; diagnostic size only. Fresh replay and reduction cost are separate"
+    }
+  },
+  "limitations": [
+    "Supplied canonical design only; manual/random query selection comparisons remain required",
+    "Relational oracle includes pointwise, all-pairs differences and geometric midpoint checks",
+    "Stateless eligibility uses saved values and declared units; no synthetic diagonal observations",
+    "Reference ablations are data-only analyses, not newly captured or re-bound execution evidence",
+    "Numerical relations have different conditioning; no universal detection advantage is implied",
+    "Original v0.1 stateful checker and applicable external-tool comparisons remain required"
+  ]
+}

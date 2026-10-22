@@ -16,3 +16,5 @@ uv run --no-sync python scripts/reanalyze_openpi_development.py --input .test-tm
 ```
 
 The capture runner is explicit execution; reanalysis is data-only and imports no ML framework. Both assert the intended development outcomes and preserve labels. An incorrect outcome stops the run instead of silently editing its expected label. Setup instructions are in `integrations/openpi/README.md`.
+
+`oracles-002/` records matched-evidence replay of the six versioned CLI captures using independent pointwise, strong all-pairs/midpoint and stateless-diagonal numerical comparators, plus authority/provenance/witness ablations. It was reproduced through the installed wheel without ML dependencies. The strong relational oracle matches the compiler on these development observations; no detection superiority is established. Missing offsets make a constant bias unidentifiable for every oracle. `docs/research-oracles.md` explains domains, propagated numerical budgets and finite-query versus full-design coverage. Manual/random test generation, the original stateful checker comparison and applicable external workflows remain required before evaluation can be frozen.

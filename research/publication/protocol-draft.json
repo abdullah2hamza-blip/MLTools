@@ -100,5 +100,25 @@
     "No task-success or safety claim from processor probes",
     "Unavailable or inapplicable baselines are limitations, not wins",
     "Public release, outreach, submission and paid compute require approval"
+  ],
+  "development_findings": [
+    {
+      "id": "strong-oracle-parity",
+      "evidence": "development/oracles-002/summary.json",
+      "finding": "Strong relational and compiled verdicts match on reused development captures; no detection superiority established",
+      "freeze_implication": "Separate oracle-equivalence controls from manual/random query generation and diagnostic-cost hypotheses"
+    },
+    {
+      "id": "unknown-bias-unidentifiable",
+      "evidence": "development/oracles-002/act_wrong_stats.case.json",
+      "finding": "Erasing independent offsets makes the constant-bias injection UNKNOWN for every numerical oracle",
+      "freeze_implication": "Do not infer missing authority from deployment observations or count abstention as detection"
+    },
+    {
+      "id": "numerical-acceptance-policy",
+      "evidence": "../../docs/research-oracles.md",
+      "finding": "All-pair cancellation requires propagated component and closure budgets, plus verified closure authority",
+      "freeze_implication": "Freeze relation-specific numerical profiles and full-scope coverage guards before final evaluation"
+    }
   ]
 }

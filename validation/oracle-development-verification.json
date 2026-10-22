@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "status": "DEVELOPMENT_ORACLES_NOT_FINAL_RESEARCH",
+  "verified_at_utc": "2026-10-22T05:28:02.644225+00:00",
+  "source_file_sha256": {
+    "src/mltools/research_oracles.py": "b62cc092d416c5cf3e42e8f081119d7d52d550630c4ea73d1da57c212428b161",
+    "src/mltools/research_compare.py": "50f4a061c1579d84e952c21f3c68961fa0edb5aa97a2aeeee7e9b1ef8dcfe3e1",
+    "tests/test_research_oracles.py": "bf12a6594a52d48e6f5a3be127b51baa531d9acbb21f4d4b3c3c663d7e958d1d",
+    "tests/test_research_compare.py": "d25a926b1ded26b382feaa71d7332735a1e1e1ce5925f6b7f2a54648a8ab9389",
+    "scripts/analyze_oracle_development.py": "549763cf4d023077079145f54989fcd3d840fb629dd4d1096f1465f31af9db17",
+    "scripts/verify_oracle_development.py": "a0c4889caec0b09bc03e3233598f1a02c84f3bc423aada7be4e931cae37be43a",
+    "uv.lock": "39a988f45d7cc0629efd51a2ccc7f9bc5d3084102564b24386b8877fa9d09d1d"
+  },
+  "checks": {
+    "full_main_environment": {
+      "passed": 156,
+      "skipped": 5,
+      "seconds": 27.46,
+      "scope": "Full suite with optional LeRobot; OpenPI live tests remain explicit opt-in"
+    },
+    "installed_wheel_without_ml": {
+      "passed": 133,
+      "skipped": 28,
+      "seconds": 9.52,
+      "torch_available": false,
+      "lerobot_available": false,
+      "openpi_available": false,
+      "python": "3.13.7"
+    },
+    "genuine_saved_capture_reanalysis": {
+      "summary": "research/publication/development/oracles-002/summary.json",
+      "cases": 6,
+      "environment": ".venv-smoke",
+      "new_adapter_execution": false
+    },
+    "optimized_mode_verifier": "Verified six analyses, original source captures, file/source identities and deterministic reanalysis under Python -O",
+    "build": "sdist and wheel built; new packaged modules match workspace bytes",
+    "review": {
+      "scope": "One reused subagent, bounded independent fairness and numerical-budget reviews",
+      "fixed": [
+        "Full-request coverage cannot follow from center-only agreement",
+        "Entirely unknown rows count as unobserved",
+        "Contrast/pointwise budgets propagate component tolerances",
+        "Ungrounded closure bounds cannot cause FAIL"
+      ],
+      "regressions": "Hand-calculated offset/scale/anchor/curvature, cancellation, rank, empty diagonal, authority, binding and missing cells"
+    },
+    "lint": "ruff passed; 42 files formatted; git diff --check passed"
+  },
+  "scientific_scope": [
+    "Reused development evidence only; no held-out benchmark or detection-rate claim",
+    "Strong independently implemented relational oracle matches compiler on these captures",
+    "Constant-bias fault is unidentifiable when independent offsets are erased",
+    "Numerical/subdomain PASS is distinct from full requested conformance",
+    "Original stateful, optimized/manual/random query generation, certificates and external comparisons remain required",
+    "Final eligible corpus, frozen protocol, main experiments and paper remain unfinished"
+  ]
+}
