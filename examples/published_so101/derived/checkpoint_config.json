@@ -1,0 +1,29 @@
+{
+  "state_order": [
+    "dimension_0",
+    "dimension_1",
+    "dimension_2",
+    "dimension_3",
+    "dimension_4",
+    "dimension_5"
+  ],
+  "action_names": [
+    "dimension_0",
+    "dimension_1",
+    "dimension_2",
+    "dimension_3",
+    "dimension_4",
+    "dimension_5"
+  ],
+  "relative": false,
+  "exclude_joints": [],
+  "camera_map": {
+    "observation.images.front": "observation.images.camera1",
+    "observation.images.wrist": "observation.images.camera2"
+  },
+  "horizon": 50,
+  "use_degrees": null,
+  "source_model": "yutofujita/smolvla-so101-move-cube",
+  "source_revision": "0220b37dbcf1e0b2f6f5e21c64c75bf16fac6b69",
+  "scope": "Numeric saved-processor path; physical modes/units/names are not established"
+}

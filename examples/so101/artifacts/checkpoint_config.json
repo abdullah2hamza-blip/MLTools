@@ -1,0 +1,31 @@
+{
+  "kind": "software-calibration-config-not-trained-checkpoint",
+  "state_order": [
+    "shoulder_pan",
+    "shoulder_lift",
+    "elbow_flex",
+    "wrist_flex",
+    "wrist_roll",
+    "gripper"
+  ],
+  "action_names": [
+    "shoulder_pan",
+    "shoulder_lift",
+    "elbow_flex",
+    "wrist_flex",
+    "wrist_roll",
+    "gripper"
+  ],
+  "relative": true,
+  "exclude_joints": [
+    "gripper"
+  ],
+  "camera_map": {
+    "observation.images.front": "observation.images.camera1",
+    "observation.images.wrist": "observation.images.camera2"
+  },
+  "horizon": 3,
+  "use_degrees": true,
+  "weights": null,
+  "dataset_revision": null
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "model": "yutofujita/smolvla-so101-move-cube",
+  "revision": "0220b37dbcf1e0b2f6f5e21c64c75bf16fac6b69",
+  "files": [
+    {
+      "id": "config.json",
+      "path": "source/config.json",
+      "sha256": "11b22f5b1e48951b0c7d20000ab5364916e72322a0c216c57c5a1956607e1a77",
+      "url": "https://huggingface.co/yutofujita/smolvla-so101-move-cube/resolve/0220b37dbcf1e0b2f6f5e21c64c75bf16fac6b69/config.json"
+    },
+    {
+      "id": "train_config.json",
+      "path": "source/train_config.json",
+      "sha256": "f7815d405e674b4b1ba8d94fecbcd0f222b385817d5ecb34be451b4c56409a1a",
+      "url": "https://huggingface.co/yutofujita/smolvla-so101-move-cube/resolve/0220b37dbcf1e0b2f6f5e21c64c75bf16fac6b69/train_config.json"
+    },
+    {
+      "id": "policy_preprocessor.json",
+      "path": "source/policy_preprocessor.json",
+      "sha256": "1cac4c93d9d9fc2bbd8f367d3205ffd20e79fc21fa8176331453b966b2da897b",
+      "url": "https://huggingface.co/yutofujita/smolvla-so101-move-cube/resolve/0220b37dbcf1e0b2f6f5e21c64c75bf16fac6b69/policy_preprocessor.json"
+    },
+    {
+      "id": "policy_postprocessor.json",
+      "path": "source/policy_postprocessor.json",
+      "sha256": "2b78bb742065288df2ec63b0ee35f97a1f6950171cf2272f7e34b1fe3873b17b",
+      "url": "https://huggingface.co/yutofujita/smolvla-so101-move-cube/resolve/0220b37dbcf1e0b2f6f5e21c64c75bf16fac6b69/policy_postprocessor.json"
+    },
+    {
+      "id": "policy_preprocessor_step_5_normalizer_processor.safetensors",
+      "path": "source/policy_preprocessor_step_5_normalizer_processor.safetensors",
+      "sha256": "77b14eb2066885f13079760eae89edf7a18c3a4b1a3ad2abc3e0e0f2dd579232",
+      "url": "https://huggingface.co/yutofujita/smolvla-so101-move-cube/resolve/0220b37dbcf1e0b2f6f5e21c64c75bf16fac6b69/policy_preprocessor_step_5_normalizer_processor.safetensors"
+    },
+    {
+      "id": "policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+      "path": "source/policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+      "sha256": "77b14eb2066885f13079760eae89edf7a18c3a4b1a3ad2abc3e0e0f2dd579232",
+      "url": "https://huggingface.co/yutofujita/smolvla-so101-move-cube/resolve/0220b37dbcf1e0b2f6f5e21c64c75bf16fac6b69/policy_postprocessor_step_0_unnormalizer_processor.safetensors"
+    },
+    {
+      "id": "checkpoint_config",
+      "path": "derived/checkpoint_config.json",
+      "sha256": "75fbf750a3011f419a4495ddd4e2a7e63f2d4ea9943d21d78292eb73884033fb"
+    },
+    {
+      "id": "training_stats",
+      "path": "derived/training_stats.json",
+      "sha256": "ccf0e379a23512fdd9980c5f7e0deda7ca9240901f8f984dd676533c7ed97ac5"
+    },
+    {
+      "id": "deployment_stats",
+      "path": "derived/deployment_stats.json",
+      "sha256": "ccf0e379a23512fdd9980c5f7e0deda7ca9240901f8f984dd676533c7ed97ac5"
+    },
+    {
+      "id": "wrong_deployment_stats",
+      "path": "derived/wrong_deployment_stats.json",
+      "sha256": "be52a431d9a73fbae77a1ed36e0515560fcf7aa0a2f1f52a265fade8922f8fa1"
+    }
+  ],
+  "license": "Apache-2.0 per pinned model card",
+  "model_card": "https://huggingface.co/yutofujita/smolvla-so101-move-cube/blob/0220b37dbcf1e0b2f6f5e21c64c75bf16fac6b69/README.md",
+  "weights_downloaded": false,
+  "limits": [
+    "No authoritative physical joint names/units/action modes in downloaded checkpoint metadata",
+    "Training dataset revision is null; current dataset metadata is not its proven snapshot",
+    "camera3 physical role, 32-dimensional model padding and image preprocessing are unverified"
+  ]
+}

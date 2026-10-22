@@ -1,10 +1,25 @@
 [project]
 name = "mltools"
 version = "0.1.0"
-description = "Add your description here"
+description = "Executable semantic conformance checks for robot policy adapters"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = []
+
+[project.optional-dependencies]
+lerobot = ["lerobot @ git+https://github.com/huggingface/lerobot.git@5517a326eeb9b457cfe07d59b9bfdf291799c8d9"]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.11,<1"]
+
+[tool.ruff]
+line-length = 110
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
 
 [project.scripts]
 mltools = "mltools:main"

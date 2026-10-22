@@ -1,0 +1,2333 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "embodiment": "so101_follower/use_degrees=True/software-fixture",
+  "checks": {
+    "artifacts": "PASS",
+    "cameras": "PASS",
+    "joint_order": "PASS",
+    "normalization": "PASS",
+    "actions": "PASS",
+    "reset": "PASS"
+  },
+  "findings": [
+    {
+      "check": "artifacts",
+      "status": "PASS",
+      "boundary": "checkpoint_config",
+      "message": "Artifact SHA-256 verified",
+      "event": null,
+      "expected": "ec21b788e6274f6c3c6125300eace23e714e6d718cdf0ad37813af8e7a478b5e",
+      "actual": "ec21b788e6274f6c3c6125300eace23e714e6d718cdf0ad37813af8e7a478b5e"
+    },
+    {
+      "check": "artifacts",
+      "status": "PASS",
+      "boundary": "training_stats",
+      "message": "Artifact SHA-256 verified",
+      "event": null,
+      "expected": "368b74bf699650cae44706078e1c3cf43301323df6ffbc45e6811b6a0eca4b9c",
+      "actual": "368b74bf699650cae44706078e1c3cf43301323df6ffbc45e6811b6a0eca4b9c"
+    },
+    {
+      "check": "artifacts",
+      "status": "PASS",
+      "boundary": "stale_stats",
+      "message": "Artifact SHA-256 verified",
+      "event": null,
+      "expected": "611c0c434c1b752d14c7f962cfd236938b2e29357b6b77c18ca882b898f2f766",
+      "actual": "611c0c434c1b752d14c7f962cfd236938b2e29357b6b77c18ca882b898f2f766"
+    },
+    {
+      "check": "reset",
+      "status": "PASS",
+      "boundary": "episode.reset",
+      "message": "Reset clears cached anchor",
+      "event": 0,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "check": "reset",
+      "status": "PASS",
+      "boundary": "episode.queue",
+      "message": "Reset clears action queue",
+      "event": 0,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "cameras",
+      "status": "PASS",
+      "boundary": "training.policy.images",
+      "message": "Training camera routing must match independently labeled camera roles",
+      "event": 1,
+      "expected": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "actual": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "check": "cameras",
+      "status": "PASS",
+      "boundary": "policy.images",
+      "message": "Camera content must reach the checkpoint's independently labeled input",
+      "event": 1,
+      "expected": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "actual": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "training.state_names",
+      "message": "Training input order must match the independent checkpoint contract",
+      "event": 1,
+      "expected": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "actual": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ]
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "training.state",
+      "message": "Training state values must preserve declared joint identity",
+      "event": 1,
+      "expected": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60
+      ],
+      "actual": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60
+      ]
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "policy.state_names",
+      "message": "Checkpoint joint order must match executed input order",
+      "event": 1,
+      "expected": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "actual": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ]
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "policy.state",
+      "message": "Executed state vector must preserve named joint identity",
+      "event": 1,
+      "expected": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60
+      ],
+      "actual": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60
+      ]
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 1,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 1,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "training.units",
+      "message": "Training convention must match declared units",
+      "event": 1,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "normalization",
+      "status": "PASS",
+      "boundary": "training.normalized_actions",
+      "message": "Executed training transform matches scalar reference",
+      "event": 1,
+      "expected": [
+        [
+          0.4999999975,
+          0.999999995,
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          0.29999999985
+        ],
+        [
+          0.999999995,
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          2.999999985,
+          0.3999999998
+        ],
+        [
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          2.999999985,
+          3.4999999825000003,
+          0.49999999975
+        ]
+      ],
+      "actual": [
+        [
+          0.4999999975,
+          0.999999995,
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          0.29999999985
+        ],
+        [
+          0.999999995,
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          2.999999985,
+          0.3999999998
+        ],
+        [
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          2.999999985,
+          3.4999999825000003,
+          0.49999999975
+        ]
+      ]
+    },
+    {
+      "check": "normalization",
+      "status": "PASS",
+      "boundary": "action.unnormalize",
+      "message": "Deployment must interpret outputs using pinned training statistics",
+      "event": 1,
+      "expected": [
+        1.0,
+        2,
+        3.0,
+        4,
+        5.0,
+        56.0
+      ],
+      "actual": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        56.0
+      ]
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 1,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 1,
+      "expected": {
+        "shoulder_pan.pos": 11.0,
+        "shoulder_lift.pos": 22,
+        "elbow_flex.pos": 33.0,
+        "wrist_flex.pos": 44,
+        "wrist_roll.pos": 55.0,
+        "gripper.pos": 56.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 11.0,
+        "shoulder_lift.pos": 22.0,
+        "elbow_flex.pos": 33.0,
+        "wrist_flex.pos": 44.0,
+        "wrist_roll.pos": 55.0,
+        "gripper.pos": 56.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 1,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "cameras",
+      "status": "PASS",
+      "boundary": "training.policy.images",
+      "message": "Training camera routing must match independently labeled camera roles",
+      "event": 2,
+      "expected": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "actual": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "check": "cameras",
+      "status": "PASS",
+      "boundary": "policy.images",
+      "message": "Camera content must reach the checkpoint's independently labeled input",
+      "event": 2,
+      "expected": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "actual": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "training.state_names",
+      "message": "Training input order must match the independent checkpoint contract",
+      "event": 2,
+      "expected": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "actual": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ]
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "training.state",
+      "message": "Training state values must preserve declared joint identity",
+      "event": 2,
+      "expected": [
+        11,
+        21,
+        31,
+        41,
+        51,
+        62
+      ],
+      "actual": [
+        11,
+        21,
+        31,
+        41,
+        51,
+        62
+      ]
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "policy.state_names",
+      "message": "Checkpoint joint order must match executed input order",
+      "event": 2,
+      "expected": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "actual": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ]
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "policy.state",
+      "message": "Executed state vector must preserve named joint identity",
+      "event": 2,
+      "expected": [
+        11,
+        21,
+        31,
+        41,
+        51,
+        62
+      ],
+      "actual": [
+        11,
+        21,
+        31,
+        41,
+        51,
+        62
+      ]
+    },
+    {
+      "check": "normalization",
+      "status": "PASS",
+      "boundary": "action.unnormalize",
+      "message": "Deployment must interpret outputs using pinned training statistics",
+      "event": 2,
+      "expected": [
+        2,
+        3.0,
+        4,
+        5.0,
+        6,
+        58.0
+      ],
+      "actual": [
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        58.0
+      ]
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 2,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 2,
+      "expected": {
+        "shoulder_pan.pos": 12,
+        "shoulder_lift.pos": 23.0,
+        "elbow_flex.pos": 34,
+        "wrist_flex.pos": 45.0,
+        "wrist_roll.pos": 56,
+        "gripper.pos": 58.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 12.0,
+        "shoulder_lift.pos": 23.0,
+        "elbow_flex.pos": 34.0,
+        "wrist_flex.pos": 45.0,
+        "wrist_roll.pos": 56.0,
+        "gripper.pos": 58.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 2,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "cameras",
+      "status": "PASS",
+      "boundary": "training.policy.images",
+      "message": "Training camera routing must match independently labeled camera roles",
+      "event": 3,
+      "expected": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "actual": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "check": "cameras",
+      "status": "PASS",
+      "boundary": "policy.images",
+      "message": "Camera content must reach the checkpoint's independently labeled input",
+      "event": 3,
+      "expected": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "actual": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "training.state_names",
+      "message": "Training input order must match the independent checkpoint contract",
+      "event": 3,
+      "expected": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "actual": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ]
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "training.state",
+      "message": "Training state values must preserve declared joint identity",
+      "event": 3,
+      "expected": [
+        12,
+        22,
+        32,
+        42,
+        52,
+        64
+      ],
+      "actual": [
+        12,
+        22,
+        32,
+        42,
+        52,
+        64
+      ]
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "policy.state_names",
+      "message": "Checkpoint joint order must match executed input order",
+      "event": 3,
+      "expected": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "actual": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ]
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "policy.state",
+      "message": "Executed state vector must preserve named joint identity",
+      "event": 3,
+      "expected": [
+        12,
+        22,
+        32,
+        42,
+        52,
+        64
+      ],
+      "actual": [
+        12,
+        22,
+        32,
+        42,
+        52,
+        64
+      ]
+    },
+    {
+      "check": "normalization",
+      "status": "PASS",
+      "boundary": "action.unnormalize",
+      "message": "Deployment must interpret outputs using pinned training statistics",
+      "event": 3,
+      "expected": [
+        3.0,
+        4,
+        5.0,
+        6,
+        7.0,
+        60.0
+      ],
+      "actual": [
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        60.0
+      ]
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 3,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 3,
+      "expected": {
+        "shoulder_pan.pos": 13.0,
+        "shoulder_lift.pos": 24,
+        "elbow_flex.pos": 35.0,
+        "wrist_flex.pos": 46,
+        "wrist_roll.pos": 57.0,
+        "gripper.pos": 60.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 13.0,
+        "shoulder_lift.pos": 24.0,
+        "elbow_flex.pos": 35.0,
+        "wrist_flex.pos": 46.0,
+        "wrist_roll.pos": 57.0,
+        "gripper.pos": 60.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 3,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "cameras",
+      "status": "PASS",
+      "boundary": "training.policy.images",
+      "message": "Training camera routing must match independently labeled camera roles",
+      "event": 4,
+      "expected": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "actual": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "check": "cameras",
+      "status": "PASS",
+      "boundary": "policy.images",
+      "message": "Camera content must reach the checkpoint's independently labeled input",
+      "event": 4,
+      "expected": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "actual": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "training.state_names",
+      "message": "Training input order must match the independent checkpoint contract",
+      "event": 4,
+      "expected": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "actual": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ]
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "training.state",
+      "message": "Training state values must preserve declared joint identity",
+      "event": 4,
+      "expected": [
+        40,
+        50,
+        60,
+        70,
+        80,
+        90
+      ],
+      "actual": [
+        40,
+        50,
+        60,
+        70,
+        80,
+        90
+      ]
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "policy.state_names",
+      "message": "Checkpoint joint order must match executed input order",
+      "event": 4,
+      "expected": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "actual": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ]
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "policy.state",
+      "message": "Executed state vector must preserve named joint identity",
+      "event": 4,
+      "expected": [
+        40,
+        50,
+        60,
+        70,
+        80,
+        90
+      ],
+      "actual": [
+        40,
+        50,
+        60,
+        70,
+        80,
+        90
+      ]
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 4,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 4,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "training.units",
+      "message": "Training convention must match declared units",
+      "event": 4,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "normalization",
+      "status": "PASS",
+      "boundary": "training.normalized_actions",
+      "message": "Executed training transform matches scalar reference",
+      "event": 4,
+      "expected": [
+        [
+          0.4999999975,
+          0.999999995,
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          0.29999999985
+        ],
+        [
+          0.999999995,
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          2.999999985,
+          0.3999999998
+        ],
+        [
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          2.999999985,
+          3.4999999825000003,
+          0.49999999975
+        ]
+      ],
+      "actual": [
+        [
+          0.4999999975,
+          0.999999995,
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          0.29999999985
+        ],
+        [
+          0.999999995,
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          2.999999985,
+          0.3999999998
+        ],
+        [
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          2.999999985,
+          3.4999999825000003,
+          0.49999999975
+        ]
+      ]
+    },
+    {
+      "check": "normalization",
+      "status": "PASS",
+      "boundary": "action.unnormalize",
+      "message": "Deployment must interpret outputs using pinned training statistics",
+      "event": 4,
+      "expected": [
+        1.0,
+        2,
+        3.0,
+        4,
+        5.0,
+        56.0
+      ],
+      "actual": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        56.0
+      ]
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 4,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 4,
+      "expected": {
+        "shoulder_pan.pos": 41.0,
+        "shoulder_lift.pos": 52,
+        "elbow_flex.pos": 63.0,
+        "wrist_flex.pos": 74,
+        "wrist_roll.pos": 85.0,
+        "gripper.pos": 56.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 41.0,
+        "shoulder_lift.pos": 52.0,
+        "elbow_flex.pos": 63.0,
+        "wrist_flex.pos": 74.0,
+        "wrist_roll.pos": 85.0,
+        "gripper.pos": 56.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 4,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "reset",
+      "status": "PASS",
+      "boundary": "episode.reset",
+      "message": "Reset clears cached anchor",
+      "event": 5,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "check": "reset",
+      "status": "PASS",
+      "boundary": "episode.queue",
+      "message": "Reset clears action queue",
+      "event": 5,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "cameras",
+      "status": "PASS",
+      "boundary": "training.policy.images",
+      "message": "Training camera routing must match independently labeled camera roles",
+      "event": 6,
+      "expected": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "actual": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "check": "cameras",
+      "status": "PASS",
+      "boundary": "policy.images",
+      "message": "Camera content must reach the checkpoint's independently labeled input",
+      "event": 6,
+      "expected": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "actual": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "training.state_names",
+      "message": "Training input order must match the independent checkpoint contract",
+      "event": 6,
+      "expected": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "actual": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ]
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "training.state",
+      "message": "Training state values must preserve declared joint identity",
+      "event": 6,
+      "expected": [
+        -10,
+        -20,
+        -30,
+        -40,
+        -50,
+        20
+      ],
+      "actual": [
+        -10,
+        -20,
+        -30,
+        -40,
+        -50,
+        20
+      ]
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "policy.state_names",
+      "message": "Checkpoint joint order must match executed input order",
+      "event": 6,
+      "expected": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "actual": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ]
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "policy.state",
+      "message": "Executed state vector must preserve named joint identity",
+      "event": 6,
+      "expected": [
+        -10,
+        -20,
+        -30,
+        -40,
+        -50,
+        20
+      ],
+      "actual": [
+        -10,
+        -20,
+        -30,
+        -40,
+        -50,
+        20
+      ]
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 6,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 6,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "training.units",
+      "message": "Training convention must match declared units",
+      "event": 6,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "normalization",
+      "status": "PASS",
+      "boundary": "training.normalized_actions",
+      "message": "Executed training transform matches scalar reference",
+      "event": 6,
+      "expected": [
+        [
+          0.4999999975,
+          0.999999995,
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          0.29999999985
+        ],
+        [
+          0.999999995,
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          2.999999985,
+          0.3999999998
+        ],
+        [
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          2.999999985,
+          3.4999999825000003,
+          0.49999999975
+        ]
+      ],
+      "actual": [
+        [
+          0.4999999975,
+          0.999999995,
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          0.29999999985
+        ],
+        [
+          0.999999995,
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          2.999999985,
+          0.3999999998
+        ],
+        [
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          2.999999985,
+          3.4999999825000003,
+          0.49999999975
+        ]
+      ]
+    },
+    {
+      "check": "normalization",
+      "status": "PASS",
+      "boundary": "action.unnormalize",
+      "message": "Deployment must interpret outputs using pinned training statistics",
+      "event": 6,
+      "expected": [
+        1.0,
+        2,
+        3.0,
+        4,
+        5.0,
+        56.0
+      ],
+      "actual": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        56.0
+      ]
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 6,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 6,
+      "expected": {
+        "shoulder_pan.pos": -9.0,
+        "shoulder_lift.pos": -18,
+        "elbow_flex.pos": -27.0,
+        "wrist_flex.pos": -36,
+        "wrist_roll.pos": -45.0,
+        "gripper.pos": 56.0
+      },
+      "actual": {
+        "shoulder_pan.pos": -9.0,
+        "shoulder_lift.pos": -18.0,
+        "elbow_flex.pos": -27.0,
+        "wrist_flex.pos": -36.0,
+        "wrist_roll.pos": -45.0,
+        "gripper.pos": 56.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 6,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "cameras",
+      "status": "PASS",
+      "boundary": "training.policy.images",
+      "message": "Training camera routing must match independently labeled camera roles",
+      "event": 7,
+      "expected": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "actual": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "check": "cameras",
+      "status": "PASS",
+      "boundary": "policy.images",
+      "message": "Camera content must reach the checkpoint's independently labeled input",
+      "event": 7,
+      "expected": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "actual": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "training.state_names",
+      "message": "Training input order must match the independent checkpoint contract",
+      "event": 7,
+      "expected": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "actual": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ]
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "training.state",
+      "message": "Training state values must preserve declared joint identity",
+      "event": 7,
+      "expected": [
+        -9,
+        -19,
+        -29,
+        -39,
+        -49,
+        22
+      ],
+      "actual": [
+        -9,
+        -19,
+        -29,
+        -39,
+        -49,
+        22
+      ]
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "policy.state_names",
+      "message": "Checkpoint joint order must match executed input order",
+      "event": 7,
+      "expected": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "actual": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ]
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "policy.state",
+      "message": "Executed state vector must preserve named joint identity",
+      "event": 7,
+      "expected": [
+        -9,
+        -19,
+        -29,
+        -39,
+        -49,
+        22
+      ],
+      "actual": [
+        -9,
+        -19,
+        -29,
+        -39,
+        -49,
+        22
+      ]
+    },
+    {
+      "check": "normalization",
+      "status": "PASS",
+      "boundary": "action.unnormalize",
+      "message": "Deployment must interpret outputs using pinned training statistics",
+      "event": 7,
+      "expected": [
+        2,
+        3.0,
+        4,
+        5.0,
+        6,
+        58.0
+      ],
+      "actual": [
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        58.0
+      ]
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 7,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 7,
+      "expected": {
+        "shoulder_pan.pos": -8,
+        "shoulder_lift.pos": -17.0,
+        "elbow_flex.pos": -26,
+        "wrist_flex.pos": -35.0,
+        "wrist_roll.pos": -44,
+        "gripper.pos": 58.0
+      },
+      "actual": {
+        "shoulder_pan.pos": -8.0,
+        "shoulder_lift.pos": -17.0,
+        "elbow_flex.pos": -26.0,
+        "wrist_flex.pos": -35.0,
+        "wrist_roll.pos": -44.0,
+        "gripper.pos": 58.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 7,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "cameras",
+      "status": "PASS",
+      "boundary": "training.policy.images",
+      "message": "Training camera routing must match independently labeled camera roles",
+      "event": 8,
+      "expected": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "actual": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "check": "cameras",
+      "status": "PASS",
+      "boundary": "policy.images",
+      "message": "Camera content must reach the checkpoint's independently labeled input",
+      "event": 8,
+      "expected": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "actual": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "training.state_names",
+      "message": "Training input order must match the independent checkpoint contract",
+      "event": 8,
+      "expected": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "actual": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ]
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "training.state",
+      "message": "Training state values must preserve declared joint identity",
+      "event": 8,
+      "expected": [
+        -8,
+        -18,
+        -28,
+        -38,
+        -48,
+        24
+      ],
+      "actual": [
+        -8,
+        -18,
+        -28,
+        -38,
+        -48,
+        24
+      ]
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "policy.state_names",
+      "message": "Checkpoint joint order must match executed input order",
+      "event": 8,
+      "expected": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "actual": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ]
+    },
+    {
+      "check": "joint_order",
+      "status": "PASS",
+      "boundary": "policy.state",
+      "message": "Executed state vector must preserve named joint identity",
+      "event": 8,
+      "expected": [
+        -8,
+        -18,
+        -28,
+        -38,
+        -48,
+        24
+      ],
+      "actual": [
+        -8,
+        -18,
+        -28,
+        -38,
+        -48,
+        24
+      ]
+    },
+    {
+      "check": "normalization",
+      "status": "PASS",
+      "boundary": "action.unnormalize",
+      "message": "Deployment must interpret outputs using pinned training statistics",
+      "event": 8,
+      "expected": [
+        3.0,
+        4,
+        5.0,
+        6,
+        7.0,
+        60.0
+      ],
+      "actual": [
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        60.0
+      ]
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 8,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 8,
+      "expected": {
+        "shoulder_pan.pos": -7.0,
+        "shoulder_lift.pos": -16,
+        "elbow_flex.pos": -25.0,
+        "wrist_flex.pos": -34,
+        "wrist_roll.pos": -43.0,
+        "gripper.pos": 60.0
+      },
+      "actual": {
+        "shoulder_pan.pos": -7.0,
+        "shoulder_lift.pos": -16.0,
+        "elbow_flex.pos": -25.0,
+        "wrist_flex.pos": -34.0,
+        "wrist_roll.pos": -43.0,
+        "gripper.pos": 60.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 8,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "reset",
+      "status": "PASS",
+      "boundary": "episode.reset",
+      "message": "Reset clears cached anchor",
+      "event": 9,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "check": "reset",
+      "status": "PASS",
+      "boundary": "episode.queue",
+      "message": "Reset clears action queue",
+      "event": 9,
+      "expected": 0,
+      "actual": 0
+    }
+  ],
+  "first_divergence": null,
+  "counterexample": null,
+  "execution": {
+    "revision": "5517a326eeb9b457cfe07d59b9bfdf291799c8d9",
+    "git_blobs": {
+      "processor/relative_action_processor.py": "3405402904cf15ca18227b3a3fe006d7936f9d53",
+      "processor/normalize_processor.py": "b0eafcef75e187887c8ea642cfe138f9cf8e79a9",
+      "processor/rename_processor.py": "d17f93dcd990861a2b5ade5914f4595e85eece16",
+      "processor/policy_robot_bridge.py": "bd43c0e81a52c4b75c0c3029e110541484300c89",
+      "processor/pipeline.py": "3cfdf680b27da74d75c9d1b4f8c7f69182c28b02",
+      "configs/types.py": "18359ef0575a4f560a65f21e2d6ddf534edc770f",
+      "robots/so_follower/so_follower.py": "be78bc9623b72155bb87660763d7e2c2ed481d5f",
+      "robots/so_follower/config_so_follower.py": "af4dda782b562064c1b80902ab5948b07ddc43de"
+    },
+    "source_newlines": "canonical LF",
+    "adapter": "mltools.lerobot",
+    "framework": "lerobot",
+    "device": "cpu",
+    "torch_version": "2.11.0+cpu",
+    "dtype": "float64",
+    "scope": "Real processors; fixture configuration, known actions; no model inference or hardware"
+  },
+  "limitations": [
+    "Finite fixtures, independent declared reference, and listed boundaries only.",
+    "No trained-weight inference, task-success, calibration, or robot-safety claim.",
+    "Integrators must establish the authority and physical identity of reference labels.",
+    "Recorded traces are producer assertions, not authenticated execution attestations."
+  ],
+  "bundle_sha256": "88c0b62075cae0f7b8dc36eab2fcabc0f6530d9560b00eb58aef74d88e948bab",
+  "tolerances": {
+    "absolute": 1e-07,
+    "relative": 1e-07
+  }
+}

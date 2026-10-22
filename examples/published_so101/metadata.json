@@ -1,0 +1,2623 @@
+{
+  "schema_version": 1,
+  "contract": {
+    "embodiment": "published-so101/physical-interface-unverified",
+    "authority": {
+      "source": "https://huggingface.co/yutofujita/smolvla-so101-move-cube/tree/0220b37dbcf1e0b2f6f5e21c64c75bf16fac6b69",
+      "description": "Immutable published processor metadata; positional dimensions only. Camera labels are publisher labels; physical identity remains unverified."
+    },
+    "checks": [
+      "artifacts",
+      "cameras",
+      "normalization",
+      "actions",
+      "joint_order",
+      "camera3_role",
+      "model_preprocessing",
+      "training_dataset_revision",
+      "checkpoint_weights",
+      "state_normalization"
+    ],
+    "joints": [
+      {
+        "name": "dimension_0",
+        "unit": null,
+        "mode": null
+      },
+      {
+        "name": "dimension_1",
+        "unit": null,
+        "mode": null
+      },
+      {
+        "name": "dimension_2",
+        "unit": null,
+        "mode": null
+      },
+      {
+        "name": "dimension_3",
+        "unit": null,
+        "mode": null
+      },
+      {
+        "name": "dimension_4",
+        "unit": null,
+        "mode": null
+      },
+      {
+        "name": "dimension_5",
+        "unit": null,
+        "mode": null
+      }
+    ],
+    "cameras": [
+      {
+        "source": "observation.images.front",
+        "target": "observation.images.camera1",
+        "role": "front"
+      },
+      {
+        "source": "observation.images.wrist",
+        "target": "observation.images.camera2",
+        "role": "wrist"
+      }
+    ],
+    "normalization": {
+      "kind": "mean_std",
+      "artifact": "training_stats"
+    },
+    "training_action_transform": "identity",
+    "horizon": 50
+  },
+  "adapter": {
+    "state_order": [
+      "dimension_0",
+      "dimension_1",
+      "dimension_2",
+      "dimension_3",
+      "dimension_4",
+      "dimension_5"
+    ],
+    "action_names": [
+      "dimension_0",
+      "dimension_1",
+      "dimension_2",
+      "dimension_3",
+      "dimension_4",
+      "dimension_5"
+    ],
+    "motor_names": [
+      "dimension_0",
+      "dimension_1",
+      "dimension_2",
+      "dimension_3",
+      "dimension_4",
+      "dimension_5"
+    ],
+    "camera_map": {
+      "observation.images.front": "observation.images.camera1",
+      "observation.images.wrist": "observation.images.camera2"
+    },
+    "relative": false,
+    "exclude_joints": [],
+    "bind_queue": true,
+    "reset": true,
+    "stats_artifact": "deployment_stats",
+    "units": null,
+    "emit_commands": false
+  },
+  "artifacts": [
+    {
+      "id": "config.json",
+      "path": "source/config.json",
+      "sha256": "11b22f5b1e48951b0c7d20000ab5364916e72322a0c216c57c5a1956607e1a77"
+    },
+    {
+      "id": "train_config.json",
+      "path": "source/train_config.json",
+      "sha256": "f7815d405e674b4b1ba8d94fecbcd0f222b385817d5ecb34be451b4c56409a1a"
+    },
+    {
+      "id": "policy_preprocessor.json",
+      "path": "source/policy_preprocessor.json",
+      "sha256": "1cac4c93d9d9fc2bbd8f367d3205ffd20e79fc21fa8176331453b966b2da897b"
+    },
+    {
+      "id": "policy_postprocessor.json",
+      "path": "source/policy_postprocessor.json",
+      "sha256": "2b78bb742065288df2ec63b0ee35f97a1f6950171cf2272f7e34b1fe3873b17b"
+    },
+    {
+      "id": "policy_preprocessor_step_5_normalizer_processor.safetensors",
+      "path": "source/policy_preprocessor_step_5_normalizer_processor.safetensors",
+      "sha256": "77b14eb2066885f13079760eae89edf7a18c3a4b1a3ad2abc3e0e0f2dd579232"
+    },
+    {
+      "id": "policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+      "path": "source/policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+      "sha256": "77b14eb2066885f13079760eae89edf7a18c3a4b1a3ad2abc3e0e0f2dd579232"
+    },
+    {
+      "id": "checkpoint_config",
+      "path": "derived/checkpoint_config.json",
+      "sha256": "75fbf750a3011f419a4495ddd4e2a7e63f2d4ea9943d21d78292eb73884033fb"
+    },
+    {
+      "id": "training_stats",
+      "path": "derived/training_stats.json",
+      "sha256": "ccf0e379a23512fdd9980c5f7e0deda7ca9240901f8f984dd676533c7ed97ac5"
+    },
+    {
+      "id": "deployment_stats",
+      "path": "derived/deployment_stats.json",
+      "sha256": "ccf0e379a23512fdd9980c5f7e0deda7ca9240901f8f984dd676533c7ed97ac5"
+    },
+    {
+      "id": "wrong_deployment_stats",
+      "path": "derived/wrong_deployment_stats.json",
+      "sha256": "be52a431d9a73fbae77a1ed36e0515560fcf7aa0a2f1f52a265fade8922f8fa1"
+    }
+  ],
+  "scenario": [
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      ],
+      "training_targets": [
+        [
+          3.9553866386413574,
+          -58.54853057861328,
+          61.75336456298828,
+          69.94355773925781,
+          9.445037841796875,
+          14.970404624938965
+        ],
+        [
+          7.825712442398071,
+          -47.20534420013428,
+          70.09266757965088,
+          71.56518042087555,
+          11.224985361099243,
+          19.272900581359863
+        ],
+        [
+          11.696038246154785,
+          -35.86215782165527,
+          78.43197059631348,
+          73.18680310249329,
+          13.004932880401611,
+          23.57539653778076
+        ],
+        [
+          3.9553866386413574,
+          -58.54853057861328,
+          61.75336456298828,
+          69.94355773925781,
+          9.445037841796875,
+          14.970404624938965
+        ],
+        [
+          7.825712442398071,
+          -47.20534420013428,
+          70.09266757965088,
+          71.56518042087555,
+          11.224985361099243,
+          19.272900581359863
+        ],
+        [
+          11.696038246154785,
+          -35.86215782165527,
+          78.43197059631348,
+          73.18680310249329,
+          13.004932880401611,
+          23.57539653778076
+        ],
+        [
+          3.9553866386413574,
+          -58.54853057861328,
+          61.75336456298828,
+          69.94355773925781,
+          9.445037841796875,
+          14.970404624938965
+        ],
+        [
+          7.825712442398071,
+          -47.20534420013428,
+          70.09266757965088,
+          71.56518042087555,
+          11.224985361099243,
+          19.272900581359863
+        ],
+        [
+          11.696038246154785,
+          -35.86215782165527,
+          78.43197059631348,
+          73.18680310249329,
+          13.004932880401611,
+          23.57539653778076
+        ],
+        [
+          3.9553866386413574,
+          -58.54853057861328,
+          61.75336456298828,
+          69.94355773925781,
+          9.445037841796875,
+          14.970404624938965
+        ],
+        [
+          7.825712442398071,
+          -47.20534420013428,
+          70.09266757965088,
+          71.56518042087555,
+          11.224985361099243,
+          19.272900581359863
+        ],
+        [
+          11.696038246154785,
+          -35.86215782165527,
+          78.43197059631348,
+          73.18680310249329,
+          13.004932880401611,
+          23.57539653778076
+        ],
+        [
+          3.9553866386413574,
+          -58.54853057861328,
+          61.75336456298828,
+          69.94355773925781,
+          9.445037841796875,
+          14.970404624938965
+        ],
+        [
+          7.825712442398071,
+          -47.20534420013428,
+          70.09266757965088,
+          71.56518042087555,
+          11.224985361099243,
+          19.272900581359863
+        ],
+        [
+          11.696038246154785,
+          -35.86215782165527,
+          78.43197059631348,
+          73.18680310249329,
+          13.004932880401611,
+          23.57539653778076
+        ],
+        [
+          3.9553866386413574,
+          -58.54853057861328,
+          61.75336456298828,
+          69.94355773925781,
+          9.445037841796875,
+          14.970404624938965
+        ],
+        [
+          7.825712442398071,
+          -47.20534420013428,
+          70.09266757965088,
+          71.56518042087555,
+          11.224985361099243,
+          19.272900581359863
+        ],
+        [
+          11.696038246154785,
+          -35.86215782165527,
+          78.43197059631348,
+          73.18680310249329,
+          13.004932880401611,
+          23.57539653778076
+        ],
+        [
+          3.9553866386413574,
+          -58.54853057861328,
+          61.75336456298828,
+          69.94355773925781,
+          9.445037841796875,
+          14.970404624938965
+        ],
+        [
+          7.825712442398071,
+          -47.20534420013428,
+          70.09266757965088,
+          71.56518042087555,
+          11.224985361099243,
+          19.272900581359863
+        ],
+        [
+          11.696038246154785,
+          -35.86215782165527,
+          78.43197059631348,
+          73.18680310249329,
+          13.004932880401611,
+          23.57539653778076
+        ],
+        [
+          3.9553866386413574,
+          -58.54853057861328,
+          61.75336456298828,
+          69.94355773925781,
+          9.445037841796875,
+          14.970404624938965
+        ],
+        [
+          7.825712442398071,
+          -47.20534420013428,
+          70.09266757965088,
+          71.56518042087555,
+          11.224985361099243,
+          19.272900581359863
+        ],
+        [
+          11.696038246154785,
+          -35.86215782165527,
+          78.43197059631348,
+          73.18680310249329,
+          13.004932880401611,
+          23.57539653778076
+        ],
+        [
+          3.9553866386413574,
+          -58.54853057861328,
+          61.75336456298828,
+          69.94355773925781,
+          9.445037841796875,
+          14.970404624938965
+        ],
+        [
+          7.825712442398071,
+          -47.20534420013428,
+          70.09266757965088,
+          71.56518042087555,
+          11.224985361099243,
+          19.272900581359863
+        ],
+        [
+          11.696038246154785,
+          -35.86215782165527,
+          78.43197059631348,
+          73.18680310249329,
+          13.004932880401611,
+          23.57539653778076
+        ],
+        [
+          3.9553866386413574,
+          -58.54853057861328,
+          61.75336456298828,
+          69.94355773925781,
+          9.445037841796875,
+          14.970404624938965
+        ],
+        [
+          7.825712442398071,
+          -47.20534420013428,
+          70.09266757965088,
+          71.56518042087555,
+          11.224985361099243,
+          19.272900581359863
+        ],
+        [
+          11.696038246154785,
+          -35.86215782165527,
+          78.43197059631348,
+          73.18680310249329,
+          13.004932880401611,
+          23.57539653778076
+        ],
+        [
+          3.9553866386413574,
+          -58.54853057861328,
+          61.75336456298828,
+          69.94355773925781,
+          9.445037841796875,
+          14.970404624938965
+        ],
+        [
+          7.825712442398071,
+          -47.20534420013428,
+          70.09266757965088,
+          71.56518042087555,
+          11.224985361099243,
+          19.272900581359863
+        ],
+        [
+          11.696038246154785,
+          -35.86215782165527,
+          78.43197059631348,
+          73.18680310249329,
+          13.004932880401611,
+          23.57539653778076
+        ],
+        [
+          3.9553866386413574,
+          -58.54853057861328,
+          61.75336456298828,
+          69.94355773925781,
+          9.445037841796875,
+          14.970404624938965
+        ],
+        [
+          7.825712442398071,
+          -47.20534420013428,
+          70.09266757965088,
+          71.56518042087555,
+          11.224985361099243,
+          19.272900581359863
+        ],
+        [
+          11.696038246154785,
+          -35.86215782165527,
+          78.43197059631348,
+          73.18680310249329,
+          13.004932880401611,
+          23.57539653778076
+        ],
+        [
+          3.9553866386413574,
+          -58.54853057861328,
+          61.75336456298828,
+          69.94355773925781,
+          9.445037841796875,
+          14.970404624938965
+        ],
+        [
+          7.825712442398071,
+          -47.20534420013428,
+          70.09266757965088,
+          71.56518042087555,
+          11.224985361099243,
+          19.272900581359863
+        ],
+        [
+          11.696038246154785,
+          -35.86215782165527,
+          78.43197059631348,
+          73.18680310249329,
+          13.004932880401611,
+          23.57539653778076
+        ],
+        [
+          3.9553866386413574,
+          -58.54853057861328,
+          61.75336456298828,
+          69.94355773925781,
+          9.445037841796875,
+          14.970404624938965
+        ],
+        [
+          7.825712442398071,
+          -47.20534420013428,
+          70.09266757965088,
+          71.56518042087555,
+          11.224985361099243,
+          19.272900581359863
+        ],
+        [
+          11.696038246154785,
+          -35.86215782165527,
+          78.43197059631348,
+          73.18680310249329,
+          13.004932880401611,
+          23.57539653778076
+        ],
+        [
+          3.9553866386413574,
+          -58.54853057861328,
+          61.75336456298828,
+          69.94355773925781,
+          9.445037841796875,
+          14.970404624938965
+        ],
+        [
+          7.825712442398071,
+          -47.20534420013428,
+          70.09266757965088,
+          71.56518042087555,
+          11.224985361099243,
+          19.272900581359863
+        ],
+        [
+          11.696038246154785,
+          -35.86215782165527,
+          78.43197059631348,
+          73.18680310249329,
+          13.004932880401611,
+          23.57539653778076
+        ],
+        [
+          3.9553866386413574,
+          -58.54853057861328,
+          61.75336456298828,
+          69.94355773925781,
+          9.445037841796875,
+          14.970404624938965
+        ],
+        [
+          7.825712442398071,
+          -47.20534420013428,
+          70.09266757965088,
+          71.56518042087555,
+          11.224985361099243,
+          19.272900581359863
+        ],
+        [
+          11.696038246154785,
+          -35.86215782165527,
+          78.43197059631348,
+          73.18680310249329,
+          13.004932880401611,
+          23.57539653778076
+        ],
+        [
+          3.9553866386413574,
+          -58.54853057861328,
+          61.75336456298828,
+          69.94355773925781,
+          9.445037841796875,
+          14.970404624938965
+        ],
+        [
+          7.825712442398071,
+          -47.20534420013428,
+          70.09266757965088,
+          71.56518042087555,
+          11.224985361099243,
+          19.272900581359863
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "dimension_0": 0,
+        "dimension_1": 0,
+        "dimension_2": 0,
+        "dimension_3": 0,
+        "dimension_4": 0,
+        "dimension_5": 0
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "reset"
+    }
+  ]
+}

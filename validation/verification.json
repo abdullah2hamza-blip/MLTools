@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "verified_at_utc": "2026-10-22T02:47:52.264746+00:00",
+  "platform": "Windows",
+  "full_suite": {
+    "interpreter": "Python 3.13.7",
+    "passed": 68,
+    "failed": 0,
+    "skipped": 0,
+    "command": "python -m pytest -q --basetemp <unique workspace directory>"
+  },
+  "installed_wheel_core": {
+    "interpreter": "Python 3.13.7",
+    "passed": 49,
+    "skipped": 19,
+    "failed": 0,
+    "no_torch_or_lerobot_installed": true,
+    "scope": "Live integration tests intentionally skipped; core replay tests exercised installed wheel"
+  },
+  "fresh_locked_integration": {
+    "interpreter": "Python 3.13.5",
+    "passed": true,
+    "commands": [
+      "uv sync --locked --extra lerobot",
+      "mltools check examples/so101/good.json --execute lerobot",
+      "python scripts/prepare_public_checkpoint.py",
+      "python scripts/validate_examples.py"
+    ]
+  },
+  "quality": {
+    "ruff_check": "PASS",
+    "ruff_format_check": "PASS",
+    "git_diff_check": "PASS",
+    "documentation_local_links": "PASS",
+    "workflow_structure": "PASS",
+    "bounded_independent_review": "No remaining blockers after regression fixes"
+  },
+  "build": {
+    "source": "dist/mltools-0.1.0.tar.gz",
+    "source_sha256": "bdb13a8f03abe0818c50e36d306a6e3bed0cf6e8af3fd9076b7b8d55b7a8a55f",
+    "wheel": "dist/mltools-0.1.0-py3-none-any.whl",
+    "wheel_sha256": "1e4e934314bad11ec9f4fcb33bd5c424520ea69537407fa87eb3e26d2ed1e78b"
+  },
+  "evidence": [
+    "validation/integration.json",
+    "validation/published_checkpoint.json",
+    "examples/so101/good.trace.json",
+    "examples/so101/moving_anchor.trace.json",
+    "examples/published_so101/source_manifest.json"
+  ],
+  "hosted_ci": "Opt-in workflow configured; not dispatched",
+  "limits": [
+    "Finite processor-path fixtures, no weights/inference/hardware",
+    "No quantitative competitive-detection or commercial validation"
+  ]
+}

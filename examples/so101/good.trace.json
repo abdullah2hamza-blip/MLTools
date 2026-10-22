@@ -1,0 +1,891 @@
+{
+  "schema_version": 1,
+  "bundle_sha256": "88c0b62075cae0f7b8dc36eab2fcabc0f6530d9560b00eb58aef74d88e948bab",
+  "execution": {
+    "revision": "5517a326eeb9b457cfe07d59b9bfdf291799c8d9",
+    "git_blobs": {
+      "processor/relative_action_processor.py": "3405402904cf15ca18227b3a3fe006d7936f9d53",
+      "processor/normalize_processor.py": "b0eafcef75e187887c8ea642cfe138f9cf8e79a9",
+      "processor/rename_processor.py": "d17f93dcd990861a2b5ade5914f4595e85eece16",
+      "processor/policy_robot_bridge.py": "bd43c0e81a52c4b75c0c3029e110541484300c89",
+      "processor/pipeline.py": "3cfdf680b27da74d75c9d1b4f8c7f69182c28b02",
+      "configs/types.py": "18359ef0575a4f560a65f21e2d6ddf534edc770f",
+      "robots/so_follower/so_follower.py": "be78bc9623b72155bb87660763d7e2c2ed481d5f",
+      "robots/so_follower/config_so_follower.py": "af4dda782b562064c1b80902ab5948b07ddc43de"
+    },
+    "source_newlines": "canonical LF",
+    "adapter": "mltools.lerobot",
+    "framework": "lerobot",
+    "device": "cpu",
+    "torch_version": "2.11.0+cpu",
+    "dtype": "float64",
+    "scope": "Real processors; fixture configuration, known actions; no model inference or hardware"
+  },
+  "events": [
+    {
+      "kind": "reset",
+      "anchor_cleared": true,
+      "queue_remaining": 0
+    },
+    {
+      "kind": "tick",
+      "cameras": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "state_names": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "state_values": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60
+      ],
+      "training_cameras": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "training_state_names": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "training_state_values": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60
+      ],
+      "prediction_horizon": 3,
+      "training_horizon": 3,
+      "training_units": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "training_normalized": [
+        [
+          0.4999999975,
+          0.999999995,
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          0.29999999985
+        ],
+        [
+          0.999999995,
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          2.999999985,
+          0.3999999998
+        ],
+        [
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          2.999999985,
+          3.4999999825000003,
+          0.49999999975
+        ]
+      ],
+      "action": {
+        "denormalized": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          56.0
+        ],
+        "commands": {
+          "shoulder_pan.pos": 11.0,
+          "shoulder_lift.pos": 22.0,
+          "elbow_flex.pos": 33.0,
+          "wrist_flex.pos": 44.0,
+          "wrist_roll.pos": 55.0,
+          "gripper.pos": 56.0
+        },
+        "units": {
+          "shoulder_pan": "degree",
+          "shoulder_lift": "degree",
+          "elbow_flex": "degree",
+          "wrist_flex": "degree",
+          "wrist_roll": "degree",
+          "gripper": "range_0_100"
+        }
+      },
+      "queue_remaining": 2
+    },
+    {
+      "kind": "tick",
+      "cameras": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "state_names": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "state_values": [
+        11,
+        21,
+        31,
+        41,
+        51,
+        62
+      ],
+      "training_cameras": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "training_state_names": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "training_state_values": [
+        11,
+        21,
+        31,
+        41,
+        51,
+        62
+      ],
+      "action": {
+        "denormalized": [
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          58.0
+        ],
+        "commands": {
+          "shoulder_pan.pos": 12.0,
+          "shoulder_lift.pos": 23.0,
+          "elbow_flex.pos": 34.0,
+          "wrist_flex.pos": 45.0,
+          "wrist_roll.pos": 56.0,
+          "gripper.pos": 58.0
+        },
+        "units": {
+          "shoulder_pan": "degree",
+          "shoulder_lift": "degree",
+          "elbow_flex": "degree",
+          "wrist_flex": "degree",
+          "wrist_roll": "degree",
+          "gripper": "range_0_100"
+        }
+      },
+      "queue_remaining": 1
+    },
+    {
+      "kind": "tick",
+      "cameras": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "state_names": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "state_values": [
+        12,
+        22,
+        32,
+        42,
+        52,
+        64
+      ],
+      "training_cameras": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "training_state_names": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "training_state_values": [
+        12,
+        22,
+        32,
+        42,
+        52,
+        64
+      ],
+      "action": {
+        "denormalized": [
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          60.0
+        ],
+        "commands": {
+          "shoulder_pan.pos": 13.0,
+          "shoulder_lift.pos": 24.0,
+          "elbow_flex.pos": 35.0,
+          "wrist_flex.pos": 46.0,
+          "wrist_roll.pos": 57.0,
+          "gripper.pos": 60.0
+        },
+        "units": {
+          "shoulder_pan": "degree",
+          "shoulder_lift": "degree",
+          "elbow_flex": "degree",
+          "wrist_flex": "degree",
+          "wrist_roll": "degree",
+          "gripper": "range_0_100"
+        }
+      },
+      "queue_remaining": 0
+    },
+    {
+      "kind": "tick",
+      "cameras": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "state_names": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "state_values": [
+        40,
+        50,
+        60,
+        70,
+        80,
+        90
+      ],
+      "training_cameras": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "training_state_names": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "training_state_values": [
+        40,
+        50,
+        60,
+        70,
+        80,
+        90
+      ],
+      "prediction_horizon": 3,
+      "training_horizon": 3,
+      "training_units": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "training_normalized": [
+        [
+          0.4999999975,
+          0.999999995,
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          0.29999999985
+        ],
+        [
+          0.999999995,
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          2.999999985,
+          0.3999999998
+        ],
+        [
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          2.999999985,
+          3.4999999825000003,
+          0.49999999975
+        ]
+      ],
+      "action": {
+        "denormalized": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          56.0
+        ],
+        "commands": {
+          "shoulder_pan.pos": 41.0,
+          "shoulder_lift.pos": 52.0,
+          "elbow_flex.pos": 63.0,
+          "wrist_flex.pos": 74.0,
+          "wrist_roll.pos": 85.0,
+          "gripper.pos": 56.0
+        },
+        "units": {
+          "shoulder_pan": "degree",
+          "shoulder_lift": "degree",
+          "elbow_flex": "degree",
+          "wrist_flex": "degree",
+          "wrist_roll": "degree",
+          "gripper": "range_0_100"
+        }
+      },
+      "queue_remaining": 2
+    },
+    {
+      "kind": "reset",
+      "anchor_cleared": true,
+      "queue_remaining": 0
+    },
+    {
+      "kind": "tick",
+      "cameras": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "state_names": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "state_values": [
+        -10,
+        -20,
+        -30,
+        -40,
+        -50,
+        20
+      ],
+      "training_cameras": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "training_state_names": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "training_state_values": [
+        -10,
+        -20,
+        -30,
+        -40,
+        -50,
+        20
+      ],
+      "prediction_horizon": 3,
+      "training_horizon": 3,
+      "training_units": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "training_normalized": [
+        [
+          0.4999999975,
+          0.999999995,
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          0.29999999985
+        ],
+        [
+          0.999999995,
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          2.999999985,
+          0.3999999998
+        ],
+        [
+          1.4999999925,
+          1.99999999,
+          2.4999999875000003,
+          2.999999985,
+          3.4999999825000003,
+          0.49999999975
+        ]
+      ],
+      "action": {
+        "denormalized": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          56.0
+        ],
+        "commands": {
+          "shoulder_pan.pos": -9.0,
+          "shoulder_lift.pos": -18.0,
+          "elbow_flex.pos": -27.0,
+          "wrist_flex.pos": -36.0,
+          "wrist_roll.pos": -45.0,
+          "gripper.pos": 56.0
+        },
+        "units": {
+          "shoulder_pan": "degree",
+          "shoulder_lift": "degree",
+          "elbow_flex": "degree",
+          "wrist_flex": "degree",
+          "wrist_roll": "degree",
+          "gripper": "range_0_100"
+        }
+      },
+      "queue_remaining": 2
+    },
+    {
+      "kind": "tick",
+      "cameras": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "state_names": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "state_values": [
+        -9,
+        -19,
+        -29,
+        -39,
+        -49,
+        22
+      ],
+      "training_cameras": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "training_state_names": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "training_state_values": [
+        -9,
+        -19,
+        -29,
+        -39,
+        -49,
+        22
+      ],
+      "action": {
+        "denormalized": [
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          58.0
+        ],
+        "commands": {
+          "shoulder_pan.pos": -8.0,
+          "shoulder_lift.pos": -17.0,
+          "elbow_flex.pos": -26.0,
+          "wrist_flex.pos": -35.0,
+          "wrist_roll.pos": -44.0,
+          "gripper.pos": 58.0
+        },
+        "units": {
+          "shoulder_pan": "degree",
+          "shoulder_lift": "degree",
+          "elbow_flex": "degree",
+          "wrist_flex": "degree",
+          "wrist_roll": "degree",
+          "gripper": "range_0_100"
+        }
+      },
+      "queue_remaining": 1
+    },
+    {
+      "kind": "tick",
+      "cameras": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "state_names": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "state_values": [
+        -8,
+        -18,
+        -28,
+        -38,
+        -48,
+        24
+      ],
+      "training_cameras": {
+        "observation.images.camera1": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.camera2": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "training_state_names": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "training_state_values": [
+        -8,
+        -18,
+        -28,
+        -38,
+        -48,
+        24
+      ],
+      "action": {
+        "denormalized": [
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          60.0
+        ],
+        "commands": {
+          "shoulder_pan.pos": -7.0,
+          "shoulder_lift.pos": -16.0,
+          "elbow_flex.pos": -25.0,
+          "wrist_flex.pos": -34.0,
+          "wrist_roll.pos": -43.0,
+          "gripper.pos": 60.0
+        },
+        "units": {
+          "shoulder_pan": "degree",
+          "shoulder_lift": "degree",
+          "elbow_flex": "degree",
+          "wrist_flex": "degree",
+          "wrist_roll": "degree",
+          "gripper": "range_0_100"
+        }
+      },
+      "queue_remaining": 0
+    },
+    {
+      "kind": "reset",
+      "anchor_cleared": true,
+      "queue_remaining": 0
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "execution": {
+    "revision": "5517a326eeb9b457cfe07d59b9bfdf291799c8d9",
+    "git_blobs": {
+      "processor/relative_action_processor.py": "3405402904cf15ca18227b3a3fe006d7936f9d53",
+      "processor/normalize_processor.py": "b0eafcef75e187887c8ea642cfe138f9cf8e79a9",
+      "processor/rename_processor.py": "d17f93dcd990861a2b5ade5914f4595e85eece16",
+      "processor/policy_robot_bridge.py": "bd43c0e81a52c4b75c0c3029e110541484300c89",
+      "processor/pipeline.py": "3cfdf680b27da74d75c9d1b4f8c7f69182c28b02",
+      "configs/types.py": "18359ef0575a4f560a65f21e2d6ddf534edc770f",
+      "robots/so_follower/so_follower.py": "be78bc9623b72155bb87660763d7e2c2ed481d5f",
+      "robots/so_follower/config_so_follower.py": "af4dda782b562064c1b80902ab5948b07ddc43de"
+    },
+    "source_newlines": "canonical LF",
+    "adapter": "mltools.lerobot",
+    "framework": "lerobot",
+    "device": "cpu",
+    "torch_version": "2.11.0+cpu",
+    "dtype": "float64",
+    "scope": "Real processors; fixture configuration, known actions; no model inference or hardware"
+  },
+  "cases": {
+    "metadata": {
+      "status": "UNKNOWN",
+      "checks": {
+        "artifacts": "PASS",
+        "cameras": "PASS",
+        "normalization": "PASS",
+        "actions": "UNKNOWN",
+        "joint_order": "UNKNOWN",
+        "camera3_role": "UNKNOWN",
+        "model_preprocessing": "UNKNOWN",
+        "training_dataset_revision": "UNKNOWN",
+        "checkpoint_weights": "UNKNOWN",
+        "state_normalization": "UNKNOWN"
+      },
+      "first_divergence": null,
+      "bundle_sha256": "c823601c048602c7c6cd5d64361fc999425c135fa39ddbe9445ca2051e84c659"
+    },
+    "wrong_stats": {
+      "status": "FAIL",
+      "checks": {
+        "artifacts": "PASS",
+        "cameras": "PASS",
+        "normalization": "FAIL",
+        "actions": "UNKNOWN",
+        "joint_order": "UNKNOWN",
+        "camera3_role": "UNKNOWN",
+        "model_preprocessing": "UNKNOWN",
+        "training_dataset_revision": "UNKNOWN",
+        "checkpoint_weights": "UNKNOWN",
+        "state_normalization": "UNKNOWN"
+      },
+      "first_divergence": {
+        "check": "normalization",
+        "status": "FAIL",
+        "boundary": "action.unnormalize",
+        "message": "Deployment must interpret outputs using pinned training statistics",
+        "event": 1,
+        "expected": [
+          3.9553866386413574,
+          -58.54853057861328,
+          61.75336456298828,
+          69.94355773925781,
+          9.445037841796875,
+          14.970404624938965
+        ],
+        "actual": [
+          13.955386638641357,
+          -58.54853057861328,
+          61.75336456298828,
+          69.94355773925781,
+          9.445037841796875,
+          14.970404624938965
+        ]
+      },
+      "bundle_sha256": "040db64b057aed8cb617a0efc69efde0f89d63589bdf5e34495f13ff6b63c451"
+    }
+  },
+  "source_manifest": "examples/published_so101/source_manifest.json",
+  "scope": "Published processor configs/statistics; no weights, tokenizer, inference or hardware"
+}

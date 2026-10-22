@@ -1,0 +1,527 @@
+{
+  "schema_version": 1,
+  "contract": {
+    "embodiment": "so101_follower/use_degrees=True/software-fixture",
+    "authority": {
+      "source": "https://github.com/huggingface/lerobot/tree/5517a326eeb9b457cfe07d59b9bfdf291799c8d9/src/lerobot/robots/so_follower",
+      "description": "Upstream joint names/units; fixture author independently specifies camera roles, relative body/absolute gripper, stats and targets. No trained checkpoint or hardware."
+    },
+    "checks": [
+      "artifacts",
+      "cameras",
+      "joint_order",
+      "normalization",
+      "actions",
+      "reset"
+    ],
+    "joints": [
+      {
+        "name": "shoulder_pan",
+        "unit": "degree",
+        "mode": "relative"
+      },
+      {
+        "name": "shoulder_lift",
+        "unit": "degree",
+        "mode": "relative"
+      },
+      {
+        "name": "elbow_flex",
+        "unit": "degree",
+        "mode": "relative"
+      },
+      {
+        "name": "wrist_flex",
+        "unit": "degree",
+        "mode": "relative"
+      },
+      {
+        "name": "wrist_roll",
+        "unit": "degree",
+        "mode": "relative"
+      },
+      {
+        "name": "gripper",
+        "unit": "range_0_100",
+        "mode": "absolute"
+      }
+    ],
+    "cameras": [
+      {
+        "source": "observation.images.front",
+        "target": "observation.images.camera1",
+        "role": "front"
+      },
+      {
+        "source": "observation.images.wrist",
+        "target": "observation.images.camera2",
+        "role": "wrist"
+      }
+    ],
+    "normalization": {
+      "kind": "mean_std",
+      "artifact": "training_stats"
+    },
+    "horizon": 3
+  },
+  "adapter": {
+    "state_order": [
+      "shoulder_pan",
+      "shoulder_lift",
+      "elbow_flex",
+      "wrist_flex",
+      "wrist_roll",
+      "gripper"
+    ],
+    "action_names": [
+      "shoulder_pan",
+      "shoulder_lift",
+      "elbow_flex",
+      "wrist_flex",
+      "wrist_roll",
+      "gripper"
+    ],
+    "motor_names": [
+      "shoulder_pan",
+      "shoulder_lift",
+      "elbow_flex",
+      "wrist_flex",
+      "wrist_roll",
+      "gripper"
+    ],
+    "camera_map": {
+      "observation.images.front": "observation.images.camera1",
+      "observation.images.wrist": "observation.images.camera2"
+    },
+    "relative": true,
+    "exclude_joints": [
+      "gripper"
+    ],
+    "bind_queue": true,
+    "reset": true,
+    "stats_artifact": "stale_stats",
+    "units": {
+      "shoulder_pan": "degree",
+      "shoulder_lift": "degree",
+      "elbow_flex": "degree",
+      "wrist_flex": "degree",
+      "wrist_roll": "degree",
+      "gripper": "range_0_100"
+    }
+  },
+  "artifacts": [
+    {
+      "id": "checkpoint_config",
+      "path": "artifacts/checkpoint_config.json",
+      "sha256": "ec21b788e6274f6c3c6125300eace23e714e6d718cdf0ad37813af8e7a478b5e"
+    },
+    {
+      "id": "training_stats",
+      "path": "artifacts/training_stats.json",
+      "sha256": "368b74bf699650cae44706078e1c3cf43301323df6ffbc45e6811b6a0eca4b9c"
+    },
+    {
+      "id": "stale_stats",
+      "path": "artifacts/stale_stats.json",
+      "sha256": "611c0c434c1b752d14c7f962cfd236938b2e29357b6b77c18ca882b898f2f766"
+    }
+  ],
+  "scenario": [
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 10,
+        "shoulder_lift": 20,
+        "elbow_flex": 30,
+        "wrist_flex": 40,
+        "wrist_roll": 50,
+        "gripper": 60
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "prediction": [
+        [
+          0.5,
+          1,
+          1.5,
+          2,
+          2.5,
+          0.3
+        ],
+        [
+          1,
+          1.5,
+          2,
+          2.5,
+          3,
+          0.4
+        ],
+        [
+          1.5,
+          2,
+          2.5,
+          3,
+          3.5,
+          0.5
+        ]
+      ],
+      "training_targets": [
+        [
+          11,
+          22,
+          33,
+          44,
+          55,
+          56
+        ],
+        [
+          12,
+          23,
+          34,
+          45,
+          56,
+          58
+        ],
+        [
+          13,
+          24,
+          35,
+          46,
+          57,
+          60
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 11,
+        "shoulder_lift": 21,
+        "elbow_flex": 31,
+        "wrist_flex": 41,
+        "wrist_roll": 51,
+        "gripper": 62
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 12,
+        "shoulder_lift": 22,
+        "elbow_flex": 32,
+        "wrist_flex": 42,
+        "wrist_roll": 52,
+        "gripper": 64
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 40,
+        "shoulder_lift": 50,
+        "elbow_flex": 60,
+        "wrist_flex": 70,
+        "wrist_roll": 80,
+        "gripper": 90
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "prediction": [
+        [
+          0.5,
+          1,
+          1.5,
+          2,
+          2.5,
+          0.3
+        ],
+        [
+          1,
+          1.5,
+          2,
+          2.5,
+          3,
+          0.4
+        ],
+        [
+          1.5,
+          2,
+          2.5,
+          3,
+          3.5,
+          0.5
+        ]
+      ],
+      "training_targets": [
+        [
+          41,
+          52,
+          63,
+          74,
+          85,
+          56
+        ],
+        [
+          42,
+          53,
+          64,
+          75,
+          86,
+          58
+        ],
+        [
+          43,
+          54,
+          65,
+          76,
+          87,
+          60
+        ]
+      ]
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": -10,
+        "shoulder_lift": -20,
+        "elbow_flex": -30,
+        "wrist_flex": -40,
+        "wrist_roll": -50,
+        "gripper": 20
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      },
+      "prediction": [
+        [
+          0.5,
+          1,
+          1.5,
+          2,
+          2.5,
+          0.3
+        ],
+        [
+          1,
+          1.5,
+          2,
+          2.5,
+          3,
+          0.4
+        ],
+        [
+          1.5,
+          2,
+          2.5,
+          3,
+          3.5,
+          0.5
+        ]
+      ],
+      "training_targets": [
+        [
+          -9,
+          -18,
+          -27,
+          -36,
+          -45,
+          56
+        ],
+        [
+          -8,
+          -17,
+          -26,
+          -35,
+          -44,
+          58
+        ],
+        [
+          -7,
+          -16,
+          -25,
+          -34,
+          -43,
+          60
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": -9,
+        "shoulder_lift": -19,
+        "elbow_flex": -29,
+        "wrist_flex": -39,
+        "wrist_roll": -49,
+        "gripper": 22
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": -8,
+        "shoulder_lift": -18,
+        "elbow_flex": -28,
+        "wrist_flex": -38,
+        "wrist_roll": -48,
+        "gripper": 24
+      },
+      "cameras": {
+        "observation.images.front": [
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "observation.images.wrist": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "reset"
+    }
+  ]
+}
