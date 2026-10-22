@@ -125,6 +125,12 @@
       "evidence": "../../validation/openpi-history-001/summary.json",
       "finding": "Genuine parent/fix data-factory execution differs against the pre-removal configured legacy contract while native round trips pass both; strong numerical oracles agree with compiler",
       "freeze_implication": "Treat the incident as one retrospectively inspected development unit; do not claim held-out discovery, released-checkpoint identity or detection superiority"
+    },
+    {
+      "id": "query-design-and-numerical-observability",
+      "evidence": "development/query-designs-001/summary.json",
+      "finding": "New equal-budget canonical/manual/random processor queries agree on numerical verdicts across the six existing development cases; physical authority gaps remain UNKNOWN. Nominal rounding and poor observability require actual-coordinate cancellation and conditional component intervals.",
+      "freeze_implication": "Freeze query generators, seeds, executed schedule, basis selection and a justified numerical profile. Treat geometry/shared-oracle comparisons separately from end-to-end tools, and repeated seeds/queries separately from independent units."
     }
   ]
 }

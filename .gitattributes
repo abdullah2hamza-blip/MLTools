@@ -7,6 +7,8 @@ validation/native-baselines-*/preflight/*/native-report.json -text whitespace=bl
 research/probes/*results.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 validation/openpi-history-*/*.stdout.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 validation/openpi-history-*/*.stderr.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+research/publication/development/query-designs-*/*.stdout.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+research/publication/development/query-designs-*/*.stderr.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 # Preserve publisher CRLF configuration bytes bound to immutable Hub Git blobs.
 research/publication/selection/smolvla/shenjianliang--smolvla_policy/config.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 research/publication/selection/smolvla/shenjianliang--smolvla_policy/train_config.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

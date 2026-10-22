@@ -1,0 +1,13 @@
+{
+  "seconds": {
+    "compiled": 0.3348729999997886,
+    "manual_axis": 0.32754969999950845,
+    "random_axis-7": 0.3357746999972733,
+    "random_dense-7": 0.8406833000044571,
+    "random_axis-23": 0.29951660000369884,
+    "random_dense-23": 0.837797700005467,
+    "random_axis-101": 0.3065422000072431,
+    "random_dense-101": 0.8262572999956319
+  },
+  "scope": "One analysis per design before verification; not a repeated timing estimate"
+}

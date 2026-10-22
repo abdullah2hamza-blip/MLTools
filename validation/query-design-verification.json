@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "status": "DEVELOPMENT_QUERY_DESIGN_COMPARISON_NOT_FINAL_EVALUATION",
+  "verified_at_utc": "2026-10-22T06:43:20.364623+00:00",
+  "source_file_sha256": {
+    "scripts/query_designs.py": "7e593f068faab1d5822daeb620200e44900c6973e09f5de0d9c73f24fd788965",
+    "scripts/query_design_worker.py": "7cd4b566d840ed6920012dba4a07b620eeda4a9ae165d9b8c9d1088c5e4e35d9",
+    "scripts/compare_query_designs.py": "106e483248a2a466952885eb3e04116766ab5d870119eaeec2723ec014333253",
+    "tests/test_query_designs.py": "a91c8ee1c99860aceae07b87fc2fe271a768001a455e2ddb6b6433902df999ff",
+    "tests/test_query_design_replay.py": "181bd39a93814dce322d8173800ab2f7400c01dbe3f207bfd478ecc5e0cc71d3",
+    "research/publication/development/query-designs-001/summary.json": "86d3814ff7229bf458438cd576fe706f2eaf482f2a2c542d7d69ccf524ff9515"
+  },
+  "checks": {
+    "native_acquisition": {
+      "cases": 6,
+      "design_conditions": 48,
+      "software_queries": 1936,
+      "parallel_ml_workers": 1,
+      "network_events": [],
+      "genuine_frameworks": [
+        "LeRobot",
+        "OpenPI"
+      ],
+      "source_stability": "Project/source/lock and original case/statistics identity checked around actual capture; upstream source identity verified"
+    },
+    "data_only_replay": "All six batches verified under Python -O in installed-wheel environment with no ML imports",
+    "raw_output_integrity": "Parsed native stdout equals the saved structured capture in all six cases; every saved evidence file bound by summary SHA-256",
+    "full_main_environment": {
+      "passed": 184,
+      "skipped": 5,
+      "seconds": 50.93
+    },
+    "new_tests_without_ml": {
+      "passed": 23,
+      "seconds": 17.09,
+      "scope": "Hand-calculated numerical regressions plus optimized replay and substantive rehashed tampering"
+    },
+    "lint": "CI-scoped ruff check and format checks pass; git diff --check passes. A broader root scan flags pre-existing research/probes formatting and frozen publisher Markdown; those source/evidence bytes are preserved.",
+    "package_identity": "Installed core modules equal workspace bytes; no package source changed since the previously verified wheel",
+    "review": {
+      "scope": "One reused subagent, bounded mathematical and missing-evidence review",
+      "fixed": [
+        "Executed-input asymmetry must preserve unknown nuisance weights",
+        "Full exact rank alone does not establish numerical observability",
+        "Missing/all-None observations retain UNKNOWN without crashing"
+      ],
+      "trial_scope": "Pre-review acquisition trials remain ignored under .test-tmp; final recorded acquisition ran after the fixes"
+    }
+  },
+  "observed_outcomes": [
+    {
+      "case": "lerobot/good",
+      "queries_per_design": 37,
+      "full_requested": {
+        "compiled": "PASS",
+        "manual_axis": "PASS",
+        "random_axis-7": "PASS",
+        "random_dense-7": "PASS",
+        "random_axis-23": "PASS",
+        "random_dense-23": "PASS",
+        "random_axis-101": "PASS",
+        "random_dense-101": "PASS"
+      },
+      "numeric": {
+        "compiled": "PASS",
+        "manual_axis": "PASS",
+        "random_axis-7": "PASS",
+        "random_dense-7": "PASS",
+        "random_axis-23": "PASS",
+        "random_dense-23": "PASS",
+        "random_axis-101": "PASS",
+        "random_dense-101": "PASS"
+      }
+    },
+    {
+      "case": "lerobot/moving_anchor",
+      "queries_per_design": 37,
+      "full_requested": {
+        "compiled": "FAIL",
+        "manual_axis": "FAIL",
+        "random_axis-7": "FAIL",
+        "random_dense-7": "FAIL",
+        "random_axis-23": "FAIL",
+        "random_dense-23": "FAIL",
+        "random_axis-101": "FAIL",
+        "random_dense-101": "FAIL"
+      },
+      "numeric": {
+        "compiled": "FAIL",
+        "manual_axis": "FAIL",
+        "random_axis-7": "FAIL",
+        "random_dense-7": "FAIL",
+        "random_axis-23": "FAIL",
+        "random_dense-23": "FAIL",
+        "random_axis-101": "FAIL",
+        "random_dense-101": "FAIL"
+      }
+    },
+    {
+      "case": "openpi/good",
+      "queries_per_design": 47,
+      "full_requested": {
+        "compiled": "PASS",
+        "manual_axis": "PASS",
+        "random_axis-7": "PASS",
+        "random_dense-7": "PASS",
+        "random_axis-23": "PASS",
+        "random_dense-23": "PASS",
+        "random_axis-101": "PASS",
+        "random_dense-101": "PASS"
+      },
+      "numeric": {
+        "compiled": "PASS",
+        "manual_axis": "PASS",
+        "random_axis-7": "PASS",
+        "random_dense-7": "PASS",
+        "random_axis-23": "PASS",
+        "random_dense-23": "PASS",
+        "random_axis-101": "PASS",
+        "random_dense-101": "PASS"
+      }
+    },
+    {
+      "case": "openpi/moving_anchor",
+      "queries_per_design": 47,
+      "full_requested": {
+        "compiled": "FAIL",
+        "manual_axis": "FAIL",
+        "random_axis-7": "FAIL",
+        "random_dense-7": "FAIL",
+        "random_axis-23": "FAIL",
+        "random_dense-23": "FAIL",
+        "random_axis-101": "FAIL",
+        "random_dense-101": "FAIL"
+      },
+      "numeric": {
+        "compiled": "FAIL",
+        "manual_axis": "FAIL",
+        "random_axis-7": "FAIL",
+        "random_dense-7": "FAIL",
+        "random_axis-23": "FAIL",
+        "random_dense-23": "FAIL",
+        "random_axis-101": "FAIL",
+        "random_dense-101": "FAIL"
+      }
+    },
+    {
+      "case": "act/metadata",
+      "queries_per_design": 37,
+      "full_requested": {
+        "compiled": "UNKNOWN",
+        "manual_axis": "UNKNOWN",
+        "random_axis-7": "UNKNOWN",
+        "random_dense-7": "UNKNOWN",
+        "random_axis-23": "UNKNOWN",
+        "random_dense-23": "UNKNOWN",
+        "random_axis-101": "UNKNOWN",
+        "random_dense-101": "UNKNOWN"
+      },
+      "numeric": {
+        "compiled": "PASS",
+        "manual_axis": "PASS",
+        "random_axis-7": "PASS",
+        "random_dense-7": "PASS",
+        "random_axis-23": "PASS",
+        "random_dense-23": "PASS",
+        "random_axis-101": "PASS",
+        "random_dense-101": "PASS"
+      }
+    },
+    {
+      "case": "act/wrong_stats.case",
+      "queries_per_design": 37,
+      "full_requested": {
+        "compiled": "FAIL",
+        "manual_axis": "FAIL",
+        "random_axis-7": "FAIL",
+        "random_dense-7": "FAIL",
+        "random_axis-23": "FAIL",
+        "random_dense-23": "FAIL",
+        "random_axis-101": "FAIL",
+        "random_dense-101": "FAIL"
+      },
+      "numeric": {
+        "compiled": "FAIL",
+        "manual_axis": "FAIL",
+        "random_axis-7": "FAIL",
+        "random_dense-7": "FAIL",
+        "random_axis-23": "FAIL",
+        "random_dense-23": "FAIL",
+        "random_axis-101": "FAIL",
+        "random_dense-101": "FAIL"
+      }
+    }
+  ],
+  "scientific_scope": [
+    "All eight geometries agree per case; no detection superiority demonstrated",
+    "Compiled denotes query geometry; all designs share the same research oracle",
+    "Missing physical authority remains UNKNOWN for full ACT metadata scope",
+    "Exact-inverse intervals are conditional on admitted affine structure and the declared empirical unfrozen measurement allowance, not a universal arithmetic bound",
+    "Only existing development cases; seeds, variants and queries are repeated measurements, not independent research units",
+    "No model/tokenizer/simulator/hardware execution; OpenPI research capture is deployed postprocessing with an explicit fixture queue",
+    "Eligible final corpus, stateful/external/certificate comparisons, fresh research-format witnesses, frozen protocol, final evaluation, reproduction pipeline and paper remain unfinished"
+  ]
+}

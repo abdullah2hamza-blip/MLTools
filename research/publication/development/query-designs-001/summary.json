@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "development_only": true,
+  "final_evaluation": false,
+  "source_file_sha256": {
+    "integrations/openpi/build.lock": "6701a4af910c3b8649010b3ebb2adc43d6ac10388829bf18c15f6ac9e74f1987",
+    "integrations/openpi/frameworks.txt": "a577a78f18160daa6526fc531cca79e34e1f58e85cccbbe6fd2f1b9048a9fd51",
+    "integrations/openpi/requirements-cpu.lock": "6febb881e62bfce4269268a32ede1e9b82e0ee03a0c8442040669524c2c31f97",
+    "scripts/compare_query_designs.py": "106e483248a2a466952885eb3e04116766ab5d870119eaeec2723ec014333253",
+    "scripts/query_design_worker.py": "7cd4b566d840ed6920012dba4a07b620eeda4a9ae165d9b8c9d1088c5e4e35d9",
+    "scripts/query_designs.py": "7e593f068faab1d5822daeb620200e44900c6973e09f5de0d9c73f24fd788965",
+    "src/mltools/__init__.py": "4e0241fbbc8f0d39a6c5840c1c0db2359c1d8fdfe9ca4b84df4d7732efaf6b4e",
+    "src/mltools/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "src/mltools/_openpi_worker.py": "12d4fabc009291505fc9936c96366e294e8b1e78f0403077002fcf777c94d14b",
+    "src/mltools/checker.py": "b10a5cce64a8b1ed81ca58be53c6f145edf2310cfcc12919d254208a823ac1c1",
+    "src/mltools/cli.py": "32fc41929129ed89c6b6cd44b9d9202d4c6aede62fcad4ef8fac50e68471b838",
+    "src/mltools/io.py": "91094fc6ac8547244aad7238022732cf9d44873267bfd620be14be8b07e25e05",
+    "src/mltools/lerobot.py": "3d083e72df1d7ef32a4c694e19fe54234112c10095e9c3e41c5e6ac4f6bb0669",
+    "src/mltools/obligations.py": "807f94f6cb6e4029f0d1c7e1079254f216aa9acf028a04d04196371f13133432",
+    "src/mltools/openpi.py": "719878dd2341f31acfc8971850c05d9af96c1d1d7e62692ae6f8b9d5747a58e8",
+    "src/mltools/probe_capture.py": "92ac659e4034002843fb2052c6e019cbca455b97a020d6df05d85c988c14098d",
+    "src/mltools/probe_cases.py": "d9a110a4c88cbf6b2951914921f65acecce180a5900bc927d594d6983d9e2511",
+    "src/mltools/probe_cli.py": "264874610ea4621b7fa7cb0d7d0cb8a4c2ed8d1ac5bd88f945e8e0735d332ffe",
+    "src/mltools/report.py": "aa15c962c9b06d8d3ef94dea75bc1594e2d9a2a90ad259703850dc649a648593",
+    "src/mltools/reproduce.py": "94df3e93b7f5f7e53be7ab6965b08c3bea7086e495de2af1f3b2868dbb3e30c3",
+    "src/mltools/research_compare.py": "50f4a061c1579d84e952c21f3c68961fa0edb5aa97a2aeeee7e9b1ef8dcfe3e1",
+    "src/mltools/research_oracles.py": "b62cc092d416c5cf3e42e8f081119d7d52d550630c4ea73d1da57c212428b161",
+    "uv.lock": "39a988f45d7cc0629efd51a2ccc7f9bc5d3084102564b24386b8877fa9d09d1d"
+  },
+  "file_sha256": {
+    "act_metadata.analysis-timing.json": "ab8998c65d5067b532f4e3ca606b8706e70a5b9fc06373a480d1616a73776c81",
+    "act_metadata.analysis.json": "7000cf80e262fb6edfa918e901e3d8296fabbf2ce84d48a45b16ea0fe78fb9fc",
+    "act_metadata.capture.json": "46ef21a44129ccd40653546dd1f2abe4cc0deafedb57059e92a50a2a2f73ab4a",
+    "act_metadata.request.json": "14182cc789be3e0bfa2b19ff19b6b3f436e69b283241c721d2290508f50135cd",
+    "act_metadata.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "act_metadata.stdout.txt": "8861ba3bec936ee76593893c54be1625858deda50360aa25f63b499806d87ac4",
+    "act_wrong_stats.case.analysis-timing.json": "c2a0e4d53aa4e4779d910716a9e29195377e9cffe83f716b2d8e882604fbc027",
+    "act_wrong_stats.case.analysis.json": "93f5a72bc98acf1cbe9f8ee1ea0c100e812936fb778c48a384fc2de0d8919ce9",
+    "act_wrong_stats.case.capture.json": "ec36e30a1a7818dc8847fe7ed75e3e37693bf36adc9d51c681c7283a66892a0b",
+    "act_wrong_stats.case.request.json": "9b59d010584a9a3b3f33fbc360642497ae539fba3e2874ba0d0362420d28a173",
+    "act_wrong_stats.case.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "act_wrong_stats.case.stdout.txt": "254fb0eb14434286fcd9a0023ffbe0c18a600eebe98532bc3bfc172e3b3754b6",
+    "lerobot_good.analysis-timing.json": "67867869fb6f29d2661ee495a64b6288c08df1f9a5fdda903039446ff270c370",
+    "lerobot_good.analysis.json": "d18b7fba7d62853f7115844f45fb0ba9cce93e18113aaaa704cb525b258021c2",
+    "lerobot_good.capture.json": "a84770efb88d4d8cef00d5c37aea0d5edb9f671af1dc59909b36da91fa250d4d",
+    "lerobot_good.request.json": "c61e5c98d1cce11628064380a5832e499ba92482c0e2cc5b54bf3b133dc39c57",
+    "lerobot_good.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lerobot_good.stdout.txt": "2bca062f1f4fce2358758678a0669b93fc75fc0d708b94d9f9b9a29395f07ca1",
+    "lerobot_moving_anchor.analysis-timing.json": "e618b0f4effe8657050a11a4d9da0dde49ef6790f81206bbbad98e3077e31000",
+    "lerobot_moving_anchor.analysis.json": "5c9cd67622cb0d9a70f2d4808493524c0af57bf5d010170e69dd3c3feb09b460",
+    "lerobot_moving_anchor.capture.json": "fbd15ccac788011ca35f30db60a212d43d1553be3e904b7c86b6584db876b776",
+    "lerobot_moving_anchor.request.json": "6c73fbce8e6bafdec2e6260bf6f1ddd7dd262c35d251a5e95dbbb8fea514230e",
+    "lerobot_moving_anchor.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lerobot_moving_anchor.stdout.txt": "ad414ce7fa30011229f435d516b7b374ace8368d61c1700230c891cfa0a0258e",
+    "openpi_good.analysis-timing.json": "fa49d45b5e77b2a09fc7481a0928112ba2818ae61df9c2f732f0a08b496ebee7",
+    "openpi_good.analysis.json": "a64218641fa6b3ba8ca764ad56a2d67cc31e5d382038c33d4edfb9b0c3c44c59",
+    "openpi_good.capture.json": "0f4553eec0f4ec4bcf5333b335f1f4aa6f79b0394741e5e68a3590c93307268a",
+    "openpi_good.request.json": "511c31d9e4115ecde8576e0f8783a6c18d6a900e29ebc08ddbd99be1eb31633d",
+    "openpi_good.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "openpi_good.stdout.txt": "3618121a743e00173036964ef235e68969041879c926f4b5ae438f25f1f04484",
+    "openpi_moving_anchor.analysis-timing.json": "a0739a55930c21460946b62b7e43991523aa4cd9ab6b1bfa018fc496bb1039ed",
+    "openpi_moving_anchor.analysis.json": "1523d8ccf29b57932c76b9411effdbbc33c96f3908e02fad4f4e7cfc5176cf1e",
+    "openpi_moving_anchor.capture.json": "2dacf564f01f720c9e08f7792c776a450441935b80d6a5b72e0bae3632fd1eb2",
+    "openpi_moving_anchor.request.json": "eb522d9073622ccc0ce0486c0341dc7cd31c8df11304c38b2668ea62ad8ecad6",
+    "openpi_moving_anchor.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "openpi_moving_anchor.stdout.txt": "df920442a5a37bd5c8cdbfa8fa547a571e11915196e3bf6916c7678687d9164a"
+  },
+  "cases": [
+    {
+      "case": "lerobot/good",
+      "queries_per_design": 37,
+      "full_requested": {
+        "compiled": "PASS",
+        "manual_axis": "PASS",
+        "random_axis-7": "PASS",
+        "random_dense-7": "PASS",
+        "random_axis-23": "PASS",
+        "random_dense-23": "PASS",
+        "random_axis-101": "PASS",
+        "random_dense-101": "PASS"
+      },
+      "numeric": {
+        "compiled": "PASS",
+        "manual_axis": "PASS",
+        "random_axis-7": "PASS",
+        "random_dense-7": "PASS",
+        "random_axis-23": "PASS",
+        "random_dense-23": "PASS",
+        "random_axis-101": "PASS",
+        "random_dense-101": "PASS"
+      }
+    },
+    {
+      "case": "lerobot/moving_anchor",
+      "queries_per_design": 37,
+      "full_requested": {
+        "compiled": "FAIL",
+        "manual_axis": "FAIL",
+        "random_axis-7": "FAIL",
+        "random_dense-7": "FAIL",
+        "random_axis-23": "FAIL",
+        "random_dense-23": "FAIL",
+        "random_axis-101": "FAIL",
+        "random_dense-101": "FAIL"
+      },
+      "numeric": {
+        "compiled": "FAIL",
+        "manual_axis": "FAIL",
+        "random_axis-7": "FAIL",
+        "random_dense-7": "FAIL",
+        "random_axis-23": "FAIL",
+        "random_dense-23": "FAIL",
+        "random_axis-101": "FAIL",
+        "random_dense-101": "FAIL"
+      }
+    },
+    {
+      "case": "openpi/good",
+      "queries_per_design": 47,
+      "full_requested": {
+        "compiled": "PASS",
+        "manual_axis": "PASS",
+        "random_axis-7": "PASS",
+        "random_dense-7": "PASS",
+        "random_axis-23": "PASS",
+        "random_dense-23": "PASS",
+        "random_axis-101": "PASS",
+        "random_dense-101": "PASS"
+      },
+      "numeric": {
+        "compiled": "PASS",
+        "manual_axis": "PASS",
+        "random_axis-7": "PASS",
+        "random_dense-7": "PASS",
+        "random_axis-23": "PASS",
+        "random_dense-23": "PASS",
+        "random_axis-101": "PASS",
+        "random_dense-101": "PASS"
+      }
+    },
+    {
+      "case": "openpi/moving_anchor",
+      "queries_per_design": 47,
+      "full_requested": {
+        "compiled": "FAIL",
+        "manual_axis": "FAIL",
+        "random_axis-7": "FAIL",
+        "random_dense-7": "FAIL",
+        "random_axis-23": "FAIL",
+        "random_dense-23": "FAIL",
+        "random_axis-101": "FAIL",
+        "random_dense-101": "FAIL"
+      },
+      "numeric": {
+        "compiled": "FAIL",
+        "manual_axis": "FAIL",
+        "random_axis-7": "FAIL",
+        "random_dense-7": "FAIL",
+        "random_axis-23": "FAIL",
+        "random_dense-23": "FAIL",
+        "random_axis-101": "FAIL",
+        "random_dense-101": "FAIL"
+      }
+    },
+    {
+      "case": "act/metadata",
+      "queries_per_design": 37,
+      "full_requested": {
+        "compiled": "UNKNOWN",
+        "manual_axis": "UNKNOWN",
+        "random_axis-7": "UNKNOWN",
+        "random_dense-7": "UNKNOWN",
+        "random_axis-23": "UNKNOWN",
+        "random_dense-23": "UNKNOWN",
+        "random_axis-101": "UNKNOWN",
+        "random_dense-101": "UNKNOWN"
+      },
+      "numeric": {
+        "compiled": "PASS",
+        "manual_axis": "PASS",
+        "random_axis-7": "PASS",
+        "random_dense-7": "PASS",
+        "random_axis-23": "PASS",
+        "random_dense-23": "PASS",
+        "random_axis-101": "PASS",
+        "random_dense-101": "PASS"
+      }
+    },
+    {
+      "case": "act/wrong_stats.case",
+      "queries_per_design": 37,
+      "full_requested": {
+        "compiled": "FAIL",
+        "manual_axis": "FAIL",
+        "random_axis-7": "FAIL",
+        "random_dense-7": "FAIL",
+        "random_axis-23": "FAIL",
+        "random_dense-23": "FAIL",
+        "random_axis-101": "FAIL",
+        "random_dense-101": "FAIL"
+      },
+      "numeric": {
+        "compiled": "FAIL",
+        "manual_axis": "FAIL",
+        "random_axis-7": "FAIL",
+        "random_dense-7": "FAIL",
+        "random_axis-23": "FAIL",
+        "random_dense-23": "FAIL",
+        "random_axis-101": "FAIL",
+        "random_dense-101": "FAIL"
+      }
+    }
+  ],
+  "seeds": [
+    7,
+    23,
+    101
+  ],
+  "unit": "Integration/checkpoint/root-cause cluster; seeds and probes are repeated measurements",
+  "scope": "New genuine processor queries; unfrozen development only, no superiority/speed claim",
+  "comparison_scope": "Query designs share the same research oracle; compiled denotes query geometry"
+}
