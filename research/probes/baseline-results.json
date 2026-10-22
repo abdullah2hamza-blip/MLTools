@@ -1,0 +1,69 @@
+{
+  "evidence_kind": "executed pinned baseline modules on constructed fixtures",
+  "sources": {
+    "tether": {
+      "file": "tether_action_execution_cert.py",
+      "blob": "40b136c7ee8703bab133a43fa3180da20be44b2d",
+      "url": "https://github.com/FastCrest/tether/blob/dcbcbb5a669fa18ae07b1c22d17bd5bd386a33da/src/tether/action_execution_cert.py"
+    },
+    "preflight": {
+      "file": "robot_policy_preflight.py",
+      "blob": "4621c449515b7c9193459db31c29b68c6a225b0c",
+      "url": "https://github.com/gbesse/robot-policy-preflight/blob/09137467bbf988bf5f4cc7418f8e300eaa6dd191/robot_policy_preflight.py"
+    }
+  },
+  "results": [
+    {
+      "fixture": "correct_runtime_adapter",
+      "robot_policy_preflight": "pass",
+      "tether_action_execution_certificate": "PASS",
+      "tether_check_counts": {
+        "pass": 10,
+        "fail": 0,
+        "skip": 1,
+        "failed_checks": []
+      },
+      "independent_named_action_comparison": "PASS",
+      "expected_named_commands": {
+        "shoulder": 0.02,
+        "elbow": 0.04,
+        "gripper": 0.06
+      },
+      "actual_named_commands": {
+        "shoulder": 0.02,
+        "elbow": 0.04,
+        "gripper": 0.06
+      }
+    },
+    {
+      "fixture": "permuted_runtime_adapter",
+      "robot_policy_preflight": "pass",
+      "tether_action_execution_certificate": "PASS",
+      "tether_check_counts": {
+        "pass": 10,
+        "fail": 0,
+        "skip": 1,
+        "failed_checks": []
+      },
+      "independent_named_action_comparison": "FAIL",
+      "expected_named_commands": {
+        "shoulder": 0.02,
+        "elbow": 0.04,
+        "gripper": 0.06
+      },
+      "actual_named_commands": {
+        "elbow": 0.02,
+        "shoulder": 0.04,
+        "gripper": 0.06
+      }
+    }
+  ],
+  "interpretation": "Static interface checks and numeric execution telemetry can both pass while a runtime adapter sends the same vector components to different named joints.",
+  "limits": [
+    "One constructed semantic mismatch and one correct control, not a general benchmark.",
+    "The full Tether release/validation workflow and Policy Space were not run.",
+    "Neither baseline module promises this independent runtime semantics check.",
+    "This shows coverage boundaries, not a defect in either baseline.",
+    "No learned policy or robot was executed; the independent contract is supplied."
+  ]
+}

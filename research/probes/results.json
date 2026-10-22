@@ -1,0 +1,133 @@
+{
+  "evidence_kind": "constructed standard-library specification examples",
+  "scope": "four deliberately selected failure modes; no model, GPU, or robot",
+  "faulty_cases": [
+    {
+      "case": "camera_role_swap",
+      "weak_check": "keys, shapes, and numeric types match",
+      "weak_check_passes": true,
+      "independent_contract_passes": false,
+      "expected_roles": {
+        "camera1": "left",
+        "camera2": "right",
+        "camera3": "wrist"
+      },
+      "actual_roles": {
+        "camera1": "left",
+        "camera2": "wrist",
+        "camera3": "right"
+      }
+    },
+    {
+      "case": "joint_order",
+      "weak_check": "adapter encode/decode round trip",
+      "weak_check_passes": true,
+      "independent_contract_passes": false,
+      "expected_checkpoint_order": [
+        "shoulder",
+        "elbow",
+        "gripper"
+      ],
+      "actual_adapter_order": [
+        "elbow",
+        "shoulder",
+        "gripper"
+      ]
+    },
+    {
+      "case": "chunk_anchor",
+      "weak_check": "relative/absolute round trip at each control tick",
+      "weak_check_passes": true,
+      "independent_contract_passes": false,
+      "expected_targets": [
+        11.0,
+        12.0,
+        13.0
+      ],
+      "actual_targets": [
+        11.0,
+        13.0,
+        15.0
+      ],
+      "maximum_target_error": 2.0
+    },
+    {
+      "case": "normalization_provenance",
+      "weak_check": "deployment normalize/denormalize round trip",
+      "weak_check_passes": true,
+      "independent_contract_passes": false,
+      "expected_physical_target": 1.0,
+      "actual_physical_target": 11.0
+    }
+  ],
+  "correct_controls": [
+    {
+      "case": "camera_role_swap",
+      "weak_check": "keys, shapes, and numeric types match",
+      "weak_check_passes": true,
+      "independent_contract_passes": true,
+      "expected_roles": {
+        "camera1": "left",
+        "camera2": "right",
+        "camera3": "wrist"
+      },
+      "actual_roles": {
+        "camera1": "left",
+        "camera2": "right",
+        "camera3": "wrist"
+      }
+    },
+    {
+      "case": "joint_order",
+      "weak_check": "adapter encode/decode round trip",
+      "weak_check_passes": true,
+      "independent_contract_passes": true,
+      "expected_checkpoint_order": [
+        "shoulder",
+        "elbow",
+        "gripper"
+      ],
+      "actual_adapter_order": [
+        "shoulder",
+        "elbow",
+        "gripper"
+      ]
+    },
+    {
+      "case": "chunk_anchor",
+      "weak_check": "relative/absolute round trip at each control tick",
+      "weak_check_passes": true,
+      "independent_contract_passes": true,
+      "expected_targets": [
+        11.0,
+        12.0,
+        13.0
+      ],
+      "actual_targets": [
+        11.0,
+        12.0,
+        13.0
+      ],
+      "maximum_target_error": 0.0
+    },
+    {
+      "case": "normalization_provenance",
+      "weak_check": "deployment normalize/denormalize round trip",
+      "weak_check_passes": true,
+      "independent_contract_passes": true,
+      "expected_physical_target": 1.0,
+      "actual_physical_target": 1.0
+    }
+  ],
+  "summary": {
+    "faulty_cases_passing_weak_checks": 4,
+    "faulty_cases_rejected_by_independent_contract": 4,
+    "correct_controls_accepted": 4
+  },
+  "limitations": [
+    "Contracts are supplied independently; the probe cannot infer intended semantics.",
+    "A shared mistake in the contract and adapter can remain undetected.",
+    "The selected cases do not measure general detection accuracy or customer value.",
+    "Interface equivalence does not establish learned competence or physical safety."
+  ]
+}
