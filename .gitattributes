@@ -5,3 +5,5 @@
 # Preserve exact native CLI output bytes referenced by evidence manifests.
 validation/native-baselines-*/preflight/*/native-report.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 research/probes/*results.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+validation/openpi-history-*/*.stdout.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+validation/openpi-history-*/*.stderr.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

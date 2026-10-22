@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "classification": "independently_authored_synthetic_boundary_values",
+  "origin": [0.1, -0.2, 0.3, 0.4, -0.5, 0.6, 0.02, -0.02],
+  "dataset_actions": [[0.25, -0.5, 0.75, 0.1, -0.2, 0.3, -0.75], [-0.1, 0.2, -0.3, -0.4, 0.5, -0.6, 0.75]],
+  "legacy_targets": [[0.15, -0.3, 0.45, -0.3, 0.3, -0.3, -0.75], [-0.2, 0.4, -0.6, -0.8, 1.0, -1.2, 0.75]],
+  "probe_radius": 0.125,
+  "scope": "Extra legacy data-transform convention only: subtract originating state on first six columns for training, add it for deployment, preserve gripper. No normalization, checkpoint identity, model execution, native controller geometry or task-success authority."
+}

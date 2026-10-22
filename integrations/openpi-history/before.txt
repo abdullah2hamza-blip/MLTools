@@ -1,0 +1,3 @@
+# Install complete unmodified packages with --no-deps after requirements.lock.
+openpi @ git+https://github.com/Physical-Intelligence/openpi.git@f1b9f4ab715cb8c87f177cf44d0e132a4765dc16
+openpi-client @ git+https://github.com/Physical-Intelligence/openpi.git@f1b9f4ab715cb8c87f177cf44d0e132a4765dc16#subdirectory=packages/openpi-client

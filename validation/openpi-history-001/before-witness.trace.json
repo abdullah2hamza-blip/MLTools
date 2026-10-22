@@ -1,0 +1,308 @@
+{
+  "schema_version": 1,
+  "development_only": true,
+  "final_evaluation": false,
+  "classification": "genuine_historical_data_factory_with_isolated_unused_model_preprocessing",
+  "phase": "before",
+  "identity": {
+    "revision": "f1b9f4ab715cb8c87f177cf44d0e132a4765dc16",
+    "module_git_blobs": {
+      "__init__.py": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "conftest.py": "5002b629de77953e03f24157f6ba4c88fc448468",
+      "models/__init__.py": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "models/gemma.py": "25a7815a6b83611ff5180897dd107b48c1ed3f77",
+      "models/gemma_fast.py": "eee39b4317dd3f42aa4d73e11dceee37e394c39d",
+      "models/lora.py": "3dfff5b4f22ff42f73298037a77df900c6b11d75",
+      "models/lora_test.py": "48b65b6ae282c6bb0e6a410ee71204a4837ffc48",
+      "models/model.py": "8f2f44b9358c3ab7de258d420507d9f599cdf73a",
+      "models/model_test.py": "897b41a572318c757a10a7e9bd9ac411821535f6",
+      "models/pi0.py": "1531108e68189cd93e5c38be9a2df4973b45f6ea",
+      "models/pi0_fast.py": "fc74cf6442b8236b2a1bcf077b258a5daf8cfe9f",
+      "models/pi0_test.py": "31350ec3a342bee447edf5b4eb56863221379d12",
+      "models/siglip.py": "c74c99e75fa45308fcadff115a7fd4ed12c9e96c",
+      "models/tokenizer.py": "29451c07ff2375f52c0e715af0d8d689bf15c16b",
+      "models/tokenizer_test.py": "092c4ae3b2330db9f89344dc4bae150457fa4310",
+      "models/vit.py": "b7901d097b86d36e3564d2b664ed50af8a194080",
+      "policies/aloha_policy.py": "f1e53265b83d2715b67b64ccdd66075335ff0843",
+      "policies/droid_policy.py": "d6d00606855b1a3cc476ee6789b3b529d02f7c66",
+      "policies/libero_policy.py": "5b69983680fa509fa1a63981c7f7a4e338cdf1a1",
+      "policies/policy.py": "ff1635a974224c080ee0a11811e0dd7c5d2d4fe4",
+      "policies/policy_config.py": "8da9e2ba01c76842a2ff8ca83a1f925078b1d0de",
+      "policies/policy_test.py": "f729c50aea0a79a2c17884a04ed94da097321c67",
+      "serving/websocket_policy_server.py": "33ebd14560b7fa08ed5ffb27b98a24b94712b755",
+      "shared/__init__.py": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "shared/array_typing.py": "3c95930725bfb67074a76267b089f7ef02ef7abe",
+      "shared/download.py": "a80e60be2f826233ccc4995912f92c7911c0b0e8",
+      "shared/download_test.py": "0bfcdce3405ba6aac90bbbb50b9e900fb5a1a3b9",
+      "shared/image_tools.py": "4d63e1c710cfeb64bf994b2c6323cd26888a80a4",
+      "shared/image_tools_test.py": "c19bee2ed1ca8aacb1f29cb8c7154037c7ce8d0c",
+      "shared/nnx_utils.py": "29df222bcbc0e815d0b6bec046a2893e3b2b18a5",
+      "shared/normalize.py": "5c6049a3ed63ac9643ae2ce42ae4628b6f3cb18c",
+      "shared/normalize_test.py": "65722d8bc35aeccc14f7bbd415fd3320ee529f99",
+      "training/checkpoints.py": "a247b1dfa5e73a277bfb0f354783c286ea42a348",
+      "training/config.py": "3b9dfb9f59677e9c52f91201b960aef898404279",
+      "training/data_loader.py": "2fc57c1de5b9be31d959151e1979cb02c82a26d6",
+      "training/data_loader_test.py": "8ef6f900e4a2cf23e7156584e0470bfbb24b06e3",
+      "training/optimizer.py": "183daa4ecea74864d34546efb69e64233422659d",
+      "training/sharding.py": "2c54a5c125ef0e17a8fc0d3afc206e14f9831a1c",
+      "training/utils.py": "fe7f94db1843b4b817cf24a007ca0b400946a066",
+      "training/weight_loaders.py": "ebf6c6a168b9720427d22d9cb9fcbef988d0e106",
+      "transforms.py": "84a015e2b9c9967c6d5cf648f005de00ef57c3a2",
+      "transforms_test.py": "54b1fe94f9b501685050f5b4f3f233cf3e7c6b0e"
+    },
+    "client_module_git_blobs": {
+      "__init__.py": "3dc1f76bc69e3f559bee6253b24fc93acee9e1f9",
+      "action_chunk_broker.py": "f95cdada02ec1061a52914777ad2b8ec4a4083d2",
+      "base_policy.py": "2f4290651b1b7bab3bd9549b47876838f5b51629",
+      "image_tools.py": "7a971b9d5f6b1495fd6cdea202ffa607d8b34bf0",
+      "image_tools_test.py": "8d4b4b92030ea869712b312581e26243035aafba",
+      "msgpack_numpy.py": "007f755edf54565579376b077eec7f7f715e1b96",
+      "msgpack_numpy_test.py": "4c774ba468aa6948e154cb2008bac8f6128a4593",
+      "runtime/agent.py": "a2c3ab66ef618ad9ecbff7b81ad9340a4604128c",
+      "runtime/agents/policy_agent.py": "65227c44dae667d9b2743b6bc1026e791cec35c4",
+      "runtime/environment.py": "664ac4678aaaa3aecf52268a6a09d1d1fc974226",
+      "runtime/runtime.py": "9552be091a26e163d60cab8071df4716524bf2e8",
+      "runtime/subscriber.py": "7c69edaa8e814dfcfe56b78b774578fe37f79428",
+      "websocket_client_policy.py": "e309fbb93ed2d66af3f2241c2f228335ac137293"
+    },
+    "upstream_artifact_git_blobs": {
+      "LICENSE": "f49a4e16e68b128803cc2dcea614603632b04eac",
+      "pyproject.toml": "ba8826ba7e2689626c3494e88abef218cdfe3ba2",
+      "uv.lock": "0390062e78434b1bcadbe69682fd4734a3bfd1d8"
+    },
+    "direct_urls": {
+      "openpi": {
+        "url": "https://github.com/Physical-Intelligence/openpi.git",
+        "vcs_info": {
+          "vcs": "git",
+          "commit_id": "f1b9f4ab715cb8c87f177cf44d0e132a4765dc16",
+          "requested_revision": "f1b9f4ab715cb8c87f177cf44d0e132a4765dc16"
+        }
+      },
+      "openpi-client": {
+        "url": "https://github.com/Physical-Intelligence/openpi.git",
+        "vcs_info": {
+          "vcs": "git",
+          "commit_id": "f1b9f4ab715cb8c87f177cf44d0e132a4765dc16",
+          "requested_revision": "f1b9f4ab715cb8c87f177cf44d0e132a4765dc16"
+        },
+        "subdirectory": "packages/openpi-client"
+      }
+    },
+    "source_newlines": "canonical LF"
+  },
+  "fixture_sha256": "543247ef395e56e86d83f4dfa0a9463dca4c2ff4634c47f1b21de3fa4c428bba",
+  "request_sha256": "5b37ddd88238aebbab37c00e3f9486b648056bf064da9b863791a9fdb4655f76",
+  "worker_sha256": "aeb753c64ad1621f956a886efb773cb3f68044d2ba556f5241206b5bda441a0f",
+  "source_ledger_sha256": "1c7cc59c2eedef06b355c2b7fcc0c708a1a0c29ba830caf0d26df4d1f240b951",
+  "suite_sha256": "58fb0acbaa2c9451d9047ccbc3d66362b1bb1c97300a9a0487d44b9720c7bfd6",
+  "outputs": {
+    "center": [
+      0.15000000000000002,
+      -0.3,
+      0.44999999999999996,
+      -0.3,
+      0.3,
+      -0.3,
+      -0.75
+    ]
+  },
+  "factory": {
+    "name": "pi0_libero",
+    "repo_id": "physical-intelligence/libero",
+    "repack_inputs": [
+      "RepackTransform"
+    ],
+    "model_inputs": [],
+    "model_outputs": [],
+    "data_inputs": [
+      "LiberoInputs"
+    ],
+    "data_outputs": [
+      "LiberoOutputs"
+    ],
+    "normalization_statistics": null,
+    "model_preprocessing_substitution": "Only ModelTransformFactory.__call__: genuine empty Group",
+    "substitution_calls": [
+      "Pi0Config"
+    ],
+    "original_method_restored": true,
+    "model_action_dim": 32
+  },
+  "boundary": {
+    "training_targets": [
+      [
+        0.25,
+        -0.5,
+        0.75,
+        0.1,
+        -0.2,
+        0.3,
+        -0.75
+      ],
+      [
+        -0.1,
+        0.2,
+        -0.3,
+        -0.4,
+        0.5,
+        -0.6,
+        0.75
+      ]
+    ],
+    "training_shape": [
+      2,
+      32
+    ],
+    "training_padding_zero": true,
+    "state_padding_zero": true,
+    "legacy_output_actions": [
+      [
+        0.15,
+        -0.3,
+        0.45,
+        -0.3,
+        0.3,
+        -0.3,
+        -0.75
+      ],
+      [
+        -0.2,
+        0.4,
+        -0.6,
+        -0.8,
+        1.0,
+        -1.2,
+        0.75
+      ]
+    ],
+    "native_roundtrip": [
+      [
+        0.25,
+        -0.5,
+        0.75,
+        0.1,
+        -0.2,
+        0.3,
+        -0.75
+      ],
+      [
+        -0.1,
+        0.2,
+        -0.3,
+        -0.4,
+        0.5,
+        -0.6,
+        0.75
+      ]
+    ],
+    "image_pixels": {
+      "base_0_rgb": 17,
+      "left_wrist_0_rgb": 91,
+      "right_wrist_0_rgb": 0
+    },
+    "image_masks": {
+      "base_0_rgb": true,
+      "left_wrist_0_rgb": true,
+      "right_wrist_0_rgb": false
+    }
+  },
+  "runtime": {
+    "python": "3.11.13",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "jax": "0.5.3",
+    "numpy": "1.26.4",
+    "seconds_including_imports": 21.903469800003222,
+    "peak_rss_bytes": 416587776,
+    "dependencies": {
+      "absl-py": "2.5.1",
+      "annotated-types": "0.8.0",
+      "augmax": "0.4.1",
+      "beartype": "0.19.0",
+      "boto3": "1.35.81",
+      "botocore": "1.35.81",
+      "botocore-stubs": "1.43.117",
+      "certifi": "2026.10.19",
+      "charset-normalizer": "3.5.2",
+      "chex": "0.1.90",
+      "colorama": "0.4.6",
+      "docstring_parser": "0.18.0",
+      "einops": "0.8.1",
+      "equinox": "0.12.2",
+      "etils": "1.12.2",
+      "filelock": "3.18.0",
+      "flax": "0.10.2",
+      "fsspec": "2025.3.0",
+      "huggingface_hub": "0.36.2",
+      "humanize": "4.16.0",
+      "idna": "3.20",
+      "importlib_resources": "7.1.0",
+      "jax": "0.5.3",
+      "jaxlib": "0.5.3",
+      "jaxtyping": "0.2.36",
+      "Jinja2": "3.1.6",
+      "jmespath": "1.1.0",
+      "markdown-it-py": "4.2.0",
+      "MarkupSafe": "3.0.3",
+      "mdurl": "0.1.2",
+      "ml_collections": "1.0.0",
+      "ml-dtypes": "0.4.1",
+      "mpmath": "1.3.0",
+      "msgpack": "1.2.3",
+      "nest-asyncio": "1.6.0",
+      "networkx": "3.6.1",
+      "numpy": "1.26.4",
+      "numpydantic": "1.6.9",
+      "openpi": "0.1.0",
+      "openpi-client": "0.1.0",
+      "optax": "0.2.4",
+      "opt_einsum": "3.4.0",
+      "orbax-checkpoint": "0.11.13",
+      "packaging": "26.3",
+      "pillow": "11.2.1",
+      "protobuf": "7.36.2",
+      "pydantic": "2.11.5",
+      "pydantic_core": "2.33.2",
+      "Pygments": "2.21.0",
+      "python-dateutil": "2.9.0.post0",
+      "PyYAML": "6.0.3",
+      "regex": "2026.9.29",
+      "requests": "2.34.2",
+      "rich": "15.0.0",
+      "s3transfer": "0.10.4",
+      "safetensors": "0.5.3",
+      "scipy": "1.17.1",
+      "sentencepiece": "0.2.0",
+      "shtab": "1.13.0",
+      "simplejson": "4.2.0",
+      "six": "1.17.0",
+      "sympy": "1.14.0",
+      "tensorstore": "0.1.74",
+      "tokenizers": "0.21.4",
+      "toolz": "1.2.0",
+      "torch": "2.7.1+cpu",
+      "tqdm": "4.70.1",
+      "tqdm-loggable": "0.2",
+      "transformers": "4.53.2",
+      "typeguard": "4.6.0",
+      "types-boto3": "1.35.81",
+      "types-boto3-s3": "1.35.81",
+      "types-s3transfer": "0.19.3",
+      "typing_extensions": "4.16.0",
+      "typing-inspection": "0.4.4",
+      "tyro": "0.9.5",
+      "urllib3": "2.8.0",
+      "wadler_lindig": "0.1.7",
+      "zipp": "4.1.2"
+    },
+    "network_guard": "Audit hook rejects socket.connect/getaddrinfo; not OS isolation",
+    "blocked_network_events": []
+  },
+  "limits": [
+    "Unmodified installed Python sources; only unused model preprocessing isolated in memory",
+    "CPU processor subset, not original full declared training dependency environment",
+    "Synthetic values and source-backed configured legacy convention; no checkpoint outputs",
+    "No normalization, tokenizer/model, controller, simulator, reset or policy queue",
+    "No physical-unit calibration, checkpoint-training attestation or task-success claim"
+  ]
+}

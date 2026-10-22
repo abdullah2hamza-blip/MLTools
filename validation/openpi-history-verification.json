@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "status": "DEVELOPMENT_HISTORICAL_REPRODUCTION_NOT_FINAL_EVALUATION",
+  "verified_at_utc": "2026-10-22T05:51:00.634316+00:00",
+  "source_file_sha256": {
+    "scripts/openpi_history_worker.py": "aeb753c64ad1621f956a886efb773cb3f68044d2ba556f5241206b5bda441a0f",
+    "scripts/reproduce_openpi_history.py": "1fe5b38d3357ba8cc1d3499df9bb714dd25daabc4e671ec457722dd5b78211fd",
+    "tests/test_openpi_history.py": "dbdff74fb9595952e7cab94fa2debcc3aca41a136b1bec51dfd8f98627cb6b36",
+    "integrations/openpi-history/requirements.lock": "d0c00598516d11f75ab6e9f764240dbae899366486b9d4fa4d893601ce1fa3e1",
+    "integrations/openpi-history/sources.json": "1c7cc59c2eedef06b355c2b7fcc0c708a1a0c29ba830caf0d26df4d1f240b951",
+    "integrations/openpi-history/fixture.json": "543247ef395e56e86d83f4dfa0a9463dca4c2ff4634c47f1b21de3fa4c428bba",
+    "validation/openpi-history-001/summary.json": "c07274e8d6ab8f22afb649972ef9cc65624c95b8cc0482e6b0d2412c3cfebb66"
+  },
+  "checks": {
+    "genuine_execution": {
+      "phases": [
+        "before",
+        "after",
+        "before-witness"
+      ],
+      "python": "3.11.13",
+      "separate_environments": true,
+      "parallel_ml_workers": 1,
+      "installed_source_files_checked_per_phase": 55,
+      "full_queries_per_revision": 31,
+      "fresh_witness_queries": 1,
+      "source_stability": "Worker/request/fixture/ledger and installed upstream Python sources checked before and after execution; parent source set pinned across dispatch",
+      "model_preprocessing_isolation": "One disclosed in-memory ModelTransformFactory.__call__ replacement; original restored"
+    },
+    "data_only_replay": "Verified all saved source/file identities, direct raw expectations, independent numerical reports and fresh witness under Python -O in installed wheel environment without ML libraries",
+    "full_main_environment": {
+      "passed": 161,
+      "skipped": 5,
+      "seconds": 32.93
+    },
+    "new_tests_without_ml": {
+      "passed": 5,
+      "seconds": 5.59,
+      "scope": "Data-only replay and rehashed substantive tampering under Python -O"
+    },
+    "lint": "ruff passed; 44 files formatted; git diff --check passed",
+    "package_identity": "Capture/replay require installed MLTools modules to equal recorded workspace bytes; package modules unchanged since preceding validated wheel build",
+    "review": {
+      "scope": "One reused subagent, bounded read-only historical feasibility and capture review",
+      "fixed": [
+        "Canonical evaluator outputs field",
+        "Pre/post capture source and input identity checks",
+        "Exact installation identity inventory and development scope guards"
+      ],
+      "trial_limit": "Pre-review and Windows-path trial outputs remain ignored under .test-tmp; final recorded captures were generated after fixes"
+    }
+  },
+  "scientific_scope": [
+    "One retrospective historical configuration incident; no independent sample multiplication",
+    "Native round trips pass both revisions; direct independent expectations distinguish the legacy configuration",
+    "Compiled, pointwise and strong relational verdicts agree on the same supplied measurements",
+    "No checkpoint training identity, normalization statistics, model/controller/simulator execution or physical conformance",
+    "Complete historical Python packages in reviewed CPU subsets, not the original full training environment",
+    "Eligible final corpus, common historical producer profiles, frozen protocol, final experiments and paper remain unfinished"
+  ]
+}

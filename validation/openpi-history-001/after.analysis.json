@@ -1,0 +1,2898 @@
+{
+  "compiled": {
+    "schema_version": 1,
+    "method": "affine-obligations-development",
+    "status": "PASS",
+    "suite_sha256": "40ec42b31791f7483136f472824b86399a2ef4c322948acb41496450e4a7b68a",
+    "reference_sha256": "6ab53ad40194fc966ef043355b0c3cfd490f897c533bfe9766408c1b3e716f25",
+    "evidence_sha256": "a3e7f783f8cdddc7e7c5098dcff6fda0fa99c2b4a40d5e7c727ced23edca7f47",
+    "coverage": {
+      "rank_by_output": {
+        "dataset_action.0": 16,
+        "dataset_action.1": 16,
+        "dataset_action.2": 16,
+        "dataset_action.3": 16,
+        "dataset_action.4": 16,
+        "dataset_action.5": 16,
+        "dataset_action.6": 16
+      },
+      "required_rank": 16,
+      "planned_queries": 31,
+      "observed_queries": 31
+    },
+    "findings": [
+      {
+        "obligation": "offset",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.25,
+        "actual": 0.25,
+        "queries": [
+          "center"
+        ],
+        "output_resolution_floor": 5.551115123125783e-17
+      },
+      {
+        "obligation": "effect:action:0",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.125,
+        "actual": 0.125,
+        "queries": [
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:action:0",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 1.3877787807814457e-16
+      },
+      {
+        "obligation": "effect:action:1",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:action:1",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "effect:action:2",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:action:2",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "effect:action:3",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:action:3",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "effect:action:4",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:action:4",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "effect:action:5",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:action:5",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "effect:action:6",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:action:6",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "effect:origin:0",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.125,
+        "actual": 0.12499999999999999,
+        "queries": [
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 9.71445146547012e-17
+      },
+      {
+        "obligation": "affinity:origin:0",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 1.3877787807814457e-16
+      },
+      {
+        "obligation": "effect:origin:1",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:origin:1",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "effect:origin:2",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:origin:2",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "effect:origin:3",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:origin:3",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "effect:origin:4",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:origin:4",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "effect:origin:5",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:origin:5",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "effect:origin:6",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:origin:6",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "effect:origin:7",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:origin:7",
+        "output": "dataset_action.0",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "offset",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": -0.5,
+        "actual": -0.5,
+        "queries": [
+          "center"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "effect:action:0",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:action:0",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:action:1",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.125,
+        "actual": 0.125,
+        "queries": [
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 1.942890293094024e-16
+      },
+      {
+        "obligation": "affinity:action:1",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 2.7755575615628914e-16
+      },
+      {
+        "obligation": "effect:action:2",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:action:2",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:action:3",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:action:3",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:action:4",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:action:4",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:action:5",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:action:5",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:action:6",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:action:6",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:origin:0",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:origin:0",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:origin:1",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.125,
+        "actual": 0.125,
+        "queries": [
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 1.942890293094024e-16
+      },
+      {
+        "obligation": "affinity:origin:1",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 2.7755575615628914e-16
+      },
+      {
+        "obligation": "effect:origin:2",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:origin:2",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:origin:3",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:origin:3",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:origin:4",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:origin:4",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:origin:5",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:origin:5",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:origin:6",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:origin:6",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:origin:7",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:origin:7",
+        "output": "dataset_action.1",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "offset",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.75,
+        "actual": 0.75,
+        "queries": [
+          "center"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "effect:action:0",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:action:0",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:action:1",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:action:1",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:action:2",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.125,
+        "actual": 0.125,
+        "queries": [
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 2.498001805406602e-16
+      },
+      {
+        "obligation": "affinity:action:2",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:action:3",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:action:3",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:action:4",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:action:4",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:action:5",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:action:5",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:action:6",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:action:6",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:origin:0",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:origin:0",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:origin:1",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:origin:1",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:origin:2",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.125,
+        "actual": 0.125,
+        "queries": [
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 2.498001805406602e-16
+      },
+      {
+        "obligation": "affinity:origin:2",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:origin:3",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:origin:3",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:origin:4",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:origin:4",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:origin:5",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:origin:5",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:origin:6",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:origin:6",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:origin:7",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:origin:7",
+        "output": "dataset_action.2",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "offset",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.1,
+        "actual": 0.10000000000000003,
+        "queries": [
+          "center"
+        ],
+        "output_resolution_floor": 1.3877787807814457e-17
+      },
+      {
+        "obligation": "effect:action:0",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 2.7755575615628914e-17
+      },
+      {
+        "obligation": "affinity:action:0",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 4.163336342344337e-17
+      },
+      {
+        "obligation": "effect:action:1",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 2.7755575615628914e-17
+      },
+      {
+        "obligation": "affinity:action:1",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 4.163336342344337e-17
+      },
+      {
+        "obligation": "effect:action:2",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 2.7755575615628914e-17
+      },
+      {
+        "obligation": "affinity:action:2",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 4.163336342344337e-17
+      },
+      {
+        "obligation": "effect:action:3",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.125,
+        "actual": 0.125,
+        "queries": [
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 5.898059818321144e-17
+      },
+      {
+        "obligation": "affinity:action:3",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 4.5102810375396984e-17
+      },
+      {
+        "obligation": "effect:action:4",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 2.7755575615628914e-17
+      },
+      {
+        "obligation": "affinity:action:4",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 4.163336342344337e-17
+      },
+      {
+        "obligation": "effect:action:5",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 2.7755575615628914e-17
+      },
+      {
+        "obligation": "affinity:action:5",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 4.163336342344337e-17
+      },
+      {
+        "obligation": "effect:action:6",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 2.7755575615628914e-17
+      },
+      {
+        "obligation": "affinity:action:6",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 4.163336342344337e-17
+      },
+      {
+        "obligation": "effect:origin:0",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 2.7755575615628914e-17
+      },
+      {
+        "obligation": "affinity:origin:0",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 4.163336342344337e-17
+      },
+      {
+        "obligation": "effect:origin:1",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 2.7755575615628914e-17
+      },
+      {
+        "obligation": "affinity:origin:1",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 4.163336342344337e-17
+      },
+      {
+        "obligation": "effect:origin:2",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 2.7755575615628914e-17
+      },
+      {
+        "obligation": "affinity:origin:2",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 4.163336342344337e-17
+      },
+      {
+        "obligation": "effect:origin:3",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.125,
+        "actual": 0.125,
+        "queries": [
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 5.898059818321144e-17
+      },
+      {
+        "obligation": "affinity:origin:3",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 4.5102810375396984e-17
+      },
+      {
+        "obligation": "effect:origin:4",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 2.7755575615628914e-17
+      },
+      {
+        "obligation": "affinity:origin:4",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 4.163336342344337e-17
+      },
+      {
+        "obligation": "effect:origin:5",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 2.7755575615628914e-17
+      },
+      {
+        "obligation": "affinity:origin:5",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 4.163336342344337e-17
+      },
+      {
+        "obligation": "effect:origin:6",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 2.7755575615628914e-17
+      },
+      {
+        "obligation": "affinity:origin:6",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 4.163336342344337e-17
+      },
+      {
+        "obligation": "effect:origin:7",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 2.7755575615628914e-17
+      },
+      {
+        "obligation": "affinity:origin:7",
+        "output": "dataset_action.3",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 4.163336342344337e-17
+      },
+      {
+        "obligation": "offset",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": -0.2,
+        "actual": -0.2,
+        "queries": [
+          "center"
+        ],
+        "output_resolution_floor": 2.7755575615628914e-17
+      },
+      {
+        "obligation": "effect:action:0",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 5.551115123125783e-17
+      },
+      {
+        "obligation": "affinity:action:0",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 8.326672684688674e-17
+      },
+      {
+        "obligation": "effect:action:1",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 5.551115123125783e-17
+      },
+      {
+        "obligation": "affinity:action:1",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 8.326672684688674e-17
+      },
+      {
+        "obligation": "effect:action:2",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 5.551115123125783e-17
+      },
+      {
+        "obligation": "affinity:action:2",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 8.326672684688674e-17
+      },
+      {
+        "obligation": "effect:action:3",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 5.551115123125783e-17
+      },
+      {
+        "obligation": "affinity:action:3",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 8.326672684688674e-17
+      },
+      {
+        "obligation": "effect:action:4",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.125,
+        "actual": 0.125,
+        "queries": [
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 9.71445146547012e-17
+      },
+      {
+        "obligation": "affinity:action:4",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 9.71445146547012e-17
+      },
+      {
+        "obligation": "effect:action:5",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 5.551115123125783e-17
+      },
+      {
+        "obligation": "affinity:action:5",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 8.326672684688674e-17
+      },
+      {
+        "obligation": "effect:action:6",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 5.551115123125783e-17
+      },
+      {
+        "obligation": "affinity:action:6",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 8.326672684688674e-17
+      },
+      {
+        "obligation": "effect:origin:0",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 5.551115123125783e-17
+      },
+      {
+        "obligation": "affinity:origin:0",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 8.326672684688674e-17
+      },
+      {
+        "obligation": "effect:origin:1",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 5.551115123125783e-17
+      },
+      {
+        "obligation": "affinity:origin:1",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 8.326672684688674e-17
+      },
+      {
+        "obligation": "effect:origin:2",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 5.551115123125783e-17
+      },
+      {
+        "obligation": "affinity:origin:2",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 8.326672684688674e-17
+      },
+      {
+        "obligation": "effect:origin:3",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 5.551115123125783e-17
+      },
+      {
+        "obligation": "affinity:origin:3",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 8.326672684688674e-17
+      },
+      {
+        "obligation": "effect:origin:4",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.125,
+        "actual": 0.125,
+        "queries": [
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 9.71445146547012e-17
+      },
+      {
+        "obligation": "affinity:origin:4",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 9.71445146547012e-17
+      },
+      {
+        "obligation": "effect:origin:5",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 5.551115123125783e-17
+      },
+      {
+        "obligation": "affinity:origin:5",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 8.326672684688674e-17
+      },
+      {
+        "obligation": "effect:origin:6",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 5.551115123125783e-17
+      },
+      {
+        "obligation": "affinity:origin:6",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 8.326672684688674e-17
+      },
+      {
+        "obligation": "effect:origin:7",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 5.551115123125783e-17
+      },
+      {
+        "obligation": "affinity:origin:7",
+        "output": "dataset_action.4",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 8.326672684688674e-17
+      },
+      {
+        "obligation": "offset",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.3,
+        "actual": 0.3,
+        "queries": [
+          "center"
+        ],
+        "output_resolution_floor": 5.551115123125783e-17
+      },
+      {
+        "obligation": "effect:action:0",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:action:0",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "effect:action:1",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:action:1",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "effect:action:2",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:action:2",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "effect:action:3",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:action:3",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "effect:action:4",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:action:4",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "effect:action:5",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.125,
+        "actual": 0.125,
+        "queries": [
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:action:5",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 1.3877787807814457e-16
+      },
+      {
+        "obligation": "effect:action:6",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:action:6",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "effect:origin:0",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:origin:0",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "effect:origin:1",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:origin:1",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "effect:origin:2",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:origin:2",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "effect:origin:3",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:origin:3",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "effect:origin:4",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:origin:4",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "effect:origin:5",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.125,
+        "actual": 0.125,
+        "queries": [
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:origin:5",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 1.3877787807814457e-16
+      },
+      {
+        "obligation": "effect:origin:6",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:origin:6",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "effect:origin:7",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "affinity:origin:7",
+        "output": "dataset_action.5",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 1.6653345369377348e-16
+      },
+      {
+        "obligation": "offset",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": -0.75,
+        "actual": -0.75,
+        "queries": [
+          "center"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "effect:action:0",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:action:0",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:action:1",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:action:1",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:action:2",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:action:2",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:action:3",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:action:3",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:action:4",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:action:4",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:action:5",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:action:5",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:action:6",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.125,
+        "actual": 0.125,
+        "queries": [
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 2.498001805406602e-16
+      },
+      {
+        "obligation": "affinity:action:6",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:origin:0",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:origin:0",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:origin:1",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:origin:1",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:origin:2",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:origin:2",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:origin:3",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:origin:3",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:origin:4",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:origin:4",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:origin:5",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:origin:5",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:origin:6",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:origin:6",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      },
+      {
+        "obligation": "effect:origin:7",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 2.220446049250313e-16
+      },
+      {
+        "obligation": "affinity:origin:7",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": 0.0,
+        "actual": 0.0,
+        "queries": [
+          "center",
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 3.3306690738754696e-16
+      }
+    ],
+    "first_divergence": null,
+    "witness": [],
+    "limitations": [
+      "Finite affine-fragment obligations only; not arbitrary functional equivalence",
+      "Reference authority, units, fragment membership and execution producer are trusted inputs",
+      "Development method; no final benchmark evidence is supplied by this module",
+      "Binary64 output-resolution floor is a diagnostic, not a bound on upstream numeric error"
+    ]
+  },
+  "pointwise": {
+    "schema_version": 1,
+    "method": "pointwise-reference-development",
+    "status": "PASS",
+    "applicability": "APPLICABLE",
+    "suite_sha256": "40ec42b31791f7483136f472824b86399a2ef4c322948acb41496450e4a7b68a",
+    "reference_sha256": "6ab53ad40194fc966ef043355b0c3cfd490f897c533bfe9766408c1b3e716f25",
+    "evidence_sha256": "a3e7f783f8cdddc7e7c5098dcff6fda0fa99c2b4a40d5e7c727ced23edca7f47",
+    "groups": {
+      "pointwise": {
+        "status": "PASS",
+        "counts": {
+          "PASS": 217
+        }
+      }
+    },
+    "comparison_count": 217,
+    "full_design_coverage_status": "PASS",
+    "first_divergence": null,
+    "coverage": {
+      "supplied_queries": 31,
+      "eligible_queries": 31,
+      "queried_ids": [
+        "center",
+        "plus:action:0",
+        "minus:action:0",
+        "plus:action:1",
+        "minus:action:1",
+        "plus:action:2",
+        "minus:action:2",
+        "plus:action:3",
+        "minus:action:3",
+        "plus:action:4",
+        "minus:action:4",
+        "plus:action:5",
+        "minus:action:5",
+        "plus:action:6",
+        "minus:action:6",
+        "plus:origin:0",
+        "minus:origin:0",
+        "plus:origin:1",
+        "minus:origin:1",
+        "plus:origin:2",
+        "minus:origin:2",
+        "plus:origin:3",
+        "minus:origin:3",
+        "plus:origin:4",
+        "minus:origin:4",
+        "plus:origin:5",
+        "minus:origin:5",
+        "plus:origin:6",
+        "minus:origin:6",
+        "plus:origin:7",
+        "minus:origin:7"
+      ],
+      "observed_eligible_queries": 31,
+      "rank_by_output": {
+        "dataset_action.0": 16,
+        "dataset_action.1": 16,
+        "dataset_action.2": 16,
+        "dataset_action.3": 16,
+        "dataset_action.4": 16,
+        "dataset_action.5": 16,
+        "dataset_action.6": 16
+      },
+      "required_full_rank": 16
+    },
+    "scope": "Finite numerical oracle on the supplied design; not new probe generation",
+    "limitations": [
+      "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+      "Binary64 resolution diagnostic is not an upstream error bound",
+      "Oracle runtime excludes acquiring the shared adapter observations",
+      "Contrast budgets propagate component tolerances and sampled closure residuals"
+    ]
+  },
+  "strong_relational": {
+    "schema_version": 1,
+    "method": "relational-reference-development",
+    "status": "PASS",
+    "applicability": "APPLICABLE",
+    "suite_sha256": "40ec42b31791f7483136f472824b86399a2ef4c322948acb41496450e4a7b68a",
+    "reference_sha256": "6ab53ad40194fc966ef043355b0c3cfd490f897c533bfe9766408c1b3e716f25",
+    "evidence_sha256": "a3e7f783f8cdddc7e7c5098dcff6fda0fa99c2b4a40d5e7c727ced23edca7f47",
+    "groups": {
+      "pointwise": {
+        "status": "PASS",
+        "counts": {
+          "PASS": 217
+        }
+      },
+      "paired": {
+        "status": "PASS",
+        "counts": {
+          "PASS": 3255
+        }
+      },
+      "midpoint": {
+        "status": "PASS",
+        "counts": {
+          "PASS": 105
+        }
+      }
+    },
+    "comparison_count": 3577,
+    "full_design_coverage_status": "PASS",
+    "first_divergence": null,
+    "coverage": {
+      "supplied_queries": 31,
+      "eligible_queries": 31,
+      "queried_ids": [
+        "center",
+        "plus:action:0",
+        "minus:action:0",
+        "plus:action:1",
+        "minus:action:1",
+        "plus:action:2",
+        "minus:action:2",
+        "plus:action:3",
+        "minus:action:3",
+        "plus:action:4",
+        "minus:action:4",
+        "plus:action:5",
+        "minus:action:5",
+        "plus:action:6",
+        "minus:action:6",
+        "plus:origin:0",
+        "minus:origin:0",
+        "plus:origin:1",
+        "minus:origin:1",
+        "plus:origin:2",
+        "minus:origin:2",
+        "plus:origin:3",
+        "minus:origin:3",
+        "plus:origin:4",
+        "minus:origin:4",
+        "plus:origin:5",
+        "minus:origin:5",
+        "plus:origin:6",
+        "minus:origin:6",
+        "plus:origin:7",
+        "minus:origin:7"
+      ],
+      "observed_eligible_queries": 31,
+      "rank_by_output": {
+        "dataset_action.0": 16,
+        "dataset_action.1": 16,
+        "dataset_action.2": 16,
+        "dataset_action.3": 16,
+        "dataset_action.4": 16,
+        "dataset_action.5": 16,
+        "dataset_action.6": 16
+      },
+      "required_full_rank": 16
+    },
+    "scope": "Finite numerical oracle on the supplied design; not new probe generation",
+    "limitations": [
+      "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+      "Binary64 resolution diagnostic is not an upstream error bound",
+      "Oracle runtime excludes acquiring the shared adapter observations",
+      "Contrast budgets propagate component tolerances and sampled closure residuals"
+    ]
+  }
+}

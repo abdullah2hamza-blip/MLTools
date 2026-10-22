@@ -119,6 +119,12 @@
       "evidence": "../../docs/research-oracles.md",
       "finding": "All-pair cancellation requires propagated component and closure budgets, plus verified closure authority",
       "freeze_implication": "Freeze relation-specific numerical profiles and full-scope coverage guards before final evaluation"
+    },
+    {
+      "id": "historical-openpi-round-trip-blindness",
+      "evidence": "../../validation/openpi-history-001/summary.json",
+      "finding": "Genuine parent/fix data-factory execution differs against the pre-removal configured legacy contract while native round trips pass both; strong numerical oracles agree with compiler",
+      "freeze_implication": "Treat the incident as one retrospectively inspected development unit; do not claim held-out discovery, released-checkpoint identity or detection superiority"
     }
   ]
 }

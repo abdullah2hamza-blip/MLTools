@@ -1,0 +1,2944 @@
+{
+  "compiled": {
+    "schema_version": 1,
+    "method": "affine-obligations-development",
+    "status": "FAIL",
+    "suite_sha256": "58fb0acbaa2c9451d9047ccbc3d66362b1bb1c97300a9a0487d44b9720c7bfd6",
+    "reference_sha256": "6ab53ad40194fc966ef043355b0c3cfd490f897c533bfe9766408c1b3e716f25",
+    "evidence_sha256": "cee52ba68994cf7df4338b330d88fccb5c248ad7829e35f62739e2b453632ed1",
+    "coverage": {
+      "rank_by_output": {
+        "dataset_action.0": 1,
+        "dataset_action.1": 1,
+        "dataset_action.2": 1,
+        "dataset_action.3": 1,
+        "dataset_action.4": 1,
+        "dataset_action.5": 1,
+        "dataset_action.6": 1
+      },
+      "required_rank": 16,
+      "planned_queries": 1,
+      "observed_queries": 1
+    },
+    "findings": [
+      {
+        "obligation": "offset",
+        "output": "dataset_action.0",
+        "status": "FAIL",
+        "expected": 0.25,
+        "actual": 0.15000000000000002,
+        "queries": [
+          "center"
+        ],
+        "output_resolution_floor": 2.7755575615628914e-17
+      },
+      {
+        "obligation": "effect:action:0",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.125,
+        "actual": null,
+        "queries": [
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:0",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:1",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:1",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:2",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:2",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:3",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:3",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:4",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:4",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:5",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:5",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:6",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:6",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:0",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.125,
+        "actual": null,
+        "queries": [
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:0",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:1",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:1",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:2",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:2",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:3",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:3",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:4",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:4",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:5",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:5",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:6",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:6",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:7",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:7",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "offset",
+        "output": "dataset_action.1",
+        "status": "FAIL",
+        "expected": -0.5,
+        "actual": -0.3,
+        "queries": [
+          "center"
+        ],
+        "output_resolution_floor": 5.551115123125783e-17
+      },
+      {
+        "obligation": "effect:action:0",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:0",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:1",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.125,
+        "actual": null,
+        "queries": [
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:1",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:2",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:2",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:3",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:3",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:4",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:4",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:5",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:5",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:6",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:6",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:0",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:0",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:1",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.125,
+        "actual": null,
+        "queries": [
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:1",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:2",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:2",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:3",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:3",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:4",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:4",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:5",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:5",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:6",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:6",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:7",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:7",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "offset",
+        "output": "dataset_action.2",
+        "status": "FAIL",
+        "expected": 0.75,
+        "actual": 0.44999999999999996,
+        "queries": [
+          "center"
+        ],
+        "output_resolution_floor": 5.551115123125783e-17
+      },
+      {
+        "obligation": "effect:action:0",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:0",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:1",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:1",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:2",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.125,
+        "actual": null,
+        "queries": [
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:2",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:3",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:3",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:4",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:4",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:5",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:5",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:6",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:6",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:0",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:0",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:1",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:1",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:2",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.125,
+        "actual": null,
+        "queries": [
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:2",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:3",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:3",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:4",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:4",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:5",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:5",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:6",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:6",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:7",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:7",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "offset",
+        "output": "dataset_action.3",
+        "status": "FAIL",
+        "expected": 0.1,
+        "actual": -0.3,
+        "queries": [
+          "center"
+        ],
+        "output_resolution_floor": 5.551115123125783e-17
+      },
+      {
+        "obligation": "effect:action:0",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:0",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:1",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:1",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:2",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:2",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:3",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.125,
+        "actual": null,
+        "queries": [
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:3",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:4",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:4",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:5",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:5",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:6",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:6",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:0",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:0",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:1",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:1",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:2",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:2",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:3",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.125,
+        "actual": null,
+        "queries": [
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:3",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:4",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:4",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:5",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:5",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:6",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:6",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:7",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:7",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "offset",
+        "output": "dataset_action.4",
+        "status": "FAIL",
+        "expected": -0.2,
+        "actual": 0.3,
+        "queries": [
+          "center"
+        ],
+        "output_resolution_floor": 5.551115123125783e-17
+      },
+      {
+        "obligation": "effect:action:0",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:0",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:1",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:1",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:2",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:2",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:3",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:3",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:4",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.125,
+        "actual": null,
+        "queries": [
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:4",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:5",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:5",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:6",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:6",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:0",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:0",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:1",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:1",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:2",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:2",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:3",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:3",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:4",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.125,
+        "actual": null,
+        "queries": [
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:4",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:5",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:5",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:6",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:6",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:7",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:7",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "offset",
+        "output": "dataset_action.5",
+        "status": "FAIL",
+        "expected": 0.3,
+        "actual": -0.3,
+        "queries": [
+          "center"
+        ],
+        "output_resolution_floor": 5.551115123125783e-17
+      },
+      {
+        "obligation": "effect:action:0",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:0",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:1",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:1",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:2",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:2",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:3",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:3",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:4",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:4",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:5",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.125,
+        "actual": null,
+        "queries": [
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:5",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:6",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:6",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:0",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:0",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:1",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:1",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:2",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:2",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:3",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:3",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:4",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:4",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:5",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.125,
+        "actual": null,
+        "queries": [
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:5",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:6",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:6",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:7",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:7",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "offset",
+        "output": "dataset_action.6",
+        "status": "PASS",
+        "expected": -0.75,
+        "actual": -0.75,
+        "queries": [
+          "center"
+        ],
+        "output_resolution_floor": 1.1102230246251565e-16
+      },
+      {
+        "obligation": "effect:action:0",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:0",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:0",
+          "minus:action:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:1",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:1",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:1",
+          "minus:action:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:2",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:2",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:2",
+          "minus:action:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:3",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:3",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:3",
+          "minus:action:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:4",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:4",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:4",
+          "minus:action:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:5",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:5",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:5",
+          "minus:action:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:action:6",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.125,
+        "actual": null,
+        "queries": [
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:action:6",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:action:6",
+          "minus:action:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:0",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:0",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:0",
+          "minus:origin:0"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:1",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:1",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:1",
+          "minus:origin:1"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:2",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:2",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:2",
+          "minus:origin:2"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:3",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:3",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:3",
+          "minus:origin:3"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:4",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:4",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:4",
+          "minus:origin:4"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:5",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:5",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:5",
+          "minus:origin:5"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:6",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:6",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:6",
+          "minus:origin:6"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "effect:origin:7",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "affinity:origin:7",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 0.0,
+        "actual": null,
+        "queries": [
+          "center",
+          "plus:origin:7",
+          "minus:origin:7"
+        ],
+        "output_resolution_floor": 0.0
+      },
+      {
+        "obligation": "design_rank",
+        "output": "dataset_action.0",
+        "status": "UNKNOWN",
+        "expected": 16,
+        "actual": 1,
+        "queries": []
+      },
+      {
+        "obligation": "design_rank",
+        "output": "dataset_action.1",
+        "status": "UNKNOWN",
+        "expected": 16,
+        "actual": 1,
+        "queries": []
+      },
+      {
+        "obligation": "design_rank",
+        "output": "dataset_action.2",
+        "status": "UNKNOWN",
+        "expected": 16,
+        "actual": 1,
+        "queries": []
+      },
+      {
+        "obligation": "design_rank",
+        "output": "dataset_action.3",
+        "status": "UNKNOWN",
+        "expected": 16,
+        "actual": 1,
+        "queries": []
+      },
+      {
+        "obligation": "design_rank",
+        "output": "dataset_action.4",
+        "status": "UNKNOWN",
+        "expected": 16,
+        "actual": 1,
+        "queries": []
+      },
+      {
+        "obligation": "design_rank",
+        "output": "dataset_action.5",
+        "status": "UNKNOWN",
+        "expected": 16,
+        "actual": 1,
+        "queries": []
+      },
+      {
+        "obligation": "design_rank",
+        "output": "dataset_action.6",
+        "status": "UNKNOWN",
+        "expected": 16,
+        "actual": 1,
+        "queries": []
+      }
+    ],
+    "first_divergence": {
+      "obligation": "offset",
+      "output": "dataset_action.0",
+      "status": "FAIL",
+      "expected": 0.25,
+      "actual": 0.15000000000000002,
+      "queries": [
+        "center"
+      ],
+      "output_resolution_floor": 2.7755575615628914e-17
+    },
+    "witness": [
+      {
+        "query": "center",
+        "inputs": [
+          0.15000000000000002,
+          -0.3,
+          0.44999999999999996,
+          -0.3,
+          0.3,
+          -0.3,
+          -0.75,
+          0.1,
+          -0.2,
+          0.3,
+          0.4,
+          -0.5,
+          0.6,
+          0.019999999999999997,
+          -0.019999999999999997
+        ],
+        "outputs": [
+          0.15000000000000002,
+          -0.3,
+          0.44999999999999996,
+          -0.3,
+          0.3,
+          -0.3,
+          -0.75
+        ]
+      }
+    ],
+    "limitations": [
+      "Finite affine-fragment obligations only; not arbitrary functional equivalence",
+      "Reference authority, units, fragment membership and execution producer are trusted inputs",
+      "Development method; no final benchmark evidence is supplied by this module",
+      "Binary64 output-resolution floor is a diagnostic, not a bound on upstream numeric error"
+    ]
+  },
+  "pointwise": {
+    "schema_version": 1,
+    "method": "pointwise-reference-development",
+    "status": "FAIL",
+    "applicability": "APPLICABLE",
+    "suite_sha256": "58fb0acbaa2c9451d9047ccbc3d66362b1bb1c97300a9a0487d44b9720c7bfd6",
+    "reference_sha256": "6ab53ad40194fc966ef043355b0c3cfd490f897c533bfe9766408c1b3e716f25",
+    "evidence_sha256": "cee52ba68994cf7df4338b330d88fccb5c248ad7829e35f62739e2b453632ed1",
+    "groups": {
+      "pointwise": {
+        "status": "FAIL",
+        "counts": {
+          "FAIL": 6,
+          "PASS": 1
+        }
+      }
+    },
+    "comparison_count": 7,
+    "full_design_coverage_status": "UNKNOWN",
+    "first_divergence": {
+      "kind": "pointwise",
+      "output": "dataset_action.0",
+      "expected": 0.25,
+      "actual": 0.15000000000000002,
+      "queries": [
+        "center"
+      ],
+      "output_resolution_floor": 8.326672684688674e-17,
+      "comparison_budget": 1.25e-07
+    },
+    "coverage": {
+      "supplied_queries": 1,
+      "eligible_queries": 1,
+      "queried_ids": [
+        "center"
+      ],
+      "observed_eligible_queries": 1,
+      "rank_by_output": {
+        "dataset_action.0": 1,
+        "dataset_action.1": 1,
+        "dataset_action.2": 1,
+        "dataset_action.3": 1,
+        "dataset_action.4": 1,
+        "dataset_action.5": 1,
+        "dataset_action.6": 1
+      },
+      "required_full_rank": 16
+    },
+    "scope": "Finite numerical oracle on the supplied design; not new probe generation",
+    "limitations": [
+      "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+      "Binary64 resolution diagnostic is not an upstream error bound",
+      "Oracle runtime excludes acquiring the shared adapter observations",
+      "Contrast budgets propagate component tolerances and sampled closure residuals"
+    ]
+  },
+  "strong_relational": {
+    "schema_version": 1,
+    "method": "relational-reference-development",
+    "status": "FAIL",
+    "applicability": "APPLICABLE",
+    "suite_sha256": "58fb0acbaa2c9451d9047ccbc3d66362b1bb1c97300a9a0487d44b9720c7bfd6",
+    "reference_sha256": "6ab53ad40194fc966ef043355b0c3cfd490f897c533bfe9766408c1b3e716f25",
+    "evidence_sha256": "cee52ba68994cf7df4338b330d88fccb5c248ad7829e35f62739e2b453632ed1",
+    "groups": {
+      "pointwise": {
+        "status": "FAIL",
+        "counts": {
+          "FAIL": 6,
+          "PASS": 1
+        }
+      }
+    },
+    "comparison_count": 7,
+    "full_design_coverage_status": "UNKNOWN",
+    "first_divergence": {
+      "kind": "pointwise",
+      "output": "dataset_action.0",
+      "expected": 0.25,
+      "actual": 0.15000000000000002,
+      "queries": [
+        "center"
+      ],
+      "output_resolution_floor": 8.326672684688674e-17,
+      "comparison_budget": 1.25e-07
+    },
+    "coverage": {
+      "supplied_queries": 1,
+      "eligible_queries": 1,
+      "queried_ids": [
+        "center"
+      ],
+      "observed_eligible_queries": 1,
+      "rank_by_output": {
+        "dataset_action.0": 1,
+        "dataset_action.1": 1,
+        "dataset_action.2": 1,
+        "dataset_action.3": 1,
+        "dataset_action.4": 1,
+        "dataset_action.5": 1,
+        "dataset_action.6": 1
+      },
+      "required_full_rank": 16
+    },
+    "scope": "Finite numerical oracle on the supplied design; not new probe generation",
+    "limitations": [
+      "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+      "Binary64 resolution diagnostic is not an upstream error bound",
+      "Oracle runtime excludes acquiring the shared adapter observations",
+      "Contrast budgets propagate component tolerances and sampled closure residuals"
+    ]
+  }
+}

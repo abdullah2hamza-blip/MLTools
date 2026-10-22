@@ -1,0 +1,163 @@
+{
+  "suite": {
+    "schema_version": 1,
+    "method": "affine-obligations-development",
+    "axes": [
+      {
+        "port": "action",
+        "name": "0",
+        "unit": "legacy_configuration_coordinate",
+        "lower": 0.024999999999999994,
+        "upper": 0.275
+      },
+      {
+        "port": "action",
+        "name": "1",
+        "unit": "legacy_configuration_coordinate",
+        "lower": -0.425,
+        "upper": -0.175
+      },
+      {
+        "port": "action",
+        "name": "2",
+        "unit": "legacy_configuration_coordinate",
+        "lower": 0.325,
+        "upper": 0.575
+      },
+      {
+        "port": "action",
+        "name": "3",
+        "unit": "legacy_configuration_coordinate",
+        "lower": -0.425,
+        "upper": -0.175
+      },
+      {
+        "port": "action",
+        "name": "4",
+        "unit": "legacy_configuration_coordinate",
+        "lower": 0.175,
+        "upper": 0.425
+      },
+      {
+        "port": "action",
+        "name": "5",
+        "unit": "legacy_configuration_coordinate",
+        "lower": -0.425,
+        "upper": -0.175
+      },
+      {
+        "port": "action",
+        "name": "6",
+        "unit": "legacy_configuration_coordinate",
+        "lower": -0.875,
+        "upper": -0.625
+      },
+      {
+        "port": "origin",
+        "name": "0",
+        "unit": "legacy_configuration_coordinate",
+        "lower": -0.024999999999999994,
+        "upper": 0.225
+      },
+      {
+        "port": "origin",
+        "name": "1",
+        "unit": "legacy_configuration_coordinate",
+        "lower": -0.325,
+        "upper": -0.07500000000000001
+      },
+      {
+        "port": "origin",
+        "name": "2",
+        "unit": "legacy_configuration_coordinate",
+        "lower": 0.175,
+        "upper": 0.425
+      },
+      {
+        "port": "origin",
+        "name": "3",
+        "unit": "legacy_configuration_coordinate",
+        "lower": 0.275,
+        "upper": 0.525
+      },
+      {
+        "port": "origin",
+        "name": "4",
+        "unit": "legacy_configuration_coordinate",
+        "lower": -0.625,
+        "upper": -0.375
+      },
+      {
+        "port": "origin",
+        "name": "5",
+        "unit": "legacy_configuration_coordinate",
+        "lower": 0.475,
+        "upper": 0.725
+      },
+      {
+        "port": "origin",
+        "name": "6",
+        "unit": "legacy_configuration_coordinate",
+        "lower": -0.105,
+        "upper": 0.145
+      },
+      {
+        "port": "origin",
+        "name": "7",
+        "unit": "legacy_configuration_coordinate",
+        "lower": -0.145,
+        "upper": 0.105
+      }
+    ],
+    "outputs": [
+      "dataset_action.0",
+      "dataset_action.1",
+      "dataset_action.2",
+      "dataset_action.3",
+      "dataset_action.4",
+      "dataset_action.5",
+      "dataset_action.6"
+    ],
+    "probes": [
+      {
+        "id": "center",
+        "coordinates": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "values": [
+          0.15000000000000002,
+          -0.3,
+          0.44999999999999996,
+          -0.3,
+          0.3,
+          -0.3,
+          -0.75,
+          0.1,
+          -0.2,
+          0.3,
+          0.4,
+          -0.5,
+          0.6,
+          0.019999999999999997,
+          -0.019999999999999997
+        ]
+      }
+    ]
+  },
+  "suite_sha256": "58fb0acbaa2c9451d9047ccbc3d66362b1bb1c97300a9a0487d44b9720c7bfd6",
+  "fixture_sha256": "543247ef395e56e86d83f4dfa0a9463dca4c2ff4634c47f1b21de3fa4c428bba"
+}

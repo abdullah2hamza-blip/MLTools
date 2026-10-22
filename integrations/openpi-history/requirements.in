@@ -1,0 +1,12 @@
+# Historical data-factory CPU subset, not the full upstream training runtime.
+# Retain the previously tested CPU subset exactly; add audited imports using
+# versions from the historical OpenPI92b1082 uv.lock.
+-r ../openpi/requirements-cpu.in
+-c ../openpi/requirements-cpu.lock
+boto3==1.35.81
+botocore==1.35.81
+s3transfer==0.10.4
+types-boto3[boto3,s3]==1.35.81
+types-boto3-s3==1.35.81
+tyro==0.9.5
+ml-collections==1.0.0
