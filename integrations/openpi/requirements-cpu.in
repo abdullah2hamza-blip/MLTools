@@ -1,0 +1,9 @@
+# CPU transform-subset environment; Python 3.11, Windows x64 audited execution.
+# Compile with uv pip compile --torch-backend cpu --python-version 3.11.13.
+-r requirements.in
+torch==2.7.1+cpu
+jinja2==3.1.6
+markupsafe==3.0.3
+mpmath==1.3.0
+networkx==3.6.1
+sympy==1.14.0

@@ -1,0 +1,26 @@
+# Audited transform-subset import pins from OpenPI215abfb upstream lock.
+# Does not claim full upstream training/inference installation support.
+numpy==1.26.4
+jax==0.5.3
+jaxlib==0.5.3
+flax==0.10.2
+orbax-checkpoint==0.11.13
+optax==0.2.4
+chex==0.1.90
+ml-dtypes==0.4.1
+tensorstore==0.1.74
+jaxtyping==0.2.36
+beartype==0.19.0
+numpydantic==1.6.9
+pydantic==2.11.5
+einops==0.8.1
+sentencepiece==0.2.0
+transformers==4.53.2
+pillow==11.2.1
+filelock==3.18.0
+fsspec==2025.3.0
+tqdm-loggable==0.2
+augmax==0.4.1
+equinox==0.12.2
+safetensors==0.5.3
+etils==1.12.2

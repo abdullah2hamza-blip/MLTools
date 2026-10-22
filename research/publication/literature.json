@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "status": "initial-primary-source-audit-not-exhaustive",
+  "searched_on_local_date": "2026-10-21",
+  "sources": [
+    {
+      "id": "tai2026execspec",
+      "title": "Same Weights, Different Robot: A Deployment Safety View of VLA Policies",
+      "authors": ["Jianwei Tai"],
+      "year": 2026,
+      "version": "arXiv:2606.03724v1",
+      "url": "https://arxiv.org/html/2606.03724v1",
+      "inspected": "Primary HTML: formalization, certificates, experiments and limitations",
+      "relationship": "Direct prior work: executable-policy identity and quantile normalization-mismatch certificates, with replay evidence. The broad executable-semantics thesis is not our novelty.",
+      "remaining_question": "Locate any author implementation and artifacts; compare applicable certificate obligations faithfully. Lack of a located link is not proof of unavailability."
+    },
+    {
+      "id": "xpolicylab2026",
+      "title": "XPolicyLab: A Unified Standard and Open Ecosystem for Robot Policy Evaluation and Deployment",
+      "authors": ["XPolicyLab Contributors"],
+      "year": 2026,
+      "version": "arXiv:2608.09892v1",
+      "url": "https://arxiv.org/html/2608.09892v1",
+      "code": "https://github.com/XPolicyLab/XPolicyLab",
+      "inspected": "Primary HTML: runtime architecture, schema and lifecycle sections",
+      "relationship": "Policy adapters, shared schemas and isolated runtime/lifecycle orchestration are existing infrastructure. Do not claim those as new.",
+      "remaining_question": "Inspect executable checks and overlap with partial-evidence conformance; no service/benchmark executed yet."
+    },
+    {
+      "id": "eisenhut2023",
+      "title": "Automatic Metamorphic Test Oracles for Action-Policy Testing",
+      "authors": ["Jan Eisenhut", "Alvaro Torralba", "Maria Christakis", "Joerg Hoffmann"],
+      "year": 2023,
+      "doi": "10.1609/icaps.v33i1.27185",
+      "url": "https://ojs.aaai.org/index.php/ICAPS/article/view/27185",
+      "inspected": "Primary publisher abstract and bibliographic metadata",
+      "relationship": "Automated metamorphic oracles for learned policies are prior art; distinguish policy-quality testing from adapter meaning. Full method comparison remains pending."
+    },
+    {
+      "id": "pham2019cradle",
+      "title": "CRADLE: Cross-Backend Validation to Detect and Localize Bugs in Deep Learning Libraries",
+      "authors": ["Hung Viet Pham", "Thibaud Lutellier", "Weizhen Qi", "Lin Tan"],
+      "year": 2019,
+      "doi": "10.1109/ICSE.2019.00107",
+      "url": "https://www.cs.purdue.edu/homes/lintan/publications/cradle-icse19.pdf",
+      "inspected": "Author-hosted paper: abstract and introduction",
+      "relationship": "Cross-implementation checking and divergence localization in ML software are established. Agreement between implementations is not an independent physical specification."
+    },
+    {
+      "id": "wang2022eagle",
+      "title": "EAGLE: Creating Equivalent Graphs to Test Deep Learning Libraries",
+      "authors": ["Jiannan Wang", "Thibaud Lutellier", "Shangshu Qian", "Hung Viet Pham", "Lin Tan"],
+      "year": 2022,
+      "doi": "10.1145/3510003.3510165",
+      "url": "https://jiannanwang.github.io/files/eagle-icse22.pdf",
+      "inspected": "Author-hosted paper: abstract and introduction",
+      "relationship": "Equivalent-graph rules and single-library differential testing are prior art. Generated equivalent executions alone cannot establish missing physical authority."
+    },
+    {
+      "id": "tretmans2008",
+      "title": "Model Based Testing with Labelled Transition Systems",
+      "authors": ["Jan Tretmans"],
+      "year": 2008,
+      "doi": "10.1007/978-3-540-78917-8_1",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-540-78917-8_1",
+      "inspected": "Primary publisher abstract and bibliographic metadata; full text not yet inspected",
+      "relationship": "Specification/implementation conformance and stateful test-generation foundations are existing theory; no claim to invent model-based testing."
+    }
+  ],
+  "follow_up": [
+    "Read full ICAPS, EAGLE, CRADLE and formal conformance methods before final related-work claims",
+    "Investigate observability, active identification, partial specifications and counterexample reduction literature",
+    "Inspect complete applicable native, Policy Space, Tether, preflight and XPolicyLab workflows",
+    "Choose a venue based on demonstrated contribution and current official requirements, not a promised acceptance"
+  ]
+}

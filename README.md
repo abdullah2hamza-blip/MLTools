@@ -80,8 +80,14 @@ Exit codes: **0 PASS**, **1 FAIL**, **2 UNKNOWN**, **3 operational/input error**
 - [Third-party provenance](docs/provenance.md)
 - [Original opportunity research](research/2026-10-21-opportunities.md), [early synthetic probe](research/probes/policy_interface.py), and [limited baseline-module experiment](research/probes/baseline-results.json)
 
+## Publication research in progress
+
+The active [publication project](research/publication/README.md) includes a [development API](docs/affine-development.md) for bounded affine probes, partial-reference checking, design-rank diagnostics and query witnesses. A separate [OpenPI CPU integration](integrations/openpi/README.md) executes genuine pinned LIBERO processors, including quantile normalization and model-specific camera masks, without model weights. It has explicit API execution and data-only reanalysis; it is separate from the existing `mltools check` bundle format and CLI.
+
+[Recorded development evidence](research/publication/development/README.md) distinguishes synthetic controls, injected faults and a source-backed legacy composition reconstruction. These are development evidence, not a frozen benchmark or publication result. The literature audit identified close prior art; novelty and the proposed contribution remain under investigation. The full benchmark, final comparisons, research CLI and paper are unfinished.
+
 ## Limits
 
-PASS applies to the requested checks, pinned artifacts and finite fixtures. Missing identity, physical semantics or observations produce UNKNOWN; unsupported checks such as frame/rotation conversion also produce UNKNOWN when requested. This release supports scalar additive joints and MEAN_STD action normalization. It does not verify arbitrary transforms, coordinate frames, dynamics, sensor calibration, image preprocessing, stochastic inference, latency, padding masks, or collision/safety constraints. Request unsupported checks explicitly instead of inferring their coverage from PASS.
+PASS applies to the requested checks, pinned artifacts and finite fixtures. Missing identity, physical semantics or observations produce UNKNOWN; unsupported checks such as frame/rotation conversion also produce UNKNOWN when requested. The `mltools check` bundle format supports scalar additive joints and MEAN_STD action normalization. It does not verify arbitrary transforms, coordinate frames, dynamics, sensor calibration, image preprocessing, stochastic inference, latency, padding masks, or collision/safety constraints. Request unsupported checks explicitly instead of inferring their coverage from PASS. Development OpenPI capture records additional boundaries without making them required checks in the affine evaluator.
 
 The tool is local and diagnostic. It never repairs deployment behavior, controls hardware, executes callbacks from a bundle, loads pickle/weights, or sends telemetry. The optional published-example preparation script can explicitly download its fixed, pinned metadata with `--download`; ordinary capture/check commands do not. No claim of global novelty, detection accuracy, customer demand or improved task success follows from these examples.

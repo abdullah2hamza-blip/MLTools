@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "development_only": true,
+  "final_evaluation": false,
+  "input_summary_sha256": "eb3ce12ad3e9989b0444541834c68b2cbfa11af50cb5fb5a4fff2392914be7d6",
+  "evaluator_sha256": "807f94f6cb6e4029f0d1c7e1079254f216aa9acf028a04d04196371f13133432",
+  "cases": [
+    {
+      "case": "moving_anchor",
+      "status": "FAIL",
+      "label": "injected_composition_fault",
+      "trace_file_sha256": "981df0f92908445bcd379f08077992820bbadd41749f4fe3d709e7bd7a3bfc6d",
+      "report_file_sha256": "f6a45820771ae0b17456bf89bf395065b755826aaebee0ff6da95be1cbc93b1b"
+    },
+    {
+      "case": "moving_anchor_witness",
+      "status": "FAIL",
+      "label": "development_witness_replay",
+      "trace_file_sha256": "767770c3555194c47ca300789051026a5f8a6023ee78225e09bee30aeddbed12",
+      "report_file_sha256": "36d206cde32741cd4d0f99c539636b9a9d30b9721c355c05e330334b6d87d2fb"
+    },
+    {
+      "case": "pi0",
+      "status": "PASS",
+      "label": "synthetic_correct_control",
+      "trace_file_sha256": "bbb3832b876abcccd66a5ea2db1b6e4269536de137db96aad453d4b147b8a017",
+      "report_file_sha256": "d8a69eee8eab549e24a2ee8d8af1e3796122edbc269a10bb1f5333eada287ae3"
+    },
+    {
+      "case": "pi05",
+      "status": "PASS",
+      "label": "synthetic_correct_control",
+      "trace_file_sha256": "d378915b5e6d54b7cb1e138672c204fb53b1dc6df0d7011d01d6d31b667aa302",
+      "report_file_sha256": "5319ba3256c97c8308f012238ae718ef437e4dc940dc4399ae43aca7fc84fb3e"
+    },
+    {
+      "case": "pi0_fast",
+      "status": "PASS",
+      "label": "synthetic_correct_control",
+      "trace_file_sha256": "784e24b78865b91c7e7dedbbdab15fa8abe5b72d4f38bc1a4f1d10a34e92c5b9",
+      "report_file_sha256": "31a5fbe816dd71de23c69d2453f00112c9a843b744425e0524626dbbfea3d08e"
+    },
+    {
+      "case": "pr351_omitted",
+      "status": "FAIL",
+      "label": "retrospective_processor_reconstruction",
+      "trace_file_sha256": "d01ac7b197f99792c3eac403d399dfb2d17512dd52334cfe04a6143becf31d5b",
+      "report_file_sha256": "98d1d2a8bc1e1178b529d814a0e483dea9a94c78e2c512f037849b48bfa8ef93"
+    },
+    {
+      "case": "pr351_restored",
+      "status": "PASS",
+      "label": "retrospective_legacy_correct_control",
+      "trace_file_sha256": "04d79b13d641c233f0a5cdd3de542e3c58ddfaf1fafb5fdbc8f407d17ae21294",
+      "report_file_sha256": "de4ee26d6d1972470ce2dfa2d40234b5b34597717ac29f1ace42589db9d65a4a"
+    }
+  ],
+  "scope": "Offline reanalysis of existing captures; original bytes and measurements preserved",
+  "capture_limit": "Initial development captures came from an evolving uncommitted worktree; exact worker hashes were not recorded"
+}

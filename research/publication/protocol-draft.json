@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "status": "DRAFT_NOT_FROZEN_NO_FINAL_EVALUATION",
+  "study": "Stateful conformance obligations under partial robot-policy interface evidence",
+  "research_questions": [
+    "Does a contract-compiled distinguishing suite improve detection or observability over equal-budget manual/random probes and strong stateful replay?",
+    "Which incremental benefits, if any, come from independent authority, temporal state, provenance and generated witnesses?",
+    "How much public integration evidence supports a grounded verdict, and where must the tool abstain?",
+    "Can real historical integration failures and intended legacy conventions be reproduced without trained-weight inference?"
+  ],
+  "minimum_scope": {"frameworks": 2, "policy_families": 3, "embodiments": 2},
+  "candidate_frameworks": ["LeRobot", "OpenPI"],
+  "candidate_families": ["ACT", "SmolVLA", "PI0/PI05"],
+  "family_rule": "Do not count framework versions or normalization variants as independent policy families",
+  "candidate_embodiments": ["SO101", "LIBERO/Panda", "ALOHA if independently supported"],
+  "inventory_status": "Not fixed; no final research dataset or evaluation exists",
+  "split_rules": {
+    "existing_examples": "development-only, including all derived copies and previous public-checkpoint evidence",
+    "previously_inspected_incidents": "retrospective/development case studies, not blinded holdout",
+    "group": "framework + policy family + checkpoint lineage + embodiment + adapter path",
+    "dependency_clusters": "Shared checkpoints, source fixes and root causes remain in one cluster across variants",
+    "held_out": "Fix integration identities, checkpoint lineages and mutation-composition families before final runs",
+    "leakage": "No tuning on final outcomes; changes after evaluation require a versioned amended protocol and honest disclosure"
+  },
+  "labels": {
+    "confirmed_incident": "Pinned source reproduction plus independent authoritative intended convention and provenance",
+    "reported_incident": "External issue report or proposed fix without enough ground truth; separate from confirmed detection denominator",
+    "injected_fault": "Explicit intervention into an executed real framework path, never relabeled historical",
+    "correct_control": "Grounded intended convention, including checkpoint-specific legacy behavior",
+    "insufficient_evidence": "Authority or observations deliberately/naturally missing; UNKNOWN expected unless another grounded obligation fails"
+  },
+  "metrics": {
+    "detection": "FAIL / all labeled incompatible cases; UNKNOWN remains a nondetection",
+    "false_alarms": "FAIL / all grounded correct controls",
+    "coverage": "Separate PASS, FAIL and UNKNOWN rates with exact denominators and erased/missing fields",
+    "witness": "Offline and real-adapter replay success, retained queries/events, reduction cost",
+    "effort": "Actual setup/configuration artifacts and measured time where observable; no invented human-study times",
+    "cost": "Wall time, peak worker RSS, queries and cold/warm startup separately",
+    "uncertainty": "Paired integration/root-cause clustered summaries; no mutation-level pseudoreplication or deployment-prevalence precision claims"
+  },
+  "baselines": [
+    "Native framework checks with their actual applicable scope",
+    "Static contract/config comparison",
+    "Paired encode/decode round trips",
+    "Independent stateless replay",
+    "Existing v0.1 MLTools independent stateful checker",
+    "Equal-budget random and manual probes",
+    "ExecSpec-style normalization certificate, faithfully scoped and labeled if reimplemented",
+    "Applicable Policy Space/Tether/preflight/XPolicyLab workflows or explicit unavailability limits"
+  ],
+  "ablation_axes": ["independent reference", "temporal state", "provenance", "probe design", "witness reduction"],
+  "resource_plan": {
+    "status": "development limits, must be finalized in freeze",
+    "hardware": "local CPU only; no paid compute or robot control",
+    "parallel_ml_workers": 1,
+    "worker_peak_rss_gib": 2,
+    "worker_timeout_seconds": 180,
+    "final_experiment_cpu_hours": 2,
+    "metadata_download_mib": 100,
+    "weights": "excluded unless separately justified and explicitly permitted in an amended plan",
+    "development_machine_observed": {"logical_cpus": 16, "ram_gib": 15.3, "available_ram_gib_at_check": 2.8},
+    "dependency_installation": "separate pinned CPU environments; dependency downloads recorded separately from benchmark metadata"
+  },
+  "freeze_gate": [
+    "Actual second-framework transform imports and CPU execution verified",
+    "Inventory meets required frameworks/families/embodiments with truthful authority labels",
+    "Source revisions, licenses, cluster identities, split manifest and intervention recipes fixed",
+    "Development-only tolerances, seeds, run counts and analysis code fixed",
+    "Every baseline and ablation has an equal-evidence input contract and declared applicability",
+    "Commit protocol and inventory hashes before any final evaluation"
+  ],
+  "publication_constraints": [
+    "No paper result numbers before actual final runs",
+    "No task-success or safety claim from processor probes",
+    "Unavailable or inapplicable baselines are limitations, not wins",
+    "Public release, outreach, submission and paid compute require approval"
+  ]
+}

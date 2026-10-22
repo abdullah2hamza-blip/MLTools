@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "status": "DEVELOPMENT_MILESTONE_NOT_FINAL_RESEARCH",
+  "verified_at_utc": "2026-10-22T03:59:17.872232+00:00",
+  "core_python": "3.13.7",
+  "source_file_sha256": {
+    "src/mltools/obligations.py": "807f94f6cb6e4029f0d1c7e1079254f216aa9acf028a04d04196371f13133432",
+    "src/mltools/openpi.py": "719878dd2341f31acfc8971850c05d9af96c1d1d7e62692ae6f8b9d5747a58e8",
+    "src/mltools/_openpi_worker.py": "12d4fabc009291505fc9936c96366e294e8b1e78f0403077002fcf777c94d14b",
+    "integrations/openpi/requirements-cpu.lock": "6febb881e62bfce4269268a32ede1e9b82e0ee03a0c8442040669524c2c31f97",
+    "integrations/openpi/build.lock": "6701a4af910c3b8649010b3ebb2adc43d6ac10388829bf18c15f6ac9e74f1987",
+    "integrations/openpi/frameworks.txt": "a577a78f18160daa6526fc531cca79e34e1f58e85cccbbe6fd2f1b9048a9fd51"
+  },
+  "checks": {
+    "core_with_lerobot": {
+      "passed": 101,
+      "skipped": 4,
+      "seconds": 26.15,
+      "note": "OpenPI live tests require explicit separate worker opt-in"
+    },
+    "initial_openpi_execution": {
+      "passed": 9,
+      "seconds": 167.33,
+      "worker_python": "3.11.13",
+      "scope": "initial development tests"
+    },
+    "clean_locked_openpi_execution": {
+      "passed": 10,
+      "seconds": 305.2,
+      "worker_python": "3.11.13",
+      "environment": ".venv-openpi-clean",
+      "scope": "genuine processor imports/calls and fresh-worker witness replay"
+    },
+    "built_wheel_without_ml": {
+      "passed": 82,
+      "skipped": 23,
+      "seconds": 3.46,
+      "loaded_from": ".venv-smoke/Lib/site-packages/mltools",
+      "torch_available": false,
+      "openpi_available": false
+    },
+    "ruff": "all source/tests/scripts checks passed; 22 files formatted",
+    "build": "sdist and wheel built; standalone worker and obligations module present in wheel"
+  },
+  "development_capture_summary": "research/publication/development/openpi-001/summary.json",
+  "development_reanalysis_summary": "research/publication/development/openpi-analysis-001/summary.json",
+  "limitations": [
+    "No frozen publication benchmark, final experiment or scientific detection rate",
+    "Initial development capture worker hashes unrecorded; evolving working tree disclosed",
+    "Clean environment verifies the processor subset, not full upstream training/inference support",
+    "No weights, policy inference, simulator, robot, paid compute, outreach, public release or submission"
+  ],
+  "next_required": [
+    "Three-family/two-embodiment permitted benchmark inventory with independent authorities",
+    "Unified research API/CLI evidence formats",
+    "Complete literature/method audit and fair baseline implementations",
+    "Frozen protocol before final evaluation",
+    "Final experiments, clean reproduction, paper sources and compiled visually checked PDF"
+  ]
+}

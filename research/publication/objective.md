@@ -1,0 +1,21 @@
+Turn C:\Users\Abdul\Documents\MLTools into a publication-ready, reproducible ML tooling research project on executable semantic conformance between robot-policy training and deployment. Build on the existing checker, LeRobot integration and research. Deliver research evidence and a complete paper.
+
+1. Establish the research contribution. Audit current primary literature, native framework checks, Policy Space, Tether and robot-policy-preflight. Define falsifiable questions, assumptions and a precise contribution. Do not assume novelty; revise the thesis when evidence contradicts it.
+
+2. Formalize the problem and method: independently grounded physical contracts, artifact provenance, executed boundary traces, stateful pipeline semantics, PASS/FAIL/UNKNOWN, and counterexample generation. Explain assumptions, guarantees, incompleteness and shared-reference errors. Justify a substantive method beyond schemas and hand-written assertions.
+
+3. Deliver a Python API/CLI with versioned formats, optional integrations, replay, diagnostics and regression exports. Cover camera identity, joint order/units, normalization, action modes, gripper conventions, chunk anchors, queues and reset. Add other semantics only with independent references; unsupported or missing evidence remains UNKNOWN.
+
+4. Build a documented benchmark across at least two independent frameworks, three policy families and two embodiments using pinned, permitted artifacts. Include correct controls, intended legacy conventions, missing-metadata cases, independently reproduced real incidents and separately labeled injected faults. Record selection, annotation authority, exclusions, licenses and identities; never invent metadata.
+
+5. Before final evaluation, freeze hypotheses, metrics, splits and compute budget. Separate development from held-out checkpoints/incidents, prevent near-duplicate and mutation-template leakage, and report coverage limits. Measure detection, false alarms, abstention/coverage, counterexample usefulness, integration effort and compute cost. State denominators, independent experimental units, uncertainty and failure cases.
+
+6. Compare fair applicable workflows: native checks, static contracts, round trips, stateless checks and the strongest relevant available tools. Run meaningful ablations for the independent reference, state, provenance and counterexample mechanism. Match evidence and tuning access across methods. Unavailable baselines are limitations, not wins. Avoid treating correlated mutations as independent observations. Task-success claims require controlled policy/simulation evaluation.
+
+7. Provide a reproduction pipeline: pinned environments/sources, seeds, machine-readable results, experiment configurations, benchmark manifest, clean-run commands and automatically generated publication figures/tables. Verify calculations and reproduce main findings in a clean environment. Test integrations, benchmark validation, reporting and package installation.
+
+8. Write a complete venue-appropriate paper with abstract, related work, formal method, benchmark, experiments/ablations, limitations, ethics and artifact instructions. Verify citations and current official formatting requirements. Deliver editable sources, bibliography, figure-generation code and a successfully compiled, visually checked PDF. Trace quantitative claims to actual results.
+
+Keep loading safe and execution opt-in. Work locally; use subagents sparingly. Obtain approval before paid compute, outreach, public release or submission. Never operate live robots or upload private data. Commit and push coherent validated work to the existing private GitHub origin without rewriting history.
+
+Complete only when the implementation, benchmark, main experiments, reproducibility package, documentation and paper/PDF are finished and verified. Report negative findings and blockers honestly. Never substitute synthetic-only evidence, fabricated results or writing polish for research completion. Publication readiness does not mean guaranteed acceptance.

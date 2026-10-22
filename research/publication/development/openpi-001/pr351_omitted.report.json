@@ -1,0 +1,3849 @@
+{
+  "schema_version": 1,
+  "method": "affine-obligations-development",
+  "status": "FAIL",
+  "suite_sha256": "68144ec551a78447f8ac8c362bf1feeec7f69376ab3380262c69f57a4fb69a8d",
+  "coverage": {
+    "rank_by_output": {
+      "controller.0": 24,
+      "controller.1": 24,
+      "controller.2": 24,
+      "controller.3": 24,
+      "controller.4": 24,
+      "controller.5": 24,
+      "controller.6": 24
+    },
+    "required_rank": 24,
+    "planned_queries": 47,
+    "observed_queries": 47
+  },
+  "findings": [
+    {
+      "obligation": "offset",
+      "output": "controller.0",
+      "status": "FAIL",
+      "expected": 0.25,
+      "actual": 0.15000000000000002,
+      "queries": [
+        "center"
+      ]
+    },
+    {
+      "obligation": "effect:action:0",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.125,
+      "actual": 0.125,
+      "queries": [
+        "plus:action:0",
+        "minus:action:0"
+      ]
+    },
+    {
+      "obligation": "affinity:action:0",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:0",
+        "minus:action:0"
+      ]
+    },
+    {
+      "obligation": "effect:action:1",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:1",
+        "minus:action:1"
+      ]
+    },
+    {
+      "obligation": "affinity:action:1",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:1",
+        "minus:action:1"
+      ]
+    },
+    {
+      "obligation": "effect:action:2",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:2",
+        "minus:action:2"
+      ]
+    },
+    {
+      "obligation": "affinity:action:2",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:2",
+        "minus:action:2"
+      ]
+    },
+    {
+      "obligation": "effect:action:3",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:3",
+        "minus:action:3"
+      ]
+    },
+    {
+      "obligation": "affinity:action:3",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:3",
+        "minus:action:3"
+      ]
+    },
+    {
+      "obligation": "effect:action:4",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:4",
+        "minus:action:4"
+      ]
+    },
+    {
+      "obligation": "affinity:action:4",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:4",
+        "minus:action:4"
+      ]
+    },
+    {
+      "obligation": "effect:action:5",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:5",
+        "minus:action:5"
+      ]
+    },
+    {
+      "obligation": "affinity:action:5",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:5",
+        "minus:action:5"
+      ]
+    },
+    {
+      "obligation": "effect:action:6",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:6",
+        "minus:action:6"
+      ]
+    },
+    {
+      "obligation": "affinity:action:6",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:6",
+        "minus:action:6"
+      ]
+    },
+    {
+      "obligation": "effect:origin:0",
+      "output": "controller.0",
+      "status": "FAIL",
+      "expected": 0.125,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:0",
+        "minus:origin:0"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:0",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:0",
+        "minus:origin:0"
+      ]
+    },
+    {
+      "obligation": "effect:origin:1",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:1",
+        "minus:origin:1"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:1",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:1",
+        "minus:origin:1"
+      ]
+    },
+    {
+      "obligation": "effect:origin:2",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:2",
+        "minus:origin:2"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:2",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:2",
+        "minus:origin:2"
+      ]
+    },
+    {
+      "obligation": "effect:origin:3",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:3",
+        "minus:origin:3"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:3",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:3",
+        "minus:origin:3"
+      ]
+    },
+    {
+      "obligation": "effect:origin:4",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:4",
+        "minus:origin:4"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:4",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:4",
+        "minus:origin:4"
+      ]
+    },
+    {
+      "obligation": "effect:origin:5",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:5",
+        "minus:origin:5"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:5",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:5",
+        "minus:origin:5"
+      ]
+    },
+    {
+      "obligation": "effect:origin:6",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:6",
+        "minus:origin:6"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:6",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:6",
+        "minus:origin:6"
+      ]
+    },
+    {
+      "obligation": "effect:origin:7",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:7",
+        "minus:origin:7"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:7",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:7",
+        "minus:origin:7"
+      ]
+    },
+    {
+      "obligation": "effect:current:0",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:0",
+        "minus:current:0"
+      ]
+    },
+    {
+      "obligation": "affinity:current:0",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:0",
+        "minus:current:0"
+      ]
+    },
+    {
+      "obligation": "effect:current:1",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:1",
+        "minus:current:1"
+      ]
+    },
+    {
+      "obligation": "affinity:current:1",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:1",
+        "minus:current:1"
+      ]
+    },
+    {
+      "obligation": "effect:current:2",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:2",
+        "minus:current:2"
+      ]
+    },
+    {
+      "obligation": "affinity:current:2",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:2",
+        "minus:current:2"
+      ]
+    },
+    {
+      "obligation": "effect:current:3",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:3",
+        "minus:current:3"
+      ]
+    },
+    {
+      "obligation": "affinity:current:3",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:3",
+        "minus:current:3"
+      ]
+    },
+    {
+      "obligation": "effect:current:4",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:4",
+        "minus:current:4"
+      ]
+    },
+    {
+      "obligation": "affinity:current:4",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:4",
+        "minus:current:4"
+      ]
+    },
+    {
+      "obligation": "effect:current:5",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:5",
+        "minus:current:5"
+      ]
+    },
+    {
+      "obligation": "affinity:current:5",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:5",
+        "minus:current:5"
+      ]
+    },
+    {
+      "obligation": "effect:current:6",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:6",
+        "minus:current:6"
+      ]
+    },
+    {
+      "obligation": "affinity:current:6",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:6",
+        "minus:current:6"
+      ]
+    },
+    {
+      "obligation": "effect:current:7",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:7",
+        "minus:current:7"
+      ]
+    },
+    {
+      "obligation": "affinity:current:7",
+      "output": "controller.0",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:7",
+        "minus:current:7"
+      ]
+    },
+    {
+      "obligation": "offset",
+      "output": "controller.1",
+      "status": "FAIL",
+      "expected": -0.5,
+      "actual": -0.3,
+      "queries": [
+        "center"
+      ]
+    },
+    {
+      "obligation": "effect:action:0",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:0",
+        "minus:action:0"
+      ]
+    },
+    {
+      "obligation": "affinity:action:0",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:0",
+        "minus:action:0"
+      ]
+    },
+    {
+      "obligation": "effect:action:1",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.125,
+      "actual": 0.125,
+      "queries": [
+        "plus:action:1",
+        "minus:action:1"
+      ]
+    },
+    {
+      "obligation": "affinity:action:1",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:1",
+        "minus:action:1"
+      ]
+    },
+    {
+      "obligation": "effect:action:2",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:2",
+        "minus:action:2"
+      ]
+    },
+    {
+      "obligation": "affinity:action:2",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:2",
+        "minus:action:2"
+      ]
+    },
+    {
+      "obligation": "effect:action:3",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:3",
+        "minus:action:3"
+      ]
+    },
+    {
+      "obligation": "affinity:action:3",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:3",
+        "minus:action:3"
+      ]
+    },
+    {
+      "obligation": "effect:action:4",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:4",
+        "minus:action:4"
+      ]
+    },
+    {
+      "obligation": "affinity:action:4",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:4",
+        "minus:action:4"
+      ]
+    },
+    {
+      "obligation": "effect:action:5",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:5",
+        "minus:action:5"
+      ]
+    },
+    {
+      "obligation": "affinity:action:5",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:5",
+        "minus:action:5"
+      ]
+    },
+    {
+      "obligation": "effect:action:6",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:6",
+        "minus:action:6"
+      ]
+    },
+    {
+      "obligation": "affinity:action:6",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:6",
+        "minus:action:6"
+      ]
+    },
+    {
+      "obligation": "effect:origin:0",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:0",
+        "minus:origin:0"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:0",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:0",
+        "minus:origin:0"
+      ]
+    },
+    {
+      "obligation": "effect:origin:1",
+      "output": "controller.1",
+      "status": "FAIL",
+      "expected": 0.125,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:1",
+        "minus:origin:1"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:1",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:1",
+        "minus:origin:1"
+      ]
+    },
+    {
+      "obligation": "effect:origin:2",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:2",
+        "minus:origin:2"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:2",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:2",
+        "minus:origin:2"
+      ]
+    },
+    {
+      "obligation": "effect:origin:3",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:3",
+        "minus:origin:3"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:3",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:3",
+        "minus:origin:3"
+      ]
+    },
+    {
+      "obligation": "effect:origin:4",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:4",
+        "minus:origin:4"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:4",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:4",
+        "minus:origin:4"
+      ]
+    },
+    {
+      "obligation": "effect:origin:5",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:5",
+        "minus:origin:5"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:5",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:5",
+        "minus:origin:5"
+      ]
+    },
+    {
+      "obligation": "effect:origin:6",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:6",
+        "minus:origin:6"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:6",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:6",
+        "minus:origin:6"
+      ]
+    },
+    {
+      "obligation": "effect:origin:7",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:7",
+        "minus:origin:7"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:7",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:7",
+        "minus:origin:7"
+      ]
+    },
+    {
+      "obligation": "effect:current:0",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:0",
+        "minus:current:0"
+      ]
+    },
+    {
+      "obligation": "affinity:current:0",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:0",
+        "minus:current:0"
+      ]
+    },
+    {
+      "obligation": "effect:current:1",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:1",
+        "minus:current:1"
+      ]
+    },
+    {
+      "obligation": "affinity:current:1",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:1",
+        "minus:current:1"
+      ]
+    },
+    {
+      "obligation": "effect:current:2",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:2",
+        "minus:current:2"
+      ]
+    },
+    {
+      "obligation": "affinity:current:2",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:2",
+        "minus:current:2"
+      ]
+    },
+    {
+      "obligation": "effect:current:3",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:3",
+        "minus:current:3"
+      ]
+    },
+    {
+      "obligation": "affinity:current:3",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:3",
+        "minus:current:3"
+      ]
+    },
+    {
+      "obligation": "effect:current:4",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:4",
+        "minus:current:4"
+      ]
+    },
+    {
+      "obligation": "affinity:current:4",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:4",
+        "minus:current:4"
+      ]
+    },
+    {
+      "obligation": "effect:current:5",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:5",
+        "minus:current:5"
+      ]
+    },
+    {
+      "obligation": "affinity:current:5",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:5",
+        "minus:current:5"
+      ]
+    },
+    {
+      "obligation": "effect:current:6",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:6",
+        "minus:current:6"
+      ]
+    },
+    {
+      "obligation": "affinity:current:6",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:6",
+        "minus:current:6"
+      ]
+    },
+    {
+      "obligation": "effect:current:7",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:7",
+        "minus:current:7"
+      ]
+    },
+    {
+      "obligation": "affinity:current:7",
+      "output": "controller.1",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:7",
+        "minus:current:7"
+      ]
+    },
+    {
+      "obligation": "offset",
+      "output": "controller.2",
+      "status": "FAIL",
+      "expected": 0.75,
+      "actual": 0.44999999999999996,
+      "queries": [
+        "center"
+      ]
+    },
+    {
+      "obligation": "effect:action:0",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:0",
+        "minus:action:0"
+      ]
+    },
+    {
+      "obligation": "affinity:action:0",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:0",
+        "minus:action:0"
+      ]
+    },
+    {
+      "obligation": "effect:action:1",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:1",
+        "minus:action:1"
+      ]
+    },
+    {
+      "obligation": "affinity:action:1",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:1",
+        "minus:action:1"
+      ]
+    },
+    {
+      "obligation": "effect:action:2",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.125,
+      "actual": 0.12499999999999997,
+      "queries": [
+        "plus:action:2",
+        "minus:action:2"
+      ]
+    },
+    {
+      "obligation": "affinity:action:2",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:2",
+        "minus:action:2"
+      ]
+    },
+    {
+      "obligation": "effect:action:3",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:3",
+        "minus:action:3"
+      ]
+    },
+    {
+      "obligation": "affinity:action:3",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:3",
+        "minus:action:3"
+      ]
+    },
+    {
+      "obligation": "effect:action:4",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:4",
+        "minus:action:4"
+      ]
+    },
+    {
+      "obligation": "affinity:action:4",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:4",
+        "minus:action:4"
+      ]
+    },
+    {
+      "obligation": "effect:action:5",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:5",
+        "minus:action:5"
+      ]
+    },
+    {
+      "obligation": "affinity:action:5",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:5",
+        "minus:action:5"
+      ]
+    },
+    {
+      "obligation": "effect:action:6",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:6",
+        "minus:action:6"
+      ]
+    },
+    {
+      "obligation": "affinity:action:6",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:6",
+        "minus:action:6"
+      ]
+    },
+    {
+      "obligation": "effect:origin:0",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:0",
+        "minus:origin:0"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:0",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:0",
+        "minus:origin:0"
+      ]
+    },
+    {
+      "obligation": "effect:origin:1",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:1",
+        "minus:origin:1"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:1",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:1",
+        "minus:origin:1"
+      ]
+    },
+    {
+      "obligation": "effect:origin:2",
+      "output": "controller.2",
+      "status": "FAIL",
+      "expected": 0.125,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:2",
+        "minus:origin:2"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:2",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:2",
+        "minus:origin:2"
+      ]
+    },
+    {
+      "obligation": "effect:origin:3",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:3",
+        "minus:origin:3"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:3",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:3",
+        "minus:origin:3"
+      ]
+    },
+    {
+      "obligation": "effect:origin:4",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:4",
+        "minus:origin:4"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:4",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:4",
+        "minus:origin:4"
+      ]
+    },
+    {
+      "obligation": "effect:origin:5",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:5",
+        "minus:origin:5"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:5",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:5",
+        "minus:origin:5"
+      ]
+    },
+    {
+      "obligation": "effect:origin:6",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:6",
+        "minus:origin:6"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:6",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:6",
+        "minus:origin:6"
+      ]
+    },
+    {
+      "obligation": "effect:origin:7",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:7",
+        "minus:origin:7"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:7",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:7",
+        "minus:origin:7"
+      ]
+    },
+    {
+      "obligation": "effect:current:0",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:0",
+        "minus:current:0"
+      ]
+    },
+    {
+      "obligation": "affinity:current:0",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:0",
+        "minus:current:0"
+      ]
+    },
+    {
+      "obligation": "effect:current:1",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:1",
+        "minus:current:1"
+      ]
+    },
+    {
+      "obligation": "affinity:current:1",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:1",
+        "minus:current:1"
+      ]
+    },
+    {
+      "obligation": "effect:current:2",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:2",
+        "minus:current:2"
+      ]
+    },
+    {
+      "obligation": "affinity:current:2",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:2",
+        "minus:current:2"
+      ]
+    },
+    {
+      "obligation": "effect:current:3",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:3",
+        "minus:current:3"
+      ]
+    },
+    {
+      "obligation": "affinity:current:3",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:3",
+        "minus:current:3"
+      ]
+    },
+    {
+      "obligation": "effect:current:4",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:4",
+        "minus:current:4"
+      ]
+    },
+    {
+      "obligation": "affinity:current:4",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:4",
+        "minus:current:4"
+      ]
+    },
+    {
+      "obligation": "effect:current:5",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:5",
+        "minus:current:5"
+      ]
+    },
+    {
+      "obligation": "affinity:current:5",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:5",
+        "minus:current:5"
+      ]
+    },
+    {
+      "obligation": "effect:current:6",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:6",
+        "minus:current:6"
+      ]
+    },
+    {
+      "obligation": "affinity:current:6",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:6",
+        "minus:current:6"
+      ]
+    },
+    {
+      "obligation": "effect:current:7",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:7",
+        "minus:current:7"
+      ]
+    },
+    {
+      "obligation": "affinity:current:7",
+      "output": "controller.2",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:7",
+        "minus:current:7"
+      ]
+    },
+    {
+      "obligation": "offset",
+      "output": "controller.3",
+      "status": "FAIL",
+      "expected": 0.1,
+      "actual": -0.3,
+      "queries": [
+        "center"
+      ]
+    },
+    {
+      "obligation": "effect:action:0",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:0",
+        "minus:action:0"
+      ]
+    },
+    {
+      "obligation": "affinity:action:0",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:0",
+        "minus:action:0"
+      ]
+    },
+    {
+      "obligation": "effect:action:1",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:1",
+        "minus:action:1"
+      ]
+    },
+    {
+      "obligation": "affinity:action:1",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:1",
+        "minus:action:1"
+      ]
+    },
+    {
+      "obligation": "effect:action:2",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:2",
+        "minus:action:2"
+      ]
+    },
+    {
+      "obligation": "affinity:action:2",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:2",
+        "minus:action:2"
+      ]
+    },
+    {
+      "obligation": "effect:action:3",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.125,
+      "actual": 0.125,
+      "queries": [
+        "plus:action:3",
+        "minus:action:3"
+      ]
+    },
+    {
+      "obligation": "affinity:action:3",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:3",
+        "minus:action:3"
+      ]
+    },
+    {
+      "obligation": "effect:action:4",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:4",
+        "minus:action:4"
+      ]
+    },
+    {
+      "obligation": "affinity:action:4",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:4",
+        "minus:action:4"
+      ]
+    },
+    {
+      "obligation": "effect:action:5",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:5",
+        "minus:action:5"
+      ]
+    },
+    {
+      "obligation": "affinity:action:5",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:5",
+        "minus:action:5"
+      ]
+    },
+    {
+      "obligation": "effect:action:6",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:6",
+        "minus:action:6"
+      ]
+    },
+    {
+      "obligation": "affinity:action:6",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:6",
+        "minus:action:6"
+      ]
+    },
+    {
+      "obligation": "effect:origin:0",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:0",
+        "minus:origin:0"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:0",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:0",
+        "minus:origin:0"
+      ]
+    },
+    {
+      "obligation": "effect:origin:1",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:1",
+        "minus:origin:1"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:1",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:1",
+        "minus:origin:1"
+      ]
+    },
+    {
+      "obligation": "effect:origin:2",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:2",
+        "minus:origin:2"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:2",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:2",
+        "minus:origin:2"
+      ]
+    },
+    {
+      "obligation": "effect:origin:3",
+      "output": "controller.3",
+      "status": "FAIL",
+      "expected": 0.125,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:3",
+        "minus:origin:3"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:3",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:3",
+        "minus:origin:3"
+      ]
+    },
+    {
+      "obligation": "effect:origin:4",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:4",
+        "minus:origin:4"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:4",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:4",
+        "minus:origin:4"
+      ]
+    },
+    {
+      "obligation": "effect:origin:5",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:5",
+        "minus:origin:5"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:5",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:5",
+        "minus:origin:5"
+      ]
+    },
+    {
+      "obligation": "effect:origin:6",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:6",
+        "minus:origin:6"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:6",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:6",
+        "minus:origin:6"
+      ]
+    },
+    {
+      "obligation": "effect:origin:7",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:7",
+        "minus:origin:7"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:7",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:7",
+        "minus:origin:7"
+      ]
+    },
+    {
+      "obligation": "effect:current:0",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:0",
+        "minus:current:0"
+      ]
+    },
+    {
+      "obligation": "affinity:current:0",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:0",
+        "minus:current:0"
+      ]
+    },
+    {
+      "obligation": "effect:current:1",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:1",
+        "minus:current:1"
+      ]
+    },
+    {
+      "obligation": "affinity:current:1",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:1",
+        "minus:current:1"
+      ]
+    },
+    {
+      "obligation": "effect:current:2",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:2",
+        "minus:current:2"
+      ]
+    },
+    {
+      "obligation": "affinity:current:2",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:2",
+        "minus:current:2"
+      ]
+    },
+    {
+      "obligation": "effect:current:3",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:3",
+        "minus:current:3"
+      ]
+    },
+    {
+      "obligation": "affinity:current:3",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:3",
+        "minus:current:3"
+      ]
+    },
+    {
+      "obligation": "effect:current:4",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:4",
+        "minus:current:4"
+      ]
+    },
+    {
+      "obligation": "affinity:current:4",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:4",
+        "minus:current:4"
+      ]
+    },
+    {
+      "obligation": "effect:current:5",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:5",
+        "minus:current:5"
+      ]
+    },
+    {
+      "obligation": "affinity:current:5",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:5",
+        "minus:current:5"
+      ]
+    },
+    {
+      "obligation": "effect:current:6",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:6",
+        "minus:current:6"
+      ]
+    },
+    {
+      "obligation": "affinity:current:6",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:6",
+        "minus:current:6"
+      ]
+    },
+    {
+      "obligation": "effect:current:7",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:7",
+        "minus:current:7"
+      ]
+    },
+    {
+      "obligation": "affinity:current:7",
+      "output": "controller.3",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:7",
+        "minus:current:7"
+      ]
+    },
+    {
+      "obligation": "offset",
+      "output": "controller.4",
+      "status": "FAIL",
+      "expected": -0.2,
+      "actual": 0.3,
+      "queries": [
+        "center"
+      ]
+    },
+    {
+      "obligation": "effect:action:0",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:0",
+        "minus:action:0"
+      ]
+    },
+    {
+      "obligation": "affinity:action:0",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:0",
+        "minus:action:0"
+      ]
+    },
+    {
+      "obligation": "effect:action:1",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:1",
+        "minus:action:1"
+      ]
+    },
+    {
+      "obligation": "affinity:action:1",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:1",
+        "minus:action:1"
+      ]
+    },
+    {
+      "obligation": "effect:action:2",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:2",
+        "minus:action:2"
+      ]
+    },
+    {
+      "obligation": "affinity:action:2",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:2",
+        "minus:action:2"
+      ]
+    },
+    {
+      "obligation": "effect:action:3",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:3",
+        "minus:action:3"
+      ]
+    },
+    {
+      "obligation": "affinity:action:3",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:3",
+        "minus:action:3"
+      ]
+    },
+    {
+      "obligation": "effect:action:4",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.125,
+      "actual": 0.125,
+      "queries": [
+        "plus:action:4",
+        "minus:action:4"
+      ]
+    },
+    {
+      "obligation": "affinity:action:4",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:4",
+        "minus:action:4"
+      ]
+    },
+    {
+      "obligation": "effect:action:5",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:5",
+        "minus:action:5"
+      ]
+    },
+    {
+      "obligation": "affinity:action:5",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:5",
+        "minus:action:5"
+      ]
+    },
+    {
+      "obligation": "effect:action:6",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:6",
+        "minus:action:6"
+      ]
+    },
+    {
+      "obligation": "affinity:action:6",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:6",
+        "minus:action:6"
+      ]
+    },
+    {
+      "obligation": "effect:origin:0",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:0",
+        "minus:origin:0"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:0",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:0",
+        "minus:origin:0"
+      ]
+    },
+    {
+      "obligation": "effect:origin:1",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:1",
+        "minus:origin:1"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:1",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:1",
+        "minus:origin:1"
+      ]
+    },
+    {
+      "obligation": "effect:origin:2",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:2",
+        "minus:origin:2"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:2",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:2",
+        "minus:origin:2"
+      ]
+    },
+    {
+      "obligation": "effect:origin:3",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:3",
+        "minus:origin:3"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:3",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:3",
+        "minus:origin:3"
+      ]
+    },
+    {
+      "obligation": "effect:origin:4",
+      "output": "controller.4",
+      "status": "FAIL",
+      "expected": 0.125,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:4",
+        "minus:origin:4"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:4",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:4",
+        "minus:origin:4"
+      ]
+    },
+    {
+      "obligation": "effect:origin:5",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:5",
+        "minus:origin:5"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:5",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:5",
+        "minus:origin:5"
+      ]
+    },
+    {
+      "obligation": "effect:origin:6",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:6",
+        "minus:origin:6"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:6",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:6",
+        "minus:origin:6"
+      ]
+    },
+    {
+      "obligation": "effect:origin:7",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:7",
+        "minus:origin:7"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:7",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:7",
+        "minus:origin:7"
+      ]
+    },
+    {
+      "obligation": "effect:current:0",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:0",
+        "minus:current:0"
+      ]
+    },
+    {
+      "obligation": "affinity:current:0",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:0",
+        "minus:current:0"
+      ]
+    },
+    {
+      "obligation": "effect:current:1",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:1",
+        "minus:current:1"
+      ]
+    },
+    {
+      "obligation": "affinity:current:1",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:1",
+        "minus:current:1"
+      ]
+    },
+    {
+      "obligation": "effect:current:2",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:2",
+        "minus:current:2"
+      ]
+    },
+    {
+      "obligation": "affinity:current:2",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:2",
+        "minus:current:2"
+      ]
+    },
+    {
+      "obligation": "effect:current:3",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:3",
+        "minus:current:3"
+      ]
+    },
+    {
+      "obligation": "affinity:current:3",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:3",
+        "minus:current:3"
+      ]
+    },
+    {
+      "obligation": "effect:current:4",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:4",
+        "minus:current:4"
+      ]
+    },
+    {
+      "obligation": "affinity:current:4",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:4",
+        "minus:current:4"
+      ]
+    },
+    {
+      "obligation": "effect:current:5",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:5",
+        "minus:current:5"
+      ]
+    },
+    {
+      "obligation": "affinity:current:5",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:5",
+        "minus:current:5"
+      ]
+    },
+    {
+      "obligation": "effect:current:6",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:6",
+        "minus:current:6"
+      ]
+    },
+    {
+      "obligation": "affinity:current:6",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:6",
+        "minus:current:6"
+      ]
+    },
+    {
+      "obligation": "effect:current:7",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:7",
+        "minus:current:7"
+      ]
+    },
+    {
+      "obligation": "affinity:current:7",
+      "output": "controller.4",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:7",
+        "minus:current:7"
+      ]
+    },
+    {
+      "obligation": "offset",
+      "output": "controller.5",
+      "status": "FAIL",
+      "expected": 0.3,
+      "actual": -0.3,
+      "queries": [
+        "center"
+      ]
+    },
+    {
+      "obligation": "effect:action:0",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:0",
+        "minus:action:0"
+      ]
+    },
+    {
+      "obligation": "affinity:action:0",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:0",
+        "minus:action:0"
+      ]
+    },
+    {
+      "obligation": "effect:action:1",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:1",
+        "minus:action:1"
+      ]
+    },
+    {
+      "obligation": "affinity:action:1",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:1",
+        "minus:action:1"
+      ]
+    },
+    {
+      "obligation": "effect:action:2",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:2",
+        "minus:action:2"
+      ]
+    },
+    {
+      "obligation": "affinity:action:2",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:2",
+        "minus:action:2"
+      ]
+    },
+    {
+      "obligation": "effect:action:3",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:3",
+        "minus:action:3"
+      ]
+    },
+    {
+      "obligation": "affinity:action:3",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:3",
+        "minus:action:3"
+      ]
+    },
+    {
+      "obligation": "effect:action:4",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:4",
+        "minus:action:4"
+      ]
+    },
+    {
+      "obligation": "affinity:action:4",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:4",
+        "minus:action:4"
+      ]
+    },
+    {
+      "obligation": "effect:action:5",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.125,
+      "actual": 0.125,
+      "queries": [
+        "plus:action:5",
+        "minus:action:5"
+      ]
+    },
+    {
+      "obligation": "affinity:action:5",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:5",
+        "minus:action:5"
+      ]
+    },
+    {
+      "obligation": "effect:action:6",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:6",
+        "minus:action:6"
+      ]
+    },
+    {
+      "obligation": "affinity:action:6",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:6",
+        "minus:action:6"
+      ]
+    },
+    {
+      "obligation": "effect:origin:0",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:0",
+        "minus:origin:0"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:0",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:0",
+        "minus:origin:0"
+      ]
+    },
+    {
+      "obligation": "effect:origin:1",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:1",
+        "minus:origin:1"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:1",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:1",
+        "minus:origin:1"
+      ]
+    },
+    {
+      "obligation": "effect:origin:2",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:2",
+        "minus:origin:2"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:2",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:2",
+        "minus:origin:2"
+      ]
+    },
+    {
+      "obligation": "effect:origin:3",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:3",
+        "minus:origin:3"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:3",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:3",
+        "minus:origin:3"
+      ]
+    },
+    {
+      "obligation": "effect:origin:4",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:4",
+        "minus:origin:4"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:4",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:4",
+        "minus:origin:4"
+      ]
+    },
+    {
+      "obligation": "effect:origin:5",
+      "output": "controller.5",
+      "status": "FAIL",
+      "expected": 0.125,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:5",
+        "minus:origin:5"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:5",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:5",
+        "minus:origin:5"
+      ]
+    },
+    {
+      "obligation": "effect:origin:6",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:6",
+        "minus:origin:6"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:6",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:6",
+        "minus:origin:6"
+      ]
+    },
+    {
+      "obligation": "effect:origin:7",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:7",
+        "minus:origin:7"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:7",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:7",
+        "minus:origin:7"
+      ]
+    },
+    {
+      "obligation": "effect:current:0",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:0",
+        "minus:current:0"
+      ]
+    },
+    {
+      "obligation": "affinity:current:0",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:0",
+        "minus:current:0"
+      ]
+    },
+    {
+      "obligation": "effect:current:1",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:1",
+        "minus:current:1"
+      ]
+    },
+    {
+      "obligation": "affinity:current:1",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:1",
+        "minus:current:1"
+      ]
+    },
+    {
+      "obligation": "effect:current:2",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:2",
+        "minus:current:2"
+      ]
+    },
+    {
+      "obligation": "affinity:current:2",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:2",
+        "minus:current:2"
+      ]
+    },
+    {
+      "obligation": "effect:current:3",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:3",
+        "minus:current:3"
+      ]
+    },
+    {
+      "obligation": "affinity:current:3",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:3",
+        "minus:current:3"
+      ]
+    },
+    {
+      "obligation": "effect:current:4",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:4",
+        "minus:current:4"
+      ]
+    },
+    {
+      "obligation": "affinity:current:4",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:4",
+        "minus:current:4"
+      ]
+    },
+    {
+      "obligation": "effect:current:5",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:5",
+        "minus:current:5"
+      ]
+    },
+    {
+      "obligation": "affinity:current:5",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:5",
+        "minus:current:5"
+      ]
+    },
+    {
+      "obligation": "effect:current:6",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:6",
+        "minus:current:6"
+      ]
+    },
+    {
+      "obligation": "affinity:current:6",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:6",
+        "minus:current:6"
+      ]
+    },
+    {
+      "obligation": "effect:current:7",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:7",
+        "minus:current:7"
+      ]
+    },
+    {
+      "obligation": "affinity:current:7",
+      "output": "controller.5",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:7",
+        "minus:current:7"
+      ]
+    },
+    {
+      "obligation": "offset",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": -0.75,
+      "actual": -0.75,
+      "queries": [
+        "center"
+      ]
+    },
+    {
+      "obligation": "effect:action:0",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:0",
+        "minus:action:0"
+      ]
+    },
+    {
+      "obligation": "affinity:action:0",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:0",
+        "minus:action:0"
+      ]
+    },
+    {
+      "obligation": "effect:action:1",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:1",
+        "minus:action:1"
+      ]
+    },
+    {
+      "obligation": "affinity:action:1",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:1",
+        "minus:action:1"
+      ]
+    },
+    {
+      "obligation": "effect:action:2",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:2",
+        "minus:action:2"
+      ]
+    },
+    {
+      "obligation": "affinity:action:2",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:2",
+        "minus:action:2"
+      ]
+    },
+    {
+      "obligation": "effect:action:3",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:3",
+        "minus:action:3"
+      ]
+    },
+    {
+      "obligation": "affinity:action:3",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:3",
+        "minus:action:3"
+      ]
+    },
+    {
+      "obligation": "effect:action:4",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:4",
+        "minus:action:4"
+      ]
+    },
+    {
+      "obligation": "affinity:action:4",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:4",
+        "minus:action:4"
+      ]
+    },
+    {
+      "obligation": "effect:action:5",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:action:5",
+        "minus:action:5"
+      ]
+    },
+    {
+      "obligation": "affinity:action:5",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:5",
+        "minus:action:5"
+      ]
+    },
+    {
+      "obligation": "effect:action:6",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.125,
+      "actual": 0.125,
+      "queries": [
+        "plus:action:6",
+        "minus:action:6"
+      ]
+    },
+    {
+      "obligation": "affinity:action:6",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:action:6",
+        "minus:action:6"
+      ]
+    },
+    {
+      "obligation": "effect:origin:0",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:0",
+        "minus:origin:0"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:0",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:0",
+        "minus:origin:0"
+      ]
+    },
+    {
+      "obligation": "effect:origin:1",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:1",
+        "minus:origin:1"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:1",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:1",
+        "minus:origin:1"
+      ]
+    },
+    {
+      "obligation": "effect:origin:2",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:2",
+        "minus:origin:2"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:2",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:2",
+        "minus:origin:2"
+      ]
+    },
+    {
+      "obligation": "effect:origin:3",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:3",
+        "minus:origin:3"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:3",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:3",
+        "minus:origin:3"
+      ]
+    },
+    {
+      "obligation": "effect:origin:4",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:4",
+        "minus:origin:4"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:4",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:4",
+        "minus:origin:4"
+      ]
+    },
+    {
+      "obligation": "effect:origin:5",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:5",
+        "minus:origin:5"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:5",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:5",
+        "minus:origin:5"
+      ]
+    },
+    {
+      "obligation": "effect:origin:6",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:6",
+        "minus:origin:6"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:6",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:6",
+        "minus:origin:6"
+      ]
+    },
+    {
+      "obligation": "effect:origin:7",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:origin:7",
+        "minus:origin:7"
+      ]
+    },
+    {
+      "obligation": "affinity:origin:7",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:origin:7",
+        "minus:origin:7"
+      ]
+    },
+    {
+      "obligation": "effect:current:0",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:0",
+        "minus:current:0"
+      ]
+    },
+    {
+      "obligation": "affinity:current:0",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:0",
+        "minus:current:0"
+      ]
+    },
+    {
+      "obligation": "effect:current:1",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:1",
+        "minus:current:1"
+      ]
+    },
+    {
+      "obligation": "affinity:current:1",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:1",
+        "minus:current:1"
+      ]
+    },
+    {
+      "obligation": "effect:current:2",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:2",
+        "minus:current:2"
+      ]
+    },
+    {
+      "obligation": "affinity:current:2",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:2",
+        "minus:current:2"
+      ]
+    },
+    {
+      "obligation": "effect:current:3",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:3",
+        "minus:current:3"
+      ]
+    },
+    {
+      "obligation": "affinity:current:3",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:3",
+        "minus:current:3"
+      ]
+    },
+    {
+      "obligation": "effect:current:4",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:4",
+        "minus:current:4"
+      ]
+    },
+    {
+      "obligation": "affinity:current:4",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:4",
+        "minus:current:4"
+      ]
+    },
+    {
+      "obligation": "effect:current:5",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:5",
+        "minus:current:5"
+      ]
+    },
+    {
+      "obligation": "affinity:current:5",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:5",
+        "minus:current:5"
+      ]
+    },
+    {
+      "obligation": "effect:current:6",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:6",
+        "minus:current:6"
+      ]
+    },
+    {
+      "obligation": "affinity:current:6",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:6",
+        "minus:current:6"
+      ]
+    },
+    {
+      "obligation": "effect:current:7",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "plus:current:7",
+        "minus:current:7"
+      ]
+    },
+    {
+      "obligation": "affinity:current:7",
+      "output": "controller.6",
+      "status": "PASS",
+      "expected": 0.0,
+      "actual": 0.0,
+      "queries": [
+        "center",
+        "plus:current:7",
+        "minus:current:7"
+      ]
+    }
+  ],
+  "first_divergence": {
+    "obligation": "offset",
+    "output": "controller.0",
+    "status": "FAIL",
+    "expected": 0.25,
+    "actual": 0.15000000000000002,
+    "queries": [
+      "center"
+    ]
+  },
+  "witness": [
+    {
+      "query": "center",
+      "inputs": [
+        0.15000000000000002,
+        -0.3,
+        0.44999999999999996,
+        -0.3,
+        0.3,
+        -0.3,
+        -0.75,
+        0.1,
+        -0.2,
+        0.3,
+        0.4,
+        -0.5,
+        0.6,
+        0.019999999999999997,
+        -0.019999999999999997,
+        0.1,
+        -0.2,
+        0.3,
+        0.4,
+        -0.5,
+        0.6,
+        0.019999999999999997,
+        -0.019999999999999997
+      ],
+      "outputs": [
+        0.15000000000000002,
+        -0.3,
+        0.44999999999999996,
+        -0.3,
+        0.3,
+        -0.3,
+        -0.75
+      ]
+    }
+  ],
+  "limitations": [
+    "Finite affine-fragment obligations only; not arbitrary functional equivalence",
+    "Reference authority, units, fragment membership and execution producer are trusted inputs",
+    "Development method; no final benchmark evidence is supplied by this module"
+  ]
+}
