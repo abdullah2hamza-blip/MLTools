@@ -1,0 +1,12 @@
+{
+  "evaluated": {
+    "action.gripper_convention": "0_open_1_closed",
+    "action.units": "rad",
+    "embodiment.robot": "synthetic_two_axis_fixture"
+  },
+  "deployed": {
+    "action.gripper_convention": "0_open_1_closed",
+    "action.units": "rad",
+    "embodiment.robot": "synthetic_two_axis_fixture"
+  }
+}

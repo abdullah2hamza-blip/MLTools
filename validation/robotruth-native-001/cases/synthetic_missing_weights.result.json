@@ -1,0 +1,205 @@
+{
+  "native_passed": false,
+  "native_summary": "FAIL: 1 fatal, 2 warn, 28 checks",
+  "findings": [
+    {
+      "field": "policy.weights_sha256",
+      "severity": "fatal",
+      "evaluated": "3d81d9cb57177736c286e7269eb4adb487a346fb1761cad921578137e91b7ffd",
+      "deployed": null,
+      "message": "Unknown on at least one side; fail closed. Different weights are a different policy."
+    },
+    {
+      "field": "action.normalization.stats_sha256",
+      "severity": "ok",
+      "evaluated": "72009ee4d2ec4fe487cf07540edc64ffc7c1bdc1f80b6ceb113e66f3db7042a1",
+      "deployed": "72009ee4d2ec4fe487cf07540edc64ffc7c1bdc1f80b6ceb113e66f3db7042a1",
+      "message": "match"
+    },
+    {
+      "field": "action.normalization.type",
+      "severity": "ok",
+      "evaluated": "mean_std",
+      "deployed": "mean_std",
+      "message": "match"
+    },
+    {
+      "field": "action.space",
+      "severity": "ok",
+      "evaluated": "joint_position",
+      "deployed": "joint_position",
+      "message": "match"
+    },
+    {
+      "field": "action.mode",
+      "severity": "ok",
+      "evaluated": "absolute",
+      "deployed": "absolute",
+      "message": "match"
+    },
+    {
+      "field": "action.dim",
+      "severity": "ok",
+      "evaluated": 2,
+      "deployed": 2,
+      "message": "match"
+    },
+    {
+      "field": "action.chunk_size",
+      "severity": "ok",
+      "evaluated": 2,
+      "deployed": 2,
+      "message": "match"
+    },
+    {
+      "field": "action.n_action_steps",
+      "severity": "ok",
+      "evaluated": 2,
+      "deployed": 2,
+      "message": "match"
+    },
+    {
+      "field": "action.control_hz",
+      "severity": "ok",
+      "evaluated": 20.0,
+      "deployed": 20.0,
+      "message": "match"
+    },
+    {
+      "field": "action.gripper_convention",
+      "severity": "ok",
+      "evaluated": "0_open_1_closed",
+      "deployed": "0_open_1_closed",
+      "message": "match"
+    },
+    {
+      "field": "observation.normalization.stats_sha256",
+      "severity": "ok",
+      "evaluated": "72009ee4d2ec4fe487cf07540edc64ffc7c1bdc1f80b6ceb113e66f3db7042a1",
+      "deployed": "72009ee4d2ec4fe487cf07540edc64ffc7c1bdc1f80b6ceb113e66f3db7042a1",
+      "message": "match"
+    },
+    {
+      "field": "observation.preprocessing_sha256",
+      "severity": "ok",
+      "evaluated": "cadeae2b578032df26618ebdf42e32b7151bbc50b66308d322e70e3d9c4deed5",
+      "deployed": "cadeae2b578032df26618ebdf42e32b7151bbc50b66308d322e70e3d9c4deed5",
+      "message": "match"
+    },
+    {
+      "field": "observation.state_dim",
+      "severity": "ok",
+      "evaluated": 2,
+      "deployed": 2,
+      "message": "match"
+    },
+    {
+      "field": "embodiment.robot",
+      "severity": "ok",
+      "evaluated": "synthetic_two_axis_fixture",
+      "deployed": "synthetic_two_axis_fixture",
+      "message": "match"
+    },
+    {
+      "field": "runtime.dtype",
+      "severity": "info",
+      "evaluated": null,
+      "deployed": null,
+      "message": "Unknown on at least one side; cannot verify. Precision changes can change closed-loop behaviour (arXiv 2609.14146)."
+    },
+    {
+      "field": "runtime.export_format",
+      "severity": "info",
+      "evaluated": null,
+      "deployed": null,
+      "message": "Unknown on at least one side; cannot verify. Export path (ONNX, TensorRT) can change closed-loop behaviour even when benchmark score is unchanged."
+    },
+    {
+      "field": "runtime.device",
+      "severity": "info",
+      "evaluated": null,
+      "deployed": null,
+      "message": "Unknown on at least one side; cannot verify. Device changes inference latency, which changes closed-loop behaviour."
+    },
+    {
+      "field": "runtime.inference_hz",
+      "severity": "info",
+      "evaluated": null,
+      "deployed": null,
+      "message": "Unknown on at least one side; cannot verify. Inference rate differs."
+    },
+    {
+      "field": "embodiment.unit_id",
+      "severity": "info",
+      "evaluated": null,
+      "deployed": null,
+      "message": "Unknown on at least one side; cannot verify. Different physical unit: unit-to-unit variance dropped a policy from 98% to 18% (SPACE, arXiv 2606.24049)."
+    },
+    {
+      "field": "embodiment.controller",
+      "severity": "info",
+      "evaluated": null,
+      "deployed": null,
+      "message": "Unknown on at least one side; cannot verify. Low-level controller differs."
+    },
+    {
+      "field": "embodiment.controller_hz",
+      "severity": "info",
+      "evaluated": null,
+      "deployed": null,
+      "message": "Unknown on at least one side; cannot verify. Low-level controller rate differs."
+    },
+    {
+      "field": "observation.image_resize",
+      "severity": "info",
+      "evaluated": null,
+      "deployed": null,
+      "message": "Unknown on at least one side; cannot verify. Image resize policy differs."
+    },
+    {
+      "field": "action.units",
+      "severity": "ok",
+      "evaluated": "rad",
+      "deployed": "rad",
+      "message": "match"
+    },
+    {
+      "field": "policy.name",
+      "severity": "ok",
+      "evaluated": "act",
+      "deployed": "act",
+      "message": "match"
+    },
+    {
+      "field": "policy.family",
+      "severity": "ok",
+      "evaluated": "lerobot",
+      "deployed": "lerobot",
+      "message": "match"
+    },
+    {
+      "field": "runtime.framework_version",
+      "severity": "info",
+      "evaluated": null,
+      "deployed": null,
+      "message": "Unknown on at least one side; cannot verify. Framework version differs."
+    },
+    {
+      "field": "observation.cameras[observation.images.top].intrinsics_sha256",
+      "severity": "warn",
+      "evaluated": null,
+      "deployed": null,
+      "message": "Camera intrinsics differ. Not recorded on one side; cannot verify."
+    },
+    {
+      "field": "observation.cameras[observation.images.top].extrinsics_sha256",
+      "severity": "warn",
+      "evaluated": null,
+      "deployed": null,
+      "message": "Camera extrinsics differ; a moved camera shifted completion by 22 points (PhAIL). Not recorded on one side; cannot verify."
+    }
+  ],
+  "allow_unknown": false,
+  "ignore": [],
+  "classification": "explicit synthetic workflow control"
+}

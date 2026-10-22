@@ -1,0 +1,92 @@
+{
+  "spec_version": "0.1",
+  "created_at": "2026-10-22T12:11:56.671381+00:00",
+  "role": "evaluated",
+  "policy": {
+    "name": "smolvla",
+    "family": "lerobot",
+    "weights_sha256": null,
+    "weights_files": [],
+    "weights_bytes": null,
+    "config_sha256": "6f066999ec23933f52f22637b7ac457b23512d1908df7b3ec427cee9b995c79e",
+    "source_path": "C:\\Users\\Abdul\\Documents\\MLTools\\validation\\robotruth-native-001\\inputs\\published_smolvla\\evaluated"
+  },
+  "action": {
+    "space": "joint_position",
+    "mode": "absolute",
+    "dim": 6,
+    "units": null,
+    "chunk_size": 50,
+    "n_action_steps": 50,
+    "control_hz": null,
+    "gripper_convention": null,
+    "normalization": {
+      "type": "mean_std",
+      "stats_sha256": "5458bffe0ee208c6b445f423c5536a8759dc5ceb4d1c7ce2582626a05ccddb53",
+      "stats_source": "policy_postprocessor_step_0_unnormalizer_processor.safetensors,policy_preprocessor_step_5_normalizer_processor.safetensors",
+      "action_dim": 6
+    }
+  },
+  "observation": {
+    "cameras": [
+      {
+        "name": "observation.images.camera1",
+        "width": 256,
+        "height": 256,
+        "channels": 3,
+        "intrinsics_sha256": null,
+        "extrinsics_sha256": null
+      },
+      {
+        "name": "observation.images.camera2",
+        "width": 256,
+        "height": 256,
+        "channels": 3,
+        "intrinsics_sha256": null,
+        "extrinsics_sha256": null
+      },
+      {
+        "name": "observation.images.camera3",
+        "width": 256,
+        "height": 256,
+        "channels": 3,
+        "intrinsics_sha256": null,
+        "extrinsics_sha256": null
+      }
+    ],
+    "state_dim": 6,
+    "state_keys": [
+      "observation.state"
+    ],
+    "preprocessing_sha256": "029d6e7bb7c94e544677a72c3565e571398cccc245a9f826e91611aa15f8e041",
+    "image_resize": "[512, 512]",
+    "normalization": {
+      "type": "mean_std",
+      "stats_sha256": "5458bffe0ee208c6b445f423c5536a8759dc5ceb4d1c7ce2582626a05ccddb53",
+      "stats_source": "policy_postprocessor_step_0_unnormalizer_processor.safetensors,policy_preprocessor_step_5_normalizer_processor.safetensors",
+      "action_dim": null
+    }
+  },
+  "embodiment": {
+    "robot": "yutofujita/so101-move-cube",
+    "unit_id": null,
+    "controller": null,
+    "controller_hz": null
+  },
+  "runtime": {
+    "dtype": null,
+    "device": "cuda",
+    "framework": "lerobot",
+    "framework_version": null,
+    "export_format": null,
+    "inference_hz": null
+  },
+  "notes": [
+    "denoising steps: 10 (drives latency; VLA-Perf)"
+  ],
+  "unverified": [
+    "action.control_hz",
+    "action.gripper_convention",
+    "policy.weights_sha256"
+  ]
+}

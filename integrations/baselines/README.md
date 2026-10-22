@@ -20,3 +20,5 @@ Policy Space runs eight controls through its actual server dispatcher with nativ
 The native single-arm contract has **eight action coordinates**: seven arm joints and one gripper. The current OpenPI LIBERO processor captures have seven end-effector/gripper coordinates. Feeding one directly to the other would manufacture a schema mismatch. The final comparison must supply an appropriate, independently grounded adapter or record inapplicability.
 
 Recorded development output is `validation/native-baselines-002/summary.json`. `research/publication/baseline-audit.md` documents the wider comparison requirements. Tether, XPolicyLab, robotruth and ActionABI are not executed by this runner. No full-product superiority claim follows.
+
+The separate `integrations/robotruth/` profile now executes stock metadata extraction and checking without ML dependencies. Its recorded controls and decision interpretation are documented there; this two-package runner remains scoped as above.

@@ -1,0 +1,35 @@
+{
+  "type": "act",
+  "chunk_size": 2,
+  "n_action_steps": 2,
+  "relative_actions": false,
+  "normalization_mapping": {
+    "ACTION": "MEAN_STD",
+    "STATE": "MEAN_STD",
+    "VISUAL": "IDENTITY"
+  },
+  "input_features": {
+    "observation.state": {
+      "type": "STATE",
+      "shape": [
+        2
+      ]
+    },
+    "observation.images.top": {
+      "type": "VISUAL",
+      "shape": [
+        3,
+        8,
+        8
+      ]
+    }
+  },
+  "output_features": {
+    "action": {
+      "type": "ACTION",
+      "shape": [
+        2
+      ]
+    }
+  }
+}

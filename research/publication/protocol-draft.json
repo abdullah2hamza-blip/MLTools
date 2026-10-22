@@ -131,6 +131,12 @@
       "evidence": "development/query-designs-001/summary.json",
       "finding": "New equal-budget canonical/manual/random processor queries agree on numerical verdicts across the six existing development cases; physical authority gaps remain UNKNOWN. Nominal rounding and poor observability require actual-coordinate cancellation and conditional component intervals.",
       "freeze_implication": "Freeze query generators, seeds, executed schedule, basis selection and a justified numerical profile. Treat geometry/shared-oracle comparisons separately from end-to-end tools, and repeated seeds/queries separately from independent units."
+    },
+    {
+      "id": "native-robotruth-certification-vocabulary",
+      "evidence": "../../validation/robotruth-native-001/summary.json",
+      "finding": "Stock extraction/checking credits known metadata mismatches, withholds certification on missing fatal evidence, and preserves native warning-only units disagreements. Public metadata controls have no invented weights or physical overlays.",
+      "freeze_implication": "Keep native verdicts and grounded mismatch/missing-evidence causes separate; equal-evidence adapters must not score withheld certification as a detection or false alarm, or native warning PASS as full physical correctness."
     }
   ]
 }

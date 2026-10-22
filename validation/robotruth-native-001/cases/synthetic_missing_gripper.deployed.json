@@ -1,0 +1,74 @@
+{
+  "spec_version": "0.1",
+  "created_at": "2026-10-22T12:11:56.554116+00:00",
+  "role": "deployed",
+  "policy": {
+    "name": "act",
+    "family": "lerobot",
+    "weights_sha256": "3d81d9cb57177736c286e7269eb4adb487a346fb1761cad921578137e91b7ffd",
+    "weights_files": [
+      "model.safetensors"
+    ],
+    "weights_bytes": 96,
+    "config_sha256": "5a593a2e217e8b0270479f4e82fac3a1da3d5c6ad4a6696e4bc7307e602347b9",
+    "source_path": "C:\\Users\\Abdul\\Documents\\MLTools\\validation\\robotruth-native-001\\inputs\\synthetic_missing_gripper\\deployed"
+  },
+  "action": {
+    "space": "joint_position",
+    "mode": "absolute",
+    "dim": 2,
+    "units": "rad",
+    "chunk_size": 2,
+    "n_action_steps": 2,
+    "control_hz": 20.0,
+    "gripper_convention": null,
+    "normalization": {
+      "type": "mean_std",
+      "stats_sha256": "72009ee4d2ec4fe487cf07540edc64ffc7c1bdc1f80b6ceb113e66f3db7042a1",
+      "stats_source": "stats.json",
+      "action_dim": 2
+    }
+  },
+  "observation": {
+    "cameras": [
+      {
+        "name": "observation.images.top",
+        "width": 8,
+        "height": 8,
+        "channels": 3,
+        "intrinsics_sha256": null,
+        "extrinsics_sha256": null
+      }
+    ],
+    "state_dim": 2,
+    "state_keys": [
+      "observation.state"
+    ],
+    "preprocessing_sha256": "cadeae2b578032df26618ebdf42e32b7151bbc50b66308d322e70e3d9c4deed5",
+    "image_resize": null,
+    "normalization": {
+      "type": "mean_std",
+      "stats_sha256": "72009ee4d2ec4fe487cf07540edc64ffc7c1bdc1f80b6ceb113e66f3db7042a1",
+      "stats_source": "stats.json",
+      "action_dim": null
+    }
+  },
+  "embodiment": {
+    "robot": "synthetic_two_axis_fixture",
+    "unit_id": null,
+    "controller": null,
+    "controller_hz": null
+  },
+  "runtime": {
+    "dtype": null,
+    "device": null,
+    "framework": "lerobot",
+    "framework_version": null,
+    "export_format": null,
+    "inference_hz": null
+  },
+  "notes": [],
+  "unverified": [
+    "action.gripper_convention"
+  ]
+}

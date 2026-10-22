@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "status": "DEVELOPMENT_EXTERNAL_WORKFLOW_CONTROLS_NOT_FINAL_COMPARISON",
+  "verified_at_utc": "2026-10-22T12:14:55.984746+00:00",
+  "source_file_sha256": {
+    "scripts/validate_robotruth.py": "569fe0314f6605b092c575743fabb0b875fd10568686f018a79652d4099ac603",
+    "tests/test_robotruth_evidence.py": "2461215ad987dd4f7deb331d8ae95d91916a83e1abaa8025fcb141629f540395",
+    "integrations/robotruth/sources.json": "be927a603f2d7897c4ebf83e11ad64cc43f802a08ce99422374d0e4b5be01dcd",
+    "integrations/robotruth/requirements.lock": "6daa6fdc3e32cee953fd670ed66f4269d6a8cbb14c60d833ffc3d173d82469fd",
+    "integrations/robotruth/build.lock": "3ff8b7a4e9f520731cb223e65b60a9a71e19488b6000c7b6102dc4613eb6dcc6",
+    "integrations/robotruth/frameworks.txt": "ef064feb9e9200231e375d7eb779c990b62cb233ddba13891c70cdceea9ac9c6",
+    "validation/robotruth-native-001/summary.json": "d7814c3eb1d5083f8212f8baee365744f15f032a51371969e7515ef2d5b0e61f"
+  },
+  "checks": {
+    "native_execution": {
+      "revision": "8eb1704cf446239e3f03687c2ebd707cbab68e98",
+      "complete_base_package": true,
+      "optional_ml_extras": false,
+      "apis": [
+        "extract_spec",
+        "check_contract"
+      ],
+      "controls": 11,
+      "allow_unknown": false,
+      "ignored_fields": [],
+      "installed_python_files_verified_before_and_after": 43,
+      "exact_git_blob_files": 4,
+      "explicit_crlf_to_lf_matches": 39,
+      "raw_installed_sha256_retained": true,
+      "wall_seconds": 2.163259900000412,
+      "network_events": []
+    },
+    "saved_input_and_report_files": 143,
+    "data_only_optimized_verification": "Verified all saved file/project/upstream identities, case inventory, native aggregation, expected control facts and finding/manifest binding without importing robotruth or ML libraries",
+    "full_main_environment": {
+      "passed": 189,
+      "skipped": 5,
+      "seconds": 89.8
+    },
+    "new_tests_without_ml_or_robotruth": {
+      "passed": 5,
+      "seconds": 12.16,
+      "scope": "Optimized stdlib-only verification and substantive rehashed finding/manifest, scope and revision tampering"
+    },
+    "lint": "CI-scoped ruff check and format passed (53 files); git diff --check passed",
+    "package_identity": "Core package modules unchanged; separately pinned baseline install and all 43 installed Python source identities verified",
+    "review": "One reused subagent, bounded read-only source/API/applicability review; no delegated installation or execution",
+    "trials": "An earlier smoke acquisition remains ignored in .test-tmp; recorded final controls were acquired after source and binding checks were complete"
+  },
+  "native_outcomes": [
+    {
+      "case": "synthetic_complete",
+      "native_passed": true,
+      "summary": "PASS: 0 fatal, 2 warn, 28 checks"
+    },
+    {
+      "case": "synthetic_weights",
+      "native_passed": false,
+      "summary": "FAIL: 1 fatal, 2 warn, 28 checks"
+    },
+    {
+      "case": "synthetic_statistics",
+      "native_passed": false,
+      "summary": "FAIL: 2 fatal, 2 warn, 28 checks"
+    },
+    {
+      "case": "synthetic_chunk",
+      "native_passed": false,
+      "summary": "FAIL: 1 fatal, 2 warn, 28 checks"
+    },
+    {
+      "case": "synthetic_camera",
+      "native_passed": false,
+      "summary": "FAIL: 2 fatal, 0 warn, 27 checks"
+    },
+    {
+      "case": "synthetic_units",
+      "native_passed": true,
+      "summary": "PASS: 0 fatal, 3 warn, 28 checks"
+    },
+    {
+      "case": "synthetic_missing_gripper",
+      "native_passed": false,
+      "summary": "FAIL: 1 fatal, 2 warn, 28 checks"
+    },
+    {
+      "case": "synthetic_missing_weights",
+      "native_passed": false,
+      "summary": "FAIL: 1 fatal, 2 warn, 28 checks"
+    },
+    {
+      "case": "published_smolvla",
+      "native_passed": false,
+      "summary": "FAIL: 3 fatal, 6 warn, 32 checks"
+    },
+    {
+      "case": "published_act",
+      "native_passed": false,
+      "summary": "FAIL: 3 fatal, 4 warn, 30 checks"
+    },
+    {
+      "case": "published_act_statistics",
+      "native_passed": false,
+      "summary": "FAIL: 5 fatal, 4 warn, 30 checks"
+    }
+  ],
+  "scientific_scope": [
+    "Genuine stock extraction plus checking, not source inspection alone",
+    "Synthetic controls are explicit metadata fixtures with synthetic tensor identity bytes, not trained weights",
+    "Public inputs use only already inspected SmolVLA/ACT development metadata; no newly selected candidate outcomes observed",
+    "Unknown fatal evidence withholds certification, separately from known metadata mismatches",
+    "Native PASS with warning-only units mismatch is preserved and is not full physical conformance",
+    "Public metadata has no invented weights, gripper convention, control rate or physical overlays",
+    "Known injected statistics-hash mismatches are credited even when other certification evidence is missing",
+    "No ML inference, temporal processor execution, policyci, VLM, rollout/outcome/statistical evaluation, robot or external service",
+    "No final equal-evidence comparison, detection/false-alarm rate, task-success, safety or speed claim",
+    "ActionABI, original stateful and certificate comparisons, eligible corpus, frozen final evaluation, clean main-result reproduction and complete paper remain unfinished"
+  ]
+}

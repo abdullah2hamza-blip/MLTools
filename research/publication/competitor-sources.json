@@ -180,7 +180,7 @@
     {
       "repository": "mulkakhileshmj/robotruth",
       "revision": "8eb1704cf446239e3f03687c2ebd707cbab68e98",
-      "inspection_scope": "Pinned README plus bounded source review by one reused subagent; no execution or reported-performance reproduction",
+      "inspection_scope": "Pinned source review plus complete-package source verification and stock extraction/checking development execution; no publisher performance reproduction",
       "inspected_sources": [
         {
           "path": "README.md",
@@ -212,7 +212,19 @@
           "size": 5378,
           "url": "https://github.com/mulkakhileshmj/robotruth/blob/8eb1704cf446239e3f03687c2ebd707cbab68e98/policyci/src/policyci/policies/act_aloha.py"
         }
-      ]
+      ],
+      "executed_development_workflow": {
+        "evidence": "../../validation/robotruth-native-001/summary.json",
+        "profile": "../../integrations/robotruth/sources.json",
+        "package_python_files_verified": 43,
+        "cases": 11,
+        "apis": [
+          "extract_spec",
+          "check_contract"
+        ],
+        "policyci_executed": false,
+        "final_comparison": false
+      }
     },
     {
       "repository": "Archerkattri/actionabi",

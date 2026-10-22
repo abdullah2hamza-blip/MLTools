@@ -1,0 +1,10 @@
+# Complete base runtime declared by the pinned robotruth project, without optional ML extras.
+numpy>=1.26
+scipy>=1.11
+pydantic>=2.6
+typer>=0.12
+rich>=13.7
+jinja2>=3.1
+safetensors>=0.4
+pyarrow>=15.0
+pyyaml>=6.0
