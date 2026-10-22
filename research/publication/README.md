@@ -42,15 +42,19 @@ The versioned `mltools probe` workflow now supports explicit execution, offline 
 
 ## Completion ledger
 
+`validation/panda-software-001/` now adds genuine source-grounded Panda translation/orientation/gripper operators, two full goal setters and populated-state native reset in an offline MuJoCo environment. `validation/panda-software-reproduction-001/` reproduces the semantic outputs in a newly installed locked environment. The affine compiler agrees with independent strong oracles on translation; nonlinear orientation and gripper lifecycle remain outside its scope and retain UNKNOWN. This establishes a second software-embodiment stratum, independently of any published checkpoint mapping. There are zero simulation steps, torque calls or policy/task-success claims. `docs/panda-software.md` records source authority, explicit Windows compatibility, injections and limitations.
+
+`study-design.json` selects a finite 24-condition prospective metadata study: ACT boccia, SmolVLA orange and PI05/LIBERO under native LeRobot decoders, with the same PI artifact explicitly transported into OpenPI. It excludes unresolved original GCS assets from prospective vendoring and keeps shared base/corpus ancestry visible. Metadata inspection is disclosed; this is neither blinded nor ancestry-disjoint. The design is **not a frozen protocol**: action-only execution, matched baselines, development validation and a committed complete freeze must precede prospective outcomes.
+
 | Objective | Current evidence | Still required |
 | --- | --- | --- |
 | Literature/contribution | Close prior art identified; primary-source register started | Complete focused audit, defensible contribution and venue fit |
 | Formal method | Development specification, compiler, numerical/canonical guards and actual OpenPI captures | Scope proofs/review, meaningful contribution validation, broader composition support |
 | Tool | Versioned probe API/CLI for both frameworks, offline replay and real reduced regression execution; original boundary checker | Integration hardening and broader shared semantic coverage |
-| Benchmark | Three-family candidate ledger; published ACT and SmolVLA metadata; pinned controller and incident source audits | Final eligible corpus, independent lineages, second embodiment artifact scope and real incident reproductions |
-| Evaluation | Draft protocol, leakage/independence rules | Frozen inventory and splits before final runs; real experiments and uncertainty analysis |
+| Benchmark | Three-family metadata selection; source-grounded SO101 and actual Panda software semantics; genuine historical incident execution | Execute selected corpus after freeze; preserve software versus checkpoint/physical coverage and shared ancestry limits |
+| Evaluation | Finite selected 24-condition design, draft protocol, leakage/dependency rules | Implement and freeze exact inputs, matched methods and analysis before final runs; execute and report real results |
 | Baselines/ablations | Native preflight/Policy Space, robotruth extraction/checking and ActionABI CPU library controls; independent numerical oracles/ablations; equal-budget manual/random queries; original stateful matched comparison and fresh witness costs; paper-equation certificate with native extension parity | Final matched-evidence adapters/applicability, calibration/threshold choices, broader witness/cost evaluation and attribution |
-| Reproducibility | Existing evidence/locks/runners; clean environment/source/build reproduction of ActionABI native controls with identical outputs | Final experiment runner, raw research results, figure/table pipeline and clean main-result reproduction |
+| Reproducibility | Evidence/locks/runners; clean ActionABI build/control reproduction and clean Panda software execution with identical semantic outputs | Final experiment runner, raw research results, figure/table pipeline and clean main-result reproduction |
 | Paper | No research paper written | Verified citations, full source/bibliography, compiled PDF and visual inspection |
 
 All previous prototype verification remains under `validation/`; it must not be described as evidence that this new objective is complete. Publishing code to the existing private origin is authorized. Public release, paid compute, outreach and submission require separate approval after a concrete reviewable result exists.

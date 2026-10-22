@@ -1,11 +1,23 @@
 {
   "schema_version": 1,
   "status": "DRAFT_SELECTION_AND_DEVELOPMENT_NOT_FROZEN",
-  "minimum_scope": {"frameworks": 2, "policy_families": 3, "embodiments": 2},
+  "minimum_scope": {
+    "frameworks": 2,
+    "policy_families": 3,
+    "embodiments": 2
+  },
   "coverage_claim": "Candidates span ACT, SmolVLA and PI; this is not proof of a complete final benchmark",
   "frameworks": {
-    "lerobot": {"revision": "5517a326eeb9b457cfe07d59b9bfdf291799c8d9", "processor_execution": "verified", "training_source_of_community_checkpoints": "unattested"},
-    "openpi": {"revision": "215abfb217dbac7d5f1273282331b9b1866c0479", "processor_execution": "verified CPU subset", "full_policy_inference": "not executed"}
+    "lerobot": {
+      "revision": "5517a326eeb9b457cfe07d59b9bfdf291799c8d9",
+      "processor_execution": "verified",
+      "training_source_of_community_checkpoints": "unattested"
+    },
+    "openpi": {
+      "revision": "215abfb217dbac7d5f1273282331b9b1866c0479",
+      "processor_execution": "verified CPU subset",
+      "full_policy_inference": "not executed"
+    }
   },
   "groups": [
     {
@@ -20,7 +32,13 @@
       "artifact_manifest": "../../examples/published_so101/source_manifest.json",
       "license_claim": "Apache-2.0 in pinned publisher card",
       "training_dataset_revision": null,
-      "missing_authority": ["physical units", "action modes", "training dataset snapshot", "camera3 role", "model preprocessing/inference"]
+      "missing_authority": [
+        "physical units",
+        "action modes",
+        "training dataset snapshot",
+        "camera3 role",
+        "model preprocessing/inference"
+      ]
     },
     {
       "id": "act-move-cube",
@@ -35,7 +53,12 @@
       "license_claim": "Apache-2.0 in pinned publisher card",
       "training_dataset_revision": null,
       "verified_execution": "Published statistics through genuine shared LeRobot normalization, with separately decoded reference",
-      "limits": ["Not ACT model inference", "Not native ACT action queue execution", "No physical joint-order/unit/mode authority", "Shared lineage cannot become independent held-out task"]
+      "limits": [
+        "Not ACT model inference",
+        "Not native ACT action queue execution",
+        "No physical joint-order/unit/mode authority",
+        "Shared lineage cannot become independent held-out task"
+      ]
     },
     {
       "id": "act-boccia",
@@ -50,7 +73,12 @@
       "license_claim": "Apache-2.0 in pinned model and current dataset cards",
       "training_dataset_revision": null,
       "split_status": "Unexecuted candidate; assignment and lineage exclusions must be frozen before evaluation",
-      "missing_authority": ["physical units", "action modes", "training source revision", "exact training dataset snapshot"]
+      "missing_authority": [
+        "physical units",
+        "action modes",
+        "training source revision",
+        "exact training dataset snapshot"
+      ]
     },
     {
       "id": "openpi-libero",
@@ -60,26 +88,130 @@
       "lineage_cluster": "openpi-official-libero",
       "role": "candidate_metadata_and_retrospective_source_audit",
       "objects": [
-        {"checkpoint": "pi05_libero", "generation": "1757354341826612", "sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"},
-        {"checkpoint": "pi0_libero", "generation": "1748456806752855", "sha256": "dae37d79a22108af83df9189c6710a3ec8e077d65b28e34bdf1da724e5ae30f1"},
-        {"checkpoint": "pi0_fast_libero", "generation": "1748456809464792", "sha256": "4ece6c43f425c3769b85819a7a4bb025d214dc263a13a6dbeb02cd36dc2cee5e"}
+        {
+          "checkpoint": "pi05_libero",
+          "generation": "1757354341826612",
+          "sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+        },
+        {
+          "checkpoint": "pi0_libero",
+          "generation": "1748456806752855",
+          "sha256": "dae37d79a22108af83df9189c6710a3ec8e077d65b28e34bdf1da724e5ae30f1"
+        },
+        {
+          "checkpoint": "pi0_fast_libero",
+          "generation": "1748456809464792",
+          "sha256": "4ece6c43f425c3769b85819a7a4bb025d214dc263a13a6dbeb02cd36dc2cee5e"
+        }
       ],
       "license_evidence": "selection/openpi-license.json",
       "license_scope": "Broad project-contributor Apache statement; generation-specific scope unresolved",
       "asset_vendoring": "not performed; exact GCS statistics are not silently assigned the code license",
       "authority": "openpi-history.md",
-      "limits": ["Versions are not counted as independent policy families", "No controller/simulator or checkpoint inference", "Training mode of reported FAST normalization incident not independently attested", "Legacy reconstruction remains retrospective development evidence"]
+      "limits": [
+        "Versions are not counted as independent policy families",
+        "No controller/simulator or checkpoint inference",
+        "Training mode of reported FAST normalization incident not independently attested",
+        "Legacy reconstruction remains retrospective development evidence"
+      ],
+      "prospective_eligibility": "Excluded original GCS assets while generation-specific licensing is unresolved; retained source audit is development only"
     },
-    {"id": "smolvla-pick-orange", "framework": "lerobot", "family": "SmolVLA", "model": "edge-inference/smolvla-so101-pick-orange", "revision": "71cf4a9d35ce317f6706efe1a9f9d4cbb2b8fb4d", "embodiment_label": "SO101 publisher label; physical calibration not attested", "lineage_cluster": "LightwheelAI/leisaac-pick-orange", "role": "metadata_inspected_no_case_outcomes", "artifact_manifest": "selection/smolvla/edge-inference--smolvla-so101-pick-orange/manifest.json", "license_claim": "Apache-2.0 in pinned publisher card; dataset license not inherited", "training_dataset_revision": null, "split_status": "Unexecuted candidate; declare shared base ancestry and freeze task-lineage exclusions before evaluation", "missing_authority": ["physical units/action modes", "calibration and camera identity", "training code revision", "exact training dataset/base snapshot"]},
-    {"id": "smolvla-dm-arm", "framework": "lerobot", "family": "SmolVLA", "model": "shenjianliang/smolvla_policy", "revision": "5753a3bff43a5014b9320476458ae9e4c5aae02d", "embodiment_label": "DM-arm publisher label; physical embodiment/calibration not independently attested", "lineage_cluster": "shenjianliang/dm_arm_test", "role": "metadata_inspected_no_case_outcomes", "artifact_manifest": "selection/smolvla/shenjianliang--smolvla_policy/manifest.json", "license_claim": "Apache-2.0 in pinned publisher card; dataset license not inherited", "training_dataset_revision": null, "split_status": "Unexecuted candidate; declare shared base ancestry and freeze task-lineage exclusions before evaluation", "missing_authority": ["physical units/action modes", "calibration and camera identity", "training code revision", "exact training dataset/base snapshot"]}
+    {
+      "id": "smolvla-pick-orange",
+      "framework": "lerobot",
+      "family": "SmolVLA",
+      "model": "edge-inference/smolvla-so101-pick-orange",
+      "revision": "71cf4a9d35ce317f6706efe1a9f9d4cbb2b8fb4d",
+      "embodiment_label": "SO101 publisher label; physical calibration not attested",
+      "lineage_cluster": "LightwheelAI/leisaac-pick-orange",
+      "role": "metadata_inspected_no_case_outcomes",
+      "artifact_manifest": "selection/smolvla/edge-inference--smolvla-so101-pick-orange/manifest.json",
+      "license_claim": "Apache-2.0 in pinned publisher card; dataset license not inherited",
+      "training_dataset_revision": null,
+      "split_status": "Unexecuted candidate; declare shared base ancestry and freeze task-lineage exclusions before evaluation",
+      "missing_authority": [
+        "physical units/action modes",
+        "calibration and camera identity",
+        "training code revision",
+        "exact training dataset/base snapshot"
+      ]
+    },
+    {
+      "id": "smolvla-dm-arm",
+      "framework": "lerobot",
+      "family": "SmolVLA",
+      "model": "shenjianliang/smolvla_policy",
+      "revision": "5753a3bff43a5014b9320476458ae9e4c5aae02d",
+      "embodiment_label": "DM-arm publisher label; physical embodiment/calibration not independently attested",
+      "lineage_cluster": "shenjianliang/dm_arm_test",
+      "role": "metadata_inspected_no_case_outcomes",
+      "artifact_manifest": "selection/smolvla/shenjianliang--smolvla_policy/manifest.json",
+      "license_claim": "Apache-2.0 in pinned publisher card; dataset license not inherited",
+      "training_dataset_revision": null,
+      "split_status": "Unexecuted candidate; declare shared base ancestry and freeze task-lineage exclusions before evaluation",
+      "missing_authority": [
+        "physical units/action modes",
+        "calibration and camera identity",
+        "training code revision",
+        "exact training dataset/base snapshot"
+      ]
+    }
   ],
   "reserves": [
-    {"model": "lianqing11/pi05_libero", "revision": "dacdd57a16713e7273b97943ce95ee3539763b1a", "family": "PI", "pipeline": "LeRobot saved QUANTILES metadata, not an original OpenPI checkpoint", "role": "metadata_inspected_no_case_outcomes", "artifact_manifest": "selection/pi/lianqing11--pi05_libero/manifest.json", "license_claim": "Apache-2.0 in pinned publisher card for selected metadata; upstream weights not retrieved or relicensed", "lineage_cluster": "HuggingFaceVLA/libero; exact dataset/base revisions unattested", "limitation": "Does not resolve original GCS licensing or establish physical/controller mapping, model inference or second-embodiment execution coverage"},
-    {"model": "lerobot/act_aloha_sim_transfer_cube_human", "revision": "ba73b2766f1371cdc133ca4efb97eb090d744625", "family": "ACT", "license_claim": "Apache-2.0 in publisher card", "role": "source_audited_reserve", "limitation": "No standalone statistics; model-state buffers not retrieved", "training_code_revision": "3c0a209f9fac4d2a57617e686a7f2a2309144ba2"}
+    {
+      "model": "lianqing11/pi05_libero",
+      "revision": "dacdd57a16713e7273b97943ce95ee3539763b1a",
+      "family": "PI",
+      "pipeline": "LeRobot saved QUANTILES metadata, not an original OpenPI checkpoint",
+      "role": "metadata_inspected_no_case_outcomes",
+      "artifact_manifest": "selection/pi/lianqing11--pi05_libero/manifest.json",
+      "license_claim": "Apache-2.0 in pinned publisher card for selected metadata; upstream weights not retrieved or relicensed",
+      "lineage_cluster": "HuggingFaceVLA/libero; exact dataset/base revisions unattested",
+      "limitation": "Does not resolve original GCS licensing or establish physical/controller mapping, model inference or second-embodiment execution coverage",
+      "selection": "Selected for finite prospective LeRobot metadata and explicitly labeled OpenPI transport cells in study-design.json; not yet executed or protocol-frozen"
+    },
+    {
+      "model": "lerobot/act_aloha_sim_transfer_cube_human",
+      "revision": "ba73b2766f1371cdc133ca4efb97eb090d744625",
+      "family": "ACT",
+      "license_claim": "Apache-2.0 in publisher card",
+      "role": "source_audited_reserve",
+      "limitation": "No standalone statistics; model-state buffers not retrieved",
+      "training_code_revision": "3c0a209f9fac4d2a57617e686a7f2a2309144ba2"
+    }
   ],
   "historical_incidents": [
-    {"id": "lerobot-pr4057", "framework": "lerobot", "root_cause_cluster": "relative-origin-refresh", "before": "240ea44cf9f887df944019cf46e18a0d496e1a56", "after": "7c98c1b2ce309f94e542bd4b9ee3fe176301edbf", "status": "genuine installed historical processors executed with fixture queue inputs", "evidence": "../../validation/lerobot-history-001/summary.json", "authority": "lerobot-history.md", "role": "retrospective_development", "current_probe_evaluation": "not yet integrated"},
-    {"id": "openpi-pr351", "framework": "openpi", "root_cause_cluster": "legacy-delta-composition", "before": "f1b9f4ab715cb8c87f177cf44d0e132a4765dc16", "after": "92b10824421d6d810eb1e398330acd79dc7cd934", "status": "genuine installed historical data factory and transforms executed; unused model preprocessing explicitly isolated", "evidence": "../../validation/openpi-history-001/summary.json", "authority": "openpi-history.md", "role": "retrospective_development", "full_historical_installation": "complete Python source packages in separate locked CPU subsets; not full original declared training runtime", "current_probe_evaluation": "core evaluator and independent numerical oracles executed; common public historical producer profile not yet integrated", "independent_authority": "Pre-removal bf25a4d active training configuration; see openpi-history.md", "limits": ["One retrospective development incident", "No checkpoint/statistics/tokenizer/model/controller evaluation", "Native round trips pass both revisions; no superiority over strong oracle"]}
+    {
+      "id": "lerobot-pr4057",
+      "framework": "lerobot",
+      "root_cause_cluster": "relative-origin-refresh",
+      "before": "240ea44cf9f887df944019cf46e18a0d496e1a56",
+      "after": "7c98c1b2ce309f94e542bd4b9ee3fe176301edbf",
+      "status": "genuine installed historical processors executed with fixture queue inputs",
+      "evidence": "../../validation/lerobot-history-001/summary.json",
+      "authority": "lerobot-history.md",
+      "role": "retrospective_development",
+      "current_probe_evaluation": "not yet integrated"
+    },
+    {
+      "id": "openpi-pr351",
+      "framework": "openpi",
+      "root_cause_cluster": "legacy-delta-composition",
+      "before": "f1b9f4ab715cb8c87f177cf44d0e132a4765dc16",
+      "after": "92b10824421d6d810eb1e398330acd79dc7cd934",
+      "status": "genuine installed historical data factory and transforms executed; unused model preprocessing explicitly isolated",
+      "evidence": "../../validation/openpi-history-001/summary.json",
+      "authority": "openpi-history.md",
+      "role": "retrospective_development",
+      "full_historical_installation": "complete Python source packages in separate locked CPU subsets; not full original declared training runtime",
+      "current_probe_evaluation": "core evaluator and independent numerical oracles executed; common public historical producer profile not yet integrated",
+      "independent_authority": "Pre-removal bf25a4d active training configuration; see openpi-history.md",
+      "limits": [
+        "One retrospective development incident",
+        "No checkpoint/statistics/tokenizer/model/controller evaluation",
+        "Native round trips pass both revisions; no superiority over strong oracle"
+      ]
+    }
   ],
   "split_policy": [
     "All previously executed examples and derived copies remain development evidence",
@@ -88,10 +220,15 @@
     "Do not call a metadata-inspected candidate blinded; freeze identities, composition holdouts and analysis before runs"
   ],
   "remaining_gates": [
-    "Fix final permitted artifact eligibility and OpenPI asset license policy/scope",
-    "Select adequate independent lineage coverage, including new SmolVLA evaluation candidates",
-    "Finish independently reproduced incident corpus and distinguish reported/injected cases",
-    "Implement applicable strong baselines and ablations with equal evidence",
-    "Freeze split, hypotheses, numerical profiles, metrics, seeds, run counts and budget in a committed revision"
-  ]
+    "Implement the finite selected action-only metadata study and equal-evidence methods",
+    "Validate development controls and freeze exact condition artifacts, numerical profiles, source identities, query designs, applicability and budget before prospective outcomes",
+    "Execute and reproduce the selected study; preserve source-grounded software versus published checkpoint/physical scope",
+    "Report shared ancestry/corpus dependencies without ancestry-disjoint or population claims"
+  ],
+  "selected_study_design": "study-design.json",
+  "software_embodiment_evidence": {
+    "so101": "Previously executed scalar processor contract; physical calibration not established",
+    "panda": "../../validation/panda-software-001/summary.json",
+    "panda_scope": "Actual native operator/full goal setter/gripper reset; no checkpoint mapping, physics steps, inference or task-success result"
+  }
 }

@@ -1,0 +1,5953 @@
+{
+  "schema_version": 1,
+  "development_only": true,
+  "final_evaluation": false,
+  "affine": {
+    "control": {
+      "queries": 19,
+      "methods": {
+        "compiled": {
+          "schema_version": 1,
+          "method": "affine-obligations-development",
+          "status": "PASS",
+          "suite_sha256": "4e41e664e5bbdcec29e54c66664fdd4eabf3eb228c69a2fe23508c0f8465ae5f",
+          "reference_sha256": "b84e49a570b7b3f2a405412f11c07cf0dfee6a8ccadc4dbd5352792df05a9619",
+          "evidence_sha256": "db7fd87f37c5f5886fcf60c0962d35ad9daba59c7cb6cad05877e8ca601ae931",
+          "coverage": {
+            "rank_by_output": {
+              "goal_x": 10,
+              "goal_y": 10,
+              "goal_z": 10
+            },
+            "required_rank": 10,
+            "planned_queries": 19,
+            "observed_queries": 19
+          },
+          "findings": [
+            {
+              "obligation": "offset",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 5e-324
+            },
+            {
+              "obligation": "effect:action:0",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.04000000000000001,
+              "actual": 0.04000000000000001,
+              "queries": [
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 2.0816681711721685e-17
+            },
+            {
+              "obligation": "affinity:action:0",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 1.3877787807814457e-17
+            },
+            {
+              "obligation": "effect:action:1",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:1",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:action:2",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:2",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:0",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:0",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:1",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:1",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:2",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:2",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:0",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.25,
+              "actual": 0.25,
+              "queries": [
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 1.6653345369377348e-16
+            },
+            {
+              "obligation": "affinity:current:0",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 1.1102230246251565e-16
+            },
+            {
+              "obligation": "effect:current:1",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:1",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:2",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:2",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "offset",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 5e-324
+            },
+            {
+              "obligation": "effect:action:0",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:0",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:action:1",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.04000000000000001,
+              "actual": 0.04000000000000001,
+              "queries": [
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 2.0816681711721685e-17
+            },
+            {
+              "obligation": "affinity:action:1",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 1.3877787807814457e-17
+            },
+            {
+              "obligation": "effect:action:2",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:2",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:0",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:0",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:1",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:1",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:2",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:2",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:0",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:0",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:1",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.25,
+              "actual": 0.25,
+              "queries": [
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 1.6653345369377348e-16
+            },
+            {
+              "obligation": "affinity:current:1",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 1.1102230246251565e-16
+            },
+            {
+              "obligation": "effect:current:2",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:2",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "offset",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 5e-324
+            },
+            {
+              "obligation": "effect:action:0",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:0",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:action:1",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:1",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:action:2",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.04000000000000001,
+              "actual": 0.04000000000000001,
+              "queries": [
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 2.0816681711721685e-17
+            },
+            {
+              "obligation": "affinity:action:2",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 1.3877787807814457e-17
+            },
+            {
+              "obligation": "effect:origin:0",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:0",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:1",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:1",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:2",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:2",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:0",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:0",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:1",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:1",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:2",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.25,
+              "actual": 0.25,
+              "queries": [
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 1.6653345369377348e-16
+            },
+            {
+              "obligation": "affinity:current:2",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 1.1102230246251565e-16
+            }
+          ],
+          "first_divergence": null,
+          "witness": [],
+          "limitations": [
+            "Finite affine-fragment obligations only; not arbitrary functional equivalence",
+            "Reference authority, units, fragment membership and execution producer are trusted inputs",
+            "Development method; no final benchmark evidence is supplied by this module",
+            "Binary64 output-resolution floor is a diagnostic, not a bound on upstream numeric error"
+          ]
+        },
+        "pointwise": {
+          "schema_version": 1,
+          "method": "pointwise-reference-development",
+          "status": "PASS",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "4e41e664e5bbdcec29e54c66664fdd4eabf3eb228c69a2fe23508c0f8465ae5f",
+          "reference_sha256": "b84e49a570b7b3f2a405412f11c07cf0dfee6a8ccadc4dbd5352792df05a9619",
+          "evidence_sha256": "db7fd87f37c5f5886fcf60c0962d35ad9daba59c7cb6cad05877e8ca601ae931",
+          "groups": {
+            "pointwise": {
+              "status": "PASS",
+              "counts": {
+                "PASS": 57
+              }
+            }
+          },
+          "comparison_count": 57,
+          "full_design_coverage_status": "PASS",
+          "first_divergence": null,
+          "coverage": {
+            "supplied_queries": 19,
+            "eligible_queries": 19,
+            "queried_ids": [
+              "center",
+              "plus:action:0",
+              "minus:action:0",
+              "plus:action:1",
+              "minus:action:1",
+              "plus:action:2",
+              "minus:action:2",
+              "plus:origin:0",
+              "minus:origin:0",
+              "plus:origin:1",
+              "minus:origin:1",
+              "plus:origin:2",
+              "minus:origin:2",
+              "plus:current:0",
+              "minus:current:0",
+              "plus:current:1",
+              "minus:current:1",
+              "plus:current:2",
+              "minus:current:2"
+            ],
+            "observed_eligible_queries": 19,
+            "rank_by_output": {
+              "goal_x": 10,
+              "goal_y": 10,
+              "goal_z": 10
+            },
+            "required_full_rank": 10
+          },
+          "scope": "Finite numerical oracle on the supplied design; not new probe generation",
+          "limitations": [
+            "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+            "Binary64 resolution diagnostic is not an upstream error bound",
+            "Oracle runtime excludes acquiring the shared adapter observations",
+            "Contrast budgets propagate component tolerances and sampled closure residuals"
+          ]
+        },
+        "strong_relational": {
+          "schema_version": 1,
+          "method": "relational-reference-development",
+          "status": "PASS",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "4e41e664e5bbdcec29e54c66664fdd4eabf3eb228c69a2fe23508c0f8465ae5f",
+          "reference_sha256": "b84e49a570b7b3f2a405412f11c07cf0dfee6a8ccadc4dbd5352792df05a9619",
+          "evidence_sha256": "db7fd87f37c5f5886fcf60c0962d35ad9daba59c7cb6cad05877e8ca601ae931",
+          "groups": {
+            "pointwise": {
+              "status": "PASS",
+              "counts": {
+                "PASS": 57
+              }
+            },
+            "paired": {
+              "status": "PASS",
+              "counts": {
+                "PASS": 513
+              }
+            },
+            "midpoint": {
+              "status": "PASS",
+              "counts": {
+                "PASS": 27
+              }
+            }
+          },
+          "comparison_count": 597,
+          "full_design_coverage_status": "PASS",
+          "first_divergence": null,
+          "coverage": {
+            "supplied_queries": 19,
+            "eligible_queries": 19,
+            "queried_ids": [
+              "center",
+              "plus:action:0",
+              "minus:action:0",
+              "plus:action:1",
+              "minus:action:1",
+              "plus:action:2",
+              "minus:action:2",
+              "plus:origin:0",
+              "minus:origin:0",
+              "plus:origin:1",
+              "minus:origin:1",
+              "plus:origin:2",
+              "minus:origin:2",
+              "plus:current:0",
+              "minus:current:0",
+              "plus:current:1",
+              "minus:current:1",
+              "plus:current:2",
+              "minus:current:2"
+            ],
+            "observed_eligible_queries": 19,
+            "rank_by_output": {
+              "goal_x": 10,
+              "goal_y": 10,
+              "goal_z": 10
+            },
+            "required_full_rank": 10
+          },
+          "scope": "Finite numerical oracle on the supplied design; not new probe generation",
+          "limitations": [
+            "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+            "Binary64 resolution diagnostic is not an upstream error bound",
+            "Oracle runtime excludes acquiring the shared adapter observations",
+            "Contrast budgets propagate component tolerances and sampled closure residuals"
+          ]
+        },
+        "stateless": {
+          "schema_version": 1,
+          "method": "stateless-diagonal-development",
+          "status": "PASS",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "4e41e664e5bbdcec29e54c66664fdd4eabf3eb228c69a2fe23508c0f8465ae5f",
+          "reference_sha256": "b84e49a570b7b3f2a405412f11c07cf0dfee6a8ccadc4dbd5352792df05a9619",
+          "evidence_sha256": "db7fd87f37c5f5886fcf60c0962d35ad9daba59c7cb6cad05877e8ca601ae931",
+          "groups": {
+            "pointwise": {
+              "status": "PASS",
+              "counts": {
+                "PASS": 21
+              }
+            }
+          },
+          "comparison_count": 21,
+          "full_design_coverage_status": "UNKNOWN",
+          "first_divergence": null,
+          "coverage": {
+            "supplied_queries": 19,
+            "eligible_queries": 7,
+            "queried_ids": [
+              "center",
+              "plus:action:0",
+              "minus:action:0",
+              "plus:action:1",
+              "minus:action:1",
+              "plus:action:2",
+              "minus:action:2"
+            ],
+            "observed_eligible_queries": 7,
+            "rank_by_output": {
+              "goal_x": 4,
+              "goal_y": 4,
+              "goal_z": 4
+            },
+            "required_full_rank": 10
+          },
+          "scope": "Only supplied queries with origin=current in matching declared units",
+          "limitations": [
+            "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+            "Binary64 resolution diagnostic is not an upstream error bound",
+            "Oracle runtime excludes acquiring the shared adapter observations",
+            "Contrast budgets propagate component tolerances and sampled closure residuals"
+          ],
+          "excluded_queries": 12
+        }
+      },
+      "scope": "Finite bounded native translation operators with controlled state arguments"
+    },
+    "wrong_gain": {
+      "queries": 19,
+      "methods": {
+        "compiled": {
+          "schema_version": 1,
+          "method": "affine-obligations-development",
+          "status": "FAIL",
+          "suite_sha256": "4e41e664e5bbdcec29e54c66664fdd4eabf3eb228c69a2fe23508c0f8465ae5f",
+          "reference_sha256": "b84e49a570b7b3f2a405412f11c07cf0dfee6a8ccadc4dbd5352792df05a9619",
+          "evidence_sha256": "a823787f1b5d117c3a933daf9147672feab265b2a7c96c587d53c6852d1d276e",
+          "coverage": {
+            "rank_by_output": {
+              "goal_x": 10,
+              "goal_y": 10,
+              "goal_z": 10
+            },
+            "required_rank": 10,
+            "planned_queries": 19,
+            "observed_queries": 19
+          },
+          "findings": [
+            {
+              "obligation": "offset",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 5e-324
+            },
+            {
+              "obligation": "effect:action:0",
+              "output": "goal_x",
+              "status": "FAIL",
+              "expected": 0.04000000000000001,
+              "actual": 0.08000000000000002,
+              "queries": [
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 4.163336342344337e-17
+            },
+            {
+              "obligation": "affinity:action:0",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 2.7755575615628914e-17
+            },
+            {
+              "obligation": "effect:action:1",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:1",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:action:2",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:2",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:0",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:0",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:1",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:1",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:2",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:2",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:0",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.25,
+              "actual": 0.25,
+              "queries": [
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 1.6653345369377348e-16
+            },
+            {
+              "obligation": "affinity:current:0",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 1.1102230246251565e-16
+            },
+            {
+              "obligation": "effect:current:1",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:1",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:2",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:2",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "offset",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 5e-324
+            },
+            {
+              "obligation": "effect:action:0",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:0",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:action:1",
+              "output": "goal_y",
+              "status": "FAIL",
+              "expected": 0.04000000000000001,
+              "actual": 0.08000000000000002,
+              "queries": [
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 4.163336342344337e-17
+            },
+            {
+              "obligation": "affinity:action:1",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 2.7755575615628914e-17
+            },
+            {
+              "obligation": "effect:action:2",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:2",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:0",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:0",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:1",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:1",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:2",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:2",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:0",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:0",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:1",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.25,
+              "actual": 0.25,
+              "queries": [
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 1.6653345369377348e-16
+            },
+            {
+              "obligation": "affinity:current:1",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 1.1102230246251565e-16
+            },
+            {
+              "obligation": "effect:current:2",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:2",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "offset",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 5e-324
+            },
+            {
+              "obligation": "effect:action:0",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:0",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:action:1",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:1",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:action:2",
+              "output": "goal_z",
+              "status": "FAIL",
+              "expected": 0.04000000000000001,
+              "actual": 0.08000000000000002,
+              "queries": [
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 4.163336342344337e-17
+            },
+            {
+              "obligation": "affinity:action:2",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 2.7755575615628914e-17
+            },
+            {
+              "obligation": "effect:origin:0",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:0",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:1",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:1",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:2",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:2",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:0",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:0",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:1",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:1",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:2",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.25,
+              "actual": 0.25,
+              "queries": [
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 1.6653345369377348e-16
+            },
+            {
+              "obligation": "affinity:current:2",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 1.1102230246251565e-16
+            }
+          ],
+          "first_divergence": {
+            "obligation": "effect:action:0",
+            "output": "goal_x",
+            "status": "FAIL",
+            "expected": 0.04000000000000001,
+            "actual": 0.08000000000000002,
+            "queries": [
+              "plus:action:0",
+              "minus:action:0"
+            ],
+            "output_resolution_floor": 4.163336342344337e-17
+          },
+          "witness": [
+            {
+              "query": "plus:action:0",
+              "inputs": [
+                0.8,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "outputs": [
+                0.08000000000000002,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "query": "minus:action:0",
+              "inputs": [
+                -0.8,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "outputs": [
+                -0.08000000000000002,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "limitations": [
+            "Finite affine-fragment obligations only; not arbitrary functional equivalence",
+            "Reference authority, units, fragment membership and execution producer are trusted inputs",
+            "Development method; no final benchmark evidence is supplied by this module",
+            "Binary64 output-resolution floor is a diagnostic, not a bound on upstream numeric error"
+          ]
+        },
+        "pointwise": {
+          "schema_version": 1,
+          "method": "pointwise-reference-development",
+          "status": "FAIL",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "4e41e664e5bbdcec29e54c66664fdd4eabf3eb228c69a2fe23508c0f8465ae5f",
+          "reference_sha256": "b84e49a570b7b3f2a405412f11c07cf0dfee6a8ccadc4dbd5352792df05a9619",
+          "evidence_sha256": "a823787f1b5d117c3a933daf9147672feab265b2a7c96c587d53c6852d1d276e",
+          "groups": {
+            "pointwise": {
+              "status": "FAIL",
+              "counts": {
+                "PASS": 51,
+                "FAIL": 6
+              }
+            }
+          },
+          "comparison_count": 57,
+          "full_design_coverage_status": "PASS",
+          "first_divergence": {
+            "kind": "pointwise",
+            "output": "goal_x",
+            "expected": 0.04000000000000001,
+            "actual": 0.08000000000000002,
+            "queries": [
+              "plus:action:0"
+            ],
+            "output_resolution_floor": 2.0816681711721685e-17,
+            "comparison_budget": 3.0399999999999997e-07
+          },
+          "coverage": {
+            "supplied_queries": 19,
+            "eligible_queries": 19,
+            "queried_ids": [
+              "center",
+              "plus:action:0",
+              "minus:action:0",
+              "plus:action:1",
+              "minus:action:1",
+              "plus:action:2",
+              "minus:action:2",
+              "plus:origin:0",
+              "minus:origin:0",
+              "plus:origin:1",
+              "minus:origin:1",
+              "plus:origin:2",
+              "minus:origin:2",
+              "plus:current:0",
+              "minus:current:0",
+              "plus:current:1",
+              "minus:current:1",
+              "plus:current:2",
+              "minus:current:2"
+            ],
+            "observed_eligible_queries": 19,
+            "rank_by_output": {
+              "goal_x": 10,
+              "goal_y": 10,
+              "goal_z": 10
+            },
+            "required_full_rank": 10
+          },
+          "scope": "Finite numerical oracle on the supplied design; not new probe generation",
+          "limitations": [
+            "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+            "Binary64 resolution diagnostic is not an upstream error bound",
+            "Oracle runtime excludes acquiring the shared adapter observations",
+            "Contrast budgets propagate component tolerances and sampled closure residuals"
+          ]
+        },
+        "strong_relational": {
+          "schema_version": 1,
+          "method": "relational-reference-development",
+          "status": "FAIL",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "4e41e664e5bbdcec29e54c66664fdd4eabf3eb228c69a2fe23508c0f8465ae5f",
+          "reference_sha256": "b84e49a570b7b3f2a405412f11c07cf0dfee6a8ccadc4dbd5352792df05a9619",
+          "evidence_sha256": "a823787f1b5d117c3a933daf9147672feab265b2a7c96c587d53c6852d1d276e",
+          "groups": {
+            "pointwise": {
+              "status": "FAIL",
+              "counts": {
+                "PASS": 51,
+                "FAIL": 6
+              }
+            },
+            "paired": {
+              "status": "FAIL",
+              "counts": {
+                "FAIL": 105,
+                "PASS": 408
+              }
+            },
+            "midpoint": {
+              "status": "PASS",
+              "counts": {
+                "PASS": 27
+              }
+            }
+          },
+          "comparison_count": 597,
+          "full_design_coverage_status": "PASS",
+          "first_divergence": {
+            "kind": "pointwise",
+            "output": "goal_x",
+            "expected": 0.04000000000000001,
+            "actual": 0.08000000000000002,
+            "queries": [
+              "plus:action:0"
+            ],
+            "output_resolution_floor": 2.0816681711721685e-17,
+            "comparison_budget": 3.0399999999999997e-07
+          },
+          "coverage": {
+            "supplied_queries": 19,
+            "eligible_queries": 19,
+            "queried_ids": [
+              "center",
+              "plus:action:0",
+              "minus:action:0",
+              "plus:action:1",
+              "minus:action:1",
+              "plus:action:2",
+              "minus:action:2",
+              "plus:origin:0",
+              "minus:origin:0",
+              "plus:origin:1",
+              "minus:origin:1",
+              "plus:origin:2",
+              "minus:origin:2",
+              "plus:current:0",
+              "minus:current:0",
+              "plus:current:1",
+              "minus:current:1",
+              "plus:current:2",
+              "minus:current:2"
+            ],
+            "observed_eligible_queries": 19,
+            "rank_by_output": {
+              "goal_x": 10,
+              "goal_y": 10,
+              "goal_z": 10
+            },
+            "required_full_rank": 10
+          },
+          "scope": "Finite numerical oracle on the supplied design; not new probe generation",
+          "limitations": [
+            "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+            "Binary64 resolution diagnostic is not an upstream error bound",
+            "Oracle runtime excludes acquiring the shared adapter observations",
+            "Contrast budgets propagate component tolerances and sampled closure residuals"
+          ]
+        },
+        "stateless": {
+          "schema_version": 1,
+          "method": "stateless-diagonal-development",
+          "status": "FAIL",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "4e41e664e5bbdcec29e54c66664fdd4eabf3eb228c69a2fe23508c0f8465ae5f",
+          "reference_sha256": "b84e49a570b7b3f2a405412f11c07cf0dfee6a8ccadc4dbd5352792df05a9619",
+          "evidence_sha256": "a823787f1b5d117c3a933daf9147672feab265b2a7c96c587d53c6852d1d276e",
+          "groups": {
+            "pointwise": {
+              "status": "FAIL",
+              "counts": {
+                "PASS": 15,
+                "FAIL": 6
+              }
+            }
+          },
+          "comparison_count": 21,
+          "full_design_coverage_status": "UNKNOWN",
+          "first_divergence": {
+            "kind": "pointwise",
+            "output": "goal_x",
+            "expected": 0.04000000000000001,
+            "actual": 0.08000000000000002,
+            "queries": [
+              "plus:action:0"
+            ],
+            "output_resolution_floor": 2.0816681711721685e-17,
+            "comparison_budget": 3.0399999999999997e-07
+          },
+          "coverage": {
+            "supplied_queries": 19,
+            "eligible_queries": 7,
+            "queried_ids": [
+              "center",
+              "plus:action:0",
+              "minus:action:0",
+              "plus:action:1",
+              "minus:action:1",
+              "plus:action:2",
+              "minus:action:2"
+            ],
+            "observed_eligible_queries": 7,
+            "rank_by_output": {
+              "goal_x": 4,
+              "goal_y": 4,
+              "goal_z": 4
+            },
+            "required_full_rank": 10
+          },
+          "scope": "Only supplied queries with origin=current in matching declared units",
+          "limitations": [
+            "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+            "Binary64 resolution diagnostic is not an upstream error bound",
+            "Oracle runtime excludes acquiring the shared adapter observations",
+            "Contrast budgets propagate component tolerances and sampled closure residuals"
+          ],
+          "excluded_queries": 12
+        }
+      },
+      "scope": "Finite bounded native translation operators with controlled state arguments"
+    },
+    "wrong_anchor": {
+      "queries": 19,
+      "methods": {
+        "compiled": {
+          "schema_version": 1,
+          "method": "affine-obligations-development",
+          "status": "FAIL",
+          "suite_sha256": "4e41e664e5bbdcec29e54c66664fdd4eabf3eb228c69a2fe23508c0f8465ae5f",
+          "reference_sha256": "b84e49a570b7b3f2a405412f11c07cf0dfee6a8ccadc4dbd5352792df05a9619",
+          "evidence_sha256": "d654c7903ce66cfdaaf2659cf7b12193ebdeaf503b961dfb43e6db1ca1dd3ec6",
+          "coverage": {
+            "rank_by_output": {
+              "goal_x": 10,
+              "goal_y": 10,
+              "goal_z": 10
+            },
+            "required_rank": 10,
+            "planned_queries": 19,
+            "observed_queries": 19
+          },
+          "findings": [
+            {
+              "obligation": "offset",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 5e-324
+            },
+            {
+              "obligation": "effect:action:0",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.04000000000000001,
+              "actual": 0.04000000000000001,
+              "queries": [
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 2.0816681711721685e-17
+            },
+            {
+              "obligation": "affinity:action:0",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 1.3877787807814457e-17
+            },
+            {
+              "obligation": "effect:action:1",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:1",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:action:2",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:2",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:0",
+              "output": "goal_x",
+              "status": "FAIL",
+              "expected": 0.0,
+              "actual": 0.25,
+              "queries": [
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 1.6653345369377348e-16
+            },
+            {
+              "obligation": "affinity:origin:0",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 1.1102230246251565e-16
+            },
+            {
+              "obligation": "effect:origin:1",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:1",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:2",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:2",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:0",
+              "output": "goal_x",
+              "status": "FAIL",
+              "expected": 0.25,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:0",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:1",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:1",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:2",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:2",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "offset",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 5e-324
+            },
+            {
+              "obligation": "effect:action:0",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:0",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:action:1",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.04000000000000001,
+              "actual": 0.04000000000000001,
+              "queries": [
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 2.0816681711721685e-17
+            },
+            {
+              "obligation": "affinity:action:1",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 1.3877787807814457e-17
+            },
+            {
+              "obligation": "effect:action:2",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:2",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:0",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:0",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:1",
+              "output": "goal_y",
+              "status": "FAIL",
+              "expected": 0.0,
+              "actual": 0.25,
+              "queries": [
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 1.6653345369377348e-16
+            },
+            {
+              "obligation": "affinity:origin:1",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 1.1102230246251565e-16
+            },
+            {
+              "obligation": "effect:origin:2",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:2",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:0",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:0",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:1",
+              "output": "goal_y",
+              "status": "FAIL",
+              "expected": 0.25,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:1",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:2",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:2",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "offset",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 5e-324
+            },
+            {
+              "obligation": "effect:action:0",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:0",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:action:1",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:1",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:action:2",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.04000000000000001,
+              "actual": 0.04000000000000001,
+              "queries": [
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 2.0816681711721685e-17
+            },
+            {
+              "obligation": "affinity:action:2",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 1.3877787807814457e-17
+            },
+            {
+              "obligation": "effect:origin:0",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:0",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:1",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:1",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:2",
+              "output": "goal_z",
+              "status": "FAIL",
+              "expected": 0.0,
+              "actual": 0.25,
+              "queries": [
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 1.6653345369377348e-16
+            },
+            {
+              "obligation": "affinity:origin:2",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 1.1102230246251565e-16
+            },
+            {
+              "obligation": "effect:current:0",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:0",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:1",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:1",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:2",
+              "output": "goal_z",
+              "status": "FAIL",
+              "expected": 0.25,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:2",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 2e-323
+            }
+          ],
+          "first_divergence": {
+            "obligation": "effect:origin:0",
+            "output": "goal_x",
+            "status": "FAIL",
+            "expected": 0.0,
+            "actual": 0.25,
+            "queries": [
+              "plus:origin:0",
+              "minus:origin:0"
+            ],
+            "output_resolution_floor": 1.6653345369377348e-16
+          },
+          "witness": [
+            {
+              "query": "plus:origin:0",
+              "inputs": [
+                0.0,
+                0.0,
+                0.0,
+                0.25,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "outputs": [
+                0.25,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "query": "minus:origin:0",
+              "inputs": [
+                0.0,
+                0.0,
+                0.0,
+                -0.25,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "outputs": [
+                -0.25,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "limitations": [
+            "Finite affine-fragment obligations only; not arbitrary functional equivalence",
+            "Reference authority, units, fragment membership and execution producer are trusted inputs",
+            "Development method; no final benchmark evidence is supplied by this module",
+            "Binary64 output-resolution floor is a diagnostic, not a bound on upstream numeric error"
+          ]
+        },
+        "pointwise": {
+          "schema_version": 1,
+          "method": "pointwise-reference-development",
+          "status": "FAIL",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "4e41e664e5bbdcec29e54c66664fdd4eabf3eb228c69a2fe23508c0f8465ae5f",
+          "reference_sha256": "b84e49a570b7b3f2a405412f11c07cf0dfee6a8ccadc4dbd5352792df05a9619",
+          "evidence_sha256": "d654c7903ce66cfdaaf2659cf7b12193ebdeaf503b961dfb43e6db1ca1dd3ec6",
+          "groups": {
+            "pointwise": {
+              "status": "FAIL",
+              "counts": {
+                "PASS": 45,
+                "FAIL": 12
+              }
+            }
+          },
+          "comparison_count": 57,
+          "full_design_coverage_status": "PASS",
+          "first_divergence": {
+            "kind": "pointwise",
+            "output": "goal_x",
+            "expected": 0.0,
+            "actual": 0.25,
+            "queries": [
+              "plus:origin:0"
+            ],
+            "output_resolution_floor": 5.551115123125783e-17,
+            "comparison_budget": 3e-07
+          },
+          "coverage": {
+            "supplied_queries": 19,
+            "eligible_queries": 19,
+            "queried_ids": [
+              "center",
+              "plus:action:0",
+              "minus:action:0",
+              "plus:action:1",
+              "minus:action:1",
+              "plus:action:2",
+              "minus:action:2",
+              "plus:origin:0",
+              "minus:origin:0",
+              "plus:origin:1",
+              "minus:origin:1",
+              "plus:origin:2",
+              "minus:origin:2",
+              "plus:current:0",
+              "minus:current:0",
+              "plus:current:1",
+              "minus:current:1",
+              "plus:current:2",
+              "minus:current:2"
+            ],
+            "observed_eligible_queries": 19,
+            "rank_by_output": {
+              "goal_x": 10,
+              "goal_y": 10,
+              "goal_z": 10
+            },
+            "required_full_rank": 10
+          },
+          "scope": "Finite numerical oracle on the supplied design; not new probe generation",
+          "limitations": [
+            "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+            "Binary64 resolution diagnostic is not an upstream error bound",
+            "Oracle runtime excludes acquiring the shared adapter observations",
+            "Contrast budgets propagate component tolerances and sampled closure residuals"
+          ]
+        },
+        "strong_relational": {
+          "schema_version": 1,
+          "method": "relational-reference-development",
+          "status": "FAIL",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "4e41e664e5bbdcec29e54c66664fdd4eabf3eb228c69a2fe23508c0f8465ae5f",
+          "reference_sha256": "b84e49a570b7b3f2a405412f11c07cf0dfee6a8ccadc4dbd5352792df05a9619",
+          "evidence_sha256": "d654c7903ce66cfdaaf2659cf7b12193ebdeaf503b961dfb43e6db1ca1dd3ec6",
+          "groups": {
+            "pointwise": {
+              "status": "FAIL",
+              "counts": {
+                "PASS": 45,
+                "FAIL": 12
+              }
+            },
+            "paired": {
+              "status": "FAIL",
+              "counts": {
+                "PASS": 321,
+                "FAIL": 192
+              }
+            },
+            "midpoint": {
+              "status": "PASS",
+              "counts": {
+                "PASS": 27
+              }
+            }
+          },
+          "comparison_count": 597,
+          "full_design_coverage_status": "PASS",
+          "first_divergence": {
+            "kind": "pointwise",
+            "output": "goal_x",
+            "expected": 0.0,
+            "actual": 0.25,
+            "queries": [
+              "plus:origin:0"
+            ],
+            "output_resolution_floor": 5.551115123125783e-17,
+            "comparison_budget": 3e-07
+          },
+          "coverage": {
+            "supplied_queries": 19,
+            "eligible_queries": 19,
+            "queried_ids": [
+              "center",
+              "plus:action:0",
+              "minus:action:0",
+              "plus:action:1",
+              "minus:action:1",
+              "plus:action:2",
+              "minus:action:2",
+              "plus:origin:0",
+              "minus:origin:0",
+              "plus:origin:1",
+              "minus:origin:1",
+              "plus:origin:2",
+              "minus:origin:2",
+              "plus:current:0",
+              "minus:current:0",
+              "plus:current:1",
+              "minus:current:1",
+              "plus:current:2",
+              "minus:current:2"
+            ],
+            "observed_eligible_queries": 19,
+            "rank_by_output": {
+              "goal_x": 10,
+              "goal_y": 10,
+              "goal_z": 10
+            },
+            "required_full_rank": 10
+          },
+          "scope": "Finite numerical oracle on the supplied design; not new probe generation",
+          "limitations": [
+            "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+            "Binary64 resolution diagnostic is not an upstream error bound",
+            "Oracle runtime excludes acquiring the shared adapter observations",
+            "Contrast budgets propagate component tolerances and sampled closure residuals"
+          ]
+        },
+        "stateless": {
+          "schema_version": 1,
+          "method": "stateless-diagonal-development",
+          "status": "PASS",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "4e41e664e5bbdcec29e54c66664fdd4eabf3eb228c69a2fe23508c0f8465ae5f",
+          "reference_sha256": "b84e49a570b7b3f2a405412f11c07cf0dfee6a8ccadc4dbd5352792df05a9619",
+          "evidence_sha256": "d654c7903ce66cfdaaf2659cf7b12193ebdeaf503b961dfb43e6db1ca1dd3ec6",
+          "groups": {
+            "pointwise": {
+              "status": "PASS",
+              "counts": {
+                "PASS": 21
+              }
+            }
+          },
+          "comparison_count": 21,
+          "full_design_coverage_status": "UNKNOWN",
+          "first_divergence": null,
+          "coverage": {
+            "supplied_queries": 19,
+            "eligible_queries": 7,
+            "queried_ids": [
+              "center",
+              "plus:action:0",
+              "minus:action:0",
+              "plus:action:1",
+              "minus:action:1",
+              "plus:action:2",
+              "minus:action:2"
+            ],
+            "observed_eligible_queries": 7,
+            "rank_by_output": {
+              "goal_x": 4,
+              "goal_y": 4,
+              "goal_z": 4
+            },
+            "required_full_rank": 10
+          },
+          "scope": "Only supplied queries with origin=current in matching declared units",
+          "limitations": [
+            "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+            "Binary64 resolution diagnostic is not an upstream error bound",
+            "Oracle runtime excludes acquiring the shared adapter observations",
+            "Contrast budgets propagate component tolerances and sampled closure residuals"
+          ],
+          "excluded_queries": 12
+        }
+      },
+      "scope": "Finite bounded native translation operators with controlled state arguments"
+    },
+    "wrong_order": {
+      "queries": 19,
+      "methods": {
+        "compiled": {
+          "schema_version": 1,
+          "method": "affine-obligations-development",
+          "status": "FAIL",
+          "suite_sha256": "4e41e664e5bbdcec29e54c66664fdd4eabf3eb228c69a2fe23508c0f8465ae5f",
+          "reference_sha256": "b84e49a570b7b3f2a405412f11c07cf0dfee6a8ccadc4dbd5352792df05a9619",
+          "evidence_sha256": "a427b0565a389d98fcd116460ea788b593d7a84431aec3999e4bfa951c174c6d",
+          "coverage": {
+            "rank_by_output": {
+              "goal_x": 10,
+              "goal_y": 10,
+              "goal_z": 10
+            },
+            "required_rank": 10,
+            "planned_queries": 19,
+            "observed_queries": 19
+          },
+          "findings": [
+            {
+              "obligation": "offset",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 5e-324
+            },
+            {
+              "obligation": "effect:action:0",
+              "output": "goal_x",
+              "status": "FAIL",
+              "expected": 0.04000000000000001,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:0",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:action:1",
+              "output": "goal_x",
+              "status": "FAIL",
+              "expected": 0,
+              "actual": 0.04000000000000001,
+              "queries": [
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 2.0816681711721685e-17
+            },
+            {
+              "obligation": "affinity:action:1",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 1.3877787807814457e-17
+            },
+            {
+              "obligation": "effect:action:2",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:2",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:0",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:0",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:1",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:1",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:2",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:2",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:0",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.25,
+              "actual": 0.25,
+              "queries": [
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 1.6653345369377348e-16
+            },
+            {
+              "obligation": "affinity:current:0",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 1.1102230246251565e-16
+            },
+            {
+              "obligation": "effect:current:1",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:1",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:2",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:2",
+              "output": "goal_x",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "offset",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 5e-324
+            },
+            {
+              "obligation": "effect:action:0",
+              "output": "goal_y",
+              "status": "FAIL",
+              "expected": 0,
+              "actual": 0.04000000000000001,
+              "queries": [
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 2.0816681711721685e-17
+            },
+            {
+              "obligation": "affinity:action:0",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 1.3877787807814457e-17
+            },
+            {
+              "obligation": "effect:action:1",
+              "output": "goal_y",
+              "status": "FAIL",
+              "expected": 0.04000000000000001,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:1",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:action:2",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:2",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:0",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:0",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:1",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:1",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:2",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:2",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:0",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:0",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:1",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.25,
+              "actual": 0.25,
+              "queries": [
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 1.6653345369377348e-16
+            },
+            {
+              "obligation": "affinity:current:1",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 1.1102230246251565e-16
+            },
+            {
+              "obligation": "effect:current:2",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:2",
+              "output": "goal_y",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "offset",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 5e-324
+            },
+            {
+              "obligation": "effect:action:0",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:0",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:action:1",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:1",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:action:2",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.04000000000000001,
+              "actual": 0.04000000000000001,
+              "queries": [
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 2.0816681711721685e-17
+            },
+            {
+              "obligation": "affinity:action:2",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 1.3877787807814457e-17
+            },
+            {
+              "obligation": "effect:origin:0",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:0",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:1",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:1",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:2",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:2",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:0",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:0",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:1",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:1",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:2",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.25,
+              "actual": 0.25,
+              "queries": [
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 1.6653345369377348e-16
+            },
+            {
+              "obligation": "affinity:current:2",
+              "output": "goal_z",
+              "status": "PASS",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 1.1102230246251565e-16
+            }
+          ],
+          "first_divergence": {
+            "obligation": "effect:action:0",
+            "output": "goal_x",
+            "status": "FAIL",
+            "expected": 0.04000000000000001,
+            "actual": 0.0,
+            "queries": [
+              "plus:action:0",
+              "minus:action:0"
+            ],
+            "output_resolution_floor": 1.5e-323
+          },
+          "witness": [
+            {
+              "query": "plus:action:0",
+              "inputs": [
+                0.8,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "outputs": [
+                0.0,
+                0.04000000000000001,
+                0.0
+              ]
+            },
+            {
+              "query": "minus:action:0",
+              "inputs": [
+                -0.8,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "outputs": [
+                0.0,
+                -0.04000000000000001,
+                0.0
+              ]
+            }
+          ],
+          "limitations": [
+            "Finite affine-fragment obligations only; not arbitrary functional equivalence",
+            "Reference authority, units, fragment membership and execution producer are trusted inputs",
+            "Development method; no final benchmark evidence is supplied by this module",
+            "Binary64 output-resolution floor is a diagnostic, not a bound on upstream numeric error"
+          ]
+        },
+        "pointwise": {
+          "schema_version": 1,
+          "method": "pointwise-reference-development",
+          "status": "FAIL",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "4e41e664e5bbdcec29e54c66664fdd4eabf3eb228c69a2fe23508c0f8465ae5f",
+          "reference_sha256": "b84e49a570b7b3f2a405412f11c07cf0dfee6a8ccadc4dbd5352792df05a9619",
+          "evidence_sha256": "a427b0565a389d98fcd116460ea788b593d7a84431aec3999e4bfa951c174c6d",
+          "groups": {
+            "pointwise": {
+              "status": "FAIL",
+              "counts": {
+                "PASS": 49,
+                "FAIL": 8
+              }
+            }
+          },
+          "comparison_count": 57,
+          "full_design_coverage_status": "PASS",
+          "first_divergence": {
+            "kind": "pointwise",
+            "output": "goal_x",
+            "expected": 0.04000000000000001,
+            "actual": 0.0,
+            "queries": [
+              "plus:action:0"
+            ],
+            "output_resolution_floor": 6.938893903907228e-18,
+            "comparison_budget": 3.0399999999999997e-07
+          },
+          "coverage": {
+            "supplied_queries": 19,
+            "eligible_queries": 19,
+            "queried_ids": [
+              "center",
+              "plus:action:0",
+              "minus:action:0",
+              "plus:action:1",
+              "minus:action:1",
+              "plus:action:2",
+              "minus:action:2",
+              "plus:origin:0",
+              "minus:origin:0",
+              "plus:origin:1",
+              "minus:origin:1",
+              "plus:origin:2",
+              "minus:origin:2",
+              "plus:current:0",
+              "minus:current:0",
+              "plus:current:1",
+              "minus:current:1",
+              "plus:current:2",
+              "minus:current:2"
+            ],
+            "observed_eligible_queries": 19,
+            "rank_by_output": {
+              "goal_x": 10,
+              "goal_y": 10,
+              "goal_z": 10
+            },
+            "required_full_rank": 10
+          },
+          "scope": "Finite numerical oracle on the supplied design; not new probe generation",
+          "limitations": [
+            "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+            "Binary64 resolution diagnostic is not an upstream error bound",
+            "Oracle runtime excludes acquiring the shared adapter observations",
+            "Contrast budgets propagate component tolerances and sampled closure residuals"
+          ]
+        },
+        "strong_relational": {
+          "schema_version": 1,
+          "method": "relational-reference-development",
+          "status": "FAIL",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "4e41e664e5bbdcec29e54c66664fdd4eabf3eb228c69a2fe23508c0f8465ae5f",
+          "reference_sha256": "b84e49a570b7b3f2a405412f11c07cf0dfee6a8ccadc4dbd5352792df05a9619",
+          "evidence_sha256": "a427b0565a389d98fcd116460ea788b593d7a84431aec3999e4bfa951c174c6d",
+          "groups": {
+            "pointwise": {
+              "status": "FAIL",
+              "counts": {
+                "PASS": 49,
+                "FAIL": 8
+              }
+            },
+            "paired": {
+              "status": "FAIL",
+              "counts": {
+                "FAIL": 128,
+                "PASS": 385
+              }
+            },
+            "midpoint": {
+              "status": "PASS",
+              "counts": {
+                "PASS": 27
+              }
+            }
+          },
+          "comparison_count": 597,
+          "full_design_coverage_status": "PASS",
+          "first_divergence": {
+            "kind": "pointwise",
+            "output": "goal_x",
+            "expected": 0.04000000000000001,
+            "actual": 0.0,
+            "queries": [
+              "plus:action:0"
+            ],
+            "output_resolution_floor": 6.938893903907228e-18,
+            "comparison_budget": 3.0399999999999997e-07
+          },
+          "coverage": {
+            "supplied_queries": 19,
+            "eligible_queries": 19,
+            "queried_ids": [
+              "center",
+              "plus:action:0",
+              "minus:action:0",
+              "plus:action:1",
+              "minus:action:1",
+              "plus:action:2",
+              "minus:action:2",
+              "plus:origin:0",
+              "minus:origin:0",
+              "plus:origin:1",
+              "minus:origin:1",
+              "plus:origin:2",
+              "minus:origin:2",
+              "plus:current:0",
+              "minus:current:0",
+              "plus:current:1",
+              "minus:current:1",
+              "plus:current:2",
+              "minus:current:2"
+            ],
+            "observed_eligible_queries": 19,
+            "rank_by_output": {
+              "goal_x": 10,
+              "goal_y": 10,
+              "goal_z": 10
+            },
+            "required_full_rank": 10
+          },
+          "scope": "Finite numerical oracle on the supplied design; not new probe generation",
+          "limitations": [
+            "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+            "Binary64 resolution diagnostic is not an upstream error bound",
+            "Oracle runtime excludes acquiring the shared adapter observations",
+            "Contrast budgets propagate component tolerances and sampled closure residuals"
+          ]
+        },
+        "stateless": {
+          "schema_version": 1,
+          "method": "stateless-diagonal-development",
+          "status": "FAIL",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "4e41e664e5bbdcec29e54c66664fdd4eabf3eb228c69a2fe23508c0f8465ae5f",
+          "reference_sha256": "b84e49a570b7b3f2a405412f11c07cf0dfee6a8ccadc4dbd5352792df05a9619",
+          "evidence_sha256": "a427b0565a389d98fcd116460ea788b593d7a84431aec3999e4bfa951c174c6d",
+          "groups": {
+            "pointwise": {
+              "status": "FAIL",
+              "counts": {
+                "PASS": 13,
+                "FAIL": 8
+              }
+            }
+          },
+          "comparison_count": 21,
+          "full_design_coverage_status": "UNKNOWN",
+          "first_divergence": {
+            "kind": "pointwise",
+            "output": "goal_x",
+            "expected": 0.04000000000000001,
+            "actual": 0.0,
+            "queries": [
+              "plus:action:0"
+            ],
+            "output_resolution_floor": 6.938893903907228e-18,
+            "comparison_budget": 3.0399999999999997e-07
+          },
+          "coverage": {
+            "supplied_queries": 19,
+            "eligible_queries": 7,
+            "queried_ids": [
+              "center",
+              "plus:action:0",
+              "minus:action:0",
+              "plus:action:1",
+              "minus:action:1",
+              "plus:action:2",
+              "minus:action:2"
+            ],
+            "observed_eligible_queries": 7,
+            "rank_by_output": {
+              "goal_x": 4,
+              "goal_y": 4,
+              "goal_z": 4
+            },
+            "required_full_rank": 10
+          },
+          "scope": "Only supplied queries with origin=current in matching declared units",
+          "limitations": [
+            "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+            "Binary64 resolution diagnostic is not an upstream error bound",
+            "Oracle runtime excludes acquiring the shared adapter observations",
+            "Contrast budgets propagate component tolerances and sampled closure residuals"
+          ],
+          "excluded_queries": 12
+        }
+      },
+      "scope": "Finite bounded native translation operators with controlled state arguments"
+    },
+    "missing_authority": {
+      "queries": 19,
+      "methods": {
+        "compiled": {
+          "schema_version": 1,
+          "method": "affine-obligations-development",
+          "status": "UNKNOWN",
+          "suite_sha256": "4e41e664e5bbdcec29e54c66664fdd4eabf3eb228c69a2fe23508c0f8465ae5f",
+          "reference_sha256": "0e715eb9891031da5014627952ca9f3d0f02f991152614e096eee4ec66c8c890",
+          "evidence_sha256": "db7fd87f37c5f5886fcf60c0962d35ad9daba59c7cb6cad05877e8ca601ae931",
+          "coverage": {
+            "rank_by_output": {
+              "goal_x": 10,
+              "goal_y": 10,
+              "goal_z": 10
+            },
+            "required_rank": 10,
+            "planned_queries": 19,
+            "observed_queries": 19
+          },
+          "findings": [
+            {
+              "obligation": "offset",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 5e-324
+            },
+            {
+              "obligation": "effect:action:0",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0.04000000000000001,
+              "actual": 0.04000000000000001,
+              "queries": [
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 2.0816681711721685e-17
+            },
+            {
+              "obligation": "affinity:action:0",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 1.3877787807814457e-17
+            },
+            {
+              "obligation": "effect:action:1",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:1",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:action:2",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:2",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:0",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:0",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:1",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:1",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:2",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:2",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:0",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0.25,
+              "actual": 0.25,
+              "queries": [
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 1.6653345369377348e-16
+            },
+            {
+              "obligation": "affinity:current:0",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 1.1102230246251565e-16
+            },
+            {
+              "obligation": "effect:current:1",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:1",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:2",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:2",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "offset",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 5e-324
+            },
+            {
+              "obligation": "effect:action:0",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:0",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:action:1",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0.04000000000000001,
+              "actual": 0.04000000000000001,
+              "queries": [
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 2.0816681711721685e-17
+            },
+            {
+              "obligation": "affinity:action:1",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 1.3877787807814457e-17
+            },
+            {
+              "obligation": "effect:action:2",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:2",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:0",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:0",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:1",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:1",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:2",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:2",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:0",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:0",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:1",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0.25,
+              "actual": 0.25,
+              "queries": [
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 1.6653345369377348e-16
+            },
+            {
+              "obligation": "affinity:current:1",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 1.1102230246251565e-16
+            },
+            {
+              "obligation": "effect:current:2",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:2",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "offset",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 5e-324
+            },
+            {
+              "obligation": "effect:action:0",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:0",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:action:1",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:1",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:action:2",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0.04000000000000001,
+              "actual": 0.04000000000000001,
+              "queries": [
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 2.0816681711721685e-17
+            },
+            {
+              "obligation": "affinity:action:2",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 1.3877787807814457e-17
+            },
+            {
+              "obligation": "effect:origin:0",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:0",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:1",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:1",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:2",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:2",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:0",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:0",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:1",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:1",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:2",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0.25,
+              "actual": 0.25,
+              "queries": [
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 1.6653345369377348e-16
+            },
+            {
+              "obligation": "affinity:current:2",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 1.1102230246251565e-16
+            }
+          ],
+          "first_divergence": null,
+          "witness": [],
+          "limitations": [
+            "Finite affine-fragment obligations only; not arbitrary functional equivalence",
+            "Reference authority, units, fragment membership and execution producer are trusted inputs",
+            "Development method; no final benchmark evidence is supplied by this module",
+            "Binary64 output-resolution floor is a diagnostic, not a bound on upstream numeric error"
+          ]
+        },
+        "pointwise": {
+          "schema_version": 1,
+          "method": "pointwise-reference-development",
+          "status": "UNKNOWN",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "4e41e664e5bbdcec29e54c66664fdd4eabf3eb228c69a2fe23508c0f8465ae5f",
+          "reference_sha256": "0e715eb9891031da5014627952ca9f3d0f02f991152614e096eee4ec66c8c890",
+          "evidence_sha256": "db7fd87f37c5f5886fcf60c0962d35ad9daba59c7cb6cad05877e8ca601ae931",
+          "groups": {
+            "pointwise": {
+              "status": "UNKNOWN",
+              "counts": {
+                "UNKNOWN": 57
+              }
+            }
+          },
+          "comparison_count": 57,
+          "full_design_coverage_status": "PASS",
+          "first_divergence": null,
+          "coverage": {
+            "supplied_queries": 19,
+            "eligible_queries": 19,
+            "queried_ids": [
+              "center",
+              "plus:action:0",
+              "minus:action:0",
+              "plus:action:1",
+              "minus:action:1",
+              "plus:action:2",
+              "minus:action:2",
+              "plus:origin:0",
+              "minus:origin:0",
+              "plus:origin:1",
+              "minus:origin:1",
+              "plus:origin:2",
+              "minus:origin:2",
+              "plus:current:0",
+              "minus:current:0",
+              "plus:current:1",
+              "minus:current:1",
+              "plus:current:2",
+              "minus:current:2"
+            ],
+            "observed_eligible_queries": 19,
+            "rank_by_output": {
+              "goal_x": 10,
+              "goal_y": 10,
+              "goal_z": 10
+            },
+            "required_full_rank": 10
+          },
+          "scope": "Finite numerical oracle on the supplied design; not new probe generation",
+          "limitations": [
+            "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+            "Binary64 resolution diagnostic is not an upstream error bound",
+            "Oracle runtime excludes acquiring the shared adapter observations",
+            "Contrast budgets propagate component tolerances and sampled closure residuals"
+          ]
+        },
+        "strong_relational": {
+          "schema_version": 1,
+          "method": "relational-reference-development",
+          "status": "UNKNOWN",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "4e41e664e5bbdcec29e54c66664fdd4eabf3eb228c69a2fe23508c0f8465ae5f",
+          "reference_sha256": "0e715eb9891031da5014627952ca9f3d0f02f991152614e096eee4ec66c8c890",
+          "evidence_sha256": "db7fd87f37c5f5886fcf60c0962d35ad9daba59c7cb6cad05877e8ca601ae931",
+          "groups": {
+            "pointwise": {
+              "status": "UNKNOWN",
+              "counts": {
+                "UNKNOWN": 57
+              }
+            },
+            "paired": {
+              "status": "UNKNOWN",
+              "counts": {
+                "UNKNOWN": 513
+              }
+            },
+            "midpoint": {
+              "status": "UNKNOWN",
+              "counts": {
+                "UNKNOWN": 27
+              }
+            }
+          },
+          "comparison_count": 597,
+          "full_design_coverage_status": "PASS",
+          "first_divergence": null,
+          "coverage": {
+            "supplied_queries": 19,
+            "eligible_queries": 19,
+            "queried_ids": [
+              "center",
+              "plus:action:0",
+              "minus:action:0",
+              "plus:action:1",
+              "minus:action:1",
+              "plus:action:2",
+              "minus:action:2",
+              "plus:origin:0",
+              "minus:origin:0",
+              "plus:origin:1",
+              "minus:origin:1",
+              "plus:origin:2",
+              "minus:origin:2",
+              "plus:current:0",
+              "minus:current:0",
+              "plus:current:1",
+              "minus:current:1",
+              "plus:current:2",
+              "minus:current:2"
+            ],
+            "observed_eligible_queries": 19,
+            "rank_by_output": {
+              "goal_x": 10,
+              "goal_y": 10,
+              "goal_z": 10
+            },
+            "required_full_rank": 10
+          },
+          "scope": "Finite numerical oracle on the supplied design; not new probe generation",
+          "limitations": [
+            "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+            "Binary64 resolution diagnostic is not an upstream error bound",
+            "Oracle runtime excludes acquiring the shared adapter observations",
+            "Contrast budgets propagate component tolerances and sampled closure residuals"
+          ]
+        },
+        "stateless": {
+          "schema_version": 1,
+          "method": "stateless-diagonal-development",
+          "status": "UNKNOWN",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "4e41e664e5bbdcec29e54c66664fdd4eabf3eb228c69a2fe23508c0f8465ae5f",
+          "reference_sha256": "0e715eb9891031da5014627952ca9f3d0f02f991152614e096eee4ec66c8c890",
+          "evidence_sha256": "db7fd87f37c5f5886fcf60c0962d35ad9daba59c7cb6cad05877e8ca601ae931",
+          "groups": {
+            "pointwise": {
+              "status": "UNKNOWN",
+              "counts": {
+                "UNKNOWN": 21
+              }
+            }
+          },
+          "comparison_count": 21,
+          "full_design_coverage_status": "UNKNOWN",
+          "first_divergence": null,
+          "coverage": {
+            "supplied_queries": 19,
+            "eligible_queries": 7,
+            "queried_ids": [
+              "center",
+              "plus:action:0",
+              "minus:action:0",
+              "plus:action:1",
+              "minus:action:1",
+              "plus:action:2",
+              "minus:action:2"
+            ],
+            "observed_eligible_queries": 7,
+            "rank_by_output": {
+              "goal_x": 4,
+              "goal_y": 4,
+              "goal_z": 4
+            },
+            "required_full_rank": 10
+          },
+          "scope": "Only supplied queries with origin=current in matching declared units",
+          "limitations": [
+            "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+            "Binary64 resolution diagnostic is not an upstream error bound",
+            "Oracle runtime excludes acquiring the shared adapter observations",
+            "Contrast budgets propagate component tolerances and sampled closure residuals"
+          ],
+          "excluded_queries": 12
+        }
+      },
+      "scope": "Finite bounded native translation operators with controlled state arguments"
+    },
+    "missing_units": {
+      "queries": 19,
+      "methods": {
+        "compiled": {
+          "schema_version": 1,
+          "method": "affine-obligations-development",
+          "status": "UNKNOWN",
+          "suite_sha256": "4e41e664e5bbdcec29e54c66664fdd4eabf3eb228c69a2fe23508c0f8465ae5f",
+          "reference_sha256": "849870db4bff062824acfc219d9732912acccd62136d46c06d5a649b71c88f04",
+          "evidence_sha256": "db7fd87f37c5f5886fcf60c0962d35ad9daba59c7cb6cad05877e8ca601ae931",
+          "coverage": {
+            "rank_by_output": {
+              "goal_x": 10,
+              "goal_y": 10,
+              "goal_z": 10
+            },
+            "required_rank": 10,
+            "planned_queries": 19,
+            "observed_queries": 19
+          },
+          "findings": [
+            {
+              "obligation": "offset",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 5e-324
+            },
+            {
+              "obligation": "effect:action:0",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0.04000000000000001,
+              "actual": 0.04000000000000001,
+              "queries": [
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 2.0816681711721685e-17
+            },
+            {
+              "obligation": "affinity:action:0",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 1.3877787807814457e-17
+            },
+            {
+              "obligation": "effect:action:1",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:1",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:action:2",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:2",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:0",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:0",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:1",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:1",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:2",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:2",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:0",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0.25,
+              "actual": 0.25,
+              "queries": [
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 1.6653345369377348e-16
+            },
+            {
+              "obligation": "affinity:current:0",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 1.1102230246251565e-16
+            },
+            {
+              "obligation": "effect:current:1",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:1",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:2",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:2",
+              "output": "goal_x",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "offset",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 5e-324
+            },
+            {
+              "obligation": "effect:action:0",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:0",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:action:1",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0.04000000000000001,
+              "actual": 0.04000000000000001,
+              "queries": [
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 2.0816681711721685e-17
+            },
+            {
+              "obligation": "affinity:action:1",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 1.3877787807814457e-17
+            },
+            {
+              "obligation": "effect:action:2",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:2",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:0",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:0",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:1",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:1",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:2",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:2",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:0",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:0",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:1",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0.25,
+              "actual": 0.25,
+              "queries": [
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 1.6653345369377348e-16
+            },
+            {
+              "obligation": "affinity:current:1",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 1.1102230246251565e-16
+            },
+            {
+              "obligation": "effect:current:2",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:2",
+              "output": "goal_y",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "offset",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 5e-324
+            },
+            {
+              "obligation": "effect:action:0",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:0",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:action:1",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:action:1",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:1",
+                "minus:action:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:action:2",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0.04000000000000001,
+              "actual": 0.04000000000000001,
+              "queries": [
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 2.0816681711721685e-17
+            },
+            {
+              "obligation": "affinity:action:2",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:action:2",
+                "minus:action:2"
+              ],
+              "output_resolution_floor": 1.3877787807814457e-17
+            },
+            {
+              "obligation": "effect:origin:0",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:0",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:0",
+                "minus:origin:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:1",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:1",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:1",
+                "minus:origin:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:origin:2",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:origin:2",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:origin:2",
+                "minus:origin:2"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:0",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:0",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:0",
+                "minus:current:0"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:1",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0,
+              "actual": 0.0,
+              "queries": [
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 1.5e-323
+            },
+            {
+              "obligation": "affinity:current:1",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:1",
+                "minus:current:1"
+              ],
+              "output_resolution_floor": 2e-323
+            },
+            {
+              "obligation": "effect:current:2",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0.25,
+              "actual": 0.25,
+              "queries": [
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 1.6653345369377348e-16
+            },
+            {
+              "obligation": "affinity:current:2",
+              "output": "goal_z",
+              "status": "UNKNOWN",
+              "expected": 0.0,
+              "actual": 0.0,
+              "queries": [
+                "center",
+                "plus:current:2",
+                "minus:current:2"
+              ],
+              "output_resolution_floor": 1.1102230246251565e-16
+            }
+          ],
+          "first_divergence": null,
+          "witness": [],
+          "limitations": [
+            "Finite affine-fragment obligations only; not arbitrary functional equivalence",
+            "Reference authority, units, fragment membership and execution producer are trusted inputs",
+            "Development method; no final benchmark evidence is supplied by this module",
+            "Binary64 output-resolution floor is a diagnostic, not a bound on upstream numeric error"
+          ]
+        },
+        "pointwise": {
+          "schema_version": 1,
+          "method": "pointwise-reference-development",
+          "status": "UNKNOWN",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "4e41e664e5bbdcec29e54c66664fdd4eabf3eb228c69a2fe23508c0f8465ae5f",
+          "reference_sha256": "849870db4bff062824acfc219d9732912acccd62136d46c06d5a649b71c88f04",
+          "evidence_sha256": "db7fd87f37c5f5886fcf60c0962d35ad9daba59c7cb6cad05877e8ca601ae931",
+          "groups": {
+            "pointwise": {
+              "status": "UNKNOWN",
+              "counts": {
+                "UNKNOWN": 57
+              }
+            }
+          },
+          "comparison_count": 57,
+          "full_design_coverage_status": "PASS",
+          "first_divergence": null,
+          "coverage": {
+            "supplied_queries": 19,
+            "eligible_queries": 19,
+            "queried_ids": [
+              "center",
+              "plus:action:0",
+              "minus:action:0",
+              "plus:action:1",
+              "minus:action:1",
+              "plus:action:2",
+              "minus:action:2",
+              "plus:origin:0",
+              "minus:origin:0",
+              "plus:origin:1",
+              "minus:origin:1",
+              "plus:origin:2",
+              "minus:origin:2",
+              "plus:current:0",
+              "minus:current:0",
+              "plus:current:1",
+              "minus:current:1",
+              "plus:current:2",
+              "minus:current:2"
+            ],
+            "observed_eligible_queries": 19,
+            "rank_by_output": {
+              "goal_x": 10,
+              "goal_y": 10,
+              "goal_z": 10
+            },
+            "required_full_rank": 10
+          },
+          "scope": "Finite numerical oracle on the supplied design; not new probe generation",
+          "limitations": [
+            "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+            "Binary64 resolution diagnostic is not an upstream error bound",
+            "Oracle runtime excludes acquiring the shared adapter observations",
+            "Contrast budgets propagate component tolerances and sampled closure residuals"
+          ]
+        },
+        "strong_relational": {
+          "schema_version": 1,
+          "method": "relational-reference-development",
+          "status": "UNKNOWN",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "4e41e664e5bbdcec29e54c66664fdd4eabf3eb228c69a2fe23508c0f8465ae5f",
+          "reference_sha256": "849870db4bff062824acfc219d9732912acccd62136d46c06d5a649b71c88f04",
+          "evidence_sha256": "db7fd87f37c5f5886fcf60c0962d35ad9daba59c7cb6cad05877e8ca601ae931",
+          "groups": {
+            "pointwise": {
+              "status": "UNKNOWN",
+              "counts": {
+                "UNKNOWN": 57
+              }
+            },
+            "paired": {
+              "status": "UNKNOWN",
+              "counts": {
+                "UNKNOWN": 513
+              }
+            },
+            "midpoint": {
+              "status": "UNKNOWN",
+              "counts": {
+                "UNKNOWN": 27
+              }
+            }
+          },
+          "comparison_count": 597,
+          "full_design_coverage_status": "PASS",
+          "first_divergence": null,
+          "coverage": {
+            "supplied_queries": 19,
+            "eligible_queries": 19,
+            "queried_ids": [
+              "center",
+              "plus:action:0",
+              "minus:action:0",
+              "plus:action:1",
+              "minus:action:1",
+              "plus:action:2",
+              "minus:action:2",
+              "plus:origin:0",
+              "minus:origin:0",
+              "plus:origin:1",
+              "minus:origin:1",
+              "plus:origin:2",
+              "minus:origin:2",
+              "plus:current:0",
+              "minus:current:0",
+              "plus:current:1",
+              "minus:current:1",
+              "plus:current:2",
+              "minus:current:2"
+            ],
+            "observed_eligible_queries": 19,
+            "rank_by_output": {
+              "goal_x": 10,
+              "goal_y": 10,
+              "goal_z": 10
+            },
+            "required_full_rank": 10
+          },
+          "scope": "Finite numerical oracle on the supplied design; not new probe generation",
+          "limitations": [
+            "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+            "Binary64 resolution diagnostic is not an upstream error bound",
+            "Oracle runtime excludes acquiring the shared adapter observations",
+            "Contrast budgets propagate component tolerances and sampled closure residuals"
+          ]
+        },
+        "stateless": {
+          "schema_version": 1,
+          "method": "stateless-diagonal-development",
+          "status": "UNKNOWN",
+          "applicability": "APPLICABLE",
+          "suite_sha256": "4e41e664e5bbdcec29e54c66664fdd4eabf3eb228c69a2fe23508c0f8465ae5f",
+          "reference_sha256": "849870db4bff062824acfc219d9732912acccd62136d46c06d5a649b71c88f04",
+          "evidence_sha256": "db7fd87f37c5f5886fcf60c0962d35ad9daba59c7cb6cad05877e8ca601ae931",
+          "groups": {
+            "pointwise": {
+              "status": "UNKNOWN",
+              "counts": {
+                "UNKNOWN": 21
+              }
+            }
+          },
+          "comparison_count": 21,
+          "full_design_coverage_status": "UNKNOWN",
+          "first_divergence": null,
+          "coverage": {
+            "supplied_queries": 19,
+            "eligible_queries": 7,
+            "queried_ids": [
+              "center",
+              "plus:action:0",
+              "minus:action:0",
+              "plus:action:1",
+              "minus:action:1",
+              "plus:action:2",
+              "minus:action:2"
+            ],
+            "observed_eligible_queries": 7,
+            "rank_by_output": {
+              "goal_x": 4,
+              "goal_y": 4,
+              "goal_z": 4
+            },
+            "required_full_rank": 10
+          },
+          "scope": "Only supplied queries with origin=current in matching declared units",
+          "limitations": [
+            "Reference/fragment/producer evidence is trusted; no global or physical safety proof",
+            "Binary64 resolution diagnostic is not an upstream error bound",
+            "Oracle runtime excludes acquiring the shared adapter observations",
+            "Contrast budgets propagate component tolerances and sampled closure residuals"
+          ],
+          "excluded_queries": 12
+        }
+      },
+      "scope": "Finite bounded native translation operators with controlled state arguments"
+    }
+  },
+  "native_full_controller_checks": 2,
+  "orientation": [
+    {
+      "case": "noncommuting_x_then_z",
+      "variant": "native_pre_multiply",
+      "independent_native_reference_status": "PASS",
+      "affine_evaluator_status": "UNKNOWN",
+      "reason": "Nonlinear orientation composition outside the admitted fragment",
+      "expected": [
+        [
+          1.1102230246251565e-16,
+          -1.1102230246251565e-16,
+          1.0
+        ],
+        [
+          1.0,
+          1.232595164407831e-32,
+          -1.1102230246251565e-16
+        ],
+        [
+          0.0,
+          1.0,
+          1.1102230246251565e-16
+        ]
+      ],
+      "actual": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "case": "noncommuting_x_then_z",
+      "variant": "post_multiply_injection",
+      "independent_native_reference_status": "FAIL",
+      "affine_evaluator_status": "UNKNOWN",
+      "reason": "Nonlinear orientation composition outside the admitted fragment",
+      "expected": [
+        [
+          1.1102230246251565e-16,
+          -1.1102230246251565e-16,
+          1.0
+        ],
+        [
+          1.0,
+          1.232595164407831e-32,
+          -1.1102230246251565e-16
+        ],
+        [
+          0.0,
+          1.0,
+          1.1102230246251565e-16
+        ]
+      ],
+      "actual": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "case": "noncommuting_y_then_x",
+      "variant": "native_pre_multiply",
+      "independent_native_reference_status": "PASS",
+      "affine_evaluator_status": "UNKNOWN",
+      "reason": "Nonlinear orientation composition outside the admitted fragment",
+      "expected": [
+        [
+          0.7648421872844885,
+          0.0,
+          0.644217687237691
+        ],
+        [
+          -0.2508701838500143,
+          0.9210609940028851,
+          0.2978435767000479
+        ],
+        [
+          -0.5933637833613874,
+          -0.3894183423086505,
+          0.7044663052755917
+        ]
+      ],
+      "actual": [
+        [
+          0.7648421972990036,
+          0.0,
+          0.6442177295684814
+        ],
+        [
+          -0.25087021403209064,
+          0.9210609942674637,
+          0.2978435968623536
+        ],
+        [
+          -0.5933638225210736,
+          -0.389418363571167,
+          0.7044663147019319
+        ]
+      ]
+    },
+    {
+      "case": "noncommuting_y_then_x",
+      "variant": "post_multiply_injection",
+      "independent_native_reference_status": "FAIL",
+      "affine_evaluator_status": "UNKNOWN",
+      "reason": "Nonlinear orientation composition outside the admitted fragment",
+      "expected": [
+        [
+          0.7648421872844885,
+          0.0,
+          0.644217687237691
+        ],
+        [
+          -0.2508701838500143,
+          0.9210609940028851,
+          0.2978435767000479
+        ],
+        [
+          -0.5933637833613874,
+          -0.3894183423086505,
+          0.7044663052755917
+        ]
+      ],
+      "actual": [
+        [
+          0.7648421972990036,
+          -0.25087021403209064,
+          0.5933638225210736
+        ],
+        [
+          0.0,
+          0.9210609942674637,
+          0.389418363571167
+        ],
+        [
+          -0.6442177295684814,
+          -0.2978435968623536,
+          0.7044663147019319
+        ]
+      ]
+    }
+  ],
+  "gripper": [
+    {
+      "variant": "native_reset",
+      "independent_stateful_status": "PASS",
+      "affine_evaluator_status": "UNKNOWN",
+      "reason": "Stateful sign/integration/clipping and reset outside the admitted affine fragment",
+      "native_format_action_calls": 119
+    },
+    {
+      "variant": "skip_reset_injection",
+      "independent_stateful_status": "FAIL",
+      "affine_evaluator_status": "UNKNOWN",
+      "reason": "Stateful sign/integration/clipping and reset outside the admitted affine fragment",
+      "native_format_action_calls": 119
+    }
+  ],
+  "checkpoint_linkage_status": "UNKNOWN",
+  "unit": "One source-grounded Panda software cluster; conditions/queries are repeated measurements"
+}

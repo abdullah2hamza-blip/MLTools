@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "development_only": true,
+  "final_evaluation": false,
+  "comparison_source_sha256": "405923b57a17d23cb20b10f90a8ef7a41a113929e684cb757cce5331160e0dd3",
+  "original_summary_sha256": "81239ea8309487953c53c2b43beb66c70bfdf04114dfec0881497d241081d389",
+  "reproduction_summary_sha256": "15cda149c9684aee60b8ed1026877ac29702343ef08f360016c9d26cd6435d4a",
+  "identical_semantic_fields": [
+    "source_file_sha256",
+    "identity",
+    "bootstrap",
+    "native_config",
+    "affine",
+    "full_controller",
+    "orientation",
+    "gripper",
+    "simulation"
+  ],
+  "byte_identical_files": [
+    "inputs.json",
+    "request.json",
+    "analysis.json"
+  ],
+  "scope": "New environment/cached pins; no main-study reproduction or independent sample"
+}

@@ -1,0 +1,300 @@
+{
+  "schema_version": 1,
+  "development_only": true,
+  "final_evaluation": false,
+  "authority": {
+    "repository": "ARISE-Initiative/robosuite",
+    "selected_semantic_source_ref": "fbee5844ff5632f5b5698e204ec5357ca50be0df",
+    "semantic_git_blobs": {
+      "controllers/config/osc_pose.json": "8dc645e44bb13ba6806e7a74af52d1efaefc79e8",
+      "controllers/base_controller.py": "895952a5a4e300ae58ec998cc379853d06fff689",
+      "controllers/osc.py": "a45843d087ca2329456a53f5a86e87ded6e9c44a",
+      "utils/control_utils.py": "18cc0a6b30cd8011f5267cc39542c86a01867e44",
+      "models/grippers/panda_gripper.py": "64650e33d40f6df02d48032c91df3c71213d1751",
+      "models/grippers/gripper_model.py": "5ebe18b3ae96aa2a0d04134071388dde1c75de10",
+      "robots/single_arm.py": "598a168e0fdf9ba7e774bf75f349d5787448e287",
+      "utils/transform_utils.py": "ac371c09da962dcceea8a376876fc1d46c0e52da"
+    },
+    "distribution": "robosuite==1.4.1",
+    "wheel_sha256": "62587cd5888d9d3d813f3ffcc7017f6f77efa618952527a0b9bb139ffd0a3741",
+    "scope": "Selected semantics match the Git ref; the complete wheel differs from that checkout"
+  },
+  "environment": {
+    "name": "Lift",
+    "robot": "Panda",
+    "controller": "OSC_POSE",
+    "control_freq": 20,
+    "has_renderer": false,
+    "has_offscreen_renderer": false,
+    "use_camera_obs": false,
+    "initialization_noise": null,
+    "hard_reset": false,
+    "seed": 2026
+  },
+  "affine_conditions": {
+    "control": "PASS",
+    "wrong_gain": "FAIL",
+    "wrong_anchor": "FAIL",
+    "wrong_order": "FAIL",
+    "missing_authority": "UNKNOWN",
+    "missing_units": "UNKNOWN"
+  },
+  "axes": [
+    {
+      "port": "action",
+      "name": "0",
+      "unit": "normalized_controller_input",
+      "lower": -0.8,
+      "upper": 0.8
+    },
+    {
+      "port": "action",
+      "name": "1",
+      "unit": "normalized_controller_input",
+      "lower": -0.8,
+      "upper": 0.8
+    },
+    {
+      "port": "action",
+      "name": "2",
+      "unit": "normalized_controller_input",
+      "lower": -0.8,
+      "upper": 0.8
+    },
+    {
+      "port": "origin",
+      "name": "0",
+      "unit": "sim_position_coordinate",
+      "lower": -0.25,
+      "upper": 0.25
+    },
+    {
+      "port": "origin",
+      "name": "1",
+      "unit": "sim_position_coordinate",
+      "lower": -0.25,
+      "upper": 0.25
+    },
+    {
+      "port": "origin",
+      "name": "2",
+      "unit": "sim_position_coordinate",
+      "lower": -0.25,
+      "upper": 0.25
+    },
+    {
+      "port": "current",
+      "name": "0",
+      "unit": "sim_position_coordinate",
+      "lower": -0.25,
+      "upper": 0.25
+    },
+    {
+      "port": "current",
+      "name": "1",
+      "unit": "sim_position_coordinate",
+      "lower": -0.25,
+      "upper": 0.25
+    },
+    {
+      "port": "current",
+      "name": "2",
+      "unit": "sim_position_coordinate",
+      "lower": -0.25,
+      "upper": 0.25
+    }
+  ],
+  "outputs": [
+    "goal_x",
+    "goal_y",
+    "goal_z"
+  ],
+  "translation_scale": [
+    0.05,
+    0.05,
+    0.05
+  ],
+  "rotation_scale": [
+    0.5,
+    0.5,
+    0.5
+  ],
+  "orientation_cases": [
+    {
+      "id": "noncommuting_x_then_z",
+      "current_axisangle": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "delta_axisangle": [
+        0,
+        0,
+        1.5707963267948966
+      ]
+    },
+    {
+      "id": "noncommuting_y_then_x",
+      "current_axisangle": [
+        0,
+        0.7,
+        0
+      ],
+      "delta_axisangle": [
+        -0.4,
+        0,
+        0
+      ]
+    }
+  ],
+  "gripper_commands": [
+    0,
+    0.2,
+    0.7,
+    -0.3,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    -1,
+    -1,
+    -1
+  ],
+  "gripper_speed": 0.01,
+  "gripper_reset_variants": [
+    "native_reset",
+    "skip_reset_injection"
+  ],
+  "full_controller_actions": [
+    [
+      0.3,
+      -0.2,
+      0.1,
+      0.2,
+      0,
+      -0.1
+    ],
+    [
+      -0.4,
+      0.1,
+      0.2,
+      0,
+      0.3,
+      0.1
+    ]
+  ],
+  "limits": [
+    "Source-defined simulator coordinates are not asserted to be calibrated SI metres",
+    "No checkpoint-to-controller mapping, policy inference, task-success or hardware claim",
+    "Rotation and gripper state are outside the admitted affine evaluator",
+    "Translation fixtures supply explicit states to native operators",
+    "Full controller sanity calls separately use actual simulator state"
+  ]
+}

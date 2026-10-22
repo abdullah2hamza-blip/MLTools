@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "status": "DESIGN_SELECTED_PENDING_IMPLEMENTATION_AND_COMMITTED_PROTOCOL_FREEZE",
+  "final_protocol_frozen": false,
+  "prospective_execution_outcomes_observed": false,
+  "intended_contribution": "A bounded reproducible study of source-grounded temporal boundary conformance and partial metadata authority across actual processor/controller implementations. Novelty and any advantages remain to be justified; algebra, schemas, partial-evidence abstention and distinguishing probes are established prior art.",
+  "coverage_levels": {
+    "frameworks": [
+      "LeRobot",
+      "OpenPI"
+    ],
+    "published_policy_family_metadata": [
+      "ACT",
+      "SmolVLA",
+      "PI"
+    ],
+    "software_embodiments": [
+      "SO101 scalar processor contract",
+      "Panda OSC/gripper software contract"
+    ],
+    "not_claimed": [
+      "three learned-policy executions",
+      "native published OpenPI checkpoint execution",
+      "calibrated physical hardware conformance",
+      "ancestry-disjoint or task-disjoint holdouts",
+      "population detection rates"
+    ]
+  },
+  "strata": [
+    {
+      "id": "retrospective_development",
+      "members": [
+        "existing SO101 and OpenPI processor fixtures",
+        "LeRobot PR4057",
+        "OpenPI PR351"
+      ],
+      "role": "Previously inspected development evidence, separately tabulated; never relabeled held-out"
+    },
+    {
+      "id": "prospective_metadata",
+      "artifacts": [
+        {
+          "id": "act_boccia",
+          "family": "ACT",
+          "framework": "lerobot",
+          "artifact_manifest": "research/publication/selection/act/act-so101-boccia-center-only/manifest.json",
+          "artifact_manifest_sha256": "4a6a530087b0b39b7c7d74561fe34068c482d7c1f62a20780db5225dab812f20",
+          "normalization": "MEAN_STD",
+          "dimensions": 6,
+          "declared_dataset_cluster": "yutofujita-so101-boccia-center-only",
+          "role": "metadata_inspected_execution_outcome_unseen_revision",
+          "physical_checkpoint_status": "UNKNOWN",
+          "annotation_scope": "Pinned published statistics and saved configuration; no attested training runtime or physical calibration"
+        },
+        {
+          "id": "smolvla_orange",
+          "family": "SmolVLA",
+          "framework": "lerobot",
+          "artifact_manifest": "research/publication/selection/smolvla/edge-inference--smolvla-so101-pick-orange/manifest.json",
+          "artifact_manifest_sha256": "2c7fa04c20392e41316270dddd902a74cb2be4b237a7e521bb64fe7f8144f336",
+          "normalization": "MEAN_STD",
+          "dimensions": 6,
+          "declared_dataset_cluster": "LightwheelAI/leisaac-pick-orange",
+          "role": "metadata_inspected_execution_outcome_unseen_revision",
+          "physical_checkpoint_status": "UNKNOWN",
+          "annotation_scope": "Pinned published statistics and saved configuration; no attested training runtime or physical calibration"
+        },
+        {
+          "id": "pi05_libero",
+          "family": "PI",
+          "framework": "lerobot",
+          "artifact_manifest": "research/publication/selection/pi/lianqing11--pi05_libero/manifest.json",
+          "artifact_manifest_sha256": "23c312b34b270b93e073cf55456095496c9810da2b1b088a065c2705b789b310",
+          "normalization": "QUANTILES",
+          "dimensions": 7,
+          "declared_dataset_cluster": "HuggingFaceVLA/libero",
+          "role": "metadata_inspected_execution_outcome_unseen_revision",
+          "physical_checkpoint_status": "UNKNOWN",
+          "annotation_scope": "Pinned published statistics and saved configuration; no attested training runtime or physical calibration"
+        }
+      ],
+      "execution_cells": [
+        {
+          "id": "act_boccia_lerobot",
+          "artifact": "act_boccia",
+          "framework": "lerobot",
+          "operator_profile": "pinned_current_mean_std",
+          "checkpoint_replication": false
+        },
+        {
+          "id": "smolvla_orange_lerobot",
+          "artifact": "smolvla_orange",
+          "framework": "lerobot",
+          "operator_profile": "pinned_current_mean_std",
+          "checkpoint_replication": false
+        },
+        {
+          "id": "pi05_libero_lerobot",
+          "artifact": "pi05_libero",
+          "framework": "lerobot",
+          "operator_profile": "pinned_current_quantiles",
+          "checkpoint_replication": false
+        },
+        {
+          "id": "pi05_libero_openpi_transport",
+          "artifact": "pi05_libero",
+          "framework": "openpi",
+          "operator_profile": "pinned_current_quantile_with_1e-6",
+          "checkpoint_replication": false,
+          "scope": "Explicit cross-framework statistics transport under its own decoder reference; no native OpenPI checkpoint mapping"
+        }
+      ],
+      "role": "Outcomes locked after metadata inspection; actual native decoder execution still prohibited until full freeze"
+    },
+    {
+      "id": "source_grounded_panda",
+      "evidence": "validation/panda-software-001/summary.json",
+      "reproduction": "validation/panda-software-reproduction-001/summary.json",
+      "role": "Development source-grounded offline operator/controller study; no policy checkpoint mapping",
+      "compiled_scope": "Bounded translation only; nonlinear rotation and gripper lifecycle remain UNKNOWN"
+    }
+  ],
+  "prospective_conditions": [
+    "numeric_control",
+    "offset_intervention",
+    "slope_intervention",
+    "fixed_offset_slope_composition",
+    "reference_authority_erased",
+    "output_units_erased"
+  ],
+  "planned_condition_count": 24,
+  "intervention_annotation": {
+    "numeric_control": "Compatible with the independently decoded published numerical contract under the explicitly declared current runtime profile; physical status remains UNKNOWN",
+    "offset_intervention": "Shift the selected mean or both quantile bounds in a separately recorded deployment artifact",
+    "slope_intervention": "Increase selected std, or expand quantile bounds symmetrically about their center, in the deployment artifact",
+    "fixed_offset_slope_composition": "Predeclared composition of the above; not an independently sampled root cause",
+    "selection": "First finite nondegenerate action coordinate selected from metadata before execution. Freeze absolute changes large enough to exceed the declared reference tolerance using metadata alone. Never tune on observed outcomes.",
+    "evidence_erasure": "Derived reference ablations; preserve original capture identities, label reduced authority/units and never fit replacements from outputs"
+  },
+  "dependency_and_split_rules": [
+    "Exact prospective metadata revisions have not been executed; metadata inspection is disclosed and is not blinding.",
+    "ACT move-cube and SmolVLA move-cube, their descendants and all existing outcomes remain development.",
+    "Shared SmolVLA base ancestry is linked across development and prospective metadata. No ancestry-disjoint generalization claim follows.",
+    "All PI05 LeRobot/OpenPI transport cells remain one artifact cluster; LIBERO shared corpus links to retrospective OpenPI remain explicit.",
+    "Previously developed fault recipes remain known recipes. Exclude them from unseen-root-cause claims and independent held-out-incident denominators.",
+    "Queries, random seeds, injected variants, transported copies and repeated environments are repeated measurements, not new independent research samples.",
+    "Frozen manifests and analysis must precede prospective outcomes. Any later change requires an amended protocol and an honest rerun label."
+  ],
+  "planned_query_designs": {
+    "geometry": [
+      "canonical",
+      "manual_axis",
+      "random_axis",
+      "random_dense"
+    ],
+    "random_seeds": [
+      7,
+      23,
+      101
+    ],
+    "budget": "2n+1 normalization queries for each of eight designs per condition; one native normalization call per query, not an invented temporal schedule",
+    "scope": "Separate shared-oracle geometry comparisons from end-to-end comparator results"
+  },
+  "comparison_requirements": [
+    "Compiled, independent pointwise and strongest relational oracle receive identical observations/reference authority and numerical profiles.",
+    "Static metadata comparison and genuine paired native round trips use the actual intended/deployment artifacts, including deliberate mutations.",
+    "The prior normalization certificate retains its exact paper profile or an explicitly labeled, native-checked framework coordinate extension; thresholds are descriptive unless frozen as a decision rule.",
+    "Original stateful checker applies to its matched SO101 domain; preserve native full report and explicit projection.",
+    "Native robotruth uses stock extraction/checking and preserves severity/refusal vocabulary; missing weights or physical fields are not detections/false alarms.",
+    "Other external workflows require an explicit supported evidence contract. Unsupported response/rollout/kinematic domains are N/A limitations, not wins.",
+    "Provenance/authority/state/witness ablations retain original scope labels; reduced checks do not certify erased requirements."
+  ],
+  "analysis_plan": {
+    "primary_reporting": "Full condition tables, finite numerical and full checkpoint/physical statuses kept distinct",
+    "clusters": "Three published artifact rows with explicit shared code/base/corpus dependencies; PI transport is nested in PI",
+    "uncertainty": "Descriptive per-artifact paired differences and leave-one-artifact-out sensitivity; no population confidence intervals, mutation-level significance tests or family-generalization claims",
+    "witness": "Genuine fresh replay of the same original failed relation; count native calls/actions/events, not only query labels; report unavailable witnesses and negative size findings",
+    "cost": "Separate cold import/setup, native query work, evaluator work and measured peak RSS; document actual configuration/LOC and setup commands without inventing human-study times"
+  },
+  "budget": {
+    "local_cpu_only": true,
+    "parallel_native_workers": 1,
+    "worker_timeout_seconds": 180,
+    "observed_peak_rss_limit_gib": 2,
+    "hard_os_memory_limit": false,
+    "main_native_cpu_hours": 2,
+    "metadata_download_mib": 100,
+    "dependency_downloads": "Separate pinned environment setup; not benchmark metadata",
+    "paid_compute": false,
+    "policy_weights": "Excluded"
+  },
+  "eligibility_decisions": [
+    "Exclude original GCS PI statistics from prospective vendored artifacts while their generation-specific licensing remains unresolved.",
+    "Use the pinned publisher-Apache-declared PI05 small metadata reserve only for its declared numerical scope. Upstream weights are neither downloaded nor relicensed.",
+    "Record OpenPI transport as a counterfactual runtime experiment, not original checkpoint reproduction or another independent policy.",
+    "Panda software-controller authority comes from actual pinned native package/operators and offline lifecycle execution, independently of any PI metadata mapping."
+  ],
+  "remaining_freeze_gates": [
+    "Implement action-only native published-metadata execution without forging the existing temporal query format.",
+    "Finish matched-evidence baseline/ablation adapters and certificate profile handling.",
+    "Validate runner/reporting/witness logic on development metadata and self-authored fixtures only.",
+    "Freeze exact per-case inputs, numerical profiles, condition artifacts, seeds, budgets, method applicability and all execution/analysis source hashes in a committed protocol.",
+    "Run prospective cells only after verifying that committed freeze; retain failures and deviations."
+  ]
+}

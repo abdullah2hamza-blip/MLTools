@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "development_only": true,
+  "final_evaluation": false,
+  "evidence": "validation/panda-software-001/summary.json",
+  "clean_reproduction": "validation/panda-software-reproduction-001/summary.json",
+  "semantic_comparison": "validation/panda-reproduction-verification.json",
+  "new_panda_tests": {"passed": 14, "seconds": 8.48},
+  "core_only_full_suite": {"passed": 228, "skipped": 28, "seconds": 62.11},
+  "lerobot_environment_full_suite": {"passed": 251, "skipped": 5, "seconds": 82.31},
+  "skip_scope": "Core-only environment lacks optional integration dependencies; five tests in the LeRobot environment require explicit OpenPI worker opt-in",
+  "lint": "ruff check and format --check passed for src, tests, scripts and examples/so101/build_cases.py; 74 files",
+  "optimized_replay": "Both recorded evidence directories passed -O data-only verification without ML/simulator imports",
+  "environment_compatibility": "uv pip check passed for all 14 resolved packages in original and newly installed clean Panda environments",
+  "native_runs": {
+    "original": {"wall_seconds": 11.654739999998128, "peak_rss_bytes": 290242560},
+    "clean": {"wall_seconds": 20.005940599978203, "peak_rss_bytes": 328859648}
+  },
+  "review_repair": "Replay verifies raw outputs against the actual injected call before intended conformance, with arbitrary faulty-response and orientation tampering regressions",
+  "scope": "Development software-controller verification and clean reproduction, not final evaluation, model inference or an additional independent research sample"
+}

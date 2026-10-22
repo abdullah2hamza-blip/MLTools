@@ -1,0 +1,11 @@
+# Offline operator-only runtime for the exact released robosuite 1.4.1 package.
+# Dependencies are separate from benchmark metadata; no policy weights needed.
+robosuite==1.4.1
+mujoco==2.3.7
+numpy==1.26.4
+scipy==1.12.0
+numba==0.59.1
+Pillow==10.4.0
+opencv-python==4.10.0.84
+pynput==1.8.1
+termcolor==2.4.0

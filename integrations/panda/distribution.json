@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "target": "Windows x64 Python 3.11",
+  "robosuite_version": "1.4.1",
+  "robosuite_wheel_sha256": "62587cd5888d9d3d813f3ffcc7017f6f77efa618952527a0b9bb139ffd0a3741",
+  "robosuite_wheel_url": "https://files.pythonhosted.org/packages/60/2f/bbcdf3130fc2c53c098d8699048724ac14292795dfb671168d1d5013fa03/robosuite-1.4.1-py3-none-any.whl",
+  "installed_record_sha256": "7f65a4a813abc23cf1976c80f0997d903d8283d0481c73ad19026b5550081283",
+  "record_manifest_sha256": "373b3542f6c00802e4c6dd3e1e411fb16dae283d1b1338ab76e4153176815ff5",
+  "record_hashed_files": 1027,
+  "bootstrap_wheel_only_sha256": {
+    "utils/binding_utils.py": "5ac3c9da0cb9f85d694c6147103268df65151f751612a6c575ae0da4eb4988e4",
+    "macros.py": "85041caa914fbee7c9976e610ef8e0e76036af796ea65f07abb45c57962c6b25"
+  },
+  "mujoco_version": "2.3.7",
+  "mujoco_dll_sha256": "e7ed69accd4d8f51304ca83c70e774a827265f679e878a9b6ca7b5b20e74a023",
+  "scope": "Pinned release wheel installed with uv --require-hashes; selected semantics additionally match independently inspected Git blobs. RECORD is installed package metadata, not cryptographic execution attestation."
+}
