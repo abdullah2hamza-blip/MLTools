@@ -1,0 +1,458 @@
+{
+  "designed_lerobot_mean_std_f64_v1": {
+    "framework": "lerobot",
+    "source_artifact": null,
+    "authority": "Independently authored numerical fixture; includes a degenerate coordinate",
+    "lineage": "designed arithmetic, not a published checkpoint",
+    "intended": {
+      "schema_version": 1,
+      "profile": "lerobot_mean_std_f64_v1",
+      "statistics": {
+        "mean": [
+          1.0,
+          5.0
+        ],
+        "std": [
+          2.0,
+          0.0
+        ]
+      }
+    },
+    "conditions": {
+      "numeric_control": {
+        "specification": {
+          "schema_version": 1,
+          "profile": "lerobot_mean_std_f64_v1",
+          "statistics": {
+            "mean": [
+              1.0,
+              5.0
+            ],
+            "std": [
+              2.0,
+              0.0
+            ]
+          }
+        },
+        "annotation": "intended numeric control",
+        "selected_coordinate": 0,
+        "offset_change": 0.0,
+        "slope_factor": 1
+      },
+      "offset_intervention": {
+        "specification": {
+          "schema_version": 1,
+          "profile": "lerobot_mean_std_f64_v1",
+          "statistics": {
+            "mean": [
+              2.0,
+              5.0
+            ],
+            "std": [
+              2.0,
+              0.0
+            ]
+          }
+        },
+        "annotation": "explicit injected fault",
+        "selected_coordinate": 0,
+        "offset_change": 1.0,
+        "slope_factor": 1
+      },
+      "slope_intervention": {
+        "specification": {
+          "schema_version": 1,
+          "profile": "lerobot_mean_std_f64_v1",
+          "statistics": {
+            "mean": [
+              1.0,
+              5.0
+            ],
+            "std": [
+              4.0,
+              0.0
+            ]
+          }
+        },
+        "annotation": "explicit injected fault",
+        "selected_coordinate": 0,
+        "offset_change": 0.0,
+        "slope_factor": 2
+      },
+      "fixed_offset_slope_composition": {
+        "specification": {
+          "schema_version": 1,
+          "profile": "lerobot_mean_std_f64_v1",
+          "statistics": {
+            "mean": [
+              2.0,
+              5.0
+            ],
+            "std": [
+              4.0,
+              0.0
+            ]
+          }
+        },
+        "annotation": "explicit injected fault",
+        "selected_coordinate": 0,
+        "offset_change": 1.0,
+        "slope_factor": 2
+      }
+    },
+    "checkpoint_physical_status": "UNKNOWN"
+  },
+  "designed_lerobot_quantiles_f64_v1": {
+    "framework": "lerobot",
+    "source_artifact": null,
+    "authority": "Independently authored numerical fixture; includes a degenerate coordinate",
+    "lineage": "designed arithmetic, not a published checkpoint",
+    "intended": {
+      "schema_version": 1,
+      "profile": "lerobot_quantiles_f64_v1",
+      "statistics": {
+        "q01": [
+          -2.0,
+          4.0
+        ],
+        "q99": [
+          2.0,
+          4.0
+        ]
+      }
+    },
+    "conditions": {
+      "numeric_control": {
+        "specification": {
+          "schema_version": 1,
+          "profile": "lerobot_quantiles_f64_v1",
+          "statistics": {
+            "q01": [
+              -2.0,
+              4.0
+            ],
+            "q99": [
+              2.0,
+              4.0
+            ]
+          }
+        },
+        "annotation": "intended numeric control",
+        "selected_coordinate": 0,
+        "offset_change": 0.0,
+        "slope_factor": 1
+      },
+      "offset_intervention": {
+        "specification": {
+          "schema_version": 1,
+          "profile": "lerobot_quantiles_f64_v1",
+          "statistics": {
+            "q01": [
+              0.0,
+              4.0
+            ],
+            "q99": [
+              4.0,
+              4.0
+            ]
+          }
+        },
+        "annotation": "explicit injected fault",
+        "selected_coordinate": 0,
+        "offset_change": 2.0,
+        "slope_factor": 1
+      },
+      "slope_intervention": {
+        "specification": {
+          "schema_version": 1,
+          "profile": "lerobot_quantiles_f64_v1",
+          "statistics": {
+            "q01": [
+              -4.0,
+              4.0
+            ],
+            "q99": [
+              4.0,
+              4.0
+            ]
+          }
+        },
+        "annotation": "explicit injected fault",
+        "selected_coordinate": 0,
+        "offset_change": 0.0,
+        "slope_factor": 2
+      },
+      "fixed_offset_slope_composition": {
+        "specification": {
+          "schema_version": 1,
+          "profile": "lerobot_quantiles_f64_v1",
+          "statistics": {
+            "q01": [
+              -2.0,
+              4.0
+            ],
+            "q99": [
+              6.0,
+              4.0
+            ]
+          }
+        },
+        "annotation": "explicit injected fault",
+        "selected_coordinate": 0,
+        "offset_change": 2.0,
+        "slope_factor": 2
+      }
+    },
+    "checkpoint_physical_status": "UNKNOWN"
+  },
+  "designed_openpi_quantiles_f64_v1": {
+    "framework": "openpi",
+    "source_artifact": null,
+    "authority": "Independently authored numerical fixture; includes a degenerate coordinate",
+    "lineage": "designed arithmetic, not a published checkpoint",
+    "intended": {
+      "schema_version": 1,
+      "profile": "openpi_quantiles_f64_v1",
+      "statistics": {
+        "q01": [
+          -2.0,
+          4.0
+        ],
+        "q99": [
+          2.0,
+          4.0
+        ]
+      }
+    },
+    "conditions": {
+      "numeric_control": {
+        "specification": {
+          "schema_version": 1,
+          "profile": "openpi_quantiles_f64_v1",
+          "statistics": {
+            "q01": [
+              -2.0,
+              4.0
+            ],
+            "q99": [
+              2.0,
+              4.0
+            ]
+          }
+        },
+        "annotation": "intended numeric control",
+        "selected_coordinate": 0,
+        "offset_change": 0.0,
+        "slope_factor": 1
+      },
+      "offset_intervention": {
+        "specification": {
+          "schema_version": 1,
+          "profile": "openpi_quantiles_f64_v1",
+          "statistics": {
+            "q01": [
+              0.0,
+              4.0
+            ],
+            "q99": [
+              4.0,
+              4.0
+            ]
+          }
+        },
+        "annotation": "explicit injected fault",
+        "selected_coordinate": 0,
+        "offset_change": 2.0,
+        "slope_factor": 1
+      },
+      "slope_intervention": {
+        "specification": {
+          "schema_version": 1,
+          "profile": "openpi_quantiles_f64_v1",
+          "statistics": {
+            "q01": [
+              -4.0,
+              4.0
+            ],
+            "q99": [
+              4.0,
+              4.0
+            ]
+          }
+        },
+        "annotation": "explicit injected fault",
+        "selected_coordinate": 0,
+        "offset_change": 0.0,
+        "slope_factor": 2
+      },
+      "fixed_offset_slope_composition": {
+        "specification": {
+          "schema_version": 1,
+          "profile": "openpi_quantiles_f64_v1",
+          "statistics": {
+            "q01": [
+              -2.0,
+              4.0
+            ],
+            "q99": [
+              6.0,
+              4.0
+            ]
+          }
+        },
+        "annotation": "explicit injected fault",
+        "selected_coordinate": 0,
+        "offset_change": 2.0,
+        "slope_factor": 2
+      }
+    },
+    "checkpoint_physical_status": "UNKNOWN"
+  },
+  "published_act_move_cube_development": {
+    "framework": "lerobot",
+    "source_artifact": {
+      "path": "examples/probes/act/policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+      "sha256": "9155f3cb55dc35771a721dfd14d63e0ed7e785519e36b2c4794a72f556ac02dc",
+      "format": "safetensors"
+    },
+    "authority": "Pinned already executed publisher numerical metadata; no physical authority",
+    "lineage": "yutofujita-so101-move-cube; reused development cluster",
+    "intended": {
+      "schema_version": 1,
+      "profile": "lerobot_mean_std_f64_v1",
+      "statistics": {
+        "mean": [
+          5.659173965454102,
+          -62.24272155761719,
+          64.8411636352539,
+          69.04534149169922,
+          13.620585441589355,
+          18.1008358001709
+        ],
+        "std": [
+          14.73770809173584,
+          44.34088134765625,
+          32.987030029296875,
+          6.485988616943359,
+          3.4402692317962646,
+          18.805200576782227
+        ]
+      }
+    },
+    "conditions": {
+      "numeric_control": {
+        "specification": {
+          "schema_version": 1,
+          "profile": "lerobot_mean_std_f64_v1",
+          "statistics": {
+            "mean": [
+              5.659173965454102,
+              -62.24272155761719,
+              64.8411636352539,
+              69.04534149169922,
+              13.620585441589355,
+              18.1008358001709
+            ],
+            "std": [
+              14.73770809173584,
+              44.34088134765625,
+              32.987030029296875,
+              6.485988616943359,
+              3.4402692317962646,
+              18.805200576782227
+            ]
+          }
+        },
+        "annotation": "intended numeric control",
+        "selected_coordinate": 0,
+        "offset_change": 0.0,
+        "slope_factor": 1
+      },
+      "offset_intervention": {
+        "specification": {
+          "schema_version": 1,
+          "profile": "lerobot_mean_std_f64_v1",
+          "statistics": {
+            "mean": [
+              13.028028011322021,
+              -62.24272155761719,
+              64.8411636352539,
+              69.04534149169922,
+              13.620585441589355,
+              18.1008358001709
+            ],
+            "std": [
+              14.73770809173584,
+              44.34088134765625,
+              32.987030029296875,
+              6.485988616943359,
+              3.4402692317962646,
+              18.805200576782227
+            ]
+          }
+        },
+        "annotation": "explicit injected fault",
+        "selected_coordinate": 0,
+        "offset_change": 7.36885404586792,
+        "slope_factor": 1
+      },
+      "slope_intervention": {
+        "specification": {
+          "schema_version": 1,
+          "profile": "lerobot_mean_std_f64_v1",
+          "statistics": {
+            "mean": [
+              5.659173965454102,
+              -62.24272155761719,
+              64.8411636352539,
+              69.04534149169922,
+              13.620585441589355,
+              18.1008358001709
+            ],
+            "std": [
+              29.47541618347168,
+              44.34088134765625,
+              32.987030029296875,
+              6.485988616943359,
+              3.4402692317962646,
+              18.805200576782227
+            ]
+          }
+        },
+        "annotation": "explicit injected fault",
+        "selected_coordinate": 0,
+        "offset_change": 0.0,
+        "slope_factor": 2
+      },
+      "fixed_offset_slope_composition": {
+        "specification": {
+          "schema_version": 1,
+          "profile": "lerobot_mean_std_f64_v1",
+          "statistics": {
+            "mean": [
+              13.028028011322021,
+              -62.24272155761719,
+              64.8411636352539,
+              69.04534149169922,
+              13.620585441589355,
+              18.1008358001709
+            ],
+            "std": [
+              29.47541618347168,
+              44.34088134765625,
+              32.987030029296875,
+              6.485988616943359,
+              3.4402692317962646,
+              18.805200576782227
+            ]
+          }
+        },
+        "annotation": "explicit injected fault",
+        "selected_coordinate": 0,
+        "offset_change": 7.36885404586792,
+        "slope_factor": 2
+      }
+    },
+    "checkpoint_physical_status": "UNKNOWN"
+  }
+}

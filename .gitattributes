@@ -13,6 +13,8 @@ validation/normalization-certificate-*/*.stdout.txt -text whitespace=blank-at-eo
 validation/normalization-certificate-*/*.stderr.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 validation/panda-software-*/*.stdout.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 validation/panda-software-*/*.stderr.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+validation/action-study-development-*/*.stdout.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+validation/action-study-development-*/*.stderr.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 integrations/panda/LICENSE.robosuite.txt -text -whitespace
 research/publication/development/query-designs-*/*.stdout.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 research/publication/development/query-designs-*/*.stderr.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

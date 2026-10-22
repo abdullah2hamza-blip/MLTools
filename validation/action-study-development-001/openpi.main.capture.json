@@ -1,0 +1,2545 @@
+{
+  "schema_version": 1,
+  "format": "mltools-action-normalization-native-development",
+  "development_only": true,
+  "final_evaluation": false,
+  "framework": "openpi",
+  "phase": "main",
+  "source_file_sha256": {
+    "src/mltools/__init__.py": "4e0241fbbc8f0d39a6c5840c1c0db2359c1d8fdfe9ca4b84df4d7732efaf6b4e",
+    "src/mltools/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "src/mltools/_openpi_worker.py": "12d4fabc009291505fc9936c96366e294e8b1e78f0403077002fcf777c94d14b",
+    "src/mltools/checker.py": "b10a5cce64a8b1ed81ca58be53c6f145edf2310cfcc12919d254208a823ac1c1",
+    "src/mltools/cli.py": "32fc41929129ed89c6b6cd44b9d9202d4c6aede62fcad4ef8fac50e68471b838",
+    "src/mltools/io.py": "91094fc6ac8547244aad7238022732cf9d44873267bfd620be14be8b07e25e05",
+    "src/mltools/lerobot.py": "3d083e72df1d7ef32a4c694e19fe54234112c10095e9c3e41c5e6ac4f6bb0669",
+    "src/mltools/obligations.py": "807f94f6cb6e4029f0d1c7e1079254f216aa9acf028a04d04196371f13133432",
+    "src/mltools/openpi.py": "719878dd2341f31acfc8971850c05d9af96c1d1d7e62692ae6f8b9d5747a58e8",
+    "src/mltools/probe_capture.py": "92ac659e4034002843fb2052c6e019cbca455b97a020d6df05d85c988c14098d",
+    "src/mltools/probe_cases.py": "d9a110a4c88cbf6b2951914921f65acecce180a5900bc927d594d6983d9e2511",
+    "src/mltools/probe_cli.py": "264874610ea4621b7fa7cb0d7d0cb8a4c2ed8d1ac5bd88f945e8e0735d332ffe",
+    "src/mltools/report.py": "aa15c962c9b06d8d3ef94dea75bc1594e2d9a2a90ad259703850dc649a648593",
+    "src/mltools/reproduce.py": "94df3e93b7f5f7e53be7ab6965b08c3bea7086e495de2af1f3b2868dbb3e30c3",
+    "src/mltools/research_compare.py": "50f4a061c1579d84e952c21f3c68961fa0edb5aa97a2aeeee7e9b1ef8dcfe3e1",
+    "src/mltools/research_oracles.py": "b62cc092d416c5cf3e42e8f081119d7d52d550630c4ea73d1da57c212428b161",
+    "uv.lock": "39a988f45d7cc0629efd51a2ccc7f9bc5d3084102564b24386b8877fa9d09d1d",
+    "scripts/action_designs.py": "069259cb2ac57057889590f43c49c99d15f92dde99363941e9c967e896340c6d",
+    "scripts/query_designs.py": "7e593f068faab1d5822daeb620200e44900c6973e09f5de0d9c73f24fd788965",
+    "scripts/normalization_profiles.py": "5e72e90f8f8ca693c09784e77fb25e13a3014106aab4b2e3ac0f9107a234b8b9",
+    "scripts/normalization_certificate.py": "0919a8886f2aabd6fa2f297b0527255694f5be2f615a51857444a1e00288c155",
+    "scripts/prepare_act_candidates.py": "bf41a184a2722a83ee7b5312e35c820b62da901f56e25d04354c6817b830e3cb",
+    "scripts/action_study_common.py": "528289d2058101687cce7eb1d4be17fc25545f74d626a99c24443db7e2177cf3",
+    "scripts/action_study_worker.py": "ca26f9a8af262067b68604fd1e4aa121627a1136dc0d73e1113df546fc9280c6",
+    "scripts/run_action_study.py": "c83f27a6230561f371449af4d4dd8d1ad5f414d686be4e319136e716c0aaf528",
+    "integrations/openpi/requirements-cpu.lock": "6febb881e62bfce4269268a32ede1e9b82e0ee03a0c8442040669524c2c31f97",
+    "integrations/openpi/frameworks.txt": "a577a78f18160daa6526fc531cca79e34e1f58e85cccbbe6fd2f1b9048a9fd51"
+  },
+  "upstream_identity": {
+    "revision": "215abfb217dbac7d5f1273282331b9b1866c0479",
+    "git_blobs": {
+      "transforms.py": "272375ea95a5e43a42a6c0ff14cf89d34da76a45",
+      "shared/normalize.py": "5a75faecfbf4267329824b103e4cdd091d729840",
+      "policies/libero_policy.py": "fe5aab0add5795531913363d7c46d916c81d1f9b",
+      "models/tokenizer.py": "8a4966d6298619e52c7ba53359ccbbb8ba0b8cf6",
+      "models/model.py": "29618b49453742266fe6e4a5815ceee06d815f3b",
+      "shared/array_typing.py": "569eafef1401d4a34b0289c0efb2125f71d21dfb",
+      "models_pytorch/pi0_pytorch.py": "e68ddb7cc02c2fd256e9b48ac9d0fb9df966536a",
+      "models_pytorch/gemma_pytorch.py": "ecc597a9a23ffb26db8c1907fd264c4af797d786"
+    },
+    "source_newlines": "canonical LF",
+    "direct_urls": {
+      "openpi": {
+        "url": "https://github.com/Physical-Intelligence/openpi.git",
+        "vcs_info": {
+          "vcs": "git",
+          "commit_id": "215abfb217dbac7d5f1273282331b9b1866c0479",
+          "requested_revision": "215abfb217dbac7d5f1273282331b9b1866c0479"
+        }
+      },
+      "openpi-client": {
+        "url": "https://github.com/Physical-Intelligence/openpi.git",
+        "vcs_info": {
+          "vcs": "git",
+          "commit_id": "215abfb217dbac7d5f1273282331b9b1866c0479",
+          "requested_revision": "215abfb217dbac7d5f1273282331b9b1866c0479"
+        },
+        "subdirectory": "packages/openpi-client"
+      }
+    },
+    "client_image_tools_blob": "7a971b9d5f6b1495fd6cdea202ffa607d8b34bf0"
+  },
+  "measurements": {
+    "designed_openpi_quantiles_f64_v1": {
+      "numeric_control": {
+        "deployment_sha256": "61bf87da34bcc4e4cd147292d743f429a682dd2cfee7af2b6b97747da8984174",
+        "configuration": {
+          "encoder": "openpi.transforms.Normalize",
+          "decoder": "openpi.transforms.Unnormalize",
+          "use_quantiles": true,
+          "device": "cpu",
+          "dtype": "float64"
+        },
+        "designs": {
+          "canonical": {
+            "design_sha256": "68c1f4051e52a7bb6c87c45a9d46176332acd489bcaa08a4d58f26658b5bcfed",
+            "rows": [
+              {
+                "query": "center",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  5.00000000069889e-07,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "plus:action:0",
+                "input": [
+                  0.8,
+                  0.0
+                ],
+                "output": [
+                  1.6000009000000004,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "minus:action:0",
+                "input": [
+                  -0.8,
+                  0.0
+                ],
+                "output": [
+                  -1.5999999,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "plus:action:1",
+                "input": [
+                  0.0,
+                  0.8
+                ],
+                "output": [
+                  5.00000000069889e-07,
+                  4.0000009
+                ]
+              },
+              {
+                "query": "minus:action:1",
+                "input": [
+                  0.0,
+                  -0.8
+                ],
+                "output": [
+                  5.00000000069889e-07,
+                  4.0000001
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "manual_axis": {
+            "design_sha256": "de9364c578428e0d8d9ace5f4cab6e5caa5a9cb7d4e37412340306e075da73f5",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  5.00000000069889e-07,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  0.8,
+                  0.0
+                ],
+                "output": [
+                  1.6000009000000004,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  -0.8,
+                  0.0
+                ],
+                "output": [
+                  -1.5999999,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.0,
+                  0.8
+                ],
+                "output": [
+                  5.00000000069889e-07,
+                  4.0000009
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  0.0,
+                  -0.8
+                ],
+                "output": [
+                  5.00000000069889e-07,
+                  4.0000001
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "random_axis_7": {
+            "design_sha256": "9da79493ed5286778a7949f921d7235c82396c8f50699b6b57276acfc13b9d3d",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  5.00000000069889e-07,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  0.7687192163654379,
+                  0.0
+                ],
+                "output": [
+                  1.537439317090484,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  -0.7687192163654379,
+                  0.0
+                ],
+                "output": [
+                  -1.537438317090484,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.0,
+                  0.43689409785390415
+                ],
+                "output": [
+                  5.00000000069889e-07,
+                  4.0000007184470485
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  0.0,
+                  -0.43689409785390415
+                ],
+                "output": [
+                  5.00000000069889e-07,
+                  4.000000281552951
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "random_axis_23": {
+            "design_sha256": "9df789fbf639fbd356daeea34c832187e376ea66f5a1cb4b06f56a7fe29aff7a",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  5.00000000069889e-07,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  0.7354600064291477,
+                  0.0
+                ],
+                "output": [
+                  1.4709208805882987,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  -0.7354600064291477,
+                  0.0
+                ],
+                "output": [
+                  -1.4709198805882986,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.0,
+                  0.25013040609841014
+                ],
+                "output": [
+                  5.00000000069889e-07,
+                  4.000000625065203
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  0.0,
+                  -0.25013040609841014
+                ],
+                "output": [
+                  5.00000000069889e-07,
+                  4.000000374934797
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "random_axis_101": {
+            "design_sha256": "4d509ce130a49364ab8a4d1ac08cd47d57b723b8f4cc36fb10ef7d3f1d71e6aa",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  5.00000000069889e-07,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  0.0,
+                  0.7450267894502779
+                ],
+                "output": [
+                  5.00000000069889e-07,
+                  4.000000872513395
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  0.0,
+                  -0.7450267894502779
+                ],
+                "output": [
+                  5.00000000069889e-07,
+                  4.000000127486605
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.5235362630664246,
+                  0.0
+                ],
+                "output": [
+                  1.047073287900981,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  -0.5235362630664246,
+                  0.0
+                ],
+                "output": [
+                  -1.0470722879009808,
+                  4.0000005
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "random_dense_7": {
+            "design_sha256": "a32e59be9ba3e6d24f610f8597cebf55322c2cce17bc66fc6ae768f3ff46d7bd",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  5.00000000069889e-07,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  -0.2818675762669402,
+                  -0.558641321720797
+                ],
+                "output": [
+                  -0.5637347934676686,
+                  4.000000220679339
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  0.2818675762669402,
+                  0.558641321720797
+                ],
+                "output": [
+                  0.5637357934676688,
+                  4.0000007793206604
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.241495156863766,
+                  -0.6841019413319316
+                ],
+                "output": [
+                  0.48299093447511066,
+                  4.000000157949029
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  -0.241495156863766,
+                  0.6841019413319316
+                ],
+                "output": [
+                  -0.4829899344751103,
+                  4.00000084205097
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "random_dense_23": {
+            "design_sha256": "3eb32cfe9f1363eeee4612e365b8ea2bde3000d095dbeabc4f27a9c4113582c7",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  5.00000000069889e-07,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  0.6797844026015124,
+                  0.7177692447890834
+                ],
+                "output": [
+                  1.3595696450952262,
+                  4.000000858884622
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  -0.6797844026015124,
+                  -0.7177692447890834
+                ],
+                "output": [
+                  -1.359568645095226,
+                  4.000000141115378
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.627893350477727,
+                  -0.6663189170709063
+                ],
+                "output": [
+                  1.2557875149021296,
+                  4.000000166840541
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  -0.627893350477727,
+                  0.6663189170709063
+                ],
+                "output": [
+                  -1.2557865149021292,
+                  4.000000833159459
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "random_dense_101": {
+            "design_sha256": "908b7f8f37fe96b6e9a93e1e23d15647e31e1bb84560f43bd9725f5b22f5bb05",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  5.00000000069889e-07,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  0.12984341200730345,
+                  -0.4883928071453813
+                ],
+                "output": [
+                  0.2596873889363134,
+                  4.000000255803596
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  -0.12984341200730345,
+                  0.4883928071453813
+                ],
+                "output": [
+                  -0.2596863889363128,
+                  4.000000744196403
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.744401771297778,
+                  0.6783622426828709
+                ],
+                "output": [
+                  1.4888044147964417,
+                  4.000000839181121
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  -0.744401771297778,
+                  -0.6783622426828709
+                ],
+                "output": [
+                  -1.4888034147964415,
+                  4.000000160818879
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          }
+        }
+      },
+      "offset_intervention": {
+        "deployment_sha256": "eddfe44f16fa6e6882b97657d5cebc810120401c8dd5017ea79b00f23f5bb12f",
+        "configuration": {
+          "encoder": "openpi.transforms.Normalize",
+          "decoder": "openpi.transforms.Unnormalize",
+          "use_quantiles": true,
+          "device": "cpu",
+          "dtype": "float64"
+        },
+        "designs": {
+          "canonical": {
+            "design_sha256": "68c1f4051e52a7bb6c87c45a9d46176332acd489bcaa08a4d58f26658b5bcfed",
+            "rows": [
+              {
+                "query": "center",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  2.0000005,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "plus:action:0",
+                "input": [
+                  0.8,
+                  0.0
+                ],
+                "output": [
+                  3.6000009000000004,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "minus:action:0",
+                "input": [
+                  -0.8,
+                  0.0
+                ],
+                "output": [
+                  0.4000000999999999,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "plus:action:1",
+                "input": [
+                  0.0,
+                  0.8
+                ],
+                "output": [
+                  2.0000005,
+                  4.0000009
+                ]
+              },
+              {
+                "query": "minus:action:1",
+                "input": [
+                  0.0,
+                  -0.8
+                ],
+                "output": [
+                  2.0000005,
+                  4.0000001
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "manual_axis": {
+            "design_sha256": "de9364c578428e0d8d9ace5f4cab6e5caa5a9cb7d4e37412340306e075da73f5",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  2.0000005,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  0.8,
+                  0.0
+                ],
+                "output": [
+                  3.6000009000000004,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  -0.8,
+                  0.0
+                ],
+                "output": [
+                  0.4000000999999999,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.0,
+                  0.8
+                ],
+                "output": [
+                  2.0000005,
+                  4.0000009
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  0.0,
+                  -0.8
+                ],
+                "output": [
+                  2.0000005,
+                  4.0000001
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "random_axis_7": {
+            "design_sha256": "9da79493ed5286778a7949f921d7235c82396c8f50699b6b57276acfc13b9d3d",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  2.0000005,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  0.7687192163654379,
+                  0.0
+                ],
+                "output": [
+                  3.537439317090484,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  -0.7687192163654379,
+                  0.0
+                ],
+                "output": [
+                  0.46256168290951594,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.0,
+                  0.43689409785390415
+                ],
+                "output": [
+                  2.0000005,
+                  4.0000007184470485
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  0.0,
+                  -0.43689409785390415
+                ],
+                "output": [
+                  2.0000005,
+                  4.000000281552951
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "random_axis_23": {
+            "design_sha256": "9df789fbf639fbd356daeea34c832187e376ea66f5a1cb4b06f56a7fe29aff7a",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  2.0000005,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  0.7354600064291477,
+                  0.0
+                ],
+                "output": [
+                  3.4709208805882987,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  -0.7354600064291477,
+                  0.0
+                ],
+                "output": [
+                  0.5290801194117015,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.0,
+                  0.25013040609841014
+                ],
+                "output": [
+                  2.0000005,
+                  4.000000625065203
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  0.0,
+                  -0.25013040609841014
+                ],
+                "output": [
+                  2.0000005,
+                  4.000000374934797
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "random_axis_101": {
+            "design_sha256": "4d509ce130a49364ab8a4d1ac08cd47d57b723b8f4cc36fb10ef7d3f1d71e6aa",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  2.0000005,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  0.0,
+                  0.7450267894502779
+                ],
+                "output": [
+                  2.0000005,
+                  4.000000872513395
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  0.0,
+                  -0.7450267894502779
+                ],
+                "output": [
+                  2.0000005,
+                  4.000000127486605
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.5235362630664246,
+                  0.0
+                ],
+                "output": [
+                  3.047073287900981,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  -0.5235362630664246,
+                  0.0
+                ],
+                "output": [
+                  0.9529277120990192,
+                  4.0000005
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "random_dense_7": {
+            "design_sha256": "a32e59be9ba3e6d24f610f8597cebf55322c2cce17bc66fc6ae768f3ff46d7bd",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  2.0000005,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  -0.2818675762669402,
+                  -0.558641321720797
+                ],
+                "output": [
+                  1.4362652065323314,
+                  4.000000220679339
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  0.2818675762669402,
+                  0.558641321720797
+                ],
+                "output": [
+                  2.5637357934676688,
+                  4.0000007793206604
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.241495156863766,
+                  -0.6841019413319316
+                ],
+                "output": [
+                  2.4829909344751107,
+                  4.000000157949029
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  -0.241495156863766,
+                  0.6841019413319316
+                ],
+                "output": [
+                  1.5170100655248897,
+                  4.00000084205097
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "random_dense_23": {
+            "design_sha256": "3eb32cfe9f1363eeee4612e365b8ea2bde3000d095dbeabc4f27a9c4113582c7",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  2.0000005,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  0.6797844026015124,
+                  0.7177692447890834
+                ],
+                "output": [
+                  3.359569645095226,
+                  4.000000858884622
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  -0.6797844026015124,
+                  -0.7177692447890834
+                ],
+                "output": [
+                  0.6404313549047739,
+                  4.000000141115378
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.627893350477727,
+                  -0.6663189170709063
+                ],
+                "output": [
+                  3.2557875149021296,
+                  4.000000166840541
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  -0.627893350477727,
+                  0.6663189170709063
+                ],
+                "output": [
+                  0.7442134850978708,
+                  4.000000833159459
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "random_dense_101": {
+            "design_sha256": "908b7f8f37fe96b6e9a93e1e23d15647e31e1bb84560f43bd9725f5b22f5bb05",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  2.0000005,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  0.12984341200730345,
+                  -0.4883928071453813
+                ],
+                "output": [
+                  2.2596873889363134,
+                  4.000000255803596
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  -0.12984341200730345,
+                  0.4883928071453813
+                ],
+                "output": [
+                  1.7403136110636872,
+                  4.000000744196403
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.744401771297778,
+                  0.6783622426828709
+                ],
+                "output": [
+                  3.4888044147964417,
+                  4.000000839181121
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  -0.744401771297778,
+                  -0.6783622426828709
+                ],
+                "output": [
+                  0.5111965852035585,
+                  4.000000160818879
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          }
+        }
+      },
+      "slope_intervention": {
+        "deployment_sha256": "4385053f75f730c7a952dccffccc0be1609c778644e444fb34a5917f666cb73f",
+        "configuration": {
+          "encoder": "openpi.transforms.Normalize",
+          "decoder": "openpi.transforms.Unnormalize",
+          "use_quantiles": true,
+          "device": "cpu",
+          "dtype": "float64"
+        },
+        "designs": {
+          "canonical": {
+            "design_sha256": "68c1f4051e52a7bb6c87c45a9d46176332acd489bcaa08a4d58f26658b5bcfed",
+            "rows": [
+              {
+                "query": "center",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  4.999999996257998e-07,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "plus:action:0",
+                "input": [
+                  0.8,
+                  0.0
+                ],
+                "output": [
+                  3.200000899999999,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "minus:action:0",
+                "input": [
+                  -0.8,
+                  0.0
+                ],
+                "output": [
+                  -3.1999999000000003,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "plus:action:1",
+                "input": [
+                  0.0,
+                  0.8
+                ],
+                "output": [
+                  4.999999996257998e-07,
+                  4.0000009
+                ]
+              },
+              {
+                "query": "minus:action:1",
+                "input": [
+                  0.0,
+                  -0.8
+                ],
+                "output": [
+                  4.999999996257998e-07,
+                  4.0000001
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "manual_axis": {
+            "design_sha256": "de9364c578428e0d8d9ace5f4cab6e5caa5a9cb7d4e37412340306e075da73f5",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  4.999999996257998e-07,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  0.8,
+                  0.0
+                ],
+                "output": [
+                  3.200000899999999,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  -0.8,
+                  0.0
+                ],
+                "output": [
+                  -3.1999999000000003,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.0,
+                  0.8
+                ],
+                "output": [
+                  4.999999996257998e-07,
+                  4.0000009
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  0.0,
+                  -0.8
+                ],
+                "output": [
+                  4.999999996257998e-07,
+                  4.0000001
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "random_axis_7": {
+            "design_sha256": "9da79493ed5286778a7949f921d7235c82396c8f50699b6b57276acfc13b9d3d",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  4.999999996257998e-07,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  0.7687192163654379,
+                  0.0
+                ],
+                "output": [
+                  3.0748777498213595,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  -0.7687192163654379,
+                  0.0
+                ],
+                "output": [
+                  -3.0748767498213603,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.0,
+                  0.43689409785390415
+                ],
+                "output": [
+                  4.999999996257998e-07,
+                  4.0000007184470485
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  0.0,
+                  -0.43689409785390415
+                ],
+                "output": [
+                  4.999999996257998e-07,
+                  4.000000281552951
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "random_axis_23": {
+            "design_sha256": "9df789fbf639fbd356daeea34c832187e376ea66f5a1cb4b06f56a7fe29aff7a",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  4.999999996257998e-07,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  0.7354600064291477,
+                  0.0
+                ],
+                "output": [
+                  2.941840893446593,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  -0.7354600064291477,
+                  0.0
+                ],
+                "output": [
+                  -2.941839893446594,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.0,
+                  0.25013040609841014
+                ],
+                "output": [
+                  4.999999996257998e-07,
+                  4.000000625065203
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  0.0,
+                  -0.25013040609841014
+                ],
+                "output": [
+                  4.999999996257998e-07,
+                  4.000000374934797
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "random_axis_101": {
+            "design_sha256": "4d509ce130a49364ab8a4d1ac08cd47d57b723b8f4cc36fb10ef7d3f1d71e6aa",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  4.999999996257998e-07,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  0.0,
+                  0.7450267894502779
+                ],
+                "output": [
+                  4.999999996257998e-07,
+                  4.000000872513395
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  0.0,
+                  -0.7450267894502779
+                ],
+                "output": [
+                  4.999999996257998e-07,
+                  4.000000127486605
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.5235362630664246,
+                  0.0
+                ],
+                "output": [
+                  2.09414581403383,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  -0.5235362630664246,
+                  0.0
+                ],
+                "output": [
+                  -2.0941448140338306,
+                  4.0000005
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "random_dense_7": {
+            "design_sha256": "a32e59be9ba3e6d24f610f8597cebf55322c2cce17bc66fc6ae768f3ff46d7bd",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  4.999999996257998e-07,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  -0.2818675762669402,
+                  -0.558641321720797
+                ],
+                "output": [
+                  -1.1274699460015496,
+                  4.000000220679339
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  0.2818675762669402,
+                  0.558641321720797
+                ],
+                "output": [
+                  1.1274709460015488,
+                  4.0000007793206604
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.241495156863766,
+                  -0.6841019413319316
+                ],
+                "output": [
+                  0.9659812482026418,
+                  4.000000157949029
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  -0.241495156863766,
+                  0.6841019413319316
+                ],
+                "output": [
+                  -0.9659802482026425,
+                  4.00000084205097
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "random_dense_23": {
+            "design_sha256": "3eb32cfe9f1363eeee4612e365b8ea2bde3000d095dbeabc4f27a9c4113582c7",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  4.999999996257998e-07,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  0.6797844026015124,
+                  0.7177692447890834
+                ],
+                "output": [
+                  2.7191384502982494,
+                  4.000000858884622
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  -0.6797844026015124,
+                  -0.7177692447890834
+                ],
+                "output": [
+                  -2.719137450298251,
+                  4.000000141115378
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.627893350477727,
+                  -0.6663189170709063
+                ],
+                "output": [
+                  2.511574215857583,
+                  4.000000166840541
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  -0.627893350477727,
+                  0.6663189170709063
+                ],
+                "output": [
+                  -2.5115732158575836,
+                  4.000000833159459
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "random_dense_101": {
+            "design_sha256": "908b7f8f37fe96b6e9a93e1e23d15647e31e1bb84560f43bd9725f5b22f5bb05",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  4.999999996257998e-07,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  0.12984341200730345,
+                  -0.4883928071453813
+                ],
+                "output": [
+                  0.51937421295092,
+                  4.000000255803596
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  -0.12984341200730345,
+                  0.4883928071453813
+                ],
+                "output": [
+                  -0.5193732129509199,
+                  4.000000744196403
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.744401771297778,
+                  0.6783622426828709
+                ],
+                "output": [
+                  2.9776079573919967,
+                  4.000000839181121
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  -0.744401771297778,
+                  -0.6783622426828709
+                ],
+                "output": [
+                  -2.9776069573919974,
+                  4.000000160818879
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          }
+        }
+      },
+      "fixed_offset_slope_composition": {
+        "deployment_sha256": "22592c80ab01c53b893eae873fd44d808c404644b005542abc611f6a839b9ff7",
+        "configuration": {
+          "encoder": "openpi.transforms.Normalize",
+          "decoder": "openpi.transforms.Unnormalize",
+          "use_quantiles": true,
+          "device": "cpu",
+          "dtype": "float64"
+        },
+        "designs": {
+          "canonical": {
+            "design_sha256": "68c1f4051e52a7bb6c87c45a9d46176332acd489bcaa08a4d58f26658b5bcfed",
+            "rows": [
+              {
+                "query": "center",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  2.0000004999999996,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "plus:action:0",
+                "input": [
+                  0.8,
+                  0.0
+                ],
+                "output": [
+                  5.200000899999999,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "minus:action:0",
+                "input": [
+                  -0.8,
+                  0.0
+                ],
+                "output": [
+                  -1.1999999000000003,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "plus:action:1",
+                "input": [
+                  0.0,
+                  0.8
+                ],
+                "output": [
+                  2.0000004999999996,
+                  4.0000009
+                ]
+              },
+              {
+                "query": "minus:action:1",
+                "input": [
+                  0.0,
+                  -0.8
+                ],
+                "output": [
+                  2.0000004999999996,
+                  4.0000001
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "manual_axis": {
+            "design_sha256": "de9364c578428e0d8d9ace5f4cab6e5caa5a9cb7d4e37412340306e075da73f5",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  2.0000004999999996,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  0.8,
+                  0.0
+                ],
+                "output": [
+                  5.200000899999999,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  -0.8,
+                  0.0
+                ],
+                "output": [
+                  -1.1999999000000003,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.0,
+                  0.8
+                ],
+                "output": [
+                  2.0000004999999996,
+                  4.0000009
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  0.0,
+                  -0.8
+                ],
+                "output": [
+                  2.0000004999999996,
+                  4.0000001
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "random_axis_7": {
+            "design_sha256": "9da79493ed5286778a7949f921d7235c82396c8f50699b6b57276acfc13b9d3d",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  2.0000004999999996,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  0.7687192163654379,
+                  0.0
+                ],
+                "output": [
+                  5.0748777498213595,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  -0.7687192163654379,
+                  0.0
+                ],
+                "output": [
+                  -1.07487674982136,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.0,
+                  0.43689409785390415
+                ],
+                "output": [
+                  2.0000004999999996,
+                  4.0000007184470485
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  0.0,
+                  -0.43689409785390415
+                ],
+                "output": [
+                  2.0000004999999996,
+                  4.000000281552951
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "random_axis_23": {
+            "design_sha256": "9df789fbf639fbd356daeea34c832187e376ea66f5a1cb4b06f56a7fe29aff7a",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  2.0000004999999996,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  0.7354600064291477,
+                  0.0
+                ],
+                "output": [
+                  4.941840893446593,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  -0.7354600064291477,
+                  0.0
+                ],
+                "output": [
+                  -0.9418398934465939,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.0,
+                  0.25013040609841014
+                ],
+                "output": [
+                  2.0000004999999996,
+                  4.000000625065203
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  0.0,
+                  -0.25013040609841014
+                ],
+                "output": [
+                  2.0000004999999996,
+                  4.000000374934797
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "random_axis_101": {
+            "design_sha256": "4d509ce130a49364ab8a4d1ac08cd47d57b723b8f4cc36fb10ef7d3f1d71e6aa",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  2.0000004999999996,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  0.0,
+                  0.7450267894502779
+                ],
+                "output": [
+                  2.0000004999999996,
+                  4.000000872513395
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  0.0,
+                  -0.7450267894502779
+                ],
+                "output": [
+                  2.0000004999999996,
+                  4.000000127486605
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.5235362630664246,
+                  0.0
+                ],
+                "output": [
+                  4.09414581403383,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  -0.5235362630664246,
+                  0.0
+                ],
+                "output": [
+                  -0.09414481403383035,
+                  4.0000005
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "random_dense_7": {
+            "design_sha256": "a32e59be9ba3e6d24f610f8597cebf55322c2cce17bc66fc6ae768f3ff46d7bd",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  2.0000004999999996,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  -0.2818675762669402,
+                  -0.558641321720797
+                ],
+                "output": [
+                  0.8725300539984504,
+                  4.000000220679339
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  0.2818675762669402,
+                  0.558641321720797
+                ],
+                "output": [
+                  3.127470946001549,
+                  4.0000007793206604
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.241495156863766,
+                  -0.6841019413319316
+                ],
+                "output": [
+                  2.9659812482026418,
+                  4.000000157949029
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  -0.241495156863766,
+                  0.6841019413319316
+                ],
+                "output": [
+                  1.0340197517973575,
+                  4.00000084205097
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "random_dense_23": {
+            "design_sha256": "3eb32cfe9f1363eeee4612e365b8ea2bde3000d095dbeabc4f27a9c4113582c7",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  2.0000004999999996,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  0.6797844026015124,
+                  0.7177692447890834
+                ],
+                "output": [
+                  4.719138450298249,
+                  4.000000858884622
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  -0.6797844026015124,
+                  -0.7177692447890834
+                ],
+                "output": [
+                  -0.719137450298251,
+                  4.000000141115378
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.627893350477727,
+                  -0.6663189170709063
+                ],
+                "output": [
+                  4.511574215857583,
+                  4.000000166840541
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  -0.627893350477727,
+                  0.6663189170709063
+                ],
+                "output": [
+                  -0.5115732158575834,
+                  4.000000833159459
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          },
+          "random_dense_101": {
+            "design_sha256": "908b7f8f37fe96b6e9a93e1e23d15647e31e1bb84560f43bd9725f5b22f5bb05",
+            "rows": [
+              {
+                "query": "q000",
+                "input": [
+                  0.0,
+                  0.0
+                ],
+                "output": [
+                  2.0000004999999996,
+                  4.0000005
+                ]
+              },
+              {
+                "query": "q001",
+                "input": [
+                  0.12984341200730345,
+                  -0.4883928071453813
+                ],
+                "output": [
+                  2.51937421295092,
+                  4.000000255803596
+                ]
+              },
+              {
+                "query": "q002",
+                "input": [
+                  -0.12984341200730345,
+                  0.4883928071453813
+                ],
+                "output": [
+                  1.4806267870490801,
+                  4.000000744196403
+                ]
+              },
+              {
+                "query": "q003",
+                "input": [
+                  0.744401771297778,
+                  0.6783622426828709
+                ],
+                "output": [
+                  4.977607957391997,
+                  4.000000839181121
+                ]
+              },
+              {
+                "query": "q004",
+                "input": [
+                  -0.744401771297778,
+                  -0.6783622426828709
+                ],
+                "output": [
+                  -0.9776069573919977,
+                  4.000000160818879
+                ]
+              }
+            ],
+            "decoder_calls": 5
+          }
+        }
+      }
+    }
+  },
+  "roundtrips": {
+    "designed_openpi_quantiles_f64_v1": {
+      "numeric_control": [
+        {
+          "query": "center",
+          "self_encoded": [
+            0.0,
+            -7.484004527213983e-10
+          ],
+          "intended_decoded": [
+            5.00000000069889e-07,
+            4.0000005
+          ],
+          "cross_encoded": [
+            0.0,
+            -7.484004527213983e-10
+          ],
+          "cross_decoded": [
+            5.00000000069889e-07,
+            4.0000005
+          ]
+        },
+        {
+          "query": "plus:action:0",
+          "self_encoded": [
+            0.8,
+            -7.484004527213983e-10
+          ],
+          "intended_decoded": [
+            1.6000009000000004,
+            4.0000005
+          ],
+          "cross_encoded": [
+            0.8,
+            -7.484004527213983e-10
+          ],
+          "cross_decoded": [
+            1.6000009000000004,
+            4.0000005
+          ]
+        },
+        {
+          "query": "minus:action:0",
+          "self_encoded": [
+            -0.8,
+            -7.484004527213983e-10
+          ],
+          "intended_decoded": [
+            -1.5999999,
+            4.0000005
+          ],
+          "cross_encoded": [
+            -0.8,
+            -7.484004527213983e-10
+          ],
+          "cross_decoded": [
+            -1.5999999,
+            4.0000005
+          ]
+        },
+        {
+          "query": "plus:action:1",
+          "self_encoded": [
+            0.0,
+            0.7999999997186933
+          ],
+          "intended_decoded": [
+            5.00000000069889e-07,
+            4.0000009
+          ],
+          "cross_encoded": [
+            0.0,
+            0.7999999997186933
+          ],
+          "cross_decoded": [
+            5.00000000069889e-07,
+            4.0000009
+          ]
+        },
+        {
+          "query": "minus:action:1",
+          "self_encoded": [
+            0.0,
+            -0.7999999994391374
+          ],
+          "intended_decoded": [
+            5.00000000069889e-07,
+            4.0000001
+          ],
+          "cross_encoded": [
+            0.0,
+            -0.7999999994391374
+          ],
+          "cross_decoded": [
+            5.00000000069889e-07,
+            4.0000001
+          ]
+        }
+      ],
+      "offset_intervention": [
+        {
+          "query": "center",
+          "self_encoded": [
+            0.0,
+            -7.484004527213983e-10
+          ],
+          "intended_decoded": [
+            5.00000000069889e-07,
+            4.0000005
+          ],
+          "cross_encoded": [
+            0.0,
+            -7.484004527213983e-10
+          ],
+          "cross_decoded": [
+            2.0000005,
+            4.0000005
+          ]
+        },
+        {
+          "query": "plus:action:0",
+          "self_encoded": [
+            0.8,
+            -7.484004527213983e-10
+          ],
+          "intended_decoded": [
+            1.6000009000000004,
+            4.0000005
+          ],
+          "cross_encoded": [
+            0.8,
+            -7.484004527213983e-10
+          ],
+          "cross_decoded": [
+            3.6000009000000004,
+            4.0000005
+          ]
+        },
+        {
+          "query": "minus:action:0",
+          "self_encoded": [
+            -0.8,
+            -7.484004527213983e-10
+          ],
+          "intended_decoded": [
+            -1.5999999,
+            4.0000005
+          ],
+          "cross_encoded": [
+            -0.8,
+            -7.484004527213983e-10
+          ],
+          "cross_decoded": [
+            0.4000000999999999,
+            4.0000005
+          ]
+        },
+        {
+          "query": "plus:action:1",
+          "self_encoded": [
+            0.0,
+            0.7999999997186933
+          ],
+          "intended_decoded": [
+            5.00000000069889e-07,
+            4.0000009
+          ],
+          "cross_encoded": [
+            0.0,
+            0.7999999997186933
+          ],
+          "cross_decoded": [
+            2.0000005,
+            4.0000009
+          ]
+        },
+        {
+          "query": "minus:action:1",
+          "self_encoded": [
+            0.0,
+            -0.7999999994391374
+          ],
+          "intended_decoded": [
+            5.00000000069889e-07,
+            4.0000001
+          ],
+          "cross_encoded": [
+            0.0,
+            -0.7999999994391374
+          ],
+          "cross_decoded": [
+            2.0000005,
+            4.0000001
+          ]
+        }
+      ],
+      "slope_intervention": [
+        {
+          "query": "center",
+          "self_encoded": [
+            0.0,
+            -7.484004527213983e-10
+          ],
+          "intended_decoded": [
+            5.00000000069889e-07,
+            4.0000005
+          ],
+          "cross_encoded": [
+            0.0,
+            -7.484004527213983e-10
+          ],
+          "cross_decoded": [
+            4.999999996257998e-07,
+            4.0000005
+          ]
+        },
+        {
+          "query": "plus:action:0",
+          "self_encoded": [
+            0.8,
+            -7.484004527213983e-10
+          ],
+          "intended_decoded": [
+            1.6000009000000004,
+            4.0000005
+          ],
+          "cross_encoded": [
+            0.8,
+            -7.484004527213983e-10
+          ],
+          "cross_decoded": [
+            3.200000899999999,
+            4.0000005
+          ]
+        },
+        {
+          "query": "minus:action:0",
+          "self_encoded": [
+            -0.8,
+            -7.484004527213983e-10
+          ],
+          "intended_decoded": [
+            -1.5999999,
+            4.0000005
+          ],
+          "cross_encoded": [
+            -0.8,
+            -7.484004527213983e-10
+          ],
+          "cross_decoded": [
+            -3.1999999000000003,
+            4.0000005
+          ]
+        },
+        {
+          "query": "plus:action:1",
+          "self_encoded": [
+            0.0,
+            0.7999999997186933
+          ],
+          "intended_decoded": [
+            5.00000000069889e-07,
+            4.0000009
+          ],
+          "cross_encoded": [
+            0.0,
+            0.7999999997186933
+          ],
+          "cross_decoded": [
+            4.999999996257998e-07,
+            4.0000009
+          ]
+        },
+        {
+          "query": "minus:action:1",
+          "self_encoded": [
+            0.0,
+            -0.7999999994391374
+          ],
+          "intended_decoded": [
+            5.00000000069889e-07,
+            4.0000001
+          ],
+          "cross_encoded": [
+            0.0,
+            -0.7999999994391374
+          ],
+          "cross_decoded": [
+            4.999999996257998e-07,
+            4.0000001
+          ]
+        }
+      ],
+      "fixed_offset_slope_composition": [
+        {
+          "query": "center",
+          "self_encoded": [
+            0.0,
+            -7.484004527213983e-10
+          ],
+          "intended_decoded": [
+            5.00000000069889e-07,
+            4.0000005
+          ],
+          "cross_encoded": [
+            0.0,
+            -7.484004527213983e-10
+          ],
+          "cross_decoded": [
+            2.0000004999999996,
+            4.0000005
+          ]
+        },
+        {
+          "query": "plus:action:0",
+          "self_encoded": [
+            0.8,
+            -7.484004527213983e-10
+          ],
+          "intended_decoded": [
+            1.6000009000000004,
+            4.0000005
+          ],
+          "cross_encoded": [
+            0.8,
+            -7.484004527213983e-10
+          ],
+          "cross_decoded": [
+            5.200000899999999,
+            4.0000005
+          ]
+        },
+        {
+          "query": "minus:action:0",
+          "self_encoded": [
+            -0.8,
+            -7.484004527213983e-10
+          ],
+          "intended_decoded": [
+            -1.5999999,
+            4.0000005
+          ],
+          "cross_encoded": [
+            -0.8,
+            -7.484004527213983e-10
+          ],
+          "cross_decoded": [
+            -1.1999999000000003,
+            4.0000005
+          ]
+        },
+        {
+          "query": "plus:action:1",
+          "self_encoded": [
+            0.0,
+            0.7999999997186933
+          ],
+          "intended_decoded": [
+            5.00000000069889e-07,
+            4.0000009
+          ],
+          "cross_encoded": [
+            0.0,
+            0.7999999997186933
+          ],
+          "cross_decoded": [
+            2.0000004999999996,
+            4.0000009
+          ]
+        },
+        {
+          "query": "minus:action:1",
+          "self_encoded": [
+            0.0,
+            -0.7999999994391374
+          ],
+          "intended_decoded": [
+            5.00000000069889e-07,
+            4.0000001
+          ],
+          "cross_encoded": [
+            0.0,
+            -0.7999999994391374
+          ],
+          "cross_decoded": [
+            2.0000004999999996,
+            4.0000001
+          ]
+        }
+      ]
+    }
+  },
+  "runtime": {
+    "python": "3.11.13",
+    "setup_seconds": 10.420186700008344,
+    "main_seconds": 0.0037554999871645123,
+    "roundtrip_seconds": 0.0005576999974437058,
+    "wall_seconds": 10.436941400024807,
+    "peak_rss_bytes": 399192064,
+    "main_decoder_calls": 160,
+    "auxiliary_native_calls": 80,
+    "network_events": [],
+    "packages": {
+      "absl-py": "2.5.1",
+      "annotated-types": "0.8.0",
+      "augmax": "0.4.1",
+      "beartype": "0.19.0",
+      "certifi": "2026.10.19",
+      "charset-normalizer": "3.5.2",
+      "chex": "0.1.90",
+      "colorama": "0.4.6",
+      "einops": "0.8.1",
+      "equinox": "0.12.2",
+      "etils": "1.12.2",
+      "filelock": "3.18.0",
+      "flax": "0.10.2",
+      "fsspec": "2025.3.0",
+      "huggingface_hub": "0.36.2",
+      "humanize": "4.16.0",
+      "idna": "3.20",
+      "importlib_resources": "7.1.0",
+      "jax": "0.5.3",
+      "jaxlib": "0.5.3",
+      "jaxtyping": "0.2.36",
+      "Jinja2": "3.1.6",
+      "markdown-it-py": "4.2.0",
+      "MarkupSafe": "3.0.3",
+      "mdurl": "0.1.2",
+      "ml-dtypes": "0.4.1",
+      "mpmath": "1.3.0",
+      "msgpack": "1.2.3",
+      "nest-asyncio": "1.6.0",
+      "networkx": "3.6.1",
+      "numpy": "1.26.4",
+      "numpydantic": "1.6.9",
+      "openpi": "0.1.0",
+      "openpi-client": "0.1.0",
+      "optax": "0.2.4",
+      "opt_einsum": "3.4.0",
+      "orbax-checkpoint": "0.11.13",
+      "packaging": "26.3",
+      "pillow": "11.2.1",
+      "protobuf": "7.36.2",
+      "pydantic": "2.11.5",
+      "pydantic_core": "2.33.2",
+      "Pygments": "2.21.0",
+      "PyYAML": "6.0.3",
+      "regex": "2026.9.29",
+      "requests": "2.34.2",
+      "rich": "15.0.0",
+      "safetensors": "0.5.3",
+      "scipy": "1.17.1",
+      "sentencepiece": "0.2.0",
+      "simplejson": "4.2.0",
+      "sympy": "1.14.0",
+      "tensorstore": "0.1.74",
+      "tokenizers": "0.21.4",
+      "toolz": "1.2.0",
+      "torch": "2.7.1+cpu",
+      "tqdm": "4.70.1",
+      "tqdm-loggable": "0.2",
+      "transformers": "4.53.2",
+      "typing_extensions": "4.16.0",
+      "typing-inspection": "0.4.4",
+      "urllib3": "2.8.0",
+      "wadler_lindig": "0.1.7",
+      "zipp": "4.1.2"
+    }
+  },
+  "request_sha256": "194f9c32e1d5f75f9cfadc2e5e980790ba7c36749158d175a559e29f6b713013"
+}

@@ -196,9 +196,9 @@
     "Panda software-controller authority comes from actual pinned native package/operators and offline lifecycle execution, independently of any PI metadata mapping."
   ],
   "remaining_freeze_gates": [
-    "Implement action-only native published-metadata execution without forging the existing temporal query format.",
-    "Finish matched-evidence baseline/ablation adapters and certificate profile handling.",
-    "Validate runner/reporting/witness logic on development metadata and self-authored fixtures only.",
+    "Add a committed-freeze-verified selected-metadata input/native gate to the validated action-only development acquisition; prospective cells remain prohibited until then.",
+    "Finish applicable stock external-tool adapters/applicability and the final matched-evidence configuration; numerical workflows and certificate coordinate profiles now have actual development validation.",
+    "Complete final runner/reporting/baseline validation using development metadata only; preserve the new native development evidence and same-relation witness checks.",
     "Freeze exact per-case inputs, numerical profiles, condition artifacts, seeds, budgets, method applicability and all execution/analysis source hashes in a committed protocol.",
     "Run prospective cells only after verifying that committed freeze; retain failures and deviations."
   ],
@@ -206,7 +206,11 @@
     "query_format": "scripts/action_designs.py; mltools-action-normalization-design schema version 1",
     "numerical_references": "scripts/normalization_profiles.py; explicitly separate LeRobot mean/std, LeRobot quantile and OpenPI quantile binary64 profiles",
     "verification": "validation/action-normalization-primitives-verification.json",
-    "native_execution_implemented": false,
-    "scope": "Software fixtures only; no prospective execution outcomes or protocol freeze"
+    "native_execution_implemented": true,
+    "scope": "Actual native authored/already-executed development metadata; selected prospective execution remains prohibited pending full committed freeze",
+    "native_development_execution_implemented": true,
+    "native_development_evidence": "validation/action-study-development-001/summary.json",
+    "native_execution_scope": "Fixed development-only inputs; prospective native gate is not implemented",
+    "prospective_execution_gate_implemented": false
   }
 }

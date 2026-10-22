@@ -1,0 +1,887 @@
+{
+  "schema_version": 1,
+  "development_only": true,
+  "final_evaluation": false,
+  "source_file_sha256": {
+    "src/mltools/__init__.py": "4e0241fbbc8f0d39a6c5840c1c0db2359c1d8fdfe9ca4b84df4d7732efaf6b4e",
+    "src/mltools/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "src/mltools/_openpi_worker.py": "12d4fabc009291505fc9936c96366e294e8b1e78f0403077002fcf777c94d14b",
+    "src/mltools/checker.py": "b10a5cce64a8b1ed81ca58be53c6f145edf2310cfcc12919d254208a823ac1c1",
+    "src/mltools/cli.py": "32fc41929129ed89c6b6cd44b9d9202d4c6aede62fcad4ef8fac50e68471b838",
+    "src/mltools/io.py": "91094fc6ac8547244aad7238022732cf9d44873267bfd620be14be8b07e25e05",
+    "src/mltools/lerobot.py": "3d083e72df1d7ef32a4c694e19fe54234112c10095e9c3e41c5e6ac4f6bb0669",
+    "src/mltools/obligations.py": "807f94f6cb6e4029f0d1c7e1079254f216aa9acf028a04d04196371f13133432",
+    "src/mltools/openpi.py": "719878dd2341f31acfc8971850c05d9af96c1d1d7e62692ae6f8b9d5747a58e8",
+    "src/mltools/probe_capture.py": "92ac659e4034002843fb2052c6e019cbca455b97a020d6df05d85c988c14098d",
+    "src/mltools/probe_cases.py": "d9a110a4c88cbf6b2951914921f65acecce180a5900bc927d594d6983d9e2511",
+    "src/mltools/probe_cli.py": "264874610ea4621b7fa7cb0d7d0cb8a4c2ed8d1ac5bd88f945e8e0735d332ffe",
+    "src/mltools/report.py": "aa15c962c9b06d8d3ef94dea75bc1594e2d9a2a90ad259703850dc649a648593",
+    "src/mltools/reproduce.py": "94df3e93b7f5f7e53be7ab6965b08c3bea7086e495de2af1f3b2868dbb3e30c3",
+    "src/mltools/research_compare.py": "50f4a061c1579d84e952c21f3c68961fa0edb5aa97a2aeeee7e9b1ef8dcfe3e1",
+    "src/mltools/research_oracles.py": "b62cc092d416c5cf3e42e8f081119d7d52d550630c4ea73d1da57c212428b161",
+    "uv.lock": "39a988f45d7cc0629efd51a2ccc7f9bc5d3084102564b24386b8877fa9d09d1d",
+    "scripts/action_designs.py": "069259cb2ac57057889590f43c49c99d15f92dde99363941e9c967e896340c6d",
+    "scripts/query_designs.py": "7e593f068faab1d5822daeb620200e44900c6973e09f5de0d9c73f24fd788965",
+    "scripts/normalization_profiles.py": "5e72e90f8f8ca693c09784e77fb25e13a3014106aab4b2e3ac0f9107a234b8b9",
+    "scripts/normalization_certificate.py": "0919a8886f2aabd6fa2f297b0527255694f5be2f615a51857444a1e00288c155",
+    "scripts/prepare_act_candidates.py": "bf41a184a2722a83ee7b5312e35c820b62da901f56e25d04354c6817b830e3cb",
+    "scripts/action_study_common.py": "528289d2058101687cce7eb1d4be17fc25545f74d626a99c24443db7e2177cf3",
+    "scripts/action_study_worker.py": "ca26f9a8af262067b68604fd1e4aa121627a1136dc0d73e1113df546fc9280c6",
+    "scripts/run_action_study.py": "c83f27a6230561f371449af4d4dd8d1ad5f414d686be4e319136e716c0aaf528",
+    "integrations/openpi/requirements-cpu.lock": "6febb881e62bfce4269268a32ede1e9b82e0ee03a0c8442040669524c2c31f97",
+    "integrations/openpi/frameworks.txt": "a577a78f18160daa6526fc531cca79e34e1f58e85cccbbe6fd2f1b9048a9fd51"
+  },
+  "framework": "openpi",
+  "phase": "witness",
+  "cells": {
+    "designed_openpi_quantiles_f64_v1": {
+      "framework": "openpi",
+      "source_artifact": null,
+      "authority": "Independently authored numerical fixture; includes a degenerate coordinate",
+      "lineage": "designed arithmetic, not a published checkpoint",
+      "intended": {
+        "schema_version": 1,
+        "profile": "openpi_quantiles_f64_v1",
+        "statistics": {
+          "q01": [
+            -2.0,
+            4.0
+          ],
+          "q99": [
+            2.0,
+            4.0
+          ]
+        }
+      },
+      "conditions": {
+        "numeric_control": {
+          "specification": {
+            "schema_version": 1,
+            "profile": "openpi_quantiles_f64_v1",
+            "statistics": {
+              "q01": [
+                -2.0,
+                4.0
+              ],
+              "q99": [
+                2.0,
+                4.0
+              ]
+            }
+          },
+          "annotation": "intended numeric control",
+          "selected_coordinate": 0,
+          "offset_change": 0.0,
+          "slope_factor": 1
+        },
+        "offset_intervention": {
+          "specification": {
+            "schema_version": 1,
+            "profile": "openpi_quantiles_f64_v1",
+            "statistics": {
+              "q01": [
+                0.0,
+                4.0
+              ],
+              "q99": [
+                4.0,
+                4.0
+              ]
+            }
+          },
+          "annotation": "explicit injected fault",
+          "selected_coordinate": 0,
+          "offset_change": 2.0,
+          "slope_factor": 1
+        },
+        "slope_intervention": {
+          "specification": {
+            "schema_version": 1,
+            "profile": "openpi_quantiles_f64_v1",
+            "statistics": {
+              "q01": [
+                -4.0,
+                4.0
+              ],
+              "q99": [
+                4.0,
+                4.0
+              ]
+            }
+          },
+          "annotation": "explicit injected fault",
+          "selected_coordinate": 0,
+          "offset_change": 0.0,
+          "slope_factor": 2
+        },
+        "fixed_offset_slope_composition": {
+          "specification": {
+            "schema_version": 1,
+            "profile": "openpi_quantiles_f64_v1",
+            "statistics": {
+              "q01": [
+                -2.0,
+                4.0
+              ],
+              "q99": [
+                6.0,
+                4.0
+              ]
+            }
+          },
+          "annotation": "explicit injected fault",
+          "selected_coordinate": 0,
+          "offset_change": 2.0,
+          "slope_factor": 2
+        }
+      },
+      "checkpoint_physical_status": "UNKNOWN"
+    }
+  },
+  "designs": {
+    "designed_openpi_quantiles_f64_v1": {
+      "canonical": {
+        "schema_version": 1,
+        "format": "mltools-action-normalization-design",
+        "axes": [
+          {
+            "port": "action",
+            "name": "0",
+            "unit": "normalized_output_index_0",
+            "lower": -0.8,
+            "upper": 0.8
+          },
+          {
+            "port": "action",
+            "name": "1",
+            "unit": "normalized_output_index_1",
+            "lower": -0.8,
+            "upper": 0.8
+          }
+        ],
+        "outputs": [
+          "raw_action_0",
+          "raw_action_1"
+        ],
+        "probes": [
+          {
+            "id": "center",
+            "coordinates": [
+              0.0,
+              0.0
+            ],
+            "values": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "id": "plus:action:0",
+            "coordinates": [
+              1.0,
+              0.0
+            ],
+            "values": [
+              0.8,
+              0.0
+            ]
+          },
+          {
+            "id": "minus:action:0",
+            "coordinates": [
+              -1.0,
+              0.0
+            ],
+            "values": [
+              -0.8,
+              0.0
+            ]
+          },
+          {
+            "id": "plus:action:1",
+            "coordinates": [
+              0.0,
+              1.0
+            ],
+            "values": [
+              0.0,
+              0.8
+            ]
+          },
+          {
+            "id": "minus:action:1",
+            "coordinates": [
+              0.0,
+              -1.0
+            ],
+            "values": [
+              0.0,
+              -0.8
+            ]
+          }
+        ],
+        "generator": "canonical",
+        "seed": null,
+        "schedule": {
+          "operation": "action_unnormalization",
+          "native_decoder_calls_per_query": 1,
+          "batch_queries": false,
+          "state_inputs": false,
+          "queue_operations": false,
+          "policy_inference": false
+        }
+      },
+      "manual_axis": {
+        "schema_version": 1,
+        "format": "mltools-action-normalization-design",
+        "axes": [
+          {
+            "port": "action",
+            "name": "0",
+            "unit": "normalized_output_index_0",
+            "lower": -0.8,
+            "upper": 0.8
+          },
+          {
+            "port": "action",
+            "name": "1",
+            "unit": "normalized_output_index_1",
+            "lower": -0.8,
+            "upper": 0.8
+          }
+        ],
+        "outputs": [
+          "raw_action_0",
+          "raw_action_1"
+        ],
+        "probes": [
+          {
+            "id": "q000",
+            "coordinates": [
+              0.0,
+              0.0
+            ],
+            "values": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "id": "q001",
+            "coordinates": [
+              1.0,
+              0.0
+            ],
+            "values": [
+              0.8,
+              0.0
+            ]
+          },
+          {
+            "id": "q002",
+            "coordinates": [
+              -1.0,
+              -0.0
+            ],
+            "values": [
+              -0.8,
+              0.0
+            ]
+          },
+          {
+            "id": "q003",
+            "coordinates": [
+              0.0,
+              1.0
+            ],
+            "values": [
+              0.0,
+              0.8
+            ]
+          },
+          {
+            "id": "q004",
+            "coordinates": [
+              -0.0,
+              -1.0
+            ],
+            "values": [
+              0.0,
+              -0.8
+            ]
+          }
+        ],
+        "generator": "manual_axis",
+        "seed": null,
+        "schedule": {
+          "operation": "action_unnormalization",
+          "native_decoder_calls_per_query": 1,
+          "batch_queries": false,
+          "state_inputs": false,
+          "queue_operations": false,
+          "policy_inference": false
+        }
+      },
+      "random_axis_7": {
+        "schema_version": 1,
+        "format": "mltools-action-normalization-design",
+        "axes": [
+          {
+            "port": "action",
+            "name": "0",
+            "unit": "normalized_output_index_0",
+            "lower": -0.8,
+            "upper": 0.8
+          },
+          {
+            "port": "action",
+            "name": "1",
+            "unit": "normalized_output_index_1",
+            "lower": -0.8,
+            "upper": 0.8
+          }
+        ],
+        "outputs": [
+          "raw_action_0",
+          "raw_action_1"
+        ],
+        "probes": [
+          {
+            "id": "q000",
+            "coordinates": [
+              0.0,
+              0.0
+            ],
+            "values": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "id": "q001",
+            "coordinates": [
+              0.9608990204567974,
+              0.0
+            ],
+            "values": [
+              0.7687192163654379,
+              0.0
+            ]
+          },
+          {
+            "id": "q002",
+            "coordinates": [
+              -0.9608990204567974,
+              -0.0
+            ],
+            "values": [
+              -0.7687192163654379,
+              0.0
+            ]
+          },
+          {
+            "id": "q003",
+            "coordinates": [
+              0.0,
+              0.5461176223173801
+            ],
+            "values": [
+              0.0,
+              0.43689409785390415
+            ]
+          },
+          {
+            "id": "q004",
+            "coordinates": [
+              -0.0,
+              -0.5461176223173801
+            ],
+            "values": [
+              0.0,
+              -0.43689409785390415
+            ]
+          }
+        ],
+        "generator": "random_axis",
+        "seed": 7,
+        "schedule": {
+          "operation": "action_unnormalization",
+          "native_decoder_calls_per_query": 1,
+          "batch_queries": false,
+          "state_inputs": false,
+          "queue_operations": false,
+          "policy_inference": false
+        }
+      },
+      "random_axis_23": {
+        "schema_version": 1,
+        "format": "mltools-action-normalization-design",
+        "axes": [
+          {
+            "port": "action",
+            "name": "0",
+            "unit": "normalized_output_index_0",
+            "lower": -0.8,
+            "upper": 0.8
+          },
+          {
+            "port": "action",
+            "name": "1",
+            "unit": "normalized_output_index_1",
+            "lower": -0.8,
+            "upper": 0.8
+          }
+        ],
+        "outputs": [
+          "raw_action_0",
+          "raw_action_1"
+        ],
+        "probes": [
+          {
+            "id": "q000",
+            "coordinates": [
+              0.0,
+              0.0
+            ],
+            "values": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "id": "q001",
+            "coordinates": [
+              0.9193250080364345,
+              0.0
+            ],
+            "values": [
+              0.7354600064291477,
+              0.0
+            ]
+          },
+          {
+            "id": "q002",
+            "coordinates": [
+              -0.9193250080364345,
+              -0.0
+            ],
+            "values": [
+              -0.7354600064291477,
+              0.0
+            ]
+          },
+          {
+            "id": "q003",
+            "coordinates": [
+              0.0,
+              0.3126630076230127
+            ],
+            "values": [
+              0.0,
+              0.25013040609841014
+            ]
+          },
+          {
+            "id": "q004",
+            "coordinates": [
+              -0.0,
+              -0.3126630076230127
+            ],
+            "values": [
+              0.0,
+              -0.25013040609841014
+            ]
+          }
+        ],
+        "generator": "random_axis",
+        "seed": 23,
+        "schedule": {
+          "operation": "action_unnormalization",
+          "native_decoder_calls_per_query": 1,
+          "batch_queries": false,
+          "state_inputs": false,
+          "queue_operations": false,
+          "policy_inference": false
+        }
+      },
+      "random_axis_101": {
+        "schema_version": 1,
+        "format": "mltools-action-normalization-design",
+        "axes": [
+          {
+            "port": "action",
+            "name": "0",
+            "unit": "normalized_output_index_0",
+            "lower": -0.8,
+            "upper": 0.8
+          },
+          {
+            "port": "action",
+            "name": "1",
+            "unit": "normalized_output_index_1",
+            "lower": -0.8,
+            "upper": 0.8
+          }
+        ],
+        "outputs": [
+          "raw_action_0",
+          "raw_action_1"
+        ],
+        "probes": [
+          {
+            "id": "q000",
+            "coordinates": [
+              0.0,
+              0.0
+            ],
+            "values": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "id": "q001",
+            "coordinates": [
+              0.0,
+              0.9312834868128473
+            ],
+            "values": [
+              0.0,
+              0.7450267894502779
+            ]
+          },
+          {
+            "id": "q002",
+            "coordinates": [
+              -0.0,
+              -0.9312834868128473
+            ],
+            "values": [
+              0.0,
+              -0.7450267894502779
+            ]
+          },
+          {
+            "id": "q003",
+            "coordinates": [
+              0.6544203288330308,
+              0.0
+            ],
+            "values": [
+              0.5235362630664246,
+              0.0
+            ]
+          },
+          {
+            "id": "q004",
+            "coordinates": [
+              -0.6544203288330308,
+              -0.0
+            ],
+            "values": [
+              -0.5235362630664246,
+              0.0
+            ]
+          }
+        ],
+        "generator": "random_axis",
+        "seed": 101,
+        "schedule": {
+          "operation": "action_unnormalization",
+          "native_decoder_calls_per_query": 1,
+          "batch_queries": false,
+          "state_inputs": false,
+          "queue_operations": false,
+          "policy_inference": false
+        }
+      },
+      "random_dense_7": {
+        "schema_version": 1,
+        "format": "mltools-action-normalization-design",
+        "axes": [
+          {
+            "port": "action",
+            "name": "0",
+            "unit": "normalized_output_index_0",
+            "lower": -0.8,
+            "upper": 0.8
+          },
+          {
+            "port": "action",
+            "name": "1",
+            "unit": "normalized_output_index_1",
+            "lower": -0.8,
+            "upper": 0.8
+          }
+        ],
+        "outputs": [
+          "raw_action_0",
+          "raw_action_1"
+        ],
+        "probes": [
+          {
+            "id": "q000",
+            "coordinates": [
+              0.0,
+              0.0
+            ],
+            "values": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "id": "q001",
+            "coordinates": [
+              -0.35233447033367526,
+              -0.6983016521509962
+            ],
+            "values": [
+              -0.2818675762669402,
+              -0.558641321720797
+            ]
+          },
+          {
+            "id": "q002",
+            "coordinates": [
+              0.35233447033367526,
+              0.6983016521509962
+            ],
+            "values": [
+              0.2818675762669402,
+              0.558641321720797
+            ]
+          },
+          {
+            "id": "q003",
+            "coordinates": [
+              0.3018689460797075,
+              -0.8551274266649145
+            ],
+            "values": [
+              0.241495156863766,
+              -0.6841019413319316
+            ]
+          },
+          {
+            "id": "q004",
+            "coordinates": [
+              -0.3018689460797075,
+              0.8551274266649145
+            ],
+            "values": [
+              -0.241495156863766,
+              0.6841019413319316
+            ]
+          }
+        ],
+        "generator": "random_dense",
+        "seed": 7,
+        "schedule": {
+          "operation": "action_unnormalization",
+          "native_decoder_calls_per_query": 1,
+          "batch_queries": false,
+          "state_inputs": false,
+          "queue_operations": false,
+          "policy_inference": false
+        }
+      },
+      "random_dense_23": {
+        "schema_version": 1,
+        "format": "mltools-action-normalization-design",
+        "axes": [
+          {
+            "port": "action",
+            "name": "0",
+            "unit": "normalized_output_index_0",
+            "lower": -0.8,
+            "upper": 0.8
+          },
+          {
+            "port": "action",
+            "name": "1",
+            "unit": "normalized_output_index_1",
+            "lower": -0.8,
+            "upper": 0.8
+          }
+        ],
+        "outputs": [
+          "raw_action_0",
+          "raw_action_1"
+        ],
+        "probes": [
+          {
+            "id": "q000",
+            "coordinates": [
+              0.0,
+              0.0
+            ],
+            "values": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "id": "q001",
+            "coordinates": [
+              0.8497305032518905,
+              0.8972115559863543
+            ],
+            "values": [
+              0.6797844026015124,
+              0.7177692447890834
+            ]
+          },
+          {
+            "id": "q002",
+            "coordinates": [
+              -0.8497305032518905,
+              -0.8972115559863543
+            ],
+            "values": [
+              -0.6797844026015124,
+              -0.7177692447890834
+            ]
+          },
+          {
+            "id": "q003",
+            "coordinates": [
+              0.7848666880971586,
+              -0.8328986463386328
+            ],
+            "values": [
+              0.627893350477727,
+              -0.6663189170709063
+            ]
+          },
+          {
+            "id": "q004",
+            "coordinates": [
+              -0.7848666880971586,
+              0.8328986463386328
+            ],
+            "values": [
+              -0.627893350477727,
+              0.6663189170709063
+            ]
+          }
+        ],
+        "generator": "random_dense",
+        "seed": 23,
+        "schedule": {
+          "operation": "action_unnormalization",
+          "native_decoder_calls_per_query": 1,
+          "batch_queries": false,
+          "state_inputs": false,
+          "queue_operations": false,
+          "policy_inference": false
+        }
+      },
+      "random_dense_101": {
+        "schema_version": 1,
+        "format": "mltools-action-normalization-design",
+        "axes": [
+          {
+            "port": "action",
+            "name": "0",
+            "unit": "normalized_output_index_0",
+            "lower": -0.8,
+            "upper": 0.8
+          },
+          {
+            "port": "action",
+            "name": "1",
+            "unit": "normalized_output_index_1",
+            "lower": -0.8,
+            "upper": 0.8
+          }
+        ],
+        "outputs": [
+          "raw_action_0",
+          "raw_action_1"
+        ],
+        "probes": [
+          {
+            "id": "q000",
+            "coordinates": [
+              0.0,
+              0.0
+            ],
+            "values": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "id": "q001",
+            "coordinates": [
+              0.1623042650091293,
+              -0.6104910089317266
+            ],
+            "values": [
+              0.12984341200730345,
+              -0.4883928071453813
+            ]
+          },
+          {
+            "id": "q002",
+            "coordinates": [
+              -0.1623042650091293,
+              0.6104910089317266
+            ],
+            "values": [
+              -0.12984341200730345,
+              0.4883928071453813
+            ]
+          },
+          {
+            "id": "q003",
+            "coordinates": [
+              0.9305022141222223,
+              0.8479528033535886
+            ],
+            "values": [
+              0.744401771297778,
+              0.6783622426828709
+            ]
+          },
+          {
+            "id": "q004",
+            "coordinates": [
+              -0.9305022141222223,
+              -0.8479528033535886
+            ],
+            "values": [
+              -0.744401771297778,
+              -0.6783622426828709
+            ]
+          }
+        ],
+        "generator": "random_dense",
+        "seed": 101,
+        "schedule": {
+          "operation": "action_unnormalization",
+          "native_decoder_calls_per_query": 1,
+          "batch_queries": false,
+          "state_inputs": false,
+          "queue_operations": false,
+          "policy_inference": false
+        }
+      }
+    }
+  },
+  "selected_queries": {
+    "designed_openpi_quantiles_f64_v1": {
+      "offset_intervention": [
+        "center"
+      ],
+      "slope_intervention": [
+        "plus:action:0",
+        "minus:action:0"
+      ],
+      "fixed_offset_slope_composition": [
+        "center"
+      ]
+    }
+  }
+}

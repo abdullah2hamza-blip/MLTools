@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "development_only": true,
+  "final_evaluation": false,
+  "prospective_execution_outcomes_observed": false,
+  "evidence": "validation/action-study-development-001/summary.json",
+  "new_tests": {"passed": 18, "seconds": 21.26},
+  "full_lerobot_environment_suite": {"passed": 299, "skipped": 5, "seconds": 80.97},
+  "skips": "Five existing integration tests require explicit OpenPI worker opt-in; the new native development run actually executed both frameworks separately",
+  "lint": "ruff check and format --check passed for src, tests, scripts and examples/so101/build_cases.py; 82 files",
+  "optimized_replay": "Passed -O with .venv-smoke data-only parent; no ML/simulation dependencies imported",
+  "actual_native_calls": {"primary_decoders": 896, "roundtrip_auxiliary": 448, "shared_fresh_witness_decoders": 16},
+  "source_review": "Reused reviewer found missing OpenPI client/direct-URL replay checks; fixed and covered by rehashed source-identity tampering regressions. No further material schedule, numeric-parity, UNKNOWN or same-relation witness issue reported.",
+  "cost_review": "Moved lazy native imports, genuine source-statistics loading and operator construction into measured setup; final capture separately records primary, auxiliary, parent-evaluation and RSS measurements",
+  "scope": "Fixed authored/already-executed development cells only. Counts are operations/repeated measurements, not independent checkpoint samples or final accuracy estimates. Complete prospective protocol and paper remain unfinished."
+}
