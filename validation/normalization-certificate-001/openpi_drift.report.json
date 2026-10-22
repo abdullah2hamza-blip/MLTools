@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "method": "finite-normalization-drift-certificate",
+  "profile": "openpi_quantile_extension",
+  "implementation": "framework-specific extension; not the paper decoder",
+  "request_canonical_sha256": "0bb792c895c1768a5d3a8cbaff5e073ee8c05f63216a3fcf1cda94e205d007c0",
+  "calibration_kind": "designed",
+  "sample_count": 3,
+  "normalized_actions": [
+    [
+      -1,
+      -1
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "intended_decoded": [
+    [
+      -2.0,
+      -1.0
+    ],
+    [
+      5.00000000069889e-07,
+      5.00000000069889e-07
+    ],
+    [
+      2.000001,
+      1.0000010000000001
+    ]
+  ],
+  "candidate_decoded": [
+    [
+      -1.0,
+      -1.0
+    ],
+    [
+      2.0000005,
+      5.00000000069889e-07
+    ],
+    [
+      5.000001,
+      1.0000010000000001
+    ]
+  ],
+  "differences": [
+    [
+      1.0,
+      0.0
+    ],
+    [
+      2.0,
+      0.0
+    ],
+    [
+      3.0,
+      0.0
+    ]
+  ],
+  "axis_mean_absolute_displacement": [
+    2.0,
+    0.0
+  ],
+  "normalization_mask_mismatches": [],
+  "gripper_axis_displacement": [
+    {
+      "index": 1,
+      "name": "gripper1",
+      "unit": "synthetic_unit",
+      "absolute_per_sample": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "metric": {
+    "status": "COMPUTED",
+    "reasons": [],
+    "unit": "synthetic_unit",
+    "indices": [
+      0
+    ],
+    "per_sample_l2": [
+      1.0,
+      2.0,
+      3.0
+    ],
+    "mean_displacement": 2.0,
+    "percentiles": [
+      {
+        "probability": 0,
+        "value": 1.0
+      },
+      {
+        "probability": 0.5,
+        "value": 2.0
+      },
+      {
+        "probability": 0.9,
+        "value": 2.8000000000000003
+      },
+      {
+        "probability": 1,
+        "value": 3.0
+      }
+    ],
+    "tails": [
+      {
+        "threshold": 0,
+        "fraction_greater_or_equal": 1.0
+      },
+      {
+        "threshold": 2,
+        "fraction_greater_or_equal": 0.6666666666666666
+      },
+      {
+        "threshold": 3,
+        "fraction_greater_or_equal": 0.3333333333333333
+      },
+      {
+        "threshold": 4,
+        "fraction_greater_or_equal": 0.0
+      }
+    ]
+  },
+  "decision": "Reporting only; no inferred conformance or safety decision threshold",
+  "choices": {
+    "clipping": "none",
+    "percentile_estimator": "linear interpolation at (n-1)*p",
+    "tail_comparison": ">=",
+    "arithmetic": "binary64; no universal upstream error bound"
+  },
+  "limits": [
+    "Finite supplied actions only; not deployment support or task success",
+    "Authority/provenance labels are caller assertions, not execution attestations",
+    "Designed actions are not demonstration-derived calibration",
+    "Drift is between the two decoded sequences, not against the original physical inputs",
+    "No controller, chunk-state, safety-margin or policy-performance certificate"
+  ]
+}

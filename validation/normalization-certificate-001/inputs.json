@@ -1,0 +1,786 @@
+{
+  "paper_drift": {
+    "schema_version": 1,
+    "profile": "paper_quantile_equations",
+    "coordinates": [
+      {
+        "name": "axis0",
+        "unit": "synthetic_unit"
+      },
+      {
+        "name": "gripper1",
+        "unit": "synthetic_unit"
+      }
+    ],
+    "intended": {
+      "authority": "Independent designed arithmetic metadata",
+      "q01": [
+        0,
+        0
+      ],
+      "q99": [
+        2,
+        1
+      ],
+      "mask": [
+        true,
+        false
+      ]
+    },
+    "candidate": {
+      "authority": "Explicit designed decoder intervention",
+      "q01": [
+        1,
+        -99
+      ],
+      "q99": [
+        5,
+        99
+      ],
+      "mask": [
+        true,
+        false
+      ]
+    },
+    "calibration": {
+      "kind": "designed",
+      "space": "normalized",
+      "authority": "Fixed hand-calculated intervention inputs, not demonstrations",
+      "values": [
+        [
+          0,
+          0
+        ],
+        [
+          0.5,
+          0.25
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    "metric": {
+      "indices": [
+        0
+      ],
+      "unit": "synthetic_unit"
+    },
+    "gripper_indices": [
+      1
+    ],
+    "thresholds": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "percentiles": [
+      0,
+      0.5,
+      0.9,
+      1
+    ]
+  },
+  "paper_identity": {
+    "schema_version": 1,
+    "profile": "paper_quantile_equations",
+    "coordinates": [
+      {
+        "name": "axis0",
+        "unit": "synthetic_unit"
+      },
+      {
+        "name": "gripper1",
+        "unit": "synthetic_unit"
+      }
+    ],
+    "intended": {
+      "authority": "Independent designed arithmetic metadata",
+      "q01": [
+        0,
+        0
+      ],
+      "q99": [
+        2,
+        1
+      ],
+      "mask": [
+        true,
+        false
+      ]
+    },
+    "candidate": {
+      "authority": "Independent designed arithmetic metadata",
+      "q01": [
+        0,
+        0
+      ],
+      "q99": [
+        2,
+        1
+      ],
+      "mask": [
+        true,
+        false
+      ]
+    },
+    "calibration": {
+      "kind": "designed",
+      "space": "normalized",
+      "authority": "Fixed hand-calculated intervention inputs, not demonstrations",
+      "values": [
+        [
+          0,
+          0
+        ],
+        [
+          0.5,
+          0.25
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    "metric": {
+      "indices": [
+        0
+      ],
+      "unit": "synthetic_unit"
+    },
+    "gripper_indices": [
+      1
+    ],
+    "thresholds": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "percentiles": [
+      0,
+      0.5,
+      0.9,
+      1
+    ]
+  },
+  "paper_mask_change": {
+    "schema_version": 1,
+    "profile": "paper_quantile_equations",
+    "coordinates": [
+      {
+        "name": "axis0",
+        "unit": "synthetic_unit"
+      },
+      {
+        "name": "gripper1",
+        "unit": "synthetic_unit"
+      }
+    ],
+    "intended": {
+      "authority": "Independent designed arithmetic metadata",
+      "q01": [
+        0,
+        0
+      ],
+      "q99": [
+        2,
+        1
+      ],
+      "mask": [
+        true,
+        false
+      ]
+    },
+    "candidate": {
+      "authority": "Explicit designed decoder intervention",
+      "q01": [
+        1,
+        -99
+      ],
+      "q99": [
+        5,
+        99
+      ],
+      "mask": [
+        false,
+        false
+      ]
+    },
+    "calibration": {
+      "kind": "designed",
+      "space": "normalized",
+      "authority": "Fixed hand-calculated intervention inputs, not demonstrations",
+      "values": [
+        [
+          0,
+          0
+        ],
+        [
+          0.5,
+          0.25
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    "metric": {
+      "indices": [
+        0
+      ],
+      "unit": "synthetic_unit"
+    },
+    "gripper_indices": [
+      1
+    ],
+    "thresholds": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "percentiles": [
+      0,
+      0.5,
+      0.9,
+      1
+    ]
+  },
+  "openpi_drift": {
+    "schema_version": 1,
+    "profile": "openpi_quantile_extension",
+    "coordinates": [
+      {
+        "name": "axis0",
+        "unit": "synthetic_unit"
+      },
+      {
+        "name": "gripper1",
+        "unit": "synthetic_unit"
+      }
+    ],
+    "intended": {
+      "authority": "Designed quantile metadata",
+      "q01": [
+        -2,
+        -1
+      ],
+      "q99": [
+        2,
+        1
+      ]
+    },
+    "candidate": {
+      "authority": "Designed quantile intervention",
+      "q01": [
+        -1,
+        -1
+      ],
+      "q99": [
+        5,
+        1
+      ]
+    },
+    "calibration": {
+      "kind": "designed",
+      "space": "normalized",
+      "authority": "Fixed hand-calculated intervention inputs, not demonstrations",
+      "values": [
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    "metric": {
+      "indices": [
+        0
+      ],
+      "unit": "synthetic_unit"
+    },
+    "gripper_indices": [
+      1
+    ],
+    "thresholds": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "percentiles": [
+      0,
+      0.5,
+      0.9,
+      1
+    ]
+  },
+  "openpi_physical_forward": {
+    "schema_version": 1,
+    "profile": "openpi_quantile_extension",
+    "coordinates": [
+      {
+        "name": "axis0",
+        "unit": "synthetic_unit"
+      },
+      {
+        "name": "gripper1",
+        "unit": "synthetic_unit"
+      }
+    ],
+    "intended": {
+      "authority": "Designed quantile metadata",
+      "q01": [
+        -2,
+        -1
+      ],
+      "q99": [
+        2,
+        1
+      ]
+    },
+    "candidate": {
+      "authority": "Designed quantile intervention",
+      "q01": [
+        -1,
+        -1
+      ],
+      "q99": [
+        5,
+        1
+      ]
+    },
+    "calibration": {
+      "kind": "designed",
+      "space": "physical",
+      "authority": "Fixed hand-calculated intervention inputs, not demonstrations",
+      "values": [
+        [
+          -2,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    "metric": {
+      "indices": [
+        0
+      ],
+      "unit": "synthetic_unit"
+    },
+    "gripper_indices": [
+      1
+    ],
+    "thresholds": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "percentiles": [
+      0,
+      0.5,
+      0.9,
+      1
+    ]
+  },
+  "openpi_identity": {
+    "schema_version": 1,
+    "profile": "openpi_quantile_extension",
+    "coordinates": [
+      {
+        "name": "axis0",
+        "unit": "synthetic_unit"
+      },
+      {
+        "name": "gripper1",
+        "unit": "synthetic_unit"
+      }
+    ],
+    "intended": {
+      "authority": "Designed quantile metadata",
+      "q01": [
+        -2,
+        -1
+      ],
+      "q99": [
+        2,
+        1
+      ]
+    },
+    "candidate": {
+      "authority": "Designed quantile metadata",
+      "q01": [
+        -2,
+        -1
+      ],
+      "q99": [
+        2,
+        1
+      ]
+    },
+    "calibration": {
+      "kind": "designed",
+      "space": "normalized",
+      "authority": "Fixed hand-calculated intervention inputs, not demonstrations",
+      "values": [
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    "metric": {
+      "indices": [
+        0
+      ],
+      "unit": "synthetic_unit"
+    },
+    "gripper_indices": [
+      1
+    ],
+    "thresholds": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "percentiles": [
+      0,
+      0.5,
+      0.9,
+      1
+    ]
+  },
+  "openpi_outside_range": {
+    "schema_version": 1,
+    "profile": "openpi_quantile_extension",
+    "coordinates": [
+      {
+        "name": "axis0",
+        "unit": "synthetic_unit"
+      },
+      {
+        "name": "gripper1",
+        "unit": "synthetic_unit"
+      }
+    ],
+    "intended": {
+      "authority": "Designed quantile metadata",
+      "q01": [
+        -2,
+        -1
+      ],
+      "q99": [
+        2,
+        1
+      ]
+    },
+    "candidate": {
+      "authority": "Designed quantile metadata",
+      "q01": [
+        -2,
+        -1
+      ],
+      "q99": [
+        2,
+        1
+      ]
+    },
+    "calibration": {
+      "kind": "designed",
+      "space": "normalized",
+      "authority": "Fixed hand-calculated intervention inputs, not demonstrations",
+      "values": [
+        [
+          -3,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ]
+    },
+    "metric": {
+      "indices": [
+        0
+      ],
+      "unit": "synthetic_unit"
+    },
+    "gripper_indices": [
+      1
+    ],
+    "thresholds": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "percentiles": [
+      0,
+      0.5,
+      0.9,
+      1
+    ]
+  },
+  "lerobot_drift": {
+    "schema_version": 1,
+    "profile": "lerobot_mean_std_extension",
+    "coordinates": [
+      {
+        "name": "axis0",
+        "unit": "synthetic_unit"
+      },
+      {
+        "name": "gripper1",
+        "unit": "synthetic_unit"
+      }
+    ],
+    "intended": {
+      "authority": "Designed mean/std metadata",
+      "mean": [
+        1,
+        15
+      ],
+      "std": [
+        2,
+        4
+      ]
+    },
+    "candidate": {
+      "authority": "Designed mean/std intervention",
+      "mean": [
+        2,
+        15
+      ],
+      "std": [
+        3,
+        4
+      ]
+    },
+    "calibration": {
+      "kind": "designed",
+      "space": "normalized",
+      "authority": "Fixed hand-calculated intervention inputs, not demonstrations",
+      "values": [
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    "metric": {
+      "indices": [
+        0
+      ],
+      "unit": "synthetic_unit"
+    },
+    "gripper_indices": [
+      1
+    ],
+    "thresholds": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "percentiles": [
+      0,
+      0.5,
+      0.9,
+      1
+    ]
+  },
+  "lerobot_identity": {
+    "schema_version": 1,
+    "profile": "lerobot_mean_std_extension",
+    "coordinates": [
+      {
+        "name": "axis0",
+        "unit": "synthetic_unit"
+      },
+      {
+        "name": "gripper1",
+        "unit": "synthetic_unit"
+      }
+    ],
+    "intended": {
+      "authority": "Designed mean/std metadata",
+      "mean": [
+        1,
+        15
+      ],
+      "std": [
+        2,
+        4
+      ]
+    },
+    "candidate": {
+      "authority": "Designed mean/std metadata",
+      "mean": [
+        1,
+        15
+      ],
+      "std": [
+        2,
+        4
+      ]
+    },
+    "calibration": {
+      "kind": "designed",
+      "space": "normalized",
+      "authority": "Fixed hand-calculated intervention inputs, not demonstrations",
+      "values": [
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    "metric": {
+      "indices": [
+        0
+      ],
+      "unit": "synthetic_unit"
+    },
+    "gripper_indices": [
+      1
+    ],
+    "thresholds": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "percentiles": [
+      0,
+      0.5,
+      0.9,
+      1
+    ]
+  },
+  "lerobot_lossy_forward": {
+    "schema_version": 1,
+    "profile": "lerobot_mean_std_extension",
+    "coordinates": [
+      {
+        "name": "axis0",
+        "unit": "synthetic_unit"
+      },
+      {
+        "name": "gripper1",
+        "unit": "synthetic_unit"
+      }
+    ],
+    "intended": {
+      "authority": "Designed mean/std metadata",
+      "mean": [
+        1,
+        15
+      ],
+      "std": [
+        0,
+        4
+      ]
+    },
+    "candidate": {
+      "authority": "Designed mean/std metadata",
+      "mean": [
+        1,
+        15
+      ],
+      "std": [
+        0,
+        4
+      ]
+    },
+    "calibration": {
+      "kind": "designed",
+      "space": "physical",
+      "authority": "Fixed hand-calculated intervention inputs, not demonstrations",
+      "values": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    "metric": {
+      "indices": [
+        0
+      ],
+      "unit": "synthetic_unit"
+    },
+    "gripper_indices": [
+      1
+    ],
+    "thresholds": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "percentiles": [
+      0,
+      0.5,
+      0.9,
+      1
+    ]
+  }
+}

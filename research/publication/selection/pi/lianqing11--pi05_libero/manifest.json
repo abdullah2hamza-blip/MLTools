@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "candidate_only": true,
+  "final_evaluation": false,
+  "execution_outcomes_observed": false,
+  "model": "lianqing11/pi05_libero",
+  "revision": "dacdd57a16713e7273b97943ce95ee3539763b1a",
+  "policy_family_label": "PI05 metadata, not model execution",
+  "pipeline": "LeRobot saved normalization processors; not an original OpenPI checkpoint",
+  "identity_authority": "https://huggingface.co/api/models/lianqing11/pi05_libero/tree/dacdd57a16713e7273b97943ce95ee3539763b1a?recursive=true&expand=false",
+  "files": [
+    {
+      "path": "README.md",
+      "url": "https://huggingface.co/lianqing11/pi05_libero/resolve/dacdd57a16713e7273b97943ce95ee3539763b1a/README.md",
+      "bytes": 2134,
+      "sha256": "7755203d9f1949c074cf7b1db71bc69fc2d37a0f12847e836d7bd5a1d7bcbdfd",
+      "upstream_identity": "f3c170e83885f39330f6b922854812f06d65fbae"
+    },
+    {
+      "path": "config.json",
+      "url": "https://huggingface.co/lianqing11/pi05_libero/resolve/dacdd57a16713e7273b97943ce95ee3539763b1a/config.json",
+      "bytes": 1982,
+      "sha256": "2e622741b724a1415cc0bb98a5783eede579d82ba651123e375b77c7fec5cf0b",
+      "upstream_identity": "53803452599f6d0b134e2e5047f6a3cb15f2da9b"
+    },
+    {
+      "path": "train_config.json",
+      "url": "https://huggingface.co/lianqing11/pi05_libero/resolve/dacdd57a16713e7273b97943ce95ee3539763b1a/train_config.json",
+      "bytes": 5375,
+      "sha256": "df6beb18bed2a97c8f334d796290f94b94247852d45699ab59b98d3d1939714a",
+      "upstream_identity": "f9fd053742e874df4e12ea3484c7c34a59b775b2"
+    },
+    {
+      "path": "policy_preprocessor.json",
+      "url": "https://huggingface.co/lianqing11/pi05_libero/resolve/dacdd57a16713e7273b97943ce95ee3539763b1a/policy_preprocessor.json",
+      "bytes": 1722,
+      "sha256": "f8817799c7b9857121c12d08a7f5d65138fdc76b693cc6050e8c693ab5cb9f56",
+      "upstream_identity": "4c438f02dacfcaa14670ff0a63007bc930ef7feb"
+    },
+    {
+      "path": "policy_postprocessor.json",
+      "url": "https://huggingface.co/lianqing11/pi05_libero/resolve/dacdd57a16713e7273b97943ce95ee3539763b1a/policy_postprocessor.json",
+      "bytes": 662,
+      "sha256": "1d709301e3d4143383f7b26a1e424ac0d15b6ccd3446ccc02ca9ab8ad786e2a5",
+      "upstream_identity": "5a9832a7594764709ad630c45b0e2f4682fa89a1"
+    },
+    {
+      "path": "policy_preprocessor_step_2_normalizer_processor.safetensors",
+      "url": "https://huggingface.co/lianqing11/pi05_libero/resolve/dacdd57a16713e7273b97943ce95ee3539763b1a/policy_preprocessor_step_2_normalizer_processor.safetensors",
+      "bytes": 7668,
+      "sha256": "a002c0df7f79c5b169c5a899ad151d4ea1bed246c7d82bd93ed1556558d517a9",
+      "upstream_identity": "a002c0df7f79c5b169c5a899ad151d4ea1bed246c7d82bd93ed1556558d517a9"
+    },
+    {
+      "path": "policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+      "url": "https://huggingface.co/lianqing11/pi05_libero/resolve/dacdd57a16713e7273b97943ce95ee3539763b1a/policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+      "bytes": 7668,
+      "sha256": "a002c0df7f79c5b169c5a899ad151d4ea1bed246c7d82bd93ed1556558d517a9",
+      "upstream_identity": "a002c0df7f79c5b169c5a899ad151d4ea1bed246c7d82bd93ed1556558d517a9"
+    }
+  ],
+  "publisher_license_declaration": {
+    "license": "Apache-2.0",
+    "authority": "pinned publisher card; declaration, not an independent ownership audit",
+    "weights_retrieved": false,
+    "upstream_weight_terms_overridden": false
+  },
+  "license_text_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+  "declared_dataset": {
+    "repo_id": "HuggingFaceVLA/libero",
+    "root": null,
+    "episodes": null,
+    "image_transforms": {
+      "enable": false,
+      "max_num_transforms": 3,
+      "random_order": false,
+      "tfs": {
+        "brightness": {
+          "weight": 1.0,
+          "type": "ColorJitter",
+          "kwargs": {
+            "brightness": [
+              0.8,
+              1.2
+            ]
+          }
+        },
+        "contrast": {
+          "weight": 1.0,
+          "type": "ColorJitter",
+          "kwargs": {
+            "contrast": [
+              0.8,
+              1.2
+            ]
+          }
+        },
+        "saturation": {
+          "weight": 1.0,
+          "type": "ColorJitter",
+          "kwargs": {
+            "saturation": [
+              0.5,
+              1.5
+            ]
+          }
+        },
+        "hue": {
+          "weight": 1.0,
+          "type": "ColorJitter",
+          "kwargs": {
+            "hue": [
+              -0.05,
+              0.05
+            ]
+          }
+        },
+        "sharpness": {
+          "weight": 1.0,
+          "type": "SharpnessJitter",
+          "kwargs": {
+            "sharpness": [
+              0.5,
+              1.5
+            ]
+          }
+        }
+      }
+    },
+    "revision": null,
+    "use_imagenet_stats": true,
+    "video_backend": "torchcodec",
+    "streaming": false
+  },
+  "declared_lineage_cluster": "HuggingFaceVLA/libero; shared task corpus with other LIBERO metadata",
+  "configured_base": {
+    "path": "lerobot/pi05_libero_base",
+    "revision_attested": false,
+    "terms": "No upstream model weights retrieved or relicensed"
+  },
+  "normalization": {
+    "mode": "QUANTILES",
+    "eps": 1e-08,
+    "action_dimensions": 7,
+    "state_dimensions": 8
+  },
+  "split_status": "Metadata-inspected reserve; freeze role/ancestry exclusions before case outcomes",
+  "missing_authority": [
+    "exact training dataset/base snapshot",
+    "training processor source revision",
+    "physical units/frame/gripper conventions",
+    "attested mapping to independently audited native LIBERO controller"
+  ],
+  "limits": [
+    "No weights, tokenizer, model, dataset episodes, processor, simulator or hardware execution",
+    "Card contains generic ACT/SO100 example commands; these are not PI05 embodiment authority",
+    "OpenPI use is a cross-framework metadata experiment, not native checkpoint replication",
+    "Does not resolve original GCS asset licensing or establish second-embodiment execution coverage"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "development_only": true,
+  "evidence": "validation/normalization-certificate-001/summary.json",
+  "tests": {"passed": 26, "seconds": 10.36, "environment": "Installed core without ML libraries"},
+  "optimized_replay": "Passed under Python -O without ML imports, including copied evidence",
+  "review": "Bounded independent source review found no material correctness or fairness issue; no execution by reviewer",
+  "native_controls": {
+    "lerobot": {"python": "3.13.7", "conditions": 3, "wall_seconds": 18.946308200014755, "peak_rss_bytes": 293502976},
+    "openpi": {"python": "3.11.13", "conditions": 4, "wall_seconds": 36.4882695999986, "peak_rss_bytes": 398729216},
+    "order": "Sequential isolated workers",
+    "input_kind": "Designed software fixtures, not demonstration-derived calibration",
+    "scope": "Actual normalization/decoder arithmetic; no model/rollout/hardware execution"
+  },
+  "paper_equation_controls": 3,
+  "upstream_error_allowance": "1e-12 absolute and relative on these float64 controls; not a universal arithmetic bound",
+  "scope": "Development comparator readiness, not a final comparison, paper-result reproduction or safety/detection certificate"
+}

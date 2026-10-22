@@ -143,6 +143,18 @@
       "evidence": "../../validation/actionabi-native-001/summary.json",
       "finding": "Genuine CPU APIs preserve ambiguity/refusal and separating probes. Identification is relative to the supplied grammar; prior-fixed fields and caller-supplied coverage are not empirical identification/calibration. A wrong sole candidate can be retained and emitted.",
       "freeze_implication": "Freeze supported response model, grammar, independent authority, calibration and prediction-generation budget; report native equivalence/refusal vocabulary. Arbitrary chunk-origin/queue/reset processor interventions are N/A, not misses. Synthetic native episode holdout is not the project research holdout."
+    },
+    {
+      "id": "original-stateful-parity-and-larger-compiled-witnesses",
+      "evidence": "../../validation/stateful-comparison-001/summary.json",
+      "finding": "Original and compiled matched verdicts agree on eight conditions in one reused development fixture. Fresh original prefix witnesses use 1–2 native actions, versus 2–4 for the compiler's query witnesses; both reproduce the same original failed relation.",
+      "freeze_implication": "Retain the strong original stateful comparator and explicit matched projection. Freeze native action/event cost units and witness-relation validation. Do not claim smaller compiler witnesses or independent samples from repeated fixture variants."
+    },
+    {
+      "id": "finite-normalization-certificate-scope",
+      "evidence": "../../validation/normalization-certificate-001/summary.json",
+      "finding": "Paper-equation finite drift and separately labeled native framework extensions execute on designed controls. Native float64 normalization/decoding matches the independent implementation; missing authority or homogeneous metric units withhold aggregate interpretation.",
+      "freeze_implication": "Freeze decoder profiles, selected coordinates/units, calibration provenance, numeric allowances and descriptive thresholds or decision rules. Designed probes are not demonstration calibration; MEAN_STD and epsilon/domain-adjusted decoders are extensions rather than the paper quantile operator. No task/safety or default detection verdict follows from drift alone."
     }
   ]
 }
