@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "candidate_only": true,
+  "final_evaluation": false,
+  "model": "yutofujita/act-so101-move-cube",
+  "revision": "81ecbfed016e9ec41a2c17d78cfc20f7e08f47d5",
+  "policy_family": "ACT",
+  "license": {
+    "declared": "Apache-2.0",
+    "authority": "pinned publisher model-card frontmatter"
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "url": "https://huggingface.co/yutofujita/act-so101-move-cube/resolve/81ecbfed016e9ec41a2c17d78cfc20f7e08f47d5/README.md",
+      "bytes": 1678,
+      "sha256": "b838d033ce983553c60c12947ebae7b00158663cb7ad70a48b52531e5bfb296a"
+    },
+    {
+      "path": "config.json",
+      "url": "https://huggingface.co/yutofujita/act-so101-move-cube/resolve/81ecbfed016e9ec41a2c17d78cfc20f7e08f47d5/config.json",
+      "bytes": 1696,
+      "sha256": "9047c5d258f719aedca26e0a1c89997be14875356ad83d48e8e333bf40113cb9"
+    },
+    {
+      "path": "train_config.json",
+      "url": "https://huggingface.co/yutofujita/act-so101-move-cube/resolve/81ecbfed016e9ec41a2c17d78cfc20f7e08f47d5/train_config.json",
+      "bytes": 5557,
+      "sha256": "a19e9d9daef32cbc98f2a8dd9f355599a46576bb3961afdab4bf3b44f13a29cc"
+    },
+    {
+      "path": "policy_preprocessor.json",
+      "url": "https://huggingface.co/yutofujita/act-so101-move-cube/resolve/81ecbfed016e9ec41a2c17d78cfc20f7e08f47d5/policy_preprocessor.json",
+      "bytes": 1328,
+      "sha256": "8ccbca171fe05564cf6cc9691c22783d2a228743596ecd8be9df09e04d724fbc"
+    },
+    {
+      "path": "policy_postprocessor.json",
+      "url": "https://huggingface.co/yutofujita/act-so101-move-cube/resolve/81ecbfed016e9ec41a2c17d78cfc20f7e08f47d5/policy_postprocessor.json",
+      "bytes": 660,
+      "sha256": "648b415125a183dfd6cbc47c1dc04ab3f2d912654ef22a12ca5e8b93d7d85cdd"
+    },
+    {
+      "path": "policy_preprocessor_step_3_normalizer_processor.safetensors",
+      "url": "https://huggingface.co/yutofujita/act-so101-move-cube/resolve/81ecbfed016e9ec41a2c17d78cfc20f7e08f47d5/policy_preprocessor_step_3_normalizer_processor.safetensors",
+      "bytes": 7552,
+      "sha256": "9155f3cb55dc35771a721dfd14d63e0ed7e785519e36b2c4794a72f556ac02dc"
+    },
+    {
+      "path": "policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+      "url": "https://huggingface.co/yutofujita/act-so101-move-cube/resolve/81ecbfed016e9ec41a2c17d78cfc20f7e08f47d5/policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+      "bytes": 7552,
+      "sha256": "9155f3cb55dc35771a721dfd14d63e0ed7e785519e36b2c4794a72f556ac02dc"
+    },
+    {
+      "path": "current_dataset_info.json",
+      "url": "https://huggingface.co/datasets/yutofujita/so101-move-cube/resolve/1b983c5a3e27385c595ebd298ab1b90c43f2c1b2/meta/info.json",
+      "bytes": 3229,
+      "sha256": "1c76a645878ed54312bf5a42cd0ca3b7ca1e9f4ab9d786fe09438a62d7260e27"
+    },
+    {
+      "path": "current_dataset_card_status.json",
+      "kind": "retrieval_observation",
+      "sha256": "c4d9c8bd44b8a0ff6f65c40a6636318ea46d180d704a6ae43e0b122870a9677c"
+    },
+    {
+      "path": "decoded_statistics.json",
+      "derivation": "numeric decoding of pinned statistics",
+      "sha256": "1f0e7aea38aed9dd930d07f7ef032498f10909d81efa8a6387d64700c66703fa"
+    }
+  ],
+  "declared_dataset": {
+    "repo_id": "yutofujita/so101-move-cube",
+    "root": null,
+    "episodes": null,
+    "image_transforms": {
+      "enable": false,
+      "max_num_transforms": 3,
+      "random_order": false,
+      "tfs": {
+        "brightness": {
+          "weight": 1.0,
+          "type": "ColorJitter",
+          "kwargs": {
+            "brightness": [
+              0.8,
+              1.2
+            ]
+          }
+        },
+        "contrast": {
+          "weight": 1.0,
+          "type": "ColorJitter",
+          "kwargs": {
+            "contrast": [
+              0.8,
+              1.2
+            ]
+          }
+        },
+        "saturation": {
+          "weight": 1.0,
+          "type": "ColorJitter",
+          "kwargs": {
+            "saturation": [
+              0.5,
+              1.5
+            ]
+          }
+        },
+        "hue": {
+          "weight": 1.0,
+          "type": "ColorJitter",
+          "kwargs": {
+            "hue": [
+              -0.05,
+              0.05
+            ]
+          }
+        },
+        "sharpness": {
+          "weight": 1.0,
+          "type": "SharpnessJitter",
+          "kwargs": {
+            "sharpness": [
+              0.5,
+              1.5
+            ]
+          }
+        },
+        "affine": {
+          "weight": 1.0,
+          "type": "RandomAffine",
+          "kwargs": {
+            "degrees": [
+              -5.0,
+              5.0
+            ],
+            "translate": [
+              0.05,
+              0.05
+            ]
+          }
+        }
+      }
+    },
+    "revision": null,
+    "use_imagenet_stats": true,
+    "video_backend": "torchcodec",
+    "streaming": false
+  },
+  "current_dataset_metadata": {
+    "revision": "1b983c5a3e27385c595ebd298ab1b90c43f2c1b2",
+    "robot_type": "so_follower",
+    "training_snapshot_attested": false,
+    "license": null,
+    "license_authority": "pinned current dataset card; separate from model-card licensing"
+  },
+  "selection_notes": [
+    "Metadata inspected before any case outcome evaluation",
+    "Dataset revision is null; current schema is corroboration, not training snapshot authority",
+    "Physical units, action modes, calibration and training source revision remain unverified",
+    "Shared move-cube lineage with existing development SmolVLA must remain in one split cluster"
+  ],
+  "weights_downloaded": false
+}

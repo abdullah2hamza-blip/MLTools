@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "model": "yutofujita/act-so101-move-cube",
+  "revision": "81ecbfed016e9ec41a2c17d78cfc20f7e08f47d5",
+  "license": {
+    "declared": "Apache-2.0",
+    "authority": "pinned publisher model-card frontmatter"
+  },
+  "split": "development_shared_move_cube_lineage",
+  "files": [
+    {
+      "path": "README.md",
+      "url": "https://huggingface.co/yutofujita/act-so101-move-cube/resolve/81ecbfed016e9ec41a2c17d78cfc20f7e08f47d5/README.md",
+      "bytes": 1678,
+      "sha256": "b838d033ce983553c60c12947ebae7b00158663cb7ad70a48b52531e5bfb296a"
+    },
+    {
+      "path": "config.json",
+      "url": "https://huggingface.co/yutofujita/act-so101-move-cube/resolve/81ecbfed016e9ec41a2c17d78cfc20f7e08f47d5/config.json",
+      "bytes": 1696,
+      "sha256": "9047c5d258f719aedca26e0a1c89997be14875356ad83d48e8e333bf40113cb9"
+    },
+    {
+      "path": "train_config.json",
+      "url": "https://huggingface.co/yutofujita/act-so101-move-cube/resolve/81ecbfed016e9ec41a2c17d78cfc20f7e08f47d5/train_config.json",
+      "bytes": 5557,
+      "sha256": "a19e9d9daef32cbc98f2a8dd9f355599a46576bb3961afdab4bf3b44f13a29cc"
+    },
+    {
+      "path": "policy_preprocessor.json",
+      "url": "https://huggingface.co/yutofujita/act-so101-move-cube/resolve/81ecbfed016e9ec41a2c17d78cfc20f7e08f47d5/policy_preprocessor.json",
+      "bytes": 1328,
+      "sha256": "8ccbca171fe05564cf6cc9691c22783d2a228743596ecd8be9df09e04d724fbc"
+    },
+    {
+      "path": "policy_postprocessor.json",
+      "url": "https://huggingface.co/yutofujita/act-so101-move-cube/resolve/81ecbfed016e9ec41a2c17d78cfc20f7e08f47d5/policy_postprocessor.json",
+      "bytes": 660,
+      "sha256": "648b415125a183dfd6cbc47c1dc04ab3f2d912654ef22a12ca5e8b93d7d85cdd"
+    },
+    {
+      "path": "policy_preprocessor_step_3_normalizer_processor.safetensors",
+      "url": "https://huggingface.co/yutofujita/act-so101-move-cube/resolve/81ecbfed016e9ec41a2c17d78cfc20f7e08f47d5/policy_preprocessor_step_3_normalizer_processor.safetensors",
+      "bytes": 7552,
+      "sha256": "9155f3cb55dc35771a721dfd14d63e0ed7e785519e36b2c4794a72f556ac02dc"
+    },
+    {
+      "path": "policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+      "url": "https://huggingface.co/yutofujita/act-so101-move-cube/resolve/81ecbfed016e9ec41a2c17d78cfc20f7e08f47d5/policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+      "bytes": 7552,
+      "sha256": "9155f3cb55dc35771a721dfd14d63e0ed7e785519e36b2c4794a72f556ac02dc"
+    }
+  ],
+  "reference_loader": "bounded independent stdlib F32/F64 decoder",
+  "runtime_loader": "native safetensors.torch for the published postprocessor file",
+  "physical_semantics": "UNKNOWN",
+  "weights_downloaded": false
+}

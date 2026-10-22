@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "status": "SELECTION_ONLY_NOT_FROZEN",
+  "candidates": [
+    {
+      "model": "yutofujita/act-so101-move-cube",
+      "revision": "81ecbfed016e9ec41a2c17d78cfc20f7e08f47d5",
+      "policy_family": "ACT",
+      "manifest": "act-so101-move-cube/manifest.json",
+      "data_lineage": "yutofujita/so101-move-cube"
+    },
+    {
+      "model": "yutofujita/act-so101-boccia-center-only",
+      "revision": "16e80dfa6c37f53f319a3d2c98eca12bb5006fbb",
+      "policy_family": "ACT",
+      "manifest": "act-so101-boccia-center-only/manifest.json",
+      "data_lineage": "yutofujita/so101-boccia-center-only"
+    }
+  ],
+  "selection_event": "Metadata retrieval only; experiment outcomes recorded separately"
+}

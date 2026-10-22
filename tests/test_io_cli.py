@@ -6,7 +6,7 @@ import pytest
 from conftest import EXAMPLES
 
 from mltools.cli import main
-from mltools.io import MAX_BYTES, InputError, load_bundle, read_json, write_json
+from mltools.io import MAX_BYTES, InputError, digest, load_bundle, read_json, write_json
 
 
 @pytest.mark.parametrize(
@@ -33,6 +33,17 @@ def test_size_limit(tmp_path):
     path.write_bytes(b" " * (MAX_BYTES + 1))
     with pytest.raises(InputError, match="exceeds"):
         read_json(path)
+
+
+def test_bounded_snapshot_cannot_trust_a_stale_size_check(tmp_path, monkeypatch):
+    from pathlib import Path
+    from types import SimpleNamespace
+
+    path = tmp_path / "growing.json"
+    path.write_bytes(b" " * (MAX_BYTES + 1))
+    monkeypatch.setattr(Path, "stat", lambda *_args, **_kwargs: SimpleNamespace(st_size=0))
+    with pytest.raises(InputError, match="exceeds"):
+        digest(path)
 
 
 @pytest.mark.parametrize("text", ['{"a":1e1000}', '{"a":' + "9" * 310 + "}"])

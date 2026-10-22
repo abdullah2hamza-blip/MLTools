@@ -1,0 +1,2318 @@
+{
+  "schema_version": 1,
+  "suite_sha256": "7e95cdec65c8519f2990d097fd58045b995d32b2617c609a455f3d125e2060d4",
+  "outputs": {
+    "center": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "plus:action:0": [
+      3.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "minus:action:0": [
+      -1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "plus:action:1": [
+      1.0,
+      5.0,
+      3.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "minus:action:1": [
+      1.0,
+      -1.0,
+      3.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "plus:action:2": [
+      1.0,
+      2.0,
+      7.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "minus:action:2": [
+      1.0,
+      2.0,
+      -1.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "plus:action:3": [
+      1.0,
+      2.0,
+      3.0,
+      9.0,
+      5.0,
+      15.0
+    ],
+    "minus:action:3": [
+      1.0,
+      2.0,
+      3.0,
+      -1.0,
+      5.0,
+      15.0
+    ],
+    "plus:action:4": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      11.0,
+      15.0
+    ],
+    "minus:action:4": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      -1.0,
+      15.0
+    ],
+    "plus:action:5": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      19.0
+    ],
+    "minus:action:5": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      11.0
+    ],
+    "plus:origin:0": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "minus:origin:0": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "plus:origin:1": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "minus:origin:1": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "plus:origin:2": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "minus:origin:2": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "plus:origin:3": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "minus:origin:3": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "plus:origin:4": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "minus:origin:4": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "plus:origin:5": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "minus:origin:5": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "plus:current:0": [
+      11.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "minus:current:0": [
+      -9.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "plus:current:1": [
+      1.0,
+      12.0,
+      3.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "minus:current:1": [
+      1.0,
+      -8.0,
+      3.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "plus:current:2": [
+      1.0,
+      2.0,
+      13.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "minus:current:2": [
+      1.0,
+      2.0,
+      -7.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "plus:current:3": [
+      1.0,
+      2.0,
+      3.0,
+      14.0,
+      5.0,
+      15.0
+    ],
+    "minus:current:3": [
+      1.0,
+      2.0,
+      3.0,
+      -6.0,
+      5.0,
+      15.0
+    ],
+    "plus:current:4": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      15.0,
+      15.0
+    ],
+    "minus:current:4": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      -5.0,
+      15.0
+    ],
+    "plus:current:5": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      15.0
+    ],
+    "minus:current:5": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      15.0
+    ]
+  },
+  "identity": {
+    "revision": "5517a326eeb9b457cfe07d59b9bfdf291799c8d9",
+    "git_blobs": {
+      "processor/relative_action_processor.py": "3405402904cf15ca18227b3a3fe006d7936f9d53",
+      "processor/normalize_processor.py": "b0eafcef75e187887c8ea642cfe138f9cf8e79a9",
+      "processor/rename_processor.py": "d17f93dcd990861a2b5ade5914f4595e85eece16",
+      "processor/policy_robot_bridge.py": "bd43c0e81a52c4b75c0c3029e110541484300c89",
+      "processor/pipeline.py": "3cfdf680b27da74d75c9d1b4f8c7f69182c28b02",
+      "configs/types.py": "18359ef0575a4f560a65f21e2d6ddf534edc770f",
+      "robots/so_follower/so_follower.py": "be78bc9623b72155bb87660763d7e2c2ed481d5f",
+      "robots/so_follower/config_so_follower.py": "af4dda782b562064c1b80902ab5948b07ddc43de"
+    },
+    "source_newlines": "canonical LF"
+  },
+  "stats_sha256": "393edbc9314a9236ce0a70af847d7a7c52bde65bae3cf6bd585b3401c33e455b",
+  "statistics_loader": "bounded mean/std JSON",
+  "configuration": {
+    "relative": true,
+    "bind_queue": false,
+    "exclude_joints": [
+      "gripper"
+    ],
+    "action_names": [
+      "shoulder_pan",
+      "shoulder_lift",
+      "elbow_flex",
+      "wrist_flex",
+      "wrist_roll",
+      "gripper"
+    ],
+    "motor_names": [
+      "shoulder_pan",
+      "shoulder_lift",
+      "elbow_flex",
+      "wrist_flex",
+      "wrist_roll",
+      "gripper"
+    ]
+  },
+  "traces": [
+    {
+      "query": "center",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "plus:action:0",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        3.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        3.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "minus:action:0",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        -1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        -1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        -1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "plus:action:1",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        1,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        5.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        5.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "minus:action:1",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        -1,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        -1.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        -1.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "plus:action:2",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        1,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        7.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        7.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "minus:action:2",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        -1,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        -1.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        -1.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "plus:action:3",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        1,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        3.0,
+        9.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        3.0,
+        9.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "minus:action:3",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        -1,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        3.0,
+        -1.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        3.0,
+        -1.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "plus:action:4",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        11.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        11.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "minus:action:4",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        -1.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        -1.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "plus:action:5",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        19.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        19.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "minus:action:5",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        11.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        11.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "plus:origin:0",
+      "origin": [
+        10,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        11.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "minus:origin:0",
+      "origin": [
+        -10,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        -9.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "plus:origin:1",
+      "origin": [
+        0.0,
+        10,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        12.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "minus:origin:1",
+      "origin": [
+        0.0,
+        -10,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        -8.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "plus:origin:2",
+      "origin": [
+        0.0,
+        0.0,
+        10,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        13.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "minus:origin:2",
+      "origin": [
+        0.0,
+        0.0,
+        -10,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        -7.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "plus:origin:3",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        10,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        3.0,
+        14.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "minus:origin:3",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        -10,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        3.0,
+        -6.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "plus:origin:4",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        10,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        15.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "minus:origin:4",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -10,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        -5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "plus:origin:5",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        100
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "minus:origin:5",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "plus:current:0",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        10,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        11.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        10.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "minus:current:0",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        -10,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        -9.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        -10.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "plus:current:1",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        10,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        12.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        10.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "minus:current:1",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        -10,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        -8.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        -10.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "plus:current:2",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        10,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        13.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        10.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "minus:current:2",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        -10,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        -7.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        -10.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "plus:current:3",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        10,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        3.0,
+        14.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        10.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "minus:current:3",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        -10,
+        0.0,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        3.0,
+        -6.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        -10.0,
+        0.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "plus:current:4",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        10,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        15.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        10.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "minus:current:4",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -10,
+        50.0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        -5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -10.0,
+        50.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "plus:current:5",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        100
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        100.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    },
+    {
+      "query": "minus:current:5",
+      "origin": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ],
+      "current": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0
+      ],
+      "normalized_prediction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "second_action": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        15.0
+      ],
+      "cached_anchor_before_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "queue_remaining": 0,
+      "reset_cleared_before_query": true
+    }
+  ],
+  "producer": {
+    "module": "mltools.probe_capture",
+    "source_sha256": "ea998c689be14b816408c71b1f77bc7a536ae36b7cdfe120955f4fff5b785fbf"
+  },
+  "runtime": {
+    "python": "3.13.7",
+    "torch": "2.11.0+cpu",
+    "wall_seconds": 0.020983599999453872,
+    "dtype": "float64",
+    "device": "cpu"
+  },
+  "scope": "Genuine LeRobot processors; two-action numerical probes; no trained inference or hardware",
+  "case_sha256": "e8e68ded657cafc8a316211d6b3f6e1c76d28ada724627ba0f04fc5412219065",
+  "framework": "lerobot"
+}

@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "candidate_only": true,
+  "final_evaluation": false,
+  "model": "yutofujita/act-so101-boccia-center-only",
+  "revision": "16e80dfa6c37f53f319a3d2c98eca12bb5006fbb",
+  "policy_family": "ACT",
+  "license": {
+    "declared": "Apache-2.0",
+    "authority": "pinned publisher model-card frontmatter"
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "url": "https://huggingface.co/yutofujita/act-so101-boccia-center-only/resolve/16e80dfa6c37f53f319a3d2c98eca12bb5006fbb/README.md",
+      "bytes": 1687,
+      "sha256": "140686f0be8ec8a5299a62a5e9c7ad729f7ef7beeba383048d38f433f914999d"
+    },
+    {
+      "path": "config.json",
+      "url": "https://huggingface.co/yutofujita/act-so101-boccia-center-only/resolve/16e80dfa6c37f53f319a3d2c98eca12bb5006fbb/config.json",
+      "bytes": 1705,
+      "sha256": "3eafa8f8be354d588248c913df3351a696462558b2e9e9278c129cb9329ed44d"
+    },
+    {
+      "path": "train_config.json",
+      "url": "https://huggingface.co/yutofujita/act-so101-boccia-center-only/resolve/16e80dfa6c37f53f319a3d2c98eca12bb5006fbb/train_config.json",
+      "bytes": 5957,
+      "sha256": "dcad9e8708cdd2e6a7012c1e3ea107e12df86feaba7d726cc839ec9b7e18db98"
+    },
+    {
+      "path": "policy_preprocessor.json",
+      "url": "https://huggingface.co/yutofujita/act-so101-boccia-center-only/resolve/16e80dfa6c37f53f319a3d2c98eca12bb5006fbb/policy_preprocessor.json",
+      "bytes": 1328,
+      "sha256": "8ccbca171fe05564cf6cc9691c22783d2a228743596ecd8be9df09e04d724fbc"
+    },
+    {
+      "path": "policy_postprocessor.json",
+      "url": "https://huggingface.co/yutofujita/act-so101-boccia-center-only/resolve/16e80dfa6c37f53f319a3d2c98eca12bb5006fbb/policy_postprocessor.json",
+      "bytes": 660,
+      "sha256": "648b415125a183dfd6cbc47c1dc04ab3f2d912654ef22a12ca5e8b93d7d85cdd"
+    },
+    {
+      "path": "policy_preprocessor_step_3_normalizer_processor.safetensors",
+      "url": "https://huggingface.co/yutofujita/act-so101-boccia-center-only/resolve/16e80dfa6c37f53f319a3d2c98eca12bb5006fbb/policy_preprocessor_step_3_normalizer_processor.safetensors",
+      "bytes": 7552,
+      "sha256": "fd85df21d39dd71bf79103d118cd668b98077167d586630d7d8e55c4df1aecae"
+    },
+    {
+      "path": "policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+      "url": "https://huggingface.co/yutofujita/act-so101-boccia-center-only/resolve/16e80dfa6c37f53f319a3d2c98eca12bb5006fbb/policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+      "bytes": 7552,
+      "sha256": "fd85df21d39dd71bf79103d118cd668b98077167d586630d7d8e55c4df1aecae"
+    },
+    {
+      "path": "current_dataset_info.json",
+      "url": "https://huggingface.co/datasets/yutofujita/so101-boccia-center-only/resolve/9a6bfb650042e2c486ea3335d50cebd02c071e78/meta/info.json",
+      "bytes": 3229,
+      "sha256": "0c9e1fcd22c26858fd92fd33a3e7ff3b28ed3debb4d03592871ef0f8e3cc6af0"
+    },
+    {
+      "path": "current_dataset_README.md",
+      "url": "https://huggingface.co/datasets/yutofujita/so101-boccia-center-only/resolve/9a6bfb650042e2c486ea3335d50cebd02c071e78/README.md",
+      "bytes": 3716,
+      "sha256": "379bc121d1dec9dadc50932c6bfe192b5c67707a1cdf9db7f9b61105e169efb1"
+    },
+    {
+      "path": "decoded_statistics.json",
+      "derivation": "numeric decoding of pinned statistics",
+      "sha256": "c0932fc1965f84e363a0dda469f15caabbb87dcd381160c96b54e5a6d0f95134"
+    }
+  ],
+  "declared_dataset": {
+    "repo_id": "yutofujita/so101-boccia-center-only",
+    "root": null,
+    "episodes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24
+    ],
+    "image_transforms": {
+      "enable": false,
+      "max_num_transforms": 3,
+      "random_order": false,
+      "tfs": {
+        "brightness": {
+          "weight": 1.0,
+          "type": "ColorJitter",
+          "kwargs": {
+            "brightness": [
+              0.8,
+              1.2
+            ]
+          }
+        },
+        "contrast": {
+          "weight": 1.0,
+          "type": "ColorJitter",
+          "kwargs": {
+            "contrast": [
+              0.8,
+              1.2
+            ]
+          }
+        },
+        "saturation": {
+          "weight": 1.0,
+          "type": "ColorJitter",
+          "kwargs": {
+            "saturation": [
+              0.5,
+              1.5
+            ]
+          }
+        },
+        "hue": {
+          "weight": 1.0,
+          "type": "ColorJitter",
+          "kwargs": {
+            "hue": [
+              -0.05,
+              0.05
+            ]
+          }
+        },
+        "sharpness": {
+          "weight": 1.0,
+          "type": "SharpnessJitter",
+          "kwargs": {
+            "sharpness": [
+              0.5,
+              1.5
+            ]
+          }
+        },
+        "affine": {
+          "weight": 1.0,
+          "type": "RandomAffine",
+          "kwargs": {
+            "degrees": [
+              -5.0,
+              5.0
+            ],
+            "translate": [
+              0.05,
+              0.05
+            ]
+          }
+        }
+      }
+    },
+    "revision": null,
+    "use_imagenet_stats": true,
+    "video_backend": "torchcodec",
+    "streaming": false
+  },
+  "current_dataset_metadata": {
+    "revision": "9a6bfb650042e2c486ea3335d50cebd02c071e78",
+    "robot_type": "so_follower",
+    "training_snapshot_attested": false,
+    "license": "apache-2.0",
+    "license_authority": "pinned current dataset card; separate from model-card licensing"
+  },
+  "selection_notes": [
+    "Metadata inspected before any case outcome evaluation",
+    "Dataset revision is null; current schema is corroboration, not training snapshot authority",
+    "Physical units, action modes, calibration and training source revision remain unverified",
+    "Shared move-cube lineage with existing development SmolVLA must remain in one split cluster"
+  ],
+  "weights_downloaded": false
+}

@@ -1,0 +1,410 @@
+{
+  "schema_version": 1,
+  "format": "mltools-affine-case",
+  "development_only": true,
+  "suite": {
+    "schema_version": 1,
+    "method": "affine-obligations-development",
+    "axes": [
+      {
+        "port": "action",
+        "name": "0",
+        "unit": "normalized",
+        "lower": -1,
+        "upper": 1
+      },
+      {
+        "port": "action",
+        "name": "1",
+        "unit": "normalized",
+        "lower": -1,
+        "upper": 1
+      },
+      {
+        "port": "action",
+        "name": "2",
+        "unit": "normalized",
+        "lower": -1,
+        "upper": 1
+      },
+      {
+        "port": "action",
+        "name": "3",
+        "unit": "normalized",
+        "lower": -1,
+        "upper": 1
+      },
+      {
+        "port": "action",
+        "name": "4",
+        "unit": "normalized",
+        "lower": -1,
+        "upper": 1
+      },
+      {
+        "port": "action",
+        "name": "5",
+        "unit": "normalized",
+        "lower": -1,
+        "upper": 1
+      },
+      {
+        "port": "origin",
+        "name": "0",
+        "unit": "degree",
+        "lower": -10,
+        "upper": 10
+      },
+      {
+        "port": "origin",
+        "name": "1",
+        "unit": "degree",
+        "lower": -10,
+        "upper": 10
+      },
+      {
+        "port": "origin",
+        "name": "2",
+        "unit": "degree",
+        "lower": -10,
+        "upper": 10
+      },
+      {
+        "port": "origin",
+        "name": "3",
+        "unit": "degree",
+        "lower": -10,
+        "upper": 10
+      },
+      {
+        "port": "origin",
+        "name": "4",
+        "unit": "degree",
+        "lower": -10,
+        "upper": 10
+      },
+      {
+        "port": "origin",
+        "name": "5",
+        "unit": "range_0_100",
+        "lower": 0,
+        "upper": 100
+      },
+      {
+        "port": "current",
+        "name": "0",
+        "unit": "degree",
+        "lower": -10,
+        "upper": 10
+      },
+      {
+        "port": "current",
+        "name": "1",
+        "unit": "degree",
+        "lower": -10,
+        "upper": 10
+      },
+      {
+        "port": "current",
+        "name": "2",
+        "unit": "degree",
+        "lower": -10,
+        "upper": 10
+      },
+      {
+        "port": "current",
+        "name": "3",
+        "unit": "degree",
+        "lower": -10,
+        "upper": 10
+      },
+      {
+        "port": "current",
+        "name": "4",
+        "unit": "degree",
+        "lower": -10,
+        "upper": 10
+      },
+      {
+        "port": "current",
+        "name": "5",
+        "unit": "range_0_100",
+        "lower": 0,
+        "upper": 100
+      }
+    ],
+    "outputs": [
+      "shoulder_pan.pos",
+      "shoulder_lift.pos",
+      "elbow_flex.pos",
+      "wrist_flex.pos",
+      "wrist_roll.pos",
+      "gripper.pos"
+    ],
+    "probes": [
+      {
+        "id": "plus:origin:0",
+        "coordinates": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          10,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          50.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          50.0
+        ]
+      },
+      {
+        "id": "minus:origin:0",
+        "coordinates": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -10,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          50.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          50.0
+        ]
+      }
+    ]
+  },
+  "reference": {
+    "coefficients": [
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "offset": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      15
+    ],
+    "output_units": [
+      "degree",
+      "degree",
+      "degree",
+      "degree",
+      "degree",
+      "range_0_100"
+    ],
+    "authority": "Independently authored SO101 calibration fixture, not a trained checkpoint",
+    "affine_fragment_verified": true
+  },
+  "adapter": {
+    "framework": "lerobot",
+    "stats_artifact": "stats",
+    "configuration": {
+      "relative": true,
+      "bind_queue": false,
+      "exclude_joints": [
+        "gripper"
+      ],
+      "action_names": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ],
+      "motor_names": [
+        "shoulder_pan",
+        "shoulder_lift",
+        "elbow_flex",
+        "wrist_flex",
+        "wrist_roll",
+        "gripper"
+      ]
+    }
+  },
+  "artifacts": [
+    {
+      "id": "stats",
+      "path": "stats.json",
+      "sha256": "393edbc9314a9236ce0a70af847d7a7c52bde65bae3cf6bd585b3401c33e455b"
+    }
+  ],
+  "description": "Synthetic calibration; explicit queue-binding intervention"
+}

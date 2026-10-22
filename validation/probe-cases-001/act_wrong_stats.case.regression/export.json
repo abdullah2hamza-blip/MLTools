@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "source_case_sha256": "4a920263ff57a72fa2aa6c664a414bdf45e54767cd0fe277fea8fe0945ce57b9",
+  "retained_queries": [
+    "center"
+  ],
+  "offline_case": "original/wrong_stats.case.json",
+  "offline_trace": "trace.json",
+  "witness_case": "original/witness-0.case.json",
+  "scope": "Original replay retained; reduced case requires fresh capture"
+}

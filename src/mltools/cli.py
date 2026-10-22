@@ -29,8 +29,22 @@ def main(argv=None) -> int:
         "--counterexample", type=Path, help="Export a failing regression into a new directory"
     )
     check_parser.add_argument("--format", choices=["text", "json"], default="text")
+    probe = sub.add_parser("probe", help="Execute or replay versioned research probe cases")
+    probe.add_argument("case", type=Path)
+    source = probe.add_mutually_exclusive_group()
+    source.add_argument("--execute", choices=["lerobot", "openpi"])
+    source.add_argument("--trace", type=Path)
+    probe.add_argument("--python", type=Path, help="Explicit isolated OpenPI worker interpreter")
+    probe.add_argument("--save-trace", type=Path)
+    probe.add_argument("--json", dest="json_path", type=Path)
+    probe.add_argument("--counterexample", type=Path)
+    probe.add_argument("--format", choices=["text", "json"], default="text")
     args = parser.parse_args(argv)
     try:
+        if args.command == "probe":
+            from .probe_cli import run
+
+            return run(args)
         if args.save_trace and not args.execute:
             raise InputError("--save-trace requires --execute")
         bundle, root = load_bundle(args.bundle)

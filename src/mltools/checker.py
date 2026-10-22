@@ -50,7 +50,11 @@ def verify_artifacts(bundle: dict, root: Path) -> tuple[list[Finding], dict[str,
 def statistics(path: Path | None, size: int) -> dict | None:
     if path is None:
         return None
-    stats = read_json(path)
+    return validate_statistics(read_json(path), size)
+
+
+def validate_statistics(stats: dict, size: int) -> dict:
+    """Validate already parsed statistics without re-reading their source."""
     try:
         vector(stats["mean"], size, "stats.mean")
         vector(stats["std"], size, "stats.std")

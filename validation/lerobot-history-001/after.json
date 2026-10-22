@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "development_only": true,
+  "final_evaluation": false,
+  "phase": "after",
+  "status": "PASS",
+  "classification": "historical_processor_source_reproduction_with_synthetic_boundary_inputs",
+  "identity": {
+    "revision": "7c98c1b2ce309f94e542bd4b9ee3fe176301edbf",
+    "git_blobs": {
+      "processor/relative_action_processor.py": "346acd1b4c4906087467985cd89a483de2635de2",
+      "policies/pretrained.py": "1bbed0378a43310113fc661241e7995fc2e0c548",
+      "processor/__init__.py": "455c90d672970fdd5da36f3965bd32d9e278b930",
+      "rollout/context.py": "7fc3c0d7e402af745a1a6dfcf64da0aab1b0162a",
+      "rollout/inference/sync.py": "30631b7939cdd68595c7140f86924746f649226a",
+      "scripts/lerobot_eval.py": "6aa586ed032a775cc17470a5256d61a116f3c73d"
+    },
+    "direct_url": {
+      "url": "https://github.com/huggingface/lerobot.git",
+      "vcs_info": {
+        "vcs": "git",
+        "commit_id": "7c98c1b2ce309f94e542bd4b9ee3fe176301edbf",
+        "requested_revision": "7c98c1b2ce309f94e542bd4b9ee3fe176301edbf"
+      }
+    }
+  },
+  "events": [
+    {
+      "state": 1.0,
+      "offset": 0.1,
+      "expected": 1.1,
+      "actual": 1.1,
+      "anchor": 1.0,
+      "queue_remaining": 2
+    },
+    {
+      "state": 5.0,
+      "offset": 0.2,
+      "expected": 1.2,
+      "actual": 1.2,
+      "anchor": 1.0,
+      "queue_remaining": 1
+    },
+    {
+      "state": 9.0,
+      "offset": 0.3,
+      "expected": 1.3,
+      "actual": 1.3,
+      "anchor": 1.0,
+      "queue_remaining": 0
+    },
+    {
+      "state": 20.0,
+      "offset": 0.4,
+      "expected": 20.4,
+      "actual": 20.4,
+      "anchor": 20.0,
+      "queue_remaining": 0
+    },
+    {
+      "state": 30.0,
+      "offset": 0.5,
+      "expected": 30.5,
+      "actual": 30.5,
+      "anchor": 30.0,
+      "queue_remaining": 1
+    }
+  ],
+  "reset": {
+    "pending_before_reset": 1,
+    "anchor_cleared": true,
+    "new_chunk_actual": 40.7,
+    "new_chunk_expected": 40.7
+  },
+  "worker_sha256": "cb9e7d6b7d1a15d4a7e0664b5493c2b3fcd36cb09752f5df68fc20fc5df6f9c8",
+  "runtime": {
+    "python": "3.13.7",
+    "torch": "2.11.0+cpu",
+    "dependency_scope": "shared current locked CPU dependencies; not original full training runtime"
+  },
+  "limits": [
+    "Real complete installed historical source; no extracted code fragments",
+    "Fixture queue supplies known outputs; no policy inference or checkpoint weights",
+    "Public evaluation-style processor sequence, not full evaluation environment",
+    "Parent synchronous rollout guard and RTC exclusions remain as documented",
+    "No ACT-relative integration, hardware units, robot safety or task-success claim"
+  ]
+}

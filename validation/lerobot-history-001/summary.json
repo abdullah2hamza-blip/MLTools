@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "development_only": true,
+  "final_evaluation": false,
+  "classification": "genuine historical processors with explicit synthetic queue boundary inputs",
+  "worker_sha256": "cb9e7d6b7d1a15d4a7e0664b5493c2b3fcd36cb09752f5df68fc20fc5df6f9c8",
+  "phases": [
+    {
+      "phase": "before",
+      "revision": "240ea44cf9f887df944019cf46e18a0d496e1a56",
+      "file": "before.json",
+      "sha256": "8fc5e6fad1aba4f2fd9c9aaf63d1152a6283ae171c7431b4d72be894a925c042",
+      "status": "FAIL",
+      "observed": [
+        1.1,
+        5.2,
+        9.3,
+        20.4,
+        30.5
+      ]
+    },
+    {
+      "phase": "after",
+      "revision": "7c98c1b2ce309f94e542bd4b9ee3fe176301edbf",
+      "file": "after.json",
+      "sha256": "8ea4ec0a909e65f691167ecac904d0ad04965750a22ea17020d5c3a0625aacf2",
+      "status": "PASS",
+      "observed": [
+        1.1,
+        1.2,
+        1.3,
+        20.4,
+        30.5
+      ]
+    }
+  ],
+  "reference_authority": "research/publication/lerobot-history.md",
+  "scope": "Processor-level before/fix source reproduction, reset and refill; not a full historical environment or policy task"
+}

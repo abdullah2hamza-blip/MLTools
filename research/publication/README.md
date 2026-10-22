@@ -16,14 +16,18 @@ The current hypothesis is narrower: compile independently grounded, partially sp
 
 `method.md` states the proposed assumptions and scope. `protocol-draft.json` is explicitly **not frozen**. No final evaluation may run until the dataset inventory, authority labels, splits, methods, tolerances, budgets and protocol hashes are fixed in a committed revision. Existing examples, previously inspected incidents and their descendants are development evidence and cannot be relabeled held-out results.
 
+The versioned `mltools probe` workflow now supports explicit execution, offline replay, provenance checks and original/reduced regression cases across both frameworks (`docs/probe-cases.md`). Development evidence under `validation/probe-cases-001/` includes actual published ACT statistics loaded through native Safetensors, separately decoded reference values, missing physical authority, and an explicitly injected wrong-statistics case. Fresh captures under `validation/probe-cases-002/` verify the reviewed implementation that binds execution to a single bounded statistics-byte snapshot. `scripts/verify_probe_evidence.py` checks saved file identities, original regression replay and fresh reduced witnesses without either ML framework; `validation/probe-workflow-verification.json` records package/test verification. `inventory-draft.json` and `selection/` record candidate revisions, licenses, dataset lineage and selection gaps. ACT boccia remains unexecuted; ACT move-cube is grouped with the existing SmolVLA development lineage.
+
+`lerobot-history.md` and `validation/lerobot-history-001/` now record genuine installed parent/fix processor execution for PR4057's chunk-anchor drift, using an explicit fixture queue. The pre-existing documentation/training path independently grounds the intended anchor. Historical synchronous-rollout guards, RTC exclusions and missing ACT-relative support are preserved. This is retrospective processor evidence, not a full historical rollout or a benchmark result from the current probe checker. Integration into the frozen evaluation remains required.
+
 ## Completion ledger
 
 | Objective | Current evidence | Still required |
 | --- | --- | --- |
 | Literature/contribution | Close prior art identified; primary-source register started | Complete focused audit, defensible contribution and venue fit |
 | Formal method | Development specification, compiler, numerical/canonical guards and actual OpenPI captures | Scope proofs/review, meaningful contribution validation, broader composition support |
-| Tool | Existing API/CLI and LeRobot; isolated genuine OpenPI API, witnesses | Unified research CLI/formats, integration hardening and broader semantic coverage |
-| Benchmark | Pinned source/controller audit and labeled retrospective processor reconstruction | Three policy families, two embodiments with permitted artifacts; annotated pinned corpus and independent incident reproductions |
+| Tool | Versioned probe API/CLI for both frameworks, offline replay and real reduced regression execution; original boundary checker | Integration hardening and broader shared semantic coverage |
+| Benchmark | Three-family candidate ledger; published ACT and SmolVLA metadata; pinned controller and incident source audits | Final eligible corpus, independent lineages, second embodiment artifact scope and real incident reproductions |
 | Evaluation | Draft protocol, leakage/independence rules | Frozen inventory and splits before final runs; real experiments and uncertainty analysis |
 | Baselines/ablations | Prototype baselines described in existing research | Executable fair comparisons, stateful manual baseline, ablations and attribution |
 | Reproducibility | Existing prototype evidence, OpenPI subset locks, development capture/reanalysis runner | Final experiment runner, raw research results, figure/table pipeline and clean main-result reproduction |

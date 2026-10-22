@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "development_only": true,
+  "final_evaluation": false,
+  "cases": [
+    {
+      "case": "lerobot/good",
+      "case_sha256": "b0d285c82458e57cd12e8c1b4573cf68be5b69b17b45c9e2207a9b4d2f38ced7",
+      "label": "synthetic_correct_control",
+      "status": "PASS",
+      "checks": {
+        "binding": "PASS",
+        "producer": "PASS",
+        "artifacts": "PASS",
+        "obligations": "PASS"
+      },
+      "trace": "lerobot_good.trace.json",
+      "trace_sha256": "d80d69c1eb909188ac688df09a55478d2d57660e714bdf5cdd92016c285bb7f7",
+      "report": "lerobot_good.report.json",
+      "report_sha256": "4a68149c8af1a73f58e9193ff215c186e5164798f57563146f98bc6b71a87933"
+    },
+    {
+      "case": "lerobot/moving_anchor",
+      "case_sha256": "e8e68ded657cafc8a316211d6b3f6e1c76d28ada724627ba0f04fc5412219065",
+      "label": "injected_composition_fault",
+      "status": "FAIL",
+      "checks": {
+        "binding": "PASS",
+        "producer": "PASS",
+        "artifacts": "PASS",
+        "obligations": "FAIL"
+      },
+      "trace": "lerobot_moving_anchor.trace.json",
+      "trace_sha256": "661b207ff786eea1811360388b1f710edc85ddeec5fc1d1744bdf18fbb8f4ff1",
+      "report": "lerobot_moving_anchor.report.json",
+      "report_sha256": "26c3dd3e3bfb530b83baa3f434db8ab5263c2ded0179ff2eb8de7d50a88d13ad",
+      "fresh_witness": {
+        "queries": 2,
+        "status": "FAIL",
+        "source_case": "original/witness-0.case.json"
+      }
+    },
+    {
+      "case": "act/metadata",
+      "case_sha256": "8b4558967b058ac1d4fb052885cdd8841b582af4b89354789e9d9793f8fe3f4d",
+      "label": "published_artifact_partial_authority",
+      "status": "UNKNOWN",
+      "checks": {
+        "binding": "PASS",
+        "producer": "PASS",
+        "artifacts": "PASS",
+        "obligations": "PASS",
+        "physical_semantics": "UNKNOWN"
+      },
+      "trace": "act_metadata.trace.json",
+      "trace_sha256": "841f2a54196f48d4c4ff4f470f85b59369f0c43e726d81e875ff21e3ef88980a",
+      "report": "act_metadata.report.json",
+      "report_sha256": "d702cdd0ed1ee55f9e56222b52324ff6bf80ea8accd0c83654a629fa6d897852"
+    },
+    {
+      "case": "act/wrong_stats.case",
+      "case_sha256": "4a920263ff57a72fa2aa6c664a414bdf45e54767cd0fe277fea8fe0945ce57b9",
+      "label": "published_artifact_injected_normalization_fault",
+      "status": "FAIL",
+      "checks": {
+        "binding": "PASS",
+        "producer": "PASS",
+        "artifacts": "PASS",
+        "obligations": "FAIL",
+        "physical_semantics": "UNKNOWN"
+      },
+      "trace": "act_wrong_stats.case.trace.json",
+      "trace_sha256": "1b85579db7073467a9036592fc61047466a95cc4f9f9edc12da5dde8f5eee8fd",
+      "report": "act_wrong_stats.case.report.json",
+      "report_sha256": "28b2f529e22a2892bfe74ca1c0021d6911064dd0ad3f0e98900277305c1e6adf",
+      "fresh_witness": {
+        "queries": 1,
+        "status": "FAIL",
+        "source_case": "original/witness-0.case.json"
+      }
+    },
+    {
+      "case": "openpi/good",
+      "case_sha256": "6bb6c3e74f88e529f209abfde398a50b30e974f1b7f4b917ed485a2489130501",
+      "label": "synthetic_correct_control",
+      "status": "PASS",
+      "checks": {
+        "binding": "PASS",
+        "producer": "PASS",
+        "artifacts": "PASS",
+        "obligations": "PASS"
+      },
+      "trace": "openpi_good.trace.json",
+      "trace_sha256": "ecc5f8f33dd2a965788e50b97f1fe96dd10cbc0d3e845dac0432f4149e4b0d9f",
+      "report": "openpi_good.report.json",
+      "report_sha256": "284cb6de9cd7ae06da8e535288a6624b2171b350bf0a7983f2b197e382bc24a0"
+    },
+    {
+      "case": "openpi/moving_anchor",
+      "case_sha256": "e189856776b32b2238d81ae3e43e1ffad4820486c13f07961841e4d44beccd6a",
+      "label": "injected_composition_fault",
+      "status": "FAIL",
+      "checks": {
+        "binding": "PASS",
+        "producer": "PASS",
+        "artifacts": "PASS",
+        "obligations": "FAIL"
+      },
+      "trace": "openpi_moving_anchor.trace.json",
+      "trace_sha256": "f459127dab08a020c65bb6cd27176d5617669bae7b5eb52a0dd38caed7ea6a75",
+      "report": "openpi_moving_anchor.report.json",
+      "report_sha256": "b0657eed0ad28664ebd3bae37685532ae5cf801307d5ac538a673ac1e3638a77",
+      "fresh_witness": {
+        "queries": 2,
+        "status": "FAIL",
+        "source_case": "original/witness-0.case.json"
+      }
+    }
+  ],
+  "scope": [
+    "Published ACT statistics are genuinely loaded via native safetensors, no ACT inference",
+    "Synthetic temporal profiles and separately labeled injected faults are development cases",
+    "Published ACT physical semantics remain UNKNOWN despite matching numeric normalization",
+    "ACT boccia selection candidate was not executed or used for tuning"
+  ]
+}

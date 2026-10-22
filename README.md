@@ -82,9 +82,9 @@ Exit codes: **0 PASS**, **1 FAIL**, **2 UNKNOWN**, **3 operational/input error**
 
 ## Publication research in progress
 
-The active [publication project](research/publication/README.md) includes a [development API](docs/affine-development.md) for bounded affine probes, partial-reference checking, design-rank diagnostics and query witnesses. A separate [OpenPI CPU integration](integrations/openpi/README.md) executes genuine pinned LIBERO processors, including quantile normalization and model-specific camera masks, without model weights. It has explicit API execution and data-only reanalysis; it is separate from the existing `mltools check` bundle format and CLI.
+The active [publication project](research/publication/README.md) includes a [development API](docs/affine-development.md) for bounded affine probes, partial-reference checking, design-rank diagnostics and query witnesses. The versioned [`mltools probe` workflow](docs/probe-cases.md) adds explicit execution, data-only replay, provenance checks and regression export for LeRobot and an isolated [OpenPI CPU integration](integrations/openpi/README.md). It is separate from the existing `mltools check` bundle format.
 
-[Recorded development evidence](research/publication/development/README.md) distinguishes synthetic controls, injected faults and a source-backed legacy composition reconstruction. These are development evidence, not a frozen benchmark or publication result. The literature audit identified close prior art; novelty and the proposed contribution remain under investigation. The full benchmark, final comparisons, research CLI and paper are unfinished.
+[Recorded development evidence](research/publication/development/README.md) distinguishes synthetic controls, injected faults and a source-backed legacy composition reconstruction. [New CLI evidence](validation/probe-cases-001/summary.json) also uses actual published ACT statistics: numeric normalization passes while missing physical authority keeps the overall result UNKNOWN. These are development evidence, not a frozen benchmark or publication result. The literature audit identified close prior art; novelty and the proposed contribution remain under investigation. The full benchmark, final comparisons and paper are unfinished.
 
 ## Limits
 

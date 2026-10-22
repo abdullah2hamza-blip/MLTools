@@ -14,10 +14,19 @@ class InputError(ValueError):
     """Invalid data or invocation, distinct from a conformance finding."""
 
 
-def digest(path: Path) -> str:
+def read_bytes(path: Path) -> bytes:
+    """Read one bounded snapshot, including files that grow after the size check."""
     if path.stat().st_size > MAX_BYTES:
         raise InputError(f"File exceeds {MAX_BYTES} bytes: {path.name}")
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+    with path.open("rb") as source:
+        data = source.read(MAX_BYTES + 1)
+    if len(data) > MAX_BYTES:
+        raise InputError(f"File exceeds {MAX_BYTES} bytes: {path.name}")
+    return data
+
+
+def digest(path: Path) -> str:
+    return hashlib.sha256(read_bytes(path)).hexdigest()
 
 
 def _pairs(pairs):
@@ -54,18 +63,24 @@ def ensure_json(value) -> None:
             raise InputError("Only JSON data values are supported")
 
 
-def read_json(path: Path) -> dict:
+def parse_json(data: bytes) -> dict:
+    """Parse exactly the bounded bytes whose identity a producer records."""
     try:
-        if path.stat().st_size > MAX_BYTES:
-            raise InputError(f"JSON exceeds {MAX_BYTES} bytes: {path.name}")
-        result = json.loads(
-            path.read_text(encoding="utf-8"), object_pairs_hook=_pairs, parse_constant=_constant
-        )
+        if len(data) > MAX_BYTES:
+            raise InputError(f"JSON exceeds {MAX_BYTES} bytes")
+        result = json.loads(data.decode("utf-8"), object_pairs_hook=_pairs, parse_constant=_constant)
         if not isinstance(result, dict):
             raise InputError("JSON document must be an object")
         ensure_json(result)
         return result
-    except (OSError, UnicodeError, json.JSONDecodeError, RecursionError) as exc:
+    except (UnicodeError, json.JSONDecodeError, RecursionError) as exc:
+        raise InputError(f"Cannot parse JSON: {exc}") from exc
+
+
+def read_json(path: Path) -> dict:
+    try:
+        return parse_json(read_bytes(path))
+    except OSError as exc:
         raise InputError(f"Cannot read JSON {path.name}: {exc}") from exc
 
 
