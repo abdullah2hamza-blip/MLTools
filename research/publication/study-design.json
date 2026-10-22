@@ -201,5 +201,12 @@
     "Validate runner/reporting/witness logic on development metadata and self-authored fixtures only.",
     "Freeze exact per-case inputs, numerical profiles, condition artifacts, seeds, budgets, method applicability and all execution/analysis source hashes in a committed protocol.",
     "Run prospective cells only after verifying that committed freeze; retain failures and deviations."
-  ]
+  ],
+  "implemented_development_primitives": {
+    "query_format": "scripts/action_designs.py; mltools-action-normalization-design schema version 1",
+    "numerical_references": "scripts/normalization_profiles.py; explicitly separate LeRobot mean/std, LeRobot quantile and OpenPI quantile binary64 profiles",
+    "verification": "validation/action-normalization-primitives-verification.json",
+    "native_execution_implemented": false,
+    "scope": "Software fixtures only; no prospective execution outcomes or protocol freeze"
+  }
 }

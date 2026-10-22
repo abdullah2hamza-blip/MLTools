@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "development_only": true,
+  "final_evaluation": false,
+  "prospective_execution_outcomes_observed": false,
+  "tested_files": [
+    "tests/test_action_designs.py",
+    "tests/test_normalization_profiles.py",
+    "tests/test_query_designs.py"
+  ],
+  "targeted_suite": {"passed": 49, "seconds": 0.40},
+  "new_tests": 30,
+  "unchanged_existing_geometry_tests": 19,
+  "lint": "ruff check and format --check passed for src, tests, scripts and examples/so101/build_cases.py; 78 files",
+  "scope": "Hand-calculated numerical/geometry fixtures and strict data-format checks; no new native capture or final benchmark result",
+  "native_parity": "Pending in the new study runner; existing certificate native controls have their own separate profiles and evidence"
+}

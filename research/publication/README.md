@@ -46,6 +46,8 @@ The versioned `mltools probe` workflow now supports explicit execution, offline 
 
 `study-design.json` selects a finite 24-condition prospective metadata study: ACT boccia, SmolVLA orange and PI05/LIBERO under native LeRobot decoders, with the same PI artifact explicitly transported into OpenPI. It excludes unresolved original GCS assets from prospective vendoring and keeps shared base/corpus ancestry visible. Metadata inspection is disclosed; this is neither blinded nor ancestry-disjoint. The design is **not a frozen protocol**: action-only execution, matched baselines, development validation and a committed complete freeze must precede prospective outcomes.
 
+`scripts/action_designs.py` now implements a separate, truthful action-only query format, with canonical IDs and all eight equal-budget geometries. `normalization_profiles.py` provides explicitly different binary64 numerical references for LeRobot MEAN_STD, LeRobot QUANTILES and OpenPI quantiles. `docs/action-normalization-study.md` records their mathematical/development scope. Native acquisition and final matched comparisons remain pending; these primitives have not observed prospective execution outcomes.
+
 | Objective | Current evidence | Still required |
 | --- | --- | --- |
 | Literature/contribution | Close prior art identified; primary-source register started | Complete focused audit, defensible contribution and venue fit |
