@@ -1,0 +1,26 @@
+{
+  "file_sha256": {
+    "validation/stateful-comparison-001/inputs/absolute_body.bundle.json": "5d3cd8563ce4e43a8f6fdc4e3c2c438fcb68d7d05139a7a49caa3f054b528fc4",
+    "validation/stateful-comparison-001/inputs/control.bundle.json": "b78523a2ebbbe27fd68b18a0504d1c39f3edbbb36531ad7dc8bc9f4c797852c5",
+    "validation/stateful-comparison-001/inputs/missing_authority.bundle.json": "4975dfc8e640b8a74e3bbbb5d8b3e9f78c9b77d41504c3fd6d8f6cd561137887",
+    "validation/stateful-comparison-001/inputs/missing_controller_units.bundle.json": "318e8bfba9e3d1edbc70decd28040f035f1e39845733953727554d771a642c48",
+    "validation/stateful-comparison-001/inputs/moving_anchor.bundle.json": "a5f52a2d8f5ba7476a13a75e17c63d783ad84aa26c5b8e3f1ea2fd0f4e1b05a3",
+    "validation/stateful-comparison-001/inputs/plan.json": "8518942db5b65e0dda13a34d4950c8e9897aea5316043f67bfd6b9edec0714ab",
+    "validation/stateful-comparison-001/inputs/relative_gripper.bundle.json": "1c55c56d77d7ac4071db4d407c5b85e05044b14626690f794bc66600ac264157",
+    "validation/stateful-comparison-001/inputs/shared/checkpoint_config.json": "cd65033090dc0d2d6cbec210350fb1d77fb9a42f4cb7a9ae2cddcbc79494e86d",
+    "validation/stateful-comparison-001/inputs/shared/training_stats.json": "393edbc9314a9236ce0a70af847d7a7c52bde65bae3cf6bd585b3401c33e455b",
+    "validation/stateful-comparison-001/inputs/shared/wrong_stats.json": "14a5d9acb8bb7e3c649dec5371ac18d0efb7d7d4ddca32fad8fb1acace1356ee",
+    "validation/stateful-comparison-001/inputs/wrong_controller_units.bundle.json": "f8881251e88940c6e9fcfed61bcc15d1d6cfe410116aaa5e9b483a906b527d61",
+    "validation/stateful-comparison-001/inputs/wrong_stats.bundle.json": "216194e369aa13ca44137b638a6db4f6171863e28ffc663130f303fa5eaf96eb"
+  },
+  "bundles": {
+    "control": "validation/stateful-comparison-001/inputs/control.bundle.json",
+    "moving_anchor": "validation/stateful-comparison-001/inputs/moving_anchor.bundle.json",
+    "wrong_stats": "validation/stateful-comparison-001/inputs/wrong_stats.bundle.json",
+    "relative_gripper": "validation/stateful-comparison-001/inputs/relative_gripper.bundle.json",
+    "absolute_body": "validation/stateful-comparison-001/inputs/absolute_body.bundle.json",
+    "missing_authority": "validation/stateful-comparison-001/inputs/missing_authority.bundle.json",
+    "missing_controller_units": "validation/stateful-comparison-001/inputs/missing_controller_units.bundle.json",
+    "wrong_controller_units": "validation/stateful-comparison-001/inputs/wrong_controller_units.bundle.json"
+  }
+}

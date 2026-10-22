@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "status": "FAIL",
+  "embodiment": "Derived SO101 software fixture; not hardware/calibration",
+  "checks": {
+    "actions": "FAIL",
+    "artifacts": "PASS"
+  },
+  "findings": [
+    {
+      "check": "artifacts",
+      "status": "PASS",
+      "boundary": "training_stats",
+      "message": "Artifact SHA-256 verified",
+      "event": null,
+      "expected": "393edbc9314a9236ce0a70af847d7a7c52bde65bae3cf6bd585b3401c33e455b",
+      "actual": "393edbc9314a9236ce0a70af847d7a7c52bde65bae3cf6bd585b3401c33e455b"
+    },
+    {
+      "check": "artifacts",
+      "status": "PASS",
+      "boundary": "wrong_stats",
+      "message": "Artifact SHA-256 verified",
+      "event": null,
+      "expected": "14a5d9acb8bb7e3c649dec5371ac18d0efb7d7d4ddca32fad8fb1acace1356ee",
+      "actual": "14a5d9acb8bb7e3c649dec5371ac18d0efb7d7d4ddca32fad8fb1acace1356ee"
+    },
+    {
+      "check": "artifacts",
+      "status": "PASS",
+      "boundary": "checkpoint_config",
+      "message": "Artifact SHA-256 verified",
+      "event": null,
+      "expected": "cd65033090dc0d2d6cbec210350fb1d77fb9a42f4cb7a9ae2cddcbc79494e86d",
+      "actual": "cd65033090dc0d2d6cbec210350fb1d77fb9a42f4cb7a9ae2cddcbc79494e86d"
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 1,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 1,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 1,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 1,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 2.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 1,
+      "expected": 1,
+      "actual": 1
+    }
+  ],
+  "first_divergence": {
+    "check": "actions",
+    "status": "FAIL",
+    "boundary": "controller.commands",
+    "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+    "event": 1,
+    "expected": {
+      "shoulder_pan.pos": 1.0,
+      "shoulder_lift.pos": 2.0,
+      "elbow_flex.pos": 3.0,
+      "wrist_flex.pos": 4.0,
+      "wrist_roll.pos": 5.0,
+      "gripper.pos": 15.0
+    },
+    "actual": {
+      "shoulder_pan.pos": 2.0,
+      "shoulder_lift.pos": 2.0,
+      "elbow_flex.pos": 3.0,
+      "wrist_flex.pos": 4.0,
+      "wrist_roll.pos": 5.0,
+      "gripper.pos": 15.0
+    }
+  },
+  "counterexample": {
+    "original_event": 1,
+    "start_event": 0,
+    "events": [
+      {
+        "kind": "reset"
+      },
+      {
+        "kind": "tick",
+        "state": {
+          "shoulder_pan": 0.0,
+          "shoulder_lift": 0.0,
+          "elbow_flex": 0.0,
+          "wrist_flex": 0.0,
+          "wrist_roll": 0.0,
+          "gripper": 50.0
+        },
+        "cameras": {},
+        "prediction": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      }
+    ],
+    "scope": "Single event for input checks; episode prefix preserves stateful failure context."
+  },
+  "execution": {
+    "revision": "5517a326eeb9b457cfe07d59b9bfdf291799c8d9",
+    "git_blobs": {
+      "processor/relative_action_processor.py": "3405402904cf15ca18227b3a3fe006d7936f9d53",
+      "processor/normalize_processor.py": "b0eafcef75e187887c8ea642cfe138f9cf8e79a9",
+      "processor/rename_processor.py": "d17f93dcd990861a2b5ade5914f4595e85eece16",
+      "processor/policy_robot_bridge.py": "bd43c0e81a52c4b75c0c3029e110541484300c89",
+      "processor/pipeline.py": "3cfdf680b27da74d75c9d1b4f8c7f69182c28b02",
+      "configs/types.py": "18359ef0575a4f560a65f21e2d6ddf534edc770f",
+      "robots/so_follower/so_follower.py": "be78bc9623b72155bb87660763d7e2c2ed481d5f",
+      "robots/so_follower/config_so_follower.py": "af4dda782b562064c1b80902ab5948b07ddc43de"
+    },
+    "source_newlines": "canonical LF",
+    "adapter": "mltools.lerobot",
+    "framework": "lerobot",
+    "device": "cpu",
+    "torch_version": "2.11.0+cpu",
+    "dtype": "float64",
+    "scope": "Real processors; fixture configuration, known actions; no model inference or hardware"
+  },
+  "limitations": [
+    "Finite fixtures, independent declared reference, and listed boundaries only.",
+    "No trained-weight inference, task-success, calibration, or robot-safety claim.",
+    "Integrators must establish the authority and physical identity of reference labels.",
+    "Recorded traces are producer assertions, not authenticated execution attestations."
+  ],
+  "bundle_sha256": "80cc3f844ae5685cce44438984ca68c4dc56e7353015f1f5102f64786f5c5f48",
+  "tolerances": {
+    "absolute": 1e-07,
+    "relative": 1e-07
+  }
+}

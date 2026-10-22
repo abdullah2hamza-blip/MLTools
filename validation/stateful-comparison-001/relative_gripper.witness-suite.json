@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "method": "affine-obligations-development",
+  "axes": [
+    {
+      "port": "action",
+      "name": "0",
+      "unit": "normalized",
+      "lower": -1,
+      "upper": 1
+    },
+    {
+      "port": "action",
+      "name": "1",
+      "unit": "normalized",
+      "lower": -1,
+      "upper": 1
+    },
+    {
+      "port": "action",
+      "name": "2",
+      "unit": "normalized",
+      "lower": -1,
+      "upper": 1
+    },
+    {
+      "port": "action",
+      "name": "3",
+      "unit": "normalized",
+      "lower": -1,
+      "upper": 1
+    },
+    {
+      "port": "action",
+      "name": "4",
+      "unit": "normalized",
+      "lower": -1,
+      "upper": 1
+    },
+    {
+      "port": "action",
+      "name": "5",
+      "unit": "normalized",
+      "lower": -1,
+      "upper": 1
+    },
+    {
+      "port": "origin",
+      "name": "0",
+      "unit": "degree",
+      "lower": -10,
+      "upper": 10
+    },
+    {
+      "port": "origin",
+      "name": "1",
+      "unit": "degree",
+      "lower": -10,
+      "upper": 10
+    },
+    {
+      "port": "origin",
+      "name": "2",
+      "unit": "degree",
+      "lower": -10,
+      "upper": 10
+    },
+    {
+      "port": "origin",
+      "name": "3",
+      "unit": "degree",
+      "lower": -10,
+      "upper": 10
+    },
+    {
+      "port": "origin",
+      "name": "4",
+      "unit": "degree",
+      "lower": -10,
+      "upper": 10
+    },
+    {
+      "port": "origin",
+      "name": "5",
+      "unit": "range_0_100",
+      "lower": 0,
+      "upper": 100
+    },
+    {
+      "port": "current",
+      "name": "0",
+      "unit": "degree",
+      "lower": -10,
+      "upper": 10
+    },
+    {
+      "port": "current",
+      "name": "1",
+      "unit": "degree",
+      "lower": -10,
+      "upper": 10
+    },
+    {
+      "port": "current",
+      "name": "2",
+      "unit": "degree",
+      "lower": -10,
+      "upper": 10
+    },
+    {
+      "port": "current",
+      "name": "3",
+      "unit": "degree",
+      "lower": -10,
+      "upper": 10
+    },
+    {
+      "port": "current",
+      "name": "4",
+      "unit": "degree",
+      "lower": -10,
+      "upper": 10
+    },
+    {
+      "port": "current",
+      "name": "5",
+      "unit": "range_0_100",
+      "lower": 0,
+      "upper": 100
+    }
+  ],
+  "outputs": [
+    "shoulder_pan.pos",
+    "shoulder_lift.pos",
+    "elbow_flex.pos",
+    "wrist_flex.pos",
+    "wrist_roll.pos",
+    "gripper.pos"
+  ],
+  "probes": [
+    {
+      "id": "center",
+      "coordinates": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        50.0
+      ]
+    }
+  ]
+}

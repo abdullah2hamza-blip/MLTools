@@ -34,6 +34,8 @@ The versioned `mltools probe` workflow now supports explicit execution, offline 
 
 `selection/smolvla/` now pins two additional Apache-declared, previously unexecuted SmolVLA metadata bundles with distinct declared task datasets. Both remain selection candidates with null training dataset revisions; the DM-arm base path is unresolved. Metadata inspection and bounded stdlib statistics decoding do not establish native execution, independent pretraining, physical semantics or completed benchmark coverage. Their split roles must be frozen before observing case outcomes.
 
+`validation/stateful-comparison-001/` adds newly executed, identical-observation comparisons between the original stateful checker and the compiled evaluator, with the original full reports retained separately from the matched second-dequeue projection. Both agree on all eight conditions of one reused scalar SO101 development cluster. All reduced witnesses reproduce their original failed relation in fresh native captures. The original prefix witnesses use 1–2 native actions versus 2–4 for the compiler; this is a negative result for witness-size superiority under that metric. `docs/stateful-comparison.md` records scope, raw evidence, closed-manifest replay checks and limitations. Published metadata and OpenPI end-effector domains are not forced into the original checker's scalar model.
+
 ## Completion ledger
 
 | Objective | Current evidence | Still required |
@@ -43,7 +45,7 @@ The versioned `mltools probe` workflow now supports explicit execution, offline 
 | Tool | Versioned probe API/CLI for both frameworks, offline replay and real reduced regression execution; original boundary checker | Integration hardening and broader shared semantic coverage |
 | Benchmark | Three-family candidate ledger; published ACT and SmolVLA metadata; pinned controller and incident source audits | Final eligible corpus, independent lineages, second embodiment artifact scope and real incident reproductions |
 | Evaluation | Draft protocol, leakage/independence rules | Frozen inventory and splits before final runs; real experiments and uncertainty analysis |
-| Baselines/ablations | Native preflight/Policy Space, robotruth extraction/checking and ActionABI CPU library controls; independent numerical oracles/ablations; equal-budget manual/random queries | Final matched-evidence comparisons, v0.1 stateful baseline, certificates/other applicable workflows, witness/cost evaluation and attribution |
+| Baselines/ablations | Native preflight/Policy Space, robotruth extraction/checking and ActionABI CPU library controls; independent numerical oracles/ablations; equal-budget manual/random queries; original stateful matched comparison and fresh witness costs | Final matched-evidence comparisons, certificates/other applicable workflows, broader witness/cost evaluation and attribution |
 | Reproducibility | Existing evidence/locks/runners; clean environment/source/build reproduction of ActionABI native controls with identical outputs | Final experiment runner, raw research results, figure/table pipeline and clean main-result reproduction |
 | Paper | No research paper written | Verified citations, full source/bibliography, compiled PDF and visual inspection |
 

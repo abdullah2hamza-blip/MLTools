@@ -7,6 +7,8 @@ validation/native-baselines-*/preflight/*/native-report.json -text whitespace=bl
 research/probes/*results.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 validation/openpi-history-*/*.stdout.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 validation/openpi-history-*/*.stderr.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+validation/stateful-comparison-*/*.stdout.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+validation/stateful-comparison-*/*.stderr.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 research/publication/development/query-designs-*/*.stdout.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 research/publication/development/query-designs-*/*.stderr.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 # Native extraction controls preserve copied publisher bytes and synthetic input bytes.

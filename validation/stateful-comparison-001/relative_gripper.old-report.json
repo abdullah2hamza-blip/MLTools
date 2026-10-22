@@ -1,0 +1,4868 @@
+{
+  "schema_version": 1,
+  "status": "FAIL",
+  "embodiment": "Derived SO101 software fixture; not hardware/calibration",
+  "checks": {
+    "actions": "FAIL",
+    "artifacts": "PASS"
+  },
+  "findings": [
+    {
+      "check": "artifacts",
+      "status": "PASS",
+      "boundary": "training_stats",
+      "message": "Artifact SHA-256 verified",
+      "event": null,
+      "expected": "393edbc9314a9236ce0a70af847d7a7c52bde65bae3cf6bd585b3401c33e455b",
+      "actual": "393edbc9314a9236ce0a70af847d7a7c52bde65bae3cf6bd585b3401c33e455b"
+    },
+    {
+      "check": "artifacts",
+      "status": "PASS",
+      "boundary": "wrong_stats",
+      "message": "Artifact SHA-256 verified",
+      "event": null,
+      "expected": "14a5d9acb8bb7e3c649dec5371ac18d0efb7d7d4ddca32fad8fb1acace1356ee",
+      "actual": "14a5d9acb8bb7e3c649dec5371ac18d0efb7d7d4ddca32fad8fb1acace1356ee"
+    },
+    {
+      "check": "artifacts",
+      "status": "PASS",
+      "boundary": "checkpoint_config",
+      "message": "Artifact SHA-256 verified",
+      "event": null,
+      "expected": "cd65033090dc0d2d6cbec210350fb1d77fb9a42f4cb7a9ae2cddcbc79494e86d",
+      "actual": "cd65033090dc0d2d6cbec210350fb1d77fb9a42f4cb7a9ae2cddcbc79494e86d"
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 1,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 1,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 1,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 1,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 1,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 2,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 2,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 2,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 4,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 4,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 4,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 4,
+      "expected": {
+        "shoulder_pan.pos": 3.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 3.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 4,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 5,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 5,
+      "expected": {
+        "shoulder_pan.pos": 3.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 3.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 5,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 7,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 7,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 7,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 7,
+      "expected": {
+        "shoulder_pan.pos": -1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": -1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 7,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 8,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 8,
+      "expected": {
+        "shoulder_pan.pos": -1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": -1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 8,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 10,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 10,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 10,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 10,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 5.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 5.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 10,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 11,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 11,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 5.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 5.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 11,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 13,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 13,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 13,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 13,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": -1.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": -1.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 13,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 14,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 14,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": -1.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": -1.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 14,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 16,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 16,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 16,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 16,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 7.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 7.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 16,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 17,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 17,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 7.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 7.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 17,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 19,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 19,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 19,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 19,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": -1.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": -1.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 19,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 20,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 20,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": -1.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": -1.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 20,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 22,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 22,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 22,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 22,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 9.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 9.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 22,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 23,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 23,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 9.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 9.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 23,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 25,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 25,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 25,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 25,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": -1.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": -1.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 25,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 26,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 26,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": -1.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": -1.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 26,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 28,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 28,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 28,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 28,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 11.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 11.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 28,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 29,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 29,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 11.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 11.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 29,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 31,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 31,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 31,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 31,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": -1.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": -1.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 31,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 32,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 32,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": -1.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": -1.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 32,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 34,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 34,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 34,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 34,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 19
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 69.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 34,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 35,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 35,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 19
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 69.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 35,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 37,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 37,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 37,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 37,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 11
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 61.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 37,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 38,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 38,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 11
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 61.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 38,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 40,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 40,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 40,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 40,
+      "expected": {
+        "shoulder_pan.pos": 11.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 11.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 40,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 41,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 41,
+      "expected": {
+        "shoulder_pan.pos": 11.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 11.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 41,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 43,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 43,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 43,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 43,
+      "expected": {
+        "shoulder_pan.pos": -9.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": -9.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 43,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 44,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 44,
+      "expected": {
+        "shoulder_pan.pos": -9.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": -9.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 44,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 46,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 46,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 46,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 46,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 12.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 12.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 46,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 47,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 47,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 12.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 12.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 47,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 49,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 49,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 49,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 49,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": -8.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": -8.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 49,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 50,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 50,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": -8.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": -8.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 50,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 52,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 52,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 52,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 52,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 13.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 13.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 52,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 53,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 53,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 13.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 13.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 53,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 55,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 55,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 55,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 55,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": -7.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": -7.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 55,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 56,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 56,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": -7.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": -7.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 56,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 58,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 58,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 58,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 58,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 14.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 14.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 58,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 59,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 59,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 14.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 14.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 59,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 61,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 61,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 61,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 61,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": -6.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": -6.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 61,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 62,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 62,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": -6.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": -6.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 62,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 64,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 64,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 64,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 64,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 15.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 15.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 64,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 65,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 65,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 15.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 15.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 65,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 67,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 67,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 67,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 67,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": -5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": -5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 67,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 68,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 68,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": -5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": -5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 68,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 70,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 70,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 70,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 70,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 115.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 70,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 71,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 71,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 115.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 71,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 73,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 73,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 73,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 73,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 73,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 74,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 74,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 74,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 76,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 76,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 76,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 76,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 76,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 77,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 77,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 77,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 79,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 79,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 79,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 79,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 79,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 80,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 80,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 80,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 82,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 82,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 82,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 82,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 82,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 83,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 83,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 83,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 85,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 85,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 85,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 85,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 85,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 86,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 86,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 86,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 88,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 88,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 88,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 88,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 88,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 89,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 89,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 89,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 91,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 91,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 91,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 91,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 91,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 92,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 92,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 92,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 94,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 94,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 94,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 94,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 94,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 95,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 95,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 95,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 97,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 97,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 97,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 97,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 97,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 98,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 98,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 98,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 100,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 100,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 100,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 100,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 100,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 101,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 101,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 101,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 103,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 103,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 103,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 103,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 103,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 104,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 104,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 104,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 106,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 106,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 106,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 106,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 106,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 107,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 107,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 107,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 109,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 109,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 109,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 109,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 109,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 110,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 110,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 65.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 110,
+      "expected": 0,
+      "actual": 0
+    }
+  ],
+  "first_divergence": {
+    "check": "actions",
+    "status": "FAIL",
+    "boundary": "controller.commands",
+    "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+    "event": 1,
+    "expected": {
+      "shoulder_pan.pos": 1.0,
+      "shoulder_lift.pos": 2.0,
+      "elbow_flex.pos": 3.0,
+      "wrist_flex.pos": 4.0,
+      "wrist_roll.pos": 5.0,
+      "gripper.pos": 15.0
+    },
+    "actual": {
+      "shoulder_pan.pos": 1.0,
+      "shoulder_lift.pos": 2.0,
+      "elbow_flex.pos": 3.0,
+      "wrist_flex.pos": 4.0,
+      "wrist_roll.pos": 5.0,
+      "gripper.pos": 65.0
+    }
+  },
+  "counterexample": {
+    "original_event": 1,
+    "start_event": 0,
+    "events": [
+      {
+        "kind": "reset"
+      },
+      {
+        "kind": "tick",
+        "state": {
+          "shoulder_pan": 0.0,
+          "shoulder_lift": 0.0,
+          "elbow_flex": 0.0,
+          "wrist_flex": 0.0,
+          "wrist_roll": 0.0,
+          "gripper": 50.0
+        },
+        "cameras": {},
+        "prediction": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      }
+    ],
+    "scope": "Single event for input checks; episode prefix preserves stateful failure context."
+  },
+  "execution": {
+    "revision": "5517a326eeb9b457cfe07d59b9bfdf291799c8d9",
+    "git_blobs": {
+      "processor/relative_action_processor.py": "3405402904cf15ca18227b3a3fe006d7936f9d53",
+      "processor/normalize_processor.py": "b0eafcef75e187887c8ea642cfe138f9cf8e79a9",
+      "processor/rename_processor.py": "d17f93dcd990861a2b5ade5914f4595e85eece16",
+      "processor/policy_robot_bridge.py": "bd43c0e81a52c4b75c0c3029e110541484300c89",
+      "processor/pipeline.py": "3cfdf680b27da74d75c9d1b4f8c7f69182c28b02",
+      "configs/types.py": "18359ef0575a4f560a65f21e2d6ddf534edc770f",
+      "robots/so_follower/so_follower.py": "be78bc9623b72155bb87660763d7e2c2ed481d5f",
+      "robots/so_follower/config_so_follower.py": "af4dda782b562064c1b80902ab5948b07ddc43de"
+    },
+    "source_newlines": "canonical LF",
+    "adapter": "mltools.lerobot",
+    "framework": "lerobot",
+    "device": "cpu",
+    "torch_version": "2.11.0+cpu",
+    "dtype": "float64",
+    "scope": "Real processors; fixture configuration, known actions; no model inference or hardware"
+  },
+  "limitations": [
+    "Finite fixtures, independent declared reference, and listed boundaries only.",
+    "No trained-weight inference, task-success, calibration, or robot-safety claim.",
+    "Integrators must establish the authority and physical identity of reference labels.",
+    "Recorded traces are producer assertions, not authenticated execution attestations."
+  ],
+  "bundle_sha256": "1c55c56d77d7ac4071db4d407c5b85e05044b14626690f794bc66600ac264157",
+  "tolerances": {
+    "absolute": 1e-07,
+    "relative": 1e-07
+  }
+}

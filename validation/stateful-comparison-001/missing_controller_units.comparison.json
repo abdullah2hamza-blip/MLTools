@@ -1,0 +1,678 @@
+{
+  "matched_scope": "Same second-dequeue named scalar commands and declared units",
+  "queries": 37,
+  "native_actions": 74,
+  "common_authority_and_unit_status": "UNKNOWN",
+  "original_native_full_status": "UNKNOWN",
+  "original_matched_status": "UNKNOWN",
+  "compiled_matched_status": "UNKNOWN",
+  "old_projection_findings": [
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 2,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 2,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 5,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 5,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 8,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 8,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 11,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 11,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 14,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 14,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 17,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 17,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 20,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 20,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 23,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 23,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 26,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 26,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 29,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 29,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 32,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 32,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 35,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 35,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 38,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 38,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 41,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 41,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 44,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 44,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 47,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 47,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 50,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 50,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 53,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 53,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 56,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 56,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 59,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 59,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 62,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 62,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 65,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 65,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 68,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 68,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 71,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 71,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 74,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 74,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 77,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 77,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 80,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 80,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 83,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 83,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 86,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 86,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 89,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 89,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 92,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 92,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 95,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 95,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 98,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 98,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 101,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 101,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 104,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 104,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 107,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 107,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 110,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 110,
+      "expected": null,
+      "actual": null
+    }
+  ],
+  "scope_limits": "Original full report also checks first actions/queues/horizon; matched projection is explicit, not a renamed native verdict"
+}

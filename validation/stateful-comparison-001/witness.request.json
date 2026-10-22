@@ -1,0 +1,34 @@
+{
+  "file_sha256": {
+    "validation/stateful-comparison-001/inputs/absolute_body.bundle.json": "5d3cd8563ce4e43a8f6fdc4e3c2c438fcb68d7d05139a7a49caa3f054b528fc4",
+    "validation/stateful-comparison-001/inputs/absolute_body.compiled-witness.bundle.json": "79f1cee46b4761bc163a0e1a5fec89869eea0aed758c2a1a1a9dbd44e3d5cb6a",
+    "validation/stateful-comparison-001/inputs/absolute_body.old-witness.bundle.json": "2230dd26cb21972d765805b9a534c6571906779f26207b26f1f7e55c31b10297",
+    "validation/stateful-comparison-001/inputs/control.bundle.json": "b78523a2ebbbe27fd68b18a0504d1c39f3edbbb36531ad7dc8bc9f4c797852c5",
+    "validation/stateful-comparison-001/inputs/missing_authority.bundle.json": "4975dfc8e640b8a74e3bbbb5d8b3e9f78c9b77d41504c3fd6d8f6cd561137887",
+    "validation/stateful-comparison-001/inputs/missing_controller_units.bundle.json": "318e8bfba9e3d1edbc70decd28040f035f1e39845733953727554d771a642c48",
+    "validation/stateful-comparison-001/inputs/moving_anchor.bundle.json": "a5f52a2d8f5ba7476a13a75e17c63d783ad84aa26c5b8e3f1ea2fd0f4e1b05a3",
+    "validation/stateful-comparison-001/inputs/moving_anchor.compiled-witness.bundle.json": "e00871fc21d369f68593092c36b3a8a4c50f3aa671464a66b1d76e353982392b",
+    "validation/stateful-comparison-001/inputs/moving_anchor.old-witness.bundle.json": "d52f894344bb6543cd04d0b6e3f52e0d887ca599cc9dc07c32ee24b1199c9b15",
+    "validation/stateful-comparison-001/inputs/plan.json": "8518942db5b65e0dda13a34d4950c8e9897aea5316043f67bfd6b9edec0714ab",
+    "validation/stateful-comparison-001/inputs/relative_gripper.bundle.json": "1c55c56d77d7ac4071db4d407c5b85e05044b14626690f794bc66600ac264157",
+    "validation/stateful-comparison-001/inputs/relative_gripper.compiled-witness.bundle.json": "16c9f25e33c6b72831e15569c413ac68573b0843e63c54b813c46b4fe6872212",
+    "validation/stateful-comparison-001/inputs/relative_gripper.old-witness.bundle.json": "d4680e7527e6b6641da3a95e96d9cf51e8331720e6b44bb608373353ed357ce9",
+    "validation/stateful-comparison-001/inputs/shared/checkpoint_config.json": "cd65033090dc0d2d6cbec210350fb1d77fb9a42f4cb7a9ae2cddcbc79494e86d",
+    "validation/stateful-comparison-001/inputs/shared/training_stats.json": "393edbc9314a9236ce0a70af847d7a7c52bde65bae3cf6bd585b3401c33e455b",
+    "validation/stateful-comparison-001/inputs/shared/wrong_stats.json": "14a5d9acb8bb7e3c649dec5371ac18d0efb7d7d4ddca32fad8fb1acace1356ee",
+    "validation/stateful-comparison-001/inputs/wrong_controller_units.bundle.json": "f8881251e88940c6e9fcfed61bcc15d1d6cfe410116aaa5e9b483a906b527d61",
+    "validation/stateful-comparison-001/inputs/wrong_stats.bundle.json": "216194e369aa13ca44137b638a6db4f6171863e28ffc663130f303fa5eaf96eb",
+    "validation/stateful-comparison-001/inputs/wrong_stats.compiled-witness.bundle.json": "8a5247e2d42cbc3738de04cb0d23c96b939ce3fc87dc1db9e1e92ecdc3ce800a",
+    "validation/stateful-comparison-001/inputs/wrong_stats.old-witness.bundle.json": "80cc3f844ae5685cce44438984ca68c4dc56e7353015f1f5102f64786f5c5f48"
+  },
+  "bundles": {
+    "moving_anchor:old": "validation/stateful-comparison-001/inputs/moving_anchor.old-witness.bundle.json",
+    "moving_anchor:compiled": "validation/stateful-comparison-001/inputs/moving_anchor.compiled-witness.bundle.json",
+    "wrong_stats:old": "validation/stateful-comparison-001/inputs/wrong_stats.old-witness.bundle.json",
+    "wrong_stats:compiled": "validation/stateful-comparison-001/inputs/wrong_stats.compiled-witness.bundle.json",
+    "relative_gripper:old": "validation/stateful-comparison-001/inputs/relative_gripper.old-witness.bundle.json",
+    "relative_gripper:compiled": "validation/stateful-comparison-001/inputs/relative_gripper.compiled-witness.bundle.json",
+    "absolute_body:old": "validation/stateful-comparison-001/inputs/absolute_body.old-witness.bundle.json",
+    "absolute_body:compiled": "validation/stateful-comparison-001/inputs/absolute_body.compiled-witness.bundle.json"
+  }
+}

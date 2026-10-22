@@ -1,0 +1,34 @@
+{
+  "control": {
+    "original_check_seconds": 0.045792799995979294,
+    "compiled_evaluate_seconds": 0.022894599998835474
+  },
+  "moving_anchor": {
+    "original_check_seconds": 0.043814700009534135,
+    "compiled_evaluate_seconds": 0.021799300011480227
+  },
+  "wrong_stats": {
+    "original_check_seconds": 0.053231900004902855,
+    "compiled_evaluate_seconds": 0.019431900000199676
+  },
+  "relative_gripper": {
+    "original_check_seconds": 0.0500334000098519,
+    "compiled_evaluate_seconds": 0.019179900002200156
+  },
+  "absolute_body": {
+    "original_check_seconds": 0.06253779999678954,
+    "compiled_evaluate_seconds": 0.02879060001578182
+  },
+  "missing_authority": {
+    "original_check_seconds": 0.055024599976604804,
+    "compiled_evaluate_seconds": 0.023442800011252984
+  },
+  "missing_controller_units": {
+    "original_check_seconds": 0.04997270001331344,
+    "compiled_evaluate_seconds": 0.015101299999514595
+  },
+  "wrong_controller_units": {
+    "original_check_seconds": 0.05971609998960048,
+    "compiled_evaluate_seconds": 0.020770900009665638
+  }
+}

@@ -1,0 +1,1775 @@
+{
+  "schema_version": 1,
+  "contract": {
+    "embodiment": "Derived SO101 software fixture; not hardware/calibration",
+    "authority": {
+      "source": "Independently authored SO101 calibration fixture, not a trained checkpoint",
+      "physical_labels": "examples/so101/good.json"
+    },
+    "checks": [
+      "actions"
+    ],
+    "joints": [
+      {
+        "name": "shoulder_pan",
+        "unit": "degree",
+        "mode": "relative"
+      },
+      {
+        "name": "shoulder_lift",
+        "unit": "degree",
+        "mode": "relative"
+      },
+      {
+        "name": "elbow_flex",
+        "unit": "degree",
+        "mode": "relative"
+      },
+      {
+        "name": "wrist_flex",
+        "unit": "degree",
+        "mode": "relative"
+      },
+      {
+        "name": "wrist_roll",
+        "unit": "degree",
+        "mode": "relative"
+      },
+      {
+        "name": "gripper",
+        "unit": "range_0_100",
+        "mode": "absolute"
+      }
+    ],
+    "cameras": [],
+    "normalization": {
+      "kind": "mean_std",
+      "artifact": "training_stats"
+    },
+    "horizon": 2
+  },
+  "adapter": {
+    "state_order": [
+      "shoulder_pan",
+      "shoulder_lift",
+      "elbow_flex",
+      "wrist_flex",
+      "wrist_roll",
+      "gripper"
+    ],
+    "action_names": [
+      "shoulder_pan",
+      "shoulder_lift",
+      "elbow_flex",
+      "wrist_flex",
+      "wrist_roll",
+      "gripper"
+    ],
+    "motor_names": [
+      "shoulder_pan",
+      "shoulder_lift",
+      "elbow_flex",
+      "wrist_flex",
+      "wrist_roll",
+      "gripper"
+    ],
+    "camera_map": {},
+    "relative": true,
+    "exclude_joints": [],
+    "bind_queue": true,
+    "reset": true,
+    "stats_artifact": "training_stats",
+    "units": {
+      "shoulder_pan": "degree",
+      "shoulder_lift": "degree",
+      "elbow_flex": "degree",
+      "wrist_flex": "degree",
+      "wrist_roll": "degree",
+      "gripper": "range_0_100"
+    }
+  },
+  "artifacts": [
+    {
+      "id": "training_stats",
+      "path": "shared/training_stats.json",
+      "sha256": "393edbc9314a9236ce0a70af847d7a7c52bde65bae3cf6bd585b3401c33e455b"
+    },
+    {
+      "id": "wrong_stats",
+      "path": "shared/wrong_stats.json",
+      "sha256": "14a5d9acb8bb7e3c649dec5371ac18d0efb7d7d4ddca32fad8fb1acace1356ee"
+    },
+    {
+      "id": "checkpoint_config",
+      "path": "shared/checkpoint_config.json",
+      "sha256": "cd65033090dc0d2d6cbec210350fb1d77fb9a42f4cb7a9ae2cddcbc79494e86d"
+    }
+  ],
+  "scenario": [
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          1,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          -1,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -1,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          1,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          -1,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          1,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          -1,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          1,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          -1,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          -1,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 10,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": -10,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 10,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": -10,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 10,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": -10,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 10,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": -10,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 10,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": -10,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 100
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 10,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": -10,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 10,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": -10,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 10,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": -10,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 10,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": -10,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 10,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": -10,
+        "gripper": 50.0
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 100
+      },
+      "cameras": {}
+    },
+    {
+      "kind": "reset"
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 50.0
+      },
+      "cameras": {},
+      "prediction": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "kind": "tick",
+      "state": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 0
+      },
+      "cameras": {}
+    }
+  ]
+}

@@ -1,0 +1,2735 @@
+{
+  "schema_version": 1,
+  "status": "UNKNOWN",
+  "embodiment": "Derived SO101 software fixture; not hardware/calibration",
+  "checks": {
+    "actions": "UNKNOWN",
+    "artifacts": "PASS"
+  },
+  "findings": [
+    {
+      "check": "artifacts",
+      "status": "PASS",
+      "boundary": "training_stats",
+      "message": "Artifact SHA-256 verified",
+      "event": null,
+      "expected": "393edbc9314a9236ce0a70af847d7a7c52bde65bae3cf6bd585b3401c33e455b",
+      "actual": "393edbc9314a9236ce0a70af847d7a7c52bde65bae3cf6bd585b3401c33e455b"
+    },
+    {
+      "check": "artifacts",
+      "status": "PASS",
+      "boundary": "wrong_stats",
+      "message": "Artifact SHA-256 verified",
+      "event": null,
+      "expected": "14a5d9acb8bb7e3c649dec5371ac18d0efb7d7d4ddca32fad8fb1acace1356ee",
+      "actual": "14a5d9acb8bb7e3c649dec5371ac18d0efb7d7d4ddca32fad8fb1acace1356ee"
+    },
+    {
+      "check": "artifacts",
+      "status": "PASS",
+      "boundary": "checkpoint_config",
+      "message": "Artifact SHA-256 verified",
+      "event": null,
+      "expected": "cd65033090dc0d2d6cbec210350fb1d77fb9a42f4cb7a9ae2cddcbc79494e86d",
+      "actual": "cd65033090dc0d2d6cbec210350fb1d77fb9a42f4cb7a9ae2cddcbc79494e86d"
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 1,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 1,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 1,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 1,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 1,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 2,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 2,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 2,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 4,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 4,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 4,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 4,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 4,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 5,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 5,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 5,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 7,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 7,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 7,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 7,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 7,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 8,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 8,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 8,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 10,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 10,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 10,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 10,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 10,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 11,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 11,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 11,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 13,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 13,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 13,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 13,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 13,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 14,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 14,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 14,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 16,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 16,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 16,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 16,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 16,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 17,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 17,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 17,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 19,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 19,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 19,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 19,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 19,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 20,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 20,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 20,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 22,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 22,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 22,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 22,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 22,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 23,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 23,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 23,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 25,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 25,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 25,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 25,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 25,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 26,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 26,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 26,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 28,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 28,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 28,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 28,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 28,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 29,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 29,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 29,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 31,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 31,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 31,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 31,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 31,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 32,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 32,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 32,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 34,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 34,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 34,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 34,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 34,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 35,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 35,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 35,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 37,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 37,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 37,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 37,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 37,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 38,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 38,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 38,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 40,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 40,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 40,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 40,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 40,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 41,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 41,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 41,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 43,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 43,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 43,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 43,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 43,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 44,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 44,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 44,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 46,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 46,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 46,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 46,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 46,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 47,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 47,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 47,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 49,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 49,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 49,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 49,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 49,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 50,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 50,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 50,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 52,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 52,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 52,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 52,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 52,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 53,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 53,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 53,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 55,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 55,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 55,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 55,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 55,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 56,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 56,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 56,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 58,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 58,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 58,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 58,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 58,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 59,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 59,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 59,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 61,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 61,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 61,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 61,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 61,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 62,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 62,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 62,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 64,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 64,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 64,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 64,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 64,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 65,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 65,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 65,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 67,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 67,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 67,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 67,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 67,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 68,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 68,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 68,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 70,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 70,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 70,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 70,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 70,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 71,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 71,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 71,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 73,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 73,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 73,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 73,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 73,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 74,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 74,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 74,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 76,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 76,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 76,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 76,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 76,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 77,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 77,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 77,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 79,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 79,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 79,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 79,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 79,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 80,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 80,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 80,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 82,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 82,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 82,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 82,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 82,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 83,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 83,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 83,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 85,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 85,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 85,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 85,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 85,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 86,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 86,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 86,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 88,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 88,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 88,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 88,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 88,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 89,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 89,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 89,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 91,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 91,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 91,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 91,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 91,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 92,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 92,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 92,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 94,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 94,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 94,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 94,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 94,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 95,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 95,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 95,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 97,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 97,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 97,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 97,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 97,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 98,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 98,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 98,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 100,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 100,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 100,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 100,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 100,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 101,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 101,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 101,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 103,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 103,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 103,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 103,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 103,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 104,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 104,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 104,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 106,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 106,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 106,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 106,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 106,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 107,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 107,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 107,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.horizon",
+      "message": "Predicted chunk must match declared horizon",
+      "event": 109,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "training.horizon",
+      "message": "Training chunk horizon must match contract",
+      "event": 109,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 109,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 109,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 109,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.units",
+      "message": "Independent reference or trace evidence missing",
+      "event": 110,
+      "expected": {},
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "UNKNOWN",
+      "boundary": "controller.commands",
+      "message": "Cannot interpret commands without controller units",
+      "event": 110,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "policy.queue",
+      "message": "Queue consumption matches the declared one-action-per-tick lifecycle",
+      "event": 110,
+      "expected": 0,
+      "actual": 0
+    }
+  ],
+  "first_divergence": null,
+  "counterexample": null,
+  "execution": {
+    "revision": "5517a326eeb9b457cfe07d59b9bfdf291799c8d9",
+    "git_blobs": {
+      "processor/relative_action_processor.py": "3405402904cf15ca18227b3a3fe006d7936f9d53",
+      "processor/normalize_processor.py": "b0eafcef75e187887c8ea642cfe138f9cf8e79a9",
+      "processor/rename_processor.py": "d17f93dcd990861a2b5ade5914f4595e85eece16",
+      "processor/policy_robot_bridge.py": "bd43c0e81a52c4b75c0c3029e110541484300c89",
+      "processor/pipeline.py": "3cfdf680b27da74d75c9d1b4f8c7f69182c28b02",
+      "configs/types.py": "18359ef0575a4f560a65f21e2d6ddf534edc770f",
+      "robots/so_follower/so_follower.py": "be78bc9623b72155bb87660763d7e2c2ed481d5f",
+      "robots/so_follower/config_so_follower.py": "af4dda782b562064c1b80902ab5948b07ddc43de"
+    },
+    "source_newlines": "canonical LF",
+    "adapter": "mltools.lerobot",
+    "framework": "lerobot",
+    "device": "cpu",
+    "torch_version": "2.11.0+cpu",
+    "dtype": "float64",
+    "scope": "Real processors; fixture configuration, known actions; no model inference or hardware"
+  },
+  "limitations": [
+    "Finite fixtures, independent declared reference, and listed boundaries only.",
+    "No trained-weight inference, task-success, calibration, or robot-safety claim.",
+    "Integrators must establish the authority and physical identity of reference labels.",
+    "Recorded traces are producer assertions, not authenticated execution attestations."
+  ],
+  "bundle_sha256": "318e8bfba9e3d1edbc70decd28040f035f1e39845733953727554d771a642c48",
+  "tolerances": {
+    "absolute": 1e-07,
+    "relative": 1e-07
+  }
+}

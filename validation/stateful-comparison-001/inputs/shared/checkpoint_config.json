@@ -1,0 +1,26 @@
+{
+  "fixture_only": true,
+  "state_order": [
+    "shoulder_pan",
+    "shoulder_lift",
+    "elbow_flex",
+    "wrist_flex",
+    "wrist_roll",
+    "gripper"
+  ],
+  "action_names": [
+    "shoulder_pan",
+    "shoulder_lift",
+    "elbow_flex",
+    "wrist_flex",
+    "wrist_roll",
+    "gripper"
+  ],
+  "relative": true,
+  "exclude_joints": [
+    "gripper"
+  ],
+  "horizon": 2,
+  "camera_map": {},
+  "use_degrees": true
+}

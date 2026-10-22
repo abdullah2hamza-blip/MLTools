@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "development_only": true,
+  "evidence": "validation/stateful-comparison-001/summary.json",
+  "new_data_only_tests": {"passed": 9, "seconds": 20.55},
+  "full_suite": {
+    "passed": 206,
+    "skipped": 5,
+    "failed": 1,
+    "seconds": 3466.42,
+    "failure": "Existing ActionABI score-tampering subprocess timed out; no assertion mismatch was reported"
+  },
+  "targeted_failure_rerun": {
+    "test": "tests/test_actionabi_evidence.py::test_optimized_actionabi_evidence[score]",
+    "passed": 1,
+    "seconds": 1.77
+  },
+  "unique_tests_after_rerun": {"passed": 207, "skipped": 5},
+  "lint": "ruff check and format --check passed for src, tests, scripts and examples/so101/build_cases.py; 61 files",
+  "optimized_replay": "Passed with .venv-smoke Python under -O, without ML imports",
+  "scope": "Development runner and evidence verification; no final benchmark or scientific sample-count claim"
+}

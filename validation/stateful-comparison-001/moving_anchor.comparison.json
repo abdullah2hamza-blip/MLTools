@@ -1,0 +1,1714 @@
+{
+  "matched_scope": "Same second-dequeue named scalar commands and declared units",
+  "queries": 37,
+  "native_actions": 74,
+  "common_authority_and_unit_status": "PASS",
+  "original_native_full_status": "FAIL",
+  "original_matched_status": "FAIL",
+  "compiled_matched_status": "FAIL",
+  "old_projection_findings": [
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 2,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 2,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 5,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 5,
+      "expected": {
+        "shoulder_pan.pos": 3.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 3.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 8,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 8,
+      "expected": {
+        "shoulder_pan.pos": -1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": -1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 11,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 11,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 5.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 5.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 14,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 14,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": -1.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": -1.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 17,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 17,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 7.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 7.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 20,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 20,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": -1.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": -1.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 23,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 23,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 9.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 9.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 26,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 26,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": -1.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": -1.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 29,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 29,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 11.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 11.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 32,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 32,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": -1.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": -1.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 35,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 35,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 19
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 19.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 38,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 38,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 11
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 11.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 41,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 41,
+      "expected": {
+        "shoulder_pan.pos": 11.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 44,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 44,
+      "expected": {
+        "shoulder_pan.pos": -9.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 47,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 47,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 12.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 50,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 50,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": -8.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 53,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 53,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 13.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 56,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 56,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": -7.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 59,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 59,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 14.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 62,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 62,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": -6.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 65,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 65,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 15.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 68,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 68,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": -5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 71,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 71,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 74,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 74,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 77,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 77,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 11.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 80,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 80,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": -9.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 83,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 83,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 12.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 86,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 86,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": -8.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 89,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 89,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 13.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 92,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 92,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": -7.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 95,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 95,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 14.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 98,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 98,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": -6.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 101,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 101,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 15.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 104,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "FAIL",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 104,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": -5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 107,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 107,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.units",
+      "message": "Controller units must match the physical contract",
+      "event": 110,
+      "expected": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      },
+      "actual": {
+        "shoulder_pan": "degree",
+        "shoulder_lift": "degree",
+        "elbow_flex": "degree",
+        "wrist_flex": "degree",
+        "wrist_roll": "degree",
+        "gripper": "range_0_100"
+      }
+    },
+    {
+      "check": "actions",
+      "status": "PASS",
+      "boundary": "controller.commands",
+      "message": "Named commands must preserve modes, gripper convention, and originating chunk anchor",
+      "event": 110,
+      "expected": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      },
+      "actual": {
+        "shoulder_pan.pos": 1.0,
+        "shoulder_lift.pos": 2.0,
+        "elbow_flex.pos": 3.0,
+        "wrist_flex.pos": 4.0,
+        "wrist_roll.pos": 5.0,
+        "gripper.pos": 15.0
+      }
+    }
+  ],
+  "scope_limits": "Original full report also checks first actions/queues/horizon; matched projection is explicit, not a renamed native verdict"
+}
