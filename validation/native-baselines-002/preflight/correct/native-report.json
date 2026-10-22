@@ -1,0 +1,7 @@
+{
+  "format": "robot-policy-preflight/v1",
+  "locale": "en",
+  "status": "pass",
+  "summary": "0 incompatibility finding(s)",
+  "findings": []
+}

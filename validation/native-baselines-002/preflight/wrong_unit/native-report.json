@@ -1,0 +1,17 @@
+{
+  "format": "robot-policy-preflight/v1",
+  "locale": "en",
+  "status": "fail",
+  "summary": "1 incompatibility finding(s)",
+  "findings": [
+    {
+      "code": "unit",
+      "details": {
+        "name": "action",
+        "left": "degree",
+        "right": "rad"
+      },
+      "message": "Unit mismatch for action: degree versus rad"
+    }
+  ]
+}

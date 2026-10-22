@@ -8,11 +8,26 @@
     "How much public integration evidence supports a grounded verdict, and where must the tool abstain?",
     "Can real historical integration failures and intended legacy conventions be reproduced without trained-weight inference?"
   ],
-  "minimum_scope": {"frameworks": 2, "policy_families": 3, "embodiments": 2},
-  "candidate_frameworks": ["LeRobot", "OpenPI"],
-  "candidate_families": ["ACT", "SmolVLA", "PI0/PI05"],
+  "minimum_scope": {
+    "frameworks": 2,
+    "policy_families": 3,
+    "embodiments": 2
+  },
+  "candidate_frameworks": [
+    "LeRobot",
+    "OpenPI"
+  ],
+  "candidate_families": [
+    "ACT",
+    "SmolVLA",
+    "PI0/PI05"
+  ],
   "family_rule": "Do not count framework versions or normalization variants as independent policy families",
-  "candidate_embodiments": ["SO101", "LIBERO/Panda", "ALOHA if independently supported"],
+  "candidate_embodiments": [
+    "SO101",
+    "LIBERO/Panda",
+    "ALOHA if independently supported"
+  ],
   "inventory_status": "Not fixed; no final research dataset or evaluation exists",
   "split_rules": {
     "existing_examples": "development-only, including all derived copies and previous public-checkpoint evidence",
@@ -46,9 +61,16 @@
     "Existing v0.1 MLTools independent stateful checker",
     "Equal-budget random and manual probes",
     "ExecSpec-style normalization certificate, faithfully scoped and labeled if reimplemented",
-    "Applicable Policy Space/Tether/preflight/XPolicyLab workflows or explicit unavailability limits"
+    "Applicable Policy Space/Tether/preflight/XPolicyLab workflows or explicit unavailability limits",
+    "Applicable robotruth manifest comparison and ActionABI finite-grammar audit, with source-verified scope and equal evidence"
   ],
-  "ablation_axes": ["independent reference", "temporal state", "provenance", "probe design", "witness reduction"],
+  "ablation_axes": [
+    "independent reference",
+    "temporal state",
+    "provenance",
+    "probe design",
+    "witness reduction"
+  ],
   "resource_plan": {
     "status": "development limits, must be finalized in freeze",
     "hardware": "local CPU only; no paid compute or robot control",
@@ -58,7 +80,11 @@
     "final_experiment_cpu_hours": 2,
     "metadata_download_mib": 100,
     "weights": "excluded unless separately justified and explicitly permitted in an amended plan",
-    "development_machine_observed": {"logical_cpus": 16, "ram_gib": 15.3, "available_ram_gib_at_check": 2.8},
+    "development_machine_observed": {
+      "logical_cpus": 16,
+      "ram_gib": 15.3,
+      "available_ram_gib_at_check": 2.8
+    },
     "dependency_installation": "separate pinned CPU environments; dependency downloads recorded separately from benchmark metadata"
   },
   "freeze_gate": [

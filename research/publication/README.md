@@ -6,7 +6,7 @@ Status: active research development. The existing package is a working software 
 
 [Tai, 2026](https://arxiv.org/abs/2606.03724) already studies executable VLA specifications and derives normalization-mismatch certificates. The original broad idea therefore cannot be claimed as our research novelty. [XPolicyLab, 2026](https://arxiv.org/abs/2608.09892) also covers standardized policy interfaces and isolated runtimes. Classical conformance testing and ML metamorphic/differential testing are established prior art. `literature.json` records inspected primary sources and unresolved questions; the audit is ongoing.
 
-The current hypothesis is narrower: compile independently grounded, partially specified interface contracts into distinguishing temporal experiments, quantify what their observations identify, and produce small behavioral witnesses across real framework compositions. Neither novelty nor effectiveness of that hypothesis has been established. The mathematical basis is ordinary affine identification and model-based testing; the proposed contribution would have to come from the supported composition, partial-evidence semantics, cross-framework method and empirical corpus.
+The current hypothesis is narrower: compile independently grounded, partially specified interface contracts into distinguishing temporal experiments, quantify what their observations identify, and produce small behavioral witnesses across real framework compositions. Neither novelty nor effectiveness of that hypothesis has been established. The mathematical basis is ordinary affine identification and model-based testing; the proposed contribution would have to come from the supported composition, cross-framework method and empirical corpus. The expanded audit also identified robotruth's executable-policy manifests and ActionABI's partial-evidence equivalence sets and separating probes, so those features are not independently novel either. `baseline-audit.md` records the comparison implications.
 
 ## Current implementation
 
@@ -20,6 +20,8 @@ The versioned `mltools probe` workflow now supports explicit execution, offline 
 
 `lerobot-history.md` and `validation/lerobot-history-001/` now record genuine installed parent/fix processor execution for PR4057's chunk-anchor drift, using an explicit fixture queue. The pre-existing documentation/training path independently grounds the intended anchor. Historical synchronous-rollout guards, RTC exclusions and missing ACT-relative support are preserved. This is retrospective processor evidence, not a full historical rollout or a benchmark result from the current probe checker. Integration into the frozen evaluation remains required.
 
+`integrations/baselines/` now pins complete preflight and Policy Space packages in a hash-locked no-ML environment. `validation/native-baselines-002/` records genuine preflight CLI and Policy Space dispatcher/MessagePack/schema/lifecycle controls. These establish applicability and credit native validation behavior. They do not constitute final matched-evidence comparisons, full checkpoint/service runs or a superiority result. Tether's full paired-rollout verification and the additional close tools still require applicable comparison paths.
+
 ## Completion ledger
 
 | Objective | Current evidence | Still required |
@@ -29,7 +31,7 @@ The versioned `mltools probe` workflow now supports explicit execution, offline 
 | Tool | Versioned probe API/CLI for both frameworks, offline replay and real reduced regression execution; original boundary checker | Integration hardening and broader shared semantic coverage |
 | Benchmark | Three-family candidate ledger; published ACT and SmolVLA metadata; pinned controller and incident source audits | Final eligible corpus, independent lineages, second embodiment artifact scope and real incident reproductions |
 | Evaluation | Draft protocol, leakage/independence rules | Frozen inventory and splits before final runs; real experiments and uncertainty analysis |
-| Baselines/ablations | Prototype baselines described in existing research | Executable fair comparisons, stateful manual baseline, ablations and attribution |
+| Baselines/ablations | Pinned full-package preflight CLI and Policy Space runtime controls; expanded Tether/source audit and close-tool overlap | Matched-evidence full applicable comparisons, strong stateful/manual paired baseline, ablations and attribution |
 | Reproducibility | Existing prototype evidence, OpenPI subset locks, development capture/reanalysis runner | Final experiment runner, raw research results, figure/table pipeline and clean main-result reproduction |
 | Paper | No research paper written | Verified citations, full source/bibliography, compiled PDF and visual inspection |
 

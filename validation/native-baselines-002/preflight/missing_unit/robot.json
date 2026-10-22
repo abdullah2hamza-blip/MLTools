@@ -1,0 +1,23 @@
+{
+  "fps": 20,
+  "observations": {
+    "state": {
+      "shape": [
+        3
+      ],
+      "dtype": "float32",
+      "unit": "rad"
+    }
+  },
+  "action": {
+    "shape": [
+      3
+    ],
+    "dtype": "float32",
+    "unit": null,
+    "range": [
+      -2,
+      2
+    ]
+  }
+}

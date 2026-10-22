@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "status": "DEVELOPMENT_SOURCE_AUDIT_NOT_BENCHMARK",
+  "checked_on": "2026-10-22",
+  "repositories": [
+    {
+      "repository": "gbesse/robot-policy-preflight",
+      "revision": "09137467bbf988bf5f4cc7418f8e300eaa6dd191",
+      "inspected_sources": [
+        {
+          "path": "pyproject.toml",
+          "git_blob": "629e01c565b8316b64bae0935c4057bc0e1a6544",
+          "size": 537,
+          "url": "https://github.com/gbesse/robot-policy-preflight/blob/09137467bbf988bf5f4cc7418f8e300eaa6dd191/pyproject.toml"
+        },
+        {
+          "path": "robot_policy_preflight.py",
+          "git_blob": "4621c449515b7c9193459db31c29b68c6a225b0c",
+          "size": 6553,
+          "url": "https://github.com/gbesse/robot-policy-preflight/blob/09137467bbf988bf5f4cc7418f8e300eaa6dd191/robot_policy_preflight.py"
+        }
+      ]
+    },
+    {
+      "repository": "X-Square-Robot/policy-space",
+      "revision": "4bdd7ed9b97131878fb745018ad898dfa06cc999",
+      "inspected_sources": [
+        {
+          "path": "LICENSE",
+          "git_blob": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+          "size": 11358,
+          "url": "https://github.com/X-Square-Robot/policy-space/blob/4bdd7ed9b97131878fb745018ad898dfa06cc999/LICENSE"
+        },
+        {
+          "path": "docs/contracts.md",
+          "git_blob": "c9b6c0bc75c4830f577747be39717f040c28471a",
+          "size": 1717,
+          "url": "https://github.com/X-Square-Robot/policy-space/blob/4bdd7ed9b97131878fb745018ad898dfa06cc999/docs/contracts.md"
+        },
+        {
+          "path": "packages/protocol/src/policy_space_protocol/contracts/__init__.py",
+          "git_blob": "5a6653f5f8d8055b427199af1e55164378500659",
+          "size": 3187,
+          "url": "https://github.com/X-Square-Robot/policy-space/blob/4bdd7ed9b97131878fb745018ad898dfa06cc999/packages/protocol/src/policy_space_protocol/contracts/__init__.py"
+        },
+        {
+          "path": "packages/protocol/src/policy_space_protocol/contracts/registry.py",
+          "git_blob": "3506a433202c5a4bb286424d6deb6fb234e59ae3",
+          "size": 2611,
+          "url": "https://github.com/X-Square-Robot/policy-space/blob/4bdd7ed9b97131878fb745018ad898dfa06cc999/packages/protocol/src/policy_space_protocol/contracts/registry.py"
+        },
+        {
+          "path": "packages/protocol/src/policy_space_protocol/contracts/schemas/actions/single_arm_joint_position@1.yaml",
+          "git_blob": "1cccfaf302b64e9fc8c1c58c82691f331f536450",
+          "size": 150,
+          "url": "https://github.com/X-Square-Robot/policy-space/blob/4bdd7ed9b97131878fb745018ad898dfa06cc999/packages/protocol/src/policy_space_protocol/contracts/schemas/actions/single_arm_joint_position@1.yaml"
+        },
+        {
+          "path": "packages/protocol/src/policy_space_protocol/contracts/schemas/embodiments/franka@1.yaml",
+          "git_blob": "dce2d39d9fc2e057dedd59d773466d155d3eb944",
+          "size": 161,
+          "url": "https://github.com/X-Square-Robot/policy-space/blob/4bdd7ed9b97131878fb745018ad898dfa06cc999/packages/protocol/src/policy_space_protocol/contracts/schemas/embodiments/franka@1.yaml"
+        },
+        {
+          "path": "packages/protocol/src/policy_space_protocol/contracts/schemas/observations/single_arm_rgb_joint@1.yaml",
+          "git_blob": "df5aabaf41680f4cd266a7b197eaaa9164388c42",
+          "size": 285,
+          "url": "https://github.com/X-Square-Robot/policy-space/blob/4bdd7ed9b97131878fb745018ad898dfa06cc999/packages/protocol/src/policy_space_protocol/contracts/schemas/observations/single_arm_rgb_joint@1.yaml"
+        },
+        {
+          "path": "pyproject.toml",
+          "git_blob": "9be6048e787c5f377414cacc7995c12741ada110",
+          "size": 836,
+          "url": "https://github.com/X-Square-Robot/policy-space/blob/4bdd7ed9b97131878fb745018ad898dfa06cc999/pyproject.toml"
+        },
+        {
+          "path": "src/policy_space/__init__.py",
+          "git_blob": "33dc28abde07a0c1834c7376123554979f80957a",
+          "size": 223,
+          "url": "https://github.com/X-Square-Robot/policy-space/blob/4bdd7ed9b97131878fb745018ad898dfa06cc999/src/policy_space/__init__.py"
+        },
+        {
+          "path": "src/policy_space/adapters/base.py",
+          "git_blob": "bab54b63c6a3fd3dea899da5b25c8746f1754efd",
+          "size": 2776,
+          "url": "https://github.com/X-Square-Robot/policy-space/blob/4bdd7ed9b97131878fb745018ad898dfa06cc999/src/policy_space/adapters/base.py"
+        },
+        {
+          "path": "src/policy_space/conformance.py",
+          "git_blob": "65e5a0e7b1003dafaaea04052ca635ac7b0f71fd",
+          "size": 7019,
+          "url": "https://github.com/X-Square-Robot/policy-space/blob/4bdd7ed9b97131878fb745018ad898dfa06cc999/src/policy_space/conformance.py"
+        },
+        {
+          "path": "src/policy_space/runtime/server.py",
+          "git_blob": "0cd5d260aba47fde761416a1bb9f3fd0953e6d4c",
+          "size": 37875,
+          "url": "https://github.com/X-Square-Robot/policy-space/blob/4bdd7ed9b97131878fb745018ad898dfa06cc999/src/policy_space/runtime/server.py"
+        },
+        {
+          "path": "tests/test_runtime_contract_enforcement.py",
+          "git_blob": "609729f830fd7eae1b8e217c35e138e4d149fe2a",
+          "size": 7714,
+          "url": "https://github.com/X-Square-Robot/policy-space/blob/4bdd7ed9b97131878fb745018ad898dfa06cc999/tests/test_runtime_contract_enforcement.py"
+        }
+      ]
+    },
+    {
+      "repository": "FastCrest/tether",
+      "revision": "dcbcbb5a669fa18ae07b1c22d17bd5bd386a33da",
+      "inspected_sources": [
+        {
+          "path": "LICENSE",
+          "git_blob": "ad297e6a68b8b671c4c500cb86283b309d0a73ec",
+          "size": 4919,
+          "url": "https://github.com/FastCrest/tether/blob/dcbcbb5a669fa18ae07b1c22d17bd5bd386a33da/LICENSE"
+        },
+        {
+          "path": "pyproject.toml",
+          "git_blob": "4d71dbc58098a7f0aaea71443cbe6bd19feb96be",
+          "size": 17461,
+          "url": "https://github.com/FastCrest/tether/blob/dcbcbb5a669fa18ae07b1c22d17bd5bd386a33da/pyproject.toml"
+        },
+        {
+          "path": "src/tether/action_execution_cert.py",
+          "git_blob": "40b136c7ee8703bab133a43fa3180da20be44b2d",
+          "size": 22226,
+          "url": "https://github.com/FastCrest/tether/blob/dcbcbb5a669fa18ae07b1c22d17bd5bd386a33da/src/tether/action_execution_cert.py"
+        },
+        {
+          "path": "src/tether/pro/eval_gate.py",
+          "git_blob": "be0e1e21928830990a1069710aaf6d3f44d60e8d",
+          "size": 33619,
+          "url": "https://github.com/FastCrest/tether/blob/dcbcbb5a669fa18ae07b1c22d17bd5bd386a33da/src/tether/pro/eval_gate.py"
+        },
+        {
+          "path": "src/tether/verification_evidence.py",
+          "git_blob": "4a13181333be4fc2bd8d63d3c815794ca380ba3c",
+          "size": 4338,
+          "url": "https://github.com/FastCrest/tether/blob/dcbcbb5a669fa18ae07b1c22d17bd5bd386a33da/src/tether/verification_evidence.py"
+        },
+        {
+          "path": "src/tether/verify.py",
+          "git_blob": "07826f9cf5c9fd378faaec62fff5a689191c51b5",
+          "size": 51896,
+          "url": "https://github.com/FastCrest/tether/blob/dcbcbb5a669fa18ae07b1c22d17bd5bd386a33da/src/tether/verify.py"
+        },
+        {
+          "path": "tests/test_action_execution_cert.py",
+          "git_blob": "3e03604ec0b994e89b9ff5b4fb437d032e73d886",
+          "size": 3613,
+          "url": "https://github.com/FastCrest/tether/blob/dcbcbb5a669fa18ae07b1c22d17bd5bd386a33da/tests/test_action_execution_cert.py"
+        },
+        {
+          "path": "tests/test_verify_evidence_availability.py",
+          "git_blob": "0163029ef3323896dad31333c6833f6550df5dc3",
+          "size": 8775,
+          "url": "https://github.com/FastCrest/tether/blob/dcbcbb5a669fa18ae07b1c22d17bd5bd386a33da/tests/test_verify_evidence_availability.py"
+        }
+      ]
+    },
+    {
+      "repository": "XPolicyLab/XPolicyLab",
+      "revision": "3ce0f7d5a1b78f9ef12c6c9d99f5ca2010a3fe10",
+      "inspected_sources": [
+        {
+          "path": "README.md",
+          "git_blob": "71504968b9fffb28735a0d15b29136b0bc17c681",
+          "size": 39534,
+          "url": "https://github.com/XPolicyLab/XPolicyLab/blob/3ce0f7d5a1b78f9ef12c6c9d99f5ca2010a3fe10/README.md"
+        },
+        {
+          "path": "client_server/ws/protocol/schemas.py",
+          "git_blob": "8791baa7ad852b6eff7bdd412cf1431291d53da7",
+          "size": 3018,
+          "url": "https://github.com/XPolicyLab/XPolicyLab/blob/3ce0f7d5a1b78f9ef12c6c9d99f5ca2010a3fe10/client_server/ws/protocol/schemas.py"
+        }
+      ]
+    },
+    {
+      "repository": "mulkakhileshmj/robotruth",
+      "revision": "8eb1704cf446239e3f03687c2ebd707cbab68e98",
+      "inspection_scope": "Pinned README plus bounded source review by one reused subagent; no execution or reported-performance reproduction",
+      "inspected_sources": [
+        {
+          "path": "README.md",
+          "git_blob": "d2649edb4572a94050c3f7700a3515b098cf9d8d",
+          "size": 34255,
+          "url": "https://github.com/mulkakhileshmj/robotruth/blob/8eb1704cf446239e3f03687c2ebd707cbab68e98/README.md"
+        },
+        {
+          "path": "src/robotruth/contract/spec.py",
+          "git_blob": "fc29be7420881c7e57e6e608e6603809adab3a16",
+          "size": 5341,
+          "url": "https://github.com/mulkakhileshmj/robotruth/blob/8eb1704cf446239e3f03687c2ebd707cbab68e98/src/robotruth/contract/spec.py"
+        },
+        {
+          "path": "src/robotruth/contract/check.py",
+          "git_blob": "d97cdee3ebf1bf14a1d0996983546d382a5ef97c",
+          "size": 7495,
+          "url": "https://github.com/mulkakhileshmj/robotruth/blob/8eb1704cf446239e3f03687c2ebd707cbab68e98/src/robotruth/contract/check.py"
+        },
+        {
+          "path": "src/robotruth/contract/extract.py",
+          "git_blob": "88859c18724573fae6c93c7cccea8d9cd7bd31c6",
+          "size": 23634,
+          "url": "https://github.com/mulkakhileshmj/robotruth/blob/8eb1704cf446239e3f03687c2ebd707cbab68e98/src/robotruth/contract/extract.py"
+        },
+        {
+          "path": "policyci/src/policyci/policies/act_aloha.py",
+          "git_blob": "589604ac272173b09362556287cc1c00216d6e33",
+          "size": 5378,
+          "url": "https://github.com/mulkakhileshmj/robotruth/blob/8eb1704cf446239e3f03687c2ebd707cbab68e98/policyci/src/policyci/policies/act_aloha.py"
+        }
+      ]
+    },
+    {
+      "repository": "Archerkattri/actionabi",
+      "revision": "5ad1d45a082860f5f16bb43f3c6bbb0758ec6c11",
+      "inspection_scope": "Pinned README plus bounded source review by one reused subagent; no execution or reported-performance reproduction",
+      "inspected_sources": [
+        {
+          "path": "README.md",
+          "git_blob": "18858ca42c606c68824e2a57b182cc5dc8ab25cf",
+          "size": 52493,
+          "url": "https://github.com/Archerkattri/actionabi/blob/5ad1d45a082860f5f16bb43f3c6bbb0758ec6c11/README.md"
+        },
+        {
+          "path": "include/actionabi/contract.hpp",
+          "git_blob": "736d2dc54fc8aa12b0d1f5d4811179c1475ae052",
+          "size": 790,
+          "url": "https://github.com/Archerkattri/actionabi/blob/5ad1d45a082860f5f16bb43f3c6bbb0758ec6c11/include/actionabi/contract.hpp"
+        },
+        {
+          "path": "src/score_cpu.cpp",
+          "git_blob": "fea8465dcac29caef1e980565aed1539a1067d30",
+          "size": 6167,
+          "url": "https://github.com/Archerkattri/actionabi/blob/5ad1d45a082860f5f16bb43f3c6bbb0758ec6c11/src/score_cpu.cpp"
+        },
+        {
+          "path": "src/identifiability.cpp",
+          "git_blob": "c917120e6ff46ac7e9043c99776b2ae3a0b570dc",
+          "size": 6682,
+          "url": "https://github.com/Archerkattri/actionabi/blob/5ad1d45a082860f5f16bb43f3c6bbb0758ec6c11/src/identifiability.cpp"
+        },
+        {
+          "path": "src/probe.cpp",
+          "git_blob": "04e20e4594ccc630c81746e632c1a6ea2e3ca46c",
+          "size": 6811,
+          "url": "https://github.com/Archerkattri/actionabi/blob/5ad1d45a082860f5f16bb43f3c6bbb0758ec6c11/src/probe.cpp"
+        },
+        {
+          "path": "src/converter.cpp",
+          "git_blob": "422ecd5cf9530e4b81d79a489cd115da0b58c594",
+          "size": 3494,
+          "url": "https://github.com/Archerkattri/actionabi/blob/5ad1d45a082860f5f16bb43f3c6bbb0758ec6c11/src/converter.cpp"
+        },
+        {
+          "path": "src/evidence.cpp",
+          "git_blob": "c8b8b997d11a0e62afb0f5b7a6d5fe0a84ab4b53",
+          "size": 2288,
+          "url": "https://github.com/Archerkattri/actionabi/blob/5ad1d45a082860f5f16bb43f3c6bbb0758ec6c11/src/evidence.cpp"
+        },
+        {
+          "path": "src/cli/main.cpp",
+          "git_blob": "fd99e9fe2fa73e3a119f4a29d4a4d16778e19076",
+          "size": 3375,
+          "url": "https://github.com/Archerkattri/actionabi/blob/5ad1d45a082860f5f16bb43f3c6bbb0758ec6c11/src/cli/main.cpp"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "development_only": true,
+  "final_evaluation": false,
+  "classification": "native workflow applicability controls; not a fault-detection benchmark",
+  "source_identities": {
+    "policy-space": {
+      "revision": "4bdd7ed9b97131878fb745018ad898dfa06cc999",
+      "blobs": {
+        "policy_space/__init__.py": "33dc28abde07a0c1834c7376123554979f80957a",
+        "policy_space/adapters/base.py": "bab54b63c6a3fd3dea899da5b25c8746f1754efd",
+        "policy_space/runtime/server.py": "0cd5d260aba47fde761416a1bb9f3fd0953e6d4c",
+        "policy_space/conformance.py": "65e5a0e7b1003dafaaea04052ca635ac7b0f71fd",
+        "policy_space_protocol/contracts/__init__.py": "5a6653f5f8d8055b427199af1e55164378500659",
+        "policy_space_protocol/contracts/registry.py": "3506a433202c5a4bb286424d6deb6fb234e59ae3",
+        "policy_space_protocol/contracts/schemas/observations/single_arm_rgb_joint@1.yaml": "df5aabaf41680f4cd266a7b197eaaa9164388c42",
+        "policy_space_protocol/contracts/schemas/actions/single_arm_joint_position@1.yaml": "1cccfaf302b64e9fc8c1c58c82691f331f536450",
+        "policy_space_protocol/contracts/schemas/embodiments/franka@1.yaml": "dce2d39d9fc2e057dedd59d773466d155d3eb944"
+      }
+    },
+    "robot-policy-preflight": {
+      "revision": "09137467bbf988bf5f4cc7418f8e300eaa6dd191",
+      "blobs": {
+        "robot_policy_preflight.py": "4621c449515b7c9193459db31c29b68c6a225b0c"
+      }
+    }
+  },
+  "preflight": [
+    {
+      "case": "correct",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "native_report": {
+        "format": "robot-policy-preflight/v1",
+        "locale": "en",
+        "status": "pass",
+        "summary": "0 incompatibility finding(s)",
+        "findings": []
+      }
+    },
+    {
+      "case": "wrong_shape",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "",
+      "native_report": {
+        "format": "robot-policy-preflight/v1",
+        "locale": "en",
+        "status": "fail",
+        "summary": "1 incompatibility finding(s)",
+        "findings": [
+          {
+            "code": "shape",
+            "details": {
+              "name": "action",
+              "left": [
+                2
+              ],
+              "right": [
+                3
+              ]
+            },
+            "message": "Shape mismatch for action: [2] versus [3]"
+          }
+        ]
+      }
+    },
+    {
+      "case": "wrong_unit",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "",
+      "native_report": {
+        "format": "robot-policy-preflight/v1",
+        "locale": "en",
+        "status": "fail",
+        "summary": "1 incompatibility finding(s)",
+        "findings": [
+          {
+            "code": "unit",
+            "details": {
+              "name": "action",
+              "left": "degree",
+              "right": "rad"
+            },
+            "message": "Unit mismatch for action: degree versus rad"
+          }
+        ]
+      }
+    },
+    {
+      "case": "missing_unit",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "Invalid contract: robot.action needs dtype and unit strings\n",
+      "interpretation": "Native input rejection; not a detected semantic incompatibility"
+    }
+  ],
+  "policy_space": [
+    {
+      "case": "correct",
+      "decision": "ACCEPT",
+      "shape": [
+        2,
+        8
+      ],
+      "lifecycle_calls": 2
+    },
+    {
+      "case": "schema_mismatch",
+      "decision": "REJECT",
+      "error": "No compatible schema pair satisfies embodiment 'franka@1'"
+    },
+    {
+      "case": "wrong_width",
+      "decision": "REJECT",
+      "error": "actions must have shape [T,8] with T >= 1; got (2, 7)"
+    },
+    {
+      "case": "wrong_horizon",
+      "decision": "REJECT",
+      "error": "actions horizon must equal metadata action_horizon 2; got 1"
+    },
+    {
+      "case": "missing_camera",
+      "decision": "REJECT",
+      "error": "observation is missing image role 'wrist'"
+    },
+    {
+      "case": "nonfinite_action",
+      "decision": "REJECT",
+      "error": "actions contains NaN or infinity"
+    },
+    {
+      "case": "camera_relabeling",
+      "decision": "ACCEPT",
+      "shape": [
+        2,
+        8
+      ],
+      "lifecycle_calls": 2
+    },
+    {
+      "case": "action_permutation",
+      "decision": "ACCEPT",
+      "shape": [
+        2,
+        8
+      ],
+      "lifecycle_calls": 2
+    }
+  ],
+  "runtime": {
+    "python": "3.13.7",
+    "wall_seconds": 2.2596393000130774,
+    "packages": {
+      "colorama": "0.4.6",
+      "iniconfig": "2.3.1",
+      "msgpack": "1.1.2",
+      "numpy": "2.2.6",
+      "packaging": "26.3",
+      "pluggy": "1.7.0",
+      "policy-space": "0.3.0",
+      "Pygments": "2.21.0",
+      "pytest": "9.1.1",
+      "PyYAML": "6.0.3",
+      "robot-policy-preflight": "0.1.0",
+      "websockets": "15.0.1"
+    }
+  },
+  "scope": [
+    "Complete installed packages, with pinned source identity checks before import",
+    "Preflight full CLI; Policy Space dispatcher, MessagePack, schema and lifecycle paths",
+    "Policy Space synthetic fixture model; no checkpoint adapter, network server or real client",
+    "Schema-valid relabelings expose scope; no claim that full products miss a benchmark fault",
+    "Missing preflight metadata is an input error; preserve native semantics",
+    "No MLTools superiority score, trained inference, simulator, robot or fabricated telemetry"
+  ],
+  "runner_sha256": "70c240bb124554b9a183e831ac8bde78bad0bda8af74ed843e16842aecb8bd10"
+}

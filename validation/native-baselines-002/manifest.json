@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "development_only": true,
+  "final_evaluation": false,
+  "scope": "Pinned no-ML baseline applicability controls; not final comparative experiments",
+  "files": {
+    "validation/native-baselines-002/preflight/correct/dataset.json": "bf5890f618a5b4843b56ab415a78a56ee672b3a32b9b69c6111e9333d6a5590a",
+    "validation/native-baselines-002/preflight/correct/native-report.json": "efa040cb39f53593383db8542ff009eca491dab2d74b0a5b8d2d46f9b1238008",
+    "validation/native-baselines-002/preflight/correct/policy.json": "43bdd23c632ed379bb63f3b9cc192f8ff230966f2054e257cccca701d3accedd",
+    "validation/native-baselines-002/preflight/correct/robot.json": "bf5890f618a5b4843b56ab415a78a56ee672b3a32b9b69c6111e9333d6a5590a",
+    "validation/native-baselines-002/preflight/missing_unit/dataset.json": "bf5890f618a5b4843b56ab415a78a56ee672b3a32b9b69c6111e9333d6a5590a",
+    "validation/native-baselines-002/preflight/missing_unit/policy.json": "43bdd23c632ed379bb63f3b9cc192f8ff230966f2054e257cccca701d3accedd",
+    "validation/native-baselines-002/preflight/missing_unit/robot.json": "f66bc3a9413c62448a7268a1087094acbfe72694daee75fa5b29e5914971dd5a",
+    "validation/native-baselines-002/preflight/wrong_shape/dataset.json": "bf5890f618a5b4843b56ab415a78a56ee672b3a32b9b69c6111e9333d6a5590a",
+    "validation/native-baselines-002/preflight/wrong_shape/native-report.json": "35e0f96463bbe022cc6f91e761fd218f05529b8dbe23a33915111f093af254d9",
+    "validation/native-baselines-002/preflight/wrong_shape/policy.json": "43bdd23c632ed379bb63f3b9cc192f8ff230966f2054e257cccca701d3accedd",
+    "validation/native-baselines-002/preflight/wrong_shape/robot.json": "49fd4d21e474efcfa4519cf9ebc2a783fb323f74a450e1b9f2364eda422caf56",
+    "validation/native-baselines-002/preflight/wrong_unit/dataset.json": "bf5890f618a5b4843b56ab415a78a56ee672b3a32b9b69c6111e9333d6a5590a",
+    "validation/native-baselines-002/preflight/wrong_unit/native-report.json": "352fcf8880d415dc9bcd3fb9f391128b54413b8ae102f61d51d055f142375f36",
+    "validation/native-baselines-002/preflight/wrong_unit/policy.json": "43bdd23c632ed379bb63f3b9cc192f8ff230966f2054e257cccca701d3accedd",
+    "validation/native-baselines-002/preflight/wrong_unit/robot.json": "47d9ecf82d8270c68fe4b3505c5fa84d47702687e194d7fcf9551c4f39f41e1e",
+    "validation/native-baselines-002/summary.json": "5b6bcf95be91eadd528db7518fbce46a25ab93b66dbaf9975c86ed2d7216fc4a",
+    "scripts/validate_native_baselines.py": "70c240bb124554b9a183e831ac8bde78bad0bda8af74ed843e16842aecb8bd10",
+    "integrations/baselines/build.in": "12d95d3f58681aa8e07423fd2bf2c164f8d41af73508cbc5bf093c3b6e790f4e",
+    "integrations/baselines/build.lock": "1ab40b0acf8ac1c7ecd30d27d901c3eb0f0fa441e8efadf7d2315e76064bc9bb",
+    "integrations/baselines/frameworks.txt": "3a06173ade88fcce43418a9ef3d8da957bc1d0a50d6d01b022f50ca6613075f1",
+    "integrations/baselines/README.md": "b4138c64d95dfd489efe56b19ee97996806b04b3065f39f1d09bf29f59413b0a",
+    "integrations/baselines/requirements.in": "7fdf7c82f3cf99da7efc8511911d2a874eb2eedad1070e9fdd4d07f32f14adea",
+    "integrations/baselines/requirements.lock": "6b5e6f99fbaeb946f0718c2ed24718e2cd9daaeab82e5a3a95719bf06933714b",
+    "integrations/baselines/sources.json": "c4ba5b6a9e6d6445e59f95c7f16c04e3b602f539ca929f091a22d94a52cf3a22"
+  }
+}

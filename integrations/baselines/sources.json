@@ -1,0 +1,22 @@
+{
+  "policy-space": {
+    "revision": "4bdd7ed9b97131878fb745018ad898dfa06cc999",
+    "blobs": {
+      "policy_space/__init__.py": "33dc28abde07a0c1834c7376123554979f80957a",
+      "policy_space/adapters/base.py": "bab54b63c6a3fd3dea899da5b25c8746f1754efd",
+      "policy_space/runtime/server.py": "0cd5d260aba47fde761416a1bb9f3fd0953e6d4c",
+      "policy_space/conformance.py": "65e5a0e7b1003dafaaea04052ca635ac7b0f71fd",
+      "policy_space_protocol/contracts/__init__.py": "5a6653f5f8d8055b427199af1e55164378500659",
+      "policy_space_protocol/contracts/registry.py": "3506a433202c5a4bb286424d6deb6fb234e59ae3",
+      "policy_space_protocol/contracts/schemas/observations/single_arm_rgb_joint@1.yaml": "df5aabaf41680f4cd266a7b197eaaa9164388c42",
+      "policy_space_protocol/contracts/schemas/actions/single_arm_joint_position@1.yaml": "1cccfaf302b64e9fc8c1c58c82691f331f536450",
+      "policy_space_protocol/contracts/schemas/embodiments/franka@1.yaml": "dce2d39d9fc2e057dedd59d773466d155d3eb944"
+    }
+  },
+  "robot-policy-preflight": {
+    "revision": "09137467bbf988bf5f4cc7418f8e300eaa6dd191",
+    "blobs": {
+      "robot_policy_preflight.py": "4621c449515b7c9193459db31c29b68c6a225b0c"
+    }
+  }
+}

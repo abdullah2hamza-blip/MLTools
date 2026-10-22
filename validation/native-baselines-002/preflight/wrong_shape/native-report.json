@@ -1,0 +1,21 @@
+{
+  "format": "robot-policy-preflight/v1",
+  "locale": "en",
+  "status": "fail",
+  "summary": "1 incompatibility finding(s)",
+  "findings": [
+    {
+      "code": "shape",
+      "details": {
+        "name": "action",
+        "left": [
+          2
+        ],
+        "right": [
+          3
+        ]
+      },
+      "message": "Shape mismatch for action: [2] versus [3]"
+    }
+  ]
+}
