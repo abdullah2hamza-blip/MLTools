@@ -1,0 +1,32 @@
+[
+  [
+    "C:\\Users\\Abdul\\Documents\\MLTools\\.venv-actionabi\\Scripts\\cmake.exe",
+    "-S",
+    "C:\\Users\\Abdul\\Documents\\MLTools\\integrations\\actionabi",
+    "-B",
+    "C:\\Users\\Abdul\\Documents\\MLTools\\.test-tmp\\actionabi-build-001",
+    "-G",
+    "Ninja",
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
+    "-DCMAKE_CXX_COMPILER=C:\\Users\\Abdul\\Documents\\MLTools\\.test-tmp\\actionabi-toolchain\\llvm-mingw-20261020-ucrt-x86_64\\bin\\clang++.exe",
+    "-DACTIONABI_SOURCE_DIR=C:\\Users\\Abdul\\Documents\\MLTools\\.test-tmp\\actionabi-sources\\actionabi",
+    "-DFETCHCONTENT_SOURCE_DIR_CLI11=C:\\Users\\Abdul\\Documents\\MLTools\\.test-tmp\\actionabi-sources\\cli11",
+    "-DFETCHCONTENT_SOURCE_DIR_NLOHMANN_JSON=C:\\Users\\Abdul\\Documents\\MLTools\\.test-tmp\\actionabi-sources\\json",
+    "-DFETCHCONTENT_FULLY_DISCONNECTED=ON",
+    "-DPython3_EXECUTABLE=C:\\Users\\Abdul\\Documents\\MLTools\\.venv-actionabi\\Scripts\\python.exe"
+  ],
+  [
+    "C:\\Users\\Abdul\\Documents\\MLTools\\.venv-actionabi\\Scripts\\cmake.exe",
+    "--build",
+    "C:\\Users\\Abdul\\Documents\\MLTools\\.test-tmp\\actionabi-build-001",
+    "--parallel",
+    "1"
+  ],
+  [
+    "C:\\Users\\Abdul\\Documents\\MLTools\\.venv-actionabi\\Scripts\\ctest.exe",
+    "--test-dir",
+    "C:\\Users\\Abdul\\Documents\\MLTools\\.test-tmp\\actionabi-build-001",
+    "--output-on-failure"
+  ]
+]

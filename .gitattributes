@@ -11,6 +11,9 @@ research/publication/development/query-designs-*/*.stdout.txt -text whitespace=b
 research/publication/development/query-designs-*/*.stderr.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 # Native extraction controls preserve copied publisher bytes and synthetic input bytes.
 validation/robotruth-native-*/inputs/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Preserve exact native C++ and build stdout/stderr bytes in manifests.
+validation/actionabi-native-*/native/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+validation/actionabi-native-*/build/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 # Preserve publisher CRLF configuration bytes bound to immutable Hub Git blobs.
 research/publication/selection/smolvla/shenjianliang--smolvla_policy/config.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 research/publication/selection/smolvla/shenjianliang--smolvla_policy/train_config.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

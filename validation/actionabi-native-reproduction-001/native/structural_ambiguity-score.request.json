@@ -1,0 +1,52 @@
+{
+  "operation": "score",
+  "dataset": "inputs/inverted_last.jsonl",
+  "dataset_sha256": "70f532791fbcd77b7af16671154a30d17141b19bc3ff21943849ff95aed96792",
+  "hypotheses": [
+    {
+      "schema_version": "1.0",
+      "target": "delta_position",
+      "space": "joint",
+      "frame": "unspecified",
+      "permutation": [
+        0,
+        1
+      ],
+      "sign": [
+        1,
+        -1
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "lag_steps": 0,
+      "gripper_inverted": false
+    },
+    {
+      "schema_version": "1.0",
+      "target": "delta_position",
+      "space": "joint",
+      "frame": "unspecified",
+      "permutation": [
+        0,
+        1
+      ],
+      "sign": [
+        1,
+        1
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "lag_steps": 0,
+      "gripper_inverted": true
+    }
+  ],
+  "unsupported_fields": [],
+  "huber_delta": 1.0,
+  "train_episode_fraction": 0.5,
+  "score_threshold": 0.0,
+  "coverage_input": 0.0
+}

@@ -229,7 +229,7 @@
     {
       "repository": "Archerkattri/actionabi",
       "revision": "5ad1d45a082860f5f16bb43f3c6bbb0758ec6c11",
-      "inspection_scope": "Pinned README plus bounded source review by one reused subagent; no execution or reported-performance reproduction",
+      "inspection_scope": "Pinned source/API audit, complete CPU source build and native development library controls; no publisher performance reproduction",
       "inspected_sources": [
         {
           "path": "README.md",
@@ -279,7 +279,38 @@
           "size": 3375,
           "url": "https://github.com/Archerkattri/actionabi/blob/5ad1d45a082860f5f16bb43f3c6bbb0758ec6c11/src/cli/main.cpp"
         }
-      ]
+      ],
+      "executed_development_workflow": {
+        "evidence": "../../validation/actionabi-native-001/summary.json",
+        "profile": "../../integrations/actionabi/sources.json",
+        "source_files_verified": {
+          "actionabi": 138,
+          "cli11": 250,
+          "json": 1090
+        },
+        "native_driver_invocations": 17,
+        "upstream_cpu_test_groups": 2,
+        "apis": [
+          "load_jsonl",
+          "score_cpu",
+          "evidence_to_json",
+          "analyze_identifiability",
+          "make_converter",
+          "convert_instantaneous",
+          "converter_to_json",
+          "converter_from_json",
+          "bounded_axis_pulses",
+          "select_separating_probes",
+          "split_conformal_threshold"
+        ],
+        "optional_cuda_pinocchio_pybind": false,
+        "final_comparison": false,
+        "clean_reproduction": {
+          "evidence": "../../validation/actionabi-native-reproduction-001/summary.json",
+          "fresh_setup_script_and_environment": true,
+          "byte_identical_input_request_native_output_files": 55
+        }
+      }
     }
   ]
 }

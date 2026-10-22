@@ -1,0 +1,323 @@
+{
+  "operation": "convert",
+  "score_evidence": {
+    "equivalence": {
+      "caller_supplied_calibrated_coverage": 0.0,
+      "fields": {
+        "frame": "identified",
+        "gripper_inverted": "identified",
+        "lag_steps": "identified",
+        "permutation": "identified",
+        "scale": "identified",
+        "sign": "identified",
+        "space": "identified",
+        "target": "identified"
+      },
+      "retained": [
+        {
+          "frame": "unspecified",
+          "gripper_inverted": false,
+          "lag_steps": 0,
+          "permutation": [
+            0,
+            1
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "schema_version": "1.0",
+          "sign": [
+            1,
+            1
+          ],
+          "space": "joint",
+          "target": "delta_position"
+        }
+      ]
+    },
+    "native_evidence": {
+      "backend": "cpu",
+      "build_revision": "5ad1d45a082860f5f16bb43f3c6bbb0758ec6c11",
+      "counterexamples": [],
+      "dataset": {
+        "sha256": "b19c7e38346ad4781cf8830290bcc3d8dc651fecf764322c254675b519628157",
+        "source_filename": "inputs/excited.jsonl"
+      },
+      "ranked_hypotheses": [
+        {
+          "contract": {
+            "frame": "unspecified",
+            "gripper_inverted": false,
+            "lag_steps": 0,
+            "permutation": [
+              0,
+              1
+            ],
+            "scale": [
+              1.0,
+              1.0
+            ],
+            "schema_version": "1.0",
+            "sign": [
+              1,
+              1
+            ],
+            "space": "joint",
+            "target": "delta_position"
+          },
+          "score": {
+            "heldout_loss": 0.0,
+            "per_dimension_loss": [
+              0.0,
+              0.0
+            ],
+            "residual_count": 12,
+            "train_loss": 0.0
+          }
+        },
+        {
+          "contract": {
+            "frame": "unspecified",
+            "gripper_inverted": false,
+            "lag_steps": 0,
+            "permutation": [
+              0,
+              1
+            ],
+            "scale": [
+              2.0,
+              1.0
+            ],
+            "schema_version": "1.0",
+            "sign": [
+              1,
+              1
+            ],
+            "space": "joint",
+            "target": "delta_position"
+          },
+          "score": {
+            "heldout_loss": 0.9166666666666666,
+            "per_dimension_loss": [
+              1.8333333333333333,
+              0.0
+            ],
+            "residual_count": 12,
+            "train_loss": 0.75
+          }
+        },
+        {
+          "contract": {
+            "frame": "unspecified",
+            "gripper_inverted": false,
+            "lag_steps": 0,
+            "permutation": [
+              0,
+              1
+            ],
+            "scale": [
+              1.0,
+              1.0
+            ],
+            "schema_version": "1.0",
+            "sign": [
+              1,
+              1
+            ],
+            "space": "joint",
+            "target": "velocity"
+          },
+          "score": {
+            "heldout_loss": 1.1666666666666667,
+            "per_dimension_loss": [
+              1.6666666666666667,
+              0.6666666666666666
+            ],
+            "residual_count": 12,
+            "train_loss": 0.8333333333333334
+          }
+        },
+        {
+          "contract": {
+            "frame": "unspecified",
+            "gripper_inverted": true,
+            "lag_steps": 0,
+            "permutation": [
+              0,
+              1
+            ],
+            "scale": [
+              1.0,
+              1.0
+            ],
+            "schema_version": "1.0",
+            "sign": [
+              1,
+              1
+            ],
+            "space": "joint",
+            "target": "delta_position"
+          },
+          "score": {
+            "heldout_loss": 1.75,
+            "per_dimension_loss": [
+              0.0,
+              3.5
+            ],
+            "residual_count": 12,
+            "train_loss": 1.75
+          }
+        },
+        {
+          "contract": {
+            "frame": "unspecified",
+            "gripper_inverted": false,
+            "lag_steps": 0,
+            "permutation": [
+              0,
+              1
+            ],
+            "scale": [
+              1.0,
+              1.0
+            ],
+            "schema_version": "1.0",
+            "sign": [
+              -1,
+              1
+            ],
+            "space": "joint",
+            "target": "delta_position"
+          },
+          "score": {
+            "heldout_loss": 2.0833333333333335,
+            "per_dimension_loss": [
+              4.166666666666667,
+              0.0
+            ],
+            "residual_count": 12,
+            "train_loss": 1.75
+          }
+        },
+        {
+          "contract": {
+            "frame": "unspecified",
+            "gripper_inverted": false,
+            "lag_steps": 0,
+            "permutation": [
+              0,
+              1
+            ],
+            "scale": [
+              1.0,
+              1.0
+            ],
+            "schema_version": "1.0",
+            "sign": [
+              1,
+              1
+            ],
+            "space": "joint",
+            "target": "absolute_position"
+          },
+          "score": {
+            "heldout_loss": 3.6666666666666665,
+            "per_dimension_loss": [
+              2.5,
+              4.833333333333333
+            ],
+            "residual_count": 12,
+            "train_loss": 5.5
+          }
+        },
+        {
+          "contract": {
+            "frame": "unspecified",
+            "gripper_inverted": false,
+            "lag_steps": 1,
+            "permutation": [
+              0,
+              1
+            ],
+            "scale": [
+              1.0,
+              1.0
+            ],
+            "schema_version": "1.0",
+            "sign": [
+              1,
+              1
+            ],
+            "space": "joint",
+            "target": "delta_position"
+          },
+          "score": {
+            "heldout_loss": 3.75,
+            "per_dimension_loss": [
+              3.5,
+              4.0
+            ],
+            "residual_count": 8,
+            "train_loss": 2.75
+          }
+        },
+        {
+          "contract": {
+            "frame": "unspecified",
+            "gripper_inverted": false,
+            "lag_steps": 0,
+            "permutation": [
+              1,
+              0
+            ],
+            "scale": [
+              1.0,
+              1.0
+            ],
+            "schema_version": "1.0",
+            "sign": [
+              1,
+              1
+            ],
+            "space": "joint",
+            "target": "delta_position"
+          },
+          "score": {
+            "heldout_loss": 3.8333333333333335,
+            "per_dimension_loss": [
+              3.8333333333333335,
+              3.8333333333333335
+            ],
+            "residual_count": 12,
+            "train_loss": 2.8333333333333335
+          }
+        }
+      ],
+      "schema_version": "1.0",
+      "score_options": {
+        "huber_delta": 1.0,
+        "train_episode_fraction": 0.5
+      },
+      "split": {
+        "heldout_episode_ids": [
+          1
+        ],
+        "train_episode_ids": [
+          0
+        ]
+      },
+      "warnings": [
+        "Synthetic two-episode development control; no empirical coverage claim"
+      ]
+    }
+  },
+  "evidence_sha256": "ae05a72dd3a4f0ce2501b5f8f1dbf3e81c2bf7e31389c530d3dff2a1b9593c5f",
+  "score_threshold": 0.0,
+  "coverage_input": 0.0,
+  "unsupported_fields": [],
+  "action": [
+    0.25,
+    -0.5
+  ]
+}

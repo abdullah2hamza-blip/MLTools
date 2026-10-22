@@ -1,0 +1,12 @@
+[1/12] Building CXX object actionabi-upstream/CMakeFiles/actionabi_core.dir/src/contract.cpp.obj
+[2/12] Building CXX object actionabi-upstream/CMakeFiles/actionabi_core.dir/src/trajectory.cpp.obj
+[3/12] Building CXX object actionabi-upstream/CMakeFiles/actionabi_core.dir/src/score_cpu.cpp.obj
+[4/12] Building CXX object actionabi-upstream/CMakeFiles/actionabi_core.dir/src/evidence.cpp.obj
+[5/12] Building CXX object actionabi-upstream/CMakeFiles/actionabi_core.dir/src/identifiability.cpp.obj
+[6/12] Building CXX object actionabi-upstream/CMakeFiles/actionabi_core.dir/src/probe.cpp.obj
+[7/12] Building CXX object actionabi-upstream/CMakeFiles/actionabi_core.dir/src/converter.cpp.obj
+[8/12] Building CXX object CMakeFiles/mltools_actionabi_controls.dir/controls.cpp.obj
+[9/12] Linking CXX static library actionabi-upstream\libactionabi_core.a
+[10/12] Building CXX object actionabi-upstream/CMakeFiles/actionabi.dir/src/cli/main.cpp.obj
+[11/12] Linking CXX executable mltools_actionabi_controls.exe
+[12/12] Linking CXX executable actionabi-upstream\actionabi.exe

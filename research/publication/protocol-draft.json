@@ -137,6 +137,12 @@
       "evidence": "../../validation/robotruth-native-001/summary.json",
       "finding": "Stock extraction/checking credits known metadata mismatches, withholds certification on missing fatal evidence, and preserves native warning-only units disagreements. Public metadata controls have no invented weights or physical overlays.",
       "freeze_implication": "Keep native verdicts and grounded mismatch/missing-evidence causes separate; equal-evidence adapters must not score withheld certification as a detection or false alarm, or native warning PASS as full physical correctness."
+    },
+    {
+      "id": "native-actionabi-relative-identification",
+      "evidence": "../../validation/actionabi-native-001/summary.json",
+      "finding": "Genuine CPU APIs preserve ambiguity/refusal and separating probes. Identification is relative to the supplied grammar; prior-fixed fields and caller-supplied coverage are not empirical identification/calibration. A wrong sole candidate can be retained and emitted.",
+      "freeze_implication": "Freeze supported response model, grammar, independent authority, calibration and prediction-generation budget; report native equivalence/refusal vocabulary. Arbitrary chunk-origin/queue/reset processor interventions are N/A, not misses. Synthetic native episode holdout is not the project research holdout."
     }
   ]
 }

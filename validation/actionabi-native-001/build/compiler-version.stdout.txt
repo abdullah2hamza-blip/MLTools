@@ -1,0 +1,5 @@
+clang version 23.1.4 (https://github.com/llvm/llvm-project.git 7a941dfb2877a0b8cf30323fefa85ad019e0b0f5)
+Target: x86_64-w64-windows-gnu
+Thread model: posix
+InstalledDir: C:/Users/Abdul/Documents/MLTools/.test-tmp/actionabi-toolchain/llvm-mingw-20261020-ucrt-x86_64/bin
+Configuration file: C:/Users/Abdul/Documents/MLTools/.test-tmp/actionabi-toolchain/llvm-mingw-20261020-ucrt-x86_64/bin/x86_64-w64-windows-gnu.cfg

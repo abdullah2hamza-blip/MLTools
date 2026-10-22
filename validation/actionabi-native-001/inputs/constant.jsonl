@@ -1,0 +1,9 @@
+{"record_type": "metadata", "schema_version": "1.0", "source_filename": "inputs/fixture-authority.json", "source_sha256": "2440690ce8973bbfff0eb8aba32d3a247e9390105d19a6b4625df01763f9cb2a", "extraction_date": "2026-10-22", "state_columns": ["fixture_q0", "fixture_q1"], "state_units": ["rad", "rad"]}
+{"record_type": "sample", "episode_id": 0, "t_ns": 0, "state": [10, -3], "action": [0, 0]}
+{"record_type": "sample", "episode_id": 0, "t_ns": 500000000, "state": [10, -3], "action": [0, 0]}
+{"record_type": "sample", "episode_id": 0, "t_ns": 1500000000, "state": [10, -3], "action": [0, 0]}
+{"record_type": "sample", "episode_id": 0, "t_ns": 2000000000, "state": [10, -3], "action": [0, 0]}
+{"record_type": "sample", "episode_id": 1, "t_ns": 0, "state": [2, 5], "action": [0, 0]}
+{"record_type": "sample", "episode_id": 1, "t_ns": 500000000, "state": [2, 5], "action": [0, 0]}
+{"record_type": "sample", "episode_id": 1, "t_ns": 1500000000, "state": [2, 5], "action": [0, 0]}
+{"record_type": "sample", "episode_id": 1, "t_ns": 2000000000, "state": [2, 5], "action": [0, 0]}

@@ -1,0 +1,52 @@
+{
+  "operation": "score",
+  "dataset": "inputs/constant.jsonl",
+  "dataset_sha256": "7a999418a26ed50f88060e36d3cd69d163d5d43f305867ceb540bdd3f9961087",
+  "hypotheses": [
+    {
+      "schema_version": "1.0",
+      "target": "delta_position",
+      "space": "joint",
+      "frame": "unspecified",
+      "permutation": [
+        0,
+        1
+      ],
+      "sign": [
+        1,
+        1
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "lag_steps": 0,
+      "gripper_inverted": false
+    },
+    {
+      "schema_version": "1.0",
+      "target": "delta_position",
+      "space": "joint",
+      "frame": "unspecified",
+      "permutation": [
+        1,
+        0
+      ],
+      "sign": [
+        1,
+        1
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "lag_steps": 0,
+      "gripper_inverted": false
+    }
+  ],
+  "unsupported_fields": [],
+  "huber_delta": 1.0,
+  "train_episode_fraction": 0.5,
+  "score_threshold": 0.0,
+  "coverage_input": 0.0
+}

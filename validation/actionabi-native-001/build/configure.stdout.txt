@@ -1,0 +1,11 @@
+-- The CXX compiler identification is Clang 23.1.4
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Users/Abdul/Documents/MLTools/.test-tmp/actionabi-toolchain/llvm-mingw-20261020-ucrt-x86_64/bin/clang++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using the multi-header code from C:/Users/Abdul/Documents/MLTools/.test-tmp/actionabi-sources/json/include/
+-- Found Python3: C:\Users\Abdul\Documents\MLTools\.venv-actionabi\Scripts\python.exe (found version "3.13.7") found components: Interpreter
+-- Configuring done (6.0s)
+-- Generating done (0.4s)
+-- Build files have been written to: C:/Users/Abdul/Documents/MLTools/.test-tmp/actionabi-build-001

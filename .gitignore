@@ -12,3 +12,7 @@ wheels/
 .test-tmp/
 .pytest_cache/
 .ruff_cache/
+
+# Preserve experiment build logs; native binaries remain in ignored .test-tmp.
+!validation/actionabi-native-*/build/
+!validation/actionabi-native-*/build/**

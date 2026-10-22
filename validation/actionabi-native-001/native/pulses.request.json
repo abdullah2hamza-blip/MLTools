@@ -1,0 +1,15 @@
+{
+  "operation": "pulses",
+  "lower": [
+    -1,
+    -2
+  ],
+  "upper": [
+    1,
+    2
+  ],
+  "amplitude": [
+    0.5,
+    1
+  ]
+}

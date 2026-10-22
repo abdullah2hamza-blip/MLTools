@@ -22,3 +22,5 @@ The native single-arm contract has **eight action coordinates**: seven arm joint
 Recorded development output is `validation/native-baselines-002/summary.json`. `research/publication/baseline-audit.md` documents the wider comparison requirements. Tether, XPolicyLab, robotruth and ActionABI are not executed by this runner. No full-product superiority claim follows.
 
 The separate `integrations/robotruth/` profile now executes stock metadata extraction and checking without ML dependencies. Its recorded controls and decision interpretation are documented there; this two-package runner remains scoped as above.
+
+The separate `integrations/actionabi/` profile builds and exercises the native CPU scoring, equivalence/refusal and separating-probe library APIs. Its trajectory assumptions and synthetic development controls are documented there.

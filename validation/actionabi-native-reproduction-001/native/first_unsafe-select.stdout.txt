@@ -1,0 +1,1 @@
+{"exact":true,"inseparable_pairs":[],"selected_candidate_indices":[1]}

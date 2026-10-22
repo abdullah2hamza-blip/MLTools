@@ -1,0 +1,9 @@
+Test project C:/Users/Abdul/Documents/MLTools/.test-tmp/actionabi-build-001
+    Start 1: install_smoke
+1/2 Test #1: install_smoke ....................   Passed    1.78 sec
+    Start 2: cli_contract
+2/2 Test #2: cli_contract .....................   Passed    0.81 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   2.66 sec

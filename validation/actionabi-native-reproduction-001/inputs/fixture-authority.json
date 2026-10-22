@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "synthetic_only": true,
+  "final_evaluation": false,
+  "description": "Authored deterministic two-coordinate response fixtures, not robot trajectories",
+  "timestamps_ns": [
+    0,
+    500000000,
+    1500000000,
+    2000000000
+  ],
+  "states": [
+    [
+      [
+        10,
+        -3
+      ],
+      [
+        11,
+        -1
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        12,
+        1
+      ]
+    ],
+    [
+      [
+        2,
+        5
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        7,
+        5
+      ]
+    ]
+  ],
+  "actions": [
+    [
+      [
+        1,
+        2
+      ],
+      [
+        -2,
+        3
+      ],
+      [
+        3,
+        -1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        2,
+        -1
+      ],
+      [
+        -1,
+        3
+      ],
+      [
+        4,
+        -2
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  ],
+  "intended_contract": {
+    "schema_version": "1.0",
+    "target": "delta_position",
+    "space": "joint",
+    "frame": "unspecified",
+    "permutation": [
+      0,
+      1
+    ],
+    "sign": [
+      1,
+      1
+    ],
+    "scale": [
+      1,
+      1
+    ],
+    "lag_steps": 0,
+    "gripper_inverted": false
+  },
+  "physical_authority": "Synthetic joint/radian coordinate definitions only; no hardware meaning",
+  "fixed_fields": [
+    "space",
+    "frame"
+  ],
+  "calibration_claim": false
+}
