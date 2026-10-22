@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "development_only": true,
+  "final_evaluation": false,
+  "prospective_native_outcomes_observed": false,
+  "assets": "validation/matched-assets-development-001/plan.json",
+  "native_evidence": "validation/matched-workflows-development-001/summary.json",
+  "prepared_prospective_inputs": "research/publication/prepared/action-study-001/plan.json",
+  "new_tests": 23,
+  "initial_targeted_tests": {"passed": 22, "failed": 1, "seconds": 16.93},
+  "test_fixture_correction": "The manifest-value tampering fixture initially assigned the existing value cuda; changed it to a guaranteed distinct marker. No producer/verifier logic change was needed for that failure.",
+  "final_full_suite": {"passed": 322, "skipped": 5, "seconds": 99.84},
+  "skip_scope": "Five existing opt-in OpenPI integration tests; both new matched native workflows actually ran separately",
+  "lint": "ruff check and format --check passed for src, tests, scripts and examples/so101/build_cases.py; 86 files",
+  "optimized_replay": "Native evidence and prospective metadata compilation passed -O data-only verification",
+  "actual_native_calls": {"decoder_primary": 520, "decoder_roundtrip_auxiliary": 260, "robotruth_extract": 6, "robotruth_contract_check": 5},
+  "review_repairs": [
+    "Pin full development manifest SHA plus checkpoint model/revision before compilation; reject development-role substitution",
+    "Require unique complete pinned scalar/camera findings with every value/severity bound to saved native manifests",
+    "Keep known identity differences separate from missing-evidence refusal; do not double-count the union hash"
+  ],
+  "scope": "One reused development checkpoint lineage plus labeled mutations/serialization control; not independent samples or final benchmark results. Prospective input compilation performs no native extraction or decoder execution."
+}

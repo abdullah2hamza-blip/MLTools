@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "target_framework": "lerobot",
+  "source_pipeline_family": "lerobot",
+  "dtype": "float64",
+  "device": "cpu",
+  "operator_profile": "lerobot_mean_std_f64_v1",
+  "scope": "Current-runtime numeric experiment; no publisher training/inference replication"
+}

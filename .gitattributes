@@ -15,6 +15,11 @@ validation/panda-software-*/*.stdout.txt -text whitespace=blank-at-eol,blank-at-
 validation/panda-software-*/*.stderr.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 validation/action-study-development-*/*.stdout.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 validation/action-study-development-*/*.stderr.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+validation/matched-workflows-development-*/*.stdout.txt -text -whitespace
+validation/matched-workflows-development-*/*.stderr.txt -text -whitespace
+# Matched leaves preserve exact copied publisher/license and generated binary bytes.
+validation/matched-assets-development-*/cells/** -text -whitespace
+research/publication/prepared/action-study-*/cells/** -text -whitespace
 integrations/panda/LICENSE.robosuite.txt -text -whitespace
 research/publication/development/query-designs-*/*.stdout.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 research/publication/development/query-designs-*/*.stderr.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

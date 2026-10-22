@@ -1,0 +1,9 @@
+# Matched exact-artifact development workflows
+
+Actual complete stock robotruth extraction/checking and native LeRobot normalization on the same files in `validation/matched-assets-development-001/`. Only the already executed ACT move-cube development lineage is included. The selected prospective boccia/orange/PI revisions are compiled separately and have no native outcomes here.
+
+The closed summary manifest binds analysis plus both workers' exact request/stdout/stderr/parsed-native files. The shared asset plan independently binds all leaf-file bytes, source digests, actual deployment specifications and query designs. This README is outside the native evidence manifest. Offline optimized replay: `.venv-smoke/Scripts/python.exe -O scripts/run_matched_study.py --verify validation/matched-workflows-development-001`.
+
+There are 520 primary decoder calls, 260 auxiliary native round-trip calls, six stock extraction calls and five stock contract comparisons. All intended/fault and equivalent-F64 outcomes are described in `docs/matched-statistics-study.md`. The compiler and independent oracles agree numerically. Robotruth correctly reports different artifact identities, including numerically unchanged F64 reserialization, while missing certification evidence withholds native full certification. Both action/observation digest findings arise from one union hash and are not counted as two independent differences.
+
+These are source-bound development observations, with no model inference, physical calibration, policy task success, final benchmark rate or cryptographic execution attestation. Current source/asset replay is data-only. Review fixes pin the actual development manifest/revision and require the full unique scalar/camera finding inventory bound to saved manifests, with rehashed tampering regressions.

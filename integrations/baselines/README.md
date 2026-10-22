@@ -24,3 +24,5 @@ Recorded development output is `validation/native-baselines-002/summary.json`. `
 The separate `integrations/robotruth/` profile now executes stock metadata extraction and checking without ML dependencies. Its recorded controls and decision interpretation are documented there; this two-package runner remains scoped as above.
 
 The separate `integrations/actionabi/` profile builds and exercises the native CPU scoring, equivalence/refusal and separating-probe library APIs. Its trajectory assumptions and synthetic development controls are documented there.
+
+The pinned Policy Space registry also supports `POLICY_SPACE_CONTRACTS_DIR` for caller-defined contracts. Lack of a grounded stock embodiment mapping therefore does not make every raw numeric transport workflow inapplicable. `research/publication/method-applicability.json` keeps a clearly authored custom raw-coordinate dispatcher/codec path pending before the main freeze, without inventing physical joint/gripper semantics or learned-policy execution.
