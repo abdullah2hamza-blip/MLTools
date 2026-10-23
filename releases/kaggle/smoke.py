@@ -14,7 +14,7 @@ def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def smoke(root, work, record):
+def smoke(root, work, record, expanded_input=False, platform_runtime_file=False):
     root, work = Path(root).resolve(), Path(work).resolve()
     if work.exists():
         raise ValueError("smoke work destination must be new")
@@ -35,8 +35,17 @@ def smoke(root, work, record):
     inputs, outputs = work / "input" / "boundary-conformance-replay", work / "output"
     inputs.parent.mkdir(parents=True)
     shutil.copytree(source, inputs)
-    before = {p.name: digest(p) for p in inputs.iterdir()}
-    for p in inputs.iterdir():
+    if expanded_input:
+        from integrity import extract
+
+        extract(inputs / "payload.zip", inputs / "payload")
+        (inputs / "payload.zip").unlink()
+    input_files = [p for p in inputs.rglob("*") if p.is_file()]
+    if platform_runtime_file:
+        outputs.mkdir()
+        (outputs / "__notebook__.ipynb").write_bytes(b'{"fixture":"platform-managed notebook"}\n')
+    before = {p.relative_to(inputs).as_posix(): digest(p) for p in input_files}
+    for p in input_files:
         p.chmod(stat.S_IREAD)
     try:
         notebook = nbformat.read(root / "notebook/replay.ipynb", as_version=4)
@@ -55,9 +64,14 @@ def smoke(root, work, record):
             resources={"metadata": {"path": str(work)}},
         )
         executed = client.execute(env=environment)
-        assert {p.name: digest(p) for p in inputs.iterdir()} == before
+        assert {p.relative_to(inputs).as_posix(): digest(p) for p in input_files} == before
         config = json.loads((Path(__file__).parent / "config.json").read_bytes())
         release = publish.validate(root, config)
+        if platform_runtime_file:
+            raw_platform_report = json.loads((outputs / "replay-report.json").read_bytes())
+            assert "__notebook__.ipynb" not in raw_platform_report["files"]
+            assert "__notebook__.ipynb" in raw_platform_report["platform_runtime_files_not_exported"]
+            (outputs / "__notebook__.ipynb").rename(work / "platform-managed-notebook-fixture.ipynb")
         verified = publish.verify_outputs(root, config, outputs)
         record = Path(record)
         record.mkdir(parents=True, exist_ok=False)
@@ -71,6 +85,8 @@ def smoke(root, work, record):
             "executed_code_cells": sum(c.cell_type == "code" for c in executed.cells),
             "replay_process_network": "DENIED_BY_AUDIT_HOOK",
             "input_file_mode": "read-only",
+            "input_representation": "expanded-directory" if expanded_input else "archive",
+            "platform_runtime_fixture": platform_runtime_file,
             "hosted_kaggle_run": "NOT_RUN_NO_CREDENTIALS_USED",
             "output_verification": verified,
         }
@@ -79,7 +95,7 @@ def smoke(root, work, record):
         )
         print(json.dumps(result, indent=2))
     finally:
-        for p in inputs.iterdir():
+        for p in input_files:
             p.chmod(stat.S_IREAD | stat.S_IWRITE)
 
 
@@ -88,5 +104,7 @@ if __name__ == "__main__":
     p.add_argument("--root", type=Path, required=True)
     p.add_argument("--work", type=Path, required=True)
     p.add_argument("--record", type=Path, required=True)
+    p.add_argument("--expanded-input", action="store_true")
+    p.add_argument("--platform-runtime-file", action="store_true")
     a = p.parse_args()
-    smoke(a.root, a.work, a.record)
+    smoke(a.root, a.work, a.record, a.expanded_input, a.platform_runtime_file)

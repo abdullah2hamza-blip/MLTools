@@ -1,0 +1,46 @@
+{
+  "artifact": "releases/kaggle/artifacts/release-004",
+  "dataset": {
+    "dataset_id": 12808735,
+    "id": "abdullah2hamza/boundary-conformance-replay",
+    "is_private": true,
+    "license": [
+      {
+        "name": "apache-2.0"
+      }
+    ],
+    "status": "ready",
+    "url": "https://www.kaggle.com/datasets/abdullah2hamza/boundary-conformance-replay",
+    "version": 1
+  },
+  "dataset_content_unchanged_from_initial_upload": true,
+  "local_verification": {
+    "expanded_platform_smoke": "releases/kaggle/validation/expanded-platform-smoke-001/verification.json",
+    "ruff": "LINT_AND_FORMAT_PASSED",
+    "subtests_passed": 22,
+    "tests_passed": 59
+  },
+  "notebook": {
+    "docker_image": "gcr.io/kaggle-images/python@sha256:17b2fc7f27c25c6c2fd4230ec8e66097ab2b89fc88e1e4d6f338b72e1ee0bc3e",
+    "enable_gpu": false,
+    "enable_internet": false,
+    "enable_tpu": false,
+    "id": "abdullah2hamza/boundary-conformance-replay-notebook",
+    "is_private": true,
+    "kernel_id": 140452949,
+    "remote_source_cells_match_reviewed_source": true,
+    "source_cells_sha256": "fb34e324bbacafa53fa1fc64656a02ec3b066b6df72f0e6f3bf0af3ed4b34dce",
+    "status": "COMPLETE",
+    "url": "https://www.kaggle.com/code/abdullah2hamza/boundary-conformance-replay-notebook",
+    "version": 2
+  },
+  "output_verification": "releases/kaggle/validation/kaggle-hosted-002-output-verification.json",
+  "prior_hosted_version_1": "Numerical hashes matched; report included a platform file omitted by downloads. Preserved and superseded by version 2.",
+  "public_visibility_authorized_or_changed": false,
+  "report_sha256": "e381e5ff5b77cab8cc5e6be32101f883d7dc2fe997733a364c65f27189ee85f1",
+  "schema_version": 1,
+  "scope": "Kaggle-hosted saved-trace replay. No fresh native framework acquisition, policy inference, hardware execution or independent producer attestation.",
+  "status": "PRIVATE_KAGGLE_HOSTED_REPLAY_VERIFIED",
+  "token_persisted_in_project_files": false,
+  "verified_utc": "2026-10-23T20:28:07.647883+00:00"
+}

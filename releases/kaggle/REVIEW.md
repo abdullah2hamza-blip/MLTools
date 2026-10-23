@@ -33,7 +33,7 @@ Validation completed locally on Python 3.13.7/Windows:
 
 - **47 tests passed, 22 subtests passed**, including tampering, traversal,
   symlinks, privacy fields, exact output binding and mocked publication failures.
-- Ruff lint and formatting pass for all 12 release Python files.
+- Ruff lint and formatting pass for the release sources.
 - Repeated payload/notebook construction is byte-identical; preflight is ready
   with zero blockers. Payload contains 270 files, 1,964,666 ZIP bytes.
 - All four code cells executed in a fresh real Jupyter kernel with read-only

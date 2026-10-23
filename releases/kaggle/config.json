@@ -2,9 +2,9 @@
   "schema_version": 1,
   "owner": "abdullah2hamza",
   "dataset_slug": "boundary-conformance-replay",
-  "notebook_slug": "boundary-conformance-replay",
+  "notebook_slug": "boundary-conformance-replay-notebook",
   "license": "apache-2.0",
   "license_approved": true,
   "dataset_title": "ML Boundary Conformance: Saved Trace Replay",
-  "notebook_title": "Boundary Conformance Replay"
+  "notebook_title": "Boundary Conformance Replay Notebook"
 }

@@ -1,0 +1,27 @@
+{
+  "provider_sidecars_excluded": {
+    "boundary-conformance-replay-notebook.log": "e346bc0a4a8316588ada0dea087cead970b4c29d21eb966e677d4182d56165a5"
+  },
+  "raw_file_sha256": {
+    "analysis.json": "83e00b74ca783de9efda4decfcfbd4e7345c22564bc8584b4246adee982242af",
+    "boundary-conformance-replay-notebook.log": "e346bc0a4a8316588ada0dea087cead970b4c29d21eb966e677d4182d56165a5",
+    "conditions.csv": "f261b97ce019d83365b78edd2a9ce24375cf6fc19fa998d8c733f2a1d0561398",
+    "metrics.json": "5d5a90948c3271fca004afd0fbedd951e4f8cef67baecd30c0195e16df4e015c",
+    "outcomes.svg": "63012455929917f0a047bd722b3977129991944fd1f10adca1ccbae2724cef0b",
+    "replay-report.json": "e381e5ff5b77cab8cc5e6be32101f883d7dc2fe997733a364c65f27189ee85f1",
+    "replay-summary.json": "b15facd55af54e9ed42dfab138018fa894594c419fe75fabd6e1e7dce50e04ff",
+    "witnesses.json": "b4a0cd3a79c7943f1ae9cb512b8f843807b3cb11453e16b96eeb2e9d09229cf4",
+    "workflow-analysis.json": "9a0df9925f05bfa66bf8f5eaeb8585e896f95ba71cae6d2517f3d883e353527d"
+  },
+  "schema_version": 1,
+  "scope": "Raw downloads preserved; only the CLI-generated notebook log is outside the report-bound output set",
+  "status": "REPORT_BOUND_OUTPUTS_VERIFIED",
+  "verification": {
+    "payload_sha256": "e81b1f4d455ea27df100994c6b0cfaae3054f2185eb390c7fe1defa42d081b4c",
+    "release_id": "e0d81566ac60984fa9c17d120f446c7009352cf8b67a49a89f92704014fcc3e3",
+    "report_sha256": "e381e5ff5b77cab8cc5e6be32101f883d7dc2fe997733a364c65f27189ee85f1",
+    "schema_version": 1,
+    "scope": "Saved-trace replay outputs; no fresh native acquisition or execution attestation",
+    "status": "VERIFIED_SAVED_TRACE_REPLAY"
+  }
+}

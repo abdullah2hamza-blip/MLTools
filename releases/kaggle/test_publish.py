@@ -10,6 +10,8 @@ from pathlib import Path
 from types import SimpleNamespace
 from unittest.mock import patch
 
+from stage_hosted import stage
+
 SPEC = importlib.util.spec_from_file_location(
     "mltools_kaggle_publish", Path(__file__).with_name("publish.py")
 )
@@ -18,6 +20,72 @@ SPEC.loader.exec_module(publish)
 
 
 class PublisherTests(unittest.TestCase):
+    def test_intentional_notebook_versions_have_separate_duplicate_guards(self):
+        self.execute("notebook-version", notebook_version=1)
+        with self.assertRaisesRegex(ValueError, "cannot be retried"):
+            self.execute("notebook-version", notebook_version=1)
+        self.execute("notebook-version", notebook_version=2)
+        state = self.base / "state"
+        self.assertTrue((state / "notebook-version-from-1/0001/claim.json").is_file())
+        self.assertTrue((state / "notebook-version-from-2/0001/claim.json").is_file())
+
+    def test_notebook_version_requires_explicit_predecessor(self):
+        with self.assertRaisesRegex(ValueError, "positive notebook version"):
+            self.execute("notebook-version")
+        self.assertFalse((self.base / "state").exists())
+
+    def test_stage_preserves_raw_cli_log_and_checks_only_declared_outputs(self):
+        raw = self.hosted()
+        log = raw / (publish.NOTEBOOK_SLUG + ".log")
+        log.write_bytes(b"provider execution log")
+        output = self.base / "verified"
+        result = stage(self.root, self.config, raw, output)
+        self.assertEqual(result["status"], "REPORT_BOUND_OUTPUTS_VERIFIED")
+        self.assertTrue(log.exists())
+        self.assertFalse((output / log.name).exists())
+        self.assertEqual(set(result["provider_sidecars_excluded"]), {log.name})
+
+    def test_stage_rejects_unknown_sidecars(self):
+        raw = self.hosted()
+        (raw / "unknown.txt").write_bytes(b"unexpected")
+        output = self.base / "verified"
+        with self.assertRaisesRegex(ValueError, "unknown provider sidecar"):
+            stage(self.root, self.config, raw, output)
+        self.assertFalse(output.exists())
+
+    def test_stage_rejects_rehashed_substitute_analysis(self):
+        raw = self.hosted()
+        (raw / "analysis.json").write_bytes(b'{"substituted":true}\n')
+        report = publish.parse(publish.read(raw / "replay-report.json"))
+        report["files"]["analysis.json"] = publish.digest((raw / "analysis.json").read_bytes())
+        self.write_json(raw / "replay-report.json", report)
+        output = self.base / "verified"
+        with self.assertRaisesRegex(ValueError, "predeclared"):
+            stage(self.root, self.config, raw, output)
+        self.assertFalse(output.exists())
+
+    def test_dataset_and_notebook_use_distinct_identifiers(self):
+        self.assertNotEqual(publish.IDENTITY, publish.NOTEBOOK_IDENTITY)
+        self.assertEqual(publish.versioned(1), publish.NOTEBOOK_IDENTITY + "/1")
+        self.assertEqual(self.kernel["dataset_sources"], [publish.IDENTITY])
+
+    def test_cli_redacts_token_on_success_and_timeout(self):
+        secret = "KGAT_" + "fixture-token"
+        data = ("before " + secret + " after").encode()
+        with patch.dict(publish.os.environ, {"KAGGLE_API_TOKEN": secret}):
+            with patch.object(
+                publish.subprocess, "run", return_value=subprocess.CompletedProcess([], 0, data, data)
+            ):
+                result = publish.run_cli(["fixture-cli"])
+                self.assertNotIn(secret.encode(), result.stdout)
+                self.assertIn(b"[REDACTED_TOKEN]", result.stderr)
+            failure = subprocess.TimeoutExpired(["fixture-cli"], 600, output=data, stderr=data)
+            with patch.object(publish.subprocess, "run", side_effect=failure):
+                with self.assertRaises(subprocess.TimeoutExpired) as caught:
+                    publish.run_cli(["fixture-cli"])
+                self.assertNotIn(secret.encode(), caught.exception.stdout)
+                self.assertNotIn(secret.encode(), caught.exception.stderr)
+
     def setUp(self):
         temp_root = Path(__file__).resolve().parents[2] / ".test-tmp"
         temp_root.mkdir(exist_ok=True)
@@ -33,7 +101,7 @@ class PublisherTests(unittest.TestCase):
             "schema_version": 1,
             "owner": publish.OWNER,
             "dataset_slug": publish.SLUG,
-            "notebook_slug": publish.SLUG,
+            "notebook_slug": publish.NOTEBOOK_SLUG,
             "license": "apache-2.0",
             "license_approved": True,
         }
@@ -58,7 +126,7 @@ class PublisherTests(unittest.TestCase):
         with zipfile.ZipFile(self.dataset / "payload.zip", "w") as archive:
             archive.writestr("release/source.py", "print('saved data only')\n")
         self.kernel = {
-            "id": publish.IDENTITY,
+            "id": publish.NOTEBOOK_IDENTITY,
             "title": publish.TITLE,
             "code_file": "replay.ipynb",
             "language": "python",
@@ -415,7 +483,8 @@ class PublisherTests(unittest.TestCase):
     def test_status_commands_are_version_bound_and_never_public(self):
         self.assertEqual(publish.command("dataset-status", self.root)[-1], publish.IDENTITY)
         self.assertEqual(
-            publish.command("notebook-status", self.root, notebook_version=4)[-1], publish.IDENTITY + "/4"
+            publish.command("notebook-status", self.root, notebook_version=4)[-1],
+            publish.NOTEBOOK_IDENTITY + "/4",
         )
         with self.assertRaisesRegex(ValueError, "positive notebook version"):
             publish.command("output-pull", self.root, self.base / "output")

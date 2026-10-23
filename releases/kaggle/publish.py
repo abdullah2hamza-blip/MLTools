@@ -19,11 +19,28 @@ from datetime import UTC, datetime
 from pathlib import Path, PurePosixPath
 
 CLI_VERSION = "2.2.5"
+CLI_ENTRYPOINT = """import sys
+import requests
+original_raise = requests.Response.raise_for_status
+def checked(response):
+    try:
+        original_raise(response)
+    except requests.HTTPError:
+        import re
+        body = re.sub(r'KGAT_[A-Za-z0-9_-]+', '[REDACTED_TOKEN]', response.text[:8192])
+        print('Kaggle HTTP error body: ' + body, file=sys.stderr)
+        raise
+requests.Response.raise_for_status = checked
+from kaggle.cli import main
+main()
+"""
 CLI_REVISION = "8b88a6aeffed5acae0b1e43137d946afd5c43351"
 OWNER = "abdullah2hamza"
 SLUG = "boundary-conformance-replay"
 IDENTITY = OWNER + "/" + SLUG
-TITLE = "Boundary Conformance Replay"
+NOTEBOOK_SLUG = "boundary-conformance-replay-notebook"
+NOTEBOOK_IDENTITY = OWNER + "/" + NOTEBOOK_SLUG
+TITLE = "Boundary Conformance Replay Notebook"
 DATASET_TITLE = "ML Boundary Conformance: Saved Trace Replay"
 DATASET_FILES = {
     "dataset-metadata.json",
@@ -43,8 +60,15 @@ SEMANTIC_OUTPUTS = {
     "workflow-analysis.json",
 }
 REQUIRED_OUTPUTS = SEMANTIC_OUTPUTS | {"replay-summary.json"}
-REMOTE_STEPS = {"dataset-create", "dataset-status", "notebook-push", "notebook-status", "output-pull"}
-MUTATIONS = {"dataset-create", "notebook-push"}
+REMOTE_STEPS = {
+    "dataset-create",
+    "dataset-status",
+    "notebook-push",
+    "notebook-version",
+    "notebook-status",
+    "output-pull",
+}
+MUTATIONS = {"dataset-create", "notebook-push", "notebook-version"}
 STEPS = REMOTE_STEPS | {"plan", "public-plan", "output-verify", "reconcile"}
 SHA256 = re.compile(r"[0-9a-f]{64}\Z")
 MAX_FILE = 64 * 1024 * 1024
@@ -269,7 +293,9 @@ def validate(root, config):
     )
     require(type(config["schema_version"]) is int and config["schema_version"] == 1, "configuration version")
     require(
-        config["owner"] == OWNER and config["dataset_slug"] == config["notebook_slug"] == SLUG,
+        config["owner"] == OWNER
+        and config["dataset_slug"] == SLUG
+        and config["notebook_slug"] == NOTEBOOK_SLUG,
         "approved owner and slugs",
     )
     require(type(config["license_approved"]) is bool, "explicit license approval")
@@ -361,7 +387,7 @@ def validate(root, config):
         },
         "known kernel fields; no numeric ID override",
     )
-    require(kernel.get("id") == IDENTITY and kernel.get("title") == TITLE, "notebook identity/title")
+    require(kernel.get("id") == NOTEBOOK_IDENTITY and kernel.get("title") == TITLE, "notebook identity/title")
     require(
         kernel.get("code_file") == "replay.ipynb"
         and kernel.get("language") == "python"
@@ -399,17 +425,26 @@ def validate(root, config):
 
 def versioned(version):
     require(type(version) is int and version > 0, "explicit positive notebook version")
-    return IDENTITY + "/" + str(version)
+    return NOTEBOOK_IDENTITY + "/" + str(version)
+
+
+def operation_key(step, notebook_version=None):
+    if step == "notebook-version":
+        versioned(notebook_version)
+        return "notebook-version-from-" + str(notebook_version)
+    return step
 
 
 def command(step, root, output=None, notebook_version=None):
     root = Path(root).resolve()
-    base = [sys.executable, "-I", "-c", "from kaggle.cli import main; main()"]
+    base = [sys.executable, "-I", "-c", CLI_ENTRYPOINT]
     if step == "dataset-create":
         tail = ["datasets", "create", "--path", str(root / "dataset"), "--keep-tabular", "--dir-mode", "skip"]
     elif step == "dataset-status":
         tail = ["datasets", "status", IDENTITY]
-    elif step == "notebook-push":
+    elif step in ("notebook-push", "notebook-version"):
+        if step == "notebook-version":
+            versioned(notebook_version)
         tail = ["kernels", "push", "--path", str(root / "notebook")]
     elif step == "notebook-status":
         tail = ["kernels", "status", versioned(notebook_version)]
@@ -521,7 +556,26 @@ def installed_version():
 
 def run_cli(argv):
     """Only called from the explicit execution path; no shell or package import here."""
-    return subprocess.run(argv, capture_output=True, timeout=600, check=False)
+    secret = os.environ.get("KAGGLE_API_TOKEN")
+
+    def redacted(value):
+        if not secret or value is None:
+            return value
+        return (
+            value.replace(secret, "[REDACTED_TOKEN]")
+            if isinstance(value, str)
+            else (value.replace(secret.encode(), b"[REDACTED_TOKEN]"))
+        )
+
+    try:
+        result = subprocess.run(argv, capture_output=True, timeout=600, check=False)
+    except subprocess.TimeoutExpired as error:
+        error.output = redacted(error.output)
+        error.stderr = redacted(error.stderr)
+        raise
+    result.stdout = redacted(result.stdout)
+    result.stderr = redacted(result.stderr)
+    return result
 
 
 def execute(
@@ -554,7 +608,8 @@ def execute(
     # import occurs only in the authorized child command, using this interpreter.
     actual_version = (version_getter or installed_version)()
     require(actual_version == CLI_VERSION, "exact pinned Kaggle CLI " + CLI_VERSION)
-    old = previous(state, step)
+    key = operation_key(step, notebook_version)
+    old = previous(state, key)
     if step in MUTATIONS and old:
         resolution = old[-1] / "reconciliation.json"
         decision = parse(read(resolution)) if resolution.is_file() else {}
@@ -572,7 +627,7 @@ def execute(
             and SHA256.fullmatch(decision["authorization_sha256"]),
             "prior mutation cannot be retried without explicit no-mutation reconciliation",
         )
-    base = state / step
+    base = state / key
     base.mkdir(parents=True, exist_ok=True)
     attempt = base / f"{len(old) + 1:04d}"
     attempt.mkdir(exist_ok=False)
@@ -584,6 +639,8 @@ def execute(
             "schema_version": 1,
             "status": "STARTED",
             "step": step,
+            "operation_key": key,
+            "predecessor_notebook_version": notebook_version if step == "notebook-version" else None,
             "release_id": release["release_id"],
             "payload_sha256": release["payload_sha256"],
             "build_sha256": release["build_sha256"],
@@ -642,7 +699,7 @@ def execute(
         raise
 
 
-def reconcile(root, config, state, target, outcome, evidence, authorization):
+def reconcile(root, config, state, target, outcome, evidence, authorization, notebook_version=None):
     release = validate(root, config)
     approved = authorize(authorization)
     require(
@@ -651,7 +708,7 @@ def reconcile(root, config, state, target, outcome, evidence, authorization):
     )
     state = Path(state).resolve()
     require(not state.is_relative_to(Path(root).resolve()), "state outside release")
-    old = previous(state, target)
+    old = previous(state, operation_key(target, notebook_version))
     require(old, "existing mutation attempt required")
     claim = parse(read(old[-1] / "claim.json"))
     require(claim["build_sha256"] == release["build_sha256"], "reconcile the exact attempted build")
@@ -666,7 +723,9 @@ def reconcile(root, config, state, target, outcome, evidence, authorization):
         "claim_sha256": digest(read(old[-1] / "claim.json")),
         "evidence_sha256": digest(raw),
         "authorization_sha256": approved,
-        "scope": "Human-supplied reconciliation; a nonzero exit alone never proves no remote mutation",
+        "scope": (
+            "Explicit caller reconciliation under recorded authorization; evidence is not independent proof"
+        ),
     }
     exclusive(old[-1] / "reconciliation.json", record)
     return record
@@ -696,7 +755,14 @@ def main(argv=None):
             args.state is not None and args.evidence is not None, "reconciliation state/evidence required"
         )
         result = reconcile(
-            args.root, config, args.state, args.target, args.outcome, args.evidence, args.authorization
+            args.root,
+            config,
+            args.state,
+            args.target,
+            args.outcome,
+            args.evidence,
+            args.authorization,
+            args.notebook_version,
         )
     elif args.execute:
         require(args.state is not None, "private attempt state directory required")

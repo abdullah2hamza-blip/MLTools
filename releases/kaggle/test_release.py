@@ -13,6 +13,7 @@ import pytest
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import build
 import integrity
+from bootstrap import prepare_payload
 from notebook import notebook
 
 
@@ -90,7 +91,7 @@ def test_zip_is_deterministic():
 
 
 def test_notebook_code_and_no_hidden_state():
-    doc = notebook("a" * 64, "b" * 64, "boundary-conformance-replay")
+    doc = notebook("a" * 64, "b" * 64, "boundary-conformance-replay", "c" * 64)
     assert doc["nbformat"] == 4
     for cell in doc["cells"]:
         if cell["cell_type"] == "code":
@@ -110,3 +111,43 @@ def test_unapproved_license_fails_before_build(tmp_path):
     with pytest.raises(ValueError, match="approved original license"):
         build.build(tmp_path / "out", config)
     assert not (tmp_path / "out").exists()
+
+
+def small_payload(root):
+    raw = b"saved observation\n"
+    manifest = build.encoded(
+        {"schema_version": 1, "release_id": "fixture", "files": {"data.txt": integrity.sha(raw)}}
+    )
+    files = {"manifest.json": manifest, "data.txt": raw}
+    data = build.make_zip(files)
+    root.mkdir()
+    (root / "payload.zip").write_bytes(data)
+    return data, manifest
+
+
+@pytest.mark.parametrize("expanded", [False, True])
+def test_kaggle_input_representations(tmp_path, expanded):
+    source = tmp_path / "input"
+    data, manifest = small_payload(source)
+    if expanded:
+        integrity.extract(source / "payload.zip", source / "payload")
+        (source / "payload.zip").unlink()
+    mode = prepare_payload(source, tmp_path / "output", integrity.sha(data), integrity.sha(manifest))
+    assert mode == ("expanded-directory" if expanded else "archive")
+    integrity.verify(tmp_path / "output")
+
+
+@pytest.mark.parametrize("mutation", ["changed-observation", "extra-file", "wrong-manifest"])
+def test_expanded_input_rejects_tampering(tmp_path, mutation):
+    source = tmp_path / "input"
+    data, manifest = small_payload(source)
+    integrity.extract(source / "payload.zip", source / "payload")
+    (source / "payload.zip").unlink()
+    if mutation == "changed-observation":
+        (source / "payload/data.txt").write_bytes(b"substitute")
+    elif mutation == "extra-file":
+        (source / "payload/extra.py").write_bytes(b"print('unexpected')")
+    else:
+        (source / "payload/manifest.json").write_bytes(b"{}")
+    with pytest.raises(AssertionError):
+        prepare_payload(source, tmp_path / "output", integrity.sha(data), integrity.sha(manifest))

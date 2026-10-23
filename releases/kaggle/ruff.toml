@@ -1,0 +1,4 @@
+extend = "../../pyproject.toml"
+src = ["../..", "../../src"]
+# Reviewed notebooks/evidence have byte-bound manifests and their own execution checks.
+extend-exclude = ["artifacts/**", "validation/**"]

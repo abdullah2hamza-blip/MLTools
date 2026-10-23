@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "status": "SAVED_TRACE_REPLAY_VERIFIED",
+  "release_id": "e0d81566ac60984fa9c17d120f446c7009352cf8b67a49a89f92704014fcc3e3",
+  "scope": "Two saved acquisitions reanalyzed; no fresh native execution or Git ancestry verification on Kaggle",
+  "counts": {
+    "execution_cells": 4,
+    "artifact_groups": 3,
+    "actual_conditions": 16,
+    "derived_views": 8,
+    "primary_decoder_calls": 1792,
+    "auxiliary_native_calls": 896,
+    "actual_shared_fresh_decoder_calls": 16,
+    "policy_space_replay_queries": 1792,
+    "policy_space_structural_controls": 16
+  },
+  "semantic_products_checked_per_run": 5,
+  "compiled_fault_fail": 12,
+  "compiled_control_fail": 0,
+  "physical_unknown_rows": 24
+}

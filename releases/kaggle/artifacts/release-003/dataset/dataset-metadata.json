@@ -1,0 +1,80 @@
+{
+  "title": "ML Boundary Conformance: Saved Trace Replay",
+  "subtitle": "Offline CPU replay of saved normalization-boundary research traces",
+  "id": "abdullah2hamza/boundary-conformance-replay",
+  "licenses": [
+    {
+      "name": "apache-2.0"
+    }
+  ],
+  "description": "# ML Boundary Conformance: Saved Trace Replay\n\nAn offline CPU research artifact for checking whether normalization boundaries\nagree with an explicitly supplied numerical reference. The accompanying Kaggle\nnotebook recomputes numerical verdicts, eight query-design comparisons, authority\nablations, fresh-witness relations, baseline interpretation, transport checks and\ncounts from two saved native acquisitions. It requires Python 3.13+, the standard\nlibrary and optional Matplotlib for the final plot. No downloads are needed.\n\nThis is **saved-trace replay**. It is not a new LeRobot/OpenPI/Robotruth/Policy\nSpace execution, learned-policy evaluation, robot experiment or independent\nreplication of the producer's environment. A separate original verifier checked\nthe full committed protocol and native records before export. The portable\nverifier checks a smaller public export without Git ancestry or independent\nattestation of the original producer.\n\n## Contents and use\n\n`conditions.csv` contains 24 rows: 16 actual conditions and 8 derived views that\nreuse observations. `payload.zip` contains exact frozen analysis source, selected\npublisher metadata, prepared intervention statistics/configurations, saved\nobservations from the original and clean acquisition, expected products, licenses,\nand a hash-bound provenance/redaction ledger. It contains no learned weights.\nThe notebook pins the payload SHA256, unpacks safely into a temporary working\ndirectory, recomputes all five products for both acquisitions in a fresh Python\nprocess, checks agreement, and writes a closed output report.\n\nAttach this dataset to the **Boundary Conformance Replay** notebook. Use CPU,\ninternet off. Run all cells. The expected final status is\n`VERIFIED_SAVED_TRACE_REPLAY`. For local use follow the release README. Source\nhashes, original artifact revisions, source manifests and component license\ndeclarations are retained inside the payload; `release-provenance.json` records\neach original/exported SHA256 and any permitted JSON-pointer redaction.\n\n## Experimental scope and findings\n\nThree published metadata groups provide four execution cells: ACT/MEAN_STD,\nSmolVLA/MEAN_STD, PI05/QUANTILES in LeRobot, and an explicit OpenPI transport of\nthe **same PI statistics**. The OpenPI cell is nested within that artifact, not\nanother independent checkpoint. The groups share ancestry and development\nknowledge. Metadata and intervention recipes were previously inspected; this\ndoes not establish blinded or unseen-root-cause generalization.\n\nThe original acquisitions made 1,792 primary decoder calls, 896 auxiliary native\ncalls and 16 shared fresh witness calls. There are four intended controls and\ntwelve injected changes. With full numerical authority, compiled, pointwise and\nstrong relational methods detect all twelve changes, fail none of the four\ncontrols, and agree on eight UNKNOWN derived views. Static statistics and\nindependently referenced round trips match these finite detection counts.\nCandidate self-round trips remain consistent for all sixteen actual conditions.\n\nOffset-authority ablation produces **eight disagreements**: compiled and strong\nrelational methods retain slope evidence where pointwise comparison abstains.\nThe zero-disagreement full-reference result excludes this ablation. All eight\nequal-budget query designs agree on the reported finite/full-affine statuses.\nCompiled method witness views use 16 native calls versus 12 each for pointwise\nand strong relational methods; overlapping acquisitions are charged once as\n16 shared calls. These observations support no performance-superiority claim.\n\nRobotruth finds known statistics identity changes in twelve conditions, while\nfull certification remains WITHHELD for all sixteen. These are not sixteen\nsemantic detections or four false alarms. Policy Space accepts 1,792 raw-vector\nreplays and rejects sixteen structural controls. Its float32 wire conversion is\nreported separately from float64 numerical verdicts; transport acceptance is\nnot conformance. All 24 physical-authority views are UNKNOWN.\n\n## Data dictionary\n\n| Column | Type | Meaning |\n| --- | --- | --- |\n| cell | string | Execution cell; PI/OpenPI reuses PI artifact |\n| cluster | string | Declared artifact ancestry group; not independent sampling |\n| condition | string | Numeric control, injected change, or authority-erased view |\n| derived | boolean | True means reused observations, no new acquisition |\n| compiled | string | PASS / FAIL / UNKNOWN under supplied numerical authority |\n| pointwise | string | Independent pointwise numerical status |\n| strong | string | Strong relational numerical status |\n| physical | string | UNKNOWN in every row; no physical calibration authority |\n| robotruth_identity_difference | boolean | Known union statistics hash differs |\n| robotruth_certification | string | WITHHELD for missing required evidence |\n| policy_space_transport | string | ACCEPT is structural raw-vector transport |\n\n## Provenance, license and exclusions\n\nOriginal code and results: Apache-2.0, approved by the repository owner.\nPublisher metadata: publisher-declared Apache-2.0 at pinned source revisions;\noriginal license texts/cards remain included. Intervention copies are explicit\nresearch derivatives, with exact changed values in `plan.json`; they are not\npublisher releases. See `THIRD_PARTY_NOTICES.md`. No rights to unprovided weights\nare asserted. Local environment/source-path fields in public trace projections\nare replaced with stable redaction labels, with exact JSON pointers and both\nhashes recorded. Numerical observations, source pins and verdicts are unchanged.\n\nExcluded: credentials, local environments, executables, dependency checkouts,\ncompiler/style assets, original private Git history, unresolved OpenPI GCS\nassets, Tether sources and unrelated development archives. The manuscript and\nretrospective/Panda/SO101 strata are outside this focused initial dataset. Their\nresults must not be inferred from the main table. The human-review manuscript\nis neither submitted nor accepted. Extensive AI assistance was used in the\nresearch and tooling. No population accuracy, hardware safety, policy task\nsuccess or cryptographic attestation is claimed.\n\n## Citation\n\nMLTools contributors (2026). *ML Boundary Conformance: Saved Trace Replay*.\nKaggle, `abdullah2hamza/boundary-conformance-replay`. Cite the dataset version and\nthe `release_id`/payload SHA256 printed by the notebook. This is an artifact\ncitation, not a claim of a peer-reviewed publication or an assigned DOI.\n",
+  "keywords": [
+    "machine learning",
+    "reproducible research"
+  ],
+  "resources": [
+    {
+      "path": "conditions.csv",
+      "description": "16 actual conditions and 8 reused derived views",
+      "schema": {
+        "fields": [
+          {
+            "name": "cell",
+            "description": "Execution cell; OpenPI reuses the PI artifact",
+            "type": "string"
+          },
+          {
+            "name": "cluster",
+            "description": "Declared dependency-linked ancestry group",
+            "type": "string"
+          },
+          {
+            "name": "condition",
+            "description": "Actual condition or derived authority-erased view",
+            "type": "string"
+          },
+          {
+            "name": "derived",
+            "description": "Reuses observations, no new acquisition",
+            "type": "boolean"
+          },
+          {
+            "name": "compiled",
+            "description": "Compiled numerical PASS/FAIL/UNKNOWN",
+            "type": "string"
+          },
+          {
+            "name": "pointwise",
+            "description": "Independent pointwise numerical status",
+            "type": "string"
+          },
+          {
+            "name": "strong",
+            "description": "Strong relational numerical status",
+            "type": "string"
+          },
+          {
+            "name": "physical",
+            "description": "UNKNOWN: no calibrated physical authority",
+            "type": "string"
+          },
+          {
+            "name": "robotruth_identity_difference",
+            "description": "Union statistics identity differs from control",
+            "type": "boolean"
+          },
+          {
+            "name": "robotruth_certification",
+            "description": "WITHHELD for missing evidence",
+            "type": "string"
+          },
+          {
+            "name": "policy_space_transport",
+            "description": "Structural acceptance only",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ]
+}

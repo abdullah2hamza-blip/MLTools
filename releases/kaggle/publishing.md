@@ -41,7 +41,7 @@ The separate configuration requires these fields:
   "schema_version": 1,
   "owner": "abdullah2hamza",
   "dataset_slug": "boundary-conformance-replay",
-  "notebook_slug": "boundary-conformance-replay",
+  "notebook_slug": "boundary-conformance-replay-notebook",
   "license": "apache-2.0",
   "license_approved": true,
   "dataset_title": "ML Boundary Conformance: Saved Trace Replay",
@@ -56,6 +56,12 @@ values. All other unrecognized configuration keys are refused.
 external operations. A non-null license must match the dataset metadata exactly.
 License approval is a human decision; matching configuration strings does not
 establish ownership or satisfy third-party obligations by itself.
+
+The notebook title is `Boundary Conformance Replay Notebook`, with a different
+slug from the dataset. Kaggle rejected the original shared name with a 409
+response stating that it was already used by a dataset. Dataset attachment and
+version-specific notebook identity are checked independently. Optional fixed
+`dataset_title`/`notebook_title` keys are supported by the checked-in config.
 
 `release-manifest.json` has integer `schema_version: 1`, a stable `release_id`,
 `payload_sha256`, and `files`, a mapping of every other dataset filename to its
@@ -115,6 +121,13 @@ Perform and inspect these steps separately:
 6. `--step output-verify --output NEW_OUTPUT_DIR`: a local read-only verification;
    do not supply `--execute`. See the report contract below.
 
+For a deliberate later revision, use `--step notebook-version --notebook-version N`
+where N is the inspected predecessor. It uses a separate duplicate guard for
+each predecessor and records that predecessor in its claim. It is an explicitly
+requested new version, not a retry of a submitted creation. Kaggle exposes no
+atomic predecessor condition here; inspect the returned version number and
+retrieve that exact version. Public visibility remains unchanged.
+
 For a remote step, the explicit execution form is:
 
 ```sh
@@ -137,7 +150,7 @@ unknown outcome. A zero exit is merely `SUBMITTED`. Repeating either mutation is
 refused, including after a successful submission. There is no automatic retry,
 dataset versioning, deletion or visibility change. Keep timeout partial output.
 
-After independently inspecting the native account/status/files, a human may
+After inspecting the native account/status/files, an authorized operator may
 explicitly reconcile the exact attempt using a local evidence file:
 
 ```sh
@@ -147,8 +160,13 @@ python releases/kaggle/publish.py --root BUILD_ROOT --config releases/kaggle/con
 `CONFIRMED_NO_REMOTE_MUTATION` permits one new attempt while preserving the old
 one. `CONFIRMED_REMOTE_MUTATION` keeps duplicate creation blocked. Neither a
 nonzero exit nor an HTTP error by itself establishes that nothing was created.
-Reconciliation stores the supplied evidence hash and remains a human assertion.
+Reconciliation stores the supplied evidence hash and remains a caller assertion.
 Do not discard state or choose a new state directory to bypass these controls.
+
+The authorized CLI child now records bounded HTTP error bodies to expose server
+validation failures hidden by the CLI's short exception message. Token-format
+values are masked, and the publisher redacts its supplied environment token from
+ordinary and timeout output before saving logs. Planning still reads no tokens.
 
 ## Hosted output verification and public review
 
@@ -159,6 +177,22 @@ output**. Required outputs are the five predeclared semantic files plus
 `replay-summary.json`; additional figure files must also be listed. All files
 and directories must be free of links and known privacy patterns. Extraction
 directories, temporary files and logs must not remain as unlisted hosted output.
+
+Kaggle injects `__notebook__.ipynb` into the working directory and omits it from
+the downloadable outputs. Its hash is recorded separately in the notebook's
+`platform_runtime_files_not_exported` field. The report's `files` map covers
+only the produced research outputs. The CLI additionally writes a notebook log
+when downloading. Preserve the raw download, then use the local staging command:
+
+```sh
+python releases/kaggle/stage_hosted.py --root BUILD_ROOT --config releases/kaggle/config.json --raw RAW_DOWNLOAD --output NEW_VERIFIED_DIR --record VERIFICATION.json
+```
+
+This preserves and hashes every raw file, allows only the exact CLI log as an
+extra sidecar, and applies the unchanged strict output verifier to a separate
+report-bound directory. Missing declared files, unknown sidecars, substituted
+results and incorrect predeclared hashes still fail. Do not edit or rehash a
+downloaded report to make it pass.
 
 The publisher checks the closed inventory, every report hash, release/payload
 binding, and the five predeclared semantic output byte hashes. A rehashed but

@@ -26,6 +26,7 @@ jobs:
       - run: .venv-kaggle/Scripts/python.exe releases/kaggle/build.py --output releases/kaggle/build/ci
       - run: .venv-kaggle/Scripts/python.exe releases/kaggle/publish.py --root releases/kaggle/build/ci --config releases/kaggle/config.json
       - run: .venv-kaggle/Scripts/python.exe releases/kaggle/smoke.py --root releases/kaggle/build/ci --work .test-tmp/kaggle-smoke --record releases/kaggle/build/ci-validation
+      - run: .venv-kaggle/Scripts/python.exe releases/kaggle/smoke.py --root releases/kaggle/build/ci --work .test-tmp/kaggle-expanded --record releases/kaggle/build/ci-expanded-validation --expanded-input --platform-runtime-file
   core:
     strategy:
       matrix:

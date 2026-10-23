@@ -217,7 +217,9 @@ def build(output, config):
     )
     require(config["owner"] == "abdullah2hamza", "confirmed release owner")
     require(
-        config["dataset_slug"] == config["notebook_slug"] == "boundary-conformance-replay", "reviewed slugs"
+        config["dataset_slug"] == "boundary-conformance-replay"
+        and config["notebook_slug"] == "boundary-conformance-replay-notebook",
+        "reviewed distinct slugs",
     )
     output = Path(output).resolve()
     require(not output.exists(), "build destination must be new")
@@ -291,7 +293,7 @@ def build(output, config):
             "expected_replay_outputs": expected_outputs,
         }
     )
-    nb = notebook(payload_sha, release_id, config["dataset_slug"])
+    nb = notebook(payload_sha, release_id, config["dataset_slug"], sha(files["manifest.json"]))
     for cell in nb["cells"]:
         if cell["cell_type"] == "code":
             compile(cell["source"], "<notebook-cell>", "exec")
@@ -332,7 +334,7 @@ def build(output, config):
         },
         "original_verification": proofs,
         "credentials_used": False,
-        "hosted_validation": "PENDING_TOKEN_AND_AUTHORIZATION",
+        "hosted_validation": "NOT_PERFORMED_BY_BUILD_STEP",
     }
 
 

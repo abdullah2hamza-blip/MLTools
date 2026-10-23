@@ -1,9 +1,12 @@
 """Generate an ordinary offline Kaggle notebook without importing Jupyter/Kaggle."""
 
+import inspect
 import textwrap
 
+from bootstrap import prepare_payload
 
-def notebook(payload_sha256, release_id, dataset_slug):
+
+def notebook(payload_sha256, release_id, dataset_slug, payload_manifest_sha256):
     cells = []
 
     def add(kind, text):
@@ -34,17 +37,16 @@ def notebook(payload_sha256, release_id, dataset_slug):
     )
     add(
         "code",
-        f"""
-        import hashlib, json, os, shutil, stat, subprocess, sys, tempfile, zipfile
-        from pathlib import Path, PurePosixPath
+        inspect.getsource(prepare_payload)
+        + "\n"
+        + textwrap.dedent(f"""
+        import hashlib, json, os, shutil, subprocess, sys, tempfile
+        from pathlib import Path
         PAYLOAD_SHA256 = {payload_sha256!r}
+        PAYLOAD_MANIFEST_SHA256 = {payload_manifest_sha256!r}
         RELEASE_ID = {release_id!r}
         # The override is only for local smoke tests; Kaggle uses the attached dataset.
         input_root = Path(os.environ.get("MLTOOLS_INPUT", "/kaggle/input"))
-        candidates = sorted(input_root.rglob("payload.zip"))
-        matches = [p for p in candidates if hashlib.sha256(p.read_bytes()).hexdigest() == PAYLOAD_SHA256]
-        assert len(matches) == 1, "Attach the exact dataset version matching this notebook's payload hash"
-        payload = matches[0]
         working = Path(os.environ.get("MLTOOLS_OUTPUT", "/kaggle/working"))
         working.mkdir(parents=True, exist_ok=True)
         expected_names = {{"analysis.json", "metrics.json", "witnesses.json", "workflow-analysis.json",
@@ -52,30 +54,19 @@ def notebook(payload_sha256, release_id, dataset_slug):
         assert not any((working / n).exists() for n in expected_names), "Use a clean output directory"
         scratch = Path(tempfile.mkdtemp(prefix="mltools-replay-"))
         unpacked = scratch / "payload"
-        with zipfile.ZipFile(payload) as archive:
-            entries = archive.infolist()
-            assert 0 < len(entries) <= 2000
-            assert sum(i.file_size for i in entries) <= 64 * 1024 * 1024
-            names = [i.filename for i in entries]
-            assert len(set(n.casefold() for n in names)) == len(names)
-            for item in entries:
-                p = PurePosixPath(item.filename)
-                assert item.filename and "\\\\" not in item.filename and not p.is_absolute()
-                assert p.as_posix() == item.filename
-                assert all(x not in ("", ".", "..") and ":" not in x for x in p.parts)
-                assert not item.is_dir() and stat.S_IFMT(item.external_attr >> 16) in (0, stat.S_IFREG)
-                assert not item.flag_bits & 1
-            for item in entries:
-                target = unpacked.joinpath(*PurePosixPath(item.filename).parts)
-                target.parent.mkdir(parents=True, exist_ok=True)
-                target.write_bytes(archive.read(item))
+        representation = prepare_payload(input_root, unpacked, PAYLOAD_SHA256, PAYLOAD_MANIFEST_SHA256)
         print("Pinned release:", RELEASE_ID)
-    """,
+        print("Verified input representation:", representation)
+    """),
     )
     add(
         "markdown",
         """
-        The payload hash binds the notebook to this export version. The replay
+        Kaggle expands uploaded ZIPs. The notebook verifies the pinned archive
+        hash when a ZIP is present, or the pinned manifest hash and every member
+        hash when Kaggle supplies the expanded directory. The payload SHA256
+        identifies the original upload; it is not a claim to have downloaded a
+        ZIP when only expanded files are present. The replay
         subprocess verifies every released file, revalidates saved native input/
         output relations, reconstructs all five products, checks each against
         its saved product and compares both acquisitions. Original Git/native
@@ -99,7 +90,7 @@ def notebook(payload_sha256, release_id, dataset_slug):
         runpy.run_path(sys.argv[0], run_name='__main__')
         """
         try:
-            result = subprocess.run([sys.executable, "-I", "-B", "-c", runner,
+            result = subprocess.run([sys.executable, "-I", "-S", "-B", "-c", runner,
                                      str(unpacked), str(scratch / "results")],
                                     check=True, capture_output=True, text=True, timeout=180)
             print(result.stdout)
@@ -184,9 +175,17 @@ def notebook(payload_sha256, release_id, dataset_slug):
             fig.savefig(working / "outcomes.svg", metadata={"Date": None})
             plt.show()
             plt.close(fig)
-        files = {p.relative_to(working).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
-                 for p in sorted(working.rglob("*")) if p.is_file() and p.name != "replay-report.json"}
+        inventory = {p.relative_to(working).as_posix(): p for p in working.rglob("*") if p.is_file()}
+        export_names = expected_names - {"replay-report.json"}
+        platform_names = {"__notebook__.ipynb"}
+        assert not set(inventory) - export_names - platform_names - {"replay-report.json"}
+        files = {name: hashlib.sha256(inventory[name].read_bytes()).hexdigest()
+                 for name in sorted(set(inventory) & export_names)}
+        platform = {name: hashlib.sha256(inventory[name].read_bytes()).hexdigest()
+                    for name in sorted(set(inventory) & platform_names)}
         report = {"schema_version": 1, "release_id": RELEASE_ID, "payload_sha256": PAYLOAD_SHA256,
+                  "payload_manifest_sha256": PAYLOAD_MANIFEST_SHA256, "input_representation": representation,
+                  "platform_runtime_files_not_exported": platform,
                   "status": "VERIFIED_SAVED_TRACE_REPLAY", "files": files}
         (working / "replay-report.json").write_text(
             json.dumps(report, indent=2) + "\\n", encoding="utf-8", newline="\\n")
