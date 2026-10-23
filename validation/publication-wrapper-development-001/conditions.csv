@@ -1,0 +1,14 @@
+cell,cluster,condition,derived,compiled,pointwise,strong,physical,robotruth_identity_difference,robotruth_certification,policy_space_transport
+act_move_cube_lerobot,yutofujita-so101-move-cube,numeric_control,false,PASS,PASS,PASS,UNKNOWN,false,WITHHELD,ACCEPT
+act_move_cube_lerobot,yutofujita-so101-move-cube,offset_intervention,false,FAIL,FAIL,FAIL,UNKNOWN,true,WITHHELD,ACCEPT
+act_move_cube_lerobot,yutofujita-so101-move-cube,slope_intervention,false,FAIL,FAIL,FAIL,UNKNOWN,true,WITHHELD,ACCEPT
+act_move_cube_lerobot,yutofujita-so101-move-cube,fixed_offset_slope_composition,false,FAIL,FAIL,FAIL,UNKNOWN,true,WITHHELD,ACCEPT
+act_move_cube_lerobot,yutofujita-so101-move-cube,equivalent_f64_serialization,false,PASS,PASS,PASS,UNKNOWN,true,WITHHELD,ACCEPT
+act_move_cube_lerobot,yutofujita-so101-move-cube,reference_authority_erased,true,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,false,WITHHELD,ACCEPT
+act_move_cube_lerobot,yutofujita-so101-move-cube,output_units_erased,true,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,false,WITHHELD,ACCEPT
+authored_quantile_openpi,authored-known-two-axis-openpi-development,numeric_control,false,PASS,PASS,PASS,UNKNOWN,false,WITHHELD,ACCEPT
+authored_quantile_openpi,authored-known-two-axis-openpi-development,offset_intervention,false,FAIL,FAIL,FAIL,UNKNOWN,true,WITHHELD,ACCEPT
+authored_quantile_openpi,authored-known-two-axis-openpi-development,slope_intervention,false,FAIL,FAIL,FAIL,UNKNOWN,true,WITHHELD,ACCEPT
+authored_quantile_openpi,authored-known-two-axis-openpi-development,fixed_offset_slope_composition,false,FAIL,FAIL,FAIL,UNKNOWN,true,WITHHELD,ACCEPT
+authored_quantile_openpi,authored-known-two-axis-openpi-development,reference_authority_erased,true,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,false,WITHHELD,ACCEPT
+authored_quantile_openpi,authored-known-two-axis-openpi-development,output_units_erased,true,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,false,WITHHELD,ACCEPT

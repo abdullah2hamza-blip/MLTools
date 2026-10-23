@@ -1,0 +1,14 @@
+{
+  "type": "authored_openpi_transport_fixture",
+  "output_features": {
+    "action": {
+      "type": "ACTION",
+      "shape": [
+        2
+      ]
+    }
+  },
+  "normalization_mapping": {
+    "ACTION": "QUANTILES"
+  }
+}

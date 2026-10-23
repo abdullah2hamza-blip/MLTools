@@ -1,0 +1,772 @@
+{
+  "schema_version": 1,
+  "role": "development",
+  "final_evaluation": false,
+  "cells": {
+    "act_move_cube_lerobot": {
+      "cluster": "yutofujita-so101-move-cube",
+      "methods": {
+        "compiled": {
+          "fault_fail": 3,
+          "declared_faults": 3,
+          "control_fail": 0,
+          "numeric_controls": 2,
+          "numeric_status_counts_including_derived_views": {
+            "PASS": 2,
+            "FAIL": 3,
+            "UNKNOWN": 2
+          }
+        },
+        "independent_pointwise": {
+          "fault_fail": 3,
+          "declared_faults": 3,
+          "control_fail": 0,
+          "numeric_controls": 2,
+          "numeric_status_counts_including_derived_views": {
+            "PASS": 2,
+            "FAIL": 3,
+            "UNKNOWN": 2
+          }
+        },
+        "strong_relational": {
+          "fault_fail": 3,
+          "declared_faults": 3,
+          "control_fail": 0,
+          "numeric_controls": 2,
+          "numeric_status_counts_including_derived_views": {
+            "PASS": 2,
+            "FAIL": 3,
+            "UNKNOWN": 2
+          }
+        }
+      },
+      "paired_oracle_verdict_disagreements": 0,
+      "physical_status_counts_including_derived_views": {
+        "UNKNOWN": 7
+      },
+      "applicable_numeric_workflows": {
+        "static_statistics": {
+          "fault_fail": 3,
+          "declared_faults": 3,
+          "control_fail": 0,
+          "numeric_controls": 2
+        },
+        "independent_roundtrip": {
+          "fault_fail": 3,
+          "declared_faults": 3,
+          "control_fail": 0,
+          "numeric_controls": 2
+        }
+      },
+      "self_roundtrip_consistency_counts": {
+        "WITHIN_TOLERANCE": 5
+      },
+      "geometry_shared_oracle_counts": {
+        "canonical": {
+          "finite_status": {
+            "PASS": 2,
+            "FAIL": 3
+          },
+          "full_affine_request_status": {
+            "PASS": 2,
+            "FAIL": 3
+          }
+        },
+        "manual_axis": {
+          "finite_status": {
+            "PASS": 2,
+            "FAIL": 3
+          },
+          "full_affine_request_status": {
+            "PASS": 2,
+            "FAIL": 3
+          }
+        },
+        "random_axis_7": {
+          "finite_status": {
+            "PASS": 2,
+            "FAIL": 3
+          },
+          "full_affine_request_status": {
+            "PASS": 2,
+            "FAIL": 3
+          }
+        },
+        "random_axis_23": {
+          "finite_status": {
+            "PASS": 2,
+            "FAIL": 3
+          },
+          "full_affine_request_status": {
+            "PASS": 2,
+            "FAIL": 3
+          }
+        },
+        "random_axis_101": {
+          "finite_status": {
+            "PASS": 2,
+            "FAIL": 3
+          },
+          "full_affine_request_status": {
+            "PASS": 2,
+            "FAIL": 3
+          }
+        },
+        "random_dense_7": {
+          "finite_status": {
+            "PASS": 2,
+            "FAIL": 3
+          },
+          "full_affine_request_status": {
+            "PASS": 2,
+            "FAIL": 3
+          }
+        },
+        "random_dense_23": {
+          "finite_status": {
+            "PASS": 2,
+            "FAIL": 3
+          },
+          "full_affine_request_status": {
+            "PASS": 2,
+            "FAIL": 3
+          }
+        },
+        "random_dense_101": {
+          "finite_status": {
+            "PASS": 2,
+            "FAIL": 3
+          },
+          "full_affine_request_status": {
+            "PASS": 2,
+            "FAIL": 3
+          }
+        }
+      }
+    },
+    "authored_quantile_openpi": {
+      "cluster": "authored-known-two-axis-openpi-development",
+      "methods": {
+        "compiled": {
+          "fault_fail": 3,
+          "declared_faults": 3,
+          "control_fail": 0,
+          "numeric_controls": 1,
+          "numeric_status_counts_including_derived_views": {
+            "PASS": 1,
+            "FAIL": 3,
+            "UNKNOWN": 2
+          }
+        },
+        "independent_pointwise": {
+          "fault_fail": 3,
+          "declared_faults": 3,
+          "control_fail": 0,
+          "numeric_controls": 1,
+          "numeric_status_counts_including_derived_views": {
+            "PASS": 1,
+            "FAIL": 3,
+            "UNKNOWN": 2
+          }
+        },
+        "strong_relational": {
+          "fault_fail": 3,
+          "declared_faults": 3,
+          "control_fail": 0,
+          "numeric_controls": 1,
+          "numeric_status_counts_including_derived_views": {
+            "PASS": 1,
+            "FAIL": 3,
+            "UNKNOWN": 2
+          }
+        }
+      },
+      "paired_oracle_verdict_disagreements": 0,
+      "physical_status_counts_including_derived_views": {
+        "UNKNOWN": 6
+      },
+      "applicable_numeric_workflows": {
+        "static_statistics": {
+          "fault_fail": 3,
+          "declared_faults": 3,
+          "control_fail": 0,
+          "numeric_controls": 1
+        },
+        "independent_roundtrip": {
+          "fault_fail": 3,
+          "declared_faults": 3,
+          "control_fail": 0,
+          "numeric_controls": 1
+        }
+      },
+      "self_roundtrip_consistency_counts": {
+        "WITHIN_TOLERANCE": 4
+      },
+      "geometry_shared_oracle_counts": {
+        "canonical": {
+          "finite_status": {
+            "PASS": 1,
+            "FAIL": 3
+          },
+          "full_affine_request_status": {
+            "PASS": 1,
+            "FAIL": 3
+          }
+        },
+        "manual_axis": {
+          "finite_status": {
+            "PASS": 1,
+            "FAIL": 3
+          },
+          "full_affine_request_status": {
+            "PASS": 1,
+            "FAIL": 3
+          }
+        },
+        "random_axis_7": {
+          "finite_status": {
+            "PASS": 1,
+            "FAIL": 3
+          },
+          "full_affine_request_status": {
+            "PASS": 1,
+            "FAIL": 3
+          }
+        },
+        "random_axis_23": {
+          "finite_status": {
+            "PASS": 1,
+            "FAIL": 3
+          },
+          "full_affine_request_status": {
+            "PASS": 1,
+            "FAIL": 3
+          }
+        },
+        "random_axis_101": {
+          "finite_status": {
+            "PASS": 1,
+            "FAIL": 3
+          },
+          "full_affine_request_status": {
+            "PASS": 1,
+            "FAIL": 3
+          }
+        },
+        "random_dense_7": {
+          "finite_status": {
+            "PASS": 1,
+            "FAIL": 3
+          },
+          "full_affine_request_status": {
+            "PASS": 1,
+            "FAIL": 3
+          }
+        },
+        "random_dense_23": {
+          "finite_status": {
+            "PASS": 1,
+            "FAIL": 3
+          },
+          "full_affine_request_status": {
+            "PASS": 1,
+            "FAIL": 3
+          }
+        },
+        "random_dense_101": {
+          "finite_status": {
+            "PASS": 1,
+            "FAIL": 3
+          },
+          "full_affine_request_status": {
+            "PASS": 1,
+            "FAIL": 3
+          }
+        }
+      }
+    }
+  },
+  "artifact_groups": {
+    "yutofujita-so101-move-cube": {
+      "execution_cells": [
+        "act_move_cube_lerobot"
+      ],
+      "methods": {
+        "compiled": {
+          "fault_fail": 3,
+          "declared_faults": 3,
+          "control_fail": 0,
+          "numeric_controls": 2,
+          "finite_fault_detection_fraction": 1.0,
+          "finite_control_fail_fraction": 0.0
+        },
+        "independent_pointwise": {
+          "fault_fail": 3,
+          "declared_faults": 3,
+          "control_fail": 0,
+          "numeric_controls": 2,
+          "finite_fault_detection_fraction": 1.0,
+          "finite_control_fail_fraction": 0.0
+        },
+        "strong_relational": {
+          "fault_fail": 3,
+          "declared_faults": 3,
+          "control_fail": 0,
+          "numeric_controls": 2,
+          "finite_fault_detection_fraction": 1.0,
+          "finite_control_fail_fraction": 0.0
+        }
+      }
+    },
+    "authored-known-two-axis-openpi-development": {
+      "execution_cells": [
+        "authored_quantile_openpi"
+      ],
+      "methods": {
+        "compiled": {
+          "fault_fail": 3,
+          "declared_faults": 3,
+          "control_fail": 0,
+          "numeric_controls": 1,
+          "finite_fault_detection_fraction": 1.0,
+          "finite_control_fail_fraction": 0.0
+        },
+        "independent_pointwise": {
+          "fault_fail": 3,
+          "declared_faults": 3,
+          "control_fail": 0,
+          "numeric_controls": 1,
+          "finite_fault_detection_fraction": 1.0,
+          "finite_control_fail_fraction": 0.0
+        },
+        "strong_relational": {
+          "fault_fail": 3,
+          "declared_faults": 3,
+          "control_fail": 0,
+          "numeric_controls": 1,
+          "finite_fault_detection_fraction": 1.0,
+          "finite_control_fail_fraction": 0.0
+        }
+      }
+    }
+  },
+  "leave_one_artifact_out_macro_detection_fraction": {
+    "yutofujita-so101-move-cube": {
+      "compiled": 1.0,
+      "independent_pointwise": 1.0,
+      "strong_relational": 1.0
+    },
+    "authored-known-two-axis-openpi-development": {
+      "compiled": 1.0,
+      "independent_pointwise": 1.0,
+      "strong_relational": 1.0
+    }
+  },
+  "uncertainty": "Descriptive equal-artifact-weight sensitivity only; no independent clusters, CI or population accuracy claim",
+  "counts": {
+    "execution_cells": 2,
+    "artifact_groups": 2,
+    "actual_conditions": 9,
+    "derived_views": 4,
+    "primary_decoder_calls": 680,
+    "auxiliary_native_calls": 340,
+    "actual_shared_fresh_decoder_calls": 8,
+    "policy_space_replay_queries": 680,
+    "policy_space_structural_controls": 8
+  },
+  "phase_costs": {
+    "robotruth": {
+      "wall_seconds": 0.22994310001377016,
+      "extract_calls": 11,
+      "check_calls": 9,
+      "python": "3.13.7",
+      "packages": {
+        "annotated-doc": "0.0.5",
+        "annotated-types": "0.8.0",
+        "colorama": "0.4.6",
+        "Jinja2": "3.1.6",
+        "markdown-it-py": "4.2.0",
+        "MarkupSafe": "3.0.4",
+        "mdurl": "0.1.2",
+        "numpy": "2.5.4",
+        "pyarrow": "26.0.0",
+        "pydantic": "2.14.1",
+        "pydantic_core": "2.50.1",
+        "Pygments": "2.21.0",
+        "PyYAML": "6.0.3",
+        "rich": "15.0.0",
+        "robotruth": "0.1.6",
+        "safetensors": "0.8.0",
+        "scipy": "1.18.1",
+        "shellingham": "1.5.4",
+        "typer": "0.27.3",
+        "typing_extensions": "4.16.0",
+        "typing-inspection": "0.4.4"
+      },
+      "total_wall_seconds": 1.0329254000098445,
+      "process_cpu_seconds": 0.90625,
+      "peak_rss_bytes": 39571456,
+      "network_events": [],
+      "denied_dependency_capability_probes": [],
+      "environment_prefix": "C:\\Users\\Abdul\\Documents\\MLTools\\.venv-robotruth"
+    },
+    "lerobot": {
+      "setup_seconds": 15.381336199992802,
+      "main_seconds": 0.048696900019422174,
+      "roundtrip_seconds": 0.07883529999526218,
+      "primary_decoder_calls": 520,
+      "auxiliary_native_calls": 260,
+      "python": "3.13.7",
+      "packages": {
+        "anyio": "4.15.1",
+        "certifi": "2026.10.19",
+        "charset-normalizer": "3.5.2",
+        "click": "8.5.0",
+        "cloudpickle": "3.1.2",
+        "cmake": "4.1.3",
+        "colorama": "0.4.6",
+        "draccus": "0.11.6",
+        "einops": "0.8.2",
+        "Farama-Notifications": "0.0.6",
+        "filelock": "3.32.7",
+        "fsspec": "2026.9.0",
+        "gymnasium": "1.4.0",
+        "h11": "0.16.0",
+        "hf-xet": "1.7.0",
+        "httpcore": "1.0.9",
+        "httpx": "0.28.1",
+        "huggingface_hub": "1.33.0",
+        "idna": "3.20",
+        "iniconfig": "2.3.1",
+        "Jinja2": "3.1.6",
+        "lerobot": "0.6.2",
+        "MarkupSafe": "3.0.4",
+        "mergedeep": "1.3.4",
+        "mltools": "0.1.0",
+        "mpmath": "1.3.0",
+        "mypy_extensions": "1.1.0",
+        "networkx": "3.7",
+        "numpy": "2.2.6",
+        "opencv-python-headless": "4.13.0.92",
+        "packaging": "25.0",
+        "pillow": "12.3.0",
+        "pluggy": "1.7.0",
+        "Pygments": "2.21.0",
+        "pytest": "9.1.1",
+        "PyYAML": "6.0.3",
+        "requests": "2.34.2",
+        "ruff": "0.17.1",
+        "safetensors": "0.8.0",
+        "setuptools": "81.0.0",
+        "sympy": "1.14.0",
+        "termcolor": "3.3.0",
+        "toml": "0.10.2",
+        "torch": "2.11.0",
+        "torchvision": "0.26.0",
+        "tqdm": "4.70.1",
+        "typing_extensions": "4.16.0",
+        "typing-inspect": "0.9.0",
+        "urllib3": "2.8.0"
+      },
+      "total_wall_seconds": 16.27364729999681,
+      "process_cpu_seconds": 11.78125,
+      "peak_rss_bytes": 297861120,
+      "network_events": [],
+      "denied_dependency_capability_probes": [],
+      "environment_prefix": "C:\\Users\\Abdul\\Documents\\MLTools\\.venv"
+    },
+    "openpi": {
+      "setup_seconds": 27.904301100003067,
+      "main_seconds": 0.0121002999949269,
+      "roundtrip_seconds": 0.017443399992771447,
+      "primary_decoder_calls": 160,
+      "auxiliary_native_calls": 80,
+      "python": "3.11.13",
+      "packages": {
+        "absl-py": "2.5.1",
+        "annotated-types": "0.8.0",
+        "augmax": "0.4.1",
+        "beartype": "0.19.0",
+        "certifi": "2026.10.19",
+        "charset-normalizer": "3.5.2",
+        "chex": "0.1.90",
+        "colorama": "0.4.6",
+        "einops": "0.8.1",
+        "equinox": "0.12.2",
+        "etils": "1.12.2",
+        "filelock": "3.18.0",
+        "flax": "0.10.2",
+        "fsspec": "2025.3.0",
+        "huggingface_hub": "0.36.2",
+        "humanize": "4.16.0",
+        "idna": "3.20",
+        "importlib_resources": "7.1.0",
+        "jax": "0.5.3",
+        "jaxlib": "0.5.3",
+        "jaxtyping": "0.2.36",
+        "Jinja2": "3.1.6",
+        "markdown-it-py": "4.2.0",
+        "MarkupSafe": "3.0.3",
+        "mdurl": "0.1.2",
+        "ml-dtypes": "0.4.1",
+        "mpmath": "1.3.0",
+        "msgpack": "1.2.3",
+        "nest-asyncio": "1.6.0",
+        "networkx": "3.6.1",
+        "numpy": "1.26.4",
+        "numpydantic": "1.6.9",
+        "openpi": "0.1.0",
+        "openpi-client": "0.1.0",
+        "optax": "0.2.4",
+        "opt_einsum": "3.4.0",
+        "orbax-checkpoint": "0.11.13",
+        "packaging": "26.3",
+        "pillow": "11.2.1",
+        "protobuf": "7.36.2",
+        "pydantic": "2.11.5",
+        "pydantic_core": "2.33.2",
+        "Pygments": "2.21.0",
+        "PyYAML": "6.0.3",
+        "regex": "2026.9.29",
+        "requests": "2.34.2",
+        "rich": "15.0.0",
+        "safetensors": "0.5.3",
+        "scipy": "1.17.1",
+        "sentencepiece": "0.2.0",
+        "simplejson": "4.2.0",
+        "sympy": "1.14.0",
+        "tensorstore": "0.1.74",
+        "tokenizers": "0.21.4",
+        "toolz": "1.2.0",
+        "torch": "2.7.1+cpu",
+        "tqdm": "4.70.1",
+        "tqdm-loggable": "0.2",
+        "transformers": "4.53.2",
+        "typing_extensions": "4.16.0",
+        "typing-inspection": "0.4.4",
+        "urllib3": "2.8.0",
+        "wadler_lindig": "0.1.7",
+        "zipp": "4.1.2"
+      },
+      "total_wall_seconds": 28.675218999997014,
+      "process_cpu_seconds": 23.890625,
+      "peak_rss_bytes": 400461824,
+      "network_events": [],
+      "denied_dependency_capability_probes": [
+        {
+          "event": "socket.bind",
+          "classification": "denied_import_time_ipv6_capability_probe",
+          "distribution": "urllib3",
+          "version": "2.8.0",
+          "source": "urllib3/util/connection.py",
+          "source_sha256_lf": "2633bbdb69731e5ccb5cf4e4afd65605d86c7979cc5633126f50c92d5ad74a74",
+          "function": "_has_ipv6",
+          "address": [
+            "::1",
+            0
+          ],
+          "operation_executed": false
+        }
+      ],
+      "environment_prefix": "C:\\Users\\Abdul\\Documents\\MLTools\\.venv-openpi"
+    },
+    "lerobot_witness": {
+      "setup_seconds": 8.88228610000806,
+      "main_seconds": 0.01283220000914298,
+      "primary_decoder_calls": 4,
+      "auxiliary_native_calls": 0,
+      "python": "3.13.7",
+      "packages": {
+        "anyio": "4.15.1",
+        "certifi": "2026.10.19",
+        "charset-normalizer": "3.5.2",
+        "click": "8.5.0",
+        "cloudpickle": "3.1.2",
+        "cmake": "4.1.3",
+        "colorama": "0.4.6",
+        "draccus": "0.11.6",
+        "einops": "0.8.2",
+        "Farama-Notifications": "0.0.6",
+        "filelock": "3.32.7",
+        "fsspec": "2026.9.0",
+        "gymnasium": "1.4.0",
+        "h11": "0.16.0",
+        "hf-xet": "1.7.0",
+        "httpcore": "1.0.9",
+        "httpx": "0.28.1",
+        "huggingface_hub": "1.33.0",
+        "idna": "3.20",
+        "iniconfig": "2.3.1",
+        "Jinja2": "3.1.6",
+        "lerobot": "0.6.2",
+        "MarkupSafe": "3.0.4",
+        "mergedeep": "1.3.4",
+        "mltools": "0.1.0",
+        "mpmath": "1.3.0",
+        "mypy_extensions": "1.1.0",
+        "networkx": "3.7",
+        "numpy": "2.2.6",
+        "opencv-python-headless": "4.13.0.92",
+        "packaging": "25.0",
+        "pillow": "12.3.0",
+        "pluggy": "1.7.0",
+        "Pygments": "2.21.0",
+        "pytest": "9.1.1",
+        "PyYAML": "6.0.3",
+        "requests": "2.34.2",
+        "ruff": "0.17.1",
+        "safetensors": "0.8.0",
+        "setuptools": "81.0.0",
+        "sympy": "1.14.0",
+        "termcolor": "3.3.0",
+        "toml": "0.10.2",
+        "torch": "2.11.0",
+        "torchvision": "0.26.0",
+        "tqdm": "4.70.1",
+        "typing_extensions": "4.16.0",
+        "typing-inspect": "0.9.0",
+        "urllib3": "2.8.0"
+      },
+      "total_wall_seconds": 9.66841439998825,
+      "process_cpu_seconds": 9.171875,
+      "peak_rss_bytes": 297345024,
+      "network_events": [],
+      "denied_dependency_capability_probes": [],
+      "environment_prefix": "C:\\Users\\Abdul\\Documents\\MLTools\\.venv"
+    },
+    "openpi_witness": {
+      "setup_seconds": 21.170038799988106,
+      "main_seconds": 0.015002000000094995,
+      "primary_decoder_calls": 4,
+      "auxiliary_native_calls": 0,
+      "python": "3.11.13",
+      "packages": {
+        "absl-py": "2.5.1",
+        "annotated-types": "0.8.0",
+        "augmax": "0.4.1",
+        "beartype": "0.19.0",
+        "certifi": "2026.10.19",
+        "charset-normalizer": "3.5.2",
+        "chex": "0.1.90",
+        "colorama": "0.4.6",
+        "einops": "0.8.1",
+        "equinox": "0.12.2",
+        "etils": "1.12.2",
+        "filelock": "3.18.0",
+        "flax": "0.10.2",
+        "fsspec": "2025.3.0",
+        "huggingface_hub": "0.36.2",
+        "humanize": "4.16.0",
+        "idna": "3.20",
+        "importlib_resources": "7.1.0",
+        "jax": "0.5.3",
+        "jaxlib": "0.5.3",
+        "jaxtyping": "0.2.36",
+        "Jinja2": "3.1.6",
+        "markdown-it-py": "4.2.0",
+        "MarkupSafe": "3.0.3",
+        "mdurl": "0.1.2",
+        "ml-dtypes": "0.4.1",
+        "mpmath": "1.3.0",
+        "msgpack": "1.2.3",
+        "nest-asyncio": "1.6.0",
+        "networkx": "3.6.1",
+        "numpy": "1.26.4",
+        "numpydantic": "1.6.9",
+        "openpi": "0.1.0",
+        "openpi-client": "0.1.0",
+        "optax": "0.2.4",
+        "opt_einsum": "3.4.0",
+        "orbax-checkpoint": "0.11.13",
+        "packaging": "26.3",
+        "pillow": "11.2.1",
+        "protobuf": "7.36.2",
+        "pydantic": "2.11.5",
+        "pydantic_core": "2.33.2",
+        "Pygments": "2.21.0",
+        "PyYAML": "6.0.3",
+        "regex": "2026.9.29",
+        "requests": "2.34.2",
+        "rich": "15.0.0",
+        "safetensors": "0.5.3",
+        "scipy": "1.17.1",
+        "sentencepiece": "0.2.0",
+        "simplejson": "4.2.0",
+        "sympy": "1.14.0",
+        "tensorstore": "0.1.74",
+        "tokenizers": "0.21.4",
+        "toolz": "1.2.0",
+        "torch": "2.7.1+cpu",
+        "tqdm": "4.70.1",
+        "tqdm-loggable": "0.2",
+        "transformers": "4.53.2",
+        "typing_extensions": "4.16.0",
+        "typing-inspection": "0.4.4",
+        "urllib3": "2.8.0",
+        "wadler_lindig": "0.1.7",
+        "zipp": "4.1.2"
+      },
+      "total_wall_seconds": 21.994342200021492,
+      "process_cpu_seconds": 20.046875,
+      "peak_rss_bytes": 400089088,
+      "network_events": [],
+      "denied_dependency_capability_probes": [
+        {
+          "event": "socket.bind",
+          "classification": "denied_import_time_ipv6_capability_probe",
+          "distribution": "urllib3",
+          "version": "2.8.0",
+          "source": "urllib3/util/connection.py",
+          "source_sha256_lf": "2633bbdb69731e5ccb5cf4e4afd65605d86c7979cc5633126f50c92d5ad74a74",
+          "function": "_has_ipv6",
+          "address": [
+            "::1",
+            0
+          ],
+          "operation_executed": false
+        }
+      ],
+      "environment_prefix": "C:\\Users\\Abdul\\Documents\\MLTools\\.venv-openpi"
+    },
+    "policy_space": {
+      "setup_seconds": 0.5641874000139069,
+      "dispatch_seconds": 0.21457430001464672,
+      "accepted_replay_queries": 680,
+      "rejected_structural_controls": 8,
+      "python": "3.13.7",
+      "packages": {
+        "colorama": "0.4.6",
+        "iniconfig": "2.3.1",
+        "msgpack": "1.1.2",
+        "numpy": "2.2.6",
+        "packaging": "26.3",
+        "pluggy": "1.7.0",
+        "policy-space": "0.3.0",
+        "Pygments": "2.21.0",
+        "pytest": "9.1.1",
+        "PyYAML": "6.0.3",
+        "robot-policy-preflight": "0.1.0",
+        "websockets": "15.0.1"
+      },
+      "total_wall_seconds": 1.4109035999863409,
+      "process_cpu_seconds": 1.171875,
+      "peak_rss_bytes": 45498368,
+      "network_events": [],
+      "denied_dependency_capability_probes": [],
+      "environment_prefix": "C:\\Users\\Abdul\\Documents\\MLTools\\.venv-baselines"
+    }
+  },
+  "tracked_implementation_lines": {
+    "publication_analysis.py": 482,
+    "publication_protocol.py": 206,
+    "publication_assets.py": 155,
+    "publication_network.py": 67,
+    "publication_worker.py": 189,
+    "run_publication_study.py": 644,
+    "matched_study_worker.py": 220,
+    "policy_space_numeric.py": 200,
+    "policy_space_numeric_worker.py": 242
+  },
+  "effort_scope": "Tracked physical source-line counts and explicit commands, not human setup times or equivalent conceptual effort",
+  "cost_scope": "Actual fixed-order implementation costs, not isolated method runtime rankings; fresh method views share one charged acquisition"
+}

@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "title": "Executable robot-policy boundary contracts under partial authority",
+  "scope": "Prospective source-metadata numerical boundary evaluation, with separately labeled retrospective temporal incidents and software-controller development strata",
+  "hypotheses_and_falsifiers": [
+    {
+      "id": "H1",
+      "question": "Do the compiler and independent pointwise/strong relational workflows agree on the exact same full-authority native observations?",
+      "falsifier": "Any paired numerical verdict disagreement; report the complete condition and relation without tuning the protocol"
+    },
+    {
+      "id": "H2",
+      "question": "Which obligations remain decidable after reference-offset, complete reference, units or provenance erasure?",
+      "falsifier": "A grounded numerical or full-binding claim requiring erased evidence; retain UNKNOWN and remaining grounded failures separately"
+    },
+    {
+      "id": "H3",
+      "question": "Do equal-budget canonical, manual-axis, random-axis and random-dense designs differ in finite detection or observability?",
+      "falsifier": "Report all paired outcomes/rank/interval diagnostics; no presumed canonical advantage"
+    },
+    {
+      "id": "H4",
+      "question": "How do numerical checks, static statistics equality, native round trips, strict identity, certification and transport requirements differ?",
+      "falsifier": "Keep native outcomes and evidence requirements separate; no semantic miss inferred from structural acceptance or missing-evidence refusal"
+    },
+    {
+      "id": "H5",
+      "question": "Do fresh exact-artifact reduced witnesses reproduce each original failed relation, and at what native-call cost?",
+      "falsifier": "Any missing/changed original relation, unavailable replay or larger retained witness; no presumed reduction advantage over strong baselines"
+    }
+  ],
+  "numerical_profile": {
+    "dtype": "float64",
+    "device": "cpu",
+    "boundary": "Native normalization decoder output before Policy Space float32 wire conversion",
+    "absolute_tolerance": 1e-07,
+    "relative_tolerance": 1e-07,
+    "native_profile_replay_absolute_tolerance": 1e-12,
+    "native_profile_replay_relative_tolerance": 1e-12,
+    "geometry_measurement_allowance": 1e-12,
+    "reference": "Independently decoded pinned metadata and explicit reviewed current-runtime formula; raw-index units, no physical calibration",
+    "guards": "Existing frozen rank, exact-coordinate, propagated relation budget and ULP guards; neither dtype nor fragment authority inferred from observations",
+    "certificate": "Finite descriptive drift with explicit coordinate extension; no safety/detection threshold or demonstration-calibration claim",
+    "transport": "Record native float32 conversion separately; joined float64 verdicts do not test the post-transport wire boundary"
+  },
+  "units_and_denominators": {
+    "published_artifact_clusters": 3,
+    "execution_cells": 4,
+    "actual_deployment_conditions": 16,
+    "derived_authority_unit_views": 8,
+    "primary_native_decoder_calls": 1792,
+    "auxiliary_native_roundtrip_calls": 896,
+    "query_designs_per_deployment": 8,
+    "seeds": [
+      7,
+      23,
+      101
+    ],
+    "independence": "Artifact rows are dependency-linked descriptive units; mutations, queries, seeds, PI framework transport and clean reruns are repeated measurements",
+    "lineage_limits": "Shared SmolVLA base ancestry and LIBERO corpus links are disclosed. Exact revisions were metadata-inspected, outcome-unseen; no blinding, ancestry-disjoint, unseen-root-cause or population-generalization claim. Existing incidents remain retrospective development."
+  },
+  "metrics": {
+    "detection": "FAIL / three declared numerical faults per execution cell; UNKNOWN is a nondetection. Report counts and every row, not population accuracy.",
+    "false_alarms": "FAIL / one intended numerical control per execution cell, separately from physical UNKNOWN and development-only serialization control",
+    "coverage": "Separate PASS/FAIL/UNKNOWN counts for four actual numeric conditions plus two derived reference/unit views per cell; physical/checkpoint authority remains a distinct field",
+    "paired_effects": "Per-artifact paired differences among methods; PI transport remains nested. Each artifact contributes its own finite detection fraction; leave-one-artifact-out reports the arithmetic mean of the remaining artifact fractions. Descriptive sensitivity only, no confidence intervals or mutation-level significance tests.",
+    "witnesses": "Fresh same original failed relation, per-method retained query/action count and actual shared acquisition calls; failures retained",
+    "effort": "Actual tracked adapter/configuration LOC and commands; no human setup-time estimates",
+    "cost": "Fixed sequential order: stock extraction/checking, LeRobot main, OpenPI main, LeRobot fresh subset, OpenPI fresh subset, Policy Space replay, final evaluation. Record parent-observed full subprocess wall time separately from measured in-process native interval CPU/wall, import/setup, acquisition, evaluation and observed RSS. Bootstrap/initial Git-gate CPU is outside the native interval measure. No isolated method runtime ranking or batched learned inference.",
+    "ablations": "Reference/offset, units, provenance and witness reduction in action-only rows; temporal-state ablation is N/A here and separately reported in the actual retrospective temporal stratum"
+  },
+  "evidence_and_applicability": {
+    "source": "method-applicability.json frozen with all runtime/input bytes",
+    "equal_evidence": "Compiler/pointwise/strong oracle receive identical canonical observations and independent reference. Geometry uses a shared oracle and equal budgets. Static and roundtrip methods use actual intended/deployed artifact statistics. Robotruth receives exact leaf folders; Policy Space receives actual decoder outputs and both statistics/file identities.",
+    "native_vocabulary": "Keep numerical conformance, strict artifact identity, full certification, transport acceptance, input rejection, N/A and physical authority in separate columns",
+    "non_applicable": "Full physical preflight, Tether paired rollouts, ActionABI response episodes, stock embodiment mapping and unexecuted XPolicyLab adapter remain documented limitations; no scored wins",
+    "stateful_baseline": "Original checker and compiled temporal comparison remain separately reported actual development evidence; no missing action-only temporal port is invented"
+  },
+  "resources": {
+    "cpu_only": true,
+    "parallel_native_workers": 1,
+    "worker_timeout_seconds": 180,
+    "observed_peak_rss_limit_bytes": 2147483648,
+    "hard_os_memory_limit": false,
+    "main_native_process_cpu_seconds_maximum": 7200,
+    "network_connections_and_listeners": "Forbidden by Python audit tripwires; not an OS network sandbox",
+    "policy_weights": "Excluded",
+    "paid_compute": false,
+    "metadata_download_budget_mib": 100,
+    "native_execution_downloads": 0,
+    "dependency_setup": "Separate pinned environments and package identities; dependency downloads outside benchmark metadata budget",
+    "cpu_budget_scope": "Sum of measured native-interval process CPU after initial wrapper/Git gates; whole subprocess wall recorded separately and bounded by per-worker timeout. Bootstrap/Git child CPU is not measured as native work.",
+    "denied_dependency_probe": "A source-identified urllib3 2.8.0 _has_ipv6 attempt to bind ::1:0 remains denied and is separately recorded; no operation is allowed by this classification. Unknown attempts fail. No claim of zero attempted socket operations."
+  },
+  "attempt_policy": {
+    "primary_output": "research/publication/runs/prospective-001",
+    "clean_reproduction_output": "research/publication/runs/clean-reproduction-001",
+    "runs": "One original acquisition plus one separately labeled clean reproduction; no seed search or repeated-outcome selection",
+    "before_native_execution": "Exclusive new attempt directory and immutable start record with committed freeze and hashes. Each worker requires STARTED plus the exact preceding phase prefix and creates an exclusive phase claim before any native operation; saved requests cannot reacquire after failure/success.",
+    "failures": "Retain request, raw stdout/stderr, completed captures and FAILED attempt record. Stop after failure. No automatic prospective retries, edits or retuning; an explicit versioned amendment must retain prior outcomes and disclose all changes.",
+    "reproduction": "Allowed only after successful original result verification; bind the original summary hash in the new attempt. Reproduction is not another independent sample."
+  },
+  "publication_limits": [
+    "No learned policy, task-success or hardware safety result",
+    "No final result or novelty assumed from development parity",
+    "Source verification and raw evidence are producer assertions, not cryptographic execution attestation",
+    "Public release, submission, paid compute and outreach require separate approval"
+  ]
+}

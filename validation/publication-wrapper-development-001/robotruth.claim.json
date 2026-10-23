@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "phase": "robotruth",
+  "status": "STARTED",
+  "request_sha256": "e0bd242725f9b0405bcc854b8c18ca51cca96bc32359f791490aee71f6387642",
+  "freeze_commit": null,
+  "protocol_sha256": "58b513e8a91b585e1e5ac1d17dbe947428e26fe6ac4412a08b6e123f8e9e2725"
+}

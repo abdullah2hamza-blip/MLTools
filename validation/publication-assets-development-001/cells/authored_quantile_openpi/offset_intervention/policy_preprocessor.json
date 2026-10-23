@@ -1,0 +1,8 @@
+{
+  "steps": [
+    {
+      "registry_name": "normalizer_processor",
+      "state_file": "policy_preprocessor_step_0_normalizer_processor.safetensors"
+    }
+  ]
+}

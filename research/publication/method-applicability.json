@@ -101,5 +101,13 @@
     "Authority/unit erasure does not erase still available artifact bytes; remaining identity findings are legitimate static evidence under their own scope.",
     "Source extractor heuristics are not independently established physical action semantics.",
     "Complete the committed protocol and selected-case gate before prospective outcomes; custom Policy Space transport now has development validation."
-  ]
+  ],
+  "complete_wrapper": {
+    "status": "IMPLEMENTED_PENDING_FINAL_DEVELOPMENT_VALIDATION_AND_COMMITTED_FREEZE",
+    "entry_point": "scripts/run_publication_study.py",
+    "source_gate": "scripts/publication_protocol.py",
+    "selected_native_outcomes_observed": false,
+    "rules": "Every worker verifies one committed byte inventory, exact STARTED phase prefix, exclusive request claim and preflighted environment; no prospective execution before the complete committed protocol."
+  },
+  "snapshot_note": "Immutable selection/specification state before full wrapper validation. Completion flags here describe that snapshot; protocol-freeze-001.json and actual attempt/result records are the later authoritative freeze/evaluation evidence."
 }

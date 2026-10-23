@@ -20,6 +20,12 @@ validation/matched-workflows-development-*/*.stderr.txt -text -whitespace
 # The custom transport runner uses the unprefixed raw capture filenames.
 validation/policy-space-numeric-development-*/stdout.txt -text -whitespace
 validation/policy-space-numeric-development-*/stderr.txt -text -whitespace
+validation/publication-wrapper-development-*/*.stdout.txt -text -whitespace
+validation/publication-wrapper-development-*/*.stderr.txt -text -whitespace
+validation/publication-wrapper-development-tests.txt -text -whitespace
+validation/publication-assets-development-*/cells/** -text -whitespace
+research/publication/runs/**/*.stdout.txt -text -whitespace
+research/publication/runs/**/*.stderr.txt -text -whitespace
 # Matched leaves preserve exact copied publisher/license and generated binary bytes.
 validation/matched-assets-development-*/cells/** -text -whitespace
 research/publication/prepared/action-study-*/cells/** -text -whitespace

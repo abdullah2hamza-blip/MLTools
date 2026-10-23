@@ -1,0 +1,11 @@
+{
+  "status": "SUCCEEDED",
+  "completed_phases": [
+    "robotruth",
+    "lerobot",
+    "openpi",
+    "lerobot_witness",
+    "openpi_witness",
+    "policy_space"
+  ]
+}

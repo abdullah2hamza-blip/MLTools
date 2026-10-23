@@ -1,0 +1,19 @@
+{
+  "framework": "openpi",
+  "dtype": "float64",
+  "device": "cpu",
+  "specification": {
+    "schema_version": 1,
+    "profile": "openpi_quantiles_f64_v1",
+    "statistics": {
+      "q01": [
+        -2.0,
+        4.0
+      ],
+      "q99": [
+        6.0,
+        4.0
+      ]
+    }
+  }
+}

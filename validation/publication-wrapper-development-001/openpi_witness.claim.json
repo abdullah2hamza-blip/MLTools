@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "phase": "openpi_witness",
+  "status": "STARTED",
+  "request_sha256": "82c937366db774c92e708d0bd9957bd368513b68c2d6ee0b4a531e15b56a7902",
+  "freeze_commit": null,
+  "protocol_sha256": "58b513e8a91b585e1e5ac1d17dbe947428e26fe6ac4412a08b6e123f8e9e2725"
+}

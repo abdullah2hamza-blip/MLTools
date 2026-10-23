@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "role": "development_only",
+  "authority": "Independently authored numerical fixture already exercised in validation/action-study-development-001; not a published checkpoint or physical reference",
+  "intended": {
+    "schema_version": 1,
+    "profile": "openpi_quantiles_f64_v1",
+    "statistics": {"q01": [-2.0, 4.0], "q99": [2.0, 4.0]}
+  },
+  "purpose": "Exercise the full committed-protocol wrapper, genuine Safetensors loading, OpenPI decoder and external structural workflows without observing selected prospective metadata outcomes",
+  "provenance": "Known authored two-axis and zero-width controls from scripts/action_study_common.py; serialized into explicitly authored LeRobot-style metadata containers for shared-file applicability testing",
+  "physical_checkpoint_authority_status": "UNKNOWN",
+  "no_training_inference_or_robot_claim": true
+}

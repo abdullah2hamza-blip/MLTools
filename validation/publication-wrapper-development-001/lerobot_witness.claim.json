@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "phase": "lerobot_witness",
+  "status": "STARTED",
+  "request_sha256": "dd95473f1fa97d4fab55bacc10f52d189dd117b0fe763ba24b8ab97cb087fb35",
+  "freeze_commit": null,
+  "protocol_sha256": "58b513e8a91b585e1e5ac1d17dbe947428e26fe6ac4412a08b6e123f8e9e2725"
+}

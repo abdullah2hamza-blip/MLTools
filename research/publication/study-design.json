@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "DESIGN_SELECTED_PENDING_IMPLEMENTATION_AND_COMMITTED_PROTOCOL_FREEZE",
+  "status": "WRAPPER_IMPLEMENTED_PENDING_FULL_VALIDATION_AND_COMMITTED_FREEZE",
   "final_protocol_frozen": false,
   "prospective_execution_outcomes_observed": false,
   "intended_contribution": "A bounded reproducible study of source-grounded temporal boundary conformance and partial metadata authority across actual processor/controller implementations. Novelty and any advantages remain to be justified; algebra, schemas, partial-evidence abstention and distinguishing probes are established prior art.",
@@ -196,8 +196,8 @@
     "Panda software-controller authority comes from actual pinned native package/operators and offline lifecycle execution, independently of any PI metadata mapping."
   ],
   "remaining_freeze_gates": [
-    "Add a committed-freeze-verified selected-metadata input/native gate to the validated action-only development acquisition; prospective cells remain prohibited until then.",
-    "Finalize matched-evidence configuration and reporting with the validated stock robotruth identity workflow and Policy Space custom numeric transport; preserve native vocabulary and separate contract scopes.",
+    "Finish complete-wrapper development validation, including phase order, exclusive claims, per-framework identity/byte replay, exact fresh witnesses and clean-reproduction comparisons.",
+    "Freeze the finalized separate numeric/identity/certification/transport scopes and all source/configuration/input bytes; native external development adapters already execute.",
     "Complete final runner/reporting/baseline validation using development metadata only; preserve the new native development evidence and same-relation witness checks.",
     "Freeze exact per-case inputs, numerical profiles, condition artifacts, seeds, budgets, method applicability and all execution/analysis source hashes in a committed protocol.",
     "Run prospective cells only after verifying that committed freeze; retain failures and deviations."
@@ -210,10 +210,11 @@
     "scope": "Actual native authored/already-executed development metadata; selected prospective execution remains prohibited pending full committed freeze",
     "native_development_execution_implemented": true,
     "native_development_evidence": "validation/action-study-development-001/summary.json",
-    "native_execution_scope": "Fixed development-only inputs; prospective native gate is not implemented",
-    "prospective_execution_gate_implemented": false,
+    "native_execution_scope": "Complete new wrapper uses fixed reused/authored development assets until its source/configuration/evidence freeze is validated and committed",
+    "prospective_execution_gate_implemented": true,
     "matched_native_artifact_evidence": "validation/matched-workflows-development-001/summary.json",
-    "policy_space_custom_transport_evidence": "validation/policy-space-numeric-development-001/summary.json"
+    "policy_space_custom_transport_evidence": "validation/policy-space-numeric-development-001/summary.json",
+    "publication_wrapper": "scripts/run_publication_study.py; source/Git gate in scripts/publication_protocol.py; unvalidated latest wrapper changes remain gated"
   },
   "prepared_assets": {
     "path": "research/publication/prepared/action-study-001/plan.json",
@@ -225,5 +226,7 @@
     "native_execution_performed": false,
     "scope": "Source-pinned original/control and declared derivative Safetensors; explicit current-runtime profiles, all eight query designs; OpenPI transport remains nested in PI"
   },
-  "method_applicability": "method-applicability.json"
+  "method_applicability": "method-applicability.json",
+  "protocol_specification": "protocol-specification.json",
+  "snapshot_note": "Immutable selection/specification state before full wrapper validation. Completion flags here describe that snapshot; protocol-freeze-001.json and actual attempt/result records are the later authoritative freeze/evaluation evidence."
 }
