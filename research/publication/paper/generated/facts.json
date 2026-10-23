@@ -1,0 +1,493 @@
+{
+  "counts": {
+    "actual_conditions": 16,
+    "actual_shared_fresh_decoder_calls": 16,
+    "artifact_groups": 3,
+    "auxiliary_native_calls": 896,
+    "derived_views": 8,
+    "execution_cells": 4,
+    "policy_space_replay_queries": 1792,
+    "policy_space_structural_controls": 16,
+    "primary_decoder_calls": 1792
+  },
+  "full_reference_erased_status_counts": {
+    "compiled": {
+      "FAIL": 0,
+      "PASS": 0,
+      "UNKNOWN": 16
+    },
+    "independent_pointwise": {
+      "FAIL": 0,
+      "PASS": 0,
+      "UNKNOWN": 16
+    },
+    "strong_relational": {
+      "FAIL": 0,
+      "PASS": 0,
+      "UNKNOWN": 16
+    }
+  },
+  "methods": {
+    "compiled": {
+      "control_fail": 0,
+      "declared_faults": 12,
+      "fault_fail": 12,
+      "numeric_controls": 4
+    },
+    "independent_pointwise": {
+      "control_fail": 0,
+      "declared_faults": 12,
+      "fault_fail": 12,
+      "numeric_controls": 4
+    },
+    "strong_relational": {
+      "control_fail": 0,
+      "declared_faults": 12,
+      "fault_fail": 12,
+      "numeric_controls": 4
+    }
+  },
+  "offset_authority_erasure": {
+    "act_boccia_lerobot": {
+      "compiled": [
+        "UNKNOWN",
+        "UNKNOWN",
+        "FAIL",
+        "FAIL"
+      ],
+      "independent_pointwise": [
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN"
+      ],
+      "strong_relational": [
+        "UNKNOWN",
+        "UNKNOWN",
+        "FAIL",
+        "FAIL"
+      ]
+    },
+    "pi05_libero_lerobot": {
+      "compiled": [
+        "UNKNOWN",
+        "UNKNOWN",
+        "FAIL",
+        "FAIL"
+      ],
+      "independent_pointwise": [
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN"
+      ],
+      "strong_relational": [
+        "UNKNOWN",
+        "UNKNOWN",
+        "FAIL",
+        "FAIL"
+      ]
+    },
+    "pi05_libero_openpi_transport": {
+      "compiled": [
+        "UNKNOWN",
+        "UNKNOWN",
+        "FAIL",
+        "FAIL"
+      ],
+      "independent_pointwise": [
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN"
+      ],
+      "strong_relational": [
+        "UNKNOWN",
+        "UNKNOWN",
+        "FAIL",
+        "FAIL"
+      ]
+    },
+    "smolvla_orange_lerobot": {
+      "compiled": [
+        "UNKNOWN",
+        "UNKNOWN",
+        "FAIL",
+        "FAIL"
+      ],
+      "independent_pointwise": [
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN",
+        "UNKNOWN"
+      ],
+      "strong_relational": [
+        "UNKNOWN",
+        "UNKNOWN",
+        "FAIL",
+        "FAIL"
+      ]
+    }
+  },
+  "paired_oracle_disagreements": 0,
+  "primary_native_interval_cpu_seconds": 137.34375,
+  "primary_parent_subprocess_wall_seconds": 234.14937489997828,
+  "query_geometry_counts": {
+    "act_boccia_lerobot": {
+      "canonical": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "manual_axis": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "random_axis_101": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "random_axis_23": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "random_axis_7": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "random_dense_101": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "random_dense_23": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "random_dense_7": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      }
+    },
+    "pi05_libero_lerobot": {
+      "canonical": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "manual_axis": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "random_axis_101": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "random_axis_23": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "random_axis_7": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "random_dense_101": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "random_dense_23": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "random_dense_7": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      }
+    },
+    "pi05_libero_openpi_transport": {
+      "canonical": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "manual_axis": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "random_axis_101": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "random_axis_23": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "random_axis_7": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "random_dense_101": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "random_dense_23": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "random_dense_7": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      }
+    },
+    "smolvla_orange_lerobot": {
+      "canonical": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "manual_axis": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "random_axis_101": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "random_axis_23": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "random_axis_7": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "random_dense_101": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "random_dense_23": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      },
+      "random_dense_7": {
+        "finite_status": {
+          "FAIL": 3,
+          "PASS": 1
+        },
+        "full_affine_request_status": {
+          "FAIL": 3,
+          "PASS": 1
+        }
+      }
+    }
+  },
+  "reproduction": {
+    "distinct_native_environment_prefixes": {
+      "lerobot": true,
+      "lerobot_witness": true,
+      "openpi": true,
+      "openpi_witness": true,
+      "policy_space": true,
+      "robotruth": true
+    },
+    "metrics_equal_excluding_measured_phase_costs": true,
+    "original_summary_sha256": "22f91742d82dffa352d806a57701822487cb7c03ae9c16ea2dd5b7a7d82beea7",
+    "schema_version": 1,
+    "scope": "New separately prepared pinned environments; not an independent research sample or execution attestation",
+    "semantic_file_sha256": {
+      "analysis.json": "83e00b74ca783de9efda4decfcfbd4e7345c22564bc8584b4246adee982242af",
+      "conditions.csv": "f261b97ce019d83365b78edd2a9ce24375cf6fc19fa998d8c733f2a1d0561398",
+      "witnesses.json": "b4a0cd3a79c7943f1ae9cb512b8f843807b3cb11453e16b96eeb2e9d09229cf4",
+      "workflow-analysis.json": "9a0df9925f05bfa66bf8f5eaeb8585e896f95ba71cae6d2517f3d883e353527d"
+    },
+    "status": "SEMANTIC_ARTIFACTS_REPRODUCED"
+  },
+  "schema_version": 1,
+  "scope": "Finite dependency-linked conditions; no population estimates or independent mutation count",
+  "witness_native_calls_in_overlapping_method_views": {
+    "compiled": 16,
+    "independent_pointwise": 12,
+    "strong_relational": 12
+  }
+}

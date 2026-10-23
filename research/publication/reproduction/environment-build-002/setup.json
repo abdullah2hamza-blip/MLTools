@@ -1,0 +1,121 @@
+{
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\Abdul\\.codex\\visualizations\\2026\\10\\21\\01a15f30-37b8-7932-a9fa-e1a74445965b\\tooling\\uv\\uv.exe",
+        "pip",
+        "sync",
+        "--python",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\.venv-study-openpi-clean\\Scripts\\python.exe",
+        "--require-hashes",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\integrations\\openpi\\requirements-cpu.lock",
+        "--torch-backend",
+        "cpu",
+        "--cache-dir",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\.test-tmp\\uv-cache"
+      ],
+      "returncode": 0,
+      "stderr": "Using Python 3.11.13 environment at: .venv-study-openpi-clean\nResolved 63 packages in 603ms\nChecked 63 packages in 13ms\n",
+      "stdout": "",
+      "wall_seconds": 0.7682789999817032
+    },
+    {
+      "command": [
+        "C:\\Users\\Abdul\\.codex\\visualizations\\2026\\10\\21\\01a15f30-37b8-7932-a9fa-e1a74445965b\\tooling\\uv\\uv.exe",
+        "pip",
+        "install",
+        "--python",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\.venv-study-openpi-clean\\Scripts\\python.exe",
+        "--no-deps",
+        "--build-constraints",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\integrations\\openpi\\build.lock",
+        "-r",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\integrations\\openpi\\frameworks.txt",
+        "--cache-dir",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\.test-tmp\\uv-cache"
+      ],
+      "returncode": 0,
+      "stderr": "Using Python 3.11.13 environment at: .venv-study-openpi-clean\nResolved 2 packages in 58.41s\n   Building openpi @ git+https://github.com/Physical-Intelligence/openpi.git@215abfb217dbac7d5f1273282331b9b1866c0479\n   Building openpi-client @ git+https://github.com/Physical-Intelligence/openpi.git@215abfb217dbac7d5f1273282331b9b1866c0479#subdirectory=packages/openpi-client\n      Built openpi-client @ git+https://github.com/Physical-Intelligence/openpi.git@215abfb217dbac7d5f1273282331b9b1866c0479#subdirectory=packages/openpi-client\n      Built openpi @ git+https://github.com/Physical-Intelligence/openpi.git@215abfb217dbac7d5f1273282331b9b1866c0479\nPrepared 2 packages in 4.52s\nInstalled 2 packages in 97ms\n + openpi==0.1.0 (from git+https://github.com/Physical-Intelligence/openpi.git@215abfb217dbac7d5f1273282331b9b1866c0479)\n + openpi-client==0.1.0 (from git+https://github.com/Physical-Intelligence/openpi.git@215abfb217dbac7d5f1273282331b9b1866c0479#subdirectory=packages/openpi-client)\n",
+      "stdout": "",
+      "wall_seconds": 63.50119400001131
+    }
+  ],
+  "core_wheel_sha256": "f9a0003fa25392bec6acc9594da81e8bbb041724cc8a7ff5f2292f2cf2c2b2d7",
+  "environments": {
+    "lerobot": {
+      "packages": {
+        "Farama-Notifications": "0.0.6",
+        "Jinja2": "3.1.6",
+        "MarkupSafe": "3.0.4",
+        "PyYAML": "6.0.3",
+        "Pygments": "2.21.0",
+        "anyio": "4.15.1",
+        "certifi": "2026.10.19",
+        "charset-normalizer": "3.5.2",
+        "click": "8.5.0",
+        "cloudpickle": "3.1.2",
+        "cmake": "4.1.3",
+        "colorama": "0.4.6",
+        "draccus": "0.11.6",
+        "einops": "0.8.2",
+        "filelock": "3.32.7",
+        "fsspec": "2026.9.0",
+        "gymnasium": "1.4.0",
+        "h11": "0.16.0",
+        "hf-xet": "1.7.0",
+        "httpcore": "1.0.9",
+        "httpx": "0.28.1",
+        "huggingface_hub": "1.33.0",
+        "idna": "3.20",
+        "iniconfig": "2.3.1",
+        "lerobot": "0.6.2",
+        "mergedeep": "1.3.4",
+        "mltools": "0.1.0",
+        "mpmath": "1.3.0",
+        "mypy_extensions": "1.1.0",
+        "networkx": "3.7",
+        "numpy": "2.2.6",
+        "opencv-python-headless": "4.13.0.92",
+        "packaging": "25.0",
+        "pillow": "12.3.0",
+        "pluggy": "1.7.0",
+        "pytest": "9.1.1",
+        "requests": "2.34.2",
+        "ruff": "0.17.1",
+        "safetensors": "0.8.0",
+        "setuptools": "81.0.0",
+        "sympy": "1.14.0",
+        "termcolor": "3.3.0",
+        "toml": "0.10.2",
+        "torch": "2.11.0",
+        "torchvision": "0.26.0",
+        "tqdm": "4.70.1",
+        "typing-inspect": "0.9.0",
+        "typing_extensions": "4.16.0",
+        "urllib3": "2.8.0"
+      },
+      "prefix": "C:\\Users\\Abdul\\Documents\\MLTools\\.venv-study-lerobot-clean",
+      "python": "3.13.7"
+    }
+  },
+  "error": "Normalization profile: exact frozen native Python/package profile",
+  "error_type": "ValueError",
+  "freeze_commit": "7513755e9627098c3529c46b3ae9a056d76434a5",
+  "generated_lock_sha256": "2d8b9c15c3ff0de50a695022441e9ec0a6e4d9527e94eea1b0a08bb36380448b",
+  "git_subprocess_environment_overrides": {
+    "GIT_CONFIG_COUNT": "1",
+    "GIT_CONFIG_KEY_0": "core.longpaths",
+    "GIT_CONFIG_VALUE_0": "true"
+  },
+  "original_summary_sha256": "22f91742d82dffa352d806a57701822487cb7c03ae9c16ea2dd5b7a7d82beea7",
+  "resumes_setup": {
+    "path": "research/publication/reproduction/environment-build-001",
+    "reason": "Git subprocess long-path configuration repairs dependency checkout only; no native evaluation has run in these environments.",
+    "setup_sha256": "50d60f6015bb3b925c4bbf36a411a54e929bc7a81ab91dda945dc820b56d6e6e"
+  },
+  "schema_version": 1,
+  "scope": "Separate fresh installations on the same Windows machine; package caches may be reused. No native benchmark calls occur during setup. Not an independent machine or research sample.",
+  "setup_source_sha256": "3b2d823a197755020e551191eb8cec5ebb9508321c21287b981e7a57e9811bb5",
+  "status": "FAILED",
+  "uv_sha256": "b9d9656370ee1812e53e985d8bbb81870038106df98ef34cb45bcf4e0fe0df17"
+}

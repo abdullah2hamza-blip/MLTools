@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "status": "VALIDATED_BOUNDED_RESEARCH_ARTIFACT",
+  "freeze_commit": "7513755e9627098c3529c46b3ae9a056d76434a5",
+  "protected_files": 406,
+  "native_runs": {
+    "prospective-001": {
+      "summary_sha256": "22f91742d82dffa352d806a57701822487cb7c03ae9c16ea2dd5b7a7d82beea7",
+      "metrics_sha256": "024ef2684cde87d8173251a1e314fd067588c38fea665a3a8fbb876360f40c75",
+      "status": "SUCCEEDED",
+      "counts": {
+        "execution_cells": 4,
+        "artifact_groups": 3,
+        "actual_conditions": 16,
+        "derived_views": 8,
+        "primary_decoder_calls": 1792,
+        "auxiliary_native_calls": 896,
+        "actual_shared_fresh_decoder_calls": 16,
+        "policy_space_replay_queries": 1792,
+        "policy_space_structural_controls": 16
+      }
+    },
+    "clean-reproduction-001": {
+      "summary_sha256": "e59fb7242804710f9dc72c469b9677f43ae60ec51461a09d9c9488a69fc444a7",
+      "metrics_sha256": "fd7ac442744147e1cb3f51aebe6f436dc440eea152af69ad7df7fc61de191ee6",
+      "status": "SUCCEEDED",
+      "counts": {
+        "execution_cells": 4,
+        "artifact_groups": 3,
+        "actual_conditions": 16,
+        "derived_views": 8,
+        "primary_decoder_calls": 1792,
+        "auxiliary_native_calls": 896,
+        "actual_shared_fresh_decoder_calls": 16,
+        "policy_space_replay_queries": 1792,
+        "policy_space_structural_controls": 16
+      }
+    }
+  },
+  "development_test_record": "validation/publication-wrapper-development-verification.json",
+  "reporting_verification": "validation/publication-reporting-verification.json",
+  "paper_verification": "validation/publication-paper-verification.json",
+  "claim_scope": [
+    "Three published metadata groups, four native execution cells, sixteen actual deployment conditions plus eight derived views.",
+    "Two separate software-embodiment strata; no inferred checkpoint-to-hardware mapping.",
+    "Known intervention recipes and ancestry limits disclosed; no blinded, ancestry-disjoint, unseen-root-cause or population-generalization claim.",
+    "Main full-reference parity; offset-authority ablation separates pointwise from relational checks.",
+    "Compiled witnesses are larger; missing physical authority remains UNKNOWN.",
+    "No learned inference, robot operation, task-success, paid compute, public release or submission."
+  ],
+  "human_review_remaining": [
+    "Scientific interest/scope and author responsibility, including extensive AI assistance.",
+    "Project licensing, author/submission metadata and any separately authorized public artifact release/submission."
+  ],
+  "new_runtime_or_method_changes_after_freeze": false
+}

@@ -1,0 +1,14 @@
+{
+  "id": "mltools_normalized_vector_7@1",
+  "description": "Authored research input profile: normalized raw-index vector; no robot state claim",
+  "fields": {
+    "state": {
+      "normalized_action": {
+        "shape": [
+          7
+        ],
+        "dtype": "float64"
+      }
+    }
+  }
+}

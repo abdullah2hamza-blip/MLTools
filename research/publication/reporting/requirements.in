@@ -1,0 +1,2 @@
+# Reporting only; excluded from native experiment environments.
+matplotlib==3.10.3

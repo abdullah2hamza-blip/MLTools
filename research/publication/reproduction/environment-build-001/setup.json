@@ -1,0 +1,194 @@
+{
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\Abdul\\.codex\\visualizations\\2026\\10\\21\\01a15f30-37b8-7932-a9fa-e1a74445965b\\tooling\\uv\\uv.exe",
+        "venv",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\.venv-study-lerobot-clean",
+        "--python",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\.venv\\Scripts\\python.exe",
+        "--cache-dir",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\.test-tmp\\uv-cache"
+      ],
+      "returncode": 0,
+      "stderr": "Using CPython 3.13.7 interpreter at: .venv\\Scripts\\python.exe\nCreating virtual environment at: .venv-study-lerobot-clean\nActivate with: .venv-study-lerobot-clean\\Scripts\\activate\n",
+      "stdout": "",
+      "wall_seconds": 7.2993808000173885
+    },
+    {
+      "command": [
+        "C:\\Users\\Abdul\\.codex\\visualizations\\2026\\10\\21\\01a15f30-37b8-7932-a9fa-e1a74445965b\\tooling\\uv\\uv.exe",
+        "pip",
+        "sync",
+        "--python",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\.venv-study-lerobot-clean\\Scripts\\python.exe",
+        "--require-hashes",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\research\\publication\\reproduction\\environment-build-001\\lerobot-requirements.lock",
+        "--cache-dir",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\.test-tmp\\uv-cache"
+      ],
+      "returncode": 0,
+      "stderr": "Using Python 3.13.7 environment at: .venv-study-lerobot-clean\nResolved 47 packages in 859ms\nDownloading sympy (6.0MiB)\nDownloading networkx (2.0MiB)\nDownloading setuptools (1.0MiB)\nDownloading pygments (1.2MiB)\nDownloading hf-xet (3.6MiB)\nDownloading pillow (6.9MiB)\nDownloading ruff (9.6MiB)\nDownloading numpy (12.0MiB)\nDownloading opencv-python-headless (38.2MiB)\nDownloading torch (109.2MiB)\nDownloading cmake (35.8MiB)\nDownloading torchvision (4.1MiB)\n Downloaded pygments\n Downloaded setuptools\n Downloaded networkx\n Downloaded hf-xet\n Downloaded torchvision\n Downloaded sympy\n Downloaded pillow\n Downloaded ruff\n Downloaded numpy\n Downloaded opencv-python-headless\n Downloaded cmake\n Downloaded torch\nPrepared 47 packages in 24.52s\nInstalled 47 packages in 17.05s\n + anyio==4.15.1\n + certifi==2026.10.19\n + charset-normalizer==3.5.2\n + click==8.5.0\n + cloudpickle==3.1.2\n + cmake==4.1.3\n + colorama==0.4.6\n + draccus==0.11.6\n + einops==0.8.2\n + farama-notifications==0.0.6\n + filelock==3.32.7\n + fsspec==2026.9.0\n + gymnasium==1.4.0\n + h11==0.16.0\n + hf-xet==1.7.0\n + httpcore==1.0.9\n + httpx==0.28.1\n + huggingface-hub==1.33.0\n + idna==3.20\n + iniconfig==2.3.1\n + jinja2==3.1.6\n + markupsafe==3.0.4\n + mergedeep==1.3.4\n + mpmath==1.3.0\n + mypy-extensions==1.1.0\n + networkx==3.7\n + numpy==2.2.6\n + opencv-python-headless==4.13.0.92\n + packaging==25.0\n + pillow==12.3.0\n + pluggy==1.7.0\n + pygments==2.21.0\n + pytest==9.1.1\n + pyyaml==6.0.3\n + requests==2.34.2\n + ruff==0.17.1\n + safetensors==0.8.0\n + setuptools==81.0.0\n + sympy==1.14.0\n + termcolor==3.3.0\n + toml==0.10.2\n + torch==2.11.0\n + torchvision==0.26.0\n + tqdm==4.70.1\n + typing-extensions==4.16.0\n + typing-inspect==0.9.0\n + urllib3==2.8.0\n",
+      "stdout": "",
+      "wall_seconds": 43.383641499996884
+    },
+    {
+      "command": [
+        "C:\\Users\\Abdul\\.codex\\visualizations\\2026\\10\\21\\01a15f30-37b8-7932-a9fa-e1a74445965b\\tooling\\uv\\uv.exe",
+        "pip",
+        "install",
+        "--python",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\.venv-study-lerobot-clean\\Scripts\\python.exe",
+        "--no-deps",
+        "--build-constraints",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\integrations\\baselines\\build.lock",
+        "lerobot @ git+https://github.com/huggingface/lerobot.git@5517a326eeb9b457cfe07d59b9bfdf291799c8d9",
+        "--cache-dir",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\.test-tmp\\uv-cache"
+      ],
+      "returncode": 0,
+      "stderr": "Using Python 3.13.7 environment at: .venv-study-lerobot-clean\n   Updating https://github.com/huggingface/lerobot.git (5517a326eeb9b457cfe07d59b9bfdf291799c8d9)\n    Updated https://github.com/huggingface/lerobot.git (5517a326eeb9b457cfe07d59b9bfdf291799c8d9)\nResolved 1 package in 28.23s\n   Building lerobot @ git+https://github.com/huggingface/lerobot.git@5517a326eeb9b457cfe07d59b9bfdf291799c8d9\n      Built lerobot @ git+https://github.com/huggingface/lerobot.git@5517a326eeb9b457cfe07d59b9bfdf291799c8d9\nPrepared 1 package in 19.98s\nInstalled 1 package in 1.40s\n + lerobot==0.6.2 (from git+https://github.com/huggingface/lerobot.git@5517a326eeb9b457cfe07d59b9bfdf291799c8d9)\n",
+      "stdout": "",
+      "wall_seconds": 50.24168639999698
+    },
+    {
+      "command": [
+        "C:\\Users\\Abdul\\.codex\\visualizations\\2026\\10\\21\\01a15f30-37b8-7932-a9fa-e1a74445965b\\tooling\\uv\\uv.exe",
+        "pip",
+        "install",
+        "--python",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\.venv-study-lerobot-clean\\Scripts\\python.exe",
+        "--no-deps",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\dist\\mltools-0.1.0-py3-none-any.whl",
+        "--cache-dir",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\.test-tmp\\uv-cache"
+      ],
+      "returncode": 0,
+      "stderr": "Using Python 3.13.7 environment at: .venv-study-lerobot-clean\nResolved 1 package in 4ms\nPrepared 1 package in 64ms\nInstalled 1 package in 51ms\n + mltools==0.1.0 (from file:///C:/Users/Abdul/Documents/MLTools/dist/mltools-0.1.0-py3-none-any.whl)\n",
+      "stdout": "",
+      "wall_seconds": 0.2731209000048693
+    },
+    {
+      "command": [
+        "C:\\Users\\Abdul\\.codex\\visualizations\\2026\\10\\21\\01a15f30-37b8-7932-a9fa-e1a74445965b\\tooling\\uv\\uv.exe",
+        "venv",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\.venv-study-openpi-clean",
+        "--python",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\.venv-openpi\\Scripts\\python.exe",
+        "--cache-dir",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\.test-tmp\\uv-cache"
+      ],
+      "returncode": 0,
+      "stderr": "Using CPython 3.11.13 interpreter at: .venv-openpi\\Scripts\\python.exe\nwarning: The requested interpreter resolved to Python 3.11.13, which is incompatible with the project's Python requirement: `>=3.13` (from `project.requires-python`)\nCreating virtual environment at: .venv-study-openpi-clean\nActivate with: .venv-study-openpi-clean\\Scripts\\activate\n",
+      "stdout": "",
+      "wall_seconds": 0.21372359999804758
+    },
+    {
+      "command": [
+        "C:\\Users\\Abdul\\.codex\\visualizations\\2026\\10\\21\\01a15f30-37b8-7932-a9fa-e1a74445965b\\tooling\\uv\\uv.exe",
+        "pip",
+        "sync",
+        "--python",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\.venv-study-openpi-clean\\Scripts\\python.exe",
+        "--require-hashes",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\integrations\\openpi\\requirements-cpu.lock",
+        "--torch-backend",
+        "cpu",
+        "--cache-dir",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\.test-tmp\\uv-cache"
+      ],
+      "returncode": 0,
+      "stderr": "Using Python 3.11.13 environment at: .venv-study-openpi-clean\nResolved 63 packages in 1.26s\nDownloading scipy (34.9MiB)\nDownloading pydantic-core (1.9MiB)\nDownloading jax (2.3MiB)\nDownloading tokenizers (2.4MiB)\nDownloading numpy (15.1MiB)\nDownloading pillow (2.6MiB)\nDownloading jaxlib (62.7MiB)\nDownloading tensorstore (11.9MiB)\nDownloading transformers (10.3MiB)\nDownloading networkx (2.0MiB)\nDownloading torch (206.0MiB)\n Downloaded pydantic-core\n Downloaded networkx\n Downloaded tokenizers\n Downloaded jax\n Downloaded pillow\n Downloaded transformers\n Downloaded tensorstore\n Downloaded numpy\n Downloaded scipy\n Downloaded jaxlib\n Downloaded torch\nPrepared 51 packages in 35.46s\nInstalled 63 packages in 22.95s\n + absl-py==2.5.1\n + annotated-types==0.8.0\n + augmax==0.4.1\n + beartype==0.19.0\n + certifi==2026.10.19\n + charset-normalizer==3.5.2\n + chex==0.1.90\n + colorama==0.4.6\n + einops==0.8.1\n + equinox==0.12.2\n + etils==1.12.2\n + filelock==3.18.0\n + flax==0.10.2\n + fsspec==2025.3.0\n + hf-xet==1.7.0\n + huggingface-hub==0.36.2\n + humanize==4.16.0\n + idna==3.20\n + importlib-resources==7.1.0\n + jax==0.5.3\n + jaxlib==0.5.3\n + jaxtyping==0.2.36\n + jinja2==3.1.6\n + markdown-it-py==4.2.0\n + markupsafe==3.0.3\n + mdurl==0.1.2\n + ml-dtypes==0.4.1\n + mpmath==1.3.0\n + msgpack==1.2.3\n + nest-asyncio==1.6.0\n + networkx==3.6.1\n + numpy==1.26.4\n + numpydantic==1.6.9\n + opt-einsum==3.4.0\n + optax==0.2.4\n + orbax-checkpoint==0.11.13\n + packaging==26.3\n + pillow==11.2.1\n + protobuf==7.36.2\n + pydantic==2.11.5\n + pydantic-core==2.33.2\n + pygments==2.21.0\n + pyyaml==6.0.3\n + regex==2026.9.29\n + requests==2.34.2\n + rich==15.0.0\n + safetensors==0.5.3\n + scipy==1.17.1\n + sentencepiece==0.2.0\n + simplejson==4.2.0\n + sympy==1.14.0\n + tensorstore==0.1.74\n + tokenizers==0.21.4\n + toolz==1.2.0\n + torch==2.7.1+cpu\n + tqdm==4.70.1\n + tqdm-loggable==0.2\n + transformers==4.53.2\n + typing-extensions==4.16.0\n + typing-inspection==0.4.4\n + urllib3==2.8.0\n + wadler-lindig==0.1.7\n + zipp==4.1.2\n",
+      "stdout": "",
+      "wall_seconds": 61.865324200014584
+    },
+    {
+      "command": [
+        "C:\\Users\\Abdul\\.codex\\visualizations\\2026\\10\\21\\01a15f30-37b8-7932-a9fa-e1a74445965b\\tooling\\uv\\uv.exe",
+        "pip",
+        "install",
+        "--python",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\.venv-study-openpi-clean\\Scripts\\python.exe",
+        "--no-deps",
+        "--build-constraints",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\integrations\\openpi\\build.lock",
+        "-r",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\integrations\\openpi\\frameworks.txt",
+        "--cache-dir",
+        "C:\\Users\\Abdul\\Documents\\MLTools\\.test-tmp\\uv-cache"
+      ],
+      "returncode": 1,
+      "stderr": "Using Python 3.11.13 environment at: .venv-study-openpi-clean\n   Updating https://github.com/Physical-Intelligence/openpi.git (215abfb217dbac7d5f1273282331b9b1866c0479)\nerror: Failed to download and build `openpi @ git+https://github.com/Physical-Intelligence/openpi.git@215abfb217dbac7d5f1273282331b9b1866c0479`\n  cause: Git operation failed\n  cause: process didn't exit successfully: `C:\\Program Files\\Git\\cmd\\git.exe -c remote.origin.url=https://github.com/Physical-Intelligence/openpi.git submodule update --init` (exit code: 1)\n         --- stdout\n         Submodule path 'third_party/aloha': checked out 'd1dc83afd89ded4379851257fe5d85632d31d5ec'\n\n         --- stderr\n         Submodule 'third_party/aloha' (https://github.com/Physical-Intelligence/aloha.git) registered for path 'third_party/aloha'\n         Submodule 'third_party/libero' (https://github.com/Lifelong-Robot-Learning/LIBERO.git) registered for path 'third_party/libero'\n         Cloning into 'C:/Users/Abdul/Documents/MLTools/.test-tmp/uv-cache/git-v1/checkouts/9301e5b27c22c9b7/215abfb/third_party/aloha'...\n         Cloning into 'C:/Users/Abdul/Documents/MLTools/.test-tmp/uv-cache/git-v1/checkouts/9301e5b27c22c9b7/215abfb/third_party/libero'...\n         error: unable to create file libero/libero/init_files/libero_10/LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate.pruned_init: Filename too long\n         error: unable to create file libero/libero/init_files/libero_10/LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate.pruned_init: Filename too long\n         fatal: Unable to checkout 'f78abd68ee283de9f9be3c8f7e2a9ad60246e95c' in submodule path 'third_party/libero'\n",
+      "stdout": "",
+      "wall_seconds": 103.52235179999843
+    }
+  ],
+  "core_wheel_sha256": "f9a0003fa25392bec6acc9594da81e8bbb041724cc8a7ff5f2292f2cf2c2b2d7",
+  "environments": {
+    "lerobot": {
+      "packages": {
+        "Farama-Notifications": "0.0.6",
+        "Jinja2": "3.1.6",
+        "MarkupSafe": "3.0.4",
+        "PyYAML": "6.0.3",
+        "Pygments": "2.21.0",
+        "anyio": "4.15.1",
+        "certifi": "2026.10.19",
+        "charset-normalizer": "3.5.2",
+        "click": "8.5.0",
+        "cloudpickle": "3.1.2",
+        "cmake": "4.1.3",
+        "colorama": "0.4.6",
+        "draccus": "0.11.6",
+        "einops": "0.8.2",
+        "filelock": "3.32.7",
+        "fsspec": "2026.9.0",
+        "gymnasium": "1.4.0",
+        "h11": "0.16.0",
+        "hf-xet": "1.7.0",
+        "httpcore": "1.0.9",
+        "httpx": "0.28.1",
+        "huggingface_hub": "1.33.0",
+        "idna": "3.20",
+        "iniconfig": "2.3.1",
+        "lerobot": "0.6.2",
+        "mergedeep": "1.3.4",
+        "mltools": "0.1.0",
+        "mpmath": "1.3.0",
+        "mypy_extensions": "1.1.0",
+        "networkx": "3.7",
+        "numpy": "2.2.6",
+        "opencv-python-headless": "4.13.0.92",
+        "packaging": "25.0",
+        "pillow": "12.3.0",
+        "pluggy": "1.7.0",
+        "pytest": "9.1.1",
+        "requests": "2.34.2",
+        "ruff": "0.17.1",
+        "safetensors": "0.8.0",
+        "setuptools": "81.0.0",
+        "sympy": "1.14.0",
+        "termcolor": "3.3.0",
+        "toml": "0.10.2",
+        "torch": "2.11.0",
+        "torchvision": "0.26.0",
+        "tqdm": "4.70.1",
+        "typing-inspect": "0.9.0",
+        "typing_extensions": "4.16.0",
+        "urllib3": "2.8.0"
+      },
+      "prefix": "C:\\Users\\Abdul\\Documents\\MLTools\\.venv-study-lerobot-clean",
+      "python": "3.13.7"
+    }
+  },
+  "error": "Normalization profile: installation command succeeded; see retained setup.json",
+  "error_type": "ValueError",
+  "freeze_commit": "7513755e9627098c3529c46b3ae9a056d76434a5",
+  "generated_lock_sha256": "2d8b9c15c3ff0de50a695022441e9ec0a6e4d9527e94eea1b0a08bb36380448b",
+  "original_summary_sha256": "22f91742d82dffa352d806a57701822487cb7c03ae9c16ea2dd5b7a7d82beea7",
+  "schema_version": 1,
+  "scope": "Separate fresh installations on the same Windows machine; package caches may be reused. No native benchmark calls occur during setup. Not an independent machine or research sample.",
+  "setup_source_sha256": "145d686dbc954b51e212db4b1f342e43897b9c37b7b34541a62d983f1d2c3794",
+  "status": "FAILED",
+  "uv_sha256": "b9d9656370ee1812e53e985d8bbb81870038106df98ef34cb45bcf4e0fe0df17"
+}

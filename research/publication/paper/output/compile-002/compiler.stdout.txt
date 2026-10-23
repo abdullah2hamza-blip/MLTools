@@ -1,0 +1,44 @@
+note: Running TeX ...
+note: downloading rm-lmr9.tfm
+note: downloading rm-lmr6.tfm
+note: downloading lmmi9.tfm
+note: downloading lmmi6.tfm
+note: downloading lmsy9.tfm
+note: downloading lmsy6.tfm
+note: downloading ts1-lmr10.tfm
+note: Running BibTeX on main.aux ...
+note: warnings were issued by BibTeX; use --print and/or --keep-logs for details.
+note: Rerunning TeX because bibtex was run ...
+note: Rerunning TeX because "main.aux" changed ...
+note: Running xdvipdfmx ...
+note: downloading pdftex.map
+note: downloading kanjix.map
+note: downloading ckx.map
+note: downloading texglyphlist.txt
+note: downloading pdfglyphlist.txt
+note: downloading glyphlist.txt
+note: downloading lm-ec.enc
+note: downloading lmssbx10.pfb
+note: downloading lmbx10.pfb
+note: downloading lmri9.pfb
+note: downloading lmr10.pfb
+note: downloading lmri10.pfb
+note: downloading lmcsc10.pfb
+note: downloading lm-mathit.enc
+note: downloading lmmi10.pfb
+note: downloading lm-rm.enc
+note: downloading lmr7.pfb
+note: downloading lm-mathsy.enc
+note: downloading lmsy10.pfb
+note: downloading lmmi7.pfb
+note: downloading msbm10.pfb
+note: downloading lm-mathex.enc
+note: downloading lmex10.pfb
+note: downloading lmsy7.pfb
+note: downloading lmtt10.pfb
+note: downloading lmr9.pfb
+note: downloading lm-ts1.enc
+note: Writing `C:\Users\Abdul\Documents\MLTools\research\publication\paper\output\compile-002\main.pdf` (122.1513671875 KiB)
+note: Writing `C:\Users\Abdul\Documents\MLTools\research\publication\paper\output\compile-002\main.log` (19.529296875 KiB)
+note: Writing `C:\Users\Abdul\Documents\MLTools\research\publication\paper\output\compile-002\main.blg` (277 B)
+note: Skipped writing 3 intermediate files (use --keep-intermediates to keep them)

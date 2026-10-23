@@ -1,0 +1,730 @@
+{
+  "lerobot": {
+    "act_boccia_lerobot": {
+      "offset_intervention": {
+        "methods": {
+          "compiled": {
+            "status": "FAIL",
+            "query_ids": [
+              "center"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "obligation": "offset",
+              "output": "raw_action_0",
+              "status": "FAIL",
+              "expected": -1.5575737953186035,
+              "actual": 0.5519199371337891,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 1.1102230246251565e-16
+            }
+          },
+          "independent_pointwise": {
+            "status": "FAIL",
+            "query_ids": [
+              "center"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "kind": "pointwise",
+              "output": "raw_action_0",
+              "expected": -1.5575737953186035,
+              "actual": 0.5519199371337891,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 3.3306690738754696e-16,
+              "comparison_budget": 2.5575737953186033e-07
+            }
+          },
+          "strong_relational": {
+            "status": "FAIL",
+            "query_ids": [
+              "center"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "kind": "pointwise",
+              "output": "raw_action_0",
+              "expected": -1.5575737953186035,
+              "actual": 0.5519199371337891,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 3.3306690738754696e-16,
+              "comparison_budget": 2.5575737953186033e-07
+            }
+          }
+        },
+        "actual_shared_fresh_decoder_calls": 1
+      },
+      "slope_intervention": {
+        "methods": {
+          "compiled": {
+            "status": "FAIL",
+            "query_ids": [
+              "plus:action:0",
+              "minus:action:0"
+            ],
+            "native_calls_in_method_view": 2,
+            "relation": {
+              "obligation": "effect:action:0",
+              "output": "raw_action_0",
+              "status": "FAIL",
+              "expected": 3.3751899719238283,
+              "actual": 6.750379943847657,
+              "queries": [
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 3.552713678800501e-15
+            }
+          },
+          "independent_pointwise": {
+            "status": "FAIL",
+            "query_ids": [
+              "plus:action:0"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "kind": "pointwise",
+              "output": "raw_action_0",
+              "expected": 1.8176161766052248,
+              "actual": 5.192806148529053,
+              "queries": [
+                "plus:action:0"
+              ],
+              "output_resolution_floor": 1.1102230246251565e-15,
+              "comparison_budget": 7.932763767242431e-07
+            }
+          },
+          "strong_relational": {
+            "status": "FAIL",
+            "query_ids": [
+              "plus:action:0"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "kind": "pointwise",
+              "output": "raw_action_0",
+              "expected": 1.8176161766052248,
+              "actual": 5.192806148529053,
+              "queries": [
+                "plus:action:0"
+              ],
+              "output_resolution_floor": 1.1102230246251565e-15,
+              "comparison_budget": 7.932763767242431e-07
+            }
+          }
+        },
+        "actual_shared_fresh_decoder_calls": 2
+      },
+      "fixed_offset_slope_composition": {
+        "methods": {
+          "compiled": {
+            "status": "FAIL",
+            "query_ids": [
+              "center"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "obligation": "offset",
+              "output": "raw_action_0",
+              "status": "FAIL",
+              "expected": -1.5575737953186035,
+              "actual": 0.5519199371337891,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 1.1102230246251565e-16
+            }
+          },
+          "independent_pointwise": {
+            "status": "FAIL",
+            "query_ids": [
+              "center"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "kind": "pointwise",
+              "output": "raw_action_0",
+              "expected": -1.5575737953186035,
+              "actual": 0.5519199371337891,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 3.3306690738754696e-16,
+              "comparison_budget": 2.5575737953186033e-07
+            }
+          },
+          "strong_relational": {
+            "status": "FAIL",
+            "query_ids": [
+              "center"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "kind": "pointwise",
+              "output": "raw_action_0",
+              "expected": -1.5575737953186035,
+              "actual": 0.5519199371337891,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 3.3306690738754696e-16,
+              "comparison_budget": 2.5575737953186033e-07
+            }
+          }
+        },
+        "actual_shared_fresh_decoder_calls": 1
+      }
+    },
+    "smolvla_orange_lerobot": {
+      "offset_intervention": {
+        "methods": {
+          "compiled": {
+            "status": "FAIL",
+            "query_ids": [
+              "center"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "obligation": "offset",
+              "output": "raw_action_0",
+              "status": "FAIL",
+              "expected": 8.859694480895996,
+              "actual": 18.644649505615234,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 3.552713678800501e-15
+            }
+          },
+          "independent_pointwise": {
+            "status": "FAIL",
+            "query_ids": [
+              "center"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "kind": "pointwise",
+              "output": "raw_action_0",
+              "expected": 8.859694480895996,
+              "actual": 18.644649505615234,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 5.329070518200751e-15,
+              "comparison_budget": 9.859694480895997e-07
+            }
+          },
+          "strong_relational": {
+            "status": "FAIL",
+            "query_ids": [
+              "center"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "kind": "pointwise",
+              "output": "raw_action_0",
+              "expected": 8.859694480895996,
+              "actual": 18.644649505615234,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 5.329070518200751e-15,
+              "comparison_budget": 9.859694480895997e-07
+            }
+          }
+        },
+        "actual_shared_fresh_decoder_calls": 1
+      },
+      "slope_intervention": {
+        "methods": {
+          "compiled": {
+            "status": "FAIL",
+            "query_ids": [
+              "plus:action:0",
+              "minus:action:0"
+            ],
+            "native_calls_in_method_view": 2,
+            "relation": {
+              "obligation": "effect:action:0",
+              "output": "raw_action_0",
+              "status": "FAIL",
+              "expected": 15.655928039550782,
+              "actual": 31.31185607910156,
+              "queries": [
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 1.4210854715202004e-14
+            }
+          },
+          "independent_pointwise": {
+            "status": "FAIL",
+            "query_ids": [
+              "plus:action:0"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "kind": "pointwise",
+              "output": "raw_action_0",
+              "expected": 24.515622520446776,
+              "actual": 40.171550559997556,
+              "queries": [
+                "plus:action:0"
+              ],
+              "output_resolution_floor": 1.0658141036401503e-14,
+              "comparison_budget": 2.7515622520446775e-06
+            }
+          },
+          "strong_relational": {
+            "status": "FAIL",
+            "query_ids": [
+              "plus:action:0"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "kind": "pointwise",
+              "output": "raw_action_0",
+              "expected": 24.515622520446776,
+              "actual": 40.171550559997556,
+              "queries": [
+                "plus:action:0"
+              ],
+              "output_resolution_floor": 1.0658141036401503e-14,
+              "comparison_budget": 2.7515622520446775e-06
+            }
+          }
+        },
+        "actual_shared_fresh_decoder_calls": 2
+      },
+      "fixed_offset_slope_composition": {
+        "methods": {
+          "compiled": {
+            "status": "FAIL",
+            "query_ids": [
+              "center"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "obligation": "offset",
+              "output": "raw_action_0",
+              "status": "FAIL",
+              "expected": 8.859694480895996,
+              "actual": 18.644649505615234,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 3.552713678800501e-15
+            }
+          },
+          "independent_pointwise": {
+            "status": "FAIL",
+            "query_ids": [
+              "center"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "kind": "pointwise",
+              "output": "raw_action_0",
+              "expected": 8.859694480895996,
+              "actual": 18.644649505615234,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 5.329070518200751e-15,
+              "comparison_budget": 9.859694480895997e-07
+            }
+          },
+          "strong_relational": {
+            "status": "FAIL",
+            "query_ids": [
+              "center"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "kind": "pointwise",
+              "output": "raw_action_0",
+              "expected": 8.859694480895996,
+              "actual": 18.644649505615234,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 5.329070518200751e-15,
+              "comparison_budget": 9.859694480895997e-07
+            }
+          }
+        },
+        "actual_shared_fresh_decoder_calls": 1
+      }
+    },
+    "pi05_libero_lerobot": {
+      "offset_intervention": {
+        "methods": {
+          "compiled": {
+            "status": "FAIL",
+            "query_ids": [
+              "center"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "obligation": "offset",
+              "output": "raw_action_0",
+              "status": "FAIL",
+              "expected": 0.08713239431381226,
+              "actual": 1.0871323943138123,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 2.220446049250313e-16
+            }
+          },
+          "independent_pointwise": {
+            "status": "FAIL",
+            "query_ids": [
+              "center"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "kind": "pointwise",
+              "output": "raw_action_0",
+              "expected": 0.08713239431381226,
+              "actual": 1.0871323943138123,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 2.3592239273284576e-16,
+              "comparison_budget": 1.0871323943138122e-07
+            }
+          },
+          "strong_relational": {
+            "status": "FAIL",
+            "query_ids": [
+              "center"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "kind": "pointwise",
+              "output": "raw_action_0",
+              "expected": 0.08713239431381226,
+              "actual": 1.0871323943138123,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 2.3592239273284576e-16,
+              "comparison_budget": 1.0871323943138122e-07
+            }
+          }
+        },
+        "actual_shared_fresh_decoder_calls": 1
+      },
+      "slope_intervention": {
+        "methods": {
+          "compiled": {
+            "status": "FAIL",
+            "query_ids": [
+              "plus:action:0",
+              "minus:action:0"
+            ],
+            "native_calls_in_method_view": 2,
+            "relation": {
+              "obligation": "effect:action:0",
+              "output": "raw_action_0",
+              "status": "FAIL",
+              "expected": 0.4978655815124512,
+              "actual": 0.9957311630249025,
+              "queries": [
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 4.440892098500626e-16
+            }
+          },
+          "independent_pointwise": {
+            "status": "FAIL",
+            "query_ids": [
+              "plus:action:0"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "kind": "pointwise",
+              "output": "raw_action_0",
+              "expected": 0.5849979758262634,
+              "actual": 1.0828635573387149,
+              "queries": [
+                "plus:action:0"
+              ],
+              "output_resolution_floor": 3.3306690738754696e-16,
+              "comparison_budget": 3.5849979758262636e-07
+            }
+          },
+          "strong_relational": {
+            "status": "FAIL",
+            "query_ids": [
+              "plus:action:0"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "kind": "pointwise",
+              "output": "raw_action_0",
+              "expected": 0.5849979758262634,
+              "actual": 1.0828635573387149,
+              "queries": [
+                "plus:action:0"
+              ],
+              "output_resolution_floor": 3.3306690738754696e-16,
+              "comparison_budget": 3.5849979758262636e-07
+            }
+          }
+        },
+        "actual_shared_fresh_decoder_calls": 2
+      },
+      "fixed_offset_slope_composition": {
+        "methods": {
+          "compiled": {
+            "status": "FAIL",
+            "query_ids": [
+              "center"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "obligation": "offset",
+              "output": "raw_action_0",
+              "status": "FAIL",
+              "expected": 0.08713239431381226,
+              "actual": 1.0871323943138123,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 2.220446049250313e-16
+            }
+          },
+          "independent_pointwise": {
+            "status": "FAIL",
+            "query_ids": [
+              "center"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "kind": "pointwise",
+              "output": "raw_action_0",
+              "expected": 0.08713239431381226,
+              "actual": 1.0871323943138123,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 2.3592239273284576e-16,
+              "comparison_budget": 1.0871323943138122e-07
+            }
+          },
+          "strong_relational": {
+            "status": "FAIL",
+            "query_ids": [
+              "center"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "kind": "pointwise",
+              "output": "raw_action_0",
+              "expected": 0.08713239431381226,
+              "actual": 1.0871323943138123,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 2.3592239273284576e-16,
+              "comparison_budget": 1.0871323943138122e-07
+            }
+          }
+        },
+        "actual_shared_fresh_decoder_calls": 1
+      }
+    }
+  },
+  "openpi": {
+    "pi05_libero_openpi_transport": {
+      "offset_intervention": {
+        "methods": {
+          "compiled": {
+            "status": "FAIL",
+            "query_ids": [
+              "center"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "obligation": "offset",
+              "output": "raw_action_0",
+              "status": "FAIL",
+              "expected": 0.08713289431381221,
+              "actual": 1.0871328943138123,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 2.220446049250313e-16
+            }
+          },
+          "independent_pointwise": {
+            "status": "FAIL",
+            "query_ids": [
+              "center"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "kind": "pointwise",
+              "output": "raw_action_0",
+              "expected": 0.08713289431381221,
+              "actual": 1.0871328943138123,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 2.3592239273284576e-16,
+              "comparison_budget": 1.0871328943138122e-07
+            }
+          },
+          "strong_relational": {
+            "status": "FAIL",
+            "query_ids": [
+              "center"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "kind": "pointwise",
+              "output": "raw_action_0",
+              "expected": 0.08713289431381221,
+              "actual": 1.0871328943138123,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 2.3592239273284576e-16,
+              "comparison_budget": 1.0871328943138122e-07
+            }
+          }
+        },
+        "actual_shared_fresh_decoder_calls": 1
+      },
+      "slope_intervention": {
+        "methods": {
+          "compiled": {
+            "status": "FAIL",
+            "query_ids": [
+              "plus:action:0",
+              "minus:action:0"
+            ],
+            "native_calls_in_method_view": 2,
+            "relation": {
+              "obligation": "effect:action:0",
+              "output": "raw_action_0",
+              "status": "FAIL",
+              "expected": 0.49786598151245115,
+              "actual": 0.9957315630249024,
+              "queries": [
+                "plus:action:0",
+                "minus:action:0"
+              ],
+              "output_resolution_floor": 4.440892098500626e-16
+            }
+          },
+          "independent_pointwise": {
+            "status": "FAIL",
+            "query_ids": [
+              "plus:action:0"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "kind": "pointwise",
+              "output": "raw_action_0",
+              "expected": 0.5849988758262634,
+              "actual": 1.0828644573387147,
+              "queries": [
+                "plus:action:0"
+              ],
+              "output_resolution_floor": 3.3306690738754696e-16,
+              "comparison_budget": 3.584998875826263e-07
+            }
+          },
+          "strong_relational": {
+            "status": "FAIL",
+            "query_ids": [
+              "plus:action:0"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "kind": "pointwise",
+              "output": "raw_action_0",
+              "expected": 0.5849988758262634,
+              "actual": 1.0828644573387147,
+              "queries": [
+                "plus:action:0"
+              ],
+              "output_resolution_floor": 3.3306690738754696e-16,
+              "comparison_budget": 3.584998875826263e-07
+            }
+          }
+        },
+        "actual_shared_fresh_decoder_calls": 2
+      },
+      "fixed_offset_slope_composition": {
+        "methods": {
+          "compiled": {
+            "status": "FAIL",
+            "query_ids": [
+              "center"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "obligation": "offset",
+              "output": "raw_action_0",
+              "status": "FAIL",
+              "expected": 0.08713289431381221,
+              "actual": 1.0871328943138123,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 2.220446049250313e-16
+            }
+          },
+          "independent_pointwise": {
+            "status": "FAIL",
+            "query_ids": [
+              "center"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "kind": "pointwise",
+              "output": "raw_action_0",
+              "expected": 0.08713289431381221,
+              "actual": 1.0871328943138123,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 2.3592239273284576e-16,
+              "comparison_budget": 1.0871328943138122e-07
+            }
+          },
+          "strong_relational": {
+            "status": "FAIL",
+            "query_ids": [
+              "center"
+            ],
+            "native_calls_in_method_view": 1,
+            "relation": {
+              "kind": "pointwise",
+              "output": "raw_action_0",
+              "expected": 0.08713289431381221,
+              "actual": 1.0871328943138123,
+              "queries": [
+                "center"
+              ],
+              "output_resolution_floor": 2.3592239273284576e-16,
+              "comparison_budget": 1.0871328943138122e-07
+            }
+          }
+        },
+        "actual_shared_fresh_decoder_calls": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "command": [
+    ".venv-paper/Scripts/python.exe",
+    "research/publication/reporting/build_results.py"
+  ],
+  "returncode": 0,
+  "stdout": "Regenerated verified facts, TeX table/macros and two publication figures\n",
+  "stderr": "",
+  "identical_generated_file_sha256": {
+    "authority-ablation.pdf": "f16cbbbde819433b41de9be4ab71e05c5042d5144dfa967fa100972a82470463",
+    "authority-ablation.png": "a4092b49148efc8a4e88a05c0687e19ebb5f265894d5fe289018377f10e0999b",
+    "claims.tex": "49639b5caff94bc782c3fb52f709364fc6e1429c331aad0e46e1136a54ea1cb6",
+    "facts.json": "376d2a659dc94ee23430c3584ecd56d16a57fef82b23f55d1b7a87c435d5cc7c",
+    "manifest.json": "bf4320fd7e437d3f412ca2ea8b2514f3df680ba3acd2843947ec98c21d694d96",
+    "outcomes.tex": "a4ca7ae9aea18426d8ee1b0678bff6a5b3599216c8fca62c1bc1db08d0d65622",
+    "witness-cost.pdf": "1730acaadc4fcd8dc8b739201a91f650ee5adeeb249a620cc3f0c4da55ad9e89",
+    "witness-cost.png": "f0f5f9e6345d78736abd68ac20e5142f4f3f0decaefd69c290c3e148816beeed"
+  },
+  "generator_sha256": "e2eb4c7da07b36552ad3ddce84817e5114d89ca16f7551e081b70cdf7f5d9096",
+  "scope": "Actual repeated data-only regeneration of facts, TeX and vector/PNG figures after verifying original and clean captures; no native reacquisition."
+}

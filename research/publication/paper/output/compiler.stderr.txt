@@ -1,0 +1,107 @@
+Fontconfig error: Cannot load default config file: No such file: (null)
+error: main.tex:14: File ended while scanning use of \@xdblarg
+error: something bad happened inside XeTeX; its output follows:
+
+===============================================================================
+(main.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-02-24> (article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(size10.clo)) (tmlr.sty (eso-pic.sty (keyval.sty) (xcolor.sty (color.cfg)
+(xetex.def))) (fancyhdr.sty) (natbib.sty) (fontenc.sty (t1lmr.fd)) (lmodern.sty
+)) (amsmath.sty
+For additional information on amsmath, use the `?' option.
+(amstext.sty (amsgen.sty)) (amsbsy.sty) (amsopn.sty)) (amssymb.sty
+(amsfonts.sty)) (amsthm.sty) (booktabs.sty) (graphicx.sty (graphics.sty
+(trig.sty) (graphics.cfg))) (array.sty) (hyperref.sty (ltxcmds.sty) (iftex.sty)
+ (pdftexcmds.sty (infwarerr.sty)) (kvsetkeys.sty) (kvdefinekeys.sty)
+(pdfescape.sty) (hycolor.sty) (letltxmacro.sty) (auxhook.sty) (kvoptions.sty)
+(pd1enc.def) (intcalc.sty) (etexcmds.sty) (puenc.def) (url.sty) (bitset.sty
+(bigintcalc.sty)) (atbegshi-ltx.sty)) (hxetex.def (stringenc.sty)
+(rerunfilecheck.sty (atveryend-ltx.sty) (uniquecounter.sty)))
+(l3backend-xetex.def)
+No file main.aux.
+(ts1cmr.fd) (nameref.sty (refcount.sty) (gettitlestring.sty))
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+(t1lmss.fd) (article.tex (generated/claims.tex)
+
+Package natbib Warning: Citation `tai2026execspec' on page 1 undefined on input
+ line 9.
+
+
+Package natbib Warning: Citation `xpolicylab2026' on page 1 undefined on input 
+line 9.
+
+[1]
+
+Package natbib Warning: Citation `tai2026execspec' on page 2 undefined on input
+ line 19.
+
+
+Package natbib Warning: Citation `xpolicylab2026' on page 2 undefined on input 
+line 19.
+
+
+Package natbib Warning: Citation `eisenhut2023' on page 2 undefined on input li
+ne 22.
+
+
+Package natbib Warning: Citation `pham2019cradle' on page 2 undefined on input 
+line 22.
+
+
+Package natbib Warning: Citation `wang2022eagle' on page 2 undefined on input l
+ine 22.
+
+
+Package natbib Warning: Citation `tretmans2008' on page 2 undefined on input li
+ne 22.
+
+
+Package natbib Warning: Citation `zeller2002simplifying' on page 2 undefined on
+ input line 22.
+
+
+Package natbib Warning: Citation `bauer2011runtime' on page 2 undefined on inpu
+t line 22.
+
+
+Package natbib Warning: Citation `robotruth2026' on page 2 undefined on input l
+ine 25.
+
+
+Package natbib Warning: Citation `policyspace2026' on page 2 undefined on input
+ line 25.
+
+
+Package natbib Warning: Citation `preflight2026' on page 2 undefined on input l
+ine 25.
+
+
+Package natbib Warning: Citation `actionabi2026' on page 2 undefined on input l
+ine 25.
+
+
+Package natbib Warning: Citation `tether2026' on page 2 undefined on input line
+ 25.
+
+[2] (ot1lmr.fd) (omllmm.fd) (omslmsy.fd) (omxlmex.fd) (umsa.fd) (umsb.fd)
+[3] (t1lmtt.fd)
+
+LaTeX Warning: Reference `app:artifacts' on page 4 undefined on input line 78.
+
+)
+Runaway argument?
+{Matched methods, ans are repeated measurements. We report counts and\ETC.
+! File ended while scanning use of \@xdblarg.
+<inserted text> 
+                \par 
+l.14 \input{article.tex}
+                        
+Output written on main.xdv (3 pages, 18676 bytes).
+Transcript written on main.log.
+===============================================================================
+error: the XeTeX engine had an unrecoverable error
+caused by: halted on potentially-recoverable error as specified

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "status": "SEMANTIC_ARTIFACTS_REPRODUCED",
+  "original_summary_sha256": "22f91742d82dffa352d806a57701822487cb7c03ae9c16ea2dd5b7a7d82beea7",
+  "semantic_file_sha256": {
+    "analysis.json": "83e00b74ca783de9efda4decfcfbd4e7345c22564bc8584b4246adee982242af",
+    "witnesses.json": "b4a0cd3a79c7943f1ae9cb512b8f843807b3cb11453e16b96eeb2e9d09229cf4",
+    "workflow-analysis.json": "9a0df9925f05bfa66bf8f5eaeb8585e896f95ba71cae6d2517f3d883e353527d",
+    "conditions.csv": "f261b97ce019d83365b78edd2a9ce24375cf6fc19fa998d8c733f2a1d0561398"
+  },
+  "metrics_equal_excluding_measured_phase_costs": true,
+  "distinct_native_environment_prefixes": {
+    "robotruth": true,
+    "lerobot": true,
+    "openpi": true,
+    "lerobot_witness": true,
+    "openpi_witness": true,
+    "policy_space": true
+  },
+  "scope": "New separately prepared pinned environments; not an independent research sample or execution attestation"
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-23",
+  "candidate_venue": "Transactions on Machine Learning Research",
+  "template_repository": "https://github.com/JmlrOrg/tmlr-style-file",
+  "template_commit": "7bf90efe3a0debbba703c05c43f3ff7e4d4a2992",
+  "files": [
+    {
+      "path": "tmlr.sty",
+      "upstream_path": "tmlr.sty",
+      "git_blob": "c0c62d03c6e2383c688b20965de03800dc15c79c",
+      "sha256": "816214ff5919aa457b6b443bee52b15d9561421417b7f8a50cc84651519f0002"
+    },
+    {
+      "path": "tmlr.bst",
+      "upstream_path": "tmlr.bst",
+      "git_blob": "310ed3e74455269ad97d0b30639851af72cec965",
+      "sha256": "306fd454cf40771bee01293eeb98d2c1cd5f4e11ed0cd7296b335f354fc45206"
+    },
+    {
+      "path": "fancyhdr.sty",
+      "upstream_path": "fancyhdr.sty",
+      "git_blob": "01f87f2edda07ab44133ed36f7016f4552479ac6",
+      "sha256": "3d2922548e0e5f1a6c5676eda6ebb6dc20d7d305b4d8c2be5f1c833fb1084e6d"
+    },
+    {
+      "path": "LICENSE.tmlr.txt",
+      "upstream_path": "LICENSE",
+      "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    }
+  ],
+  "official_guides": [
+    "https://jmlr.org/tmlr/author-guide.html",
+    "https://jmlr.org/tmlr/acceptance-criteria.html",
+    "https://jmlr.org/tmlr/editorial-policies.html"
+  ],
+  "format_scope": "Unmodified official template assets in preprint mode for private human review; no submission or acceptance claim. Main PDF and anonymous supplement must be reviewed before any separately authorized submission."
+}

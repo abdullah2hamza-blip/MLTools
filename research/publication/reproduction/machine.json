@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "scope": "Generic system details collected after original and clean acquisition on the same local machine; no hostname/device identifiers. CIM unavailable; stdlib/registry/kernel fallback used.",
+  "processor": "AMD Ryzen AI 7 350 w/ Radeon 860M",
+  "logical_processors": 16,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "machine": "AMD64",
+  "total_physical_memory_bytes": 16418983936
+}

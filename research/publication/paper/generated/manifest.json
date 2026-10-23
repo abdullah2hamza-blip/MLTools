@@ -1,0 +1,27 @@
+{
+  "generator_sha256": "e2eb4c7da07b36552ad3ddce84817e5114d89ca16f7551e081b70cdf7f5d9096",
+  "input_sha256": {
+    "research/publication/protocol-freeze-001.json": "76a825f41b72e5cbe945a4f7e6930ef5e00df0a43bc461ccfb293be6773481fc",
+    "research/publication/runs/clean-reproduction-001/reproduction-comparison.json": "a7cf50db5a11481e935a9cf89ed122679d915c3a206989dd4c40c6c7df4497c4",
+    "research/publication/runs/clean-reproduction-001/summary.json": "e59fb7242804710f9dc72c469b9677f43ae60ec51461a09d9c9488a69fc444a7",
+    "research/publication/runs/prospective-001/analysis.json": "83e00b74ca783de9efda4decfcfbd4e7345c22564bc8584b4246adee982242af",
+    "research/publication/runs/prospective-001/metrics.json": "024ef2684cde87d8173251a1e314fd067588c38fea665a3a8fbb876360f40c75",
+    "research/publication/runs/prospective-001/summary.json": "22f91742d82dffa352d806a57701822487cb7c03ae9c16ea2dd5b7a7d82beea7",
+    "research/publication/runs/prospective-001/witnesses.json": "b4a0cd3a79c7943f1ae9cb512b8f843807b3cb11453e16b96eeb2e9d09229cf4"
+  },
+  "output_sha256": {
+    "authority-ablation.pdf": "f16cbbbde819433b41de9be4ab71e05c5042d5144dfa967fa100972a82470463",
+    "authority-ablation.png": "a4092b49148efc8a4e88a05c0687e19ebb5f265894d5fe289018377f10e0999b",
+    "claims.tex": "49639b5caff94bc782c3fb52f709364fc6e1429c331aad0e46e1136a54ea1cb6",
+    "facts.json": "376d2a659dc94ee23430c3584ecd56d16a57fef82b23f55d1b7a87c435d5cc7c",
+    "outcomes.tex": "a4ca7ae9aea18426d8ee1b0678bff6a5b3599216c8fca62c1bc1db08d0d65622",
+    "witness-cost.pdf": "1730acaadc4fcd8dc8b739201a91f650ee5adeeb249a620cc3f0c4da55ad9e89",
+    "witness-cost.png": "f0f5f9e6345d78736abd68ac20e5142f4f3f0decaefd69c290c3e148816beeed"
+  },
+  "plot_packages": {
+    "matplotlib": "3.10.3",
+    "numpy": "2.5.4"
+  },
+  "schema_version": 1,
+  "scope": "Descriptive reporting after acquisition; no experiments or method tuning"
+}

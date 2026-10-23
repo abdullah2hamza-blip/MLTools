@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "initial-primary-source-audit-not-exhaustive",
+  "status": "focused-primary-source-audit-with-explicit-scope-limits",
   "searched_on_local_date": "2026-10-21",
   "sources": [
     {
@@ -14,13 +14,14 @@
       "url": "https://arxiv.org/html/2606.03724v1",
       "inspected": "Primary HTML: formalization, certificates, experiments and limitations",
       "relationship": "Direct prior work: executable-policy identity and quantile normalization-mismatch certificates, with replay evidence. The broad executable-semantics thesis is not our novelty.",
-      "remaining_question": "Locate any author implementation and artifacts; compare applicable certificate obligations faithfully. Lack of a located link is not proof of unavailability."
+      "remaining_question": "No official implementation link identified in bounded primary-paper review; this is not proof of absence. Paper-equation arithmetic is independently implemented and explicitly extended; model-support/controller distinctions are not established by designed processor probes."
     },
     {
       "id": "xpolicylab2026",
       "title": "XPolicyLab: A Unified Standard and Open Ecosystem for Robot Policy Evaluation and Deployment",
       "authors": [
-        "XPolicyLab Contributors"
+        "XPolicyLab Community",
+        "et al."
       ],
       "year": 2026,
       "version": "arXiv:2608.09892v1",
@@ -28,22 +29,27 @@
       "code": "https://github.com/XPolicyLab/XPolicyLab",
       "inspected": "Primary HTML: runtime architecture, schema and lifecycle sections",
       "relationship": "Policy adapters, shared schemas and isolated runtime/lifecycle orchestration are existing infrastructure. Do not claim those as new.",
-      "remaining_question": "Inspect executable checks and overlap with partial-evidence conformance; no service/benchmark executed yet."
+      "remaining_question": "Inspect executable checks and overlap with partial-evidence conformance; no service/benchmark executed yet.",
+      "version_note": "The inspected v1 credits the group plus 66 authors. Current v3 has a different author inventory; citations here intentionally retain v1."
     },
     {
       "id": "eisenhut2023",
       "title": "Automatic Metamorphic Test Oracles for Action-Policy Testing",
       "authors": [
         "Jan Eisenhut",
-        "Alvaro Torralba",
+        "Álvaro Torralba",
         "Maria Christakis",
-        "Joerg Hoffmann"
+        "Jörg Hoffmann"
       ],
       "year": 2023,
       "doi": "10.1609/icaps.v33i1.27185",
       "url": "https://ojs.aaai.org/index.php/ICAPS/article/view/27185",
-      "inspected": "Primary publisher abstract and bibliographic metadata",
-      "relationship": "Automated metamorphic oracles for learned policies are prior art; distinguish policy-quality testing from adapter meaning. Full method comparison remains pending."
+      "inspected": "Publisher metadata and author-hosted full method reviewed in focused primary-source audit",
+      "relationship": "Automated metamorphic oracles for learned policies are prior art; distinguish policy-quality testing from adapter meaning. Full method comparison remains pending.",
+      "volume": 33,
+      "issue": 1,
+      "pages": "109–117",
+      "full_text": "https://mariachris.github.io/Pubs/ICAPS-2023.pdf"
     },
     {
       "id": "pham2019cradle",
@@ -57,7 +63,7 @@
       "year": 2019,
       "doi": "10.1109/ICSE.2019.00107",
       "url": "https://www.cs.purdue.edu/homes/lintan/publications/cradle-icse19.pdf",
-      "inspected": "Author-hosted paper: abstract and introduction",
+      "inspected": "Author-hosted full paper reviewed in focused primary-source audit; equivalent/differential computations and their oracle limits",
       "relationship": "Cross-implementation checking and divergence localization in ML software are established. Agreement between implementations is not an independent physical specification."
     },
     {
@@ -73,7 +79,7 @@
       "year": 2022,
       "doi": "10.1145/3510003.3510165",
       "url": "https://jiannanwang.github.io/files/eagle-icse22.pdf",
-      "inspected": "Author-hosted paper: abstract and introduction",
+      "inspected": "Author-hosted full paper reviewed in focused primary-source audit; equivalent/differential computations and their oracle limits",
       "relationship": "Equivalent-graph rules and single-library differential testing are prior art. Generated equivalent executions alone cannot establish missing physical authority."
     },
     {
@@ -105,14 +111,44 @@
       "url": "https://github.com/Archerkattri/actionabi/tree/5ad1d45a082860f5f16bb43f3c6bbb0758ec6c11",
       "inspected": "Pinned README, contract grammar, CPU scorer, identifiability, probes, converter/evidence and CLI; bounded source review only",
       "relationship": "Close method overlap: finite action-contract grammar, partial evidence, equivalence sets, abstention, separating probes; do not claim these concepts as novel"
+    },
+    {
+      "id": "zeller2002simplifying",
+      "title": "Simplifying and Isolating Failure-Inducing Input",
+      "authors": [
+        "Andreas Zeller",
+        "Ralf Hildebrandt"
+      ],
+      "year": 2002,
+      "venue": "IEEE Transactions on Software Engineering",
+      "volume": 28,
+      "issue": 2,
+      "pages": "183–200",
+      "url": "https://www.st.cs.uni-saarland.de/publications/details/zeller-tse-2002/",
+      "relationship": "Failure-preserving reduction is prior art. Our local relation witnesses are neither generic delta debugging nor globally minimal causal explanations."
+    },
+    {
+      "id": "bauer2011runtime",
+      "title": "Runtime Verification for LTL and TLTL",
+      "authors": [
+        "Andreas Bauer",
+        "Martin Leucker",
+        "Christian Schallhart"
+      ],
+      "year": 2011,
+      "venue": "ACM Transactions on Software Engineering and Methodology",
+      "volume": 20,
+      "issue": 4,
+      "article": 14,
+      "url": "https://research.uni-luebeck.de/de/publications/runtime-verification-for-ltl-and-tltl/",
+      "relationship": "Three-valued finite-trace monitoring is precedent; temporal inconclusiveness differs from our missing-authority UNKNOWN."
     }
   ],
   "follow_up": [
-    "Read full ICAPS, EAGLE, CRADLE and formal conformance methods before final related-work claims",
-    "Investigate observability, active identification, partial specifications and counterexample reduction literature",
-    "Inspect complete applicable native, Policy Space, Tether, preflight and XPolicyLab workflows",
-    "Choose a venue based on demonstrated contribution and current official requirements, not a promised acceptance",
-    "Use baseline-audit.md and competitor-sources.json for current bounded native-workflow audit; no final superiority result",
-    "Run applicable robotruth extraction/check and ActionABI library APIs with equal evidence; bounded source review is recorded in baseline-audit.md"
-  ]
+    "Bounded primary-source audit does not establish exhaustive literature coverage or novel testing theory.",
+    "Current results support a finite reproducible comparison of contracts and evidence limits, with parity and larger compiler witnesses explicitly reported.",
+    "Stock full physical preflight, Tether paired rollouts, ActionABI response episodes and concrete XPolicyLab adapter execution remain inapplicable/unexecuted for this metadata stratum; no absence-of-check or superiority claim.",
+    "TMLR article format is a candidate based on official criteria reviewed 2026-10-23; human authors must assess scientific interest and review before any separately authorized submission."
+  ],
+  "last_audited_local_date": "2026-10-23"
 }

@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "status": "VERIFIED_FOR_PRIVATE_HUMAN_REVIEW",
+  "pdf_path": "research/publication/paper/output/main.pdf",
+  "pdf_sha256": "01b976fca1455ab0137ac585af2e571d3d3860dc4886987a8334d6b3682b4d3b",
+  "pages": 12,
+  "compile_record": "research/publication/paper/output/compile-003/compile.json",
+  "compile_record_sha256": "7dcfde38c3e1f75952b78008f5e3bfa73399032a72919115cc7efba97eb94b7b",
+  "source_sha256": {
+    "LICENSE.tmlr.txt": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "README.md": "2692887a83528048a10c195725b1300b75f5b9f6a54463eac24aba4c87ae65eb",
+    "appendix.tex": "e0821d39ec3f6feea7fe0a85cec0e57e0eee1bca8a872b4a314d2e0f10780f27",
+    "article.tex": "e35092e8735a35f79a1b2b65001f00a18c3f82995c234c70a9b680c390c4d76b",
+    "compiler-tool.json": "eefdca0c03da9b0582b000328f3993a167ce5b92e6c3e815f6350545605f0945",
+    "fancyhdr.sty": "3d2922548e0e5f1a6c5676eda6ebb6dc20d7d305b4d8c2be5f1c833fb1084e6d",
+    "generated/authority-ablation.pdf": "f16cbbbde819433b41de9be4ab71e05c5042d5144dfa967fa100972a82470463",
+    "generated/authority-ablation.png": "a4092b49148efc8a4e88a05c0687e19ebb5f265894d5fe289018377f10e0999b",
+    "generated/claims.tex": "49639b5caff94bc782c3fb52f709364fc6e1429c331aad0e46e1136a54ea1cb6",
+    "generated/facts.json": "376d2a659dc94ee23430c3584ecd56d16a57fef82b23f55d1b7a87c435d5cc7c",
+    "generated/manifest.json": "bf4320fd7e437d3f412ca2ea8b2514f3df680ba3acd2843947ec98c21d694d96",
+    "generated/outcomes.tex": "a4ca7ae9aea18426d8ee1b0678bff6a5b3599216c8fca62c1bc1db08d0d65622",
+    "generated/witness-cost.pdf": "1730acaadc4fcd8dc8b739201a91f650ee5adeeb249a620cc3f0c4da55ad9e89",
+    "generated/witness-cost.png": "f0f5f9e6345d78736abd68ac20e5142f4f3f0decaefd69c290c3e148816beeed",
+    "main.tex": "3422b71614598a385d6894aa5000696be8b9cd782832d928f4ebfaf23734f3e3",
+    "references.bib": "d6e7d9cb8961779981304642ba277d6fa9b4e76e5f1133ad42d723ea00b8aa6f",
+    "tmlr.bst": "306fd454cf40771bee01293eeb98d2c1cd5f4e11ed0cd7296b335f354fc45206",
+    "tmlr.sty": "816214ff5919aa457b6b443bee52b15d9561421417b7f8a50cc84651519f0002",
+    "venue-format.json": "3f09322fca55e9290cf0dbdc5501414c95c9a0e79ba6ee651fc004f62f4d73b9"
+  },
+  "built_in_editor_final_compilation": "success",
+  "bibtex_warnings": 0,
+  "overfull_boxes": 0,
+  "layout_warnings": "Nonfatal underfull boxes in justified URL/hash paragraphs; all pages visually inspected.",
+  "rendering": {
+    "renderer": "Poppler pdftoppm",
+    "dpi": 120,
+    "page_sha256": {
+      "page-01.png": "e337c89dc76f0593c7f647259e96f27ca219d0a9cdf40fc3ad77a893a67899ae",
+      "page-02.png": "f56d0dcf3c664a1c01310c26630318fc280c98e3a9bee7e2bd0b000e5959cbb0",
+      "page-03.png": "9b0c16ffe28bc03c4513814216862bbeb5668792f8abb7c6e03f5e71c546d4db",
+      "page-04.png": "492fed3ad64fd983bbedd15d874838d2124d9063adf8d7001f3cb5a3064786a9",
+      "page-05.png": "0a43ac303a868722635f01e33d6b5a9bd5a85e4ee104b31f67e85eb25e309b69",
+      "page-06.png": "0b0abeec7c60b8905611bd7cabf0b926910f148eb604d115c7abe84be94f58e3",
+      "page-07.png": "eb8e690fc7962dfdfd0f29d19a5320791b3ae4da3a096113b95adfe537a2bc4d",
+      "page-08.png": "e0c9598ee231a18277130ad9a4b4819e560444f4945dd530005700023141c627",
+      "page-09.png": "85dd7fef35ca951b5d317c7bdb505e5c6ee7a9935a00e982bcbcd3fcdae8bfbf",
+      "page-10.png": "c42bc2947ea298107e28463b959978372a33b71285b6cd18cf95ebcaa30dba98",
+      "page-11.png": "f45302d91122575855b7ed07224c54c0fa06644e959044606a5ac74d61bc13ed",
+      "page-12.png": "73c6303e37fc9914610e43ef1af7f8630a1e0e0df61540eabf8e0faa0d30280c"
+    },
+    "all_twelve_final_page_images_byte_identical_to_visually_inspected_previous_render": true
+  },
+  "source_review": {
+    "kind": "Focused subagent manuscript review against actual facts and source scopes",
+    "findings_fixed": [
+      "Qualified main-condition parity separately from offset-authority ablation differences",
+      "Explicitly reported actual clean semantic and finite-metric reproduction"
+    ]
+  },
+  "limits": [
+    "Complete private draft; not submitted or accepted.",
+    "Extensive AI assistance disclosed; human scientific/authorship/licensing review remains necessary for publication.",
+    "Candidate venue official format/guides checked 2026-10-23; no acceptance/novelty claim."
+  ]
+}

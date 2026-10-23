@@ -1,0 +1,8 @@
+{
+  "id": "mltools_raw_vector_7@1",
+  "description": "Authored research output profile: raw-index vector; no physical units or embodiment",
+  "response_key": "actions",
+  "action_dim": 7,
+  "dtype": "float32",
+  "representation": "raw_coordinate_vector"
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "command": [
+    "C:\\Users\\Abdul\\Documents\\MLTools\\.test-tmp\\tectonic-0.17.0\\tectonic.exe",
+    "--untrusted",
+    "--keep-logs",
+    "--outdir",
+    "C:\\Users\\Abdul\\Documents\\MLTools\\research\\publication\\paper\\output",
+    "C:\\Users\\Abdul\\Documents\\MLTools\\research\\publication\\paper\\main.tex"
+  ],
+  "returncode": 1,
+  "wall_seconds": 85.88478669998585,
+  "cache_directory": "C:\\Users\\Abdul\\Documents\\MLTools\\.test-tmp\\tectonic-cache"
+}

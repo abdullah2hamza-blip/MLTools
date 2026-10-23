@@ -1,6 +1,6 @@
 # Baseline applicability audit
 
-Status: development audit, checked 2026-10-22. No final comparison or detection rate is available. `competitor-sources.json` records exact revisions and inspected source blobs. Repository HEADs were resolved through GitHub before reading pinned files; the named preflight, Policy Space and Tether revisions match the earlier opportunity memo. The inspected XPolicyLab revision is newer and must not be silently substituted in earlier evidence.
+Status: historical development/source audit, checked 2026-10-22. The later frozen main comparison and clean reproduction are in `runs/prospective-001/` and `runs/clean-reproduction-001/`; `paper/` reports their finite counts with the scopes below. Earlier pending-work notes retain their development-stage context. `competitor-sources.json` records exact revisions and inspected source blobs. Repository HEADs were resolved through GitHub before reading pinned files; the named preflight, Policy Space and Tether revisions match the earlier opportunity memo. The inspected XPolicyLab revision is newer and must not be silently substituted in earlier evidence.
 
 ## Native workflows and evidence requirements
 
