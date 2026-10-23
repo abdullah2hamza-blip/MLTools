@@ -13,6 +13,12 @@ wheels/
 .pytest_cache/
 .ruff_cache/
 
+# Local publishing credentials and private attempt state.
+/.kaggle/
+/kaggle.json
+/.env
+/releases/kaggle/private-state/
+
 # Preserve experiment build logs; native binaries remain in ignored .test-tmp.
 !validation/actionabi-native-*/build/
 !validation/actionabi-native-*/build/**

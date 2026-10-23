@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "release_id": "e0d81566ac60984fa9c17d120f446c7009352cf8b67a49a89f92704014fcc3e3",
+  "payload_sha256": "e81b1f4d455ea27df100994c6b0cfaae3054f2185eb390c7fe1defa42d081b4c",
+  "files": {
+    "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "README.md": "4420fa142bcca33c0d3b07d2206e8cc03e6cf7b0a02c86c8fde94665b8d14ab2",
+    "THIRD_PARTY_NOTICES.md": "6db2652f51c313e892e6253e32394b9f08fdec4693986981b4080b32c02ab192",
+    "conditions.csv": "f261b97ce019d83365b78edd2a9ce24375cf6fc19fa998d8c733f2a1d0561398",
+    "dataset-metadata.json": "93ee5dc79724ff7276976b4d9261f780262c65f1fe2ce7fbcadc64cd53dbe24f",
+    "payload.zip": "e81b1f4d455ea27df100994c6b0cfaae3054f2185eb390c7fe1defa42d081b4c"
+  },
+  "expected_replay_outputs": {
+    "analysis.json": "83e00b74ca783de9efda4decfcfbd4e7345c22564bc8584b4246adee982242af",
+    "witnesses.json": "b4a0cd3a79c7943f1ae9cb512b8f843807b3cb11453e16b96eeb2e9d09229cf4",
+    "workflow-analysis.json": "9a0df9925f05bfa66bf8f5eaeb8585e896f95ba71cae6d2517f3d883e353527d",
+    "metrics.json": "5d5a90948c3271fca004afd0fbedd951e4f8cef67baecd30c0195e16df4e015c",
+    "conditions.csv": "f261b97ce019d83365b78edd2a9ce24375cf6fc19fa998d8c733f2a1d0561398"
+  }
+}

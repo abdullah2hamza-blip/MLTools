@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "status": "LOCAL_FRESH_KERNEL_VERIFIED",
+  "python": "3.13.7",
+  "release_id": "e0d81566ac60984fa9c17d120f446c7009352cf8b67a49a89f92704014fcc3e3",
+  "input_files_unchanged": {
+    "conditions.csv": "f261b97ce019d83365b78edd2a9ce24375cf6fc19fa998d8c733f2a1d0561398",
+    "dataset-metadata.json": "93ee5dc79724ff7276976b4d9261f780262c65f1fe2ce7fbcadc64cd53dbe24f",
+    "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "payload.zip": "e81b1f4d455ea27df100994c6b0cfaae3054f2185eb390c7fe1defa42d081b4c",
+    "README.md": "4420fa142bcca33c0d3b07d2206e8cc03e6cf7b0a02c86c8fde94665b8d14ab2",
+    "release-manifest.json": "8160e91ad70e8dc0e0fbfcdbf120b66f3a0a4b2a81e9bca6dcafe2bd06f5de69",
+    "THIRD_PARTY_NOTICES.md": "6db2652f51c313e892e6253e32394b9f08fdec4693986981b4080b32c02ab192"
+  },
+  "executed_code_cells": 4,
+  "replay_process_network": "DENIED_BY_AUDIT_HOOK",
+  "input_file_mode": "read-only",
+  "hosted_kaggle_run": "NOT_RUN_NO_CREDENTIALS_USED",
+  "output_verification": {
+    "schema_version": 1,
+    "status": "VERIFIED_SAVED_TRACE_REPLAY",
+    "release_id": "e0d81566ac60984fa9c17d120f446c7009352cf8b67a49a89f92704014fcc3e3",
+    "payload_sha256": "e81b1f4d455ea27df100994c6b0cfaae3054f2185eb390c7fe1defa42d081b4c",
+    "report_sha256": "355728a107ec22970b3f390dabd6ea1dec61473417a7d313f7888b51054f40db",
+    "scope": "Saved-trace replay outputs; no fresh native acquisition or execution attestation"
+  }
+}

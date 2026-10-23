@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-23",
+  "cli_version": "2.2.5",
+  "cli_revision": "8b88a6aeffed5acae0b1e43137d946afd5c43351",
+  "sources": [
+    {"url": "https://github.com/Kaggle/kaggle-cli/blob/8b88a6aeffed5acae0b1e43137d946afd5c43351/docs/datasets_metadata.md", "git_blob": "b5187d1b4f4feade1509a24e99458ca3e4e06403", "applied": "One lower-case license ID; title/subtitle limits; ordered CSV field schema"},
+    {"url": "https://github.com/Kaggle/kaggle-cli/blob/8b88a6aeffed5acae0b1e43137d946afd5c43351/docs/kernels_metadata.md", "git_blob": "704b4e72d683f9c76c27b2bafcf69fb0c3c7dd28", "applied": "Explicit private CPU offline notebook and exact dataset attachment"},
+    {"url": "https://github.com/Kaggle/kaggle-cli/blob/8b88a6aeffed5acae0b1e43137d946afd5c43351/src/kaggle/api/kaggle_api_extended.py", "git_blob": "4976923a51acba9aa2f8d20ae1b1687cff2b70eb", "applied": "Boolean metadata supported; internet default is true, so explicitly set false"},
+    {"url": "https://github.com/Kaggle/kaggle-cli/blob/8b88a6aeffed5acae0b1e43137d946afd5c43351/src/kaggle/__init__.py", "git_blob": "8630f08e34af15b72ed6d5997be796f667cf4c2f", "applied": "Import creates a client and attempts authentication; do not import during preparation"},
+    {"url": "https://github.com/Kaggle/kaggle-cli/blob/8b88a6aeffed5acae0b1e43137d946afd5c43351/skills/references/auth.md", "git_blob": "4693c556c41b5c136a6d9b0bd54cebd2a327a946", "applied": "Later local token configuration only after explicit user authorization"},
+    {"url": "https://github.com/Kaggle/docker-python/blob/c43593a3e3ec779e38af48bec4483f2059728ee1/Dockerfile.tmpl", "git_blob": "e6beb37eac4816f5f7f4d447bcd44f10fed56538", "applied": "Current reference image uses Python 3.13; hosted compatibility still needs an actual run"}
+  ],
+  "credential_access": false,
+  "hosted_execution": false
+}

@@ -8,6 +8,24 @@ permissions:
   contents: read
 
 jobs:
+  kaggle-release:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9 # v7
+        with:
+          version: "0.13.4"
+          python-version: "3.13"
+      - run: uv venv .venv-kaggle --python 3.13
+      - run: uv pip sync releases/kaggle/testing-requirements.lock --python .venv-kaggle/Scripts/python.exe --require-hashes
+      - run: .venv-kaggle/Scripts/python.exe -m pytest releases/kaggle -q --basetemp .test-tmp/kaggle-tests
+      - run: .venv-kaggle/Scripts/python.exe releases/kaggle/build.py --output releases/kaggle/build/ci
+      - run: .venv-kaggle/Scripts/python.exe releases/kaggle/publish.py --root releases/kaggle/build/ci --config releases/kaggle/config.json
+      - run: .venv-kaggle/Scripts/python.exe releases/kaggle/smoke.py --root releases/kaggle/build/ci --work .test-tmp/kaggle-smoke --record releases/kaggle/build/ci-validation
   core:
     strategy:
       matrix:

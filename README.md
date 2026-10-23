@@ -1,5 +1,9 @@
 # MLTools
 
+The [Kaggle release workflow](releases/kaggle/README.md) builds a licensed,
+privacy-reviewed offline replay dataset and CPU notebook from the frozen study.
+Original code/results use [Apache-2.0](LICENSE); third-party terms remain in force.
+
 Check whether a robot policy adapter preserves the physical meaning of its training interface. Matching tensor shapes and successful encode/decode round trips can conceal swapped cameras, permuted joints, stale statistics, or a changing reference state inside an action chunk.
 
 MLTools compares executed boundary traces with a separately supplied physical contract. It reports **PASS**, **FAIL**, or **UNKNOWN**, with the first observed divergence and an exportable regression fixture.

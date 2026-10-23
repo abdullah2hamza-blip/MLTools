@@ -52,3 +52,5 @@ research/publication/selection/smolvla/shenjianliang--smolvla_policy/train_confi
 research/publication/selection/smolvla/shenjianliang--smolvla_policy/policy_*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 # Preserve immutable publisher identities for the PI metadata-only reserve.
 research/publication/selection/pi/lianqing11--pi05_libero/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# The reviewed Kaggle release has exact per-file hashes, including JSON/notebook bytes.
+releases/kaggle/artifacts/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

@@ -1,0 +1,2 @@
+# Install only after the user authorizes credential use; importing kaggle authenticates.
+kaggle==2.2.5

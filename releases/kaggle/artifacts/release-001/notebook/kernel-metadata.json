@@ -1,0 +1,16 @@
+{
+  "id": "abdullah2hamza/boundary-conformance-replay",
+  "title": "Boundary Conformance Replay",
+  "code_file": "replay.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": false,
+  "dataset_sources": [
+    "abdullah2hamza/boundary-conformance-replay"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

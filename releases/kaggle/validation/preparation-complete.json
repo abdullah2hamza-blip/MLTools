@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "status": "LOCAL_KAGGLE_PREPARATION_COMPLETE",
+  "release_id": "e0d81566ac60984fa9c17d120f446c7009352cf8b67a49a89f92704014fcc3e3",
+  "payload_sha256": "e81b1f4d455ea27df100994c6b0cfaae3054f2185eb390c7fe1defa42d081b4c",
+  "tests": {
+    "passed": 47,
+    "subtests_passed": 22
+  },
+  "ruff": "LINT_AND_FORMAT_PASSED",
+  "fresh_kernel": "validation/smoke-004/verification.json",
+  "determinism": "validation/export-verification.json",
+  "review": "releases/kaggle/REVIEW.md",
+  "credential_access": false,
+  "kaggle_operations": 0,
+  "hosted_verification": "PENDING_USER_AUTHORIZATION",
+  "implementation_sha256": {
+    "build.py": "66fb459f3319a1786f5829290eb71023cdb63024e88ba13adb7bcb1e5319c768",
+    "config.json": "21ee303fe9490f5698509b93194cf24b13bd57a8be4d96b6241c8aeca9e5d995",
+    "DATASET_CARD.md": "4420fa142bcca33c0d3b07d2206e8cc03e6cf7b0a02c86c8fde94665b8d14ab2",
+    "integrity.py": "4b22ff479d4c4577c5305839096741031c346dadeefc1b7cfb1eea7f09f3f9d3",
+    "notebook.py": "3cdcd6d11efb01052c62b33e5632b6b4b3c60a388cb75fe6fa3ae8ea340bd0da",
+    "publish.py": "d70953ffc63b1d80becc04eea9cbabee5154a75363978f6d07a0644ce9082089",
+    "publishing-requirements.in": "891a3f798ebf6db0492f7508189aee4fbf64c9403629e9a7d3cc0e67709bd4b1",
+    "publishing-requirements.lock": "eeb00546ebb26c259b0815fc18eb06bb8ad5725891cf124303fbd098aefdbd11",
+    "publishing.md": "74e1c37b4bbffa2fc6566e614b941c198554556c30155a42bb50acbabce69618",
+    "README.md": "9b9271bc03b8abbbab51e74f8051c04e45701d7eeb37a977ac7a9df6e60f1236",
+    "release-lock.json": "cced4e95ba61fde6d8835d9ae1e68f92963900315177579bac4b6213a499fdc9",
+    "replay.py": "651be6bdc37cc9eab39b10e9c5f96f7307fdc0522c958362d80e36ddffb953ec",
+    "requirements-reviewed.json": "02b5e5bd4550adf52c84ed9c7d72c87ec6cee93ea2c5b262b4c437de40983dae",
+    "REVIEW.md": "3d0fdef2971f075201db865f72b351600b8e15e6ba4c8f3b2d9e4ff21b157560",
+    "smoke.py": "35c1526b4cc35d68743a552c6e8b94ec31823e1e9f0c0cfeb58e8358f2c80193",
+    "test_publish.py": "9483406e06a0cbd8e723db5169dbf42eaf272d1c03bcd997f64d5628aa7c7278",
+    "test_release.py": "db46395916d31ac3ce76f4184754dc65eabb07d6644482de5680a5cbbe062c12",
+    "testing-requirements.in": "292c91ca05e7eb676b4c29c54271c56b6c5b3f13ea581bfb2e20a5295462d0b2",
+    "testing-requirements.lock": "cc8bc4b2d6cef0c380f96aae0c7f3974de2025386134acd55c6aaa9f3de5e579",
+    "THIRD_PARTY_NOTICES.md": "6db2652f51c313e892e6253e32394b9f08fdec4693986981b4080b32c02ab192"
+  }
+}
