@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "state": "READY_FOR_TAGGED_PACKAGE",
+  "state": "PUBLIC_RESEARCH_RELEASE_VERIFIED",
   "target_tag": "v0.1.0",
   "repository": "https://github.com/abdullah2hamza-blip/MLTools",
   "dataset": "https://www.kaggle.com/datasets/abdullah2hamza/boundary-conformance-replay",
@@ -16,19 +16,22 @@
     "ExpandedAIrolesdisclosedwithoutnewauthorshipclaims",
     "Final13pagePDFcompiled/visuallychecked; CFFofficialschema validated",
     "Completepackageguard/builder suite89testsand39subtests passed",
-    "New006offlineexpanded/platformfreshkernel replay passed4cells/exact5products"
+    "New006offlineexpanded/platformfreshkernel replay passed4cells/exact5products",
+    "Tagged clean source and built exact complete package",
+    "Published existing GitHubrepository andRelease;15anonymousassetdownloads matched",
+    "Published existingKaggledatasetv2 andnotebookv3;111.4s successfulfreshSaveRunAll",
+    "Anonymousdataset1765files andnotebook9cells/eightoutputs passedclosedhashverification"
   ],
-  "remaining": [
-    "Savecleanreleasecommit/tag and buildcompleteassetmanifest",
-    "UploadexistingKaggledataset/notebookversions;runfreshhostednotebookandverify",
-    "PublishGitHubrelease/makeexistingrepopublic",
-    "PublishKaggleresourcesandverifyunauthenticatedassets/crosslinks"
-  ],
+  "remaining": [],
   "constraints": [
     "No new paid spending",
     "No authorship changes",
     "No credential rotation or destructive history rewriting",
     "No force push",
     "No journal or archive-service submission"
-  ]
+  ],
+  "source_commit": "43b43dd740173589e7b21c3a167f2dc06862e2fa",
+  "publication_receipt": "published/publication-verification.json",
+  "dataset_version": 2,
+  "notebook_version": 3
 }

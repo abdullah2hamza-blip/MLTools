@@ -1,0 +1,116 @@
+{
+  "authentication": {
+    "authorization_header": false,
+    "browser_session": false,
+    "cookies": false,
+    "environment_proxy_credentials": false,
+    "git_credential_helper": false,
+    "netrc": false
+  },
+  "checked_at_utc": "2026-10-29T03:50:49.494980+00:00",
+  "dataset": "abdullah2hamza/boundary-conformance-replay",
+  "download_content": {
+    "all_uploaded_contents_match": true,
+    "closed_file_count": 1765,
+    "configuration_file_intentionally_not_uploaded": "dataset-metadata.json",
+    "crc_verified": true,
+    "release_id": "0e8e23615dc6e9aa19023cb58a70eacf6095b32da8b8fa4f57e79c0f3c1d02a6",
+    "safe_members": true,
+    "source_commit": "43b43dd740173589e7b21c3a167f2dc06862e2fa",
+    "source_tag": "v0.1.0"
+  },
+  "endpoint_evidence": {
+    "installed_cli_version": "2.2.5",
+    "installed_field_evidence": "ApiDownloadDatasetRequest.dataset_version_number serializes as datasetVersionNumber; installed SDK read as source without import/authentication",
+    "installed_sdk_version": "0.1.38",
+    "legacy_official_source": "https://raw.githubusercontent.com/Kaggle/kaggle-api/1.6.3/kaggle/api/kaggle_api.py",
+    "route_and_version_parameter_found": true,
+    "sdk_source_sha256": "0ecb08b2f5b9257c4e5e09213b23990cb810079200840d553719ade3ea0eb675"
+  },
+  "expanded_archive_checks": {
+    "manuscript-source.zip": {
+      "exact_closed_member_hashes_verified": true,
+      "members": 20,
+      "original_archive_hash_verified": false,
+      "reason": "Kaggle expands uploaded ZIP archives; original archive container bytes are not exposed",
+      "representation": "platform-expanded-directory"
+    },
+    "payload.zip": {
+      "exact_closed_member_hashes_verified": true,
+      "members": 270,
+      "original_archive_hash_verified": false,
+      "reason": "Kaggle expands uploaded ZIP archives; original archive container bytes are not exposed",
+      "representation": "platform-expanded-directory"
+    },
+    "research-source.zip": {
+      "exact_closed_member_hashes_verified": true,
+      "members": 1468,
+      "original_archive_hash_verified": false,
+      "reason": "Kaggle expands uploaded ZIP archives; original archive container bytes are not exposed",
+      "representation": "platform-expanded-directory"
+    }
+  },
+  "http_checks": {
+    "dataset_version_2_download": {
+      "bytes": 10149494,
+      "content_type": "application/zip",
+      "final_host": "storage.googleapis.com",
+      "redirected": true,
+      "requested_url": "https://www.kaggle.com/api/v1/datasets/download/abdullah2hamza/boundary-conformance-replay?datasetVersionNumber=2",
+      "sha256": "cca8c9b8f6a3cec218d4be6a76a67bf1b830119c7ba15178b27931e38cb1cb5e",
+      "status": 200,
+      "wall_seconds": 1.5259588999906555
+    },
+    "official_legacy_route_source": {
+      "bytes": 189890,
+      "content_type": "text/plain; charset=utf-8",
+      "final_host": "raw.githubusercontent.com",
+      "redirected": false,
+      "requested_url": "https://raw.githubusercontent.com/Kaggle/kaggle-api/1.6.3/kaggle/api/kaggle_api.py",
+      "sha256": "37ef39f4a2cfd56edd02478487f6aed1d8f6146a63e024d42b26445536a05b6d",
+      "status": 200,
+      "wall_seconds": 0.3021238000364974
+    }
+  },
+  "manuscript": {
+    "ai_disclosure_present": true,
+    "opens": true,
+    "pages": 13,
+    "sha256": "c053e92b5b65ef282653e09d2ae6f28aec7fe3df3c7fc2db0aefbc5ed274e188",
+    "unresolved_reference_markers": 0
+  },
+  "notebook_scope": "Not inspected; public notebook availability is a separate action/check.",
+  "requested_version": 2,
+  "root_files": {
+    "LICENSE": {
+      "matches_local": true,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "README.md": {
+      "matches_local": true,
+      "sha256": "83a128567958be8f4d211e0ad1aecbd09b415d5f907722098f3892d5fb0ea050"
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "matches_local": true,
+      "sha256": "6db2652f51c313e892e6253e32394b9f08fdec4693986981b4080b32c02ab192"
+    },
+    "conditions.csv": {
+      "matches_local": true,
+      "sha256": "f261b97ce019d83365b78edd2a9ce24375cf6fc19fa998d8c733f2a1d0561398"
+    },
+    "manuscript.pdf": {
+      "matches_local": true,
+      "sha256": "c053e92b5b65ef282653e09d2ae6f28aec7fe3df3c7fc2db0aefbc5ed274e188"
+    },
+    "public-release-manifest.json": {
+      "matches_local": true,
+      "sha256": "d8513edec2822ab0debd14af34a4eab86cc90beddc090eea6aaab2904deaee50"
+    },
+    "release-manifest.json": {
+      "matches_local": true,
+      "sha256": "8c6392e52eee56940baff02629700bca64ff49d50956078d751eb409d74599b0"
+    }
+  },
+  "schema_version": 1,
+  "status": "UNAUTHENTICATED_PUBLIC_KAGGLE_DATASET_V2_VERIFIED"
+}

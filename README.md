@@ -1,5 +1,12 @@
 # MLTools
 
+The public [v0.1.0 research release](https://github.com/abdullah2hamza-blip/MLTools/releases/tag/v0.1.0)
+includes the [technical report PDF](https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.0/manuscript.pdf),
+editable manuscript and reproducibility supplement. The [Kaggle dataset](https://www.kaggle.com/datasets/abdullah2hamza/boundary-conformance-replay)
+is version 2; the [public notebook](https://www.kaggle.com/code/abdullah2hamza/boundary-conformance-replay-notebook)
+is the successfully executed version 3. Both platforms' unauthenticated downloads
+and exact source/output hashes are recorded in the [publication receipt](research/publication/release/published/publication-verification.json).
+
 The [Kaggle release workflow](releases/kaggle/README.md) builds a licensed,
 privacy-reviewed offline replay dataset and CPU notebook from the frozen study.
 Original code/results use [Apache-2.0](LICENSE); third-party terms remain in force.

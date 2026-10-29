@@ -1,4 +1,16 @@
-# Verified private Kaggle artifacts
+# Kaggle hosting verification
+
+The public research release uses dataset **version 2** and notebook **version 3**
+(script version `363362772`). The fresh CPU/offline Save & Run All completed
+successfully in 111.4 seconds. Public source cells match the reviewed candidate;
+all eight public output files pass the strict verifier, including all five
+predeclared numerical product hashes. The public dataset's 1,765 expanded files
+match its root and archive-member manifests. See the
+[publication receipt](../../research/publication/release/published/publication-verification.json)
+and its linked anonymous HTTP checks. Original uploaded ZIP hashes are verified
+on GitHub; Kaggle's expanded member hashes are checked separately.
+
+## Historical private verification
 
 This is the historical hosted verification recorded on **23 October 2026** for
 release-004. Later revisions have separate package/text hashes and verification. The

@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "status": "PUBLIC_RESEARCH_RELEASE_VERIFIED",
+  "checked_at_utc": "2026-10-29T04:00:57.531729+00:00",
+  "source_tag": "v0.1.0",
+  "source_commit": "43b43dd740173589e7b21c3a167f2dc06862e2fa",
+  "research_protocol_commit": "7513755e9627098c3529c46b3ae9a056d76434a5",
+  "publication_status": "Public technical report and reproducibility artifact; no journal submission, peer review or acceptance.",
+  "github": {
+    "repository": "https://github.com/abdullah2hamza-blip/MLTools",
+    "visibility": "public",
+    "release": "https://github.com/abdullah2hamza-blip/MLTools/releases/tag/v0.1.0",
+    "release_id": 427429545,
+    "initial_assets_downloaded_and_hash_verified": 15
+  },
+  "kaggle": {
+    "owner": "abdullah2hamza",
+    "dataset": "https://www.kaggle.com/datasets/abdullah2hamza/boundary-conformance-replay",
+    "dataset_version": 2,
+    "dataset_public": true,
+    "expanded_dataset_files_verified": 1765,
+    "notebook": "https://www.kaggle.com/code/abdullah2hamza/boundary-conformance-replay-notebook",
+    "notebook_version": 3,
+    "script_version_id": 363362772,
+    "notebook_public": true,
+    "source_cells_exact": 9,
+    "code_cells": 4,
+    "owner_ui_run_status": "Successful",
+    "owner_ui_runtime_seconds": 111.4,
+    "execution": "Fresh Save & Run All (Commit), CPU, internet off; explicitly pinned dataset version2.",
+    "public_output_files_verified": 8,
+    "predeclared_semantic_products_verified": 5,
+    "strict_replay_verification": {
+      "payload_sha256": "acf9a8cdafb049b36603bd0ef159c419d361ca000f8cca9c5d100468aa9dc14f",
+      "release_id": "0e8e23615dc6e9aa19023cb58a70eacf6095b32da8b8fa4f57e79c0f3c1d02a6",
+      "report_sha256": "d6ed683a414aa6481baf1dd367329394a0dd4f9e930aaeb78bd3236c37317a6d",
+      "schema_version": 1,
+      "scope": "Saved-trace replay outputs; no fresh native acquisition or execution attestation",
+      "status": "VERIFIED_SAVED_TRACE_REPLAY"
+    },
+    "docker_image": "gcr.io/kaggle-images/python@sha256:17b2fc7f27c25c6c2fd4230ec8e66097ab2b89fc88e1e4d6f338b72e1ee0bc3e",
+    "tags": [
+      "Robotics",
+      "Computer Science",
+      "Artificial Intelligence"
+    ],
+    "ui_description": "Condensed accurate card linking the full released README, manuscript, source, data dictionary and GitHub; expanded disclosure retained."
+  },
+  "verification_categories": {
+    "code_review": "Scientific/result-producing-code audit; no finding-changing defect found.",
+    "tests": "89 release/packaging tests and39subtests; frozen core390tests/five skips verified in preceding audit, unchanged core source.",
+    "smoke": "Fresh local notebook kernels, including full assembled package.",
+    "saved_output_reanalysis": "Fresh full checkout and separate locked environments; both strict saved-run verifiers and eight reporting outputs reproduced byte for byte.",
+    "hosted_execution": "Actual Kaggle notebookv3 fresh execution and independently downloaded public source/eight outputs verified.",
+    "full_native_experimental_reproduction": "Traceable prior original and clean native acquisitions; not repeated during this release task."
+  },
+  "public_verification_reports": {
+    "github-public-verification.json": "a788524681c1af1e685bf24e632c7c79d77e95d023ba70200c9a62b4a1614a57",
+    "kaggle-public-dataset-verification.json": "4e5f663012a726186b2bf8653872901072b2e7aa3f544d218b45216aea38241a",
+    "kaggle-public-notebook-verification.json": "0a022f02a19d2a1d244ed0c9db207f902125c91a5ad5b7ecd7128599160ce127"
+  },
+  "visual_proof": {
+    "github-release.jpg": "56236f4bb336abc672393b569095ad3c61ff9affd58816bbd7667c52bf7124e4",
+    "kaggle-notebook.jpg": "913f87fb8f0f7ba5e1fe9e60048a0020a478c6e79b5527c80b23c2329f162569"
+  },
+  "hosted_output_archive": {
+    "filename": "hosted-replay-v3.zip",
+    "sha256": "560b9e105d2766d5e0029e8dbeed319cd63b9ca3d0fef32085daac694a84a4a9",
+    "member_sha256": {
+      "analysis.json": "83e00b74ca783de9efda4decfcfbd4e7345c22564bc8584b4246adee982242af",
+      "conditions.csv": "f261b97ce019d83365b78edd2a9ce24375cf6fc19fa998d8c733f2a1d0561398",
+      "metrics.json": "5d5a90948c3271fca004afd0fbedd951e4f8cef67baecd30c0195e16df4e015c",
+      "outcomes.svg": "f35a3a7dfa17ef5fd93f1b8ddcbc12ba0361e2b7f629d647c6191ea52cbe3c04",
+      "replay-report.json": "d6ed683a414aa6481baf1dd367329394a0dd4f9e930aaeb78bd3236c37317a6d",
+      "replay-summary.json": "5bd04a345fdb8476cdfa97d298bd36e85afce0a11b329ca42d117dafcd334763",
+      "witnesses.json": "b4a0cd3a79c7943f1ae9cb512b8f843807b3cb11453e16b96eeb2e9d09229cf4",
+      "workflow-analysis.json": "9a0df9925f05bfa66bf8f5eaeb8585e896f95ba71cae6d2517f3d883e353527d"
+    }
+  },
+  "manuscript": {
+    "path": "research/publication/paper/output/main.pdf",
+    "pages": 13,
+    "sha256": "c053e92b5b65ef282653e09d2ae6f28aec7fe3df3c7fc2db0aefbc5ed274e188",
+    "attribution": "Existing anonymous draft attribution retained; software collective attribution preserved."
+  },
+  "ai_disclosure": "AI tools were used for research planning and experimental design; code preparation and testing; data analysis and interpretation; figure preparation; and manuscript drafting, revision, and review. The human author(s) retain responsibility for the final work. The automated checks and AI-assisted reviews reported here are not independent human peer review.",
+  "known_ai_tools": "OpenAI Codex/ChatGPT; October2026; exact model identifiers not consistently recorded.",
+  "limits": [
+    "Finite dependency-linked action-processor study, known intervention recipes and source-justified affine assumptions.",
+    "No detector/witness-size superiority, population accuracy, learned-policy competence, physical calibration, hardware safety or human debugging-time improvement established.",
+    "Kaggle expands uploaded ZIPs; original archive-container hashes are checked on GitHub, exact expanded-member hashes on Kaggle.",
+    "Kaggle public session-status endpoint requires authentication; fresh execution success was observed in the owner UI and public source/output bytes verified separately.",
+    "The API lastRunTime field is retained in the source verification report but is not used as an independent release chronology; the tested artifact is bound by version3/script ID, exact source and output hashes.",
+    "Optional TeX styles are omitted from supplement ZIPs with exact public acquisition instructions and component licenses; full public Git clone preserves frozen ancestry."
+  ],
+  "excluded": [
+    "credentials/private prompts or correspondence",
+    "local environments/caches/compiler binaries",
+    "learned weights/robot recordings",
+    "unresolved GCS assets and unprovided third-party sources",
+    "redundant historical release ZIPs/compile intermediates from the supplement"
+  ],
+  "post_tag_record": "This publication receipt is recorded after the release tag. It does not change tagged code, inputs, manuscript or numerical artifacts; no self-commit/SHA circular reference is embedded."
+}
