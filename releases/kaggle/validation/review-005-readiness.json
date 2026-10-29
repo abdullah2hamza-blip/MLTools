@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "status": "LOCAL_RELEASE_CANDIDATE_REVIEWED",
+  "candidate": "releases/kaggle/artifacts/release-005",
+  "release_id": "edccd4d74284b17a83565e6cd0c89a7cdb921bccc514a4743eff5e3d4cbf76b3",
+  "payload_sha256": "e0c66d2a0c71823672c910f2bb1ab2d801f633759e0d38cc10c7ccaf67a65aa1",
+  "deterministic_rebuild": "ALL_DATASET_NOTEBOOK_AND_LOCK_BYTES_IDENTICAL",
+  "tests": {
+    "passed": 67,
+    "subtests_passed": 39,
+    "command": ".venv-kaggle/Scripts/python.exe -m pytest releases/kaggle -q --basetemp .test-tmp/reviewer-kaggle-004",
+    "result": "67 passed, 39 subtests passed in 61.72s"
+  },
+  "ruff": {
+    "lint": "PASSED",
+    "format": "PASSED",
+    "python_files": 16
+  },
+  "preflight": {
+    "path": "releases/kaggle/validation/review-005-preflight.json",
+    "sha256": "fd83da5f232ffc448dff068880a64138309532d5139d7aa8ad036f1aad90d282",
+    "ready": true,
+    "blockers": []
+  },
+  "fresh_kernel_checks": {
+    "zip": {
+      "path": "releases/kaggle/validation/review-005-zip/verification.json",
+      "sha256": "bb1b9493295ea8c69915a9c4c5fff9489e02ff46266b4178c7725869deb546fb",
+      "output_report_sha256": "901c0e54e1a2431e76ca04f70cfdf2ee5cf5ca40f0e38d01853b61d077539ed8"
+    },
+    "expanded": {
+      "path": "releases/kaggle/validation/review-005-expanded/verification.json",
+      "sha256": "d0b5e69058813849ce4ce9d66fb2b53ef15ab11725f7c0fa78fec13bc5e1d294",
+      "output_report_sha256": "1c5e63c8291f56499d99ff7c0a0574b44685c445eb6258c008a909bec3d9e5fd"
+    }
+  },
+  "figure_visual_review": "Legible axes, labels, finite counts, control and physical-authority caveats; no clipping",
+  "original_frozen_gates": {
+    "prospective-001": {
+      "status": "ORIGINAL_COMMITTED_GATE_VERIFIED_BEFORE_EXPORT",
+      "summary_sha256": "22f91742d82dffa352d806a57701822487cb7c03ae9c16ea2dd5b7a7d82beea7"
+    },
+    "clean-reproduction-001": {
+      "status": "ORIGINAL_COMMITTED_GATE_VERIFIED_BEFORE_EXPORT",
+      "summary_sha256": "e59fb7242804710f9dc72c469b9677f43ae60ec51461a09d9c9488a69fc444a7"
+    }
+  },
+  "expected_numerical_outputs_unchanged_from_release_004": true,
+  "payload_members_changed_from_release_004": [
+    "NOTICE",
+    "README.md",
+    "manifest.json",
+    "release-provenance.json"
+  ],
+  "historical_release_and_hosted_evidence": "TRACKED_BYTES_UNCHANGED",
+  "privacy_scan": {
+    "tracked_and_candidate_and_review_files_scanned": 1511,
+    "archive_members_scanned": 1080,
+    "credential_value_hits": [],
+    "scope": "Current tracked files, candidate005, new005review proofs; bounded credential value/private-key-body patterns only; not an exhaustive secret audit"
+  },
+  "history_scan": {
+    "scope": "Reachable local Git objects and ZIP members; bounded credential value/key-body patterns only, not an exhaustive secret audit",
+    "objects_scanned": 1398,
+    "archive_members_scanned": 270,
+    "credential_value_hits": []
+  },
+  "hosted_validation": "NOT_PERFORMED_FOR_005",
+  "remote_mutations": false,
+  "credentials_used": false,
+  "prior_hosted_proof": "releases/kaggle/validation/kaggle-hosted-002/verification.json applies only release-004",
+  "limitations": [
+    "Windows local execution does not establish fresh Kaggle Linux compatibility for revised005",
+    "No public visibility, submission, acceptance or scientific generalization is implied",
+    "Existing private dataset requires an authorized new dataset version and matching notebook revision before a005 hosted claim"
+  ],
+  "reviewed_release_source_sha256": {
+    "releases/kaggle/bootstrap.py": "99a563ded85cd47846e153071239897f533b0efad5c04ddf208161ceca128c81",
+    "releases/kaggle/build.py": "be9fb7e763bcd69615e757ff920fe08b2dd6a8832133413957e1c4e0e95f3466",
+    "releases/kaggle/integrity.py": "4b22ff479d4c4577c5305839096741031c346dadeefc1b7cfb1eea7f09f3f9d3",
+    "releases/kaggle/notebook.py": "e388d031cd20dbc2ed72efad86c9eb48f7dd1f9372b0dc780fac496dccee7c8d",
+    "releases/kaggle/publish.py": "f6d3a69158b898f69ce9523d4224464cecc3a69f208c370593ab6a1920f0f2c4",
+    "releases/kaggle/replay.py": "651be6bdc37cc9eab39b10e9c5f96f7307fdc0522c958362d80e36ddffb953ec",
+    "releases/kaggle/smoke.py": "eabf157d565a94ca517deb5cfb06bb4890cac0ecf141f8b0dfb6d8570447fc57",
+    "releases/kaggle/stage_hosted.py": "ada5055d22d6a033eba2c3da55801220e5ac3de0747b57d907ab7453961bda48",
+    "releases/kaggle/test_publish.py": "6e1996b0548249732e1ba36aa31217b3b259c60ec2c83e84c19fa3b420d9cfb2",
+    "releases/kaggle/test_release.py": "adc0f1271fdc976d5463d23ded326077add35852899123643fe2782797e048b5",
+    "releases/kaggle/ruff.toml": "7532792c9df4666a610878b61067053b695096dc185faee5035303b59629d916",
+    "releases/kaggle/README.md": "8c45283192232bb42e7127b4ad79ba6b982d6e94f8fa11eaf4a59a22ff9e62f3",
+    "releases/kaggle/HOSTING.md": "aa24cc9b0da7ea5caf0586f034f6d83968a9de2a739e70437cd8977786e2de98",
+    "releases/kaggle/DATASET_CARD.md": "f60ccf6127edeb6795f508b042039802a676b2447ed62cf9d03d70ffb23827f7",
+    "releases/kaggle/publishing.md": "b280166ad8304bdf95707ed3ccf45ea3958c2f956753106e4c5242da0df7e76f",
+    "NOTICE": "1facece2a2ff8de3329ee7739c192a553b522632a8d8ecd8810a32ccf876486b"
+  },
+  "explicit_existing_dataset_update": {
+    "status": "IMPLEMENTED_AND_MOCK_TESTED_ONLY",
+    "required_arguments": [
+      "--step dataset-version",
+      "--dataset-version N",
+      "--version-notes meaningful text"
+    ],
+    "staged_snapshot_and_predecessor_attempt_guards": true,
+    "unknown_outcome_requires_exact_attempt_reconciliation": true,
+    "deletes_old_versions": false,
+    "changes_visibility": false,
+    "existing_visibility_must_be_checked_private_by_operator": true,
+    "server_predecessor_condition": false,
+    "local_plans": {
+      "dataset": {
+        "path": "releases/kaggle/validation/review-005-dataset-version-plan.json",
+        "sha256": "d44fe7bf9394c25ce75f7643f5f46df4956a4beb7c2bb028989627b6c700c8ce"
+      },
+      "notebook": {
+        "path": "releases/kaggle/validation/review-005-notebook-version-plan.json",
+        "sha256": "15d974f3db6347ac08b4b0cf9f10fd293a69cbc8c771d3fe4363de0ebba2aa84"
+      }
+    },
+    "pinned_source_review": {
+      "path": "releases/kaggle/validation/review-005-versioning-source.json",
+      "sha256": "62874900302b38b0e9cf0211baa5c702fee033adf452ddfb695f879062ec7eac"
+    },
+    "attachment_scope": "Documented unversioned owner/slug attachment; notebook pins archive/manifest bytes and closed member hashes before source import",
+    "native_client_retry_scope": "Pinned upstream may internally retry; publisher does not reinvoke uncertain commands or assert exactly-once server mutation"
+  }
+}

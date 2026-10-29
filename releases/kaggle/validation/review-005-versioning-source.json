@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-28",
+  "cli_version": "2.2.5",
+  "cli_revision": "8b88a6aeffed5acae0b1e43137d946afd5c43351",
+  "credential_access": false,
+  "network_mutations": false,
+  "sources": [
+    {
+      "url": "https://github.com/Kaggle/kaggle-cli/blob/8b88a6aeffed5acae0b1e43137d946afd5c43351/docs/datasets.md",
+      "applied": "Explicit version command, required --message, keep-tabular and skip directories; never delete old versions"
+    },
+    {
+      "url": "https://github.com/Kaggle/kaggle-cli/blob/8b88a6aeffed5acae0b1e43137d946afd5c43351/docs/kernels_metadata.md",
+      "applied": "Documented unversioned owner/slug dataset_sources; no invented attachment version pin"
+    }
+  ],
+  "installed_and_pinned_upstream_fragments": {
+    "datasets_version_cli_parser": {
+      "sha256": "732d957498fb08ab47fc92088f6caa12f76adf7970e2b8acf02ab616a260d336",
+      "source": "https://github.com/Kaggle/kaggle-cli/blob/8b88a6aeffed5acae0b1e43137d946afd5c43351/src/kaggle/cli.py",
+      "equal": true
+    },
+    "dataset_create_version_api": {
+      "sha256": "b991d28635c72cbc25dfb609bdb4a80548c18d1faac0646c1dbd54195d9a01c8",
+      "source": "https://github.com/Kaggle/kaggle-cli/blob/8b88a6aeffed5acae0b1e43137d946afd5c43351/src/kaggle/api/kaggle_api_extended.py",
+      "equal": true
+    }
+  },
+  "conclusions": [
+    "Version request includes notes, files and delete_old_versions=False; no visibility or predecessor field",
+    "Predecessor is an operator assertion/local duplicate key, not server compare-and-swap",
+    "Client has its own retry wrapper; publisher does not reinvoke uncertain commands automatically",
+    "Dataset files/download API accepts explicit numeric dataset version",
+    "Notebook payload/archive/manifest checks bind actual bytes before source import despite unversioned attachment"
+  ]
+}

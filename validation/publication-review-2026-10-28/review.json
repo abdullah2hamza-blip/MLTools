@@ -1,0 +1,150 @@
+{
+  "baseline_commit": "405be4cd677925b62add1e9513620b1946379d56",
+  "candidate": {
+    "payload_sha256": "e0c66d2a0c71823672c910f2bb1ab2d801f633759e0d38cc10c7ccaf67a65aa1",
+    "release_id": "edccd4d74284b17a83565e6cd0c89a7cdb921bccc514a4743eff5e3d4cbf76b3",
+    "release_lock_sha256": "7c1f6a460e38a8c16f0c7c00720897e5fc7b90bdf2414404d56dcdda21cf64f0",
+    "root": "releases/kaggle/artifacts/release-005"
+  },
+  "checked_at_utc": "2026-10-29T00:30:26.454937+00:00",
+  "completion_requirements": [
+    {
+      "evidence": "independent_reviews and findings_fixed",
+      "requirement": "Independent scientific and release reviews using subagents",
+      "status": "verified"
+    },
+    {
+      "evidence": "scientific_checks, paper-verification.json and final focused review",
+      "requirement": "Manuscript claims supported by actual evidence and primary references",
+      "status": "verified"
+    },
+    {
+      "evidence": "current text/PDF/notebook/payload scan; historical proofs preserved",
+      "requirement": "Current editorial materials omit requested disclosure text",
+      "status": "verified"
+    },
+    {
+      "evidence": "paper-verification.json and generated manifest closure",
+      "requirement": "Readable final compiled manuscript with resolved citations and regenerated products",
+      "status": "verified"
+    },
+    {
+      "evidence": "validation core tests/build and root LICENSE/NOTICE; local review branch",
+      "requirement": "GitHub source preparation including tests, licensing and credential review",
+      "status": "verified"
+    },
+    {
+      "evidence": "releases/kaggle/validation/review-005-readiness.json and version-specific plans",
+      "requirement": "Kaggle candidate preparation with exact packaging and a usable existing-dataset update path",
+      "status": "verified"
+    },
+    {
+      "evidence": "406 exact protected hashes and no remote mutation",
+      "requirement": "Preserve original evidence and avoid unrequested external publication",
+      "status": "verified"
+    }
+  ],
+  "editorial_staging": {
+    "author_metadata": "Anonymous review-draft identity retained; author list, venue-specific submission metadata and final editorial instructions remain user decisions.",
+    "current_materials": "Requested disclosure wording omitted from editable paper, NOTICE, card, generated notebook and new release candidate.",
+    "historical_provenance": "Frozen records, earlier archives/hosted proofs and Git history preserved; no retrospective claim that earlier versions lacked that wording."
+  },
+  "external_state": {
+    "credentials_used": false,
+    "github_api_read": "2026-10-29 UTC",
+    "github_repository": "abdullah2hamza-blip/MLTools",
+    "github_visibility_verified": "private",
+    "kaggle_candidate_hosted": false,
+    "new_remote_mutations": false
+  },
+  "findings_fixed": [
+    "Added exact intervention recipes, magnitudes, domain, dimensions and seeded query construction to manuscript appendix.",
+    "Limited one/two/three-query witness statement to canonical obligations; general interpolation diagnostics may require n+1 basis queries.",
+    "Specified pristine F32 numerical controls versus F64 injected statistics and F64 native execution; preserved development-only serialization control scope.",
+    "Added verified DOIs for delta debugging and finite-trace runtime verification references.",
+    "Corrected obsolete Kaggle notebook title/config example.",
+    "Expanded bounded Kaggle/Hugging Face/GitHub credential-value rejection with rehashed-input regression tests.",
+    "Corrected Ruff exclusions so historical notebooks and proof assets are excluded from routine formatting.",
+    "Prepared guarded explicit dataset revision workflow for existing Kaggle identity, with version notes, retained staged bytes and duplicate/unknown-outcome guards."
+  ],
+  "independent_reviews": {
+    "release": "Completed packaging, privacy, exact-byte closure, notebook runtime, update procedure and regression audit.",
+    "scientific": "Completed full paper/evidence/primary-reference audit and focused re-review of final corrections; no remaining critical or major scientific contradiction identified."
+  },
+  "remaining_actions_outside_this_preparation": [
+    "User final editorial/disclosure instructions and author metadata.",
+    "Separately authorized private dataset/notebook update and exact hosted-output verification for release-005, then any authorized public visibility change.",
+    "Venue choice and actual submission, if requested."
+  ],
+  "schema_version": 1,
+  "scientific_checks": {
+    "all_physical_views_unknown": true,
+    "compiled_counts": {
+      "FAIL": 12,
+      "PASS": 4,
+      "UNKNOWN": 8
+    },
+    "condition_csv_rows": 24,
+    "generated_manifest_sha256": "bf4320fd7e437d3f412ca2ea8b2514f3df680ba3acd2843947ec98c21d694d96",
+    "new_native_main_acquisitions": 0,
+    "original_and_clean_full_gates": {
+      "clean-reproduction-001": {
+        "status": "ORIGINAL_COMMITTED_GATE_VERIFIED_BEFORE_EXPORT",
+        "summary_sha256": "e59fb7242804710f9dc72c469b9677f43ae60ec51461a09d9c9488a69fc444a7"
+      },
+      "prospective-001": {
+        "status": "ORIGINAL_COMMITTED_GATE_VERIFIED_BEFORE_EXPORT",
+        "summary_sha256": "22f91742d82dffa352d806a57701822487cb7c03ae9c16ea2dd5b7a7d82beea7"
+      }
+    },
+    "protected_file_count": 406,
+    "protected_files_match_original_freeze": true,
+    "reporting_regeneration": "build_results.py succeeded and regenerated output tree remains byte-identical to baseline Git content."
+  },
+  "scope": "Current manuscript, GitHub source repository, and Kaggle release-005 preparation; public upload and journal submission are later actions.",
+  "status": "TECHNICAL_PUBLICATION_PREPARATION_REVIEWED",
+  "validation": {
+    "core_ruff": {
+      "format": "PASSED",
+      "lint": "PASSED",
+      "python_files": 97
+    },
+    "core_tests": {
+      "command": ".venv/Scripts/python.exe -m pytest -q --basetemp .test-tmp/publication-review-core-001",
+      "passed": 390,
+      "seconds": 446.16,
+      "skipped": 5
+    },
+    "installation_artifacts_sha256": {
+      ".test-tmp/publication-review-build-001/.gitignore": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1",
+      ".test-tmp/publication-review-build-001/mltools-0.1.0-py3-none-any.whl": "17cf084019d4bceb4b2dd7529aac5cc8169b50785e69e324e90eb1cc48556c79",
+      ".test-tmp/publication-review-build-001/mltools-0.1.0.tar.gz": "c7fd4bd4a194f4112b2a38e42b566a5601f67f4cbbbe760f6d9b184a341c1e59"
+    },
+    "installed_wheel_fixture": "Isolated offline wheel installation and mltools check good.json/good.trace.json returned PASS, exit 0.",
+    "kaggle_readiness": "releases/kaggle/validation/review-005-readiness.json",
+    "kaggle_readiness_sha256": "15d7d6afa0e7abbc823bbdd30133397ad82c166b9dac9baf001adad87ead2640",
+    "kaggle_tests": {
+      "command": ".venv-kaggle/Scripts/python.exe -m pytest releases/kaggle -q --basetemp .test-tmp/reviewer-kaggle-004",
+      "passed": 67,
+      "result": "67 passed, 39 subtests passed in 61.72s",
+      "subtests_passed": 39
+    },
+    "paper_verification": "validation/publication-review-2026-10-28/paper-verification.json",
+    "paper_verification_sha256": "f5758683d07e2ea95397301e8be6f922f87556164e10feec4350c2c967234cc6",
+    "release_source_sha256": {
+      "releases/kaggle/publish.py": "f6d3a69158b898f69ce9523d4224464cecc3a69f208c370593ab6a1920f0f2c4"
+    },
+    "source_byte_preservation": "gitattributes preserves review-005 raw proof bytes before Git staging",
+    "wheel_and_sdist_build": "Offline uv build succeeded; no cache/environment files included.",
+    "wheel_scope": "Internal installation/reproduction check only. Frozen packaging metadata predates project licensing and does not embed LICENSE/NOTICE. No PyPI or standalone wheel distribution prepared; GitHub source and Kaggle bundles include approved terms."
+  },
+  "venue_checks": {
+    "checked_on": "2026-10-28",
+    "interpretation": "Evidence-backed clarity and interest assessed as preparation; no editorial acceptance prediction. Actual submission requires author profiles/metadata, anonymized supplement and venue licensing decision.",
+    "primary_sources": [
+      "https://jmlr.org/tmlr/author-guide.html",
+      "https://jmlr.org/tmlr/acceptance-criteria.html",
+      "https://jmlr.org/tmlr/editorial-policies.html"
+    ]
+  }
+}

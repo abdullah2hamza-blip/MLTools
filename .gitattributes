@@ -56,3 +56,6 @@ research/publication/selection/pi/lianqing11--pi05_libero/** -text whitespace=bl
 releases/kaggle/artifacts/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 # Provider-generated SVG path data includes trailing spaces; preserve its verified bytes.
 releases/kaggle/validation/**/outcomes.svg -text -whitespace
+# Preserve raw review-005 proof bytes, including nbformat/PowerShell CRLF outputs.
+releases/kaggle/validation/review-005* -text -whitespace
+releases/kaggle/validation/review-005*/** -text -whitespace

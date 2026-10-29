@@ -79,7 +79,14 @@ def test_exact_redactions_preserve_numbers():
 
 
 @pytest.mark.parametrize(
-    "text", ["KGAT_" + "a" * 30, "-----BEGIN PRIVATE KEY-----", "C:\\Users\\Example\\secret"]
+    "text",
+    [
+        "KGAT_" + "a" * 30,
+        "hf_" + "a" * 34,
+        "github_pat_" + "a" * 70,
+        "-----BEGIN PRIVATE KEY-----",
+        "C:\\Users\\Example\\secret",
+    ],
 )
 def test_privacy_scan(text):
     with pytest.raises(ValueError):

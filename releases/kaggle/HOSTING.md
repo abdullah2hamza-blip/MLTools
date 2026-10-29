@@ -1,5 +1,12 @@
 # Verified private Kaggle artifacts
 
+This is the historical hosted verification recorded on **23 October 2026** for
+release-004. The current local candidate is release-005; it has new package/text
+hashes and has not been uploaded or hosted. None of the hosted proof below is
+claimed for that candidate. Existing private dataset updates need an explicitly
+authorized new dataset version as well as a matching notebook revision; do not
+repeat dataset creation or bypass preserved attempt state.
+
 - Dataset: [ML Boundary Conformance: Saved Trace Replay](https://www.kaggle.com/datasets/abdullah2hamza/boundary-conformance-replay), version 1, private, ready, Apache-2.0.
 - Notebook: [Boundary Conformance Replay Notebook](https://www.kaggle.com/code/abdullah2hamza/boundary-conformance-replay-notebook), version 2, private, completed with CPU and internet disabled.
 - Reviewed local upload snapshot: `artifacts/release-004`, with exact byte hashes in `release-004-lock.json`.

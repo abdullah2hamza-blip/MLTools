@@ -2,6 +2,8 @@
 
 Status: the frozen finite study and clean reproduction are complete, with generated reporting and an editable manuscript/PDF. Publication suitability, human authorship/licensing review and any public release/submission remain separate decisions. The complete objective is preserved in `objective.md`.
 
+The 28 October 2026 technical review is recorded in `../../validation/publication-review-2026-10-28/`. It checks the manuscript against saved evidence and primary sources, documents corrections, and binds the revised PDF and release candidate. Original frozen records and previous release/hosting proofs retain their bytes. Current Kaggle preparation is in `../../releases/kaggle/README.md`.
+
 Current evaluation milestone: complete freeze `7513755e9627098c3529c46b3ae9a056d76434a5` was committed, pushed and byte-verified before the single selected native attempt. `runs/prospective-001/` succeeded and passed optimized data-only replay: 1,792 primary, 896 auxiliary and sixteen fresh witness calls. Numerical methods agree on all four controls, twelve injected conditions and eight derived UNKNOWN views. All physical-authority views remain UNKNOWN; no compiler detection or witness-size advantage is established. Historical paragraphs below retain their development-stage context. `runs/clean-reproduction-001/` now reproduces semantic products byte for byte in fresh exact-profile environments. `paper/` contains the complete twelve-page manuscript/PDF, bibliography and generated tables/figures. `reproduction/README.md` provides replay and isolated reacquisition commands.
 
 ## Important novelty correction

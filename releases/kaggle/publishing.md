@@ -45,7 +45,7 @@ The separate configuration requires these fields:
   "license": "apache-2.0",
   "license_approved": true,
   "dataset_title": "ML Boundary Conformance: Saved Trace Replay",
-  "notebook_title": "Boundary Conformance Replay"
+  "notebook_title": "Boundary Conformance Replay Notebook"
 }
 ```
 
@@ -128,6 +128,67 @@ requested new version, not a retry of a submitted creation. Kaggle exposes no
 atomic predecessor condition here; inspect the returned version number and
 retrieve that exact version. Public visibility remains unchanged.
 
+For an existing dataset, use `--step dataset-version --dataset-version N
+--version-notes "Meaningful description of the revised release"`. N is the
+operator-inspected predecessor. Notes must contain 12-1000 characters and at
+least two words; they are passed as one `--message` argument. The publisher
+records N and the notes, stages/validates the same closed snapshot, and uses a
+separate `dataset-version-from-N` duplicate guard. The pinned CLI's
+[`datasets version` command](https://github.com/Kaggle/kaggle-cli/blob/8b88a6aeffed5acae0b1e43137d946afd5c43351/docs/datasets.md#kaggle-datasets-version)
+accepts no atomic predecessor condition. N controls the local attempt guard,
+not the server's next version number. Do not change N to bypass an uncertain
+attempt. Inspect the actual resulting dataset version and retain that evidence.
+The command never requests deletion of old versions or changes visibility;
+verify the existing dataset is private before executing it. Keep historical
+dataset versions and original attempt state.
+
+### Plan the revised release-005
+
+The existing recorded predecessors are dataset **1** and notebook **2**. The
+default `plan` describes initial creation; do not repeat dataset creation for
+this update. The following commands remain credential-free plans:
+
+```sh
+python releases/kaggle/publish.py --root releases/kaggle/artifacts/release-005 --config releases/kaggle/config.json --step dataset-version --dataset-version 1 --version-notes "Reviewed release-005 text; original numerical observations and products retained"
+python releases/kaggle/publish.py --root releases/kaggle/artifacts/release-005 --config releases/kaggle/config.json --step dataset-status
+python releases/kaggle/publish.py --root releases/kaggle/artifacts/release-005 --config releases/kaggle/config.json --step notebook-version --notebook-version 2
+```
+
+Before adding execution flags after separate authorization, inspect the current
+native account, exact dataset/notebook versions and private visibility. If the
+predecessors have changed, review the intervening changes first. After the
+dataset update, verify processing is ready, its actual version, and every
+downloaded dataset file against release-005. Record the full version-specific
+file listing and byte comparison in private attempt state. The pinned CLI's
+`datasets files owner/slug/N` and `datasets download owner/slug/N` pass the
+explicit version number to the API; these authenticated reads need the same
+authorized credential context. Kaggle may expose the expanded payload instead
+of the original ZIP; in that form verify the pinned manifest hash, exact member
+inventory and each member hash. Dataset status alone proves neither version
+identity nor file equality. Do not push the new notebook until this check passes.
+
+The reviewed notebook metadata attaches the same unversioned dataset slug.
+The documented kernel format specifies `dataset_sources` as
+[`owner/dataset-slug`](https://github.com/Kaggle/kaggle-cli/blob/8b88a6aeffed5acae0b1e43137d946afd5c43351/docs/kernels_metadata.md);
+this infrastructure does not invent a version-qualified attachment or promise
+which version the platform resolves. The notebook's pinned archive/manifest
+hashes and closed byte checks reject a different payload before source import.
+Retain the actual hosted input/version evidence. Concurrent dataset updates can
+therefore cause a checked failure rather than a verified release-005 replay.
+
+After notebook revision, inspect the actual returned version and retrieve that
+exact version. If predecessor 2 produces version 3, local plans are:
+
+```sh
+python releases/kaggle/publish.py --root releases/kaggle/artifacts/release-005 --config releases/kaggle/config.json --step notebook-status --notebook-version 3
+python releases/kaggle/publish.py --root releases/kaggle/artifacts/release-005 --config releases/kaggle/config.json --step output-pull --notebook-version 3 --output releases/kaggle/private-state/release-005-hosted-raw
+```
+
+Use the returned number if it differs; never infer it from the local guard.
+Preserve the raw download, use `stage_hosted.py` with a new verified directory
+as documented below, and require all five predeclared output hashes. Both
+artifacts remain private. Release-004's hosted proof cannot stand in for this run.
+
 For a remote step, the explicit execution form is:
 
 ```sh
@@ -146,9 +207,14 @@ folder after staging does not change the uploaded files.
 
 Each result has separate immutable `result.json`, `stdout.txt` and `stderr.txt`
 records. Nonzero exits, timeouts, exceptions and incomplete claims leave an
-unknown outcome. A zero exit is merely `SUBMITTED`. Repeating either mutation is
+unknown outcome. A zero exit is merely `SUBMITTED`. Repeating a mutation is
 refused, including after a successful submission. There is no automatic retry,
-dataset versioning, deletion or visibility change. Keep timeout partial output.
+automatic dataset versioning, deletion or visibility change. Keep timeout partial output.
+This describes the publisher's invocation/attempt policy. The pinned Kaggle
+client has its own internal retry wrapper and resumable uploader; the publisher
+does not turn those into an exactly-once server guarantee. An uncertain command
+remains uncertain until the operator inspects native versions/files and records
+reconciliation.
 
 After inspecting the native account/status/files, an authorized operator may
 explicitly reconcile the exact attempt using a local evidence file:
@@ -162,6 +228,9 @@ one. `CONFIRMED_REMOTE_MUTATION` keeps duplicate creation blocked. Neither a
 nonzero exit nor an HTTP error by itself establishes that nothing was created.
 Reconciliation stores the supplied evidence hash and remains a caller assertion.
 Do not discard state or choose a new state directory to bypass these controls.
+For a dataset-version reconciliation, supply `--target dataset-version
+--dataset-version N` for the exact attempted predecessor. Notebook-version
+reconciliation similarly requires `--notebook-version N`.
 
 The authorized CLI child now records bounded HTTP error bodies to expose server
 validation failures hidden by the CLI's short exception message. Token-format

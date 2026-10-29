@@ -7,6 +7,5 @@ publisher metadata, model cards, style files and license texts retain their
 own terms. This notice does not grant rights to third-party model weights or
 unresolved assets. See docs/provenance.md and the Kaggle release notices.
 
-The research and release infrastructure were developed with extensive AI
-assistance. Hashes establish integrity within the recorded provenance;
+Hashes establish integrity within the recorded provenance;
 they are not independent attestation or physical safety certification.

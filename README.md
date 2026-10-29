@@ -3,6 +3,9 @@
 The [Kaggle release workflow](releases/kaggle/README.md) builds a licensed,
 privacy-reviewed offline replay dataset and CPU notebook from the frozen study.
 Original code/results use [Apache-2.0](LICENSE); third-party terms remain in force.
+The current local release candidate is [release-005](releases/kaggle/artifacts/release-005/).
+Its [review record](releases/kaggle/validation/review-005-readiness.json) covers
+local validation; the previous hosted Kaggle proof applies to release-004.
 
 Check whether a robot policy adapter preserves the physical meaning of its training interface. Matching tensor shapes and successful encode/decode round trips can conceal swapped cameras, permuted joints, stale statistics, or a changing reference state inside an action chunk.
 

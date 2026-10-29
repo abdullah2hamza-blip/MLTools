@@ -20,6 +20,106 @@ SPEC.loader.exec_module(publish)
 
 
 class PublisherTests(unittest.TestCase):
+    def test_dataset_versions_stage_bytes_and_guard_each_predecessor(self):
+        notes = "Reviewed release-005 text; frozen numerical products unchanged"
+
+        def runner(argv):
+            claim = self.base / "state/dataset-version-from-1/0001/claim.json"
+            self.assertTrue(claim.is_file())
+            record = json.loads(claim.read_bytes())
+            self.assertEqual(record["predecessor_dataset_version"], 1)
+            self.assertEqual(record["dataset_version_notes"], notes)
+            self.assertEqual(argv[argv.index("--message") + 1], notes)
+            staged = Path(argv[argv.index("--path") + 1])
+            self.assertIn("staged", staged.parts)
+            self.assertEqual(
+                (staged / "payload.zip").read_bytes(), (self.dataset / "payload.zip").read_bytes()
+            )
+            self.assertIn("--keep-tabular", argv)
+            self.assertEqual(argv[-2:], ["--dir-mode", "skip"])
+            self.assertNotIn("--delete-old-versions", argv)
+            self.assertNotIn("--public", argv)
+            return SimpleNamespace(returncode=0, stdout=b"version submitted", stderr=b"")
+
+        result = self.execute("dataset-version", dataset_version=1, version_notes=notes, runner=runner)
+        self.assertEqual(result["status"], "SUBMITTED")
+        with self.assertRaisesRegex(ValueError, "cannot be retried"):
+            self.execute(
+                "dataset-version", dataset_version=1, version_notes="Different notes cannot bypass guard"
+            )
+        self.execute("dataset-version", dataset_version=2, version_notes=notes)
+        self.assertTrue((self.base / "state/dataset-version-from-2/0001/claim.json").is_file())
+
+    def test_dataset_version_requires_explicit_positive_predecessor_before_state(self):
+        for version in (None, 0, -1, True, "1"):
+            with self.subTest(version=version):
+                with self.assertRaisesRegex(ValueError, "positive dataset predecessor"):
+                    self.execute(
+                        "dataset-version", dataset_version=version, version_notes="Reviewed next release"
+                    )
+                self.assertFalse((self.base / "state").exists())
+
+    def test_dataset_version_requires_meaningful_safe_notes_before_state(self):
+        for notes in (None, "", "short", "singlewordlongerthan12", "a " * 501, "release KGAT_" + "a" * 32):
+            with self.subTest(
+                notes_kind=type(notes).__name__, length=len(notes) if notes is not None else None
+            ):
+                with self.assertRaises(ValueError):
+                    self.execute("dataset-version", dataset_version=1, version_notes=notes)
+                self.assertFalse((self.base / "state").exists())
+
+    def test_dataset_version_plan_is_read_only_and_notes_are_one_argument(self):
+        notes = "Reviewed text; preserve all saved observations"
+        before = {p.relative_to(self.base): p.read_bytes() for p in self.base.rglob("*") if p.is_file()}
+        with (
+            patch.object(publish, "installed_version", side_effect=AssertionError("no CLI metadata read")),
+            patch.object(publish, "run_cli", side_effect=AssertionError("no external execution")),
+        ):
+            result = publish.plan(
+                self.root, self.config, "dataset-version", dataset_version=1, version_notes=notes
+            )
+        self.assertFalse(result["executes"])
+        self.assertFalse(result["credentials_accessed"])
+        self.assertEqual(result["predecessor_dataset_version"], 1)
+        self.assertIn("no atomic", result["predecessor_scope"])
+        self.assertIn("verify it is still private", result["privacy"])
+        argv = result["commands"][0]
+        self.assertEqual(argv[argv.index("--message") + 1], notes)
+        self.assertEqual(
+            before, {p.relative_to(self.base): p.read_bytes() for p in self.base.rglob("*") if p.is_file()}
+        )
+
+    def test_unknown_dataset_version_requires_exact_attempt_reconciliation(self):
+        notes = "Reviewed release with retained numerical evidence"
+        result = self.execute(
+            "dataset-version",
+            dataset_version=1,
+            version_notes=notes,
+            runner=lambda _: SimpleNamespace(returncode=1, stdout=b"uncertain", stderr=b"error"),
+        )
+        self.assertEqual(result["status"], "UNKNOWN")
+        with self.assertRaisesRegex(ValueError, "cannot be retried"):
+            self.execute("dataset-version", dataset_version=1, version_notes=notes)
+        evidence = self.base / "dataset-reconciliation.txt"
+        evidence.write_text(
+            "Operator inspected exact dataset versions/files and verified no remote mutation."
+        )
+        publish.reconcile(
+            self.root,
+            self.config,
+            self.base / "state",
+            "dataset-version",
+            "CONFIRMED_NO_REMOTE_MUTATION",
+            evidence,
+            "Human authorizes exact attempt reconciliation",
+            dataset_version=1,
+        )
+        self.execute("dataset-version", dataset_version=1, version_notes=notes)
+        self.assertTrue((self.base / "state/dataset-version-from-1/0001/reconciliation.json").is_file())
+        self.assertTrue((self.base / "state/dataset-version-from-1/0002/result.json").is_file())
+        with self.assertRaisesRegex(ValueError, "cannot be retried"):
+            self.execute("dataset-version", dataset_version=1, version_notes=notes)
+
     def test_intentional_notebook_versions_have_separate_duplicate_guards(self):
         self.execute("notebook-version", notebook_version=1)
         with self.assertRaisesRegex(ValueError, "cannot be retried"):
@@ -260,6 +360,19 @@ class PublisherTests(unittest.TestCase):
         self.manifest()
         with self.assertRaisesRegex(ValueError, "privacy pattern"):
             publish.plan(self.root, self.config)
+
+    def test_rehashed_bare_credentials_rejected_in_text_and_payload(self):
+        for secret in ("KGAT_" + "a" * 32, "hf_" + "a" * 34, "github_pat_" + "a" * 70):
+            for target in ("readme", "payload"):
+                with self.subTest(token_type=secret.split("_")[0], target=target):
+                    (self.dataset / "README.md").write_text("Saved-trace replay.\n")
+                    with zipfile.ZipFile(self.dataset / "payload.zip", "w") as archive:
+                        archive.writestr("release/data.txt", secret if target == "payload" else "saved data")
+                    if target == "readme":
+                        (self.dataset / "README.md").write_text(secret)
+                    self.manifest()
+                    with self.assertRaisesRegex(ValueError, "privacy pattern"):
+                        publish.plan(self.root, self.config)
 
     def test_archive_privacy_and_unsafe_names_rejected(self):
         for name, body in (

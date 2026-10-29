@@ -1,0 +1,41 @@
+{
+  "builder_sha256": "d622bd4f49ffe92eeb23e98e66603be0aa36a87bd6363db5001e9e96f0bf8fd7",
+  "command": [
+    "C:\\Users\\Abdul\\Documents\\MLTools\\.test-tmp\\tectonic-0.17.0\\tectonic.exe",
+    "--untrusted",
+    "--keep-logs",
+    "--only-cached",
+    "--outdir",
+    "C:\\Users\\Abdul\\Documents\\MLTools\\research\\publication\\paper\\output\\compile-007",
+    "C:\\Users\\Abdul\\Documents\\MLTools\\.test-tmp\\paper-source-007\\main.tex"
+  ],
+  "compiler_sha256": "99ffcfdbf1ebf8bdda9e791942e3d06aedb12463fddc33f07de6f5211c8bf08d",
+  "network_downloads_allowed": false,
+  "pdf_sha256": "3c0c3bf3ee2869ebd169c5fd8370d73a9c8ead0e19cfe5c216dfb7be10a6aa2e",
+  "returncode": 0,
+  "schema_version": 1,
+  "source_date_epoch": "1792772248",
+  "source_file_sha256": {
+    "LICENSE.tmlr.txt": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "README.md": "5bc705917d6774fa108027a0b17345912018ace56ac97853b68657be6d8168db",
+    "appendix.tex": "395017069302ce560310c249ea9c2d62dc0edae4e6b46ef59e85f98dd9e8c218",
+    "article.tex": "9f22366c61338566ae7019196920bc931c7f41b07da2bff0688c554ad0d7afd5",
+    "compiler-tool.json": "eefdca0c03da9b0582b000328f3993a167ce5b92e6c3e815f6350545605f0945",
+    "fancyhdr.sty": "3d2922548e0e5f1a6c5676eda6ebb6dc20d7d305b4d8c2be5f1c833fb1084e6d",
+    "generated/authority-ablation.pdf": "f16cbbbde819433b41de9be4ab71e05c5042d5144dfa967fa100972a82470463",
+    "generated/authority-ablation.png": "a4092b49148efc8a4e88a05c0687e19ebb5f265894d5fe289018377f10e0999b",
+    "generated/claims.tex": "49639b5caff94bc782c3fb52f709364fc6e1429c331aad0e46e1136a54ea1cb6",
+    "generated/facts.json": "376d2a659dc94ee23430c3584ecd56d16a57fef82b23f55d1b7a87c435d5cc7c",
+    "generated/manifest.json": "bf4320fd7e437d3f412ca2ea8b2514f3df680ba3acd2843947ec98c21d694d96",
+    "generated/outcomes.tex": "a4ca7ae9aea18426d8ee1b0678bff6a5b3599216c8fca62c1bc1db08d0d65622",
+    "generated/witness-cost.pdf": "1730acaadc4fcd8dc8b739201a91f650ee5adeeb249a620cc3f0c4da55ad9e89",
+    "generated/witness-cost.png": "f0f5f9e6345d78736abd68ac20e5142f4f3f0decaefd69c290c3e148816beeed",
+    "main.tex": "3422b71614598a385d6894aa5000696be8b9cd782832d928f4ebfaf23734f3e3",
+    "references.bib": "bc9d21a0c5b3bdb826c639476b809e4c9f81b266075a0e9ea3c4c5d52df4567c",
+    "tmlr.bst": "306fd454cf40771bee01293eeb98d2c1cd5f4e11ed0cd7296b335f354fc45206",
+    "tmlr.sty": "816214ff5919aa457b6b443bee52b15d9561421417b7f8a50cc84651519f0002",
+    "venue-format.json": "3f09322fca55e9290cf0dbdc5501414c95c9a0e79ba6ee651fc004f62f4d73b9"
+  },
+  "source_stable_during_compilation": true,
+  "wall_seconds": 10.9242941000266
+}

@@ -196,8 +196,8 @@ def notebook(payload_sha256, release_id, dataset_slug, payload_manifest_sha256):
         "markdown",
         f"""
         Original contributions: Apache-2.0; retained publisher licenses and
-        explicit derivative/redaction notices are in the dataset. Extensive AI
-        assistance was used. Cite `abdullah2hamza/{dataset_slug}`, its Kaggle
+        explicit derivative/redaction notices are in the dataset.
+        Cite `abdullah2hamza/{dataset_slug}`, its Kaggle
         version, release ID and payload SHA256. No peer-review acceptance or DOI
         is asserted. See `README.md` and `THIRD_PARTY_NOTICES.md` in the dataset.
     """,

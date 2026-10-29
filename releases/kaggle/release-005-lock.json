@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "release_id": "edccd4d74284b17a83565e6cd0c89a7cdb921bccc514a4743eff5e3d4cbf76b3",
+  "payload_sha256": "e0c66d2a0c71823672c910f2bb1ab2d801f633759e0d38cc10c7ccaf67a65aa1",
+  "payload_files": 270,
+  "payload_zip_bytes": 1964597,
+  "files": {
+    "dataset/conditions.csv": "f261b97ce019d83365b78edd2a9ce24375cf6fc19fa998d8c733f2a1d0561398",
+    "dataset/dataset-metadata.json": "9a792d0677c38bfd6a9cf3cc90a543cff57efa9a822c2bda737a53d873ed0db3",
+    "dataset/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "dataset/payload.zip": "e0c66d2a0c71823672c910f2bb1ab2d801f633759e0d38cc10c7ccaf67a65aa1",
+    "dataset/README.md": "f60ccf6127edeb6795f508b042039802a676b2447ed62cf9d03d70ffb23827f7",
+    "dataset/release-manifest.json": "95b106810e30931fcd7160f8b9131b38acd9bcdd25bcac65877dc0850624daa9",
+    "dataset/THIRD_PARTY_NOTICES.md": "6db2652f51c313e892e6253e32394b9f08fdec4693986981b4080b32c02ab192",
+    "notebook/kernel-metadata.json": "87c9f85106c1d221abbd3026ce9b4a05accd6d6140b514401022b343964cd183",
+    "notebook/replay.ipynb": "c7f9ceb2c830480d4c1b2d754877e86d1223ddfde707692214a377b30e676e43"
+  },
+  "original_verification": {
+    "prospective-001": {
+      "status": "ORIGINAL_COMMITTED_GATE_VERIFIED_BEFORE_EXPORT",
+      "summary_sha256": "22f91742d82dffa352d806a57701822487cb7c03ae9c16ea2dd5b7a7d82beea7"
+    },
+    "clean-reproduction-001": {
+      "status": "ORIGINAL_COMMITTED_GATE_VERIFIED_BEFORE_EXPORT",
+      "summary_sha256": "e59fb7242804710f9dc72c469b9677f43ae60ec51461a09d9c9488a69fc444a7"
+    }
+  },
+  "credentials_used": false,
+  "hosted_validation": "NOT_PERFORMED_BY_BUILD_STEP"
+}

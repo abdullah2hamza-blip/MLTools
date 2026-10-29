@@ -25,7 +25,7 @@ The notebook pins the payload SHA256, unpacks safely into a temporary working
 directory, recomputes all five products for both acquisitions in a fresh Python
 process, checks agreement, and writes a closed output report.
 
-Attach this dataset to the **Boundary Conformance Replay** notebook. Use CPU,
+Attach this dataset to the **Boundary Conformance Replay Notebook**. Use CPU,
 internet off. Run all cells. The expected final status is
 `VERIFIED_SAVED_TRACE_REPLAY`. For local use follow the release README. Source
 hashes, original artifact revisions, source manifests and component license
@@ -96,8 +96,7 @@ compiler/style assets, original private Git history, unresolved OpenPI GCS
 assets, Tether sources and unrelated development archives. The manuscript and
 retrospective/Panda/SO101 strata are outside this focused initial dataset. Their
 results must not be inferred from the main table. The human-review manuscript
-is neither submitted nor accepted. Extensive AI assistance was used in the
-research and tooling. No population accuracy, hardware safety, policy task
+is neither submitted nor accepted. No population accuracy, hardware safety, policy task
 success or cryptographic attestation is claimed.
 
 ## Citation

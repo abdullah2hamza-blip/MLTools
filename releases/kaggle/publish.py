@@ -62,13 +62,14 @@ SEMANTIC_OUTPUTS = {
 REQUIRED_OUTPUTS = SEMANTIC_OUTPUTS | {"replay-summary.json"}
 REMOTE_STEPS = {
     "dataset-create",
+    "dataset-version",
     "dataset-status",
     "notebook-push",
     "notebook-version",
     "notebook-status",
     "output-pull",
 }
-MUTATIONS = {"dataset-create", "notebook-push", "notebook-version"}
+MUTATIONS = {"dataset-create", "dataset-version", "notebook-push", "notebook-version"}
 STEPS = REMOTE_STEPS | {"plan", "public-plan", "output-verify", "reconcile"}
 SHA256 = re.compile(r"[0-9a-f]{64}\Z")
 MAX_FILE = 64 * 1024 * 1024
@@ -79,6 +80,7 @@ PRIVATE_PATTERNS = (
     rb"(?i)/(?:home|Users)/abdul(?:[\\/]|[\s\"']|$)",
     rb"(?i)(?:git@github\.|ssh://|https?://[^/\s:@]+:[^/\s@]+@)",
     rb"(?i)(?:KAGGLE_API_TOKEN|KAGGLE_KEY|KAGGLE_USERNAME|HF_TOKEN|github_pat_|ghp_)",
+    rb"(?:KGAT_[A-Za-z0-9_-]{16,}|hf_[A-Za-z0-9]{20,})",
     rb"-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----",
 )
 FORBIDDEN_PARTS = {".git", ".kaggle", ".aws", ".ssh", ".codex", ".agents", "__pycache__"}
@@ -428,18 +430,50 @@ def versioned(version):
     return NOTEBOOK_IDENTITY + "/" + str(version)
 
 
-def operation_key(step, notebook_version=None):
+def dataset_predecessor(version):
+    require(type(version) is int and version > 0, "explicit positive dataset predecessor version")
+    return version
+
+
+def checked_version_notes(notes):
+    require(
+        isinstance(notes, str)
+        and 12 <= len(notes.strip()) <= 1000
+        and len(notes.split()) >= 2
+        and "\x00" not in notes,
+        "meaningful dataset version notes required (12-1000 characters, at least two words)",
+    )
+    privacy(notes.encode(), "dataset version notes")
+    return notes.strip()
+
+
+def operation_key(step, notebook_version=None, dataset_version=None):
     if step == "notebook-version":
         versioned(notebook_version)
         return "notebook-version-from-" + str(notebook_version)
+    if step == "dataset-version":
+        return "dataset-version-from-" + str(dataset_predecessor(dataset_version))
     return step
 
 
-def command(step, root, output=None, notebook_version=None):
+def command(step, root, output=None, notebook_version=None, *, dataset_version=None, version_notes=None):
     root = Path(root).resolve()
     base = [sys.executable, "-I", "-c", CLI_ENTRYPOINT]
     if step == "dataset-create":
         tail = ["datasets", "create", "--path", str(root / "dataset"), "--keep-tabular", "--dir-mode", "skip"]
+    elif step == "dataset-version":
+        dataset_predecessor(dataset_version)
+        tail = [
+            "datasets",
+            "version",
+            "--path",
+            str(root / "dataset"),
+            "--message",
+            checked_version_notes(version_notes),
+            "--keep-tabular",
+            "--dir-mode",
+            "skip",
+        ]
     elif step == "dataset-status":
         tail = ["datasets", "status", IDENTITY]
     elif step in ("notebook-push", "notebook-version"):
@@ -456,7 +490,9 @@ def command(step, root, output=None, notebook_version=None):
     return base + tail
 
 
-def plan(root, config, step="plan", output=None, notebook_version=None):
+def plan(
+    root, config, step="plan", output=None, notebook_version=None, *, dataset_version=None, version_notes=None
+):
     require(step in STEPS, "known explicit publication step")
     result = validate(root, config)
     result.update(
@@ -472,7 +508,20 @@ def plan(root, config, step="plan", output=None, notebook_version=None):
     steps = (
         ("dataset-create", "dataset-status", "notebook-push") if step in ("plan", "public-plan") else (step,)
     )
-    result["commands"] = [command(s, root, output, notebook_version) for s in steps if s in REMOTE_STEPS]
+    result["commands"] = [
+        command(
+            s, root, output, notebook_version, dataset_version=dataset_version, version_notes=version_notes
+        )
+        for s in steps
+        if s in REMOTE_STEPS
+    ]
+    if step == "dataset-version":
+        result["predecessor_dataset_version"] = dataset_predecessor(dataset_version)
+        result["dataset_version_notes"] = checked_version_notes(version_notes)
+        result["privacy"] = "Preserve existing dataset visibility; operator must verify it is still private"
+        result["predecessor_scope"] = (
+            "Operator-inspected predecessor and local duplicate guard; no atomic Kaggle predecessor condition"
+        )
     if step == "public-plan":
         require(output is not None, "verified hosted outputs required before a public review plan")
         result["hosted_output_verification"] = verify_outputs(root, config, output)
@@ -587,6 +636,8 @@ def execute(
     *,
     output=None,
     notebook_version=None,
+    dataset_version=None,
+    version_notes=None,
     runner=None,
     version_getter=None,
 ):
@@ -604,11 +655,15 @@ def execute(
         )
     if step == "output-pull":
         require(output is not None and not output.exists(), "output download needs a fresh directory")
+    # Validate all step inputs before creating any claim/state or invoking a CLI.
+    command(
+        step, root, output, notebook_version, dataset_version=dataset_version, version_notes=version_notes
+    )
     # Checking installed metadata does not import/authenticate Kaggle. The actual
     # import occurs only in the authorized child command, using this interpreter.
     actual_version = (version_getter or installed_version)()
     require(actual_version == CLI_VERSION, "exact pinned Kaggle CLI " + CLI_VERSION)
-    key = operation_key(step, notebook_version)
+    key = operation_key(step, notebook_version, dataset_version)
     old = previous(state, key)
     if step in MUTATIONS and old:
         resolution = old[-1] / "reconciliation.json"
@@ -632,7 +687,14 @@ def execute(
     attempt = base / f"{len(old) + 1:04d}"
     attempt.mkdir(exist_ok=False)
     staged = attempt / "staged"
-    argv = command(step, staged if step in MUTATIONS else root, output, notebook_version)
+    argv = command(
+        step,
+        staged if step in MUTATIONS else root,
+        output,
+        notebook_version,
+        dataset_version=dataset_version,
+        version_notes=version_notes,
+    )
     exclusive(
         attempt / "claim.json",
         {
@@ -641,6 +703,10 @@ def execute(
             "step": step,
             "operation_key": key,
             "predecessor_notebook_version": notebook_version if step == "notebook-version" else None,
+            "predecessor_dataset_version": dataset_version if step == "dataset-version" else None,
+            "dataset_version_notes": checked_version_notes(version_notes)
+            if step == "dataset-version"
+            else None,
             "release_id": release["release_id"],
             "payload_sha256": release["payload_sha256"],
             "build_sha256": release["build_sha256"],
@@ -699,7 +765,9 @@ def execute(
         raise
 
 
-def reconcile(root, config, state, target, outcome, evidence, authorization, notebook_version=None):
+def reconcile(
+    root, config, state, target, outcome, evidence, authorization, notebook_version=None, dataset_version=None
+):
     release = validate(root, config)
     approved = authorize(authorization)
     require(
@@ -708,7 +776,7 @@ def reconcile(root, config, state, target, outcome, evidence, authorization, not
     )
     state = Path(state).resolve()
     require(not state.is_relative_to(Path(root).resolve()), "state outside release")
-    old = previous(state, operation_key(target, notebook_version))
+    old = previous(state, operation_key(target, notebook_version, dataset_version))
     require(old, "existing mutation attempt required")
     claim = parse(read(old[-1] / "claim.json"))
     require(claim["build_sha256"] == release["build_sha256"], "reconcile the exact attempted build")
@@ -741,6 +809,8 @@ def main(argv=None):
     parser.add_argument("--state", type=Path)
     parser.add_argument("--output", type=Path)
     parser.add_argument("--notebook-version", type=int)
+    parser.add_argument("--dataset-version", type=int)
+    parser.add_argument("--version-notes")
     parser.add_argument("--target", choices=sorted(MUTATIONS))
     parser.add_argument("--outcome", choices=("CONFIRMED_REMOTE_MUTATION", "CONFIRMED_NO_REMOTE_MUTATION"))
     parser.add_argument("--evidence", type=Path)
@@ -763,6 +833,7 @@ def main(argv=None):
             args.evidence,
             args.authorization,
             args.notebook_version,
+            args.dataset_version,
         )
     elif args.execute:
         require(args.state is not None, "private attempt state directory required")
@@ -774,9 +845,19 @@ def main(argv=None):
             args.authorization,
             output=args.output,
             notebook_version=args.notebook_version,
+            dataset_version=args.dataset_version,
+            version_notes=args.version_notes,
         )
     else:
-        result = plan(args.root, config, args.step, args.output, args.notebook_version)
+        result = plan(
+            args.root,
+            config,
+            args.step,
+            args.output,
+            args.notebook_version,
+            dataset_version=args.dataset_version,
+            version_notes=args.version_notes,
+        )
     print(json.dumps(result, sort_keys=True, indent=2))
 
 

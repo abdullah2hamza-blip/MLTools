@@ -1,0 +1,53 @@
+{
+  "blockers": [],
+  "build_sha256": "8a3e20366dd12460bf7b95fbb2651f0680a1640ecd5a6308e4ea8e4b89ff8a05",
+  "cli_revision": "8b88a6aeffed5acae0b1e43137d946afd5c43351",
+  "cli_version": "2.2.5",
+  "commands": [
+    [
+      "C:\\Users\\Abdul\\Documents\\MLTools\\.venv\\Scripts\\python.exe",
+      "-I",
+      "-c",
+      "import sys\nimport requests\noriginal_raise = requests.Response.raise_for_status\ndef checked(response):\n    try:\n        original_raise(response)\n    except requests.HTTPError:\n        import re\n        body = re.sub(r'KGAT_[A-Za-z0-9_-]+', '[REDACTED_TOKEN]', response.text[:8192])\n        print('Kaggle HTTP error body: ' + body, file=sys.stderr)\n        raise\nrequests.Response.raise_for_status = checked\nfrom kaggle.cli import main\nmain()\n",
+      "datasets",
+      "version",
+      "--path",
+      "C:\\Users\\Abdul\\Documents\\MLTools\\releases\\kaggle\\artifacts\\release-005\\dataset",
+      "--message",
+      "Reviewed release-005 text; original numerical observations and products retained",
+      "--keep-tabular",
+      "--dir-mode",
+      "skip"
+    ]
+  ],
+  "credentials_accessed": false,
+  "dataset_version_notes": "Reviewed release-005 text; original numerical observations and products retained",
+  "executes": false,
+  "expected_replay_outputs": {
+    "analysis.json": "83e00b74ca783de9efda4decfcfbd4e7345c22564bc8584b4246adee982242af",
+    "conditions.csv": "f261b97ce019d83365b78edd2a9ce24375cf6fc19fa998d8c733f2a1d0561398",
+    "metrics.json": "5d5a90948c3271fca004afd0fbedd951e4f8cef67baecd30c0195e16df4e015c",
+    "witnesses.json": "b4a0cd3a79c7943f1ae9cb512b8f843807b3cb11453e16b96eeb2e9d09229cf4",
+    "workflow-analysis.json": "9a0df9925f05bfa66bf8f5eaeb8585e896f95ba71cae6d2517f3d883e353527d"
+  },
+  "file_sha256": {
+    "dataset/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "dataset/README.md": "f60ccf6127edeb6795f508b042039802a676b2447ed62cf9d03d70ffb23827f7",
+    "dataset/THIRD_PARTY_NOTICES.md": "6db2652f51c313e892e6253e32394b9f08fdec4693986981b4080b32c02ab192",
+    "dataset/conditions.csv": "f261b97ce019d83365b78edd2a9ce24375cf6fc19fa998d8c733f2a1d0561398",
+    "dataset/dataset-metadata.json": "9a792d0677c38bfd6a9cf3cc90a543cff57efa9a822c2bda737a53d873ed0db3",
+    "dataset/payload.zip": "e0c66d2a0c71823672c910f2bb1ab2d801f633759e0d38cc10c7ccaf67a65aa1",
+    "dataset/release-manifest.json": "95b106810e30931fcd7160f8b9131b38acd9bcdd25bcac65877dc0850624daa9",
+    "notebook/kernel-metadata.json": "87c9f85106c1d221abbd3026ce9b4a05accd6d6140b514401022b343964cd183",
+    "notebook/replay.ipynb": "c7f9ceb2c830480d4c1b2d754877e86d1223ddfde707692214a377b30e676e43"
+  },
+  "payload_members": 270,
+  "payload_sha256": "e0c66d2a0c71823672c910f2bb1ab2d801f633759e0d38cc10c7ccaf67a65aa1",
+  "predecessor_dataset_version": 1,
+  "predecessor_scope": "Operator-inspected predecessor and local duplicate guard; no atomic Kaggle predecessor condition",
+  "privacy": "Preserve existing dataset visibility; operator must verify it is still private",
+  "ready": true,
+  "release_id": "edccd4d74284b17a83565e6cd0c89a7cdb921bccc514a4743eff5e3d4cbf76b3",
+  "schema_version": 1,
+  "step": "dataset-version"
+}
