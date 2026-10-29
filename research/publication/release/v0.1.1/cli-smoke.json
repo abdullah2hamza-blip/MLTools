@@ -1,0 +1,19 @@
+{
+  "scope": "Core CLI on committed data-only traces; no native acquisition",
+  "results": [
+    {
+      "case": "good",
+      "expected_exit": 0,
+      "exit_code": 0,
+      "stdout": "PASS | so101_follower/use_degrees=True/software-fixture | finite fixture conformance\n  PASS    artifacts\n  PASS    cameras\n  PASS    joint_order\n  PASS    normalization\n  PASS    actions\n  PASS    reset\nScope: declared references and fixtures only; no robot-safety or model-performance claim.\n",
+      "stderr": ""
+    },
+    {
+      "case": "moving_anchor",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stdout": "FAIL | so101_follower/use_degrees=True/software-fixture | finite fixture conformance\n  PASS    artifacts\n  PASS    cameras\n  PASS    joint_order\n  PASS    normalization\n  FAIL    actions\n  PASS    reset\n  FAIL event=2 controller.commands: Named commands must preserve modes, gripper convention, and originating chunk anchor\n  FAIL event=3 controller.commands: Named commands must preserve modes, gripper convention, and originating chunk anchor\n  FAIL event=7 controller.commands: Named commands must preserve modes, gripper convention, and originating chunk anchor\n  FAIL event=8 controller.commands: Named commands must preserve modes, gripper convention, and originating chunk anchor\n  expected={'shoulder_pan.pos': 12, 'shoulder_lift.pos': 23.0, 'elbow_flex.pos': 34, 'wrist_flex.pos': 45.0, 'wrist_roll.pos': 56, 'gripper.pos': 58.0}\n  actual={'shoulder_pan.pos': 13.0, 'shoulder_lift.pos': 24.0, 'elbow_flex.pos': 35.0, 'wrist_flex.pos': 46.0, 'wrist_roll.pos': 57.0, 'gripper.pos': 58.0}\nScope: declared references and fixtures only; no robot-safety or model-performance claim.\n",
+      "stderr": ""
+    }
+  ]
+}

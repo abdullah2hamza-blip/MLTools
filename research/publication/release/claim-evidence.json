@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "audited_at_utc": "2026-10-29T02:43:51.508458+00:00",
+  "audited_at_utc": "2026-10-29T20:18:33.835887+00:00",
   "scope": "Headline claims, one table and two figures, ablations and separate software/historical strata in current manuscript. Per-file identities below anchor actual inputs, code and outputs. File globs in result_locations are selectors within the explicitly enumerated evidence sets.",
   "research_code_revision": "7513755e9627098c3529c46b3ae9a056d76434a5",
   "release_documentation_revision": "Final release commit/tag is recorded by the release manifest; it must not replace the earlier frozen research-code revision.",
@@ -1390,7 +1390,7 @@
       "kind": "prior_clean_semantic_result"
     },
     "research/publication/release/claim-audit-checks.json": {
-      "sha256": "bdfb6cd908290f7e40e007a02204b91876852b6bb5e074e73adf2e020d2e1e07",
+      "sha256": "27a14698b9c7a13c97caef0a10f7babdf9764d51c036a320d3f4e5401f9e303c",
       "kind": "current_task_saved_output_reanalysis"
     },
     "research/publication/release/audit_claims.py": {

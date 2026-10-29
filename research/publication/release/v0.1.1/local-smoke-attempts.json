@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "attempts": [
+    {
+      "work": ".test-tmp/public-replay-007-local",
+      "status": "INTERRUPTED_BEFORE_KERNEL_START",
+      "evidence": "Live test launcher and interpreter found with no kernel child process after several minutes; only the identified test processes were stopped.",
+      "sandbox": "default restricted process environment",
+      "note": "Local infrastructure attempt; no native research acquisition or results overwritten."
+    },
+    {
+      "work": ".test-tmp/public-replay-007-local-002",
+      "status": "LOCAL_FRESH_KERNEL_VERIFIED",
+      "sandbox": "normal local process permissions",
+      "command": ".venv-kaggle/Scripts/python.exe releases/kaggle/smoke.py --root releases/kaggle/artifacts/release-007 --work .test-tmp/public-replay-007-local-002 --record releases/kaggle/validation/public-replay-007-local --expanded-input --platform-runtime-file",
+      "verification": "releases/kaggle/validation/public-replay-007-local/verification.json"
+    }
+  ]
+}

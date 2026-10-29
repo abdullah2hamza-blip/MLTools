@@ -7,10 +7,10 @@ figures, results and source/reproduction supplement to this same dataset.
 Use the [complete-package builder](../publication/README.md) after checking out
 its exact release tag; the smaller focused replay is its executable component.
 
-The revised replay is [artifacts/release-006](artifacts/release-006/), bound by
-[release-006-lock.json](release-006-lock.json). Its numerical observations and
+The disclosure-update replay is [artifacts/release-007](artifacts/release-007/), bound by
+[release-007-lock.json](release-007-lock.json). Its numerical observations and
 five expected products retain their original bytes. The expanded-input/platform
-fresh-kernel check is [recorded here](validation/public-replay-006-local/verification.json).
+fresh-kernel check is [recorded here](validation/public-replay-007-local/verification.json).
 The full supplement has its own closed file/member manifest and exact tag/commit.
 
 [Publication status](../../research/publication/release/status.json) records the
@@ -89,10 +89,10 @@ never add tokens to arguments, notebooks, configs, committed files or upload
 folders. Keep the publisher's attempt/state directory private and outside the
 upload root. Public visibility requires a separate review and authorization.
 
-The existing dataset must receive a deliberate `dataset-version` update for
-release-005; its predecessor and meaningful notes are required. Plan that
-operation against recorded dataset version 1, inspect readiness and exact files,
-then plan the matching notebook revision against predecessor 2. The
+The historical release-005 workflow required a deliberate `dataset-version`
+update; its predecessor and meaningful notes were required. That operation used
+recorded dataset version 1, followed by readiness/file inspection and a matching
+notebook revision against predecessor 2. The
 [release-005 update instructions](publishing.md#plan-the-revised-release-005)
 explain the local duplicate guards and unversioned dataset attachment limit.
 No update is executed by a plan and no server predecessor condition is implied.

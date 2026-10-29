@@ -1,0 +1,16 @@
+{
+  "command": [
+    ".venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "releases/kaggle",
+    "releases/publication",
+    "-q",
+    "--basetemp",
+    ".test-tmp/disclosure-release-tests-001"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 115.2344904000638,
+  "stdout": "................................. [ 37%]\n........................................................                 [100%]\n89 passed, 39 subtests passed in 111.87s (0:01:51)\n",
+  "stderr": ""
+}

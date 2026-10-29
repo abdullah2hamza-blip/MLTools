@@ -197,6 +197,7 @@ def notebook(payload_sha256, release_id, dataset_slug, payload_manifest_sha256):
         f"""
         Original contributions: Apache-2.0; retained publisher licenses and
         explicit derivative/redaction notices are in the dataset.
+        Artificial intelligence (AI) tools were used for manuscript editing and code preparation.
         AI tools were used for research planning and experimental design; code preparation
         and testing; data analysis and interpretation; figure preparation; and manuscript
         drafting, revision, and review. The human author(s) retain responsibility for the

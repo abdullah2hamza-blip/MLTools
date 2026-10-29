@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at_utc": "2026-10-29T02:43:51.508458+00:00",
+  "checked_at_utc": "2026-10-29T20:18:33.835887+00:00",
   "status": "SAVED_EVIDENCE_REANALYSIS_PASSED",
   "python_version": "3.13.7",
   "audit_code_sha256": "145932c69270386cd168d523ef7c09f844d60f86b50fd74a99f7ffb39eb3406e",
@@ -125,6 +125,6 @@
     "stateful_parity_and_witness_ranges_match": true
   },
   "full_native_acquisition_repeated": false,
-  "wall_seconds": 76.80890069995075,
+  "wall_seconds": 61.536351899965666,
   "scope": "Code inspection, saved-evidence integrity verification and independent reanalysis; not a new native experimental reproduction or human peer review."
 }

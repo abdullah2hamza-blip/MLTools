@@ -4,7 +4,7 @@ type: software
 title: "MLTools: robot-policy boundary conformance research artifact"
 authors:
   - name: "MLTools contributors"
-version: 0.1.0
+version: 0.1.1
 license: Apache-2.0
 repository-code: "https://github.com/abdullah2hamza-blip/MLTools"
 url: "https://github.com/abdullah2hamza-blip/MLTools/releases"

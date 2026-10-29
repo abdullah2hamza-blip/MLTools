@@ -1,6 +1,6 @@
 # Kaggle hosting verification
 
-The public research release uses dataset **version 2** and notebook **version 3**
+The v0.1.0 public research release uses dataset **version 2** and notebook **version 3**
 (script version `363362772`). The fresh CPU/offline Save & Run All completed
 successfully in 111.4 seconds. Public source cells match the reviewed candidate;
 all eight public output files pass the strict verifier, including all five

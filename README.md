@@ -1,11 +1,14 @@
 # MLTools
 
-The public [v0.1.0 research release](https://github.com/abdullah2hamza-blip/MLTools/releases/tag/v0.1.0)
-includes the [technical report PDF](https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.0/manuscript.pdf),
+The [v0.1.1 research release](https://github.com/abdullah2hamza-blip/MLTools/releases/tag/v0.1.1)
+includes the [technical report PDF](https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/manuscript.pdf),
 editable manuscript and reproducibility supplement. The [Kaggle dataset](https://www.kaggle.com/datasets/abdullah2hamza/boundary-conformance-replay)
-is version 2; the [public notebook](https://www.kaggle.com/code/abdullah2hamza/boundary-conformance-replay-notebook)
-is the successfully executed version 3. Both platforms' unauthenticated downloads
-and exact source/output hashes are recorded in the [publication receipt](research/publication/release/published/publication-verification.json).
+and [public notebook](https://www.kaggle.com/code/abdullah2hamza/boundary-conformance-replay-notebook)
+have separately verified versions recorded in the [publication status](research/publication/release/status.json).
+The v0.1.1 disclosure update preserves the research results and the frozen v0.1.0
+library. The [v0.1.0 publication receipt](research/publication/release/published/publication-verification.json)
+remains the historical verification of dataset version 2 and notebook version 3;
+later versions require their own publication receipts.
 
 The [Kaggle release workflow](releases/kaggle/README.md) builds a licensed,
 privacy-reviewed offline replay dataset and CPU notebook from the frozen study.
@@ -15,6 +18,7 @@ the current publication stage and links the source, manuscript and executable
 Kaggle artifact. Earlier release candidates and hosted proofs retain their
 original versions; they do not verify later revisions.
 
+Artificial intelligence (AI) tools were used for manuscript editing and code preparation.
 AI tools were used for research planning and experimental design; code preparation
 and testing; data analysis and interpretation; figure preparation; and manuscript
 drafting, revision, and review. The human author(s) retain responsibility for the

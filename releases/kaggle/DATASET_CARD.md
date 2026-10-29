@@ -111,6 +111,7 @@ hardware safety, policy task success or cryptographic attestation is claimed.
 
 ## AI assistance disclosure
 
+Artificial intelligence (AI) tools were used for manuscript editing and code preparation.
 AI tools were used for research planning and experimental design; code preparation
 and testing; data analysis and interpretation; figure preparation; and manuscript
 drafting, revision, and review. The human author(s) retain responsibility for the
