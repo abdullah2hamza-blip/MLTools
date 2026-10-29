@@ -1,0 +1,231 @@
+{
+  "authentication": {
+    "authorization_header": false,
+    "browser_session": false,
+    "cookies": false,
+    "environment_proxy_credentials": false,
+    "git_credential_helper": false,
+    "netrc": false
+  },
+  "checked_at_utc": "2026-10-29T20:37:40.912324+00:00",
+  "endpoint_evidence": {
+    "cli_version": "2.2.5",
+    "sdk_version": "0.1.38",
+    "source": "Installed official SDK read without import: kernels.KernelsApiService GetKernel / ListKernelSessionOutput / GetKernelSessionStatus, POST JSON and versionLabel=v4 per CLI _kernel_version_label"
+  },
+  "http_checks": {
+    "output_analysis.json": {
+      "bytes": 5680766,
+      "content_type": "text/plain; charset=utf-8",
+      "final_host": "www.kaggleusercontent.com",
+      "method": "GET",
+      "redirected": false,
+      "requested_url": "https://www.kaggleusercontent.com/kf/363613581/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..e-5jRYRMsygZQFQsHOw6mw.XFsi3fOoQ8Ldk69KXGLByOqKe7HCMYzRY2vkjrZZ00iWegwgpCFmkaOWJiKtfjUpQA9WlECqo7tl8OyABn8s_Q8gm1HGd4cxMXwqBow014azccqVOpnR_VQmt1qqMW7nFF5Ev6HBATv_-agMwamPu_CsYcorjl1R_kYb3VR0vtwtR_JWCQQzN2BbESqi5mBHauGQ5xh-XC-ZbTLhp-mQilrPDxp84z_Z5cDQVqaXX8IrpWs5NQWNEtdXyEeO3PRu8GiGuDezcPeS13xeTsoc4wdV9_SiIJpRTsQmKBm2zd-9Iizjem_XCou2y668FFuq0jFRd-9ml5MCQPsOgWlz9sQMGZ1AsMv_A6spFqD3yKgHFP3DTtqY4AhD3xJ3mf2jsCPBhlqxGRUtXOhHp-31cgjkLwMzGQYDGNLsHa0-9FaRsG5_0EMHIsYgeW6WvfzVxJS2AJPJ176gPr6SKfZXtdo3CtyGVhRuZUJ-7SG8n63Cer0O8X4NnSZ4x_TL6p_zulJ_S1ZwiQh6uXO6ogWwiwH09yupdEiaA6Hh1NHWogby4YZgBY2JogbltX49CiTBCOkEX1n9XhFd62AjCUXQxM7bmMyUaM5ld_7fqWO3l2aMtrZU5EOn2dPJBrja9HQkcJDRa_WxrlOV0SL9ePmcjw.oYEHCyaG2EG1o9Zrr-ZfDQ/analysis.json",
+      "sha256": "83e00b74ca783de9efda4decfcfbd4e7345c22564bc8584b4246adee982242af",
+      "status": 200,
+      "wall_seconds": 1.0257737999781966
+    },
+    "output_conditions.csv": {
+      "bytes": 3175,
+      "content_type": "text/plain; charset=utf-8",
+      "final_host": "www.kaggleusercontent.com",
+      "method": "GET",
+      "redirected": false,
+      "requested_url": "https://www.kaggleusercontent.com/kf/363613581/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..RZm4CaS_Px__JzteyfaZBg.OYHAo5KvhUv-gF3qb8z3AEJ-zz92DhVyrs10dS96E6qcMo1-BR7f8lc7EdQZoNK-mqwvHO_BwqgMfBNNXRDg0KCRfQ_KvN77MOqtTA5_EEOWABA_Eo3JqLslpA9PQlQQUxau0vx1e4uG9O1Nr3vNfcdkG0GR2bt7EMPgf1E6KoGQYeL-XpcjiZ-3S2kLaz7bWAdyJwiMSjVMAo7TCQci4uMunLEojgYT14In1GSHwBrkhWr-Q-SLbWiEn1bw-4k8WzE3uwHGmKVGVf4KOjqE1bBaew2a_6Z_scNryr24KAw24OzulVFo9lSJRoG0wNYz7UwgdAi-bHVHXgAvMJfqXuDsEPc9kph6Wc0BhcThzXUKmOuV7Fv4QD0vREp7ltixtX5DMFKmi0Nm75H5bgEsLgm550yZdlVA3WGxJBwhgwLSi7sU6E8AKWilAIZFLCq_i3G6SdAd7wUkbj7RGvfX2Vl1fXBW62FFw2F6kAewx_QDgZ15QyGeAjQckLAWiM8fcabS5nuRwYCrYGCs7VC7u76vpMb6WR2MUqEInNuZHV8x44aLkAlJ1h9RsuRJGzerUYEszjUnJxoaMHP55v59OYqE9ElB6bMLx_qxgsDh0S3hKXwA5AsKBL_LzjMe7p3nMS4UpDWtPF2MQr_gezpaWQ.nFQ_mG65AVSp0sjWSetcsg/conditions.csv",
+      "sha256": "f261b97ce019d83365b78edd2a9ce24375cf6fc19fa998d8c733f2a1d0561398",
+      "status": 200,
+      "wall_seconds": 0.23503700003493577
+    },
+    "output_metrics.json": {
+      "bytes": 30122,
+      "content_type": "text/plain; charset=utf-8",
+      "final_host": "www.kaggleusercontent.com",
+      "method": "GET",
+      "redirected": false,
+      "requested_url": "https://www.kaggleusercontent.com/kf/363613581/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..2cyTPIWtmVRSelf7g0MbGA.r13AbJBIX2hCn9mMYOWX-GDJHtLQpv1T5Ph9VIPYoc5XK_bluI8Rt1MxzHl0PYIXkb1Y-gWZJABJjmNz44lBkM9sKUkaeSIdcaBb4ilrVlk78aSBgyw6L_WC1WZghqizL__-oEDaEcnzi04aheAMOsCZaHb6TtfoSoblietk8a8Eujg6un_MrOsgMSjAcKvZeFi8rB85JQhwDF5i4n-Pk7rAbTma_hUWxfMEBF3xerCrE1yCdU6SiQ9F47s6B5R5kD5-IQXjvsvGeGo6gbyx3VFN2mwy52DlFyfqvg2KLQkMcBPcPnIueJ3jYQzc8a8NnBW-53kubv5M_mt7T6vT_6Kn4xhM8TXtllk2zsT9E3XfyZLS81ZbrQbqT8Z_dRPvQ20wZvQhEm-WneP1TxlB59V-pSzkICKNepHEp14WbxirJ13G02RPCRTYJJ1moThagu8XkMUKutd5lXylAi6M1OP_-J4sNKSjtPHAvNStJXxTa5Z5JBUs3jAu4wd0tVePCMevd7Pi1dQW08EDq8WTFHoBOFMQtyZXIBMx8omMhcobN8OCMqBG3fpo6ZBnMsXhUyAeThfyTOQ9ngze71rVw1TD3iyeQ1XMvRdzZOJ6ktZ9xtsoz6vmFiVxhyRCcQcNFKiGbuAvkLPojhnm89iKnA.UIp8A33sluVOWgXuaZVxIw/metrics.json",
+      "sha256": "5d5a90948c3271fca004afd0fbedd951e4f8cef67baecd30c0195e16df4e015c",
+      "status": 200,
+      "wall_seconds": 0.33024240005761385
+    },
+    "output_outcomes.svg": {
+      "bytes": 38544,
+      "content_type": "text/xml; charset=utf-8",
+      "final_host": "www.kaggleusercontent.com",
+      "method": "GET",
+      "redirected": false,
+      "requested_url": "https://www.kaggleusercontent.com/kf/363613581/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..of8j1mNSYbVe5Vag2ag0-w.3OQq1MiiehGRwAzbLkskYfmRyenuFDFPds6n3kjs6ZeK-txASJqeMYYdCuRU72nV1HblNQZHOP0Wfr_8tCAD_g_rI__tkMEjp8sjjOl76pZBCfFdcu-LO6AxDdPy37vCnrgM1O6jywXhmRF-SSvDHGFGln9lVc6ejGlSSmRuS3-ffJ5X8Vk8U6umM_s3MJ39n8Z3eMLdUDaiVmpi_zVzP_Qj2IC0nyBBkTYam2FaSXKk1fkTqNTWQL9UHxsIQfvC9Qqmj1d9sHL4InTvg7F8OrwkXuKzGFlCcDRh1MDl0SBTcE8LZSiMEh3Yf9UWLTa6laoW2J7-snEn0e6zLKY9aMy_Gem8ElQH_WoYkpEXKwwt1co108qB5Oqy0RUx2B87UHK9rAaoRDlCMRYaMh8uMKCTLNvduaP7_F4YlG-Hb3S_RXxYfgcfCYEYZv77Dk2W_sZKkC2U9cUbs6GfXPxaLXK6gwvW4vs7AD8xyqYN3Y8K0v_2rAmk9APC2AYy0d5eDTazDbaT-1-qjXRjllI7ekAQu3mTzLePgrOxyg5Cn1YzMhZCCJnA2VUINvGPgE651MEEbKpd9K_ifKHDYD1Lb98TcGOOAPhXgRvf46sXkdEyEzTse4JgikT9_KbtYVyUNWxoZH-PL6_vHnzfaktyvg.ob2F-wBtbcmitDNT6cGlpA/outcomes.svg",
+      "sha256": "46292abcd2b0c3da83e2827783abdf3b957d20e7a7b7b4176dc82b8b86889443",
+      "status": 200,
+      "wall_seconds": 0.33826250000856817
+    },
+    "output_replay-report.json": {
+      "bytes": 1182,
+      "content_type": "text/plain; charset=utf-8",
+      "final_host": "www.kaggleusercontent.com",
+      "method": "GET",
+      "redirected": false,
+      "requested_url": "https://www.kaggleusercontent.com/kf/363613581/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..1TzbQLM3LuJNkTJO3PqTrA.80DB24JDe3RbwGDaZqjPX_RoViwt09P-Dqu3FcaNpNOJoyWjsb9TtwcQcyEI7iHBGPtCoOP_qXJ3EEYCruyGL11Cy1q2koK_i0luXCYjwZT4y2whE-M0B014dATGTS6ylgY9fgaI4-_L4XauDxD2HKJIktiAF5VpFQyhwVjojIz4lSwm83_QIBnHA188HfeRTDBEcQTUpcGCXTmXWPaDogBWcxa4RrgdNhy2hQpOAgYPKinCWr4QeAmytLs6f8LaNZL4CJF0TCZj0-8HyoTWyx2_QCb1eWq7g95W9ur5vOksuDnPsVKUCnnOCfGPrcJzrfMjXAYcUANad7Gn0ZpY_JPC8vSPcRGGdcGxcOLd7QifflUY0CiGnZ2y4b9sGOsuHxEviFKwqJ2Ge0F6PG316fHl60jJIfc5A8IBOd5wVGsZgNEE7NHRq57_Oh7Kpbd2dAHI6ASGYGuUEKykNzquLubLzxUn2Zi7eH87XgqC5e9O_YZk6NmdKbu3zfjsZNvpaMNYAe_G7y7MCWKUe_WSC7S08YyzOIUqqz11Z99pEKCHT7I2J9IezdqqtzHr_8VPl10zdU3ntog1AiSUCatGGN-1gUkOtWQal7kqqLCQu7FF6AKckCMjUBDBSAb2sYt2ZSas7oZ9vEIqCZMLyczlxw.3DhGrvrgfo1rjvOmkFUeyQ/replay-report.json",
+      "sha256": "718fad8e29e6fb0d4fccd7f93618d80281df3ad427eb0ccf0cf1b19a5376cc50",
+      "status": 200,
+      "wall_seconds": 0.272560799960047
+    },
+    "output_replay-summary.json": {
+      "bytes": 722,
+      "content_type": "text/plain; charset=utf-8",
+      "final_host": "www.kaggleusercontent.com",
+      "method": "GET",
+      "redirected": false,
+      "requested_url": "https://www.kaggleusercontent.com/kf/363613581/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..kVUaOuSOheWpVpmBD_8N5Q.K-MbFKWoxLOwusA3E__V0l7IIBCF2_qatsW3RDA8ZMMgNX9DRo9HjcHSZ3YGQ9LfVguaRUHHMRRIEhpRtr0qY4S0MXhNjqXOW5qZAyxtI8XRWMWGOpTSgjeRdNaSDsk60KgtPlzXATtnrWv1kN3JLH6g6V0Q7xiyJkSteOQe22IjtvVd8EH787VgGHMEBese2aU8JXcWyXNUZeV8UeYdBy191Xby0-2wFmRPM_nFlEaGDlotchLXSEreP5OI-8bNV5XDDgRg576N_ALXoT-bObhyGPXcC8USRrZQ0gZ10Qk4PP7vEL17KPw6dsUJTQc53ZZv2fb36nhNbTnWGVOUTp5GpONjbsWeoZVXAQCaLDVOw8eoRNBJPPS_nQgT3woioQ8F_iW2eiyVnZgznp5fZV35wM3jQnEv2WwJ2O0SnkGFmbSa1LnlCKdavDo4IV-tJzZYtigHv9fPhtEvejAw1Fo9kpYdd_HaMTX43v6siFf4nIkoOMxSy7lStleNDvNimw02whiXj6b31x3LhdL3Wi0r7jZW1I0paMyTjPgpjAsEsxOzgKil5bWrJ35Yzzk4GakBoWNJQ48gbG9Iodz5fZfm1XI3Ri3i7VpjF2-u56PXFezcTcjIBDqDwQc97OLcy_0vxKc_otTBCNqFY3EWYg.zCstSDCerxWg9ggA5lBlDA/replay-summary.json",
+      "sha256": "72b6469dff1f015d9f223a4339d1b80c748635ccb2f4c6b443f7726ab7340db2",
+      "status": 200,
+      "wall_seconds": 0.2587169000180438
+    },
+    "output_witnesses.json": {
+      "bytes": 22779,
+      "content_type": "text/plain; charset=utf-8",
+      "final_host": "www.kaggleusercontent.com",
+      "method": "GET",
+      "redirected": false,
+      "requested_url": "https://www.kaggleusercontent.com/kf/363613581/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..aSPu5tfKBewKCIf0iQMd5A.PT4bI18-J2CRjuKLPKRj1u1Y9msQ4qAXr5FzYol89JUGQZIDBn2v1g81X6l9FkiFALZPMzufeYqkS2ejiL7oF3IABZ6ltHeNgt-7E3jQP8JrdryKzwYZW9ZYV1mrMjSz6KBMROZ7jZTG8ugOlgn9o17gvn2C1vP-Hd6ndwUdmH40wqA-49l9-CclZ0IXS5IWK9Z5kHRsjQPfRTglk4j45PZ3i7W--a9zcdELoIzI0bGlJBZgbLcgxz0XYoNXvqkOElYNMRFarS2haUk56BKsB8146i_Pu49VrT6W_SNAxWTOMDxVBoF2oLNVuKpTmEiOJeIov2qE0oYdSJj5KlqMH1nqUo0p1Kgdx8RsEXN10Q4fQRCUKBO19iiuiq7i7WkA8Lo3HDfS-z3fttUXlSJfJWwzBm-SyFVrYEO11EiMnL9qXCVgcpDb3XE7E3JTSUorxuUdjoqSjbYvv0mmBIK7DmdN2n4Xbch8IZpPHCap2vfIYpQGSrsf4KhHbhblsyLiJnnRWyFkRgk3aw-A6th8n6E0xbWbz0wuc9Z9OhWd-utbVzSf1uoE6rTMkYh_jJlkga1eOgA61jUuIig7-2AyEW8WFQP8aX7YzpBIazraXxI1_Dc0rmnZf0xxB5-_R9yJcfeqYA-TQIkrTZq_lzbL9g.aA4DvOm_bCw-f4mEAIn1Dg/witnesses.json",
+      "sha256": "b4a0cd3a79c7943f1ae9cb512b8f843807b3cb11453e16b96eeb2e9d09229cf4",
+      "status": 200,
+      "wall_seconds": 0.28670299996156245
+    },
+    "output_workflow-analysis.json": {
+      "bytes": 764480,
+      "content_type": "text/plain; charset=utf-8",
+      "final_host": "www.kaggleusercontent.com",
+      "method": "GET",
+      "redirected": false,
+      "requested_url": "https://www.kaggleusercontent.com/kf/363613581/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..e_BlqJ2w7dLJXm53VTxD7g.XpfPB7tBkXBJda0k6s-M3mJs4cQozUE2yJxFRmZaRGSzXgr7nY9vvVdQT5hggzI8jApzTJRopmvVjMcI3s7oQnBu7Nasn38f3RxRLUDlbdF-WKQ1tTEyQCp_EkqYKDvFlEiz4xQj94eDrSM2xq8bRHo3mJuEDhLr325PrXrQrT0sMwNHsEMEd7lIi5XmpAMvIYKS5kpNMqlIRJiCcKJYHwgCF0DiU_w6ebkBrXsmb876lCbatOMMBdiWK_ly-n_wu4s1KHXf1aih5uI3oTANH0LMn6vxJNBfqGtOJie1qKFhe_7aZN_7CFXR_3BLgU014XTPG_u7MIMYKrCwnxN0VCDA_9QIgoG-AN7_jrE6qtn4FIcLzID-Hm9VNiQZS6B52VnPnyoNWIoxsn_G_HjscVt6O-yThkqF24envCaDhiXjY1kVemYC2wa61J5iP0CCgWP2zQyaW-aZ0UaGnEFXi6fFgZ4ReqLVvgZvgncR6eHSpZw-Hr6hapfgx7AZsyraXl6U94FqR1KklcU093QB3OBCNp-LR6dqXgL6w9Sj1oSqzRxaeQWm8TEZ4n5y8-A7xs4em6hctR0KOs2H0VU5ASnJxQZ-VNPVBU7i8XFRA_9zRa-8KMdrlvbxEEx-liXB9MgNkjf3J5t4Xvp39JMZfQ.iQ-a0pJVacIKuyZZVBKQxA/workflow-analysis.json",
+      "sha256": "9a0df9925f05bfa66bf8f5eaeb8585e896f95ba71cae6d2517f3d883e353527d",
+      "status": 200,
+      "wall_seconds": 0.619227199931629
+    },
+    "public_notebook_html": {
+      "bytes": 8974,
+      "content_type": "text/html; charset=utf-8",
+      "final_host": "www.kaggle.com",
+      "method": "GET",
+      "redirected": false,
+      "requested_url": "https://www.kaggle.com/code/abdullah2hamza/boundary-conformance-replay-notebook",
+      "sha256": "30ffc93ee7d6e47a4bd3c551aa7932cfd85158b73b18db7b169368c4e33a2330",
+      "status": 200,
+      "wall_seconds": 0.6413032999262214
+    },
+    "public_versioned_outputs": {
+      "bytes": 616818,
+      "content_type": "application/json",
+      "final_host": "api.kaggle.com",
+      "method": "POST",
+      "redirected": false,
+      "requested_url": "https://api.kaggle.com/v1/kernels.KernelsApiService/ListKernelSessionOutput",
+      "sha256": "9b18db93c3422f3653a180b1785ef93e3d4d10a5bc8e858c40c8052331e47132",
+      "status": 200,
+      "wall_seconds": 0.6552986000897363
+    },
+    "public_versioned_source": {
+      "bytes": 16968,
+      "content_type": "application/json",
+      "final_host": "api.kaggle.com",
+      "method": "POST",
+      "redirected": false,
+      "requested_url": "https://api.kaggle.com/v1/kernels.KernelsApiService/GetKernel",
+      "sha256": "c29504dc7b9f8c36fbfdcea53cd563f9ba79fc7f54039983c632c9deb3f4f9cf",
+      "status": 200,
+      "wall_seconds": 0.9005703000584617
+    },
+    "public_versioned_status": {
+      "authentication_used": false,
+      "method": "POST",
+      "requested_url": "https://api.kaggle.com/v1/kernels.KernelsApiService/GetKernelSessionStatus",
+      "status": 401,
+      "wall_seconds": 0.21601540001574904
+    }
+  },
+  "notebook": "abdullah2hamza/boundary-conformance-replay-notebook",
+  "output_downloads": {
+    "analysis.json": {
+      "bytes": 5680766,
+      "sha256": "83e00b74ca783de9efda4decfcfbd4e7345c22564bc8584b4246adee982242af"
+    },
+    "conditions.csv": {
+      "bytes": 3175,
+      "sha256": "f261b97ce019d83365b78edd2a9ce24375cf6fc19fa998d8c733f2a1d0561398"
+    },
+    "metrics.json": {
+      "bytes": 30122,
+      "sha256": "5d5a90948c3271fca004afd0fbedd951e4f8cef67baecd30c0195e16df4e015c"
+    },
+    "outcomes.svg": {
+      "bytes": 38544,
+      "sha256": "46292abcd2b0c3da83e2827783abdf3b957d20e7a7b7b4176dc82b8b86889443"
+    },
+    "replay-report.json": {
+      "bytes": 1182,
+      "sha256": "718fad8e29e6fb0d4fccd7f93618d80281df3ad427eb0ccf0cf1b19a5376cc50"
+    },
+    "replay-summary.json": {
+      "bytes": 722,
+      "sha256": "72b6469dff1f015d9f223a4339d1b80c748635ccb2f4c6b443f7726ab7340db2"
+    },
+    "witnesses.json": {
+      "bytes": 22779,
+      "sha256": "b4a0cd3a79c7943f1ae9cb512b8f843807b3cb11453e16b96eeb2e9d09229cf4"
+    },
+    "workflow-analysis.json": {
+      "bytes": 764480,
+      "sha256": "9a0df9925f05bfa66bf8f5eaeb8585e896f95ba71cae6d2517f3d883e353527d"
+    }
+  },
+  "requested_version_label": "v4",
+  "run_status_response": {
+    "http_status": 401,
+    "public_endpoint_requires_authentication": true,
+    "scope": "Anonymous source/output checks remain separate from owner session status."
+  },
+  "schema_version": 1,
+  "scope": "Actual version-label-v4 source/output public API reads; exact saved-trace replay products verified; not a new native acquisition.",
+  "source": {
+    "canonical_cell_sha256": "f283975f56638d1049c2c6a483cc17826f5af27c4f219cbb3ece8cfee1b0d4dc",
+    "canonical_cell_sources_exactly_match": true,
+    "cells": 9,
+    "code_cells": 4,
+    "metadata": {
+      "author": "Abdullah Hamza",
+      "categoryIds": [
+        "robotics",
+        "computer science",
+        "artificial intelligence"
+      ],
+      "currentVersionNumber": 4,
+      "datasetDataSources": [
+        "abdullah2hamza/boundary-conformance-replay"
+      ],
+      "dockerImage": "gcr.io/kaggle-images/python@sha256:17b2fc7f27c25c6c2fd4230ec8e66097ab2b89fc88e1e4d6f338b72e1ee0bc3e",
+      "enableGpu": false,
+      "enableInternet": false,
+      "enableTpu": false,
+      "id": 140452949,
+      "isPrivate": false,
+      "kernelType": "notebook",
+      "language": "python",
+      "lastRunTime": "2026-10-26T20:37:41.444894200Z",
+      "machineShape": "None",
+      "ref": "abdullah2hamza/boundary-conformance-replay-notebook",
+      "slug": "boundary-conformance-replay-notebook",
+      "title": "Boundary Conformance Replay Notebook",
+      "totalVotes": 1
+    }
+  },
+  "status": "UNAUTHENTICATED_PUBLIC_KAGGLE_NOTEBOOK_V4_SOURCE_AND_OUTPUTS_VERIFIED",
+  "strict_output_verification": {
+    "payload_sha256": "998dd81b7b7a253636e4b0ec35a4c15e1937008fc977bafda2966e5ac8c3013e",
+    "release_id": "6d9f8801926745526269b07115c650a1b449f2cc22be70dc2ee55e7b0b2b715a",
+    "report_sha256": "718fad8e29e6fb0d4fccd7f93618d80281df3ad427eb0ccf0cf1b19a5376cc50",
+    "schema_version": 1,
+    "scope": "Saved-trace replay outputs; no fresh native acquisition or execution attestation",
+    "status": "VERIFIED_SAVED_TRACE_REPLAY"
+  },
+  "ui_observed_script_version_id": 363613581
+}

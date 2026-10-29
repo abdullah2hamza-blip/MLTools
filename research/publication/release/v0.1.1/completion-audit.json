@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "FULL_RELEASE_OBJECTIVE_VERIFIED",
+  "checked_at_utc": "2026-10-29T20:46:37.774498+00:00",
+  "source_tag": "v0.1.1",
+  "source_commit": "624890159aafc52e69ad8f3166ab4d80b943dd3b",
+  "requirements": {
+    "1_project_inventory_and_ownership": "Canonical existing public repository/admin and authenticated Kaggle owner inspected; clean baseline and current refs checked; one first-party manuscript plus generated figures and historical builds identified.",
+    "2_manuscript_disclosure": "Exact sentence in authoritative TeX, compiled/distributed PDF, both source ZIPs, README, dataset card and notebook; broader disclosure retained; human attribution unchanged.",
+    "3_public_exposure_and_rights": "Prior reachable-history/surfaces/rights audit remains bound to unchanged baseline; current deltas and decoded package members pass credential-value and archive guards; no license or restricted-input expansion.",
+    "4_coherent_release_and_execution": "Stable 13-page build/render inspection; seven saved-output verifiers/20 claim groups; 89 tests/39 subtests; four-cell fresh local notebook and CLI PASS/FAIL smoke; no native experiments newly claimed.",
+    "5_github_publication": "Normal atomic branch/tag push; v0.1.1 immutable source commit; published Release; 15 source/data assets plus 9 proof assets downloaded anonymously and hash matched; prior tag/release preserved.",
+    "6_kaggle_publication": "Existing public dataset v3 provides manuscript and full source supplement (1780 expanded files); notebook v4 provides substantive narrative and four executable code cells. No standalone writeup option in inspected Create menu.",
+    "7_live_verification": "Computer-use inspection of authenticated GitHub settings/release, Kaggle versions/input pinning/CPU/offline settings, fresh successful 62.8s viewer; anonymous exact-version downloads/source/output verifiers; actual public PDF renders as inspected.",
+    "8_honest_report_and_deliverables": "Publication receipt records actual URLs/tag/commit/versions, exact disclosure, reruns versus prior native outcomes, PUBLISHED AND VERIFIED/NOT APPLICABLE classifications, exclusions and access limitations; no blockers or user actions."
+  },
+  "remaining": [],
+  "limits": [
+    "Kaggle inline PDF preview is unavailable; anonymous dataset download supplies the verified PDF.",
+    "Anonymous Kaggle session-status endpoint requires authentication; execution success/runtime observed in UI, source and eight outputs downloaded independently.",
+    "Saved-trace reanalysis does not repeat native framework acquisition or establish execution attestation, peer review, detector superiority, learned-policy performance or hardware safety.",
+    "Original TeX style files retain distinct terms and exact acquisition instructions; ZIP snapshots omit them and Git ancestry, while the full public clone retains original committed gates."
+  ],
+  "post_tag_changes": "Only current documentation and post-publication proof records; tagged code/data/PDF and all 406 frozen files unchanged."
+}

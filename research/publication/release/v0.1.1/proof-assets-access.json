@@ -1,0 +1,60 @@
+{
+  "status": "ALL_NINE_POST_PUBLICATION_PROOF_ASSETS_PUBLIC_AND_BYTE_VERIFIED",
+  "authentication": "No Authorization, cookies, netrc, Git helper or environment proxy credentials",
+  "assets": [
+    {
+      "name": "github-release.png",
+      "http_status": 200,
+      "sha256": "332479a31345975a9079c8bb815262976def7a6c9d2c18e7e23fb903df27beed",
+      "bytes": 160458
+    },
+    {
+      "name": "github-verification.json",
+      "http_status": 200,
+      "sha256": "db3bf39c1867deb8544734088556b6d18a8c78b13851505fc356bbb9d3144442",
+      "bytes": 22528
+    },
+    {
+      "name": "hosted-replay-v4.zip",
+      "http_status": 200,
+      "sha256": "1015774c4faf75cb1f118aebbfff9f8b6c7f8588b5c02f4fbe618a44d521c2dc",
+      "bytes": 413301
+    },
+    {
+      "name": "kaggle-dataset-verification.json",
+      "http_status": 200,
+      "sha256": "fa79f3a3d4ccbd8e9afcdeaf281b3bfc178d05873446ae91713d0099b45afcaf",
+      "bytes": 4661
+    },
+    {
+      "name": "kaggle-dataset.png",
+      "http_status": 200,
+      "sha256": "4eb4b190febf8d3643dc5298e9d5bea4abdb450872908e80000d9a159fe12d68",
+      "bytes": 55777
+    },
+    {
+      "name": "kaggle-notebook-verification.json",
+      "http_status": 200,
+      "sha256": "f87a80cdc8ce774496ade39a1e58959c0ff925fa614eaa76142fb924e603ee21",
+      "bytes": 15108
+    },
+    {
+      "name": "kaggle-notebook.png",
+      "http_status": 200,
+      "sha256": "f0ac8db2d3b319d8099b606402520858a12708300feeb02057c3db16386b17ff",
+      "bytes": 91286
+    },
+    {
+      "name": "PUBLICATION-SHA256SUMS",
+      "http_status": 200,
+      "sha256": "ab2286e3ff913b941d6c9c730ee925da2c1ba62d7c3dd059bcccb99bda0188ee",
+      "bytes": 729
+    },
+    {
+      "name": "publication-verification.json",
+      "http_status": 200,
+      "sha256": "f6d57f9711dbbfd767e6b3add5b89f338f488270409889139a1d83ffacdbefd5",
+      "bytes": 7519
+    }
+  ]
+}

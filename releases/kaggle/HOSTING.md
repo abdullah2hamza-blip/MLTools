@@ -1,5 +1,19 @@
 # Kaggle hosting verification
 
+The v0.1.1 disclosure update uses public dataset **version 3** and public notebook
+**version 4** (script version `363613581`). A fresh CPU/offline Save & Run All
+completed successfully in **62.8 seconds**, pinned to dataset version 3. All nine
+source cells match the reviewed release-007 notebook; all eight public output
+files pass the strict verifier and the five numerical products remain unchanged.
+All **1,780** dataset files match the closed root/member inventories. The
+[v0.1.1 publication receipt](../../research/publication/release/v0.1.1/published/publication-verification.json)
+links separate anonymous GitHub, dataset and notebook checks. Kaggle cannot
+preview the PDF inline; its anonymously downloadable copy opens and matches the
+reviewed manuscript. The public GitHub PDF renders identically to the inspected
+disclosure page. Hosting reanalyzes saved observations, without native reacquisition.
+
+## Historical v0.1.0 public verification
+
 The v0.1.0 public research release uses dataset **version 2** and notebook **version 3**
 (script version `363362772`). The fresh CPU/offline Save & Run All completed
 successfully in 111.4 seconds. Public source cells match the reviewed candidate;

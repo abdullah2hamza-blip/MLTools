@@ -1,0 +1,550 @@
+{
+  "archive_checks": {
+    "manuscript-source.zip": {
+      "closed_member_hashes_verified": true,
+      "crc_verified": true,
+      "members": 20,
+      "safe_members": true,
+      "uncompressed_bytes": 269202
+    },
+    "payload.zip": {
+      "closed_member_hashes_verified": true,
+      "crc_verified": true,
+      "members": 270,
+      "safe_members": true,
+      "uncompressed_bytes": 23064438
+    },
+    "research-source.zip": {
+      "closed_member_hashes_verified": true,
+      "crc_verified": true,
+      "members": 1483,
+      "safe_members": true,
+      "uncompressed_bytes": 63913430
+    }
+  },
+  "assets": {
+    "LICENSE": {
+      "bytes": 11357,
+      "github_digest_matches": true,
+      "id": 689822222,
+      "matches_local_release": true,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/LICENSE"
+    },
+    "README.md": {
+      "bytes": 8311,
+      "github_digest_matches": true,
+      "id": 689822503,
+      "matches_local_release": true,
+      "sha256": "963b2311e64c4b38774cd51498fe2af43e0d66c805f01f615cad54eb9fcba99f",
+      "url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/README.md"
+    },
+    "SHA256SUMS": {
+      "bytes": 1174,
+      "github_digest_matches": true,
+      "id": 689822812,
+      "matches_local_release": true,
+      "sha256": "ca52878bc9e1e2f9128cb1f26d541353621777dd75eb419daefe51493edbf896",
+      "url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/SHA256SUMS"
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "bytes": 1856,
+      "github_digest_matches": true,
+      "id": 689822845,
+      "matches_local_release": true,
+      "sha256": "6db2652f51c313e892e6253e32394b9f08fdec4693986981b4080b32c02ab192",
+      "url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/THIRD_PARTY_NOTICES.md"
+    },
+    "conditions.csv": {
+      "bytes": 3175,
+      "github_digest_matches": true,
+      "id": 689822133,
+      "matches_local_release": true,
+      "sha256": "f261b97ce019d83365b78edd2a9ce24375cf6fc19fa998d8c733f2a1d0561398",
+      "url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/conditions.csv"
+    },
+    "dataset-metadata.json": {
+      "bytes": 10746,
+      "github_digest_matches": true,
+      "id": 689822169,
+      "matches_local_release": true,
+      "sha256": "5a134c7a82a7f19c591a51e638179befd2570f1838b338df2fd271e3dd061a48",
+      "url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/dataset-metadata.json"
+    },
+    "kernel-metadata.json": {
+      "bytes": 427,
+      "github_digest_matches": true,
+      "id": 689822192,
+      "matches_local_release": true,
+      "sha256": "87c9f85106c1d221abbd3026ce9b4a05accd6d6140b514401022b343964cd183",
+      "url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/kernel-metadata.json"
+    },
+    "manuscript-source.zip": {
+      "bytes": 168875,
+      "github_digest_matches": true,
+      "id": 689822242,
+      "matches_local_release": true,
+      "sha256": "6b600dac55d858d4717b25534e6ec5e04de204b75455b884af88998aba36a7c6",
+      "url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/manuscript-source.zip"
+    },
+    "manuscript.pdf": {
+      "bytes": 128804,
+      "github_digest_matches": true,
+      "id": 689822297,
+      "matches_local_release": true,
+      "sha256": "5071201992408cdadb2348071611770cd5cbbe26395c4b0b5e90fa08a414519f",
+      "url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/manuscript.pdf"
+    },
+    "payload.zip": {
+      "bytes": 1965280,
+      "github_digest_matches": true,
+      "id": 689822328,
+      "matches_local_release": true,
+      "sha256": "998dd81b7b7a253636e4b0ec35a4c15e1937008fc977bafda2966e5ac8c3013e",
+      "url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/payload.zip"
+    },
+    "public-release-manifest.json": {
+      "bytes": 243783,
+      "github_digest_matches": true,
+      "id": 689822445,
+      "matches_local_release": true,
+      "sha256": "16380b98401e050d42fcb77ec497cb522ee9c058f2f59ecf9d9ac328a806db87",
+      "url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/public-release-manifest.json"
+    },
+    "release-lock.json": {
+      "bytes": 2180,
+      "github_digest_matches": true,
+      "id": 689822535,
+      "matches_local_release": true,
+      "sha256": "0873e7ff3ba38d95e213e242cdde8f673de168bc6ec17693d825d1626ddf456e",
+      "url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/release-lock.json"
+    },
+    "release-manifest.json": {
+      "bytes": 1690,
+      "github_digest_matches": true,
+      "id": 689822558,
+      "matches_local_release": true,
+      "sha256": "e50d78760580ed499af44cf652349889515faa0da455ffddc9eaf835caedbe26",
+      "url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/release-manifest.json"
+    },
+    "replay.ipynb": {
+      "bytes": 14048,
+      "github_digest_matches": true,
+      "id": 689822608,
+      "matches_local_release": true,
+      "sha256": "ea7cdb0597d83446082b507418d8ee41705085bbd2fcda8624f3ee896bea068e",
+      "url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/replay.ipynb"
+    },
+    "research-source.zip": {
+      "bytes": 7548444,
+      "github_digest_matches": true,
+      "id": 689822649,
+      "matches_local_release": true,
+      "sha256": "54ab4005c47f21f12813a8bf1f3b1ad96deabd6a9a7648f12265f62da68cf3ff",
+      "url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/research-source.zip"
+    }
+  },
+  "authentication": {
+    "authorization_header": false,
+    "cookies": false,
+    "environment_proxy_credentials": false,
+    "git_credential_helper": false,
+    "netrc": false
+  },
+  "checked_at_utc": "2026-10-29T20:31:51.086093+00:00",
+  "checksum_closure": {
+    "all_match": true,
+    "non_self_referential_file_count": 14,
+    "sha256sums_matches_local": true
+  },
+  "default_branch": "main",
+  "default_branch_commit": "624890159aafc52e69ad8f3166ab4d80b943dd3b",
+  "expected_commit": "624890159aafc52e69ad8f3166ab4d80b943dd3b",
+  "frozen_archive_closure": {
+    "match_frozen_hashes": true,
+    "protected_files": 406
+  },
+  "http_checks": {
+    "actions_artifacts": {
+      "bytes": 32,
+      "content_type": "application/json; charset=utf-8",
+      "final_host": "api.github.com",
+      "redirected": false,
+      "requested_url": "https://api.github.com/repos/abdullah2hamza-blip/MLTools/actions/artifacts?per_page=100",
+      "sha256": "244563f989470892c537c9a4622920af0d228ee4528f7d00c64a06d6cd95856c",
+      "status": 200,
+      "wall_seconds": 0.2942435999866575
+    },
+    "annotated_tag_60997d0c9ea0345f64dddd33e0065329f406b7a2": {
+      "bytes": 761,
+      "content_type": "application/json; charset=utf-8",
+      "final_host": "api.github.com",
+      "redirected": false,
+      "requested_url": "https://api.github.com/repos/abdullah2hamza-blip/MLTools/git/tags/60997d0c9ea0345f64dddd33e0065329f406b7a2",
+      "sha256": "e3db55ac51747fba470f1c5b73d68df6928e2574f574a55047492492df1f36ad",
+      "status": 200,
+      "wall_seconds": 0.29013369989115745
+    },
+    "asset_LICENSE": {
+      "bytes": 11357,
+      "content_type": "application/octet-stream",
+      "final_host": "release-assets.githubusercontent.com",
+      "redirected": true,
+      "requested_url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "status": 200,
+      "wall_seconds": 0.4522669999860227
+    },
+    "asset_README.md": {
+      "bytes": 8311,
+      "content_type": "application/octet-stream",
+      "final_host": "release-assets.githubusercontent.com",
+      "redirected": true,
+      "requested_url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/README.md",
+      "sha256": "963b2311e64c4b38774cd51498fe2af43e0d66c805f01f615cad54eb9fcba99f",
+      "status": 200,
+      "wall_seconds": 0.4301527999341488
+    },
+    "asset_SHA256SUMS": {
+      "bytes": 1174,
+      "content_type": "application/octet-stream",
+      "final_host": "release-assets.githubusercontent.com",
+      "redirected": true,
+      "requested_url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/SHA256SUMS",
+      "sha256": "ca52878bc9e1e2f9128cb1f26d541353621777dd75eb419daefe51493edbf896",
+      "status": 200,
+      "wall_seconds": 0.5435613999143243
+    },
+    "asset_THIRD_PARTY_NOTICES.md": {
+      "bytes": 1856,
+      "content_type": "application/octet-stream",
+      "final_host": "release-assets.githubusercontent.com",
+      "redirected": true,
+      "requested_url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/THIRD_PARTY_NOTICES.md",
+      "sha256": "6db2652f51c313e892e6253e32394b9f08fdec4693986981b4080b32c02ab192",
+      "status": 200,
+      "wall_seconds": 0.47147460002452135
+    },
+    "asset_conditions.csv": {
+      "bytes": 3175,
+      "content_type": "application/octet-stream",
+      "final_host": "release-assets.githubusercontent.com",
+      "redirected": true,
+      "requested_url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/conditions.csv",
+      "sha256": "f261b97ce019d83365b78edd2a9ce24375cf6fc19fa998d8c733f2a1d0561398",
+      "status": 200,
+      "wall_seconds": 0.6844792000483721
+    },
+    "asset_dataset-metadata.json": {
+      "bytes": 10746,
+      "content_type": "application/octet-stream",
+      "final_host": "release-assets.githubusercontent.com",
+      "redirected": true,
+      "requested_url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/dataset-metadata.json",
+      "sha256": "5a134c7a82a7f19c591a51e638179befd2570f1838b338df2fd271e3dd061a48",
+      "status": 200,
+      "wall_seconds": 0.536418000003323
+    },
+    "asset_kernel-metadata.json": {
+      "bytes": 427,
+      "content_type": "application/octet-stream",
+      "final_host": "release-assets.githubusercontent.com",
+      "redirected": true,
+      "requested_url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/kernel-metadata.json",
+      "sha256": "87c9f85106c1d221abbd3026ce9b4a05accd6d6140b514401022b343964cd183",
+      "status": 200,
+      "wall_seconds": 0.7838235999224707
+    },
+    "asset_manuscript-source.zip": {
+      "bytes": 168875,
+      "content_type": "application/octet-stream",
+      "final_host": "release-assets.githubusercontent.com",
+      "redirected": true,
+      "requested_url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/manuscript-source.zip",
+      "sha256": "6b600dac55d858d4717b25534e6ec5e04de204b75455b884af88998aba36a7c6",
+      "status": 200,
+      "wall_seconds": 0.8349555999739096
+    },
+    "asset_manuscript.pdf": {
+      "bytes": 128804,
+      "content_type": "application/octet-stream",
+      "final_host": "release-assets.githubusercontent.com",
+      "redirected": true,
+      "requested_url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/manuscript.pdf",
+      "sha256": "5071201992408cdadb2348071611770cd5cbbe26395c4b0b5e90fa08a414519f",
+      "status": 200,
+      "wall_seconds": 0.7928550000069663
+    },
+    "asset_payload.zip": {
+      "bytes": 1965280,
+      "content_type": "application/octet-stream",
+      "final_host": "release-assets.githubusercontent.com",
+      "redirected": true,
+      "requested_url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/payload.zip",
+      "sha256": "998dd81b7b7a253636e4b0ec35a4c15e1937008fc977bafda2966e5ac8c3013e",
+      "status": 200,
+      "wall_seconds": 1.1639975999714807
+    },
+    "asset_public-release-manifest.json": {
+      "bytes": 243783,
+      "content_type": "application/octet-stream",
+      "final_host": "release-assets.githubusercontent.com",
+      "redirected": true,
+      "requested_url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/public-release-manifest.json",
+      "sha256": "16380b98401e050d42fcb77ec497cb522ee9c058f2f59ecf9d9ac328a806db87",
+      "status": 200,
+      "wall_seconds": 0.9798668998992071
+    },
+    "asset_release-lock.json": {
+      "bytes": 2180,
+      "content_type": "application/octet-stream",
+      "final_host": "release-assets.githubusercontent.com",
+      "redirected": true,
+      "requested_url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/release-lock.json",
+      "sha256": "0873e7ff3ba38d95e213e242cdde8f673de168bc6ec17693d825d1626ddf456e",
+      "status": 200,
+      "wall_seconds": 0.6418456999817863
+    },
+    "asset_release-manifest.json": {
+      "bytes": 1690,
+      "content_type": "application/octet-stream",
+      "final_host": "release-assets.githubusercontent.com",
+      "redirected": true,
+      "requested_url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/release-manifest.json",
+      "sha256": "e50d78760580ed499af44cf652349889515faa0da455ffddc9eaf835caedbe26",
+      "status": 200,
+      "wall_seconds": 0.5005135999526829
+    },
+    "asset_replay.ipynb": {
+      "bytes": 14048,
+      "content_type": "application/octet-stream",
+      "final_host": "release-assets.githubusercontent.com",
+      "redirected": true,
+      "requested_url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/replay.ipynb",
+      "sha256": "ea7cdb0597d83446082b507418d8ee41705085bbd2fcda8624f3ee896bea068e",
+      "status": 200,
+      "wall_seconds": 0.7017293999670073
+    },
+    "asset_research-source.zip": {
+      "bytes": 7548444,
+      "content_type": "application/octet-stream",
+      "final_host": "release-assets.githubusercontent.com",
+      "redirected": true,
+      "requested_url": "https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/research-source.zip",
+      "sha256": "54ab4005c47f21f12813a8bf1f3b1ad96deabd6a9a7648f12265f62da68cf3ff",
+      "status": 200,
+      "wall_seconds": 1.4509999000001699
+    },
+    "branch_protection": {
+      "requested_url": "https://api.github.com/repos/abdullah2hamza-blip/MLTools/branches/main/protection",
+      "scope": "Anonymous public endpoint read; inaccessible is recorded rather than inferred",
+      "status": 401,
+      "wall_seconds": 0.39003679994493723
+    },
+    "default_branch": {
+      "bytes": 4104,
+      "content_type": "application/json; charset=utf-8",
+      "final_host": "api.github.com",
+      "redirected": false,
+      "requested_url": "https://api.github.com/repos/abdullah2hamza-blip/MLTools/branches/main",
+      "sha256": "75373cc68f95b8a5656a3bb64209b8607bcad2f0d54708b9095f1b276c5524a0",
+      "status": 200,
+      "wall_seconds": 0.34921190002933145
+    },
+    "release_api": {
+      "bytes": 29510,
+      "content_type": "application/json; charset=utf-8",
+      "final_host": "api.github.com",
+      "redirected": false,
+      "requested_url": "https://api.github.com/repos/abdullah2hamza-blip/MLTools/releases/tags/v0.1.1",
+      "sha256": "c915c9d2286c40a2095994b23a9e2630afd989d13ec74f1437d564c23b629b81",
+      "status": 200,
+      "wall_seconds": 0.41650509997271
+    },
+    "release_html": {
+      "bytes": 157319,
+      "content_type": "text/html; charset=utf-8",
+      "final_host": "github.com",
+      "redirected": false,
+      "requested_url": "https://github.com/abdullah2hamza-blip/MLTools/releases/tag/v0.1.1",
+      "sha256": "a75929e3c6b74bb899e6ba7544f4f5bd4bbeadfcc85c798e8d1876de817a3225",
+      "status": 200,
+      "wall_seconds": 0.7575823001097888
+    },
+    "repo_api": {
+      "bytes": 5686,
+      "content_type": "application/json; charset=utf-8",
+      "final_host": "api.github.com",
+      "redirected": false,
+      "requested_url": "https://api.github.com/repos/abdullah2hamza-blip/MLTools",
+      "sha256": "8581eb002d9e76ef8e4fd93b2fe7b708e6ea5107e5d7c6c8980682b1cf3a108f",
+      "status": 200,
+      "wall_seconds": 0.9019856000086293
+    },
+    "repo_html": {
+      "bytes": 283700,
+      "content_type": "text/html; charset=utf-8",
+      "final_host": "github.com",
+      "redirected": false,
+      "requested_url": "https://github.com/abdullah2hamza-blip/MLTools",
+      "sha256": "f5c1bcc0faebb679766c0aff192cb1fd35fad2b0765ea76ac290a761dc96213e",
+      "status": 200,
+      "wall_seconds": 0.9891690000658855
+    },
+    "rulesets": {
+      "bytes": 2,
+      "content_type": "application/json; charset=utf-8",
+      "final_host": "api.github.com",
+      "redirected": false,
+      "requested_url": "https://api.github.com/repos/abdullah2hamza-blip/MLTools/rulesets?includes_parents=true",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "status": 200,
+      "wall_seconds": 0.42980749998241663
+    },
+    "source_.github/workflows/conformance.yml": {
+      "bytes": 2862,
+      "content_type": "text/plain; charset=utf-8",
+      "final_host": "raw.githubusercontent.com",
+      "redirected": false,
+      "requested_url": "https://raw.githubusercontent.com/abdullah2hamza-blip/MLTools/v0.1.1/.github/workflows/conformance.yml",
+      "sha256": "981842cffe2a24b4f1d61188332102f101ac14cf976d7827545a85b76c174ab6",
+      "status": 200,
+      "wall_seconds": 0.27074050006922334
+    },
+    "source_releases/kaggle/publish.py": {
+      "bytes": 35753,
+      "content_type": "text/plain; charset=utf-8",
+      "final_host": "raw.githubusercontent.com",
+      "redirected": false,
+      "requested_url": "https://raw.githubusercontent.com/abdullah2hamza-blip/MLTools/v0.1.1/releases/kaggle/publish.py",
+      "sha256": "2ef156bb537985f38ff3e202aeae11b05c2e743953f3c23cdad963dab14d10f5",
+      "status": 200,
+      "wall_seconds": 0.3231726000085473
+    },
+    "source_releases/publication/bundle.py": {
+      "bytes": 13367,
+      "content_type": "text/plain; charset=utf-8",
+      "final_host": "raw.githubusercontent.com",
+      "redirected": false,
+      "requested_url": "https://raw.githubusercontent.com/abdullah2hamza-blip/MLTools/v0.1.1/releases/publication/bundle.py",
+      "sha256": "cfefc52231fa05026d9f08d2a9d42636b43ba9505974d933aea03b689a9aad8c",
+      "status": 200,
+      "wall_seconds": 0.2539435001090169
+    },
+    "source_releases/publication/publication_guard.py": {
+      "bytes": 8323,
+      "content_type": "text/plain; charset=utf-8",
+      "final_host": "raw.githubusercontent.com",
+      "redirected": false,
+      "requested_url": "https://raw.githubusercontent.com/abdullah2hamza-blip/MLTools/v0.1.1/releases/publication/publication_guard.py",
+      "sha256": "66e744f2ba1478b5e0db2f05d386b67e9c8b7718747b58289334cd694fc92e6c",
+      "status": 200,
+      "wall_seconds": 0.2649558000266552
+    },
+    "tag_ref": {
+      "bytes": 349,
+      "content_type": "application/json; charset=utf-8",
+      "final_host": "api.github.com",
+      "redirected": false,
+      "requested_url": "https://api.github.com/repos/abdullah2hamza-blip/MLTools/git/ref/tags/v0.1.1",
+      "sha256": "e673d4268edc88e896685d8a71e65de712e7a8361b58833edb45561a207cdeaf",
+      "status": 200,
+      "wall_seconds": 0.31928990001324564
+    },
+    "workflow_runs": {
+      "bytes": 36,
+      "content_type": "application/json; charset=utf-8",
+      "final_host": "api.github.com",
+      "redirected": false,
+      "requested_url": "https://api.github.com/repos/abdullah2hamza-blip/MLTools/actions/runs?per_page=100",
+      "sha256": "a2790a384d7d281e7395679000c35d27768d89dbd7052f725b8f4688beb59915",
+      "status": 200,
+      "wall_seconds": 0.4006936999503523
+    },
+    "workflows": {
+      "bytes": 554,
+      "content_type": "application/json; charset=utf-8",
+      "final_host": "api.github.com",
+      "redirected": false,
+      "requested_url": "https://api.github.com/repos/abdullah2hamza-blip/MLTools/actions/workflows",
+      "sha256": "ad047766d589068a020cae641bf7f9336e961689699a44c2d8427e00748edc75",
+      "status": 200,
+      "wall_seconds": 0.33801080007106066
+    }
+  },
+  "limitations": [
+    "Public unauthenticated settings APIs can withhold branch protection details; no security-setting inference is made from denied endpoints.",
+    "This checks released byte identity and saved-evidence closure, not fresh native experimental acquisition."
+  ],
+  "manuscript": {
+    "ai_disclosure_present": true,
+    "metadata": {
+      "/CreationDate": "D:20261023161728-00'00'",
+      "/Creator": "LaTeX with hyperref",
+      "/Producer": "xdvipdfmx (0.1)"
+    },
+    "opens": true,
+    "pages": 13,
+    "sha256": "5071201992408cdadb2348071611770cd5cbbe26395c4b0b5e90fa08a414519f",
+    "title_present": true,
+    "unresolved_reference_markers": 0
+  },
+  "public_settings_checks": {
+    "actions_artifacts": {
+      "accessible": true,
+      "states": [],
+      "total_count": 0
+    },
+    "branch_protection": {
+      "accessible": false,
+      "status": 401
+    },
+    "rulesets": {
+      "accessible": true,
+      "ruleset_count": 0
+    },
+    "workflow_runs": {
+      "accessible": true,
+      "states": [],
+      "total_count": 0
+    },
+    "workflows": {
+      "accessible": true,
+      "states": [
+        "active"
+      ],
+      "total_count": 1
+    }
+  },
+  "release": {
+    "draft": false,
+    "id": 428363031,
+    "prerelease": false,
+    "published_at": "2026-10-29T20:30:36Z",
+    "url": "https://github.com/abdullah2hamza-blip/MLTools/releases/tag/v0.1.1"
+  },
+  "repository": "https://github.com/abdullah2hamza-blip/MLTools",
+  "schema_version": 1,
+  "status": "UNAUTHENTICATED_PUBLIC_GITHUB_RELEASE_VERIFIED",
+  "tag": "v0.1.1",
+  "tag_resolved_commit": "624890159aafc52e69ad8f3166ab4d80b943dd3b",
+  "tagged_source_checks": {
+    ".github/workflows/conformance.yml": {
+      "matches_local_tag_and_worktree": true,
+      "sha256": "981842cffe2a24b4f1d61188332102f101ac14cf976d7827545a85b76c174ab6"
+    },
+    "releases/kaggle/publish.py": {
+      "matches_local_tag_and_worktree": true,
+      "sha256": "2ef156bb537985f38ff3e202aeae11b05c2e743953f3c23cdad963dab14d10f5"
+    },
+    "releases/publication/bundle.py": {
+      "matches_local_tag_and_worktree": true,
+      "sha256": "cfefc52231fa05026d9f08d2a9d42636b43ba9505974d933aea03b689a9aad8c"
+    },
+    "releases/publication/publication_guard.py": {
+      "matches_local_tag_and_worktree": true,
+      "sha256": "66e744f2ba1478b5e0db2f05d386b67e9c8b7718747b58289334cd694fc92e6c"
+    }
+  },
+  "visibility": "public"
+}

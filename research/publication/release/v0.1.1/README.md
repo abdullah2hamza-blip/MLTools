@@ -19,3 +19,13 @@ Preparation, local validation and hosted/public verification are separate record
 in this directory. Historical v0.1.0 receipts apply to their original versions.
 No model weights, recordings, paid training, hardware experiments or venue
 submission are part of this update.
+
+The [public GitHub release](https://github.com/abdullah2hamza-blip/MLTools/releases/tag/v0.1.1)
+is pinned to `624890159aafc52e69ad8f3166ab4d80b943dd3b`. The existing public
+[dataset](https://www.kaggle.com/datasets/abdullah2hamza/boundary-conformance-replay)
+is version 3; the [notebook](https://www.kaggle.com/code/abdullah2hamza/boundary-conformance-replay-notebook?scriptVersionId=363613581)
+is version 4, successfully executed in 62.8 seconds. The
+[publication receipt](published/publication-verification.json) records all
+deliverable classifications, exact versions, anonymous checks, exclusions and
+the platform's inline-PDF-preview limitation. Later receipt/documentation commits
+do not replace or move the release tag.

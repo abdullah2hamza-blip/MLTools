@@ -3,12 +3,14 @@
 The [v0.1.1 research release](https://github.com/abdullah2hamza-blip/MLTools/releases/tag/v0.1.1)
 includes the [technical report PDF](https://github.com/abdullah2hamza-blip/MLTools/releases/download/v0.1.1/manuscript.pdf),
 editable manuscript and reproducibility supplement. The [Kaggle dataset](https://www.kaggle.com/datasets/abdullah2hamza/boundary-conformance-replay)
-and [public notebook](https://www.kaggle.com/code/abdullah2hamza/boundary-conformance-replay-notebook)
-have separately verified versions recorded in the [publication status](research/publication/release/status.json).
+is version 3; the [public notebook](https://www.kaggle.com/code/abdullah2hamza/boundary-conformance-replay-notebook)
+is version 4, successfully executed on offline CPU in 62.8 seconds. The
+[publication receipt](research/publication/release/v0.1.1/published/publication-verification.json)
+records anonymous verification of all 15 source assets, 1,780 dataset files,
+the notebook's exact nine cells and all eight output files.
 The v0.1.1 disclosure update preserves the research results and the frozen v0.1.0
 library. The [v0.1.0 publication receipt](research/publication/release/published/publication-verification.json)
-remains the historical verification of dataset version 2 and notebook version 3;
-later versions require their own publication receipts.
+remains the historical verification of dataset version 2 and notebook version 3.
 
 The [Kaggle release workflow](releases/kaggle/README.md) builds a licensed,
 privacy-reviewed offline replay dataset and CPU notebook from the frozen study.
