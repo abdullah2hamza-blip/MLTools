@@ -27,7 +27,7 @@ SELECTED = (
 )
 PRIVATE = re.compile(
     r"(?i)(?:[A-Z]:[\\/]Users[\\/]|/Users/|/home/(?:abdul|abdullah)|"
-    r"github\.com/abdullah2hamza-blip/MLTools|KGAT_[A-Za-z0-9]|gh[pousr]_[A-Za-z0-9]{16}|"
+    r"KGAT_[A-Za-z0-9]|gh[pousr]_[A-Za-z0-9]{16}|"
     r"github_pat_[A-Za-z0-9_]{20}|hf_[A-Za-z0-9]{20}|"
     r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----)"
 )

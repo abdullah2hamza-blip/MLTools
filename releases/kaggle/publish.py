@@ -8,6 +8,7 @@ import argparse
 import ast
 import hashlib
 import importlib.metadata
+import importlib.util
 import json
 import os
 import re
@@ -50,6 +51,13 @@ DATASET_FILES = {
     "release-manifest.json",
     "LICENSE",
     "THIRD_PARTY_NOTICES.md",
+}
+SUPPLEMENT_PROFILE = "public_research_supplement_v1"
+SUPPLEMENT_FILES = {
+    "manuscript.pdf",
+    "manuscript-source.zip",
+    "research-source.zip",
+    "public-release-manifest.json",
 }
 NOTEBOOK_FILES = {"kernel-metadata.json", "replay.ipynb"}
 SEMANTIC_OUTPUTS = {
@@ -273,6 +281,14 @@ def check_notebook(raw, payload_sha):
     require(payload_sha in "\n".join(sources), "notebook pins exact payload SHA256")
 
 
+def check_supplement(snapshots, manifest):
+    path = Path(__file__).resolve().parents[1] / "publication/publication_guard.py"
+    spec = importlib.util.spec_from_file_location("mltools_publication_guard", path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module.validate(snapshots, manifest)
+
+
 def validate(root, config):
     """Pure read-only validation. No CLI discovery, imports, auth, or writes."""
     require(isinstance(config, dict), "configuration object")
@@ -309,13 +325,17 @@ def validate(root, config):
     root = Path(root)
     require(root.is_dir() and not root.is_symlink(), "release root directory")
     require({p.name for p in root.iterdir()} == {"dataset", "notebook"}, "closed release root")
-    closed(root / "dataset", DATASET_FILES)
+    manifest = parse(read(root / "dataset/release-manifest.json"))
+    profile = manifest.get("distribution_profile")
+    require(profile in (None, SUPPLEMENT_PROFILE), "known explicit distribution profile")
+    dataset_files = DATASET_FILES | SUPPLEMENT_FILES if profile == SUPPLEMENT_PROFILE else DATASET_FILES
+    closed(root / "dataset", dataset_files)
     closed(root / "notebook", NOTEBOOK_FILES)
     snapshots = {}
-    for folder, names in (("dataset", DATASET_FILES), ("notebook", NOTEBOOK_FILES)):
+    for folder, names in (("dataset", dataset_files), ("notebook", NOTEBOOK_FILES)):
         for name in sorted(names):
             raw = read(root / folder / name, MAX_PAYLOAD if name == "payload.zip" else MAX_FILE)
-            if name != "payload.zip":
+            if name != "payload.zip" and name not in SUPPLEMENT_FILES:
                 privacy(raw, folder + "/" + name)
             snapshots[folder + "/" + name] = raw
     manifest = parse(snapshots["dataset/release-manifest.json"])
@@ -328,7 +348,7 @@ def validate(root, config):
         "release identity",
     )
     expected = hashes(manifest.get("files"), "dataset file hashes")
-    require(set(expected) == DATASET_FILES - {"release-manifest.json"}, "manifest covers every dataset file")
+    require(set(expected) == dataset_files - {"release-manifest.json"}, "manifest covers every dataset file")
     require(
         all(digest(snapshots["dataset/" + n]) == sha for n, sha in expected.items()), "dataset byte hashes"
     )
@@ -410,6 +430,7 @@ def validate(root, config):
     )
     check_notebook(snapshots["notebook/replay.ipynb"], payload_sha)
     members = check_payload(root / "dataset/payload.zip")
+    supplement = check_supplement(snapshots, manifest) if profile == SUPPLEMENT_PROFILE else None
     pending = config["license"] is None or not config["license_approved"]
     identity = {n: digest(raw) for n, raw in sorted(snapshots.items())}
     return {
@@ -422,6 +443,7 @@ def validate(root, config):
         "ready": not pending,
         "blockers": ["License approval is pending"] if pending else [],
         "expected_replay_outputs": replay,
+        **({"public_supplement": supplement} if supplement is not None else {}),
     }
 
 

@@ -93,6 +93,13 @@ def test_privacy_scan(text):
         build.privacy(text.encode(), "fixture")
 
 
+def test_public_repository_link_does_not_allow_embedded_credentials():
+    public = b"https://github.com/abdullah2hamza-blip/MLTools"
+    build.privacy(public, "public citation")
+    with pytest.raises(ValueError):
+        build.privacy(public + b"?token=KGAT_" + b"a" * 32, "credential-bearing link")
+
+
 def test_zip_is_deterministic():
     assert build.make_zip({"b": b"2", "a": b"1"}) == build.make_zip({"a": b"1", "b": b"2"})
 

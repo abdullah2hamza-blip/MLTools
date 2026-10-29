@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite this versioned software and research artifact. The included manuscript is a technical report, not a peer-reviewed publication."
+type: software
+title: "MLTools: robot-policy boundary conformance research artifact"
+authors:
+  - name: "MLTools contributors"
+version: 0.1.0
+license: Apache-2.0
+repository-code: "https://github.com/abdullah2hamza-blip/MLTools"
+url: "https://github.com/abdullah2hamza-blip/MLTools/releases"
+abstract: "A bounded comparison of numerical conformance, artifact identity, transport acceptance and missing physical authority, with executable saved-trace replay and an anonymously attributed technical report."
+keywords:
+  - robotics
+  - reproducibility
+  - conformance testing
+  - machine learning

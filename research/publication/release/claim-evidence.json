@@ -1,0 +1,1405 @@
+{
+  "schema_version": 1,
+  "audited_at_utc": "2026-10-29T02:43:51.508458+00:00",
+  "scope": "Headline claims, one table and two figures, ablations and separate software/historical strata in current manuscript. Per-file identities below anchor actual inputs, code and outputs. File globs in result_locations are selectors within the explicitly enumerated evidence sets.",
+  "research_code_revision": "7513755e9627098c3529c46b3ae9a056d76434a5",
+  "release_documentation_revision": "Final release commit/tag is recorded by the release manifest; it must not replace the earlier frozen research-code revision.",
+  "manuscript_sources": [
+    "research/publication/paper/main.tex",
+    "research/publication/paper/article.tex",
+    "research/publication/paper/appendix.tex",
+    "research/publication/paper/references.bib"
+  ],
+  "verification_categories": {
+    "supported_by_traceable_prior_run": "Native observations were acquired earlier with saved producer/package/input/source evidence.",
+    "reproduced_during_this_task_by_saved_output_reanalysis": "Current data-only verifiers and direct independent counts/reference calculations executed; no native observations reacquired.",
+    "unverified": "Physical calibration, learned-policy performance, hardware safety, population performance, human effort and publication acceptance are not established."
+  },
+  "current_reanalysis": "research/publication/release/claim-audit-checks.json",
+  "evidence_sets": {
+    "main": {
+      "observation_type": "native software processor responses to designed numeric inputs; no trained-policy inference",
+      "inputs": [
+        "research/publication/prepared/action-study-001/plan.json",
+        "research/publication/protocol-freeze-001.json",
+        "research/publication/selection/act/act-so101-boccia-center-only/manifest.json",
+        "research/publication/selection/smolvla/edge-inference--smolvla-so101-pick-orange/manifest.json",
+        "research/publication/selection/pi/lianqing11--pi05_libero/manifest.json"
+      ],
+      "code": [
+        "scripts/study_assets.py",
+        "scripts/action_study_common.py",
+        "scripts/action_designs.py",
+        "scripts/action_study_worker.py",
+        "scripts/matched_study_worker.py",
+        "scripts/normalization_profiles.py",
+        "scripts/run_action_study.py",
+        "scripts/query_designs.py",
+        "scripts/normalization_certificate.py",
+        "scripts/publication_analysis.py",
+        "scripts/publication_worker.py",
+        "scripts/publication_protocol.py",
+        "scripts/publication_assets.py",
+        "scripts/publication_network.py",
+        "scripts/run_publication_study.py",
+        "scripts/policy_space_numeric.py",
+        "scripts/policy_space_numeric_worker.py",
+        "src/mltools/obligations.py",
+        "src/mltools/research_oracles.py",
+        "src/mltools/checker.py",
+        "src/mltools/lerobot.py",
+        "src/mltools/_openpi_worker.py",
+        "src/mltools/report.py"
+      ],
+      "configuration": {
+        "plan": "research/publication/prepared/action-study-001/plan.json",
+        "dimensions": [
+          6,
+          6,
+          7,
+          7
+        ],
+        "native_action_bounds": [
+          -0.8,
+          0.8
+        ],
+        "random_seeds": [
+          7,
+          23,
+          101
+        ],
+        "designs_per_condition": 8,
+        "atol": 1e-07,
+        "rtol": 1e-07,
+        "native_replay_and_geometry_allowance": 1e-12,
+        "execution_dtype": "float64",
+        "device": "cpu",
+        "source_statistics_dtype": "F32 controls; F64 injected derivatives"
+      },
+      "raw_outputs": [
+        "research/publication/runs/prospective-001/lerobot.native.json",
+        "research/publication/runs/prospective-001/lerobot_witness.native.json",
+        "research/publication/runs/prospective-001/openpi.native.json",
+        "research/publication/runs/prospective-001/openpi_witness.native.json",
+        "research/publication/runs/prospective-001/policy_space.native.json",
+        "research/publication/runs/prospective-001/robotruth.native.json",
+        "research/publication/runs/prospective-001/lerobot.stdout.txt",
+        "research/publication/runs/prospective-001/lerobot_witness.stdout.txt",
+        "research/publication/runs/prospective-001/openpi.stdout.txt",
+        "research/publication/runs/prospective-001/openpi_witness.stdout.txt",
+        "research/publication/runs/prospective-001/policy_space.stdout.txt",
+        "research/publication/runs/prospective-001/robotruth.stdout.txt",
+        "research/publication/runs/prospective-001/lerobot.stderr.txt",
+        "research/publication/runs/prospective-001/lerobot_witness.stderr.txt",
+        "research/publication/runs/prospective-001/openpi.stderr.txt",
+        "research/publication/runs/prospective-001/openpi_witness.stderr.txt",
+        "research/publication/runs/prospective-001/policy_space.stderr.txt",
+        "research/publication/runs/prospective-001/robotruth.stderr.txt"
+      ],
+      "administrative_evidence": [
+        "research/publication/runs/prospective-001/summary.json",
+        "research/publication/runs/prospective-001/lerobot.request.json",
+        "research/publication/runs/prospective-001/lerobot_witness.request.json",
+        "research/publication/runs/prospective-001/openpi.request.json",
+        "research/publication/runs/prospective-001/openpi_witness.request.json",
+        "research/publication/runs/prospective-001/policy_space.request.json",
+        "research/publication/runs/prospective-001/robotruth.request.json",
+        "research/publication/runs/prospective-001/lerobot.receipt.json",
+        "research/publication/runs/prospective-001/lerobot_witness.receipt.json",
+        "research/publication/runs/prospective-001/openpi.receipt.json",
+        "research/publication/runs/prospective-001/openpi_witness.receipt.json",
+        "research/publication/runs/prospective-001/policy_space.receipt.json",
+        "research/publication/runs/prospective-001/robotruth.receipt.json",
+        "research/publication/runs/prospective-001/lerobot.claim.json",
+        "research/publication/runs/prospective-001/lerobot_witness.claim.json",
+        "research/publication/runs/prospective-001/openpi.claim.json",
+        "research/publication/runs/prospective-001/openpi_witness.claim.json",
+        "research/publication/runs/prospective-001/policy_space.claim.json",
+        "research/publication/runs/prospective-001/robotruth.claim.json",
+        "research/publication/runs/prospective-001/attempt-start.json"
+      ],
+      "derived_outputs": [
+        "research/publication/runs/prospective-001/analysis.json",
+        "research/publication/runs/prospective-001/metrics.json",
+        "research/publication/runs/prospective-001/witnesses.json",
+        "research/publication/runs/prospective-001/workflow-analysis.json",
+        "research/publication/runs/prospective-001/conditions.csv"
+      ],
+      "code_revision": "7513755e9627098c3529c46b3ae9a056d76434a5",
+      "publisher_versions": {
+        "act_boccia_lerobot": {
+          "model": "yutofujita/act-so101-boccia-center-only",
+          "revision": "16e80dfa6c37f53f319a3d2c98eca12bb5006fbb",
+          "framework": "lerobot"
+        },
+        "smolvla_orange_lerobot": {
+          "model": "edge-inference/smolvla-so101-pick-orange",
+          "revision": "71cf4a9d35ce317f6706efe1a9f9d4cbb2b8fb4d",
+          "framework": "lerobot"
+        },
+        "pi05_libero_lerobot": {
+          "model": "lianqing11/pi05_libero",
+          "revision": "dacdd57a16713e7273b97943ce95ee3539763b1a",
+          "framework": "lerobot"
+        },
+        "pi05_libero_openpi_transport": {
+          "model": "lianqing11/pi05_libero",
+          "revision": "dacdd57a16713e7273b97943ce95ee3539763b1a",
+          "framework": "openpi"
+        }
+      },
+      "framework_versions": {
+        "lerobot": "5517a326eeb9b457cfe07d59b9bfdf291799c8d9",
+        "openpi": "215abfb217dbac7d5f1273282331b9b1866c0479"
+      },
+      "environment_profiles": "research/publication/protocol-freeze-001.json#/native_environments; package inventories in native raw outputs",
+      "verification": [
+        "main_original",
+        "main_clean"
+      ],
+      "original_acquisition_commands": "Exact prior executable arguments and environment identities are retained in per-phase request/receipt records; reacquisition in a NEW isolated freeze checkout is documented in research/publication/reproduction/README.md.",
+      "reporting_command": "python research/publication/reporting/build_results.py",
+      "reporting_environment": "research/publication/reporting/requirements.lock",
+      "reporting_code": "research/publication/reporting/build_results.py",
+      "publication_outputs": [
+        "research/publication/paper/generated/facts.json",
+        "research/publication/paper/generated/claims.tex",
+        "research/publication/paper/generated/outcomes.tex",
+        "research/publication/paper/generated/authority-ablation.pdf",
+        "research/publication/paper/generated/authority-ablation.png",
+        "research/publication/paper/generated/witness-cost.pdf",
+        "research/publication/paper/generated/witness-cost.png",
+        "research/publication/paper/generated/manifest.json"
+      ]
+    },
+    "stateful": {
+      "observation_type": "retrospective/development native software execution with explicitly authored fixtures; repeated measurements",
+      "inputs": [
+        "validation/stateful-comparison-001/inputs/plan.json",
+        "validation/stateful-comparison-001/inputs/absolute_body.bundle.json",
+        "validation/stateful-comparison-001/inputs/absolute_body.compiled-witness.bundle.json",
+        "validation/stateful-comparison-001/inputs/absolute_body.old-witness.bundle.json",
+        "validation/stateful-comparison-001/inputs/control.bundle.json",
+        "validation/stateful-comparison-001/inputs/missing_authority.bundle.json",
+        "validation/stateful-comparison-001/inputs/missing_controller_units.bundle.json",
+        "validation/stateful-comparison-001/inputs/moving_anchor.bundle.json",
+        "validation/stateful-comparison-001/inputs/moving_anchor.compiled-witness.bundle.json",
+        "validation/stateful-comparison-001/inputs/moving_anchor.old-witness.bundle.json",
+        "validation/stateful-comparison-001/inputs/relative_gripper.bundle.json",
+        "validation/stateful-comparison-001/inputs/relative_gripper.compiled-witness.bundle.json",
+        "validation/stateful-comparison-001/inputs/relative_gripper.old-witness.bundle.json",
+        "validation/stateful-comparison-001/inputs/wrong_controller_units.bundle.json",
+        "validation/stateful-comparison-001/inputs/wrong_stats.bundle.json",
+        "validation/stateful-comparison-001/inputs/wrong_stats.compiled-witness.bundle.json",
+        "validation/stateful-comparison-001/inputs/wrong_stats.old-witness.bundle.json"
+      ],
+      "code": [
+        "scripts/compare_stateful_development.py",
+        "scripts/stateful_fixtures.py",
+        "scripts/stateful_comparison_worker.py",
+        "src/mltools/checker.py",
+        "src/mltools/obligations.py"
+      ],
+      "outputs": [
+        "validation/stateful-comparison-001/summary.json",
+        "validation/stateful-comparison-001/full.capture.json",
+        "validation/stateful-comparison-001/witness.capture.json",
+        "validation/stateful-comparison-001/timings.json"
+      ],
+      "random_seeds": [],
+      "seed_scope": "Deterministic authored fixture; no random training or independent test subjects",
+      "verification": [
+        "stateful"
+      ],
+      "code_revision_scope": "Exact producer SHA-256s in prior summaries/requests; current files also belong to the committed main freeze. Do not relabel the earlier runs as prospectively acquired under that later freeze."
+    },
+    "lerobot_history": {
+      "observation_type": "retrospective/development native software execution with explicitly authored fixtures; repeated measurements",
+      "inputs": [
+        "uv.lock",
+        "integrations/lerobot-history/README.md",
+        "research/publication/lerobot-history.md"
+      ],
+      "code": [
+        "scripts/reproduce_lerobot_history.py",
+        "scripts/lerobot_history_worker.py"
+      ],
+      "outputs": [
+        "validation/lerobot-history-001/summary.json",
+        "validation/lerobot-history-001/before.json",
+        "validation/lerobot-history-001/after.json"
+      ],
+      "random_seeds": [],
+      "seed_scope": "Deterministic authored fixture; no random training or independent test subjects",
+      "verification": [
+        "lerobot_history"
+      ],
+      "code_revision_scope": "Exact producer SHA-256s in prior summaries/requests; current files also belong to the committed main freeze. Do not relabel the earlier runs as prospectively acquired under that later freeze."
+    },
+    "openpi_history": {
+      "observation_type": "retrospective/development native software execution with explicitly authored fixtures; repeated measurements",
+      "inputs": [
+        "validation/openpi-history-001/contract.json",
+        "integrations/openpi-history/fixture.json",
+        "integrations/openpi-history/sources.json",
+        "integrations/openpi-history/requirements.lock",
+        "research/publication/openpi-history.md"
+      ],
+      "code": [
+        "scripts/reproduce_openpi_history.py",
+        "scripts/openpi_history_worker.py"
+      ],
+      "outputs": [
+        "validation/openpi-history-001/summary.json",
+        "validation/openpi-history-001/before.trace.json",
+        "validation/openpi-history-001/after.trace.json",
+        "validation/openpi-history-001/before-witness.trace.json",
+        "validation/openpi-history-001/before.analysis.json",
+        "validation/openpi-history-001/after.analysis.json",
+        "validation/openpi-history-001/before-witness.analysis.json"
+      ],
+      "random_seeds": [],
+      "seed_scope": "Deterministic authored fixture; no random training or independent test subjects",
+      "verification": [
+        "openpi_history"
+      ],
+      "code_revision_scope": "Exact producer SHA-256s in prior summaries/requests; current files also belong to the committed main freeze. Do not relabel the earlier runs as prospectively acquired under that later freeze."
+    },
+    "panda": {
+      "observation_type": "retrospective/development native software execution with explicitly authored fixtures; repeated measurements",
+      "inputs": [
+        "validation/panda-software-001/inputs.json",
+        "validation/panda-software-001/request.json",
+        "integrations/panda/distribution.json",
+        "integrations/panda/requirements.lock"
+      ],
+      "code": [
+        "scripts/panda_reference.py",
+        "scripts/panda_worker.py",
+        "scripts/validate_panda.py",
+        "scripts/compare_panda_reproduction.py"
+      ],
+      "outputs": [
+        "validation/panda-software-001/summary.json",
+        "validation/panda-software-001/capture.json",
+        "validation/panda-software-001/analysis.json",
+        "validation/panda-software-001/native.stdout.txt",
+        "validation/panda-software-001/native.stderr.txt"
+      ],
+      "random_seeds": [
+        2026
+      ],
+      "seed_scope": "Environment construction seed 2026; deterministic authored controller/rotation/gripper fixtures. No policy training, physics stepping or independently sampled episodes.",
+      "verification": [
+        "panda",
+        "panda_clean"
+      ],
+      "code_revision_scope": "Exact producer SHA-256s in prior summaries/requests; current files also belong to the committed main freeze. Do not relabel the earlier runs as prospectively acquired under that later freeze.",
+      "clean_evidence": [
+        "validation/panda-software-reproduction-001/summary.json",
+        "validation/panda-software-reproduction-001/inputs.json",
+        "validation/panda-software-reproduction-001/request.json",
+        "validation/panda-software-reproduction-001/capture.json",
+        "validation/panda-software-reproduction-001/analysis.json"
+      ],
+      "configuration": {
+        "fixture": "validation/panda-software-001/inputs.json",
+        "robosuite": "1.4.1",
+        "mujoco": "2.3.7",
+        "source_semantics_revision": "fbee5844ff5632f5b5698e204ec5357ca50be0df"
+      }
+    }
+  },
+  "claims": [
+    {
+      "id": "main_units_and_budget",
+      "claim": "Three source-artifact groups, four cells, sixteen actual conditions, eight derived views and eight equal-budget geometries; 1792 primary, 896 auxiliary, 16 shared fresh native calls",
+      "manuscript_locator": "Abstract; Sections 4.2, 4.3; Appendix B",
+      "evidence_sets": [
+        "main"
+      ],
+      "result_locations": [
+        "research/publication/prepared/action-study-001/plan.json#/cells",
+        "research/publication/runs/prospective-001/metrics.json#/counts",
+        "research/publication/paper/generated/facts.json#/counts"
+      ],
+      "empirical_evidence_category": "supported_by_traceable_prior_run",
+      "current_task_verification_category": "reproduced_during_this_task_by_saved_output_reanalysis",
+      "full_native_experiment_repeated_during_this_task": false,
+      "value": {
+        "primary": 1792,
+        "auxiliary": 896,
+        "fresh": 16
+      },
+      "interpretation_limit": "Nested PI transport, conditions, seeds and queries are repeated/dependency-linked measurements, not independent checkpoint trials."
+    },
+    {
+      "id": "main_table_1",
+      "claim": "Each of four cells: three injected FAIL, zero control FAIL, two derived UNKNOWN, six physical UNKNOWN",
+      "manuscript_locator": "Table 1, label tab:outcomes; Section 5.1",
+      "evidence_sets": [
+        "main"
+      ],
+      "result_locations": [
+        "research/publication/runs/prospective-001/conditions.csv",
+        "research/publication/runs/prospective-001/metrics.json#/cells",
+        "research/publication/paper/generated/outcomes.tex"
+      ],
+      "empirical_evidence_category": "supported_by_traceable_prior_run",
+      "current_task_verification_category": "reproduced_during_this_task_by_saved_output_reanalysis",
+      "full_native_experiment_repeated_during_this_task": false,
+      "value": {
+        "PASS": 4,
+        "FAIL": 12,
+        "UNKNOWN": 8
+      },
+      "interpretation_limit": "All numerical methods agree under full reference. No population sensitivity/specificity estimate."
+    },
+    {
+      "id": "main_numerical_parity",
+      "claim": "Compiled, pointwise and strong relational methods agree on 16 actual conditions and 8 derived views; static numerical/reference roundtrip counts match",
+      "manuscript_locator": "Abstract; Sections 5.1, 5.2; Conclusion",
+      "evidence_sets": [
+        "main"
+      ],
+      "result_locations": [
+        "research/publication/runs/prospective-001/analysis.json#/cells/*/*/numerical_methods",
+        "research/publication/runs/prospective-001/metrics.json#/cells/*/applicable_numeric_workflows"
+      ],
+      "empirical_evidence_category": "supported_by_traceable_prior_run",
+      "current_task_verification_category": "reproduced_during_this_task_by_saved_output_reanalysis",
+      "full_native_experiment_repeated_during_this_task": false,
+      "value": {
+        "independently_recomputed_pointwise": {
+          "PASS": 4,
+          "FAIL": 12
+        },
+        "oracle_disagreements": 0
+      }
+    },
+    {
+      "id": "physical_authority",
+      "claim": "Physical authority UNKNOWN on all 24 actual/derived requested views",
+      "manuscript_locator": "Table 1; Sections 5.1, 6",
+      "evidence_sets": [
+        "main"
+      ],
+      "result_locations": [
+        "research/publication/runs/prospective-001/conditions.csv#physical",
+        "research/publication/runs/prospective-001/analysis.json#/cells/*/*/checkpoint_physical_status"
+      ],
+      "empirical_evidence_category": "supported_by_traceable_prior_run",
+      "current_task_verification_category": "reproduced_during_this_task_by_saved_output_reanalysis",
+      "full_native_experiment_repeated_during_this_task": false,
+      "value": {
+        "UNKNOWN": 24
+      },
+      "interpretation_limit": "Metadata lacks independently calibrated physical authority; this is an evidence gap, not measured hardware failure."
+    },
+    {
+      "id": "figure_1_offset_ablation",
+      "claim": "Offset erasure: compiled/strong retain 8 slope/composition FAIL; pointwise UNKNOWN on 16; pure offsets and controls UNKNOWN",
+      "manuscript_locator": "Figure 1, label fig:authority; Section 5.1",
+      "evidence_sets": [
+        "main"
+      ],
+      "result_locations": [
+        "research/publication/runs/prospective-001/analysis.json#/cells/*/*/ablations/offset_authority_erased",
+        "research/publication/paper/generated/facts.json#/offset_authority_erasure",
+        "research/publication/paper/generated/authority-ablation.pdf"
+      ],
+      "empirical_evidence_category": "supported_by_traceable_prior_run",
+      "current_task_verification_category": "reproduced_during_this_task_by_saved_output_reanalysis",
+      "full_native_experiment_repeated_during_this_task": false,
+      "value": {
+        "compiled_FAIL": 8,
+        "strong_relational_FAIL": 8,
+        "pointwise_UNKNOWN": 16
+      },
+      "interpretation_limit": "Relation-based advantage over pointwise abstention only; no advantage over strong matched relational baseline."
+    },
+    {
+      "id": "complete_reference_ablation",
+      "claim": "Complete independent-reference erasure makes all 3 methods UNKNOWN on 16 actual conditions",
+      "manuscript_locator": "Section 5.1",
+      "evidence_sets": [
+        "main"
+      ],
+      "result_locations": [
+        "research/publication/runs/prospective-001/analysis.json#/cells/*/*/ablations/independent_reference_erased",
+        "research/publication/paper/generated/facts.json#/full_reference_erased_status_counts"
+      ],
+      "empirical_evidence_category": "supported_by_traceable_prior_run",
+      "current_task_verification_category": "reproduced_during_this_task_by_saved_output_reanalysis",
+      "full_native_experiment_repeated_during_this_task": false,
+      "value": {
+        "compiled": {
+          "UNKNOWN": 16
+        },
+        "independent_pointwise": {
+          "UNKNOWN": 16
+        },
+        "strong_relational": {
+          "UNKNOWN": 16
+        }
+      }
+    },
+    {
+      "id": "units_and_provenance_ablations",
+      "claim": "Missing units or authority withholds complete numerical PASS; removing provenance keeps reduced numeric verdict but full binding UNKNOWN",
+      "manuscript_locator": "Sections 4.3, 5.1",
+      "evidence_sets": [
+        "main"
+      ],
+      "result_locations": [
+        "research/publication/runs/prospective-001/analysis.json#/cells/*/output_units_erased",
+        "research/publication/runs/prospective-001/analysis.json#/cells/*/reference_authority_erased",
+        "research/publication/runs/prospective-001/analysis.json#/cells/*/*/ablations/provenance_erased"
+      ],
+      "empirical_evidence_category": "supported_by_traceable_prior_run",
+      "current_task_verification_category": "reproduced_during_this_task_by_saved_output_reanalysis",
+      "full_native_experiment_repeated_during_this_task": false,
+      "interpretation_limit": "Derived control views reuse observations. Provenance-erasure status is deliberately assigned evidence semantics, not an observed native failure."
+    },
+    {
+      "id": "temporal_state_ablation_scope",
+      "claim": "Temporal-state ablation is unavailable for action-only main observations and evaluated separately",
+      "manuscript_locator": "Section 4.3; Section 5.4, Appendix D",
+      "evidence_sets": [
+        "main",
+        "stateful",
+        "panda"
+      ],
+      "result_locations": [
+        "research/publication/runs/prospective-001/analysis.json#/cells/*/*/ablations/state",
+        "validation/stateful-comparison-001/summary.json",
+        "validation/panda-software-001/analysis.json"
+      ],
+      "empirical_evidence_category": "supported_by_traceable_prior_run",
+      "current_task_verification_category": "reproduced_during_this_task_by_saved_output_reanalysis",
+      "full_native_experiment_repeated_during_this_task": false,
+      "interpretation_limit": "Do not score missing state ports as main-study detections or misses."
+    },
+    {
+      "id": "geometry_and_artifact_sensitivity",
+      "claim": "All 8 designs yield 1 control PASS/3 injected FAIL per cell for finite/full-affine statuses; leave-one-artifact-out macro fractions all 1",
+      "manuscript_locator": "Section 5.1",
+      "evidence_sets": [
+        "main"
+      ],
+      "result_locations": [
+        "research/publication/runs/prospective-001/metrics.json#/cells/*/geometry_shared_oracle_counts",
+        "research/publication/runs/prospective-001/metrics.json#/leave_one_artifact_out_macro_detection_fraction"
+      ],
+      "empirical_evidence_category": "supported_by_traceable_prior_run",
+      "current_task_verification_category": "reproduced_during_this_task_by_saved_output_reanalysis",
+      "full_native_experiment_repeated_during_this_task": false,
+      "interpretation_limit": "Descriptive selected-design sensitivity only; structural rank and source-justified affine class do not justify nonlinear or population generalization."
+    },
+    {
+      "id": "self_roundtrip",
+      "claim": "Native candidate self roundtrips consistent in all 16 actual conditions, including 12 changed maps",
+      "manuscript_locator": "Abstract; Section 5.2",
+      "evidence_sets": [
+        "main"
+      ],
+      "result_locations": [
+        "research/publication/runs/prospective-001/lerobot.native.json#/cells/*/*/roundtrips",
+        "research/publication/runs/prospective-001/openpi.native.json#/cells/*/*/roundtrips",
+        "research/publication/runs/prospective-001/analysis.json#/cells/*/*/roundtrips"
+      ],
+      "empirical_evidence_category": "supported_by_traceable_prior_run",
+      "current_task_verification_category": "reproduced_during_this_task_by_saved_output_reanalysis",
+      "full_native_experiment_repeated_during_this_task": false,
+      "value": {
+        "WITHIN_TOLERANCE": 16
+      },
+      "interpretation_limit": "Internal inverse consistency cannot establish conformity to an independent intended map."
+    },
+    {
+      "id": "robotruth_identity_and_certification",
+      "claim": "Stock extraction/checking retains 12 statistics identity differences; certification WITHHELD on 16",
+      "manuscript_locator": "Section 5.2",
+      "evidence_sets": [
+        "main"
+      ],
+      "result_locations": [
+        "research/publication/runs/prospective-001/robotruth.native.json",
+        "research/publication/runs/prospective-001/workflow-analysis.json",
+        "research/publication/runs/prospective-001/conditions.csv"
+      ],
+      "empirical_evidence_category": "supported_by_traceable_prior_run",
+      "current_task_verification_category": "reproduced_during_this_task_by_saved_output_reanalysis",
+      "full_native_experiment_repeated_during_this_task": false,
+      "value": {
+        "identity_differences": 12,
+        "certification_withheld": 16
+      },
+      "interpretation_limit": "Native severity semantics; withheld certification is neither 16 detections nor 4 false alarms. Shared union statistics digest counts once."
+    },
+    {
+      "id": "policy_space_transport",
+      "claim": "Stock custom-registry dispatcher/MessagePack/lifecycle accepts 1792 raw-vector replays and rejects 16 structural controls",
+      "manuscript_locator": "Section 5.2",
+      "evidence_sets": [
+        "main"
+      ],
+      "result_locations": [
+        "research/publication/runs/prospective-001/policy_space.native.json",
+        "research/publication/runs/prospective-001/metrics.json#/counts",
+        "research/publication/runs/prospective-001/workflow-analysis.json"
+      ],
+      "empirical_evidence_category": "supported_by_traceable_prior_run",
+      "current_task_verification_category": "reproduced_during_this_task_by_saved_output_reanalysis",
+      "full_native_experiment_repeated_during_this_task": false,
+      "value": {
+        "ACCEPT": 1792,
+        "REJECT_structural_controls": 16
+      },
+      "interpretation_limit": "Structural raw-vector transport only. Float32 wire conversion is distinct from float64 decoder conformance; no physical embodiment asserted."
+    },
+    {
+      "id": "figure_2_witnesses",
+      "claim": "Compiled 16 versus pointwise 12 and strong 12 native calls in overlapping method views; 16 actual shared fresh acquisitions",
+      "manuscript_locator": "Figure 2, label fig:witness; Section 5.3",
+      "evidence_sets": [
+        "main"
+      ],
+      "result_locations": [
+        "research/publication/runs/prospective-001/witnesses.json",
+        "research/publication/runs/prospective-001/lerobot_witness.native.json",
+        "research/publication/runs/prospective-001/openpi_witness.native.json",
+        "research/publication/paper/generated/witness-cost.pdf"
+      ],
+      "empirical_evidence_category": "supported_by_traceable_prior_run",
+      "current_task_verification_category": "reproduced_during_this_task_by_saved_output_reanalysis",
+      "full_native_experiment_repeated_during_this_task": false,
+      "value": {
+        "compiled": 16,
+        "independent_pointwise": 12,
+        "strong_relational": 12
+      },
+      "interpretation_limit": "Canonical local failed relations only; no globally minimal causal explanation or human effort advantage."
+    },
+    {
+      "id": "measured_costs",
+      "claim": "Original parent receipts total 234.15 seconds and native intervals 137.34 process CPU seconds",
+      "manuscript_locator": "Section 5.3",
+      "evidence_sets": [
+        "main"
+      ],
+      "result_locations": [
+        "research/publication/runs/prospective-001/*.receipt.json#subprocess_wall_seconds",
+        "research/publication/runs/prospective-001/metrics.json#/phase_costs",
+        "research/publication/paper/generated/facts.json"
+      ],
+      "empirical_evidence_category": "supported_by_traceable_prior_run",
+      "current_task_verification_category": "reproduced_during_this_task_by_saved_output_reanalysis",
+      "full_native_experiment_repeated_during_this_task": false,
+      "value": {
+        "parent_wall_seconds": 234.14937489997828,
+        "native_interval_cpu_seconds": 137.34375
+      },
+      "interpretation_limit": "Different coverage; no subtraction-based speedup or isolated method ranking. Human effort not measured."
+    },
+    {
+      "id": "main_clean_reproduction",
+      "claim": "Four semantic products byte-identical and metrics equal excluding phase costs in separately installed profiles",
+      "manuscript_locator": "Section 6; Appendix A",
+      "evidence_sets": [
+        "main"
+      ],
+      "result_locations": [
+        "research/publication/runs/clean-reproduction-001/reproduction-comparison.json",
+        "research/publication/runs/clean-reproduction-001/summary.json",
+        "research/publication/reproduction/environment-build-003/setup.json"
+      ],
+      "empirical_evidence_category": "supported_by_traceable_prior_run",
+      "current_task_verification_category": "reproduced_during_this_task_by_saved_output_reanalysis",
+      "full_native_experiment_repeated_during_this_task": false,
+      "value": {
+        "byte_identical_products": [
+          "analysis.json",
+          "witnesses.json",
+          "workflow-analysis.json",
+          "conditions.csv"
+        ]
+      },
+      "interpretation_limit": "Prior fresh native reproduction on same machine/cache; current task verifies saved outputs rather than rerunning native acquisition."
+    },
+    {
+      "id": "historical_incidents",
+      "claim": "LeRobot PR4057 and OpenPI PR351 parent/fix processor conventions distinguish documented mismatch",
+      "manuscript_locator": "Section 5.4; Appendix D",
+      "evidence_sets": [
+        "lerobot_history",
+        "openpi_history"
+      ],
+      "result_locations": [
+        "validation/lerobot-history-001/summary.json#/phases",
+        "validation/openpi-history-001/summary.json#/outcomes"
+      ],
+      "empirical_evidence_category": "supported_by_traceable_prior_run",
+      "current_task_verification_category": "reproduced_during_this_task_by_saved_output_reanalysis",
+      "full_native_experiment_repeated_during_this_task": false,
+      "interpretation_limit": "Two previously inspected retrospective incidents with authored fixtures; no newly discovered held-out faults, complete historical rollout, weights or task-loss estimate."
+    },
+    {
+      "id": "stateful_comparison",
+      "claim": "Original checker/compiler agree on 8 matched SO101 conditions; original 1-2 versus compiler 2-4 native actions for retained fresh witnesses",
+      "manuscript_locator": "Section 5.4; Appendix D",
+      "evidence_sets": [
+        "stateful"
+      ],
+      "result_locations": [
+        "validation/stateful-comparison-001/summary.json#/cases",
+        "validation/stateful-comparison-001/summary.json#/fresh_witnesses"
+      ],
+      "empirical_evidence_category": "supported_by_traceable_prior_run",
+      "current_task_verification_category": "reproduced_during_this_task_by_saved_output_reanalysis",
+      "full_native_experiment_repeated_during_this_task": false,
+      "value": {
+        "matched_conditions": 8,
+        "original_action_range": [
+          1,
+          2
+        ],
+        "compiled_action_range": [
+          2,
+          4
+        ]
+      },
+      "interpretation_limit": "One reused development cluster; original full report has extra scope, so runtimes not equal-scope."
+    },
+    {
+      "id": "panda_software",
+      "claim": "Native robosuite/MuJoCo translation, goal setters, rotation, gripper/reset software executes; independent references detect wrong composition/omitted reset; affine UNKNOWN for unsupported paths",
+      "manuscript_locator": "Section 5.4; Appendix D",
+      "evidence_sets": [
+        "panda"
+      ],
+      "result_locations": [
+        "validation/panda-software-001/capture.json",
+        "validation/panda-software-001/analysis.json",
+        "validation/panda-software-reproduction-001/analysis.json",
+        "validation/panda-reproduction-verification.json"
+      ],
+      "empirical_evidence_category": "supported_by_traceable_prior_run",
+      "current_task_verification_category": "reproduced_during_this_task_by_saved_output_reanalysis",
+      "full_native_experiment_repeated_during_this_task": false,
+      "interpretation_limit": "Controlled source-grounded software fixtures, 114 affine queries, 2 goal setters, 4 orientation calls, 238 gripper calls; zero physics steps/torque calls/renders, no PI-checkpoint/Panda hardware mapping."
+    },
+    {
+      "id": "freeze_and_resource_limits",
+      "claim": "Protocol protects 406 files; source/input closure committed before acquisition; sequential CPU workers have 180-second timeouts, observed 2 GiB RSS limit and 7200 native-interval CPU-second total limit",
+      "manuscript_locator": "Sections 4.1, 4.3; Appendix A",
+      "evidence_sets": [
+        "main"
+      ],
+      "result_locations": [
+        "research/publication/protocol-freeze-001.json",
+        "research/publication/runs/prospective-001/summary.json",
+        "research/publication/runs/prospective-001/*.request.json",
+        "research/publication/runs/prospective-001/*.receipt.json"
+      ],
+      "empirical_evidence_category": "supported_by_traceable_prior_run",
+      "current_task_verification_category": "reproduced_during_this_task_by_saved_output_reanalysis",
+      "full_native_experiment_repeated_during_this_task": false,
+      "interpretation_limit": "Observed RSS checks are not OS enforcement. Audit hooks are not an OS sandbox; producer records are not execution attestation."
+    },
+    {
+      "id": "prior_implementation_tests",
+      "claim": "390 tests passed with 5 skips before freezing, including 40 publication wrapper tests",
+      "manuscript_locator": "Section 6",
+      "evidence_sets": [
+        "main"
+      ],
+      "result_locations": [
+        "validation/publication-wrapper-development-tests.txt",
+        "validation/publication-wrapper-development-checks.json",
+        "tests/test_publication_study.py"
+      ],
+      "empirical_evidence_category": "supported_by_traceable_prior_run",
+      "current_task_verification_category": "inspection_of_traceable_prior_test_log_and_code",
+      "full_native_experiment_repeated_during_this_task": false,
+      "value": {
+        "passed": 390,
+        "skipped": 5,
+        "included_wrapper_tests": 40
+      },
+      "interpretation_limit": "Prior software validation, not a research detection result or a statement of current release test counts."
+    }
+  ],
+  "formal_statement": {
+    "location": "Proposition 1; Section 3.2",
+    "category": "code_and_mathematical_inspection",
+    "basis": "If X has full column rank and both maps are independently justified affine maps on the same coordinates, X*d=0 implies d=0. Finite matches do not establish affine class membership.",
+    "finite_precision_scope": "Component radii depend on the declared measurement model; empirical 1e-12 allowances are not universal bounds on upstream arithmetic."
+  },
+  "research_design_audit": {
+    "training_split": "N/A: no training, learned inference or fitted preprocessing. References come from independently parsed source metadata and explicit runtime formulas, not deployment responses.",
+    "selection_and_leakage": "Metadata and injection recipes were inspected before committed acquisition; selected native outcomes were unseen at selected revisions, not blinded/ancestry-disjoint/unseen root causes.",
+    "duplicates_and_independence": "Canonical/manual endpoints overlap, PI transport shares same artifact, random seeds/interventions/queries are repeated measures, artifacts share base/corpus ancestry, clean runs repeat same inputs. No independent sample count is inferred.",
+    "baselines": "Equal canonical query/reference access for three numerical oracles; all 8 geometries get 2n+1 native queries. Native workflows keep their distinct scopes. Unavailable rollout/physical/response workflows receive no scored wins/misses.",
+    "statistics": "Finite counts and descriptive equal-artifact-weight leave-one-out sensitivity only; no population CI, p-values, multiple-testing or accuracy generalization claims.",
+    "effect_size": "Large declared offset/width injections; no empirical sensitivity curve for naturally occurring small drift. Witness/cost findings are negative for superiority; human effort unmeasured.",
+    "scientific_scope": "Engineering/reproducible evidence-comparison contribution; no new affine theorem or new policy/safety discovery asserted.",
+    "reviewer_kind": "AI-assisted technical review; no independent human peer review or human-author attestation."
+  },
+  "literature_audit": {
+    "register": "research/publication/literature.json",
+    "scope": "Focused primary-source audit, not systematic/exhaustive. Principal citations previously verified against author/publisher/arXiv sources; immutable versions retained; Zeller/Bauer DOIs added. Tai ExecSpec, XPolicyLab, metamorphic/differential testing, partial-evidence tools and reduction credited.",
+    "primary_sources": [
+      "https://arxiv.org/html/2606.03724v1",
+      "https://arxiv.org/abs/2608.09892v1",
+      "https://ojs.aaai.org/index.php/ICAPS/article/view/27185",
+      "https://www.cs.purdue.edu/homes/lintan/publications/cradle-icse19.pdf",
+      "https://jiannanwang.github.io/files/eagle-icse22.pdf",
+      "https://link.springer.com/chapter/10.1007/978-3-540-78917-8_1",
+      "https://doi.org/10.1109/32.988498",
+      "https://doi.org/10.1145/2000799.2000800"
+    ]
+  },
+  "files": {
+    "scripts/study_assets.py": {
+      "sha256": "2e2b5dcc747fb9abb54366f4c29fb58d6e29b4798b7d275352f125b50d8fea48",
+      "kind": "frozen_result_producing_code"
+    },
+    "scripts/action_study_common.py": {
+      "sha256": "528289d2058101687cce7eb1d4be17fc25545f74d626a99c24443db7e2177cf3",
+      "kind": "frozen_result_producing_code"
+    },
+    "scripts/action_designs.py": {
+      "sha256": "069259cb2ac57057889590f43c49c99d15f92dde99363941e9c967e896340c6d",
+      "kind": "frozen_result_producing_code"
+    },
+    "scripts/action_study_worker.py": {
+      "sha256": "ca26f9a8af262067b68604fd1e4aa121627a1136dc0d73e1113df546fc9280c6",
+      "kind": "frozen_result_producing_code"
+    },
+    "scripts/matched_study_worker.py": {
+      "sha256": "46fa3ab4cd89dce55e869dfbc8aee8c7bcb7c8faa13a82ebd2bdf01c33de587c",
+      "kind": "frozen_result_producing_code"
+    },
+    "scripts/normalization_profiles.py": {
+      "sha256": "5e72e90f8f8ca693c09784e77fb25e13a3014106aab4b2e3ac0f9107a234b8b9",
+      "kind": "frozen_result_producing_code"
+    },
+    "scripts/run_action_study.py": {
+      "sha256": "c83f27a6230561f371449af4d4dd8d1ad5f414d686be4e319136e716c0aaf528",
+      "kind": "frozen_result_producing_code"
+    },
+    "scripts/query_designs.py": {
+      "sha256": "7e593f068faab1d5822daeb620200e44900c6973e09f5de0d9c73f24fd788965",
+      "kind": "frozen_result_producing_code"
+    },
+    "scripts/normalization_certificate.py": {
+      "sha256": "0919a8886f2aabd6fa2f297b0527255694f5be2f615a51857444a1e00288c155",
+      "kind": "frozen_result_producing_code"
+    },
+    "scripts/publication_analysis.py": {
+      "sha256": "95e7c56a3a1f07744a6c295364c702e37e47ffab2eb73aed6cc1272866b16821",
+      "kind": "frozen_result_producing_code"
+    },
+    "scripts/publication_worker.py": {
+      "sha256": "0b7e3427a2811a669e7ad4bbfa8a1365665a7c50b8f24234b301c4c37f56ce34",
+      "kind": "frozen_result_producing_code"
+    },
+    "scripts/publication_protocol.py": {
+      "sha256": "2f844c07774365e4cdd5bcee1da95b761c07e648d55893f0fdef9a0db1a58b0f",
+      "kind": "frozen_result_producing_code"
+    },
+    "scripts/publication_assets.py": {
+      "sha256": "d93d8e2e5a963c94b61bdeabdf851afd776377967e9072981e79934ed31c7233",
+      "kind": "frozen_result_producing_code"
+    },
+    "scripts/publication_network.py": {
+      "sha256": "866c9afcabab6044049e55eda81f496f15abfe9ae61f30db6365f18d1e61a0c0",
+      "kind": "frozen_result_producing_code"
+    },
+    "scripts/run_publication_study.py": {
+      "sha256": "e4a2d8e5244b759459d4f5dd48b5051a81d1d0b7ec60313bb7eada97ad9d43a9",
+      "kind": "frozen_result_producing_code"
+    },
+    "scripts/policy_space_numeric.py": {
+      "sha256": "10076c8620df5353b07dbf2118b9ded8e63d007a6f70c6103808ba53d3a1c940",
+      "kind": "frozen_result_producing_code"
+    },
+    "scripts/policy_space_numeric_worker.py": {
+      "sha256": "c691316f818670310ba10aadb1483bf3d660ab00b3b7018b6b219651becc00d6",
+      "kind": "frozen_result_producing_code"
+    },
+    "src/mltools/obligations.py": {
+      "sha256": "807f94f6cb6e4029f0d1c7e1079254f216aa9acf028a04d04196371f13133432",
+      "kind": "frozen_result_producing_code"
+    },
+    "src/mltools/research_oracles.py": {
+      "sha256": "b62cc092d416c5cf3e42e8f081119d7d52d550630c4ea73d1da57c212428b161",
+      "kind": "frozen_result_producing_code"
+    },
+    "src/mltools/checker.py": {
+      "sha256": "b10a5cce64a8b1ed81ca58be53c6f145edf2310cfcc12919d254208a823ac1c1",
+      "kind": "frozen_result_producing_code"
+    },
+    "src/mltools/lerobot.py": {
+      "sha256": "3d083e72df1d7ef32a4c694e19fe54234112c10095e9c3e41c5e6ac4f6bb0669",
+      "kind": "frozen_result_producing_code"
+    },
+    "src/mltools/_openpi_worker.py": {
+      "sha256": "12d4fabc009291505fc9936c96366e294e8b1e78f0403077002fcf777c94d14b",
+      "kind": "frozen_result_producing_code"
+    },
+    "src/mltools/report.py": {
+      "sha256": "aa15c962c9b06d8d3ef94dea75bc1594e2d9a2a90ad259703850dc649a648593",
+      "kind": "frozen_result_producing_code"
+    },
+    "research/publication/selection/act/act-so101-boccia-center-only/manifest.json": {
+      "sha256": "4a6a530087b0b39b7c7d74561fe34068c482d7c1f62a20780db5225dab812f20",
+      "kind": "publisher_metadata_provenance"
+    },
+    "research/publication/selection/smolvla/edge-inference--smolvla-so101-pick-orange/manifest.json": {
+      "sha256": "2c7fa04c20392e41316270dddd902a74cb2be4b237a7e521bb64fe7f8144f336",
+      "kind": "publisher_metadata_provenance"
+    },
+    "research/publication/selection/pi/lianqing11--pi05_libero/manifest.json": {
+      "sha256": "23c312b34b270b93e073cf55456095496c9810da2b1b088a065c2705b789b310",
+      "kind": "publisher_metadata_provenance"
+    },
+    "research/publication/prepared/action-study-001/plan.json": {
+      "sha256": "9d1ba12232dad50dc1dde92140885b18884eadd1371ecdaac982f3ee62801037",
+      "kind": "frozen_plan_parameters_and_seeded_queries"
+    },
+    "research/publication/protocol-freeze-001.json": {
+      "sha256": "76a825f41b72e5cbe945a4f7e6930ef5e00df0a43bc461ccfb293be6773481fc",
+      "kind": "frozen_protocol"
+    },
+    "research/publication/runs/prospective-001/lerobot.native.json": {
+      "sha256": "cff126c5cb1d5cee390c556a3e2b129fc31a5b7eaa20d50a0fb70be8c95315c9",
+      "kind": "prior_native_observations"
+    },
+    "research/publication/runs/prospective-001/lerobot_witness.native.json": {
+      "sha256": "3d1e602f970cec1ae9b3ba97c73162034f2b01353271eab947327295997def8a",
+      "kind": "prior_native_observations"
+    },
+    "research/publication/runs/prospective-001/openpi.native.json": {
+      "sha256": "62686fc753324123301be4b9a9e80900f77650aea12b9de22a83e1e63a7ce02b",
+      "kind": "prior_native_observations"
+    },
+    "research/publication/runs/prospective-001/openpi_witness.native.json": {
+      "sha256": "0014fdaadff6c3d9aea080a3a72ab7cb8dbb6284acf6e46d58c62a08be49c996",
+      "kind": "prior_native_observations"
+    },
+    "research/publication/runs/prospective-001/policy_space.native.json": {
+      "sha256": "838df605a9022f4643c2206c2603263ba40da42a3340ef01da4be499b19a8000",
+      "kind": "prior_native_observations"
+    },
+    "research/publication/runs/prospective-001/robotruth.native.json": {
+      "sha256": "92c9d91db5b171771b463c41d166dce77e4e2e3d022c06138b3b683a48d01c5c",
+      "kind": "prior_native_observations"
+    },
+    "research/publication/runs/prospective-001/lerobot.stdout.txt": {
+      "sha256": "ee389a6965fe7338a60db5f9c7b725869e5806a17a979a7a7de3ac9ff9478f8b",
+      "kind": "prior_raw_subprocess_stream"
+    },
+    "research/publication/runs/prospective-001/lerobot_witness.stdout.txt": {
+      "sha256": "ff0ef8b799cada969f1677691134ed4a7b46e01f4931194ad4e92584f7e99a09",
+      "kind": "prior_raw_subprocess_stream"
+    },
+    "research/publication/runs/prospective-001/openpi.stdout.txt": {
+      "sha256": "a8984d0c7efaa8c6ef619f6447fd178f45acb3a083dc7f00bb67b8fe5d59e3e4",
+      "kind": "prior_raw_subprocess_stream"
+    },
+    "research/publication/runs/prospective-001/openpi_witness.stdout.txt": {
+      "sha256": "366ab589a49d57c649a051bc7bf27e99e0a5060eee52475bc2ce4d22605b63c0",
+      "kind": "prior_raw_subprocess_stream"
+    },
+    "research/publication/runs/prospective-001/policy_space.stdout.txt": {
+      "sha256": "2d5b3268d1b779137a345a927e863956a2fba50c88e9e974a17bafdb950d263f",
+      "kind": "prior_raw_subprocess_stream"
+    },
+    "research/publication/runs/prospective-001/robotruth.stdout.txt": {
+      "sha256": "f021f8e29144a244c7fab0f7ea2a7f96250e25426149352684a15f99b02ac9b9",
+      "kind": "prior_raw_subprocess_stream"
+    },
+    "research/publication/runs/prospective-001/lerobot.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "prior_raw_subprocess_stream"
+    },
+    "research/publication/runs/prospective-001/lerobot_witness.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "prior_raw_subprocess_stream"
+    },
+    "research/publication/runs/prospective-001/openpi.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "prior_raw_subprocess_stream"
+    },
+    "research/publication/runs/prospective-001/openpi_witness.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "prior_raw_subprocess_stream"
+    },
+    "research/publication/runs/prospective-001/policy_space.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "prior_raw_subprocess_stream"
+    },
+    "research/publication/runs/prospective-001/robotruth.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "prior_raw_subprocess_stream"
+    },
+    "research/publication/runs/prospective-001/summary.json": {
+      "sha256": "22f91742d82dffa352d806a57701822487cb7c03ae9c16ea2dd5b7a7d82beea7",
+      "kind": "closed_prior_run_manifest"
+    },
+    "research/publication/runs/prospective-001/lerobot.request.json": {
+      "sha256": "e1c7abb922d0ae4da203925ebd087f0865515a1ce0dd88004405f1c3fb1827a1",
+      "kind": "prior_run_request_claim_or_receipt"
+    },
+    "research/publication/runs/prospective-001/lerobot_witness.request.json": {
+      "sha256": "50a6fa6c3abddf5d8ee892ce33e0917c65aca1141528d1eea6a11c830810f009",
+      "kind": "prior_run_request_claim_or_receipt"
+    },
+    "research/publication/runs/prospective-001/openpi.request.json": {
+      "sha256": "53342e212c247e5e95fce648f289af985885c80aebe40f9c2967af5f116800f2",
+      "kind": "prior_run_request_claim_or_receipt"
+    },
+    "research/publication/runs/prospective-001/openpi_witness.request.json": {
+      "sha256": "8110aeff0fc4aa9ccfa33068738b067aeba5e1cb49433383a60b571ea99623b3",
+      "kind": "prior_run_request_claim_or_receipt"
+    },
+    "research/publication/runs/prospective-001/policy_space.request.json": {
+      "sha256": "bf354c782c8d732e463cb841feea415420717bc9fe7e316140dbb14e6ba0382d",
+      "kind": "prior_run_request_claim_or_receipt"
+    },
+    "research/publication/runs/prospective-001/robotruth.request.json": {
+      "sha256": "8ac04f8d454d3ba0bc7e6e815f1c5d8d20b147d9f6e92f2bb2216e968edcbe6b",
+      "kind": "prior_run_request_claim_or_receipt"
+    },
+    "research/publication/runs/prospective-001/lerobot.receipt.json": {
+      "sha256": "be1427d229f81185b2070f6a35167dc0aa2c4bf67624370b912071c614592845",
+      "kind": "prior_run_request_claim_or_receipt"
+    },
+    "research/publication/runs/prospective-001/lerobot_witness.receipt.json": {
+      "sha256": "adcbeb54ff0bc112477fb3b0d4dfe6c3f3c53353a1e6737ecb39c89e51ab17db",
+      "kind": "prior_run_request_claim_or_receipt"
+    },
+    "research/publication/runs/prospective-001/openpi.receipt.json": {
+      "sha256": "5075be86ae188489559154a8edae6baefb37b67f570c23ec68d25aae085f54d7",
+      "kind": "prior_run_request_claim_or_receipt"
+    },
+    "research/publication/runs/prospective-001/openpi_witness.receipt.json": {
+      "sha256": "b5ec42c455dfe3d01aaf970043979700461d21f1a091a59d40a7a4b587ffb0a7",
+      "kind": "prior_run_request_claim_or_receipt"
+    },
+    "research/publication/runs/prospective-001/policy_space.receipt.json": {
+      "sha256": "69ce8f453ead1ecccd952781630ea0b93c6161b5a2fe921f097c0f526b4f8f72",
+      "kind": "prior_run_request_claim_or_receipt"
+    },
+    "research/publication/runs/prospective-001/robotruth.receipt.json": {
+      "sha256": "066862bae350875646d2c0adcf8304aaad8ce62a5b4ed7a249e78f68c76edef9",
+      "kind": "prior_run_request_claim_or_receipt"
+    },
+    "research/publication/runs/prospective-001/lerobot.claim.json": {
+      "sha256": "7527c0adf40d15eced173a9494ebfde75f8e81b01254b0bf2df7f26bfec486b0",
+      "kind": "prior_run_request_claim_or_receipt"
+    },
+    "research/publication/runs/prospective-001/lerobot_witness.claim.json": {
+      "sha256": "85988904aad38094d3041950e213171b7187fb3df1f786dc973b4fff043ae7af",
+      "kind": "prior_run_request_claim_or_receipt"
+    },
+    "research/publication/runs/prospective-001/openpi.claim.json": {
+      "sha256": "4423bcb2d21aaed65a4da0574d687f6bbf60fae7fb1bd24d87abecae6f0d7c48",
+      "kind": "prior_run_request_claim_or_receipt"
+    },
+    "research/publication/runs/prospective-001/openpi_witness.claim.json": {
+      "sha256": "a3a0964486b551662c2d46db5d457d8539014d2c0b6daced7df759f3517a63a4",
+      "kind": "prior_run_request_claim_or_receipt"
+    },
+    "research/publication/runs/prospective-001/policy_space.claim.json": {
+      "sha256": "23b88f5bbefc6edb27e627de8a24bb5b8fa286067076db34d3a708f3c6ccbc46",
+      "kind": "prior_run_request_claim_or_receipt"
+    },
+    "research/publication/runs/prospective-001/robotruth.claim.json": {
+      "sha256": "38d25656817e95569c53d0db0b11be7152f0ef80b1f9e51d45244b4da3558603",
+      "kind": "prior_run_request_claim_or_receipt"
+    },
+    "research/publication/runs/prospective-001/attempt-start.json": {
+      "sha256": "01bb89a0ef67ed5481a639627696b76e5071e5947af8743a507e9124a9542972",
+      "kind": "prior_run_request_claim_or_receipt"
+    },
+    "research/publication/runs/prospective-001/analysis.json": {
+      "sha256": "83e00b74ca783de9efda4decfcfbd4e7345c22564bc8584b4246adee982242af",
+      "kind": "derived_saved_semantic_result"
+    },
+    "research/publication/runs/prospective-001/metrics.json": {
+      "sha256": "024ef2684cde87d8173251a1e314fd067588c38fea665a3a8fbb876360f40c75",
+      "kind": "derived_saved_semantic_result"
+    },
+    "research/publication/runs/prospective-001/witnesses.json": {
+      "sha256": "b4a0cd3a79c7943f1ae9cb512b8f843807b3cb11453e16b96eeb2e9d09229cf4",
+      "kind": "derived_saved_semantic_result"
+    },
+    "research/publication/runs/prospective-001/workflow-analysis.json": {
+      "sha256": "9a0df9925f05bfa66bf8f5eaeb8585e896f95ba71cae6d2517f3d883e353527d",
+      "kind": "derived_saved_semantic_result"
+    },
+    "research/publication/runs/prospective-001/conditions.csv": {
+      "sha256": "f261b97ce019d83365b78edd2a9ce24375cf6fc19fa998d8c733f2a1d0561398",
+      "kind": "derived_saved_semantic_result"
+    },
+    "research/publication/reporting/build_results.py": {
+      "sha256": "e2eb4c7da07b36552ad3ddce84817e5114d89ca16f7551e081b70cdf7f5d9096",
+      "kind": "post_acquisition_reporting_code"
+    },
+    "research/publication/paper/generated/facts.json": {
+      "sha256": "376d2a659dc94ee23430c3584ecd56d16a57fef82b23f55d1b7a87c435d5cc7c",
+      "kind": "generated_publication_result"
+    },
+    "research/publication/paper/generated/claims.tex": {
+      "sha256": "49639b5caff94bc782c3fb52f709364fc6e1429c331aad0e46e1136a54ea1cb6",
+      "kind": "generated_publication_result"
+    },
+    "research/publication/paper/generated/outcomes.tex": {
+      "sha256": "a4ca7ae9aea18426d8ee1b0678bff6a5b3599216c8fca62c1bc1db08d0d65622",
+      "kind": "generated_publication_result"
+    },
+    "research/publication/paper/generated/authority-ablation.pdf": {
+      "sha256": "f16cbbbde819433b41de9be4ab71e05c5042d5144dfa967fa100972a82470463",
+      "kind": "generated_publication_result"
+    },
+    "research/publication/paper/generated/authority-ablation.png": {
+      "sha256": "a4092b49148efc8a4e88a05c0687e19ebb5f265894d5fe289018377f10e0999b",
+      "kind": "generated_publication_result"
+    },
+    "research/publication/paper/generated/witness-cost.pdf": {
+      "sha256": "1730acaadc4fcd8dc8b739201a91f650ee5adeeb249a620cc3f0c4da55ad9e89",
+      "kind": "generated_publication_result"
+    },
+    "research/publication/paper/generated/witness-cost.png": {
+      "sha256": "f0f5f9e6345d78736abd68ac20e5142f4f3f0decaefd69c290c3e148816beeed",
+      "kind": "generated_publication_result"
+    },
+    "research/publication/paper/generated/manifest.json": {
+      "sha256": "bf4320fd7e437d3f412ca2ea8b2514f3df680ba3acd2843947ec98c21d694d96",
+      "kind": "generated_publication_result"
+    },
+    "research/publication/reporting/requirements.lock": {
+      "sha256": "a276e43041b3b585b3a54d2debe6f03a8e2637f7f43e0a823b4ca6277a90ab5f",
+      "kind": "reporting_dependency_lock"
+    },
+    "validation/stateful-comparison-001/inputs/plan.json": {
+      "sha256": "8518942db5b65e0dda13a34d4950c8e9897aea5316043f67bfd6b9edec0714ab",
+      "kind": "declared_fixture_and_configuration"
+    },
+    "scripts/compare_stateful_development.py": {
+      "sha256": "4bcf1b007e1229e840f8e010afcea19cfdc98d6c70f82dc43b47f356c3f110a2",
+      "kind": "frozen_development_or_retrospective_code"
+    },
+    "scripts/stateful_fixtures.py": {
+      "sha256": "382d946d9d0ff1ca981fba9aa3c8725e75d70140fbf833ac727315b1c944656e",
+      "kind": "frozen_development_or_retrospective_code"
+    },
+    "scripts/stateful_comparison_worker.py": {
+      "sha256": "2ca410fce934871ad6f5c0cf89f3e8ad955c3a753ffaae6be15673bbed488b33",
+      "kind": "frozen_development_or_retrospective_code"
+    },
+    "validation/stateful-comparison-001/summary.json": {
+      "sha256": "f36c3f6b966e56b48852c6e2c04cc2ad03621edb7b1ac63373db3b4f97d02966",
+      "kind": "traceable_prior_software_run"
+    },
+    "validation/stateful-comparison-001/full.capture.json": {
+      "sha256": "6fc586547c82407baaede6dd2877b11d09e61d7007c084cbcd895b3739fbf5d6",
+      "kind": "traceable_prior_software_run"
+    },
+    "validation/stateful-comparison-001/witness.capture.json": {
+      "sha256": "bfd97ef4f6607c8fd66ae68b271b1da6556272ba627c0fd82fb48d1f2193d046",
+      "kind": "traceable_prior_software_run"
+    },
+    "validation/stateful-comparison-001/timings.json": {
+      "sha256": "70b5fa64d36c164afef807b1c8fa2382e651eab5275d931cf1c539423fc11fdf",
+      "kind": "traceable_prior_software_run"
+    },
+    "scripts/reproduce_lerobot_history.py": {
+      "sha256": "daa49ee7310f5dadbfff331503c677d0a965ed462ea3ce2ee7bc4962ecf2d7a9",
+      "kind": "frozen_development_or_retrospective_code"
+    },
+    "scripts/lerobot_history_worker.py": {
+      "sha256": "cb9e7d6b7d1a15d4a7e0664b5493c2b3fcd36cb09752f5df68fc20fc5df6f9c8",
+      "kind": "frozen_development_or_retrospective_code"
+    },
+    "validation/lerobot-history-001/summary.json": {
+      "sha256": "e562e35c60840c9f746efefc6c39812933c954a29bd009f01cd5df3fa26eed4f",
+      "kind": "traceable_prior_software_run"
+    },
+    "validation/lerobot-history-001/before.json": {
+      "sha256": "8fc5e6fad1aba4f2fd9c9aaf63d1152a6283ae171c7431b4d72be894a925c042",
+      "kind": "traceable_prior_software_run"
+    },
+    "validation/lerobot-history-001/after.json": {
+      "sha256": "8ea4ec0a909e65f691167ecac904d0ad04965750a22ea17020d5c3a0625aacf2",
+      "kind": "traceable_prior_software_run"
+    },
+    "validation/openpi-history-001/contract.json": {
+      "sha256": "f63cfde8b636adb96b46306a2459b57ce22271057490b4b332cb2baa94e5e491",
+      "kind": "declared_fixture_and_configuration"
+    },
+    "scripts/reproduce_openpi_history.py": {
+      "sha256": "1fe5b38d3357ba8cc1d3499df9bb714dd25daabc4e671ec457722dd5b78211fd",
+      "kind": "frozen_development_or_retrospective_code"
+    },
+    "scripts/openpi_history_worker.py": {
+      "sha256": "aeb753c64ad1621f956a886efb773cb3f68044d2ba556f5241206b5bda441a0f",
+      "kind": "frozen_development_or_retrospective_code"
+    },
+    "validation/openpi-history-001/summary.json": {
+      "sha256": "c07274e8d6ab8f22afb649972ef9cc65624c95b8cc0482e6b0d2412c3cfebb66",
+      "kind": "traceable_prior_software_run"
+    },
+    "validation/openpi-history-001/before.trace.json": {
+      "sha256": "bfe82df64b7438a6c750bb593f7f77833c777fdb755ee7f0f2e150bd4355b720",
+      "kind": "traceable_prior_software_run"
+    },
+    "validation/openpi-history-001/after.trace.json": {
+      "sha256": "81e4706980d6cb95a648854eb01388beb3e6eb428868233aec595638d3312ea1",
+      "kind": "traceable_prior_software_run"
+    },
+    "validation/openpi-history-001/before-witness.trace.json": {
+      "sha256": "341a43b4b0976e0c583620cfee84cea12dc62945ba53900dabc415eea101468b",
+      "kind": "traceable_prior_software_run"
+    },
+    "validation/openpi-history-001/before.analysis.json": {
+      "sha256": "2d1ca759c5dedba3558c547317545b68ab00f8f1a7f73b7a3cd3a29a28aeab41",
+      "kind": "traceable_prior_software_run"
+    },
+    "validation/openpi-history-001/after.analysis.json": {
+      "sha256": "921ca2685336a6ad310f4743b594ffe90acbf58199d87a7130fa85bca4512e67",
+      "kind": "traceable_prior_software_run"
+    },
+    "validation/openpi-history-001/before-witness.analysis.json": {
+      "sha256": "171bcee588eae5905eff337f44c7de07769be656b4b217fbaa4633e0632ab750",
+      "kind": "traceable_prior_software_run"
+    },
+    "validation/panda-software-001/inputs.json": {
+      "sha256": "f03198f7db134a0e2951908b2ce1c49778489d37cddb3961415fa5fe7d60c8df",
+      "kind": "declared_fixture_and_configuration"
+    },
+    "validation/panda-software-001/request.json": {
+      "sha256": "53c1e91807f45341dd8409190b197725c70cb1d6b32a26e7fe9451bed17ec348",
+      "kind": "declared_fixture_and_configuration"
+    },
+    "scripts/panda_reference.py": {
+      "sha256": "22a4ef8824300ec1d3150dc941136facc8c00f90ba34a34bfb46137d15246912",
+      "kind": "frozen_development_or_retrospective_code"
+    },
+    "scripts/panda_worker.py": {
+      "sha256": "bceeb2908f7913c735dcc5e93c449ed5dcbd5fa5ae97828acd2a3553067a9a52",
+      "kind": "frozen_development_or_retrospective_code"
+    },
+    "scripts/validate_panda.py": {
+      "sha256": "21445236e481d39c32d15089f6039fbf034ba4438938df7df18d150d443e3253",
+      "kind": "frozen_development_or_retrospective_code"
+    },
+    "scripts/compare_panda_reproduction.py": {
+      "sha256": "405923b57a17d23cb20b10f90a8ef7a41a113929e684cb757cce5331160e0dd3",
+      "kind": "frozen_development_or_retrospective_code"
+    },
+    "validation/panda-software-001/summary.json": {
+      "sha256": "81239ea8309487953c53c2b43beb66c70bfdf04114dfec0881497d241081d389",
+      "kind": "traceable_prior_software_run"
+    },
+    "validation/panda-software-001/capture.json": {
+      "sha256": "4388d2d98201bc71c075f0563794ce5d352f02719d766b980630fcf74e3f04d1",
+      "kind": "traceable_prior_software_run"
+    },
+    "validation/panda-software-001/analysis.json": {
+      "sha256": "c1a3222a13e59378efa3f7a5e10ed44a4fdc85864facbb706aa3cfbd2fed7411",
+      "kind": "traceable_prior_software_run"
+    },
+    "validation/panda-software-001/native.stdout.txt": {
+      "sha256": "1ca04055933bbe6d975e5ed35693f32c90bacecedcc2bff84516a6c07f1d3ee9",
+      "kind": "traceable_prior_software_run"
+    },
+    "validation/panda-software-001/native.stderr.txt": {
+      "sha256": "b0cc4f3f930c0d6dc6dd18fce8f82bc8bcd536df197dc3f2a592529cea5335b9",
+      "kind": "traceable_prior_software_run"
+    },
+    "validation/stateful-comparison-001/inputs/absolute_body.bundle.json": {
+      "sha256": "5d3cd8563ce4e43a8f6fdc4e3c2c438fcb68d7d05139a7a49caa3f054b528fc4",
+      "kind": "declared_fixture_and_configuration"
+    },
+    "validation/stateful-comparison-001/inputs/absolute_body.compiled-witness.bundle.json": {
+      "sha256": "79f1cee46b4761bc163a0e1a5fec89869eea0aed758c2a1a1a9dbd44e3d5cb6a",
+      "kind": "declared_fixture_and_configuration"
+    },
+    "validation/stateful-comparison-001/inputs/absolute_body.old-witness.bundle.json": {
+      "sha256": "2230dd26cb21972d765805b9a534c6571906779f26207b26f1f7e55c31b10297",
+      "kind": "declared_fixture_and_configuration"
+    },
+    "validation/stateful-comparison-001/inputs/control.bundle.json": {
+      "sha256": "b78523a2ebbbe27fd68b18a0504d1c39f3edbbb36531ad7dc8bc9f4c797852c5",
+      "kind": "declared_fixture_and_configuration"
+    },
+    "validation/stateful-comparison-001/inputs/missing_authority.bundle.json": {
+      "sha256": "4975dfc8e640b8a74e3bbbb5d8b3e9f78c9b77d41504c3fd6d8f6cd561137887",
+      "kind": "declared_fixture_and_configuration"
+    },
+    "validation/stateful-comparison-001/inputs/missing_controller_units.bundle.json": {
+      "sha256": "318e8bfba9e3d1edbc70decd28040f035f1e39845733953727554d771a642c48",
+      "kind": "declared_fixture_and_configuration"
+    },
+    "validation/stateful-comparison-001/inputs/moving_anchor.bundle.json": {
+      "sha256": "a5f52a2d8f5ba7476a13a75e17c63d783ad84aa26c5b8e3f1ea2fd0f4e1b05a3",
+      "kind": "declared_fixture_and_configuration"
+    },
+    "validation/stateful-comparison-001/inputs/moving_anchor.compiled-witness.bundle.json": {
+      "sha256": "e00871fc21d369f68593092c36b3a8a4c50f3aa671464a66b1d76e353982392b",
+      "kind": "declared_fixture_and_configuration"
+    },
+    "validation/stateful-comparison-001/inputs/moving_anchor.old-witness.bundle.json": {
+      "sha256": "d52f894344bb6543cd04d0b6e3f52e0d887ca599cc9dc07c32ee24b1199c9b15",
+      "kind": "declared_fixture_and_configuration"
+    },
+    "validation/stateful-comparison-001/inputs/relative_gripper.bundle.json": {
+      "sha256": "1c55c56d77d7ac4071db4d407c5b85e05044b14626690f794bc66600ac264157",
+      "kind": "declared_fixture_and_configuration"
+    },
+    "validation/stateful-comparison-001/inputs/relative_gripper.compiled-witness.bundle.json": {
+      "sha256": "16c9f25e33c6b72831e15569c413ac68573b0843e63c54b813c46b4fe6872212",
+      "kind": "declared_fixture_and_configuration"
+    },
+    "validation/stateful-comparison-001/inputs/relative_gripper.old-witness.bundle.json": {
+      "sha256": "d4680e7527e6b6641da3a95e96d9cf51e8331720e6b44bb608373353ed357ce9",
+      "kind": "declared_fixture_and_configuration"
+    },
+    "validation/stateful-comparison-001/inputs/wrong_controller_units.bundle.json": {
+      "sha256": "f8881251e88940c6e9fcfed61bcc15d1d6cfe410116aaa5e9b483a906b527d61",
+      "kind": "declared_fixture_and_configuration"
+    },
+    "validation/stateful-comparison-001/inputs/wrong_stats.bundle.json": {
+      "sha256": "216194e369aa13ca44137b638a6db4f6171863e28ffc663130f303fa5eaf96eb",
+      "kind": "declared_fixture_and_configuration"
+    },
+    "validation/stateful-comparison-001/inputs/wrong_stats.compiled-witness.bundle.json": {
+      "sha256": "8a5247e2d42cbc3738de04cb0d23c96b939ce3fc87dc1db9e1e92ecdc3ce800a",
+      "kind": "declared_fixture_and_configuration"
+    },
+    "validation/stateful-comparison-001/inputs/wrong_stats.old-witness.bundle.json": {
+      "sha256": "80cc3f844ae5685cce44438984ca68c4dc56e7353015f1f5102f64786f5c5f48",
+      "kind": "declared_fixture_and_configuration"
+    },
+    "uv.lock": {
+      "sha256": "39a988f45d7cc0629efd51a2ccc7f9bc5d3084102564b24386b8877fa9d09d1d",
+      "kind": "shared_current_locked_compatibility_dependencies"
+    },
+    "integrations/lerobot-history/README.md": {
+      "sha256": "3f1010bc6372269918d3855c603a70e1c712767f6f584248f40ef979073af84d",
+      "kind": "historical_revision_installation_and_compatibility_instructions"
+    },
+    "research/publication/lerobot-history.md": {
+      "sha256": "76e84d7fc8f05c52a224850800919df90921f7f336d1b41c2858fd862ccdbae2",
+      "kind": "independent_historical_authority_sources"
+    },
+    "integrations/openpi-history/fixture.json": {
+      "sha256": "543247ef395e56e86d83f4dfa0a9463dca4c2ff4634c47f1b21de3fa4c428bba",
+      "kind": "declared_fixture_and_configuration"
+    },
+    "integrations/openpi-history/sources.json": {
+      "sha256": "1c7cc59c2eedef06b355c2b7fcc0c708a1a0c29ba830caf0d26df4d1f240b951",
+      "kind": "pinned_historical_python_source_inventory"
+    },
+    "integrations/openpi-history/requirements.lock": {
+      "sha256": "d0c00598516d11f75ab6e9f764240dbae899366486b9d4fa4d893601ce1fa3e1",
+      "kind": "pinned_dependency_profile"
+    },
+    "research/publication/openpi-history.md": {
+      "sha256": "98afb415fcf6bb4ce49956a8293e246fd830f4795022f80c149bb69a264ee7c5",
+      "kind": "independent_historical_authority_sources"
+    },
+    "integrations/panda/distribution.json": {
+      "sha256": "47bfc5f64c2c7091dbbcb99ba02ba292362be782c99500610f32b0cbf44cf3ca",
+      "kind": "upstream_wheel_and_source_provenance"
+    },
+    "integrations/panda/requirements.lock": {
+      "sha256": "a15612298f40ed1f63205552b1236789e747186ae01f10f55a7ba071cabf11c0",
+      "kind": "pinned_dependency_profile"
+    },
+    "validation/panda-software-reproduction-001/summary.json": {
+      "sha256": "15cda149c9684aee60b8ed1026877ac29702343ef08f360016c9d26cd6435d4a",
+      "kind": "traceable_prior_clean_software_run"
+    },
+    "validation/panda-software-reproduction-001/inputs.json": {
+      "sha256": "f03198f7db134a0e2951908b2ce1c49778489d37cddb3961415fa5fe7d60c8df",
+      "kind": "traceable_prior_clean_software_run"
+    },
+    "validation/panda-software-reproduction-001/request.json": {
+      "sha256": "53c1e91807f45341dd8409190b197725c70cb1d6b32a26e7fe9451bed17ec348",
+      "kind": "traceable_prior_clean_software_run"
+    },
+    "validation/panda-software-reproduction-001/capture.json": {
+      "sha256": "3769a6667faad35ca895c441dc935547ef8b0f2dd003c225cfb8f7f13926b1bd",
+      "kind": "traceable_prior_clean_software_run"
+    },
+    "validation/panda-software-reproduction-001/analysis.json": {
+      "sha256": "c1a3222a13e59378efa3f7a5e10ed44a4fdc85864facbb706aa3cfbd2fed7411",
+      "kind": "traceable_prior_clean_software_run"
+    },
+    "validation/publication-wrapper-development-tests.txt": {
+      "sha256": "66029319ccc802ce91da90dc4b310b0f1d4337e38319777422e35d9b7b1780df",
+      "kind": "prior_implementation_or_environment_evidence"
+    },
+    "validation/publication-wrapper-development-checks.json": {
+      "sha256": "e12d47629a4f313cd5e333b0d8209ad541166efa79e4c35998f09bb98ce55744",
+      "kind": "prior_implementation_or_environment_evidence"
+    },
+    "tests/test_publication_study.py": {
+      "sha256": "0c122bbcd75a68b2274f0a9dc455fe3270b059148e94d62597aa6a1120fde31b",
+      "kind": "prior_implementation_or_environment_evidence"
+    },
+    "research/publication/reproduction/machine.json": {
+      "sha256": "dca9a5717fea00deb421dfb505f7350ecb5ac69b33bae3fede953399d3ab348f",
+      "kind": "prior_implementation_or_environment_evidence"
+    },
+    "research/publication/runs/clean-reproduction-001/summary.json": {
+      "sha256": "e59fb7242804710f9dc72c469b9677f43ae60ec51461a09d9c9488a69fc444a7",
+      "kind": "prior_reproduction_proof"
+    },
+    "research/publication/runs/clean-reproduction-001/reproduction-comparison.json": {
+      "sha256": "a7cf50db5a11481e935a9cf89ed122679d915c3a206989dd4c40c6c7df4497c4",
+      "kind": "prior_reproduction_proof"
+    },
+    "research/publication/reproduction/environment-build-003/setup.json": {
+      "sha256": "74d3cc54a9e6bd4b539202ce7d4355f790c6dd8b7d63b7d38d585842158166ca",
+      "kind": "prior_reproduction_proof"
+    },
+    "validation/panda-reproduction-verification.json": {
+      "sha256": "4e02c19dd5ceb5a94d98849620885a2f41df0c37ce5bd75d606ba8eeca37551b",
+      "kind": "prior_reproduction_proof"
+    },
+    "research/publication/runs/clean-reproduction-001/analysis.json": {
+      "sha256": "83e00b74ca783de9efda4decfcfbd4e7345c22564bc8584b4246adee982242af",
+      "kind": "prior_clean_semantic_result"
+    },
+    "research/publication/runs/clean-reproduction-001/witnesses.json": {
+      "sha256": "b4a0cd3a79c7943f1ae9cb512b8f843807b3cb11453e16b96eeb2e9d09229cf4",
+      "kind": "prior_clean_semantic_result"
+    },
+    "research/publication/runs/clean-reproduction-001/workflow-analysis.json": {
+      "sha256": "9a0df9925f05bfa66bf8f5eaeb8585e896f95ba71cae6d2517f3d883e353527d",
+      "kind": "prior_clean_semantic_result"
+    },
+    "research/publication/runs/clean-reproduction-001/conditions.csv": {
+      "sha256": "f261b97ce019d83365b78edd2a9ce24375cf6fc19fa998d8c733f2a1d0561398",
+      "kind": "prior_clean_semantic_result"
+    },
+    "research/publication/release/claim-audit-checks.json": {
+      "sha256": "bdfb6cd908290f7e40e007a02204b91876852b6bb5e074e73adf2e020d2e1e07",
+      "kind": "current_task_saved_output_reanalysis"
+    },
+    "research/publication/release/audit_claims.py": {
+      "sha256": "145932c69270386cd168d523ef7c09f844d60f86b50fd74a99f7ffb39eb3406e",
+      "kind": "current_task_claim_audit_code"
+    },
+    "research/publication/literature.json": {
+      "sha256": "5aa63dbc09f99bdbbe6b9b9ee85be0bc2714f10a5303543af7c209e9592894df",
+      "kind": "versioned_bounded_primary_source_audit"
+    }
+  }
+}

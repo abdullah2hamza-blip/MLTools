@@ -197,6 +197,14 @@ def notebook(payload_sha256, release_id, dataset_slug, payload_manifest_sha256):
         f"""
         Original contributions: Apache-2.0; retained publisher licenses and
         explicit derivative/redaction notices are in the dataset.
+        AI tools were used for research planning and experimental design; code preparation
+        and testing; data analysis and interpretation; figure preparation; and manuscript
+        drafting, revision, and review. The human author(s) retain responsibility for the
+        final work. The automated checks and AI-assisted reviews reported here are not
+        independent human peer review. Recorded tools include OpenAI Codex/ChatGPT;
+        exact model identifiers were not consistently recorded.
+        The dataset also provides manuscript.pdf and versioned source/supplement
+        archives. The notebook executes saved-output analysis, not those full archives.
         Cite `abdullah2hamza/{dataset_slug}`, its Kaggle
         version, release ID and payload SHA256. No peer-review acceptance or DOI
         is asserted. See `README.md` and `THIRD_PARTY_NOTICES.md` in the dataset.

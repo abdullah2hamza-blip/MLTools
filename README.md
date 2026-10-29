@@ -3,9 +3,16 @@
 The [Kaggle release workflow](releases/kaggle/README.md) builds a licensed,
 privacy-reviewed offline replay dataset and CPU notebook from the frozen study.
 Original code/results use [Apache-2.0](LICENSE); third-party terms remain in force.
-The current local release candidate is [release-005](releases/kaggle/artifacts/release-005/).
-Its [review record](releases/kaggle/validation/review-005-readiness.json) covers
-local validation; the previous hosted Kaggle proof applies to release-004.
+The [public-release checklist](research/publication/release/status.json) records
+the current publication stage and links the source, manuscript and executable
+Kaggle artifact. Earlier release candidates and hosted proofs retain their
+original versions; they do not verify later revisions.
+
+AI tools were used for research planning and experimental design; code preparation
+and testing; data analysis and interpretation; figure preparation; and manuscript
+drafting, revision, and review. The human author(s) retain responsibility for the
+final work. The automated checks and AI-assisted reviews reported here are not
+independent human peer review.
 
 Check whether a robot policy adapter preserves the physical meaning of its training interface. Matching tensor shapes and successful encode/decode round trips can conceal swapped cameras, permuted joints, stale statistics, or a changing reference state inside an action chunk.
 
@@ -89,11 +96,11 @@ Exit codes: **0 PASS**, **1 FAIL**, **2 UNKNOWN**, **3 operational/input error**
 
 ## Reproducible research artifact
 
-The [publication project](research/publication/README.md) now includes a committed protocol, the complete prospective native acquisition, clean main reproduction, generated figures/tables and a [twelve-page manuscript with editable sources](research/publication/paper/README.md). The [original](research/publication/runs/prospective-001/README.md) executes three published metadata groups in four LeRobot/OpenPI cells; the [clean comparison](research/publication/runs/clean-reproduction-001/reproduction-comparison.json) reproduces semantic JSON/CSV byte for byte in fresh exact-profile environments.
+The [publication project](research/publication/README.md) now includes a committed protocol, the complete prospective native acquisition, clean main reproduction, generated figures/tables and a [technical report with editable sources](research/publication/paper/README.md). The [original](research/publication/runs/prospective-001/README.md) executes three published metadata groups in four LeRobot/OpenPI cells; the [clean comparison](research/publication/runs/clean-reproduction-001/reproduction-comparison.json) reproduces semantic JSON/CSV byte for byte in fresh exact-profile environments.
 
 The finite main study records 1,792 primary calls, 896 auxiliary calls and sixteen fresh witness calls. Full-reference numerical checks agree; the compiler shows no detection or witness-size advantage. Offset-authority erasure distinguishes pointwise from relational checks. All selected physical-authority views remain UNKNOWN. Published family labels describe processor metadata; no weights, learned inference, task performance or hardware safety are measured. Retrospective incidents and [Panda software semantics](docs/panda-software.md) remain separate strata.
 
-[Reproduction instructions](research/publication/reproduction/README.md) preserve exact inputs, complete source/environment identities, attempt order, raw failures and reporting. The [probe API/CLI](docs/probe-cases.md) supports explicit execution, data-only replay and regression exports with an isolated [OpenPI CPU profile](integrations/openpi/README.md). Human scientific/authorship/licensing review and separate approval are required before public release or submission. This private artifact establishes no acceptance or generalization guarantee.
+[Reproduction instructions](research/publication/reproduction/README.md) preserve exact inputs, complete source/environment identities, attempt order, raw failures and reporting. The [probe API/CLI](docs/probe-cases.md) supports explicit execution, data-only replay and regression exports with an isolated [OpenPI CPU profile](integrations/openpi/README.md). The manuscript is a technical report; neither repository hosting nor Kaggle execution establishes peer review, acceptance or scientific generalization. See [citation metadata](CITATION.cff) and the release's exact source/data identifiers.
 
 ## Limits
 

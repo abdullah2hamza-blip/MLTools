@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "review_kind": "AI-assisted scientific and result-producing-code review, not human peer review",
+  "scope": "Current article, appendix, bibliography, main frozen numeric/transport/identity pipeline, reporting, separate historical/SO101/Panda evidence and claim-to-evidence mapping",
+  "result": "No unresolved finding-changing defect identified within the inspected scope",
+  "current_evidence": "research/publication/release/claim-audit-checks.json",
+  "claim_mapping": "research/publication/release/claim-evidence.json",
+  "material_editorial_corrections_retained": [
+    "Specify actual action domain, coordinate selection, intervention magnitudes, width-doubling recipe and random query construction.",
+    "Limit one/two/three-query witness sizes to canonical local relations; general interpolation can require n+1 basis queries.",
+    "Distinguish pristine F32 control-statistics bytes, injected F64 derivative statistics and F64 numerical execution.",
+    "Preserve negative detection/witness findings, all missing-physical-authority outcomes and separate native baseline scopes.",
+    "Expand AI assistance disclosure to actual research planning/design, code/testing, analysis/interpretation, figures and manuscript drafting/revision/review; make no human-review attestation."
+  ],
+  "result_producing_paths_inspected": [
+    "Publisher metadata allowlisting, independent Safetensors decoding, derivative serialization and original/control byte identity",
+    "Native decoder loading, actual profile formulas, dtype conversion, primary and auxiliary call accounting",
+    "Canonical/manual/random geometry generation, source-controlled seeds, exact executed-coordinate cancellation and conditional component intervals",
+    "Compiler, independently implemented pointwise and strong relational checks, tri-state aggregation, reference/unit/provenance ablations",
+    "Matched stock Robotruth extraction/checking and Policy Space custom-registry transport validation and float32 wire conversion",
+    "Original-relation fresh witness selection and validation, method-view overlap, native call costs",
+    "Closed-manifest study verification, protocol Git byte binding, exact clean semantic comparison and cost exclusion",
+    "Finite descriptive metrics, equal-artifact-weight leave-one-out arithmetic, claim macros, table and both figures",
+    "Historical parent/fix traces, original-checker/compiled stateful comparison, independent Panda Rodrigues/matrix and populated-reset fixtures"
+  ],
+  "design_and_inference_limits": [
+    "Three dependency-linked metadata groups; PI OpenPI transport is nested, not a fourth independent checkpoint.",
+    "Recipes and metadata were inspected before selected native execution; outcome-unseen does not mean blinded or unseen root causes.",
+    "Queries, seeds, interventions, shared ancestry and clean repeats are not independent samples. No population accuracy, confidence interval or significance conclusion is supported.",
+    "Large declared normalization changes test evidence distinctions; no sensitivity estimate for subtle natural drift.",
+    "References are current-runtime numerical contracts; training-runtime identity, model-output reachability and calibrated physical meaning are not established.",
+    "Empirical numerical allowances are fixed profiles, not universal upstream floating-point or sensor-error bounds.",
+    "Historical, stateful and Panda software strata remain retrospective/development evidence, with no physics stepping, learned-policy task performance or hardware-safety claim.",
+    "Current task reanalyses prior saved acquisitions. Earlier clean native reproduction is traceable prior evidence on the same machine with permitted cache reuse.",
+    "No reduction in human integration effort was measured; measured call-count witnesses favor the independent numerical oracles.",
+    "Producer hashes/audit hooks are not cryptographic attestation or an operating-system sandbox."
+  ],
+  "literature_scope": "Focused primary-source checks of the cited closest work and established testing precedents; not an exhaustive systematic review or proof of novelty.",
+  "experiments_not_repeated": [
+    "Main native acquisition and clean native acquisition",
+    "Historical parent/fix native execution",
+    "SO101 temporal native acquisition",
+    "Panda software native acquisition",
+    "Learning, model inference or policy rollouts (not part of this study)"
+  ],
+  "authorship_and_status": "No authorship changes made by this review. No peer-reviewed submission, acceptance, human coauthor approval or human review is asserted. Public research hosting is a technical-report/artifact release."
+}

@@ -7,5 +7,11 @@ publisher metadata, model cards, style files and license texts retain their
 own terms. This notice does not grant rights to third-party model weights or
 unresolved assets. See docs/provenance.md and the Kaggle release notices.
 
+AI tools were used for research planning and experimental design; code preparation
+and testing; data analysis and interpretation; figure preparation; and manuscript
+drafting, revision, and review. The human author(s) retain responsibility for the
+final work. The automated checks and AI-assisted reviews reported here are not
+independent human peer review.
+
 Hashes establish integrity within the recorded provenance;
 they are not independent attestation or physical safety certification.

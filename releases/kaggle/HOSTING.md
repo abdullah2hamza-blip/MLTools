@@ -1,9 +1,9 @@
 # Verified private Kaggle artifacts
 
 This is the historical hosted verification recorded on **23 October 2026** for
-release-004. The current local candidate is release-005; it has new package/text
-hashes and has not been uploaded or hosted. None of the hosted proof below is
-claimed for that candidate. Existing private dataset updates need an explicitly
+release-004. Later revisions have separate package/text hashes and verification. The
+current public-release stage is recorded in research/publication/release/status.json.
+None of the hosted proof below is claimed for a later candidate. Existing private dataset updates need an explicitly
 authorized new dataset version as well as a matching notebook revision; do not
 repeat dataset creation or bypass preserved attempt state.
 

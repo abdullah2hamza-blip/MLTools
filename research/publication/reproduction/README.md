@@ -16,6 +16,8 @@ uv run --no-sync python -O scripts/run_publication_study.py --verify research/pu
 
 These commands do not import either ML framework or reacquire native outcomes. They require the complete repository history containing freeze `7513755e9627098c3529c46b3ae9a056d76434a5`, and exact protected file bytes. Do not apply root-wide formatting or line-ending normalization to evidence. `../protocol-freeze-001.json` and its full Git commit remain immutable; snapshot flags in earlier selection documents do not represent later live state.
 
+On Windows, if Python discovery reaches a Microsoft Store execution alias, give uv an explicit installed CPython 3.13.7 executable in `--python` instead of relying on the alias. The release audit installed separate core/reporting environments from the locks in a fresh full clone, reran both saved-run verifiers and regenerated all eight reporting files byte for byte. This is saved-output reanalysis; the earlier native acquisition and clean native reproduction remain prior experimental evidence. See `../release/clean-reanalysis.json` for commands, runtime, environment and scope.
+
 ## Install new exact profiles
 
 Build the core wheel and prepare a bare OpenPI-version interpreter. The core wheel is checked against frozen Python source bytes by the setup script:

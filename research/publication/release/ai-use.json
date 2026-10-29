@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "disclosure": "AI tools were used for research planning and experimental design; code preparation and testing; data analysis and interpretation; figure preparation; and manuscript drafting, revision, and review. The human author(s) retain responsibility for the final work. The automated checks and AI-assisted reviews reported here are not independent human peer review.",
+  "known_tools": ["OpenAI Codex/ChatGPT"],
+  "recorded_period": "October 2026",
+  "model_versions": "Exact model identifiers were not consistently recorded; no version is asserted.",
+  "roles": ["research planning and experimental design", "code preparation and testing", "data analysis and interpretation", "figure preparation", "manuscript drafting, revision and review", "reproducibility and release checks"],
+  "human_attestation": "No claim that a human independently reviewed, verified or approved every generated result. The user authorized the public research release.",
+  "private_records": "Private prompts, credentials and sensitive inputs are excluded from distribution. Existing immutable evidence and historical release records remain versioned."
+}

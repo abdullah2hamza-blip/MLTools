@@ -1,8 +1,10 @@
 # Evidence Limits in Robot-Policy Boundary Conformance
 
-The editable manuscript is `main.tex`, with body, appendix and bibliography alongside it. The standalone PDF is `output/main.pdf`. It uses the unmodified official TMLR assets recorded in `venue-format.json`, in preprint mode. It is not submitted or accepted. Human authorship, scientific review and any public release/submission remain separate decisions.
+The editable manuscript is `main.tex`, with body, appendix and bibliography alongside it. The standalone PDF is `output/main.pdf`. It uses the unmodified official TMLR assets recorded in `venue-format.json`, in preprint mode. It is a technical report, not submitted or peer reviewed. The existing anonymous draft attribution is preserved; repository account names do not establish manuscript authorship. The public research release does not submit the manuscript to a venue.
 
 The main study reports finite parity and evidence limits. It does not establish a detector advantage, smaller compiled witnesses, learned-policy performance, calibrated physical mappings or hardware safety. The offset-authority ablation distinguishes a weaker pointwise oracle from the two relational methods; this is separate from main-condition parity. The intervention magnitudes, coordinate selection, numerical domain and seeded query construction are stated in the appendix as well as the saved protocol. Human authors retain responsibility for any publication.
+
+The manuscript includes the expanded AI assistance disclosure recorded in `../release/ai-use.json`. Technical checks and AI-assisted reviews are not independent human peer review. `../release/claim-evidence.json` maps reported claims and figures to their inputs, code, saved evidence and verification category.
 
 ## Regenerate results and figures
 

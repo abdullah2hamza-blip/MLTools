@@ -7,6 +7,16 @@ ablations, fresh-witness relations, baseline interpretation, transport checks an
 counts from two saved native acquisitions. It requires Python 3.13+, the standard
 library and optional Matplotlib for the final plot. No downloads are needed.
 
+The complete public research distribution also provides `manuscript.pdf`,
+`manuscript-source.zip` and `research-source.zip` alongside this replay payload.
+The supplement manifest lists their exact contents, licenses and checksums.
+These assets contain the technical report, bibliography, figures, result tables,
+saved evidence, source/configuration snapshots and reproduction instructions.
+Only the smaller `payload.zip` is executed by the accompanying notebook.
+The canonical source and full Git history are at
+[GitHub](https://github.com/abdullah2hamza-blip/MLTools); use its versioned release
+and manifest for the final source revision. There are no releasable model weights.
+
 This is **saved-trace replay**. It is not a new LeRobot/OpenPI/Robotruth/Policy
 Space execution, learned-policy evaluation, robot experiment or independent
 replication of the producer's environment. A separate original verifier checked
@@ -92,12 +102,21 @@ are replaced with stable redaction labels, with exact JSON pointers and both
 hashes recorded. Numerical observations, source pins and verdicts are unchanged.
 
 Excluded: credentials, local environments, executables, dependency checkouts,
-compiler/style assets, original private Git history, unresolved OpenPI GCS
-assets, Tether sources and unrelated development archives. The manuscript and
-retrospective/Panda/SO101 strata are outside this focused initial dataset. Their
-results must not be inferred from the main table. The human-review manuscript
-is neither submitted nor accepted. No population accuracy, hardware safety, policy task
-success or cryptographic attestation is claimed.
+compiler binaries, unresolved OpenPI GCS assets, Tether sources and unrelated
+work. The numerical replay remains focused on the main action-only study;
+retrospective/Panda/SO101 strata are documented separately in the supplement.
+Their results must not be inferred from the main table. The manuscript is a
+technical report, neither submitted nor peer reviewed. No population accuracy,
+hardware safety, policy task success or cryptographic attestation is claimed.
+
+## AI assistance disclosure
+
+AI tools were used for research planning and experimental design; code preparation
+and testing; data analysis and interpretation; figure preparation; and manuscript
+drafting, revision, and review. The human author(s) retain responsibility for the
+final work. The automated checks and AI-assisted reviews reported here are not
+independent human peer review. Recorded tools include OpenAI Codex/ChatGPT during
+October 2026; exact model identifiers were not consistently recorded.
 
 ## Citation
 

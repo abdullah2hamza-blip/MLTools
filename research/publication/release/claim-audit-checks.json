@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-29T02:43:51.508458+00:00",
+  "status": "SAVED_EVIDENCE_REANALYSIS_PASSED",
+  "python_version": "3.13.7",
+  "audit_code_sha256": "145932c69270386cd168d523ef7c09f844d60f86b50fd74a99f7ffb39eb3406e",
+  "commands": {
+    "main_original": {
+      "command": [
+        "python",
+        "-O",
+        "scripts/run_publication_study.py",
+        "--verify",
+        "research/publication/runs/prospective-001"
+      ],
+      "returncode": 0,
+      "stdout": "Verified frozen study, exact native evidence, all workflows and fresh original-relation witnesses",
+      "stderr": "",
+      "category": "reanalysis_of_saved_outputs"
+    },
+    "main_clean": {
+      "command": [
+        "python",
+        "-O",
+        "scripts/run_publication_study.py",
+        "--verify",
+        "research/publication/runs/clean-reproduction-001"
+      ],
+      "returncode": 0,
+      "stdout": "Verified frozen study, exact native evidence, all workflows and fresh original-relation witnesses",
+      "stderr": "",
+      "category": "reanalysis_of_saved_outputs"
+    },
+    "stateful": {
+      "command": [
+        "python",
+        "-O",
+        "scripts/compare_stateful_development.py",
+        "--verify",
+        "validation/stateful-comparison-001"
+      ],
+      "returncode": 0,
+      "stdout": "Verified same-observation original-stateful/compiled development comparison and fresh witnesses",
+      "stderr": "",
+      "category": "reanalysis_of_saved_outputs"
+    },
+    "lerobot_history": {
+      "command": [
+        "python",
+        "-O",
+        "scripts/reproduce_lerobot_history.py",
+        "--verify",
+        "validation/lerobot-history-001"
+      ],
+      "returncode": 0,
+      "stdout": "Verified native parent drift, fixed conformance, reset and refill without ML imports",
+      "stderr": "",
+      "category": "reanalysis_of_saved_outputs"
+    },
+    "openpi_history": {
+      "command": [
+        "python",
+        "-O",
+        "scripts/reproduce_openpi_history.py",
+        "--verify",
+        "validation/openpi-history-001"
+      ],
+      "returncode": 0,
+      "stdout": "Verified genuine historical OpenPI factory captures, direct expectations and fresh witness",
+      "stderr": "",
+      "category": "reanalysis_of_saved_outputs"
+    },
+    "panda": {
+      "command": [
+        "python",
+        "-O",
+        "scripts/validate_panda.py",
+        "--verify",
+        "validation/panda-software-001"
+      ],
+      "returncode": 0,
+      "stdout": "Verified genuine Panda software operators, full goal setter and populated-state reset",
+      "stderr": "",
+      "category": "reanalysis_of_saved_outputs"
+    },
+    "panda_clean": {
+      "command": [
+        "python",
+        "-O",
+        "scripts/validate_panda.py",
+        "--verify",
+        "validation/panda-software-reproduction-001"
+      ],
+      "returncode": 0,
+      "stdout": "Verified genuine Panda software operators, full goal setter and populated-state reset",
+      "stderr": "",
+      "category": "reanalysis_of_saved_outputs"
+    }
+  },
+  "independently_recomputed": {
+    "primary_calls": 1792,
+    "auxiliary_calls": 896,
+    "fresh_calls": 16,
+    "finite_pointwise_counts": {
+      "PASS": 4,
+      "FAIL": 12
+    },
+    "csv_counts": {
+      "PASS": 4,
+      "FAIL": 12,
+      "UNKNOWN": 8
+    },
+    "witness_method_calls": {
+      "compiled": 16,
+      "independent_pointwise": 12,
+      "strong_relational": 12
+    },
+    "byte_identical_main_semantic_products": [
+      "analysis.json",
+      "witnesses.json",
+      "workflow-analysis.json",
+      "conditions.csv"
+    ],
+    "offset_reference_ablations_and_geometry_counts_match": true,
+    "stateful_parity_and_witness_ranges_match": true
+  },
+  "full_native_acquisition_repeated": false,
+  "wall_seconds": 76.80890069995075,
+  "scope": "Code inspection, saved-evidence integrity verification and independent reanalysis; not a new native experimental reproduction or human peer review."
+}

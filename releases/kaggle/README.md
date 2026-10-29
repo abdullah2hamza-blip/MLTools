@@ -1,31 +1,28 @@
-# Kaggle release
+# Kaggle research release
 
-The approved owner is `abdullah2hamza`; original code/results use Apache-2.0.
-The first release is a focused **saved-trace replay dataset and offline CPU
-notebook**, not another native acquisition. It preserves all frozen research
-files and records the separate public projection's provenance. The manuscript,
-mixed-license TeX assets and development strata are excluded from this dataset.
-See [the dataset card](DATASET_CARD.md) and [third-party notices](THIRD_PARTY_NOTICES.md).
+The approved owner is abdullah2hamza; original code/results use Apache-2.0.
+The executable workflow reanalyzes saved native observations on offline CPU.
+The complete distribution adds the technical report, editable manuscript,
+figures, results and source/reproduction supplement to this same dataset.
+Use the [complete-package builder](../publication/README.md) after checking out
+its exact release tag; the smaller focused replay is its executable component.
 
-The current local release candidate is [artifacts/release-005](artifacts/release-005/),
-bound by [release-005-lock.json](release-005-lock.json). Its card, notice and
-notebook text have been revised; numerical inputs, observations and the five
-expected research products retain their original bytes. The notebook supports
-Kaggle's automatic ZIP expansion and uses distinct dataset/notebook identities.
-Fresh-kernel local checks cover the ZIP and expanded-input/platform-file forms
-in [validation/review-005-zip](validation/review-005-zip/) and
-[validation/review-005-expanded](validation/review-005-expanded/).
+The revised replay is [artifacts/release-006](artifacts/release-006/), bound by
+[release-006-lock.json](release-006-lock.json). Its numerical observations and
+five expected products retain their original bytes. The expanded-input/platform
+fresh-kernel check is [recorded here](validation/public-replay-006-local/verification.json).
+The full supplement has its own closed file/member manifest and exact tag/commit.
 
-Release-005 has not been uploaded or executed on Kaggle. The existing private
-dataset version 1 and notebook version 2 were verified using **release-004** on
-23 October 2026; that proof does not verify the new candidate. See
-[HOSTING.md](HOSTING.md) and
-[the historical hosted evidence](validation/kaggle-hosted-002/verification.json).
-All earlier preparation/upload snapshots and their proofs are retained unchanged.
-The [candidate review record](validation/review-005-readiness.json) records
-67 passing tests and 39 subtests, lint/format checks, a byte-identical second
-build, both fresh-kernel checks and bounded credential scans. Historical frozen
-gates pass; these checks establish local readiness for the revised package.
+[Publication status](../../research/publication/release/status.json) records the
+actual uploaded, executed and public versions, including checks performed after
+hosting. Local preparation does not establish hosted execution. Earlier proof
+for dataset version1/notebook version2 applies only to release-004; see
+[HOSTING.md](HOSTING.md). All historical archives/proofs retain their bytes.
+
+The [dataset card](DATASET_CARD.md), [AI-use record](../../research/publication/release/ai-use.json)
+and [third-party notices](THIRD_PARTY_NOTICES.md) state the empirical limits,
+actual assistance roles and component-specific licenses. No model weights or
+new policy/hardware experiments are included.
 
 ## Rebuild and inspect without credentials
 
@@ -35,7 +32,7 @@ Run from the repository root, with a new output directory for each build:
 
 ```sh
 python releases/kaggle/build.py --output releases/kaggle/build/new-release --record releases/kaggle/build/new-release-lock.json
-python releases/kaggle/publish.py --root releases/kaggle/artifacts/release-005 --config releases/kaggle/config.json
+python releases/kaggle/publish.py --root releases/kaggle/artifacts/release-006 --config releases/kaggle/config.json
 python -m pytest releases/kaggle -q --basetemp .test-tmp/kaggle-tests
 ```
 
@@ -70,7 +67,7 @@ current Kaggle image. Install the authoring environment using uv:
 ```sh
 uv venv .venv-kaggle --python 3.13
 uv pip sync releases/kaggle/testing-requirements.lock --python .venv-kaggle/Scripts/python.exe --require-hashes
-.venv-kaggle/Scripts/python.exe releases/kaggle/smoke.py --root releases/kaggle/artifacts/release-005 --work .test-tmp/kaggle-smoke --record releases/kaggle/build/new-smoke-validation --expanded-input --platform-runtime-file
+.venv-kaggle/Scripts/python.exe releases/kaggle/smoke.py --root releases/kaggle/artifacts/release-006 --work .test-tmp/kaggle-smoke --record releases/kaggle/build/new-smoke-validation --expanded-input --platform-runtime-file
 ```
 
 The smoke test executes every code cell in a fresh Jupyter kernel with copied

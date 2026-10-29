@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "head": "f3ded10a1eebdd651629d5c24868054422fbcded",
+  "reachable_objects_scanned": 1471,
+  "reachable_blobs_scanned": 1093,
+  "tracked_files_scanned": 1537,
+  "unique_contents_inspected": 1494,
+  "inspection_counts": {
+    "archives": 2,
+    "members": 540,
+    "notebooks": 9,
+    "stats": 26,
+    "png_outputs": 5
+  },
+  "statistics_field_suffixes": [
+    "count",
+    "fixture_weight",
+    "max",
+    "mean",
+    "min",
+    "q01",
+    "q10",
+    "q50",
+    "q90",
+    "q99",
+    "std"
+  ],
+  "lfs_pointer_count": 0,
+  "native_executable_count": 0,
+  "candidate_findings_count": 0,
+  "media": [
+    {
+      "kind": "png",
+      "path": "releases/kaggle/validation/expanded-platform-smoke-001/executed.ipynb@038da050c8639baef704b923fcc6fd328b5f4698::plot.png",
+      "sha256": "d23b7ad933658c7cd94d293794bcf6c034039f1788c85597f97905ce62ed7c08",
+      "dimensions": [
+        790,
+        340
+      ],
+      "metadata_keys": [
+        "Software",
+        "dpi"
+      ]
+    },
+    {
+      "kind": "pdf",
+      "path": "research/publication/paper/generated/authority-ablation.pdf@e3da5dec3261ce25893930a98e4f3a4db2e65a8c",
+      "sha256": "f16cbbbde819433b41de9be4ab71e05c5042d5144dfa967fa100972a82470463",
+      "pages": 1,
+      "metadata_keys": [
+        "/Creator",
+        "/Producer"
+      ],
+      "author_field_present": false,
+      "embedded_attachments": 0,
+      "script_or_launch_marker": false
+    },
+    {
+      "kind": "png",
+      "path": "research/publication/paper/generated/authority-ablation.png@873aacc4e2acd0af5f593a9621edaf14a33df43e",
+      "sha256": "a4092b49148efc8a4e88a05c0687e19ebb5f265894d5fe289018377f10e0999b",
+      "dimensions": [
+        1280,
+        919
+      ],
+      "metadata_keys": [
+        "Software",
+        "dpi"
+      ]
+    },
+    {
+      "kind": "pdf",
+      "path": "research/publication/paper/generated/witness-cost.pdf@59fc0e3a0757254e8adf2e56f25c64dce0ea5246",
+      "sha256": "1730acaadc4fcd8dc8b739201a91f650ee5adeeb249a620cc3f0c4da55ad9e89",
+      "pages": 1,
+      "metadata_keys": [
+        "/Creator",
+        "/Producer"
+      ],
+      "author_field_present": false,
+      "embedded_attachments": 0,
+      "script_or_launch_marker": false
+    },
+    {
+      "kind": "png",
+      "path": "research/publication/paper/generated/witness-cost.png@232e24200ea5f423368fdfb9bbedff102c081890",
+      "sha256": "f0f5f9e6345d78736abd68ac20e5142f4f3f0decaefd69c290c3e148816beeed",
+      "dimensions": [
+        1280,
+        580
+      ],
+      "metadata_keys": [
+        "Software",
+        "dpi"
+      ]
+    },
+    {
+      "kind": "pdf",
+      "path": "research/publication/paper/output/compile-002/main.pdf@2a43feb9dc58b516b1c56c237d4b0c6f3bd2c671",
+      "sha256": "a02b2b78a8f2dc798c41e8c4bfdd5aa58ca01960fd94c2aa33a15dce8c786e5c",
+      "pages": 12,
+      "metadata_keys": [
+        "/CreationDate",
+        "/Creator",
+        "/Producer"
+      ],
+      "author_field_present": false,
+      "embedded_attachments": 0,
+      "script_or_launch_marker": false
+    },
+    {
+      "kind": "pdf",
+      "path": "research/publication/paper/output/compile-003/main.pdf@35330d967e7803694677badfc933b461749d4727",
+      "sha256": "01b976fca1455ab0137ac585af2e571d3d3860dc4886987a8334d6b3682b4d3b",
+      "pages": 12,
+      "metadata_keys": [
+        "/CreationDate",
+        "/Creator",
+        "/Producer"
+      ],
+      "author_field_present": false,
+      "embedded_attachments": 0,
+      "script_or_launch_marker": false
+    },
+    {
+      "kind": "pdf",
+      "path": "research/publication/paper/output/compile-004/main.pdf@829cf753a3a6fcf44721bbae228ae7cedc566560",
+      "sha256": "b650aed3a911c9a11bc43bc20e23c881d3cde932fcaaf72abf0120b09a8312da",
+      "pages": 13,
+      "metadata_keys": [
+        "/CreationDate",
+        "/Creator",
+        "/Producer"
+      ],
+      "author_field_present": false,
+      "embedded_attachments": 0,
+      "script_or_launch_marker": false
+    },
+    {
+      "kind": "pdf",
+      "path": "research/publication/paper/output/compile-005/main.pdf@8cad6411c718af3ac1b075e4a0c68e247a135ff5",
+      "sha256": "463ffeec6320af53bb183bf35faaf4ac71c0ba219a0698987f8f6ee4711ffa61",
+      "pages": 13,
+      "metadata_keys": [
+        "/CreationDate",
+        "/Creator",
+        "/Producer"
+      ],
+      "author_field_present": false,
+      "embedded_attachments": 0,
+      "script_or_launch_marker": false
+    },
+    {
+      "kind": "pdf",
+      "path": "research/publication/paper/output/compile-006/main.pdf@50d1027768be28695d2e65be42b21c9256acdaa9",
+      "sha256": "7919c133cb4c7c620ee76e612ff8bfb18be90b949c9e281aa24fec83f77da5de",
+      "pages": 12,
+      "metadata_keys": [
+        "/CreationDate",
+        "/Creator",
+        "/Producer"
+      ],
+      "author_field_present": false,
+      "embedded_attachments": 0,
+      "script_or_launch_marker": false
+    },
+    {
+      "kind": "pdf",
+      "path": "research/publication/paper/output/compile-007/main.pdf@a729b117c36b382ff5c09d7537da251d9b3ad019",
+      "sha256": "3c0c3bf3ee2869ebd169c5fd8370d73a9c8ead0e19cfe5c216dfb7be10a6aa2e",
+      "pages": 12,
+      "metadata_keys": [
+        "/CreationDate",
+        "/Creator",
+        "/Producer"
+      ],
+      "author_field_present": false,
+      "embedded_attachments": 0,
+      "script_or_launch_marker": false
+    }
+  ],
+  "scope": "Current tracked bytes plus all reachable local Git objects; recursiveZIP members, decodedPDF text/metadata and notebook text/PNGmetadata; bounded credential patterns and binary/statistics inventory, not an exhaustive secret/rights guarantee.",
+  "status": "NO_SENSITIVE_VALUES_FOUND_IN_REVIEWED_LOCAL_SNAPSHOT",
+  "remote_surface_audit": {
+    "repository": "abdullah2hamza-blip/MLTools",
+    "visibility_at_check": "private",
+    "default_branch": "main",
+    "branches": [
+      {
+        "name": "main",
+        "sha": "405be4cd677925b62add1e9513620b1946379d56",
+        "protected": false
+      }
+    ],
+    "tags": [],
+    "releases_count": 0,
+    "issues_all_states_count": 0,
+    "pull_requests_all_states_count": 0,
+    "workflow_runs_count": 0,
+    "wiki_enabled": false,
+    "wiki_remote": "NOT_FOUND",
+    "pages_enabled": false,
+    "discussions_enabled": false,
+    "caller_permission": "admin",
+    "rulesets_read": "HTTP403: private-plan feature requires Pro or public visibility; recheck after transition",
+    "actions_artifacts_endpoint": "Connector endpoint unsupported; zero workflow runs checked, no run logs/artifacts to inspect",
+    "coverage": "Authenticated API metadata/branches/releases/issues/pulls/Actions-runs/refs; git ls-remote heads/tags; wiki existence. No remote mutations."
+  },
+  "rights": {
+    "first_party": {
+      "terms": "Apache-2.0",
+      "authority": "Explicit owner approval; root LICENSE/NOTICE",
+      "scope": "Original code, annotations/results, manuscript and authored figures; third-party terms remain distinct"
+    },
+    "publisher_metadata": {
+      "terms": "Publisher-declared Apache-2.0 in each pinned card",
+      "manifests": [
+        "research/publication/selection/act/act-so101-boccia-center-only/manifest.json",
+        "research/publication/selection/smolvla/edge-inference--smolvla-so101-pick-orange/manifest.json",
+        "research/publication/selection/pi/lianqing11--pi05_libero/manifest.json"
+      ],
+      "limits": "Retained declarations, not independent chain-of-title audit; no learned weights or episode recordings acquired"
+    },
+    "external_frameworks": {
+      "LeRobot": "Apache-2.0",
+      "OpenPI": "Apache-2.0 code; original GCS asset redistribution unresolved and not vendored",
+      "Robotruth": "Apache-2.0",
+      "Policy_Space_Physical_Preflight": "Pinned external dependencies, implementations not vendored",
+      "ActionABI_CLI11_nlohmann": "Pinned MIT declarations; only authored small driver committed",
+      "robosuite": "MIT notice retained; package installed separately"
+    },
+    "latex": {
+      "tmlr_sty": "Apache-2.0; official unmodified template",
+      "fancyhdr_sty": "LPPL1.3-or-later; original header retained",
+      "tmlr_bst": "LPPL1-or-later; original header retained",
+      "packaging": "Include LPPL1.3c license and exact complete upstream retrieval instructions or omit styles from Kaggle ZIP with pinned acquisition instructions; no blanket Apache relicense",
+      "official_license": "https://www.latex-project.org/lppl/lppl-1-3c/",
+      "template_pin": "JmlrOrg/tmlr-style-file@7bf90efe3a0debbba703c05c43f3ff7e4d4a2992"
+    },
+    "synthetic_safetensors": "Fifteen96-byte model.safetensors contain authored two-float fixture_weight, generated by scripts/validate_robotruth.py118; not learned weights. Remaining small Safetensors contain numeric statistics.",
+    "excluded": [
+      "Original GCS statistics objects not vendored",
+      "Learned weights/recordings not acquired",
+      "Tether sources/paired rollouts not vendored",
+      "Ignored local runtime/compiler/dependency binaries and environments"
+    ]
+  },
+  "complete_package": {
+    "fixed_extras": [
+      "manuscript.pdf",
+      "manuscript-source.zip",
+      "research-source.zip",
+      "public-release-manifest.json"
+    ],
+    "source": "Exact regular Git blobs from clean tagged revision, all406protected frozen inputs/source retained; allowlist+omission ledger",
+    "include": [
+      "Current manuscript TeX/bibliography/generated figures/tables/finalPDF",
+      "First-party source/tests/scripts/examples; integration pins/locks/licenses; data provenance; original/clean evidence; reproduction/reporting; citation/rights/release docs"
+    ],
+    "omit": [
+      "Historical release artifactZIP duplicates",
+      "Oldpaper compileoutput directories except finalPDF",
+      "Historical executed release notebooks",
+      "Git internals/credentials/private state/environments; no unreviewed Gitbundle"
+    ],
+    "scope": "406byte closure in snapshot lacks original Git ancestry. Full original verifier needs complete publicGit clone containing freeze7513755. Portable Kaggle replay checks separate smaller export."
+  },
+  "limitations": [
+    "Bounded scans/provenance review are evidence, not exhaustive security or independent rights guarantee.",
+    "Administrative producer paths/public publisher attribution remain in immutable research records; user authorized existingrepo release.",
+    "Remote audit is point-in-time before publication; recheck refs/settings and public access after transition.",
+    "Final tagged delta/revised manuscript/new complete bundle require final scan and binding after creation.",
+    "No venue acceptance or human scientific/authorship approval is asserted."
+  ],
+  "shallow_repository": false,
+  "submodule_count": 0
+}
