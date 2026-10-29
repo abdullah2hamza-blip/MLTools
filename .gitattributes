@@ -62,3 +62,5 @@ releases/kaggle/validation/review-005*/** -text -whitespace
 # Release audit maps bind exact evidence and helper-source bytes.
 research/publication/release/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 releases/kaggle/validation/public-replay-006-local/** -text -whitespace
+# Upstream license text is preserved byte for byte, including its whitespace.
+releases/publication/LICENSE.LPPL-1.3c.txt -text -whitespace
